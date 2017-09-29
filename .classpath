@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="JavaRisk-master/src"/>
+	<classpathentry kind="lib" path="JavaRisk-master/dist/lib/AbsoluteLayout.jar"/>
+	<classpathentry kind="lib" path="JavaRisk-master/dist/lib/appframework-1.0.3.jar"/>
+	<classpathentry kind="lib" path="JavaRisk-master/dist/lib/swing-worker-1.1.jar"/>
+	<classpathentry kind="lib" path="JavaRisk-master/dist/Risk_New.jar"/>
+	<classpathentry kind="output" path="JavaRisk-master/build/classes"/>
+</classpath>
