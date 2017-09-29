@@ -102,7 +102,7 @@ public class RiskAddPlayerUI extends java.awt.Frame {
            if(added == true)
                System.out.println(name + " added.");
                setVisible(false);
-                    StartGameUI.jButton1.setEnabled(true);
+                    RiskStartGame.jButton1.setEnabled(true);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 

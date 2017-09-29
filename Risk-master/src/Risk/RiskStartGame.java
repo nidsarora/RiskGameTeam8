@@ -4,7 +4,7 @@
  */
 
 /*
- * StartGameUI.java
+ * RiskStartGame.java
  *
  * Created on Nov 15, 2010, 11:13:31 AM
  */
@@ -13,16 +13,15 @@ package Risk;
 
 import java.io.IOException;
 import javax.sound.midi.*;
-import java.awt.Color;
 
 /**
  *
  * @author cube
  */
-public class StartGameUI extends java.awt.Frame {
-    /** Creates new form StartGameUI */
+public class RiskStartGame extends java.awt.Frame {
+    /** Creates new form RiskStartGame */
 
-    public StartGameUI() {
+    public RiskStartGame() {
        initComponents();
         jButton1.setEnabled(true);
         setLocationRelativeTo(null);
@@ -54,7 +53,6 @@ public class StartGameUI extends java.awt.Frame {
         jButton3 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel1.setBackground(Color.BLACK);
 
         setBackground(new java.awt.Color(1, 1, 1));
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -63,7 +61,7 @@ public class StartGameUI extends java.awt.Frame {
             }
         });
 
-        jPanel1.setBackground(Color.WHITE);
+        jPanel1.setBackground(new java.awt.Color(1, 1, 1));
         jPanel1.setName("jPanel1"); // NOI18N
 
         jButton1.setText("Start Game");
@@ -90,7 +88,7 @@ public class StartGameUI extends java.awt.Frame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Risk/resources/risk-title.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Risk/resources/risk-logo.jpg"))); // NOI18N
         jLabel1.setName("jLabel1"); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -164,7 +162,7 @@ public class StartGameUI extends java.awt.Frame {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new StartGameUI().setVisible(true);
+                new RiskStartGame().setVisible(true);
             }
         });
     }

@@ -7,17 +7,17 @@ public class RiskPlayer {
 	
 	private String name;
 	private int index;
-	private Vector<Territory> occupiedTerritories;
-	//RiskCards might be here
-	private Vector<RiskCard> RiskCards;
+	private Vector<RiskTerritory> occupiedTerritories;
+	//Cards might be here
+	private Vector<RiskCard> cards;
 	private int armies;
 	//private int territoriesCaptured; //Same as occupiedTerritories.size()
 	
 	RiskPlayer(String nm, int i) {
 		name = nm;
 		index = i;
-		occupiedTerritories = new Vector<Territory>();
-                RiskCards = new Vector<RiskCard>();
+		occupiedTerritories = new Vector<RiskTerritory>();
+                cards = new Vector<RiskCard>();
 	}
 	
 	public int getPlayerIndex(){
@@ -32,12 +32,12 @@ public class RiskPlayer {
 		return armies;
 	}
 	
-/*	public Vector getRiskCards(){
-		return RiskCardsOwned;
+/*	public Vector getCards(){
+		return cardsOwned;
 	} */
 
 
-	public Vector<Territory> getOccupiedTerritories(){
+	public Vector<RiskTerritory> getOccupiedTerritories(){
 		return occupiedTerritories;
 	}
 
@@ -45,21 +45,21 @@ public class RiskPlayer {
 		return occupiedTerritories.size();
 	}
 	
-	public void occupyTerritory(Territory t){
+	public void occupyTerritory(RiskTerritory t){
 		occupiedTerritories.add(t);
 	}
 	
-	public void looseTerritory(Territory t){
+	public void looseTerritory(RiskTerritory t){
 		occupiedTerritories.remove(t);
 		occupiedTerritories.trimToSize();
 	}
 
-        public void setRiskCard(RiskCard c){
-            RiskCards.add(c);
+        public void setCard(RiskCard c){
+            cards.add(c);
         }
 
-        public Vector<RiskCard> getRiskCard(){
-            return RiskCards;
+        public Vector<RiskCard> getCard(){
+            return cards;
         }
 	
 	public void addArmies(int a){

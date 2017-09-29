@@ -3,7 +3,7 @@ package Risk;
 import java.util.Vector;
 
 
-public class Territory{
+public class RiskTerritory{
 	//Need get X,Y
 	protected int id;
         private int x;
@@ -14,7 +14,7 @@ public class Territory{
 	private int continent;
 	private Vector<Integer> adjacents;
 	
-	Territory(int i,String nm, int c, int xloc, int yloc){
+	RiskTerritory(int i,String nm, int c, int xloc, int yloc){
 		id = i;
 		name = nm;
 		continent = c;
@@ -73,7 +73,7 @@ public class Territory{
 		return continent;
 	}
 
-	public boolean isAdjacent(Territory t){
+	public boolean isAdjacent(RiskTerritory t){
 		return adjacents.contains(t.getId());
 	}
 
@@ -87,7 +87,7 @@ public class Territory{
 		armies+=n;
 	}
 
-      /*  public boolean territoryChained(Territory a,Territory next){
+      /*  public boolean territoryChained(RiskTerritory a,RiskTerritory next){
            if(player != a.getPlayer())
                return false;
             if(a.getPlayer() != next.getPlayer())

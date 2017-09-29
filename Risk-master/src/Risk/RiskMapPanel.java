@@ -10,7 +10,7 @@ import java.util.Vector;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
-  public class Map extends JPanel {
+  public class RiskMapPanel extends JPanel {
         private Image map;
         PixelGrabber pg;
         RiskGame risk;
@@ -18,7 +18,7 @@ import javax.swing.JPanel;
         private Image shield;
         public int armies;
 
-      public Map(){
+      public RiskMapPanel(){
 
           try{
                   this.map =ImageIO.read(getClass().getResourceAsStream("resources/map.jpg"));
@@ -31,7 +31,7 @@ import javax.swing.JPanel;
 
       }
 
-     public Map(RiskGame r){
+     public RiskMapPanel(RiskGame r){
          this();
          risk = r;
       }
@@ -118,7 +118,7 @@ import javax.swing.JPanel;
            if(state == 4)
                s = "Reinforce";
            if(state == 5)
-               s = "Trade RiskCards";
+               s = "Trade Cards";
            if(state == 6)
                s = "Start turn";
            if(state == 7)
@@ -160,7 +160,7 @@ import javax.swing.JPanel;
 
                g.setFont(h2);
                g.setColor(Color.red);
-               g.drawString("Occupy Territory", 360, 160);
+               g.drawString("Occupy RiskTerritory", 360, 160);
                g.drawString(Integer.toString(risk.defNum), 490, 305); //ARMIES
 
                g.drawRect(600, 230, 50, 27); //max
@@ -211,7 +211,7 @@ import javax.swing.JPanel;
 
                g.setFont(h2);
                g.setColor(Color.red);
-               g.drawString("Fortify Territory", 360, 160);
+               g.drawString("Fortify RiskTerritory", 360, 160);
                g.drawString(Integer.toString(risk.defNum), 490, 305); //ARMIES
 
                g.drawRect(600, 230, 50, 27); //max
@@ -245,9 +245,9 @@ import javax.swing.JPanel;
      *********************************************/
 
 
-           if(state == RiskGame.TRADE_RiskCardS){
-             int num = risk.curPlayer.getRiskCard().size();
-             Vector<RiskCard> hand = risk.curPlayer.getRiskCard();
+           if(state == RiskGame.TRADE_CARDS){
+             int num = risk.curPlayer.getCard().size();
+             Vector<RiskCard> hand = risk.curPlayer.getCard();
              g.setColor(Color.black);
              g.fillRect(250, 100, 500, 300);//Draw main window
 
@@ -257,12 +257,12 @@ import javax.swing.JPanel;
              Font f1 = new Font("Arial",Font.BOLD,15);
              g.setFont(names);
 
-            g.drawString("Trade RiskCards", 400, 160);
+            g.drawString("Trade Cards", 400, 160);
             if(num < 3){
                 
             g.drawRect(475, 350, 50, 30);//exit box
             g.setFont(f1);
-            g.drawString("You dont have enough RiskCards", 400, 320);
+            g.drawString("You dont have enough cards", 400, 320);
             g.drawString("Exit", 485, 370);
                 
             }
@@ -275,12 +275,12 @@ import javax.swing.JPanel;
                 for(int c = 0;c < num; c++){
                 g.drawString(risk.getCountryName(hand.elementAt(c).territory)
                         + " value = " +
-                        risk.curPlayer.getRiskCard().elementAt(c-1).value,
+                        risk.curPlayer.getCard().elementAt(c-1).value,
                         350, 250+(c*30));
 
                   if(c < num-1){
-                      temp = risk.curPlayer.getRiskCard().elementAt(c-1).value;
-                  if(temp == risk.curPlayer.getRiskCard().elementAt(c).value)
+                      temp = risk.curPlayer.getCard().elementAt(c-1).value;
+                  if(temp == risk.curPlayer.getCard().elementAt(c).value)
                       risk.attNum++;
                   }
 
@@ -296,7 +296,7 @@ import javax.swing.JPanel;
 
 
 
-           }//end RiskCard menu
+           }//end card menu
 
 
 

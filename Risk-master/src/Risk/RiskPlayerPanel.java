@@ -4,7 +4,7 @@
  */
 
 /*
- * PlayerPanelUI.java
+ * RiskPlayerPanel.java
  *
  * Created on Nov 18, 2010, 4:43:14 PM
  */
@@ -19,15 +19,15 @@ import java.awt.Graphics;
  *
  * @author cube
  */
-public class PlayerPanelUI extends javax.swing.JPanel {
+public class RiskPlayerPanel extends javax.swing.JPanel {
     RiskGame risk;
-    /** Creates new form PlayerPanelUI */
-    public PlayerPanelUI() {
+    /** Creates new form RiskPlayerPanel */
+    public RiskPlayerPanel() {
         initComponents();
         repaint();
     }
 
-    public PlayerPanelUI(RiskGame r){
+    public RiskPlayerPanel(RiskGame r){
         risk = r;
         initComponents();
         repaint();
