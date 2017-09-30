@@ -13,6 +13,13 @@ package Risk;
 
 import java.io.IOException;
 import javax.sound.midi.*;
+import javax.swing.JTextField;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.GroupLayout;
+import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 /**
  *
@@ -89,37 +96,51 @@ public class RiskStartGame extends java.awt.Frame {
         });
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Risk/resources/risk-logo.jpg"))); // NOI18N
-        jLabel1.setName("jLabel1"); // NOI18N
+        jLabel1.setName("jLabel1");
+        
+        JButton btnChooseMap = new JButton();
+        btnChooseMap.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent arg0) {
+        	}
+        });
+        btnChooseMap.setText("Choose Map");
+        btnChooseMap.setName("jButton1");
+        btnChooseMap.setEnabled(true);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(91, 91, 91)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE))
-                .addGap(87, 87, 87))
+        	jPanel1Layout.createParallelGroup(Alignment.TRAILING)
+        		.addGroup(jPanel1Layout.createSequentialGroup()
+        			.addContainerGap()
+        			.addGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
+        				.addGroup(jPanel1Layout.createSequentialGroup()
+        					.addComponent(jLabel1)
+        					.addContainerGap(43, Short.MAX_VALUE))
+        				.addGroup(jPanel1Layout.createSequentialGroup()
+        					.addGap(109)
+        					.addGroup(jPanel1Layout.createParallelGroup(Alignment.CENTER)
+        						.addComponent(jButton2, GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE)
+        						.addComponent(jButton3, GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE)
+        						.addComponent(btnChooseMap, GroupLayout.PREFERRED_SIZE, 113, GroupLayout.PREFERRED_SIZE)
+        						.addComponent(jButton1, GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE))
+        					.addGap(87))))
         );
         jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addGap(34, 34, 34)
-                .addComponent(jButton1)
-                .addGap(12, 12, 12)
-                .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton3)
-                .addContainerGap(42, Short.MAX_VALUE))
+        	jPanel1Layout.createParallelGroup(Alignment.LEADING)
+        		.addGroup(jPanel1Layout.createSequentialGroup()
+        			.addContainerGap()
+        			.addComponent(jLabel1)
+        			.addPreferredGap(ComponentPlacement.UNRELATED)
+        			.addComponent(btnChooseMap)
+        			.addGap(12)
+        			.addComponent(jButton1)
+        			.addPreferredGap(ComponentPlacement.RELATED)
+        			.addComponent(jButton2)
+        			.addPreferredGap(ComponentPlacement.UNRELATED)
+        			.addComponent(jButton3)
+        			.addContainerGap(42, Short.MAX_VALUE))
         );
+        jPanel1.setLayout(jPanel1Layout);
 
         add(jPanel1, java.awt.BorderLayout.CENTER);
 
@@ -174,6 +195,4 @@ public class RiskStartGame extends java.awt.Frame {
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    // End of variables declaration//GEN-END:variables
-
 }

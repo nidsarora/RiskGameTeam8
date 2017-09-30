@@ -55,13 +55,13 @@ public class RiskGame {
                 gameState = NEW_GAME;
 
                 //Temp
-		addPlayer("Tyler");
-                addPlayer("Koy");
-                addPlayer("Jebus");
+		        //addPlayer("Tyler");
+                //addPlayer("Koy");
+                //addPlayer("Jebus");
                 //Cause im lazy
 
                 initalPlayer();
-		loadMap();
+		        loadMap();
                 initializeDeck();
                 distubuteArmies();
 
