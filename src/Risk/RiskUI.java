@@ -41,15 +41,15 @@ public class RiskUI extends javax.swing.JFrame implements MouseListener {
 
         /*
         jPanel1 = new javax.swing.JPanel();
-        */ jPanel1 = new RiskMapPanel(risk);
+        */ jPanel1 = new Map(risk);
         /*
         jPanel3 = new javax.swing.JPanel();
-        */ jPanel3 = new RiskPlayerPanel(risk);
+        */ jPanel3 = new PlayerPanelUI(risk);
         statusLabel = new javax.swing.JLabel();
         AttackButton = new javax.swing.JButton();
         EndButton = new javax.swing.JButton();
         FortifyButton = new javax.swing.JButton();
-        CardButton = new javax.swing.JButton();
+        RiskCardButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance().getContext().getResourceMap(RiskUI.class);
@@ -108,16 +108,16 @@ public class RiskUI extends javax.swing.JFrame implements MouseListener {
         });
         jPanel3.add(FortifyButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(661, 10, 90, -1));
 
-        CardButton.setVisible(false);
-        CardButton.setFont(resourceMap.getFont("CardButton.font")); // NOI18N
-        CardButton.setText(resourceMap.getString("CardButton.text")); // NOI18N
-        CardButton.setName("CardButton"); // NOI18N
-        CardButton.addMouseListener(new java.awt.event.MouseAdapter() {
+        RiskCardButton.setVisible(false);
+        RiskCardButton.setFont(resourceMap.getFont("RiskCardButton.font")); // NOI18N
+        RiskCardButton.setText(resourceMap.getString("RiskCardButton.text")); // NOI18N
+        RiskCardButton.setName("RiskCardButton"); // NOI18N
+        RiskCardButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                CardButtonMouseClicked(evt);
+                RiskCardButtonMouseClicked(evt);
             }
         });
-        jPanel3.add(CardButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(438, 10, 90, -1));
+        jPanel3.add(RiskCardButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(438, 10, 90, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -180,10 +180,10 @@ public class RiskUI extends javax.swing.JFrame implements MouseListener {
       statusLabel.setText("Select a country move armies from");
     }//GEN-LAST:event_FortifyButtonMouseClicked
 
-    private void CardButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CardButtonMouseClicked
-        risk.setState(RiskGame.TRADE_CARDS);
+    private void RiskCardButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RiskCardButtonMouseClicked
+        risk.setState(RiskGame.TRADE_RiskCardS);
         jPanel1.repaint();
-    }//GEN-LAST:event_CardButtonMouseClicked
+    }//GEN-LAST:event_RiskCardButtonMouseClicked
 
 
     public static void ShowGUI() {
@@ -197,15 +197,15 @@ public class RiskUI extends javax.swing.JFrame implements MouseListener {
     private JPanel controlPanel1;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AttackButton;
-    private javax.swing.JButton CardButton;
+    private javax.swing.JButton RiskCardButton;
     private javax.swing.JButton EndButton;
     private javax.swing.JButton FortifyButton;
     /*
     private javax.swing.JPanel jPanel1;
-    */private RiskMapPanel jPanel1;
+    */private Map jPanel1;
     /*
     private javax.swing.JPanel jPanel3;
-    */ private RiskPlayerPanel jPanel3;
+    */ private PlayerPanelUI jPanel3;
     private javax.swing.JLabel statusLabel;
     // End of variables declaration//GEN-END:variables
 
@@ -264,10 +264,10 @@ public class RiskUI extends javax.swing.JFrame implements MouseListener {
           FortifyButton.setVisible(true);
           AttackButton.setText("Attack");
           AttackButton.setVisible(true);
-           if(risk.curPlayer.getCard().size() > 2)
-                CardButton.setVisible(true);
+           if(risk.curPlayer.getRiskCard().size() > 2)
+                RiskCardButton.setVisible(true);
             else
-                CardButton.setVisible(false);
+                RiskCardButton.setVisible(false);
       }
 
       if(risk.getState() == RiskGame.ATTACKING){
@@ -471,7 +471,7 @@ public class RiskUI extends javax.swing.JFrame implements MouseListener {
        }//..fortify phase
 
 
-       if(risk.getState() == RiskGame.TRADE_CARDS){
+       if(risk.getState() == RiskGame.TRADE_RiskCardS){
               if(y > 350 && y < 380 ){
                  if(x > 475 && x < 525){ //if exxti button pushed
                       risk.setState(RiskGame.ACTIVE_TURN);
@@ -485,7 +485,7 @@ public class RiskUI extends javax.swing.JFrame implements MouseListener {
 
 
 
-       }//end trade cards
+       }//end trade RiskCards
        
       System.out.println("("+x+", "+y+")");
 
