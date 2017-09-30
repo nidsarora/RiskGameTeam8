@@ -1,3 +1,10 @@
-# RiskGameTeam8
+Java Risk
+=============
 
-Risk toh lena hai, game bhi hona hai. 
+Java implemetation of Risk. 
+
+To Do
+-------
+
+1. Finish card usage
+2. Add network play
