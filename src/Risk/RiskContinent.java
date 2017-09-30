@@ -8,7 +8,7 @@ public class RiskContinent {
 	private String name;
 	private Vector<Integer> territories;
 	private int value;
-	Territory t;
+	RiskTerritory t;
 	
 	
 	RiskContinent(String nm, Vector<Integer> t, int v){
@@ -29,13 +29,13 @@ public class RiskContinent {
 		return value;
 	}
 	
-	public boolean isTerritoryOf(Territory t){
+	public boolean isTerritoryOf(RiskTerritory t){
 		return (territories.contains(t.getId()));
 	}
 	
 	public boolean isContinentCaptured(RiskPlayer p){
 		Vector<Integer> t1 = new Vector<Integer>();
-		Vector<Territory> t2 = p.getOccupiedTerritories();
+		Vector<RiskTerritory> t2 = p.getOccupiedTerritories();
                 
 		for (int c = 0; c < t2.size(); c++)
 			t1.add(t2.elementAt(c).getId());              

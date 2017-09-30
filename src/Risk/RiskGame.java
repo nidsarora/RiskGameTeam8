@@ -17,7 +17,7 @@ public class RiskGame {
         public static final int ACTIVE_TURN = 2;
         public static final int TURN_BONUS = 3;
         public static final int REINFORCE = 4;
-        public static final int TRADE_RiskCardS = 5;
+        public static final int TRADE_CARDS = 5;
         public static final int START_TURN = 6;
         public static final int ATTACK = 7;
         public static final int ATTACKING = 8;
@@ -32,7 +32,7 @@ public class RiskGame {
         
         public static final int GAME_OVER = 99;
 
-	static public Vector<Territory> territories = new Vector<Territory>();
+	static public Vector<RiskTerritory> territories = new Vector<RiskTerritory>();
 	public Vector<RiskContinent> continents = new Vector<RiskContinent>();
         static public Vector<RiskPlayer> players = new Vector<RiskPlayer>();
         public Vector<RiskCard> deck = new Vector<RiskCard>();
@@ -41,8 +41,8 @@ public class RiskGame {
         public RiskPlayer active;
 
         static private int gameState;
-        public Territory aTerritory;
-        public Territory dTerritory;
+        public RiskTerritory aTerritory;
+        public RiskTerritory dTerritory;
         public int defNum = 0;
         public int attNum = 0;
         public int iter = 0;
@@ -55,13 +55,13 @@ public class RiskGame {
                 gameState = NEW_GAME;
 
                 //Temp
-		addPlayer("Tyler");
-                addPlayer("Koy");
-                addPlayer("Jebus");
+		        //addPlayer("Tyler");
+                //addPlayer("Koy");
+                //addPlayer("Jebus");
                 //Cause im lazy
 
                 initalPlayer();
-		loadMap();
+		        loadMap();
                 initializeDeck();
                 distubuteArmies();
 
@@ -119,15 +119,15 @@ public class RiskGame {
             deck.add(new RiskCard(i%3,i));
       }
 
-      public void drawRiskCard(RiskPlayer p){
+      public void drawCard(RiskPlayer p){
             Random draw = new Random();
             System.out.println(deck.size());
-            int RiskCard = draw.nextInt(deck.size());
+            int card = draw.nextInt(deck.size());
 
-            RiskCard c = deck.elementAt(RiskCard);
-            deck.remove(deck.elementAt(RiskCard));
+            RiskCard c = deck.elementAt(card);
+            deck.remove(deck.elementAt(card));
             deck.trimToSize();
-            p.setRiskCard(c);
+            p.setCard(c);
       }
 
       public int turnBonus(){
@@ -218,7 +218,7 @@ public class RiskGame {
                                                 x = Integer.parseInt(mapfile.next());
                                                 y = Integer.parseInt(mapfile.next());
 						
-						territories.add(new Territory(id,name,continent,x,y));
+						territories.add(new RiskTerritory(id,name,continent,x,y));
 						//System.out.println(id + " " + name + " " + continent);
 						next = mapfile.next();
 						if (next.equals(";;")) done = true;
@@ -332,7 +332,7 @@ public class RiskGame {
 
           if(getState() == ATTACKING){
               if(country != -1){//not a country
-                Territory d = territories.elementAt(country); //defending territory
+                RiskTerritory d = territories.elementAt(country); //defending territory
                 if(getOwnership(country) == curPlayer.getPlayerIndex())
                         return "You own that territory.";
                       if(aTerritory.isAdjacent(d)){//if its adjacent...
@@ -358,7 +358,7 @@ public class RiskGame {
                 }//end is curPlayers country
           } //end attack with
 
-          if(getState() == TRADE_RiskCardS){
+          if(getState() == TRADE_CARDS){
 
 
 
@@ -376,8 +376,8 @@ public class RiskGame {
           if(getState() == START_TURN){
 
              curPlayer.addArmies(turnBonus()); //recive turn bonus
-             if(curPlayer.getRiskCard().size() > 5)
-                setState(TRADE_RiskCardS);
+             if(curPlayer.getCard().size() > 5)
+                setState(TRADE_CARDS);
              else
                setState(REINFORCE);
           }
@@ -443,8 +443,8 @@ public class RiskGame {
 
       public void capture(){
           int armies = defNum;
-          Territory d = dTerritory;
-          Territory a = aTerritory;
+          RiskTerritory d = dTerritory;
+          RiskTerritory a = aTerritory;
           defender.looseTerritory(d);
           active.occupyTerritory(d);
 
@@ -460,10 +460,10 @@ public class RiskGame {
           a.looseArmies(armies);
           d.addArmies(armies);
 
-          //Draw a RiskCard
+          //Draw a card
           if(drawn == false){
-            drawRiskCard(curPlayer);
-            System.out.println("RiskCard "+getCountryName(curPlayer.getRiskCard().firstElement().territory));
+            drawCard(curPlayer);
+            System.out.println("RiskCard "+getCountryName(curPlayer.getCard().firstElement().territory));
             drawn = true;
           }
 
@@ -522,7 +522,7 @@ public class RiskGame {
 
       }
 
-      public boolean occupyTerritory(Territory t){
+      public boolean occupyTerritory(RiskTerritory t){
         //Make sure there are availble armies
         if(curPlayer.getNumberOfArmies() > 0)
         { //Checks if the territory is occupied by the current player.
@@ -542,7 +542,7 @@ public class RiskGame {
 
 
           if(curPlayer.getNumberOfArmies() > 0){
-            Territory t = territories.elementAt(id);
+            RiskTerritory t = territories.elementAt(id);
             t.setPlayer(curPlayer);
             curPlayer.occupyTerritory(t);
             t.addArmy();
@@ -573,7 +573,7 @@ public class RiskGame {
           return players;
       }
 
-      public Territory getTerritoryAt(int i){
+      public RiskTerritory getTerritoryAt(int i){
          if(i > 0)
             return territories.elementAt(i);
          return null;

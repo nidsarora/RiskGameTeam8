@@ -10,6 +10,14 @@
  */
 
 package Risk;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.GroupLayout;
+import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.JLabel;
+import java.awt.Color;
+import javax.swing.JComboBox;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 /**
  *
@@ -21,7 +29,7 @@ public class RiskAddPlayerUI extends java.awt.Frame {
         initComponents();
         setLocationRelativeTo(null); 
     }
-
+    boolean added;
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -32,9 +40,15 @@ public class RiskAddPlayerUI extends java.awt.Frame {
 
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-
+        Integer[] numbers = { 3,4,5,6};
+      //Create the combo box, select item at index 4.
+      //Indices start at 0, so 4 specifies the pig.
+      JComboBox comboBox = new JComboBox(numbers);
+//        JComboBox<String> jComboBox1 = new javax.swing.JComboBox();
+//        jComboBox1.addItem("3");
+//        jComboBox1.addItem("4");
+//        jComboBox1.addItem("5");
+//        jComboBox1.addItem("6");
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 exitForm(evt);
@@ -44,46 +58,84 @@ public class RiskAddPlayerUI extends java.awt.Frame {
         jPanel1.setBackground(new java.awt.Color(1, 1, 1));
         jPanel1.setName("jPanel1"); // NOI18N
 
-        jButton1.setText("Add");
+        jButton1.setText("Ok");
         jButton1.setName("jButton1"); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-
-        jLabel1.setForeground(new java.awt.Color(254, 254, 254));
-        jLabel1.setText("Enter RiskPlayer Name");
-        jLabel1.setName("jLabel1"); // NOI18N
-
-        jTextField1.setName("jTextField1"); // NOI18N
+        
+        JLabel lblEnterTheNumber = new JLabel();
+        lblEnterTheNumber.setText("Enter the number of players");
+        lblEnterTheNumber.setName("jLabel1");
+        lblEnterTheNumber.setForeground(new Color(254, 254, 254));
+        
+        //JComboBox comboBox = new JComboBox();
+        comboBox.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent event) {
+        		JComboBox cb1=(JComboBox)event.getSource();
+        		Integer numPlayers=(Integer)cb1.getSelectedItem();
+        		added=false;
+        		if(numPlayers==3){
+        			RiskGame.addPlayer("Player1");
+        			RiskGame.addPlayer("Player2");
+        			RiskGame.addPlayer("Player3");
+        		}
+        		else if(numPlayers==4)  {
+        			RiskGame.addPlayer("Player1");
+        			RiskGame.addPlayer("Player2");
+        			RiskGame.addPlayer("Player3");
+        			RiskGame.addPlayer("Player4");
+        		}
+        		else if(numPlayers==5) {
+        			RiskGame.addPlayer("Player1");
+        			RiskGame.addPlayer("Player2");
+        			RiskGame.addPlayer("Player3");
+        			RiskGame.addPlayer("Player4");
+        			RiskGame.addPlayer("Player5");
+        		}
+        		else if(numPlayers==6) {
+        			RiskGame.addPlayer("Player1");
+        			RiskGame.addPlayer("Player2");
+        			RiskGame.addPlayer("Player3");
+        			RiskGame.addPlayer("Player4");
+        			RiskGame.addPlayer("Player5");
+        			RiskGame.addPlayer("Player6");
+        		}
+        		 added=true;
+        		}
+        
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jLabel1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE))
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(12, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
-                .addGap(12, 12, 12))
+        	jPanel1Layout.createParallelGroup(Alignment.TRAILING)
+        		.addGroup(jPanel1Layout.createSequentialGroup()
+        			.addContainerGap(202, Short.MAX_VALUE)
+        			.addComponent(lblEnterTheNumber, GroupLayout.PREFERRED_SIZE, 197, GroupLayout.PREFERRED_SIZE)
+        			.addGap(114))
+        		.addGroup(jPanel1Layout.createSequentialGroup()
+        			.addContainerGap(377, Short.MAX_VALUE)
+        			.addComponent(jButton1, GroupLayout.PREFERRED_SIZE, 124, GroupLayout.PREFERRED_SIZE)
+        			.addGap(12))
+        		.addGroup(jPanel1Layout.createSequentialGroup()
+        			.addGap(239)
+        			.addComponent(comboBox, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+        			.addContainerGap(243, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(20, 20, 20))
+        	jPanel1Layout.createParallelGroup(Alignment.TRAILING)
+        		.addGroup(jPanel1Layout.createSequentialGroup()
+        			.addContainerGap()
+        			.addComponent(lblEnterTheNumber)
+        			.addPreferredGap(ComponentPlacement.RELATED)
+        			.addComponent(comboBox, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+        			.addGap(12)
+        			.addComponent(jButton1)
+        			.addGap(20))
         );
+        jPanel1.setLayout(jPanel1Layout);
 
         add(jPanel1, java.awt.BorderLayout.CENTER);
 
@@ -96,23 +148,18 @@ public class RiskAddPlayerUI extends java.awt.Frame {
     }//GEN-LAST:event_exitForm
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String name =jTextField1.getText();
-        if (!name.equals("")){
-           boolean added =  RiskGame.addPlayer(name);
-           if(added == true)
-               System.out.println(name + " added.");
+           if(added == true) {
+               System.out.println(" added.");
                setVisible(false);
-                    StartGameUI.jButton1.setEnabled(true);
+                RiskStartGame.jButton1.setEnabled(true);
+                    }
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+   //GEN-LAST:event_jButton1ActionPerformed
 
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    // End of variables declaration//GEN-END:variables
-
+    private javax.swing.JComboBox comboBox;
 }
