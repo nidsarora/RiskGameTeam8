@@ -57,7 +57,7 @@ import javax.swing.JPanel;
 
        super.paintComponents(g);
        g.drawImage(map, 0, 0, null);
-       g.setColor(Color.black);
+       g.setColor(Color.white);
     
        int i = risk.numOfTerroitories();
        for (int c = 0; c < i; c ++){
@@ -94,7 +94,7 @@ import javax.swing.JPanel;
            
            loc = risk.fillDrawMap(c, playerIndex);
            g.fillArc(loc[0], loc[1], 30, 30, 0, 360);
-           g.setColor(Color.black);
+           g.setColor(Color.white);
            g.drawString(armies, loc[0]+10+align, loc[1]+20);
 
          }//end draw cilcles and armies
@@ -150,7 +150,7 @@ import javax.swing.JPanel;
                    risk.defNum = min;
                //risk.defNum  Store the armies to move here in RiskUI
 
-               g.setColor(Color.black);
+               g.setColor(Color.white);
                Font h2 = new Font("Arial",Font.BOLD,36);
                Font h3 = new Font("Arial",Font.BOLD,20);
                g.fillRect(250, 100, 500, 300);//Draw main window
@@ -201,7 +201,7 @@ import javax.swing.JPanel;
 
                //risk.defNum  Store the armies to move here in RiskUI
 
-               g.setColor(Color.black);
+               g.setColor(Color.white);
                Font h2 = new Font("Arial",Font.BOLD,36);
                Font h3 = new Font("Arial",Font.BOLD,20);
                g.fillRect(250, 100, 500, 300);//Draw main window
@@ -248,7 +248,7 @@ import javax.swing.JPanel;
            if(state == RiskGame.TRADE_CARDS){
              int num = risk.curPlayer.getCard().size();
              Vector<RiskCard> hand = risk.curPlayer.getCard();
-             g.setColor(Color.black);
+             g.setColor(Color.white);
              g.fillRect(250, 100, 500, 300);//Draw main window
 
 
@@ -305,7 +305,7 @@ import javax.swing.JPanel;
            || state == RiskGame.ATTACKING
            || state == RiskGame.ATTACK_PHASE)
            && risk.aTerritory != null){
-               g.drawString("Attacking with "+ risk.aTerritory.getName(),10,460);
+               g.drawString("Attacking white "+ risk.aTerritory.getName(),10,460);
            }
            
           if(state == RiskGame.ATTACK_PHASE){
@@ -315,7 +315,7 @@ import javax.swing.JPanel;
           // int att = 2;
           // int def = 3;
 
-               g.setColor(Color.black);
+               g.setColor(Color.white);
                g.fillRect(250, 100, 500, 300);//Draw main window
 
                g.setColor(Color.white);
@@ -338,7 +338,7 @@ import javax.swing.JPanel;
 
 
                if(risk.active == risk.curPlayer){
-                   g.drawString("How many armies to attack with?",390,180);
+                   g.drawString("How many armies to attack white?",390,180);
                    g.drawImage(army, 300, 280, this);
                    g.setColor(Color.white);
 
@@ -346,7 +346,7 @@ import javax.swing.JPanel;
                     g.fillRect(420, 250, 40, 40);
                     g.fillRect(480, 250, 40, 40);
                     g.fillRect(540, 250, 40, 40);
-                    g.setColor(Color.black);
+                    g.setColor(Color.white);
                     //die 1
                     g.fillArc(435, 265, 10, 10, 0, 360);
                     //die 2
@@ -362,7 +362,7 @@ import javax.swing.JPanel;
                    if(att == 3){
                        g.fillRect(460,250,40,40);
                        g.fillRect(510,250,40,40);
-                       g.setColor(Color.black);
+                       g.setColor(Color.white);
                        g.fillArc(475, 265, 10, 10, 0, 360);
                        g.fillArc(515, 255, 10, 10, 0, 360);
                        g.fillArc(535, 275, 10, 10, 0, 360);
@@ -370,7 +370,7 @@ import javax.swing.JPanel;
                    }
                    if(att == 2){
                         g.fillRect(480,250,40,40);
-                        g.setColor(Color.black);
+                        g.setColor(Color.white);
                         g.fillArc(495, 265, 10, 10, 0, 360);
                    }
                }//end attttacker painting
@@ -383,20 +383,20 @@ import javax.swing.JPanel;
  * *********************************************************/
 
                if(risk.active == risk.defender){
-                   g.drawString("How many armies to defend with?",390,180);
+                   g.drawString("How many armies to defend white?",390,180);
                    g.drawImage(shield, 630, 280, this);
                    g.setColor(Color.white);
                    if(def > 1 && risk.attNum > 1){
                        g.fillRect(460,250,40,40);
                        g.fillRect(510,250,40,40);
-                       g.setColor(Color.BLACK);
+                       g.setColor(Color.white);
                        g.fillArc(475, 265, 10, 10, 0, 360);
                        g.fillArc(515, 255, 10, 10, 0, 360);
                        g.fillArc(535, 275, 10, 10, 0, 360);
                    }
                    else{
                         g.fillRect(480,250,40,40);
-                        g.setColor(Color.black);
+                        g.setColor(Color.white);
                         g.fillArc(495, 265, 10, 10, 0, 360);
                    }
 

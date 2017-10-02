@@ -102,7 +102,7 @@ public class RiskGame {
             int armies = 0;
 
             if(numOfPlayers == 3)
-                armies = 5;// 35;
+                armies = 35;// 35;
             if(numOfPlayers == 4)
                 armies = 30; //temp 30
             if(numOfPlayers == 5)
@@ -177,7 +177,7 @@ public class RiskGame {
                 int y;
 		Vector<Integer> adjacents;
 		Vector<Integer> contains;
-                InputStream file = RiskGame.class.getResourceAsStream("resources/mapfile.txt");
+                InputStream file = RiskGame.class.getResourceAsStream("resources/mapfile-new.txt");
 		//File file = new File("mapfile.txt");
 		
 		
