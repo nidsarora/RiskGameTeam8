@@ -43,8 +43,8 @@ public class RiskGame {
         static private int gameState;
         public RiskTerritory aTerritory;
         public RiskTerritory dTerritory;
-        public int defNum = 0;
-        public int attNum = 0;
+        public int defenseNum = 0;
+        public int attackNum = 0;
         public int iter = 0;
         public boolean drawn;
 
@@ -53,13 +53,6 @@ public class RiskGame {
 
                 //Setup Board
                 gameState = NEW_GAME;
-
-                //Temp
-		        //addPlayer("Tyler");
-                //addPlayer("Koy");
-                //addPlayer("Jebus");
-                //Cause im lazy
-
                 initalPlayer();
 		        loadMap();
                 initializeDeck();
@@ -153,7 +146,7 @@ public class RiskGame {
 
       public int collectReinforcementsFromContinent(){
         int continentBonus = 0;
-	int numOfCont = continents.size();
+	    int numOfCont = continents.size();
         // # of continents = 6
         for (int i = 0; i < numOfCont; i++){
 	    boolean captured = continents.elementAt(i).isContinentCaptured(curPlayer); 
@@ -387,38 +380,47 @@ public class RiskGame {
            
            return "";
       }
-          
+      
+      /**
+       * Contains the logic who wins or loses in the battle including the random 
+       * dice logic
+       *
+       * @param dTerritory  defense territory
+       * @param aTerritory  attacker territory
+       * @param att value of each roll of attacker
+       * @param def value of each roll of defender
+       */     
       public void engageBattle(){
 
            
-           Integer[] att = new Integer[attNum];
-           Integer[] def = new Integer[defNum];
+           Integer[] att = new Integer[attackNum];
+           Integer[] def = new Integer[defenseNum];
            Random attDice = new Random();
 
 
             // get value for each roll
-            for (int i = 0; i < attNum; i++)
+            for (int i = 0; i < attackNum; i++)
                 att[i] = attDice.nextInt(6) + 1;
-           for (int i = 0; i < defNum; i++)
+           for (int i = 0; i < defenseNum; i++)
                def[i] = attDice.nextInt(6) + 1;
              Arrays.sort(att, Collections.reverseOrder());
              Arrays.sort(def,Collections.reverseOrder());
 
 
-            if(attNum == 1){
+            if(attackNum == 1){
                System.out.println(att[0] + " vs " +def[0]);
                 if(att[0] > def[0])
                     dTerritory.looseArmy();
                 else
                     aTerritory.looseArmy();
             }
-             if(attNum > 1){ //attacking with more than 1
+             if(attackNum > 1){ //attacking with more than 1
                System.out.println(att[0] + " vs " +def[0]);
                  if(att[0] > def[0])
                      dTerritory.looseArmy();
                  else
                      aTerritory.looseArmy();
-                 if(defNum == 2){
+                 if(defenseNum == 2){
                     System.out.print(att[1] + " vs " +def[1]);
                      if(att[1] > def[1])
                          dTerritory.looseArmy();
@@ -442,7 +444,7 @@ public class RiskGame {
       }
 
       public void capture(){
-          int armies = defNum;
+          int armies = defenseNum;
           RiskTerritory d = dTerritory;
           RiskTerritory a = aTerritory;
           defender.looseTerritory(d);
@@ -473,8 +475,8 @@ public class RiskGame {
 
           setState(ACTIVE_TURN);
           //Reset battle variables
-          defNum = 0;
-          attNum = 0;
+          defenseNum = 0;
+          attackNum = 0;
           dTerritory = null;
           aTerritory = null;
 
@@ -592,11 +594,11 @@ public class RiskGame {
      }
 
     public void setAttack(int num) {
-        attNum = num;
+        attackNum = num;
     }
 
     public void setDefend(int num){
-        defNum = num;
+        defenseNum = num;
     }
 
 }

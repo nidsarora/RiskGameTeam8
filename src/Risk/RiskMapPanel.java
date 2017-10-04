@@ -144,24 +144,24 @@ import javax.swing.JPanel;
            if(state == RiskGame.CAPTURE){
 
                int max = risk.aTerritory.getArmies();
-               int min = risk.attNum;
+               int min = risk.attackNum;
 
-               if(risk.defNum < min)
-                   risk.defNum = min;
-               //risk.defNum  Store the armies to move here in RiskUI
+               if(risk.defenseNum < min)
+                   risk.defenseNum = min;
+               //risk.defenseNum  Store the armies to move here in RiskUI
 
                g.setColor(Color.white);
                Font h2 = new Font("Arial",Font.BOLD,36);
                Font h3 = new Font("Arial",Font.BOLD,20);
                g.fillRect(250, 100, 500, 300);//Draw main window
 
-               g.setColor(Color.white);
+               g.setColor(Color.black);
                g.drawString("How many armies to move?", 430, 200);
 
                g.setFont(h2);
                g.setColor(Color.red);
                g.drawString("Occupy RiskTerritory", 360, 160);
-               g.drawString(Integer.toString(risk.defNum), 490, 305); //ARMIES
+               g.drawString(Integer.toString(risk.defenseNum), 490, 305); //ARMIES
 
                g.drawRect(600, 230, 50, 27); //max
                g.drawRect(520, 230, 50, 27); //inc
@@ -175,7 +175,7 @@ import javax.swing.JPanel;
 
 
                g.setFont(h3);
-               g.setColor(Color.white);
+               g.setColor(Color.black);
 
                g.drawRect(460, 325, 85, 30); //move box
 
@@ -199,20 +199,20 @@ import javax.swing.JPanel;
                int min = 0;
 
 
-               //risk.defNum  Store the armies to move here in RiskUI
+               //risk.defenseNum  Store the armies to move here in RiskUI
 
                g.setColor(Color.white);
                Font h2 = new Font("Arial",Font.BOLD,36);
                Font h3 = new Font("Arial",Font.BOLD,20);
                g.fillRect(250, 100, 500, 300);//Draw main window
 
-               g.setColor(Color.white);
+               g.setColor(Color.black);
                g.drawString("How many armies to move?", 430, 200);
 
                g.setFont(h2);
                g.setColor(Color.red);
                g.drawString("Fortify RiskTerritory", 360, 160);
-               g.drawString(Integer.toString(risk.defNum), 490, 305); //ARMIES
+               g.drawString(Integer.toString(risk.defenseNum), 490, 305); //ARMIES
 
                g.drawRect(600, 230, 50, 27); //max
                g.drawRect(520, 230, 50, 27); //inc
@@ -226,7 +226,7 @@ import javax.swing.JPanel;
 
 
                g.setFont(h3);
-               g.setColor(Color.white);
+               g.setColor(Color.black);
 
                g.drawRect(460, 325, 85, 30); //move box
 
@@ -252,7 +252,7 @@ import javax.swing.JPanel;
              g.fillRect(250, 100, 500, 300);//Draw main window
 
 
-             g.setColor(Color.white);
+             g.setColor(Color.black);
              Font names = new Font("Arial",Font.BOLD,36);
              Font f1 = new Font("Arial",Font.BOLD,15);
              g.setFont(names);
@@ -281,7 +281,7 @@ import javax.swing.JPanel;
                   if(c < num-1){
                       temp = risk.curPlayer.getCard().elementAt(c-1).value;
                   if(temp == risk.curPlayer.getCard().elementAt(c).value)
-                      risk.attNum++;
+                      risk.attackNum++;
                   }
 
 
@@ -318,7 +318,7 @@ import javax.swing.JPanel;
                g.setColor(Color.white);
                g.fillRect(250, 100, 500, 300);//Draw main window
 
-               g.setColor(Color.white);
+               g.setColor(Color.black);
                Font names = new Font("Arial",Font.BOLD,36);
                Font f1 = new Font("Arial",Font.BOLD,15);
                g.setFont(names);
@@ -346,7 +346,7 @@ import javax.swing.JPanel;
                     g.fillRect(420, 250, 40, 40);
                     g.fillRect(480, 250, 40, 40);
                     g.fillRect(540, 250, 40, 40);
-                    g.setColor(Color.white);
+                    g.setColor(Color.black);
                     //die 1
                     g.fillArc(435, 265, 10, 10, 0, 360);
                     //die 2
@@ -362,7 +362,7 @@ import javax.swing.JPanel;
                    if(att == 3){
                        g.fillRect(460,250,40,40);
                        g.fillRect(510,250,40,40);
-                       g.setColor(Color.white);
+                       g.setColor(Color.black);
                        g.fillArc(475, 265, 10, 10, 0, 360);
                        g.fillArc(515, 255, 10, 10, 0, 360);
                        g.fillArc(535, 275, 10, 10, 0, 360);
@@ -370,7 +370,7 @@ import javax.swing.JPanel;
                    }
                    if(att == 2){
                         g.fillRect(480,250,40,40);
-                        g.setColor(Color.white);
+                        g.setColor(Color.black);
                         g.fillArc(495, 265, 10, 10, 0, 360);
                    }
                }//end attttacker painting
@@ -383,20 +383,20 @@ import javax.swing.JPanel;
  * *********************************************************/
 
                if(risk.active == risk.defender){
-                   g.drawString("How many armies to defend white?",390,180);
+                   g.drawString("How many armies to defend with?",390,180);
                    g.drawImage(shield, 630, 280, this);
                    g.setColor(Color.white);
-                   if(def > 1 && risk.attNum > 1){
+                   if(def > 1 && risk.attackNum > 1){
                        g.fillRect(460,250,40,40);
                        g.fillRect(510,250,40,40);
-                       g.setColor(Color.white);
+                       g.setColor(Color.black);
                        g.fillArc(475, 265, 10, 10, 0, 360);
                        g.fillArc(515, 255, 10, 10, 0, 360);
                        g.fillArc(535, 275, 10, 10, 0, 360);
                    }
                    else{
                         g.fillRect(480,250,40,40);
-                        g.setColor(Color.white);
+                        g.setColor(Color.black);
                         g.fillArc(495, 265, 10, 10, 0, 360);
                    }
 

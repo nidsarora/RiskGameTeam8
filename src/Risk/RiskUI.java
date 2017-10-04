@@ -148,8 +148,8 @@ public class RiskUI extends javax.swing.JFrame implements MouseListener {
             risk.dTerritory = null;
             if(risk.active == risk.defender )
                 risk.active = risk.curPlayer;
-            risk.defNum = 0;
-            risk.attNum = 0;
+            risk.defenseNum = 0;
+            risk.attackNum = 0;
             AttackButton.setText("Attack");
             EndButton.setVisible(true);
             FortifyButton.setVisible(true);
@@ -280,12 +280,12 @@ public class RiskUI extends javax.swing.JFrame implements MouseListener {
 
      if(risk.getState() == RiskGame.ATTACK_PHASE){
            // jInternalFrame1.setVisible(true);
-           int att = risk.aTerritory.getArmies();
-           int def = risk.dTerritory.getArmies();
+           int attackArmies = risk.aTerritory.getArmies();
+           int defenseArmies = risk.dTerritory.getArmies();
            int numofatt = 0;
            //If attackers turn
            if(risk.active == risk.curPlayer){
-            if(att > 3){
+           if(attackArmies > 3){
                 if(y > 250 && y < 280){//if in y coord
                     if(x > 420 && x < 460) //If dice one
                        numofatt = 1;
@@ -295,7 +295,7 @@ public class RiskUI extends javax.swing.JFrame implements MouseListener {
                         numofatt = 3;
                 }//in y coord
             }//if attcking with 3
-               if(att == 3){//if attakking with two
+               if(attackArmies == 3){//if attakking with two
                    if(y > 250 && y < 280){
                        if(x > 460 && x < 500)
                            numofatt = 1;
@@ -304,7 +304,7 @@ public class RiskUI extends javax.swing.JFrame implements MouseListener {
                    }//in y coord
                }//end if can attack with two
 
-               if(att == 2){//can only attack with one
+               if(attackArmies == 2){//can only attack with one
                        if(y > 250 && y < 280){
                             if(x > 480 && x < 520)
                                 numofatt = 1;
@@ -323,7 +323,7 @@ public class RiskUI extends javax.swing.JFrame implements MouseListener {
            
            //If defenders turn
            else if(risk.active == risk.defender){
-                if(def > 1 && risk.attNum > 1){
+                if(defenseArmies > 1 && risk.attackNum > 1){
                    if(y > 250 && y < 280){
                        if(x > 460 && x < 500)
                            numofatt = 1;
@@ -341,13 +341,13 @@ public class RiskUI extends javax.swing.JFrame implements MouseListener {
                if(numofatt > 0){
                     risk.setDefend(numofatt);
                     risk.engageBattle();
-                    if(def - risk.dTerritory.getArmies() == 1)
+                    if(defenseArmies - risk.dTerritory.getArmies() == 1)
                         statusLabel.setText(risk.curPlayer.getName()+ " has destroyed an army");
-                    else if(def - risk.dTerritory.getArmies() == 2)
+                    else if(defenseArmies - risk.dTerritory.getArmies() == 2)
                         statusLabel.setText(risk.curPlayer.getName()+ " has destroyed two armies");
-                    else if(att - risk.aTerritory.getArmies() == 1)
+                    else if(attackArmies - risk.aTerritory.getArmies() == 1)
                         statusLabel.setText(risk.curPlayer.getName()+ " has lost an army");
-                    else if(att - risk.aTerritory.getArmies() == 2)
+                    else if(attackArmies - risk.aTerritory.getArmies() == 2)
                         statusLabel.setText(risk.curPlayer.getName()+ " has lost two armies");
 
                     if(risk.aTerritory.getArmies() == 1){
@@ -356,8 +356,8 @@ public class RiskUI extends javax.swing.JFrame implements MouseListener {
                         AttackButton.setText("Attack");
                         FortifyButton.setVisible(true);
                         EndButton.setVisible(true);
-                        risk.defNum = 0;
-                        risk.attNum = 0;
+                        risk.defenseNum = 0;
+                        risk.attackNum = 0;
                         risk.dTerritory = null;
                         risk.aTerritory = null;
                     }
@@ -372,33 +372,33 @@ public class RiskUI extends javax.swing.JFrame implements MouseListener {
            AttackButton.setVisible(false);
            AttackButton.setText("Attack");
            int max = risk.aTerritory.getArmies() -1;
-           int min = risk.attNum;
+           int min = risk.attackNum;
            if(y > 230 && y < 257){//if y is correct
                if(x > 600 && x < 650)//if max
-                   risk.defNum = risk.aTerritory.getArmies() -1; //max
+                   risk.defenseNum = risk.aTerritory.getArmies() -1; //max
                if(x > 520 && x < 570){ //if inc
-                    if(risk.defNum < max)
-                      risk.defNum++;
+                    if(risk.defenseNum < max)
+                      risk.defenseNum++;
                     else
                        statusLabel.setText("Maximum units already selected");
                }//end if sub
                if(x > 440 && x < 490){//if dec
-               if(risk.defNum > min)
-                       risk.defNum--;
+               if(risk.defenseNum > min)
+                       risk.defenseNum--;
                    else
                        statusLabel.setText("Minimum units already selected");
                }//end if add
                if(x > 360 && x < 410)//min
-                   risk.defNum = min;
+                   risk.defenseNum = min;
            }//end if y coord
 
            if(x > 460 && x < 545){//move has ben clicked
                if(y > 325 && y < 355){//then occupy the territory
                   AttackButton.setVisible(true);
-                  if(risk.defNum == 1)
+                  if(risk.defenseNum == 1)
                      statusLabel.setText("1 army moved to "+risk.dTerritory.getName());
                   else
-                     statusLabel.setText(risk.defNum+" armies moved to "+risk.dTerritory.getName());
+                     statusLabel.setText(risk.defenseNum+" armies moved to "+risk.dTerritory.getName());
 
                  EndButton.setVisible(true);
                  FortifyButton.setVisible(true);
@@ -427,42 +427,42 @@ public class RiskUI extends javax.swing.JFrame implements MouseListener {
 
            if(y > 230 && y < 257){//if y is correct
              if(x > 600 && x < 650)//if max
-               if(risk.defNum == (from -1))
+               if(risk.defenseNum == (from -1))
                  statusLabel.setText("Maximum units already selected");
                else
-                 risk.defNum = (from - 1);//all but one
+                 risk.defenseNum = (from - 1);//all but one
              if(x > 520 && x < 570){ //if inc
-                if(risk.defNum < (from - 1))
-                   risk.defNum++;
+                if(risk.defenseNum < (from - 1))
+                   risk.defenseNum++;
                  else
                    statusLabel.setText("Maximum units already selected");
              }//end if inc
              if(x > 440 && x < 490){//if dec
-               if(risk.defNum > (from - 1))
-                       risk.defNum--;
+               if(risk.defenseNum > (from - 1))
+                       risk.defenseNum--;
                    else
                        statusLabel.setText("Minimum units already selected");
              }//end if add
                if(x > 360 && x < 410)//min
-                  if(risk.defNum == 0)
+                  if(risk.defenseNum == 0)
                     statusLabel.setText("Minimum units already selected");
                   else
-                   risk.defNum = 0;
+                   risk.defenseNum = 0;
            }//end if y coord
 
 
            if(x > 460 && x < 545){//move has ben clicked
                if(y > 325 && y < 355){//then occupy the territory
                   AttackButton.setVisible(false);
-                  if(risk.defNum == 1)
+                  if(risk.defenseNum == 1)
                      statusLabel.setText("1 army moved to "+risk.dTerritory.getName());
                   else
-                     statusLabel.setText(risk.defNum+" armies moved to "+risk.dTerritory.getName());
+                     statusLabel.setText(risk.defenseNum+" armies moved to "+risk.dTerritory.getName());
 
                  EndButton.setVisible(true);
                  FortifyButton.setVisible(false);
-                 risk.aTerritory.looseArmies(risk.defNum);
-                 risk.dTerritory.addArmies(risk.defNum);
+                 risk.aTerritory.looseArmies(risk.defenseNum);
+                 risk.dTerritory.addArmies(risk.defenseNum);
                  risk.setState(RiskGame.ACTIVE_TURN);
                }       //end y
            }//end x for movwe
