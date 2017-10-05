@@ -1005,7 +1005,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			EndButton.setVisible(true);
 			FortifyButton.setVisible(true);
 			AttackButton.setText("Attack");
-			AttackButton.setVisible(true);
+			AttackButton.setVisible(false);
 			if (risk.curPlayer.getCard().size() > 2)
 				CardButton.setVisible(true);
 			else
@@ -1138,7 +1138,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 			if (x > 460 && x < 545) {// move has ben clicked
 				if (y > 325 && y < 355) {// then occupy the territory
-					AttackButton.setVisible(true);
+					AttackButton.setVisible(false);
 					if (risk.defenseNum == 1)
 						statusLabel.setText("1 army moved to "
 								+ risk.dTerritory.getName());
@@ -1218,7 +1218,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			if (y > 350 && y < 380) {
 				if (x > 475 && x < 525) { // if exxti button pushed
 					risk.setState(RiskGameModel.ACTIVE_TURN);
-					System.out.println("exitt");
+					System.out.println("exit");
 				}
 			}// end exit
 
