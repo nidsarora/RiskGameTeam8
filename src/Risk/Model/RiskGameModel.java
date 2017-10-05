@@ -170,7 +170,7 @@ public class RiskGameModel {
                 int y;
 		Vector<Integer> adjacents;
 		Vector<Integer> contains;
-                InputStream file = RiskGameModel.class.getResourceAsStream("resources/mapfile-new.txt");
+                InputStream file = RiskGameModel.class.getResourceAsStream("../resources/mapfile-new.txt");
 		//File file = new File("mapfile.txt");
 		
 		

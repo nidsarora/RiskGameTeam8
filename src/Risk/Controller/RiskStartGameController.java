@@ -34,7 +34,7 @@ public class RiskStartGameController extends java.awt.Frame {
         setLocationRelativeTo(null);
 
         try{
-        Sequence song = MidiSystem.getSequence(getClass().getResourceAsStream("resources/song.mid"));
+        Sequence song = MidiSystem.getSequence(getClass().getResourceAsStream("../resources/song.mid"));
         Sequencer sequencer = MidiSystem.getSequencer();
         sequencer.open();
 
@@ -95,7 +95,7 @@ public class RiskStartGameController extends java.awt.Frame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Risk/resources/risk-logo.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("../resources/risk-logo.jpg"))); // NOI18N
         jLabel1.setName("jLabel1");
         
         JButton btnChooseMap = new JButton();
