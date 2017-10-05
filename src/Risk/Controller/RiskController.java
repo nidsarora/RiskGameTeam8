@@ -11,13 +11,33 @@
 
 package Risk.Controller;
 import Risk.Model.*;
+
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import java.awt.Label;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.GroupLayout;
+import javax.swing.JButton;
+import javax.swing.JComponent;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
+
+import Risk.Model.*;
 import Risk.Controller.RiskPlayerPanelViewController;
 
 public class RiskController extends javax.swing.JFrame implements MouseListener {
-        RiskGameModel risk;
+	RiskGameModel risk;
+    JFrame jfmCard;
+    JPanel jp;
+    int countTradeCards = 0;
+    public List<RiskCardModel> lstTradedCards = new ArrayList<RiskCardModel>();
     public RiskController() {
         risk = new RiskGameModel();
         initComponents();
@@ -108,7 +128,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
         });
         jPanel3.add(FortifyButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(661, 10, 90, -1));
 
-        CardButton.setVisible(false);
+        CardButton.setVisible(true);
         CardButton.setFont(resourceMap.getFont("CardButton.font")); // NOI18N
         CardButton.setText(resourceMap.getString("CardButton.text")); // NOI18N
         CardButton.setName("CardButton"); // NOI18N
@@ -182,6 +202,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
     private void CardButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CardButtonMouseClicked
         risk.setState(RiskGameModel.TRADE_CARDS);
+        GenerateCardPanel();
         jPanel1.repaint();
     }//GEN-LAST:event_CardButtonMouseClicked
 
@@ -496,6 +517,208 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
         
 
     }
+    
+    public void GenerateCardPanel()
+    {
+    	  lstTradedCards = new ArrayList<RiskCardModel>();
+    	 
+    	  /* Only for testing */
+    	    risk.curPlayer.setCard(new RiskCardModel(1,39));
+    	    risk.curPlayer.setCard(new RiskCardModel(1,39));
+    	    risk.curPlayer.setCard(new RiskCardModel(3,11));
+    	  /* Only for testing */
+    	    
+            JFrame frame = new JFrame("Trade Cards");
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setResizable(false);
+
+
+           
+            
+            JPanel statusPnl = new JPanel();
+            statusPnl.setLayout(new GridLayout(0, 1));
+            JLabel statuslbl = new JLabel("Please select the any 3 cards you want to trade");
+            statusPnl.add(statuslbl);
+            frame.add(statusPnl,BorderLayout.NORTH);
+            
+            
+            
+            JPanel CardPnl = new JPanel();
+            GridLayout experimentLayout = new GridLayout(0,2);
+            CardPnl.setLayout(experimentLayout);
+            for(int i = 0; i<=risk.curPlayer.getCard().size() -1;i++)
+            {
+            	JButton jbn = new JButton(risk.curPlayer.getCard().get(i).toString().split("-")[0]);
+            	jbn.setName(risk.curPlayer.getCard().get(i).toString().split("-")[1] + "-" + risk.curPlayer.getCard().get(i).toString().split("-")[2]);
+            	CardPnl.add(jbn);
+            	jbn.addActionListener(
+            			new ActionListener() {
+							
+							@Override
+							public void actionPerformed(ActionEvent arg0) {							
+								
+							//	if(!isAlreadyAdded(jbn))
+								//		{
+									
+							}
+
+						
+						}
+            	);   
+            	jbn.addMouseListener(new java.awt.event.MouseAdapter() {
+                    public void mouseClicked(java.awt.event.MouseEvent evt) {
+                    	if(jbn.isEnabled())
+                    	{
+                    		lstTradedCards.add(new RiskCardModel(Integer.valueOf(jbn.getName().split("-")[0]), jbn.getName().split("-")[1]));
+							countTradeCards++;	
+							jbn.setEnabled(false);
+						statuslbl.setText(String.valueOf(countTradeCards));
+                    	}
+							
+					else
+					{
+						jbn.setEnabled(true);
+
+						if(isAlreadyAdded(jbn))
+						{		
+							for(RiskCardModel card: lstTradedCards)
+							{
+								if(card.value.equals(jbn.getName().split("-")[1]) && card.territory == Integer.valueOf(jbn.getName().split("-")[0]))
+            						{
+            						lstTradedCards.remove(card);
+            						countTradeCards--;	
+            						break;
+            				}								
+				    	}
+						statuslbl.setText(String.valueOf(countTradeCards));
+						}
+					}
+                    }
+                });
+            }
+            frame.add(CardPnl,BorderLayout.CENTER);
+            
+            JPanel btnPnl = new JPanel();
+            btnPnl.setLayout(new GridLayout(0, 2));
+            JButton applyButton = new JButton("OK");
+            btnPnl.add(new Label(""));
+            btnPnl.add(applyButton);
+            frame.add(btnPnl,BorderLayout.SOUTH);
+            
+            
+        	frame.pack();
+        	frame.setVisible(true);
+            	
+            	
+            	applyButton.addActionListener((ActionEvent ave) ->
+            		{         			
+            				if(countTradeCards < 3)
+            						statuslbl.setText("Please select only/atleast three cards!");
+            				else
+            				{
+            					//Logic to add armies!
+            					if(isTradedCardSetValid())
+            				//		risk.curPlayer.addArmies(risk.FetchTradedArmiesCount());
+            						statuslbl.setText("Success");
+                				
+            					else
+            						statuslbl.setText("Select 3 different cards or two different and one wild card!");
+            				}
+            		});
+
+    }
+    
+
+	private boolean isAlreadyAdded(JButton jbn) {
+		
+		for(RiskCardModel card: lstTradedCards)
+		{
+			if (card.territory == Integer.valueOf(jbn.getName().split("-")[0])  && card.value.equals(jbn.getName().split("-")[1]))
+				return true;
+		}
+		return false;
+	}	
+    public Boolean isTradedCardSetValid()
+    {
+    	if(lstTradedCards.size() > 3)  		
+    		return false;
+    	else if(lstTradedCards.size()  == 3)
+    	{   
+    		if(!isAWildCardSet())
+    		{
+    			//If all the cards are same
+        		if(lstTradedCards.get(0).value.equals(lstTradedCards.get(1).value) && lstTradedCards.get(1).value.equals(lstTradedCards.get(2).value))
+        		{
+        		 return true;	
+        		}
+        		//all 3 are different
+        		else if(!lstTradedCards.get(0).value.equals(lstTradedCards.get(1).value) && !lstTradedCards.get(0).value.equals(lstTradedCards.get(2).value) )
+        		{
+        			if(!lstTradedCards.get(1).value.equals(lstTradedCards.get(2).value))
+        			{
+        				return true;
+        			}
+        			else
+        				return false;
+        		}    			    			
+    		}
+    		else
+    		   return isValidCountWildCard();
+    	}
+    	else
+    		return false;
+    	
+    	return false;
+    }
+    
+    
+    public Boolean isAWildCardSet()
+    {
+    	for(RiskCardModel card: lstTradedCards)
+    	{
+    		if(card.value.equals("WILD"))
+    			return true;
+    	}
+    	return false;
+    }
+    
+    public Boolean isValidCountWildCard()
+    {
+    	int count = 0;
+    	for(RiskCardModel card: lstTradedCards)
+    	{
+    		if(card.value.equals("WILD"))
+    		{
+    			count++;    			
+    		}
+    	}    
+    	 return (count > 1 ? false: true);
+    }
+    
+	private void createLayout(JComponent... arg) {
+
+        JPanel pane = (JPanel) getContentPane();
+        GroupLayout gl = new GroupLayout(pane);
+        pane.setLayout(gl);
+
+        pane.setToolTipText("Content pane");
+
+        gl.setAutoCreateContainerGaps(true);
+
+        gl.setHorizontalGroup(gl.createSequentialGroup()
+                .addComponent(arg[0])
+                .addGap(200)
+        );
+
+        gl.setVerticalGroup(gl.createSequentialGroup()
+                .addComponent(arg[0])
+                .addGap(120)
+        );
+
+        pack();
+    }
+
+
 
    void saySomething(String desc, MouseEvent e){
  //      jTextArea1.append(desc +  " (" + e.getX() + "," + e.getY() + ")\n");

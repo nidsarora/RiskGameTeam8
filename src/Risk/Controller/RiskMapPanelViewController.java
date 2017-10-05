@@ -279,8 +279,8 @@ import javax.swing.JPanel;
                         350, 250+(c*30));
 
                   if(c < num-1){
-                      temp = risk.curPlayer.getCard().elementAt(c-1).value;
-                  if(temp == risk.curPlayer.getCard().elementAt(c).value)
+
+                  if(risk.curPlayer.getCard().elementAt(c-1).value.equals(risk.curPlayer.getCard().elementAt(c).value))
                       risk.attackNum++;
                   }
 
