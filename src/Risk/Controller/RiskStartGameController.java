@@ -11,40 +11,34 @@
 
 package Risk.Controller;
 
+import java.awt.ComponentOrientation;
+import java.awt.Container;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 
-import javax.sound.midi.*;
-import javax.swing.JTextField;
-import javax.swing.GroupLayout.Alignment;
+import javax.sound.midi.InvalidMidiDataException;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+import javax.sound.midi.Sequence;
+import javax.sound.midi.Sequencer;
 import javax.swing.GroupLayout;
-import javax.swing.LayoutStyle.ComponentPlacement;
-import javax.swing.ScrollPaneConstants;
-
-import Risk.Model.RiskCardModel;
-
+import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
-
-import java.awt.event.ActionListener;
-import java.awt.BorderLayout;
-import java.awt.ComponentOrientation;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.GridLayout;
-import java.awt.Label;
-import java.awt.event.ActionEvent;
+import javax.swing.JTextField;
+import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.ScrollPaneConstants;
 
 /**
  *
@@ -387,16 +381,18 @@ public class RiskStartGameController extends java.awt.Frame {
     {
     	int index;
     	index = baseMapString.indexOf(territory);
+    	int updatedindex;
         if(index != -1)
         {
-	    	if(isCoordinatesNextToIt(baseMapString,index))
-	    	{   //
+	    	if(isCoordinatesNextToIt(baseMapString,index,territory))
+	    	{   
 	    		fetchedCoordinates = fetchCoordinates(index + territory.length(),baseMapString); // alaska-,27,29,-abc : pass char within colon.
 	    		return fetchedCoordinates;
 	    	}
 	    	else
 	    	{
-	    		baseMapString = baseMapString.substring(index + territory.length() + 1,baseMapString.length() - 1);
+	    		updatedindex = updateIndexToNextTerritory(baseMapString,territory,index);
+	    		baseMapString = baseMapString.substring(updatedindex,baseMapString.length());
 	    		recursiveSearchCoordinates(baseMapString,territory);
 	    	}
         }
@@ -405,8 +401,15 @@ public class RiskStartGameController extends java.awt.Frame {
 		return fetchedCoordinates;
     }
     
+    private int updateIndexToNextTerritory(String baseMapString, String territory, int index)
+    {
+		if(baseMapString.charAt(index + territory.length()) == ',' || String.valueOf(baseMapString.charAt(index + territory.length())) == "")
+			return  index + territory.length() + 1;
+		else
+			return  index + territory.length();	
+    }
     
-    
+   // Eastern_Australia,950,464,Australia,New_Guinea,Western_Australia // try this
 	private String fetchCoordinates(int index, String baseMapString) {
 		// TODO Auto-generated method stub
 		StringBuilder coordinates = new StringBuilder(); 
@@ -414,7 +417,7 @@ public class RiskStartGameController extends java.awt.Frame {
 		{
 			if(!Character.isDigit(a))
 			{
-				if(a!=',')
+				if(a!=',' && Character.toString(a) !="")
 					break;
 			}
 			coordinates.append(a); // Like ,29,39,
@@ -422,10 +425,10 @@ public class RiskStartGameController extends java.awt.Frame {
 		return coordinates.toString();
 	}
 
-	private boolean isCoordinatesNextToIt(String baseMapString, int index) {
+	private boolean isCoordinatesNextToIt(String baseMapString, int index, String territory) {
 		// TODO Auto-generated method stub
 		String subbaseMapString = baseMapString.substring(index);
-		if(Character.isDigit(subbaseMapString.charAt(subbaseMapString.indexOf(',') + 1)))
+		if(Character.isDigit(subbaseMapString.charAt(territory.length() + 1))) // Brazil,10,10,
 			return true;
 		else
 			return false;
