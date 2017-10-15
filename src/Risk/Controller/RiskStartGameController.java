@@ -172,6 +172,12 @@ public class RiskStartGameController extends java.awt.Frame {
 		add.setVisible(true);
 	}
 
+	/**
+	 * Creates the JFrame and JPanels within on the click on Choose Map Button. Uses
+	 * GridBagLayout for the components within.
+	 * 
+	 * @throws IOException
+	 */
 	private void generateChooseMapPanel() throws IOException {
 
 		JFrame generateMapFrame = new JFrame("Generate Map");
@@ -210,12 +216,18 @@ public class RiskStartGameController extends java.awt.Frame {
 		JButton addButton = new JButton("Add");
 		JButton finishButton = new JButton("Finish");
 
+		/**
+		 * Handles the click event for the add button in the Choose Map Panel.
+		 */
 		addButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				addButtonPressed(e);
 			}
 		});
 
+		/**
+		 * Handles the click event for the finish button in the Choose Map Panel.
+		 */
 		finishButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				finishButtonPressed(e);
@@ -240,6 +252,15 @@ public class RiskStartGameController extends java.awt.Frame {
 		setVisible(false);
 	}
 
+	/**
+	 * Performs final activities for creating and saving the newly created Map for
+	 * the current game. Creating the file CurrentMap.map and initializes it till
+	 * '[Territories]' from the earth map. Copies the contents of the JTextArea in
+	 * Choose Map Panel and save the file in the Risk.resources package.
+	 * 
+	 * @param e,
+	 *            Action event for the click of the Finish button.
+	 */
 	private void finishButtonPressed(ActionEvent e) {
 		CurrentGameMapEditor("");
 		CurrentGameMapEditor(mapEditTextArea.getText());
@@ -258,6 +279,14 @@ public class RiskStartGameController extends java.awt.Frame {
 		}
 	}
 
+	/**
+	 * Creates a new instance of the CurrentMap.map file and initializes with text
+	 * will '[Territories]' from the base earth map. Appends the contents of the
+	 * JTextArea in Choose Map Panel to the newly created file
+	 * 
+	 * @param editTextArea,
+	 *            content of the JTextArea in Choose Map Panel.
+	 */
 	private void CurrentGameMapEditor(String editTextArea) {
 		String EarthMapStaticContent;
 		BufferedWriter brCurrentMapModifier;
@@ -284,6 +313,14 @@ public class RiskStartGameController extends java.awt.Frame {
 		}
 	}
 
+	/**
+	 * Processes user input from the JTextField. Calls another method to fetch and
+	 * insert coordinates for the territory. Appends the input with coordinates to
+	 * the JTextArea in Choose Map Panel
+	 * 
+	 * @param e
+	 *            ActionEvent passed for the button click event.
+	 */
 	private void addButtonPressed(ActionEvent e) {
 		if (validateMapLineInputText(mapEditTextField.getText())) {
 			mapEditTextArea.append(mapEditTextInsertCoordinates(mapEditTextField.getText()) + "\n");
@@ -294,10 +331,22 @@ public class RiskStartGameController extends java.awt.Frame {
 		}
 	}
 
+	/**
+	 * To find the territory which the user supplied in his/her input text. To find
+	 * the coordinates of the supplied territory from the baseMap - EarthMap. Append
+	 * the found coordinates to the input text and insert them in the JTextArea in
+	 * Choose Map Panel.
+	 * 
+	 * @param mapInputLineText,
+	 *            input text inserted by the user specifying the territory and the
+	 *            adjacent countries.
+	 * @return String, the complete line text with the coordinates inserted after
+	 *         the territory.
+	 */
 	private String mapEditTextInsertCoordinates(String mapInputLineText) {
+
 		StringBuilder sbInputWithCoordinates = new StringBuilder();
 		String territory = mapInputLineText.substring(0, mapInputLineText.indexOf(','));
-
 		String coordinates = fetchCoordinates(territory);
 
 		sbInputWithCoordinates.append(mapInputLineText.substring(0, mapInputLineText.indexOf(','))).append(coordinates)
@@ -306,6 +355,15 @@ public class RiskStartGameController extends java.awt.Frame {
 		return sbInputWithCoordinates.toString();
 	}
 
+	/**
+	 * Fetch the coordinates of the territories given to this method. Call the
+	 * recursive search function to perform the search.
+	 * 
+	 * @param territory,
+	 *            territory inserted by the user.
+	 * @return = String, the coordinates of the territory supplied in string - e.g -
+	 *         ,XX,YY, - format.
+	 */
 	private String fetchCoordinates(String territory) {
 		String coordinates = "";
 		initializeMapVariables();
@@ -313,6 +371,22 @@ public class RiskStartGameController extends java.awt.Frame {
 		return coordinates;
 	}
 
+	/**
+	 * The base earth map has individual territories specified in multiple places.
+	 * At times as countries with coordinates next to it and at times as an adjacent
+	 * country to some other country during which it does not have coordinates next
+	 * to it. Hence a recursive search is needed to find only that particular
+	 * instance of country which has coordinates next to it in the base map. This
+	 * function performs that recursive search needed.
+	 * 
+	 * @param baseMapString,
+	 *            this class level variable has the earth map read into it in string
+	 *            format.
+	 * @param territory,
+	 *            this is the territory inserted by the user.
+	 * @return coordinates, returns the coordinates of the needed territory in
+	 *         string - ,XX/X,YY/Y, - format.
+	 */
 	private String recursiveSearchCoordinates(String baseMapString, String territory) {
 		int index;
 		index = baseMapString.indexOf(territory);
@@ -333,6 +407,19 @@ public class RiskStartGameController extends java.awt.Frame {
 		return fetchedCoordinates;
 	}
 
+	/**
+	 * The recursive search take a smaller text every iteration till the correct
+	 * instance of territory is found. This method sends the begin index for the new
+	 * cut-shorted string for the next recursive search.
+	 * 
+	 * @param baseMapString,
+	 *            string for the entire base map.
+	 * @param territory,
+	 *            territory supplied by the user.
+	 * @param index,
+	 *            index of the first character of the incorrect territory instance.
+	 * @return begin index, for the upcoming recursive search.
+	 */
 	private int updateIndexToNextTerritory(String baseMapString, String territory, int index) {
 		if (baseMapString.charAt(index + territory.length()) == ','
 				|| String.valueOf(baseMapString.charAt(index + territory.length())) == "")
@@ -341,6 +428,16 @@ public class RiskStartGameController extends java.awt.Frame {
 			return index + territory.length();
 	}
 
+	/**
+	 * Once the correct instance of the word territory is found in the base earth
+	 * map, this method will read the coordinates next to it.
+	 * 
+	 * @param index,
+	 *            index of the correct instance of the territory in the base map.
+	 * @param baseMapString,
+	 *            the base map in string format.
+	 * @return coordinates, in the format XX/X,YY/Y.
+	 */
 	private String fetchCoordinates(int index, String baseMapString) {
 		// TODO Auto-generated method stub
 		StringBuilder coordinates = new StringBuilder();
@@ -354,6 +451,19 @@ public class RiskStartGameController extends java.awt.Frame {
 		return coordinates.toString();
 	}
 
+	/**
+	 * Checks whether the instance of territory found in the base map has
+	 * coordinates next to it or not.
+	 * 
+	 * @param baseMapString,
+	 *            base earth map in string format.
+	 * @param index,
+	 *            index of the first occurrence 'territory' in the base map.
+	 * @param territory,
+	 *            the territory supplied by the user.
+	 * @return Boolean, true if this is the instance of territory with coordinates
+	 *         next to it else False.
+	 */
 	private boolean isCoordinatesNextToIt(String baseMapString, int index, String territory) {
 		String subbaseMapString = baseMapString.substring(index);
 		if (Character.isDigit(subbaseMapString.charAt(territory.length() + 1))) // Brazil,10,10,
@@ -362,7 +472,16 @@ public class RiskStartGameController extends java.awt.Frame {
 			return false;
 	}
 
-	private Boolean validateMapLineInputText(String text) {
+	/**
+	 * To check of the user has inserted the text in the proper format. Check if
+	 * corresponding territories and continents exist.
+	 * 
+	 * @param mapInputLineText,
+	 *            the input text from the user in the needed format specifying the
+	 *            adjacent countries.
+	 * @return Boolean, returns true if input text is valid, else false.
+	 */
+	private Boolean validateMapLineInputText(String mapInputLineText) {
 		return true;
 	}
 
