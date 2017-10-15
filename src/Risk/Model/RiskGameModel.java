@@ -159,12 +159,10 @@ public class RiskGameModel {
 		int numOfCont = continents.size();
 		// # of continents = 6
 		for (int i = 0; i < numOfCont; i++) {
-			boolean captured = continents.elementAt(i).isContinentCaptured(
-					curPlayer);
+			boolean captured = continents.elementAt(i).isContinentCaptured(curPlayer);
 			if (captured)
 				continentBonus += continents.elementAt(i).getValue();
-			System.out.println("Bonus " + continentBonus + " for "
-					+ continents.elementAt(i).getName());
+			System.out.println("Bonus " + continentBonus + " for " + continents.elementAt(i).getName());
 
 		}
 		return continentBonus;
@@ -182,8 +180,7 @@ public class RiskGameModel {
 		int y;
 		Vector<Integer> adjacents;
 		Vector<Integer> contains;
-		InputStream file = RiskGameModel.class
-				.getResourceAsStream("resources/mapfile-new.txt");
+		InputStream file = RiskGameModel.class.getResourceAsStream("resources/mapfile-new.txt");
 		// File file = new File("mapfile.txt");
 
 		// try{
@@ -224,8 +221,7 @@ public class RiskGameModel {
 					x = Integer.parseInt(mapfile.next());
 					y = Integer.parseInt(mapfile.next());
 
-					territories
-							.add(new RiskTerritoryModel(id, name, continent, x, y));
+					territories.add(new RiskTerritoryModel(id, name, continent, x, y));
 					// System.out.println(id + " " + name + " " + continent);
 					next = mapfile.next();
 					if (next.equals(";;"))
@@ -244,8 +240,7 @@ public class RiskGameModel {
 						adjacents.add(Integer.parseInt(next));
 						next = mapfile.next();
 					}
-					territories.elementAt(Integer.parseInt(c) - 1).setAdjacent(
-							adjacents);
+					territories.elementAt(Integer.parseInt(c) - 1).setAdjacent(adjacents);
 					c = mapfile.next();
 					if (c.equals(";;"))
 						done = true;
@@ -253,7 +248,7 @@ public class RiskGameModel {
 
 			} // end if adjacents
 
-		}// end while
+		} // end while
 
 		// } catch(FileNotFoundException e){e.printStackTrace();} //end try read
 		// file
@@ -274,8 +269,7 @@ public class RiskGameModel {
 
 		try {
 
-			InputStream file = RiskGameModel.class
-					.getResourceAsStream("../resources/Earth_updated.map");
+			InputStream file = RiskGameModel.class.getResourceAsStream("../resources/Earth_updated.map");
 			// File file = new File("mapfile.txt");
 
 			// try{
@@ -296,13 +290,11 @@ public class RiskGameModel {
 						contains = new Vector<Integer>();
 						// next = mapfile.nextLine();
 						/*
-						 * while (!next.equals(";")) {
-						 * contains.add(Integer.parseInt(next)); next =
+						 * while (!next.equals(";")) { contains.add(Integer.parseInt(next)); next =
 						 * mapfile.next(); }
 						 */
 
-						continents
-								.add(new RiskContinentModel(name, contains, value));
+						continents.add(new RiskContinentModel(name, contains, value));
 						next = mapfile.nextLine();
 
 						if (next.equals(""))
@@ -321,13 +313,11 @@ public class RiskGameModel {
 							y = Integer.parseInt(next.split(",")[2]);
 							continent = -1;
 							for (int k = 0; k < continents.size(); k++) {
-								if (continents.elementAt(k).getName()
-										.equals(next.split(",")[3]))
+								if (continents.elementAt(k).getName().equals(next.split(",")[3]))
 									continent = k;
 							}
 
-							territories.add(new RiskTerritoryModel(id, name,
-									continent, x, y));
+							territories.add(new RiskTerritoryModel(id, name, continent, x, y));
 							// System.out.println(id + " " + name + " " +
 							// continent);
 
@@ -340,11 +330,10 @@ public class RiskGameModel {
 
 				} // end if countries
 
-			}// end while
+			} // end while
 
 			// @SuppressWarnings("resource")
-			InputStream file1 = RiskGameModel.class
-					.getResourceAsStream("../resources/Earth_updated.map");
+			InputStream file1 = RiskGameModel.class.getResourceAsStream("../resources/Earth_updated.map");
 			Scanner mapfile1 = new Scanner(file1);
 			while (mapfile1.hasNextLine()) {
 
@@ -365,10 +354,8 @@ public class RiskGameModel {
 
 							for (int j = 4; j < all.length; j++) {
 								for (int z = 0; z < territories.size(); z++) {
-									if (territories.elementAt(z).getName()
-											.equals(all[j])) {
-										adjacents.add(territories.elementAt(z)
-												.getId());
+									if (territories.elementAt(z).getName().equals(all[j])) {
+										adjacents.add(territories.elementAt(z).getId());
 									}
 								}
 							}
@@ -419,7 +406,7 @@ public class RiskGameModel {
 			if (country != -1) { // if a country was clicked on
 				if (getOwnership(country) == -1) // if country not owned
 					initialOccupyTerritories(country); // current player now
-														// owns
+				// owns
 				// How many countries are already owned?
 				for (int c = 0; c < num; c++) {
 					if (getOwnership(c) != -1) // if country owned
@@ -441,14 +428,14 @@ public class RiskGameModel {
 		if (getState() == FORTIFYING) {
 			if (country != -1) {// not a country
 				dTerritory = territories.elementAt(country); // move to
-																// territory
+				// territory
 				if (getOwnership(country) == curPlayer.getPlayerIndex())
 					if (aTerritory.isAdjacent(dTerritory)) {// if its
-															// adjacent...
+						// adjacent...
 						setState(FORTIFY_PHASE);
 					}
-			}// end if a county
-		}// end fortifying
+			} // end if a county
+		} // end fortifying
 
 		if (getState() == FORTIFY) {
 			if (country != -1) {
@@ -458,7 +445,7 @@ public class RiskGameModel {
 				}
 			}
 
-		}// end forty
+		} // end forty
 
 		if (getState() == ATTACK_PHASE) {
 
@@ -469,7 +456,7 @@ public class RiskGameModel {
 		if (getState() == ATTACKING) {
 			if (country != -1) {// not a country
 				RiskTerritoryModel d = territories.elementAt(country); // defending
-																	// territory
+				// territory
 
 				System.out.println(aTerritory.getAdjacents().size());
 
@@ -485,8 +472,7 @@ public class RiskGameModel {
 					defender = d.getPlayer();
 				} else
 					// if its not adjacent
-					System.out
-							.println("That territory is not adjacent, try again.");
+					System.out.println("That territory is not adjacent, try again.");
 				return "That territory is not adjacent, try again.";
 			}
 
@@ -501,7 +487,7 @@ public class RiskGameModel {
 						setState(ATTACKING);
 						aTerritory = territories.elementAt(country);
 					}
-				}// end is curPlayers country
+				} // end is curPlayers country
 		} // end attack with
 
 		if (getState() == TRADE_CARDS) {
@@ -511,7 +497,7 @@ public class RiskGameModel {
 		if (getState() == REINFORCE) {
 			if (country != -1) // if not a country
 				if (getOwnership(country) == curPlayer.getPlayerIndex()) // if
-																			// owned
+					// owned
 					occupyTerritory(territories.elementAt(country)); // occupy
 
 		}
@@ -561,7 +547,7 @@ public class RiskGameModel {
 					dTerritory.looseArmy();
 				else
 					aTerritory.looseArmy();
-			}// if defneding with two
+			} // if defneding with two
 		}
 
 		if (dTerritory.getArmies() == 0) {
@@ -596,9 +582,7 @@ public class RiskGameModel {
 		// Draw a card
 		if (drawn == false) {
 			drawCard(curPlayer);
-			System.out
-					.println("RiskCardModel "
-							+ getCountryName(curPlayer.getCard().firstElement().territory));
+			System.out.println("RiskCardModel " + getCountryName(curPlayer.getCard().firstElement().territory));
 			drawn = true;
 		}
 
@@ -646,7 +630,7 @@ public class RiskGameModel {
 				if (Math.abs(y1 - y) <= size || Math.abs(y1 - y) <= size) {
 					return i;
 				} // end if y
-			}// end if x
+			} // end if x
 		} // end for
 		return -1;
 
@@ -655,8 +639,8 @@ public class RiskGameModel {
 	public boolean occupyTerritory(RiskTerritoryModel t) {
 		// Make sure there are availble armies
 		if (curPlayer.getNumberOfArmies() > 0) { // Checks if the territory is
-													// occupied by the current
-													// player.
+			// occupied by the current
+			// player.
 			if (t.getPlayer() == curPlayer) {
 				t.setPlayer(curPlayer);
 				t.addArmies(1);

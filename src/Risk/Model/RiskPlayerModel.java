@@ -2,81 +2,77 @@ package Risk.Model;
 
 import java.util.Vector;
 
-
 public class RiskPlayerModel {
-	
+
 	private String name;
 	private int index;
 	private Vector<RiskTerritoryModel> occupiedTerritories;
-	//Cards might be here
 	private Vector<RiskCardModel> cards;
 	private int armies;
-	//private int territoriesCaptured; //Same as occupiedTerritories.size()
-	
+	// private int territoriesCaptured; //Same as occupiedTerritories.size()
+
 	RiskPlayerModel(String nm, int i) {
 		name = nm;
 		index = i;
 		occupiedTerritories = new Vector<RiskTerritoryModel>();
-                cards = new Vector<RiskCardModel>();
+		cards = new Vector<RiskCardModel>();
 	}
-	
-	public int getPlayerIndex(){
+
+	public int getPlayerIndex() {
 		return index;
 	}
-	
-	public String getName(){
+
+	public String getName() {
 		return name;
 	}
-	
-	public int getNumberOfArmies(){
+
+	public int getNumberOfArmies() {
 		return armies;
 	}
-	
-/*	public Vector getCards(){
-		return cardsOwned;
-	} */
 
+	/*
+	 * public Vector getCards(){ return cardsOwned; }
+	 */
 
-	public Vector<RiskTerritoryModel> getOccupiedTerritories(){
+	public Vector<RiskTerritoryModel> getOccupiedTerritories() {
 		return occupiedTerritories;
 	}
 
-	public int numOfTerritories(){
+	public int numOfTerritories() {
 		return occupiedTerritories.size();
 	}
-	
-	public void occupyTerritory(RiskTerritoryModel t){
+
+	public void occupyTerritory(RiskTerritoryModel t) {
 		occupiedTerritories.add(t);
 	}
-	
-	public void looseTerritory(RiskTerritoryModel t){
+
+	public void looseTerritory(RiskTerritoryModel t) {
 		occupiedTerritories.remove(t);
 		occupiedTerritories.trimToSize();
 	}
 
-        public void setCard(RiskCardModel c){
-            cards.add(c);
-        }
+	public void setCard(RiskCardModel c) {
+		cards.add(c);
+	}
 
-        public Vector<RiskCardModel> getCard(){
-            return cards;
-        }
-	
-	public void addArmies(int a){
+	public Vector<RiskCardModel> getCard() {
+		return cards;
+	}
+
+	public void addArmies(int a) {
 		armies += a;
 	}
 
-        public void addArmy(){
-            armies++;
-        }
+	public void addArmy() {
+		armies++;
+	}
 
-        public void looseArmies(int a){
-            armies -= a;
-        }
-        
-        public void looseArmy(){
-            armies--;
-        }
-	
-	
+	public void looseArmies(int a) {
+		armies -= a;
+	}
+
+	public void looseArmy() {
+		armies--;
+	}
+
 }
