@@ -45,7 +45,7 @@ South_Africa,545,472,Africa,Central_Africa,East_Africa,Madagascar
 Madagascar,630,475,Africa,East_Africa,South_Africa
 -
 Ural,702,130,Asia,Russia,Siberia,Afghanistan,China
-Siberia,761,94,Asia,Ural,Yakutsk,Irkutsk,Mongolia,China
+Siberia,761,94,Asia,Ural,Yakutsk,Irkutsk,Mongolia,China 
 Yakutsk,827,51,Asia,Siberia,Irkutsk,Japan
 Irkutsk,812,123,Asia,Siberia,Yakutsk,Mongolia,Japan
 Mongolia,824,182,Asia,Siberia,Irkutsk,Kamchatka,Japan,China
@@ -61,4 +61,5 @@ Indonesia,831,392,Australia,Southeast_Asia,New_Guinea,Western_Australia
 New_Guinea,907,367,Australia,Indonesia,Western_Australia,Eastern_Australia
 Western_Australia,857,461,Australia,Indonesia,New_Guinea,Eastern_Australia
 Eastern_Australia,950,464,Australia,New_Guinea,Western_Australia
+Eastern_Australia,Australia,New_Guinea,Western_Australia
 ;;

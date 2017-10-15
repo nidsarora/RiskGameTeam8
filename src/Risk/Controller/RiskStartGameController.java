@@ -280,19 +280,8 @@ public class RiskStartGameController extends java.awt.Frame {
 
 
 	private void finishButtonPressed(ActionEvent e) {
-		// TODO Auto-generated method stub
-
-		try {
-			File currentMapFile = new File("/Risk/resources/CurrentMap.map");
-			currentMapFile.createNewFile();
-			BufferedWriter brCurrentMapModifier = new BufferedWriter(new FileWriter("/Risk/resources/CurrentMap.map",true));
-		    brCurrentMapModifier.write(mapEditTextArea.getText(), 0, mapEditTextArea.getText().length());
-		    
-		    brCurrentMapModifier.close();
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}		
+		CurrentGameMapEditor("");
+		CurrentGameMapEditor(mapEditTextArea.getText());		
 	} 
 	
 	private void initializeMapVariables() {
@@ -302,7 +291,7 @@ public class RiskStartGameController extends java.awt.Frame {
 		 try {
 			while((baseMapLine = brEarthMapReader.readLine()) != null)
 			 {
-				 sbBaseMapString.append(baseMapLine);
+				 sbBaseMapString.append(baseMapLine + "\n");
 			 }
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -312,26 +301,27 @@ public class RiskStartGameController extends java.awt.Frame {
 	
 	private void CurrentGameMapEditor(String editTextArea) {
 	
-		StringBuilder currentMapInitializer = new StringBuilder();
-		String EarthMapLineRead;
+		String EarthMapStaticContent;
 		BufferedWriter brCurrentMapModifier;
 		File currentGameMap;
 		
 
 			try {
-				 currentGameMap = new File("Risk/resources/CurrentMap.map");
+				 currentGameMap = new File("src/Risk/resources/CurrentMap.map");
 				 brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap,true));
 				
 					// Called during initialize
 					if(editTextArea.equals(""))
 					{
-						currentMapInitializer.append(sbNewMapText.substring(0, sbNewMapText.indexOf("[Territories]")));
-						brCurrentMapModifier.write(currentMapInitializer.toString(),0,currentMapInitializer.toString().length());
+						brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap,false));
+						EarthMapStaticContent = sbBaseMapString.substring(0, sbBaseMapString.indexOf("[Territories]") + String.valueOf("[Territories]").length());
+						brCurrentMapModifier.write(EarthMapStaticContent,0,EarthMapStaticContent.length());
 						brCurrentMapModifier.close();
 					}
 					else
 					{
-						brCurrentMapModifier.write(editTextArea,0,editTextArea.length());
+						brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap,true));
+						brCurrentMapModifier.write("\n" + editTextArea,0,editTextArea.length());
 						brCurrentMapModifier.close();
 					}
 			} catch (IOException e) {
