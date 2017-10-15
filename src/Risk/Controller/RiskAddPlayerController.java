@@ -9,11 +9,11 @@
  * Created on Nov 15, 2010, 12:39:35 PM
  */
 
-package Risk.Controller;
+package risk.controller;
 
-import Risk.Controller.RiskStartGameController;
-import Risk.Controller.RiskStartGameController;
-import Risk.Model.*;
+import risk.controller.RiskStartGameController;
+import risk.controller.RiskStartGameController;
+import risk.model.*;
 
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.GroupLayout;

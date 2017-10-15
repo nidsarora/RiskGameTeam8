@@ -9,9 +9,9 @@
  * Created on Nov 9, 2010, 10:19:49 PM
  */
 
-package Risk.Controller;
+package risk.controller;
 
-import Risk.Model.*;
+import risk.model.*;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
@@ -30,8 +30,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import Risk.Model.*;
-import Risk.Controller.RiskPlayerPanelViewController;
+import risk.model.*;
+import risk.controller.RiskPlayerPanelViewController;
 
 public class RiskController extends javax.swing.JFrame implements MouseListener {
 	RiskGameModel risk;

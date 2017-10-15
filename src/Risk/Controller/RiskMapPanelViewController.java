@@ -1,6 +1,6 @@
-package Risk.Controller;
+package risk.controller;
 
-import Risk.Model.*;
+import risk.model.*;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -22,9 +22,9 @@ public class RiskMapPanelViewController extends JPanel {
 	public RiskMapPanelViewController() {
 
 		try {
-			this.map = ImageIO.read(getClass().getResourceAsStream("../resources/map.jpg"));
-			this.army = ImageIO.read(getClass().getResourceAsStream("../resources/army.gif"));
-			this.shield = ImageIO.read(getClass().getResourceAsStream("../resources/shield.gif"));
+			this.map = ImageIO.read(getClass().getResourceAsStream("../resources/Images/map.jpg"));
+			this.army = ImageIO.read(getClass().getResourceAsStream("../resources/Images/army.gif"));
+			this.shield = ImageIO.read(getClass().getResourceAsStream("../resources/Images/shield.gif"));
 			map = map.getScaledInstance(1000, 550, Image.SCALE_SMOOTH);
 		} catch (Exception e) {
 			throw new RuntimeException(e);

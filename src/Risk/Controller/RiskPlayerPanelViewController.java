@@ -9,9 +9,9 @@
  * Created on Nov 18, 2010, 4:43:14 PM
  */
 
-package Risk.Controller;
+package risk.controller;
 
-import Risk.Model.*;
+import risk.model.*;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;

@@ -1,4 +1,4 @@
-package Risk.Model;
+package risk.model;
 
 import java.util.Vector;
 

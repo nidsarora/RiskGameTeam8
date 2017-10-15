@@ -1,4 +1,4 @@
-package Risk.Model;
+package risk.model;
 
 import java.io.InputStream;
 import java.util.Arrays;
@@ -7,10 +7,10 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.Vector;
 
-import Risk.Model.RiskCardModel;
-import Risk.Model.RiskContinentModel;
-import Risk.Model.RiskPlayerModel;
-import Risk.Model.RiskTerritoryModel;
+import risk.model.RiskCardModel;
+import risk.model.RiskContinentModel;
+import risk.model.RiskPlayerModel;
+import risk.model.RiskTerritoryModel;
 
 public class RiskGameModel {
 
@@ -180,8 +180,8 @@ public class RiskGameModel {
 		int y;
 		Vector<Integer> adjacents;
 		Vector<Integer> contains;
-		InputStream file = RiskGameModel.class.getResourceAsStream("resources/mapfile-new.txt");
-		// File file = new File("mapfile.txt");
+		InputStream file = RiskGameModel.class.getResourceAsStream("resources/Map/MapFileNew.txt");
+		// File file = new File("MapFileOld.txt");
 
 		// try{
 		Scanner mapfile = new Scanner(file);
@@ -270,7 +270,7 @@ public class RiskGameModel {
 		try {
 
 			InputStream file = RiskGameModel.class.getResourceAsStream("../resources/Earth_updated.map");
-			// File file = new File("mapfile.txt");
+			// File file = new File("MapFileOld.txt");
 
 			// try{
 			Scanner mapfile = new Scanner(file);

@@ -9,7 +9,7 @@
  * Created on Nov 15, 2010, 11:13:31 AM
  */
 
-package Risk.Controller;
+package risk.controller;
 
 import java.awt.ComponentOrientation;
 import java.awt.Container;
@@ -113,7 +113,7 @@ public class RiskStartGameController extends java.awt.Frame {
 			}
 		});
 
-		jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("../resources/risk-logo.jpg"))); // NOI18N
+		jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("../resources/Images/risk-logo.jpg"))); // NOI18N
 		jLabel1.setName("jLabel1");
 
 		JButton btnChooseMap = new JButton();
@@ -254,7 +254,7 @@ public class RiskStartGameController extends java.awt.Frame {
 
 	/**
 	 * Performs final activities for creating and saving the newly created Map for
-	 * the current game. Creating the file CurrentMap.map and initializes it till
+	 * the current game. Creating the file CurrentGameMap.map and initializes it till
 	 * '[Territories]' from the earth map. Copies the contents of the JTextArea in
 	 * Choose Map Panel and save the file in the Risk.resources package.
 	 * 
@@ -266,9 +266,12 @@ public class RiskStartGameController extends java.awt.Frame {
 		CurrentGameMapEditor(mapEditTextArea.getText());
 	}
 
+	/**
+	 * Reads the base earth map into string builder to be used in later methods.
+	 */
 	private void initializeMapVariables() {
 		BufferedReader brEarthMapReader = new BufferedReader(new InputStreamReader(
-				RiskStartGameController.class.getResourceAsStream("/Risk/resources/Earth_updated.map")));
+				RiskStartGameController.class.getResourceAsStream("/Risk/resources/Map/BaseEarthMap.map")));
 		String baseMapLine;
 		try {
 			while ((baseMapLine = brEarthMapReader.readLine()) != null) {
@@ -280,7 +283,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	}
 
 	/**
-	 * Creates a new instance of the CurrentMap.map file and initializes with text
+	 * Creates a new instance of the CurrentGameMap.map file and initializes with text
 	 * will '[Territories]' from the base earth map. Appends the contents of the
 	 * JTextArea in Choose Map Panel to the newly created file
 	 * 
@@ -293,7 +296,7 @@ public class RiskStartGameController extends java.awt.Frame {
 		File currentGameMap;
 
 		try {
-			currentGameMap = new File("src/Risk/resources/CurrentMap.map");
+			currentGameMap = new File("src/Risk/resources/Map/CurrentGameMap.map");
 			brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap, true));
 
 			// Called during initialize
