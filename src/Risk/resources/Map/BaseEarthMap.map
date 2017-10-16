@@ -8,7 +8,7 @@ warn=yes
 [Continents]
 North America=5
 South America=2
-Africa=3	
+Africa=3
 Europe=5
 Asia=7
 Australia=2
@@ -61,5 +61,4 @@ Indonesia,831,392,Australia,Southeast_Asia,New_Guinea,Western_Australia
 New_Guinea,907,367,Australia,Indonesia,Western_Australia,Eastern_Australia
 Western_Australia,857,461,Australia,Indonesia,New_Guinea,Eastern_Australia
 Eastern_Australia,950,464,Australia,New_Guinea,Western_Australia
-Eastern_Australia,Australia,New_Guinea,Western_Australia
 ;;

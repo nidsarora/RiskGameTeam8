@@ -8,11 +8,13 @@ warn=yes
 [Continents]
 North America=5
 South America=2
-Africa=3	
+Africa=3
 Europe=5
 Asia=7
 Australia=2
 
 [Territories]
-Eastern_Australia,950,464,Australia,New_Guinea,Western_Australia
-Eastern_Australia,950,464,Australia,New_Guinea,Western_Australia
+Yakutsk,827,51,Asia,Siberia,Irkutsk,Japan
+Mongolia,824,182,Asia,Siberia,Irkutsk,Kamchatka,Japan,China
+China,801,239,Asia,Ural,Siberia,Mongolia,Afghanistan,India,Southeast_Asia
+;;

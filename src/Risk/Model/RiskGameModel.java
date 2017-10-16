@@ -269,7 +269,7 @@ public class RiskGameModel {
 
 		try {
 
-			InputStream file = RiskGameModel.class.getResourceAsStream("../resources/Earth_updated.map");
+			InputStream file = RiskGameModel.class.getResourceAsStream("../resources/map/CurrentGameMap.map");
 			// File file = new File("MapFileOld.txt");
 
 			// try{
@@ -286,7 +286,7 @@ public class RiskGameModel {
 
 						// value = Integer.parseInt(next);
 						name = next.split("=")[0];
-						value = Integer.parseInt(next.split("=")[1]);
+						value = Integer.parseInt((next.split("=")[1]).trim());
 						contains = new Vector<Integer>();
 						// next = mapfile.nextLine();
 						/*
@@ -333,7 +333,7 @@ public class RiskGameModel {
 			} // end while
 
 			// @SuppressWarnings("resource")
-			InputStream file1 = RiskGameModel.class.getResourceAsStream("../resources/Earth_updated.map");
+			InputStream file1 = RiskGameModel.class.getResourceAsStream("../resources/map/CurrentGameMap.map");
 			Scanner mapfile1 = new Scanner(file1);
 			while (mapfile1.hasNextLine()) {
 

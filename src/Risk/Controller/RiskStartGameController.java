@@ -335,7 +335,8 @@ public class RiskStartGameController extends java.awt.Frame {
 				brCurrentMapModifier.close();
 			} else {
 				brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap, true));
-				brCurrentMapModifier.write("\n" + editTextArea, 0, editTextArea.length());
+				brCurrentMapModifier.write("\n" + editTextArea, 0, ("\n" + editTextArea).length()); // +2 is for ;; appended
+				brCurrentMapModifier.write(";;",0,2);
 				brCurrentMapModifier.close();
 			}
 		} catch (IOException e) {
