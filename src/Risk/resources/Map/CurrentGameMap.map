@@ -14,7 +14,8 @@ Asia=7
 Australia=2
 
 [Territories]
+Siberia,761,94,Asia,Ural,Yakutsk,Irkutsk,Mongolia,China
 Yakutsk,827,51,Asia,Siberia,Irkutsk,Japan
-Mongolia,824,182,Asia,Siberia,Irkutsk,Kamchatka,Japan,China
-China,801,239,Asia,Ural,Siberia,Mongolia,Afghanistan,India,Southeast_Asia
+Irkutsk,812,123,Asia,Siberia,Yakutsk,Mongolia,Japan
+Japan,925,177,Asia,Mongolia,Kamchatka
 ;;

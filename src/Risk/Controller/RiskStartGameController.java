@@ -49,6 +49,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import risk.helpers.Utility;
+
 /**
  *
  * @author cube
@@ -57,6 +59,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	/** Creates new form RiskStartGame */
 
 	public RiskStartGameController() {
+		
 		initComponents();
 		jButton1.setEnabled(false);
 		setLocationRelativeTo(null);
@@ -122,7 +125,7 @@ public class RiskStartGameController extends java.awt.Frame {
 			}
 		});
 
-		jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("../resources/Images/risk-logo.jpg"))); // NOI18N
+		jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource(Utility.getImagePath("risk-logo.jpg")))); // NOI18N
 		jLabel1.setName("jLabel1");
 
 		JButton btnChooseMap = new JButton();
@@ -165,6 +168,41 @@ public class RiskStartGameController extends java.awt.Frame {
 		add(jPanel1, java.awt.BorderLayout.CENTER);
 
 		pack();
+		
+		// Initialize CurrentGameMap with BaseEarthMap content by default. Later is choose map functionality
+		//is called it will overwrite this Map.
+		
+		initializeCurrentGameMap();		
+		
+	}
+
+	private void initializeCurrentGameMap() {
+		try {
+		StringBuilder sbEarthMapReader = new StringBuilder();
+		String strEarthMapLine;
+		BufferedReader brEarthMapReader = new BufferedReader(new InputStreamReader(
+				RiskStartGameController.class.getResourceAsStream(Utility.getMapPath("BaseEarthMap.map"))));
+		File currentGameMap = new File(Utility.getMapPathforFile("CurrentGameMap.map"));
+		BufferedWriter brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap));
+		
+	
+			while ((strEarthMapLine =  brEarthMapReader.readLine()) != null)
+			{
+				if(!strEarthMapLine.equals(";;"))//Do not add new line after the last line.
+					sbEarthMapReader.append(strEarthMapLine + "\n");
+				else
+					sbEarthMapReader.append(strEarthMapLine);
+			}
+			
+			brCurrentMapModifier.write(sbEarthMapReader.toString(),0,sbEarthMapReader.toString().length());
+			brCurrentMapModifier.close();
+			brEarthMapReader.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
 	}
 
 	/** Exit the Application */
@@ -298,7 +336,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	 */
 	private void initializeMapVariables() {
 		BufferedReader brEarthMapReader = new BufferedReader(new InputStreamReader(
-				RiskStartGameController.class.getResourceAsStream("/Risk/resources/Map/BaseEarthMap.map")));
+				RiskStartGameController.class.getResourceAsStream(Utility.getMapPath("BaseEarthMap.map"))));
 		String baseMapLine;
 		try {
 			while ((baseMapLine = brEarthMapReader.readLine()) != null) {
@@ -323,7 +361,7 @@ public class RiskStartGameController extends java.awt.Frame {
 		File currentGameMap;
 
 		try {
-			currentGameMap = new File("src/Risk/resources/Map/CurrentGameMap.map");
+			currentGameMap = new File(Utility.getMapPathforFile("CurrentGameMap.map"));
 			brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap, true));
 
 			// Called during initialize

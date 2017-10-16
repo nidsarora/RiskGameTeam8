@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Locations>
 <Countries>
-	<Country></Country>
+	<Country>Alaska</Country>
 	<Country>Northwest_Territory</Country>
 	<Country>Greenland</Country>
 	<Country>Alberta</Country>
@@ -46,8 +46,8 @@
 	<Country>Eastern_Australia</Country>
 </Countries>
 <Continents>
-	<Continent>North America</Continent>
-	<Continent>South America</Continent>
+	<Continent>North_America</Continent>
+	<Continent>South_America</Continent>
 	<Continent>Africa</Continent>
 	<Continent>Europe</Continent>
 	<Continent>Asia</Continent>

@@ -7,6 +7,7 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.Vector;
 
+import risk.helpers.Utility;
 import risk.model.RiskCardModel;
 import risk.model.RiskContinentModel;
 import risk.model.RiskPlayerModel;
@@ -180,7 +181,7 @@ public class RiskGameModel {
 		int y;
 		Vector<Integer> adjacents;
 		Vector<Integer> contains;
-		InputStream file = RiskGameModel.class.getResourceAsStream("resources/Map/MapFileNew.txt");
+		InputStream file = RiskGameModel.class.getResourceAsStream(Utility.getImagePath("MapFileNew.txt"));
 		// File file = new File("MapFileOld.txt");
 
 		// try{
@@ -269,7 +270,7 @@ public class RiskGameModel {
 
 		try {
 
-			InputStream file = RiskGameModel.class.getResourceAsStream("../resources/map/CurrentGameMap.map");
+			InputStream file = RiskGameModel.class.getResourceAsStream(Utility.getMapPath("CurrentGameMap.map"));
 			// File file = new File("MapFileOld.txt");
 
 			// try{
@@ -333,7 +334,7 @@ public class RiskGameModel {
 			} // end while
 
 			// @SuppressWarnings("resource")
-			InputStream file1 = RiskGameModel.class.getResourceAsStream("../resources/map/CurrentGameMap.map");
+			InputStream file1 = RiskGameModel.class.getResourceAsStream(Utility.getMapPath("CurrentGameMap.map"));
 			Scanner mapfile1 = new Scanner(file1);
 			while (mapfile1.hasNextLine()) {
 
