@@ -33,12 +33,21 @@ import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.ScrollPaneConstants;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import org.w3c.dom.Node;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 
 /**
  *
@@ -243,6 +252,24 @@ public class RiskStartGameController extends java.awt.Frame {
 		c.gridy = 3;
 		pane.add(buttonsPanel, c);
 
+	    notePanel = new JPanel();
+		noteLabel = new JLabel("");	
+		notePanel.add(noteLabel);
+		c.weightx = 1;
+		c.gridx = 1;
+		c.ipady = 50;
+		c.gridy = 4;
+		pane.add(notePanel, c);
+		
+		JPanel formatInfoPanel = new JPanel();
+		JLabel formatInforLabel = new JLabel("Please enter the data in the following format - '<Territory>,<Continent>,<Adjacent_Country1>,<Adjacent_Country2>...'");
+		formatInfoPanel.add(formatInforLabel);
+		c.weightx = 1;
+		c.gridx = 1;
+		c.ipady = 50;
+		c.gridy = 5;
+		pane.add(formatInfoPanel, c);
+		
 		generateMapFrame.pack();
 		generateMapFrame.setVisible(true);
 	}
@@ -325,12 +352,17 @@ public class RiskStartGameController extends java.awt.Frame {
 	 *            ActionEvent passed for the button click event.
 	 */
 	private void addButtonPressed(ActionEvent e) {
-		if (validateMapLineInputText(mapEditTextField.getText())) {
-			mapEditTextArea.append(mapEditTextInsertCoordinates(mapEditTextField.getText()) + "\n");
-			scrollTextAreaPanel.repaint();
-			mapEditTextField.setText("");
-		} else {
-			// message user!
+		try {
+			if (validateMapLineInputText(mapEditTextField.getText())) {
+				mapEditTextArea.append(mapEditTextInsertCoordinates(mapEditTextField.getText()) + "\n");
+				scrollTextAreaPanel.repaint();
+				mapEditTextField.setText("");
+			} else {
+				notePanel.repaint();
+			}
+		} catch (ParserConfigurationException | SAXException | IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
 		}
 	}
 
@@ -483,9 +515,65 @@ public class RiskStartGameController extends java.awt.Frame {
 	 *            the input text from the user in the needed format specifying the
 	 *            adjacent countries.
 	 * @return Boolean, returns true if input text is valid, else false.
+	 * @throws ParserConfigurationException 
+	 * @throws IOException 
+	 * @throws SAXException 
 	 */
-	private Boolean validateMapLineInputText(String mapInputLineText) {
-		return true;
+	private Boolean validateMapLineInputText(String mapInputLineText) throws ParserConfigurationException, SAXException, IOException {
+	Boolean isValid = false;
+		if(mapInputLineText.split(",").length >= 3)
+		{
+			File locationsXml = new File("src/risk/resources/Locations.xml");
+			DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance()
+                    .newDocumentBuilder();
+			Document doc = dBuilder.parse(locationsXml);
+			NodeList countryList,continentList;
+			Boolean isCountryValid,isContinentValid;
+			for(int location = 0; location<mapInputLineText.split(",").length; location++)
+			{
+				if(location == 0 || location > 1)
+				{
+					//Need to present in the locations xml as a country
+					countryList = doc.getElementsByTagName("Country");
+					isCountryValid = false;
+					for(int countryIndex = 0; countryIndex <countryList.getLength(); countryIndex++ )
+						{
+							Node countryNode = (Node) countryList.item(countryIndex);
+							if(countryNode.getTextContent().toLowerCase().equals((mapInputLineText.split(",")[location]).toLowerCase()))
+								isCountryValid =  true;
+						}
+					if(!isCountryValid)
+						{
+						noteLabel.setText("The Country "+mapInputLineText.split(",")[location]+ " mentioned is not correct");
+						isValid = false;
+						break;
+						} 
+					
+				}
+				else if (location == 1)
+				{
+					//Need to present in the locations xml as a country			
+					continentList = doc.getElementsByTagName("Continent");
+					isContinentValid = false;
+					for(int continentIndex = 0; continentIndex <continentList.getLength(); continentIndex++ )
+					{
+						Node continentNode = (Node) continentList.item(continentIndex);
+						if(continentNode.getTextContent().toLowerCase().equals((mapInputLineText.split(",")[location]).toLowerCase()))
+							isContinentValid = true;
+					}
+					if(!isContinentValid)
+					{
+						noteLabel.setText("The Continent mentioned is not correct");
+						isValid = false;
+						break;
+					}
+				}
+				isValid = true;
+			}
+		}
+	else
+		return isValid; // Need to have atleast 3 parts - territory, continent, one adjacent country.
+	return isValid;
 	}
 
 	/**
@@ -509,6 +597,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	private javax.swing.JTextField mapEditTextField;
 	private String fetchedCoordinates;
 	private JPanel scrollTextAreaPanel;
+	private JPanel notePanel;
+	private JLabel noteLabel;
 	private StringBuilder sbBaseMapString = new StringBuilder();
 
 }
