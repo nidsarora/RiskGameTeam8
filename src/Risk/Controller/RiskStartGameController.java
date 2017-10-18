@@ -10,7 +10,6 @@
  */
 
 package risk.controller;
-
 import java.awt.ComponentOrientation;
 import java.awt.Container;
 import java.awt.GridBagConstraints;

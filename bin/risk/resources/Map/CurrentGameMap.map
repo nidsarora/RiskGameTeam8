@@ -1,0 +1,21 @@
+[Map]
+author=Brigham Judd
+image=Earth.bmp
+wrap=yes
+scroll=horizontal
+warn=yes
+
+[Continents]
+North America=5
+South America=2
+Africa=3
+Europe=5
+Asia=7
+Australia=2
+
+[Territories]
+Siberia,761,94,Asia,Ural,Yakutsk,Irkutsk,Mongolia,China
+Yakutsk,827,51,Asia,Siberia,Irkutsk,Japan
+Irkutsk,812,123,Asia,Siberia,Yakutsk,Mongolia,Japan
+Japan,925,177,Asia,Mongolia,Kamchatka
+;;
