@@ -32,7 +32,7 @@
 	<Country coordinate="" continent="Asia">Yakutsk</Country>
 	<Country coordinate="" continent="Asia">Irkutsk</Country>
 	<Country coordinate="" continent="Asia">Mongolia</Country>
-	<Country coordinate="" continent="Asia">Kamchatka</Country>
+	<Country coordinate="910,50" continent="Asia">Kamchatka</Country>
 	<Country coordinate="" continent="Asia">Japan</Country>
 	<Country coordinate="" continent="Asia"> Afghanistan</Country>
 	<Country coordinate="" continent="Asia">China</Country>

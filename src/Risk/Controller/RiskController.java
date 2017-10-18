@@ -164,8 +164,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			risk.defenseNum = 0;
 			risk.attackNum = 0;
 			AttackButton.setText("Attack");
-			EndButton.setVisible(true);
-			FortifyButton.setVisible(true);
+			EndButton.setVisible(false);
+			FortifyButton.setVisible(false);
 			statusLabel.setText("What would you like to do?");
 			jPanel1.repaint();
 		}
@@ -270,8 +270,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		  if (risk.getState() == RiskGameModel.ACTIVE_TURN) {
 			  name = risk.curPlayer.getName();
 			  statusLabel.setText("What would you like to do?");
-			  EndButton.setVisible(true);
-			  FortifyButton.setVisible(true);
+			  EndButton.setVisible(false);
+			  FortifyButton.setVisible(false);
 			  AttackButton.setText("Attack");
 			  AttackButton.setVisible(true);
 			  if (risk.curPlayer.getCard().size() > 2)
@@ -360,8 +360,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 						  risk.setState(RiskGameModel.ACTIVE_TURN);
 						  statusLabel.setText(risk.curPlayer.getName() + " has lost the battle");
 						  AttackButton.setText("Attack");
-						  FortifyButton.setVisible(true);
-						  EndButton.setVisible(true);
+						  FortifyButton.setVisible(false);
+						  EndButton.setVisible(false);
 						  risk.defenseNum = 0;
 						  risk.attackNum = 0;
 						  risk.dTerritory = null;
@@ -406,8 +406,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					  else
 						  statusLabel.setText(risk.defenseNum + " armies moved to " + risk.dTerritory.getName());
 
-					  EndButton.setVisible(true);
-					  FortifyButton.setVisible(true);
+					  EndButton.setVisible(false);
+					  FortifyButton.setVisible(false);
 					  risk.capture();
 				  }
 			  }
@@ -460,7 +460,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					  else
 						  statusLabel.setText(risk.defenseNum + " armies moved to " + risk.dTerritory.getName());
 
-					  EndButton.setVisible(true);
+					  EndButton.setVisible(false);
 					  FortifyButton.setVisible(false);
 					  risk.aTerritory.looseArmies(risk.defenseNum);
 					  risk.dTerritory.addArmies(risk.defenseNum);

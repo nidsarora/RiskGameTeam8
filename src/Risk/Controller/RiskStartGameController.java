@@ -407,7 +407,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	}
 	
 	/**
-	 * 
+	 * This method will find the coordinates and continent of the adjacent countries supplied by the
+	 * user and append it to JTextArea.
 	 * @param mapInputLineText
 	 * @return
 	 */
@@ -438,9 +439,10 @@ public class RiskStartGameController extends java.awt.Frame {
 	}
 
 	/**
-	 * 
-	 * @param adjacentTerritory
-	 * @return
+	 * This method will find the coordinates and continent of the adjacent countries supplied by the
+	 * user and append it to JTextArea.
+	 * @param adjacentTerritory, individual adjacent country to find the information for.
+	 * @return String with coordinates and continent for adjacent country - adjacentTerritory.
 	 * @throws ParserConfigurationException 
 	 * @throws IOException 
 	 * @throws SAXException 
@@ -451,7 +453,7 @@ public class RiskStartGameController extends java.awt.Frame {
 		DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance()
                 .newDocumentBuilder();
 		Document doc = dBuilder.parse(locationsXml);
-		NodeList countryList, continentList;
+		NodeList countryList;
 		countryList = doc.getElementsByTagName("Country");
 		
 		for(int countryIndex = 0; countryIndex < countryList.getLength(); countryIndex++ )

@@ -375,7 +375,6 @@ public class RiskGameModel {
 					} while (Notendfile);
 
 				} // end if adjacents
-
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

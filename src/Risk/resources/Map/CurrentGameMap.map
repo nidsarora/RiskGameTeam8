@@ -14,7 +14,8 @@ Asia=7
 Australia=2
 
 [Territories]
-Alaska,47,76,North_America,Northwest_Territory,Alberta
+Alaska,47,76,North_America,Northwest_Territory,Alberta,Kamchatka
 Northwest_Territory,155,70,North_America
 Alberta,143,123,North_America
+Kamchatka,910,50,Asia
 ;;

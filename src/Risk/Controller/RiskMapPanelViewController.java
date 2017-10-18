@@ -3,10 +3,13 @@ package risk.controller;
 import risk.helpers.Utility;
 import risk.model.*;
 
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Image;
+import java.awt.geom.Line2D;
 import java.awt.image.PixelGrabber;
 import java.util.Vector;
 import javax.imageio.ImageIO;
@@ -62,6 +65,8 @@ public class RiskMapPanelViewController extends JPanel {
 			loc = risk.drawMap(c);
 			g.drawArc(loc[0], loc[1], 30, 30, 0, 360);
 		}
+		if(i > 0)
+		drawConnectAdjacentCountries(g);
 
 		for (int c = 0; c < i; c++) {
 			playerIndex = risk.getOwnership(c);
@@ -369,10 +374,31 @@ public class RiskMapPanelViewController extends JPanel {
 					g.fillArc(495, 265, 10, 10, 0, 360);
 				}
 
-			} // end defennnder painting
+			} // end defender painting
 
 		}
 
 	}
 
+	private void drawConnectAdjacentCountries(Graphics g) {
+		// TODO Auto-generated method stub			
+	    for(RiskTerritoryModel territory: RiskGameModel.territories)
+	    {
+	    	if(territory.getAdjacents().size() > 0)
+	    	{
+		    	for(int adjacent: territory.getAdjacents())
+		    	{
+		    		drawLineforCoordinates(territory.getX(),territory.getY(),risk.getTerritoryAt(adjacent).getX(),risk.getTerritoryAt(adjacent).getY(),g);
+		    	}
+	    	}
+	    }       
+	}
+
+	private void drawLineforCoordinates(int start_x,int start_y, int destination_x, int destination_y, Graphics g)
+	{
+			Graphics2D g2 = (Graphics2D)g;
+			g2.setColor(Color.black);
+			g2.setStroke(new BasicStroke(2));
+	        g2.draw(new Line2D.Float(start_x, start_y, destination_x, destination_y));
+	}
 }
