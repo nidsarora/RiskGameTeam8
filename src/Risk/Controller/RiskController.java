@@ -34,11 +34,7 @@ import risk.model.*;
 import risk.controller.RiskPlayerPanelViewController;
 
 public class RiskController extends javax.swing.JFrame implements MouseListener {
-	RiskGameModel risk;
-	JFrame jfmCard;
-	JPanel jp;
-	int countTradeCards = 0;
-	public List<RiskCardModel> lstTradedCards = new ArrayList<RiskCardModel>();
+
 
 	public RiskController() {
 		risk = new RiskGameModel();
@@ -492,6 +488,12 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	  }
 
 	  public void GenerateCardPanel() {
+		  JFrame cardsFrame; 
+		  JPanel statusPanel, cardPanel, cardbuttonsPanel;
+		  JButton OKButton;
+
+		  
+		  
 		  lstTradedCards = new ArrayList<RiskCardModel>();
 
 		  /* Only for testing */
@@ -500,35 +502,27 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		  risk.curPlayer.setCard(new RiskCardModel(3, 11));
 		  /* Only for testing */
 
-		  JFrame frame = new JFrame("Trade Cards");
-		  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		  frame.setResizable(false);
+		  cardsFrame = new JFrame("Trade Cards");
+		  cardsFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		  cardsFrame.setResizable(false);
 
-		  JPanel statusPnl = new JPanel();
-		  statusPnl.setLayout(new GridLayout(0, 1));
-		  JLabel statuslbl = new JLabel("Please select the any 3 cards you want to trade");
-		  statusPnl.add(statuslbl);
-		  frame.add(statusPnl, BorderLayout.NORTH);
+		  statusPanel = new JPanel();
+		  statusPanel.setLayout(new GridLayout(0, 1));
+		  cardStatusLabel = new JLabel("Please select the any 3 cards you want to trade");
+		  statusPanel.add(cardStatusLabel);
+		  cardsFrame.add(statusPanel, BorderLayout.NORTH);
 
-		  JPanel CardPnl = new JPanel();
+		  cardPanel = new JPanel();
 		  GridLayout experimentLayout = new GridLayout(0, 2);
-		  CardPnl.setLayout(experimentLayout);
+		  cardPanel.setLayout(experimentLayout);
+		 
 		  for (int i = 0; i <= risk.curPlayer.getCard().size() - 1; i++) {
 			  JButton jbn = new JButton(risk.curPlayer.getCard().get(i).toString().split("-")[0]);
 			  jbn.setName(risk.curPlayer.getCard().get(i).toString().split("-")[1] + "-"
 					  + risk.curPlayer.getCard().get(i).toString().split("-")[2]);
-			  CardPnl.add(jbn);
-			  jbn.addActionListener(new ActionListener() {
+			  cardPanel.add(jbn);
 
-				  @Override
-				  public void actionPerformed(ActionEvent arg0) {
-
-					  // if(!isAlreadyAdded(jbn))
-					  // {
-
-				  }
-
-			  });
+			  
 			  jbn.addMouseListener(new java.awt.event.MouseAdapter() {
 				  public void mouseClicked(java.awt.event.MouseEvent evt) {
 					  if (jbn.isEnabled()) {
@@ -536,7 +530,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 								  jbn.getName().split("-")[1]));
 						  countTradeCards++;
 						  jbn.setEnabled(false);
-						  statuslbl.setText(String.valueOf(countTradeCards));
+						  cardStatusLabel.setText(String.valueOf(countTradeCards));
 					  }
 
 					  else {
@@ -544,86 +538,101 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 						  if (isAlreadyAdded(jbn)) {
 							  for (RiskCardModel card : lstTradedCards) {
-								  if (card.value.equals(jbn.getName().split("-")[1])
+								  if (card.card_type.equals(jbn.getName().split("-")[1])
 										  && card.territory == Integer.valueOf(jbn.getName().split("-")[0])) {
 									  lstTradedCards.remove(card);
 									  countTradeCards--;
 									  break;
 								  }
 							  }
-							  statuslbl.setText(String.valueOf(countTradeCards));
+							  cardStatusLabel.setText(String.valueOf(countTradeCards));
 						  }
 					  }
 				  }
 			  });
 		  }
-		  frame.add(CardPnl, BorderLayout.CENTER);
+		  cardsFrame.add(cardPanel, BorderLayout.CENTER);
 
-		  JPanel btnPnl = new JPanel();
-		  btnPnl.setLayout(new GridLayout(0, 2));
-		  JButton applyButton = new JButton("OK");
-		  btnPnl.add(new Label(""));
-		  btnPnl.add(applyButton);
-		  frame.add(btnPnl, BorderLayout.SOUTH);
+		  cardbuttonsPanel = new JPanel();
+		  cardbuttonsPanel.setLayout(new GridLayout(0, 2));
+		  OKButton = new JButton("OK");
+		  cardbuttonsPanel.add(new Label(""));
+		  cardbuttonsPanel.add(OKButton);
+		  cardsFrame.add(cardbuttonsPanel, BorderLayout.SOUTH);
 
-		  frame.pack();
-		  frame.setVisible(true);
+		  cardsFrame.pack();
+		  cardsFrame.setVisible(true);
 
-		  applyButton.addActionListener((ActionEvent ave) -> {
-			  if (countTradeCards < 3)
-				  statuslbl.setText("Please select only/atleast three cards!");
-			  else {
-				  // Logic to add armies!
-				  if (isTradedCardSetValid())
-					  // risk.curPlayer.addArmies(risk.FetchTradedArmiesCount());
-					  statuslbl.setText("Success");
-
-				  else
-					  statuslbl.setText("Select 3 different cards or two different and one wild card!");
-			  }
-		  });
-
+		  OKButton.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				cardsOKButtonPressed();
+			}
+		});
 	  }
 
+	  
+	  private void cardsOKButtonPressed()
+	  {					  // Logic to add armies!
+			  if (isTradedCardSetValid())
+				  {
+				  risk.curPlayer.addArmies(risk.fetchTradedArmiesCount());
+				  cardStatusLabel.setText("Success");
+				  }
+	  }
+	  
+	  
 	  private boolean isAlreadyAdded(JButton jbn) {
 
 		  for (RiskCardModel card : lstTradedCards) {
 			  if (card.territory == Integer.valueOf(jbn.getName().split("-")[0])
-					  && card.value.equals(jbn.getName().split("-")[1]))
+					  && card.card_type.equals(jbn.getName().split("-")[1]))
 				  return true;
 		  }
 		  return false;
 	  }
 
 	  public Boolean isTradedCardSetValid() {
-		  if (lstTradedCards.size() > 3)
-			  return false;
-		  else if (lstTradedCards.size() == 3) {
+	
+		  if (lstTradedCards.size() == 3) {
+			 
 			  if (!isAWildCardSet()) {
-				  // If all the cards are same
-				  if (lstTradedCards.get(0).value.equals(lstTradedCards.get(1).value)
-						  && lstTradedCards.get(1).value.equals(lstTradedCards.get(2).value)) {
-					  return true;
-				  }
-				  // all 3 are different
-				  else if (!lstTradedCards.get(0).value.equals(lstTradedCards.get(1).value)
-						  && !lstTradedCards.get(0).value.equals(lstTradedCards.get(2).value)) {
-					  if (!lstTradedCards.get(1).value.equals(lstTradedCards.get(2).value)) {
+				  		// If all the cards are same
+					  if (lstTradedCards.get(0).card_type.equals(lstTradedCards.get(1).card_type)
+							  && lstTradedCards.get(1).card_type.equals(lstTradedCards.get(2).card_type)) {
+						  cardStatusLabel.setText("Success");
 						  return true;
-					  } else
-						  return false;
+					  }
+				 
+					  // all 3 are different
+				  else if (!lstTradedCards.get(0).card_type.equals(lstTradedCards.get(1).card_type)
+						  && !lstTradedCards.get(1).card_type.equals(lstTradedCards.get(2).card_type) && !lstTradedCards.get(0).card_type.equals(lstTradedCards.get(2).card_type)) {
+						  cardStatusLabel.setText("Success");
+						  return true;
 				  }
 			  } else
-				  return isValidCountWildCard();
-		  } else
-			  return false;
+				  { 
+					  
+					  if(isValidCountWildCard())
+						  {
+							  cardStatusLabel.setText("Success");
+							  return true;
+						  }
+					  else
+						  {
+							  cardStatusLabel.setText("Please select only/atleast three cards!");
+							  return false;							  
+						  }
+				  }
+		  } 
 
-		  return false;
+		  cardStatusLabel.setText("Please select only/atleast three cards!");
+		  return false;		
 	  }
 
 	  public Boolean isAWildCardSet() {
 		  for (RiskCardModel card : lstTradedCards) {
-			  if (card.value.equals("WILD"))
+			  if (card.card_type.equals("WILD"))
 				  return true;
 		  }
 		  return false;
@@ -632,7 +641,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	  public Boolean isValidCountWildCard() {
 		  int count = 0;
 		  for (RiskCardModel card : lstTradedCards) {
-			  if (card.value.equals("WILD")) {
+			  if (card.card_type.equals("WILD")) {
 				  count++;
 			  }
 		  }
@@ -671,4 +680,11 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 	  public void mouseExited(MouseEvent me) {
 	  }
+	  	private JLabel cardStatusLabel;
+	  	private RiskGameModel risk;
+	  	private JFrame jfmCard;
+	  	private JPanel jp;
+	  	private int countTradeCards = 0;
+	  	private List<RiskCardModel> lstTradedCards = new ArrayList<RiskCardModel>();
+	  
 }

@@ -394,6 +394,7 @@ public class RiskStartGameController extends java.awt.Frame {
 		try {
 			if (validateMapLineInputText(mapEditTextField.getText())) {
 				mapEditTextArea.append(mapEditTextInsertCoordinates(mapEditTextField.getText()) + "\n");
+				mapEditTextArea.append(insertAdjacentCountriesInfo(mapEditTextField.getText()));
 				scrollTextAreaPanel.repaint();
 				mapEditTextField.setText("");
 			} else {
@@ -403,6 +404,66 @@ public class RiskStartGameController extends java.awt.Frame {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
+	}
+	
+	/**
+	 * 
+	 * @param mapInputLineText
+	 * @return
+	 */
+	private String insertAdjacentCountriesInfo(String mapInputLineText) {
+		StringBuilder adjacentCountriesInfo = new StringBuilder();
+		String ajacentCountryInfo = "";
+		int reachAdjacent = 0;
+		
+		for(String adjacentTerritory: mapInputLineText.split(","))
+		{
+			reachAdjacent++; //Skip the country and the continent to reach adjacent territory only.
+			if(reachAdjacent > 2)
+			{
+				try {
+					ajacentCountryInfo = getAdjacentCountryInfo(adjacentTerritory);
+					adjacentCountriesInfo.append(ajacentCountryInfo + "\n");
+				} catch (ParserConfigurationException | SAXException | IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			
+		}
+		
+		
+		return adjacentCountriesInfo.toString();
+		
+	}
+
+	/**
+	 * 
+	 * @param adjacentTerritory
+	 * @return
+	 * @throws ParserConfigurationException 
+	 * @throws IOException 
+	 * @throws SAXException 
+	 */
+	private String getAdjacentCountryInfo(String adjacentTerritory) throws ParserConfigurationException, SAXException, IOException {
+		String countryInfo = "";
+		File locationsXml = new File(Utility.getPathforFile("Locations.xml"));
+		DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance()
+                .newDocumentBuilder();
+		Document doc = dBuilder.parse(locationsXml);
+		NodeList countryList, continentList;
+		countryList = doc.getElementsByTagName("Country");
+		
+		for(int countryIndex = 0; countryIndex < countryList.getLength(); countryIndex++ )
+			{
+				Node countryNode = (Node) countryList.item(countryIndex);
+				if(countryNode.getTextContent().toLowerCase().equals((adjacentTerritory.toLowerCase())))
+				{
+					countryInfo =  adjacentTerritory  + "," + countryNode.getAttributes().getNamedItem("coordinate").getNodeValue() + "," + countryNode.getAttributes().getNamedItem("continent").getNodeValue(); 
+				break;
+				}
+			}
+		return countryInfo;
 	}
 
 	/**

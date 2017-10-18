@@ -16,4 +16,9 @@ public final class Utility {
 	{
 		return "src/risk/resources/map/" + mapNameWithExtension;
 	}
+	
+	public static String getPathforFile(String fileNameWithExtension)
+	{
+		return "src/risk/resources/" + fileNameWithExtension;
+	}
 }

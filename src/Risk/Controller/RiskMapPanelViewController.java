@@ -259,12 +259,12 @@ public class RiskMapPanelViewController extends JPanel {
 
 				for (int c = 0; c < num; c++) {
 					g.drawString(risk.getCountryName(hand.elementAt(c).territory) + " value = "
-							+ risk.curPlayer.getCard().elementAt(c - 1).value, 350, 250 + (c * 30));
+							+ risk.curPlayer.getCard().elementAt(c - 1).card_type, 350, 250 + (c * 30));
 
 					if (c < num - 1) {
 
-						if (risk.curPlayer.getCard().elementAt(c - 1).value
-								.equals(risk.curPlayer.getCard().elementAt(c).value))
+						if (risk.curPlayer.getCard().elementAt(c - 1).card_type
+								.equals(risk.curPlayer.getCard().elementAt(c).card_type))
 							risk.attackNum++;
 					}
 

@@ -31,6 +31,7 @@ public class RiskGameModel {
 	public static final int FORTIFY = 12;
 	public static final int FORTIFYING = 13;
 	public static final int FORTIFY_PHASE = 14;
+	public static int GAME_TRADE_CARD_PHASE_COUNT = 0;
 
 	public static final int GAME_OVER = 99;
 
@@ -83,6 +84,11 @@ public class RiskGameModel {
 		return true;
 	}
 
+	public static int fetchTradedArmiesCount()
+	{
+		GAME_TRADE_CARD_PHASE_COUNT ++;
+		return GAME_TRADE_CARD_PHASE_COUNT * 5;
+	}
 	public void initalPlayer() {
 		curPlayer = players.elementAt(0);
 	}
