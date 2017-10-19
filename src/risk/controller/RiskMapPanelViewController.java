@@ -3,37 +3,26 @@ package risk.controller;
 import risk.helpers.Utility;
 import risk.model.*;
 
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Image;
+import java.awt.geom.Line2D;
 import java.awt.image.PixelGrabber;
 import java.util.Vector;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
-// TODO: Auto-generated Javadoc
-/**
- * The Class RiskMapPanelViewController.
- */
 public class RiskMapPanelViewController extends JPanel {
-	
-	/** The map. */
 	private Image map;
-	
 	PixelGrabber pg;
-	
 	RiskGameModel risk;
-
 	private Image army;
-	
 	private Image shield;
-	
 	public int armies;
 
-	/**
-	 * Instantiates a new risk map panel view controller.
-	 */
 	public RiskMapPanelViewController() {
 
 		try {
@@ -46,37 +35,19 @@ public class RiskMapPanelViewController extends JPanel {
 		}
 	}
 
-	/**
-	 * Instantiates a new risk map panel view controller.
-	 *
-	 * @param r the r
-	 */
 	public RiskMapPanelViewController(RiskGameModel r) {
 		this();
 		risk = r;
 	}
 
-	/**
-	 * Refresh.
-	 */
 	public void refresh() {
 		repaint();
 	}
 
-	/**
-	 * Select country by color.
-	 *
-	 * @param x,
-	 * 
-	 * @param y,
-	 */
 	public void selectCountrybyColor(int x, int y) {
 
 	}
 
-	/* (non-Javadoc)
-	 * @see javax.swing.JComponent#paintComponent(java.awt.Graphics)
-	 */
 	@Override
 	public void paintComponent(Graphics g) {
 		int playerIndex;
@@ -94,6 +65,8 @@ public class RiskMapPanelViewController extends JPanel {
 			loc = risk.drawMap(c);
 			g.drawArc(loc[0], loc[1], 30, 30, 0, 360);
 		}
+		if(i > 0)
+		drawConnectAdjacentCountries(g);
 
 		for (int c = 0; c < i; c++) {
 			playerIndex = risk.getOwnership(c);
@@ -128,12 +101,13 @@ public class RiskMapPanelViewController extends JPanel {
 			g.drawString(armies, loc[0] + 10 + align, loc[1] + 20);
 
 		} // end draw cilcles and armies
-		/**
+		/***********************************************************
 		 * 
 		 * Attack Window is here
 		 * 
 		 * 
-		 */
+		 * /
+		 ************************************************************/
 
 		String s = "";
 		if (state == 0)
@@ -163,12 +137,12 @@ public class RiskMapPanelViewController extends JPanel {
 
 		g.drawString("Current State: " + s, 10, 10);
 
-		/**
+		/****************************************************
 		 *
 		 * Capture
 		 *
 		 *
-		 */
+		 ****************************************************/
 
 		if (state == RiskGameModel.CAPTURE) {
 
@@ -211,12 +185,12 @@ public class RiskMapPanelViewController extends JPanel {
 			g.drawString("MIN", 365, 250);
 		} // end capture
 
-		/**
+		/**************************************************************
 		 *
 		 * Fortify
 		 *
 		 *
-		 */
+		 ************************************************************/
 
 		if (state == RiskGameModel.FORTIFY_PHASE) {
 			int max = risk.aTerritory.getArmies();
@@ -256,11 +230,11 @@ public class RiskMapPanelViewController extends JPanel {
 			g.drawString("MIN", 365, 250);
 		} // end capture
 
-		/**
+		/**********************************************
 		 * 
 		 * RiskCard Menu
 		 * 
-		 */
+		 *********************************************/
 
 		if (state == RiskGameModel.TRADE_CARDS) {
 			int num = risk.curPlayer.getCard().size();
@@ -290,12 +264,12 @@ public class RiskMapPanelViewController extends JPanel {
 
 				for (int c = 0; c < num; c++) {
 					g.drawString(risk.getCountryName(hand.elementAt(c).territory) + " value = "
-							+ risk.curPlayer.getCard().elementAt(c - 1).value, 350, 250 + (c * 30));
+							+ risk.curPlayer.getCard().elementAt(c - 1).card_type, 350, 250 + (c * 30));
 
 					if (c < num - 1) {
 
-						if (risk.curPlayer.getCard().elementAt(c - 1).value
-								.equals(risk.curPlayer.getCard().elementAt(c).value))
+						if (risk.curPlayer.getCard().elementAt(c - 1).card_type
+								.equals(risk.curPlayer.getCard().elementAt(c).card_type))
 							risk.attackNum++;
 					}
 
@@ -333,12 +307,12 @@ public class RiskMapPanelViewController extends JPanel {
 			g.drawString(Integer.toString(def), 660, 250);
 			g.setFont(f1);
 
-			/**
+			/************************************************************
 			 *
 			 * Attacker
 			 *
 			 *
-			 */
+			 *********************************************************/
 
 			if (risk.active == risk.curPlayer) {
 				g.drawString("How many armies to attack white?", 390, 180);
@@ -377,11 +351,11 @@ public class RiskMapPanelViewController extends JPanel {
 				}
 			} // end attttacker painting
 
-			/**
+			/************************************************************
 			 *
 			 * Defender
 			 *
-			 */
+			 *********************************************************/
 
 			if (risk.active == risk.defender) {
 				g.drawString("How many armies to defend with?", 390, 180);
@@ -400,10 +374,37 @@ public class RiskMapPanelViewController extends JPanel {
 					g.fillArc(495, 265, 10, 10, 0, 360);
 				}
 
-			} // end defennnder painting
+			} // end defender painting
 
 		}
 
 	}
 
+	private void drawConnectAdjacentCountries(Graphics g) {
+		// TODO Auto-generated method stub			
+	    for(RiskTerritoryModel territory: RiskGameModel.territories)
+	    {
+	    	if(territory.getAdjacents().size() > 0)
+	    	{
+		    	for(int adjacent: territory.getAdjacents())
+		    	{
+		    		try {
+		    		drawLineforCoordinates(territory.getX(),territory.getY(),risk.getTerritoryAt(adjacent).getX(),risk.getTerritoryAt(adjacent).getY(),g);
+		    		}
+		    		catch(Exception e)
+		    		{
+		    			System.out.println("x1 " + territory.getX() + "y1 " + territory.getY() + "x2 " + risk.getTerritoryAt(adjacent).getX() + "y2 " + risk.getTerritoryAt(adjacent).getY());
+		    		}
+		    	}
+	    	}
+	    }       
+	}
+
+	private void drawLineforCoordinates(int start_x,int start_y, int destination_x, int destination_y, Graphics g)
+	{
+			Graphics2D g2 = (Graphics2D)g;
+			g2.setColor(Color.black);
+			g2.setStroke(new BasicStroke(2));
+	        g2.draw(new Line2D.Float(start_x, start_y, destination_x, destination_y));
+	}
 }

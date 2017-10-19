@@ -5,52 +5,44 @@
 
 package risk.model;
 
-// TODO: Auto-generated Javadoc
-/**
- * This class represents basic structure of the card.
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 
 public class RiskCardModel {
 
-	public String value;
-	
+	public String card_type;
 	public int territory;
 
-	
-	public RiskCardModel(int t, String v) {
-		this.value = v;
-		this.territory = t;
+	public RiskCardModel(int r_territory_number, String r_card_type) {
+		this.territory = r_territory_number;
+		this.card_type = r_card_type;		
 	}
 
-	/**
-	 * Instantiates a new risk card model.
-	 */
-	public RiskCardModel(int v, int t) {
-		this.territory = t;
-		switch (v) {
+	public RiskCardModel(int r_territory_number, int r_int_card_type) {
+		this.territory = r_territory_number;
+		switch (r_int_card_type) {
 		case 0:
-			this.value = "INFANTRY";
+			this.card_type = "INFANTRY";
 			break;
 		case 1:
-			this.value = "CAVALRY";
+			this.card_type = "CAVALRY";
 			break;
 		case 2:
-			this.value = "ARTILLERY";
+			this.card_type = "ARTILLERY";
 			break;
 		default:
-			this.value = "WILD";
+			this.card_type = "WILD";
 			break;
 		}
 
 	}
 
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
 	public String toString() {
-		return "Territory \n" + String.valueOf(territory) + "\n\n Value \n" + String.valueOf(value) + "-"
-				+ String.valueOf(territory) + "-" + value;
+		return "Territory \n" + String.valueOf(territory) + "\n\n Value \n" + String.valueOf(card_type) + "-"
+				+ String.valueOf(territory) + "-" + card_type;
 	}
 
 }

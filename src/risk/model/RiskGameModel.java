@@ -31,6 +31,7 @@ public class RiskGameModel {
 	public static final int FORTIFY = 12;
 	public static final int FORTIFYING = 13;
 	public static final int FORTIFY_PHASE = 14;
+	public static int GAME_TRADE_CARD_PHASE_COUNT = 0;
 
 	public static final int GAME_OVER = 99;
 
@@ -83,6 +84,11 @@ public class RiskGameModel {
 		return true;
 	}
 
+	public static int fetchTradedArmiesCount()
+	{
+		GAME_TRADE_CARD_PHASE_COUNT ++;
+		return GAME_TRADE_CARD_PHASE_COUNT * 5;
+	}
 	public void initalPlayer() {
 		curPlayer = players.elementAt(0);
 	}
@@ -307,7 +313,7 @@ public class RiskGameModel {
 					next = mapfile.nextLine();
 					int i = 0;
 					do {
-						if (!next.equals("-")) {
+						if (!(next.equals("-") || next.equals("") || next.equals("[Adjacents]"))) {
 							id = i++;
 							name = next.split(",")[0];
 							x = Integer.parseInt(next.split(",")[1]);
@@ -344,10 +350,10 @@ public class RiskGameModel {
 					boolean Notendfile = true;
 					do {
 						next = mapfile1.nextLine();
-
+			
 						if (next.equals(";;"))
 							Notendfile = false;
-						else if (!next.equals("-")) {
+						else if (!(next.equals("-") || next.equals("") || next.equals("[Adjacents]"))) {
 							String[] all = next.split(",");
 							String c = all[0];
 
@@ -369,11 +375,16 @@ public class RiskGameModel {
 					} while (Notendfile);
 
 				} // end if adjacents
-
 			}
+			file.close();
+			file1.close();
+			mapfile.close();
+			mapfile1.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
+		
 
 	}
 
@@ -687,9 +698,8 @@ public class RiskGameModel {
 	}
 
 	public RiskTerritoryModel getTerritoryAt(int i) {
-		if (i > 0)
+//		if (i >= 0)
 			return territories.elementAt(i);
-		return null;
 	}
 
 	public int numOfArmiesOnTerritory(int i) {
