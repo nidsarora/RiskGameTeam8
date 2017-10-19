@@ -31,8 +31,9 @@ public class RiskGameModel {
 	public static final int FORTIFY = 12;
 	public static final int FORTIFYING = 13;
 	public static final int FORTIFY_PHASE = 14;
-	public static int GAME_TRADE_CARD_PHASE_COUNT = 0;
-
+    
+	int armies;
+	
 	public static final int GAME_OVER = 99;
 
 	static public Vector<RiskTerritoryModel> territories = new Vector<RiskTerritoryModel>();
@@ -50,6 +51,58 @@ public class RiskGameModel {
 	public int attackNum = 0;
 	public int iter = 0;
 	public boolean drawn;
+	
+	public RiskTerritoryModel getaTerritory() {
+		return aTerritory;
+	}
+	
+	public void setaTerritory(RiskTerritoryModel test) {
+		aTerritory=test;
+	}
+	
+	public Vector<RiskTerritoryModel> getTerritories(){
+		return territories;
+	}
+	
+	public void setTerritories(Vector<RiskTerritoryModel> test) {
+		territories=test;
+	}
+	
+	public Vector<RiskContinentModel> getContinents(){
+		return continents;
+	}
+	
+	public void setContinents(Vector<RiskContinentModel> test) {
+		continents=test;
+	}
+	
+	public int getArmies(){
+		return armies;
+	}
+	
+	public void setArmies(int test) {
+		armies=test;
+	}
+	
+	public RiskPlayerModel getCurPlayer() {
+		return curPlayer;
+	}
+	
+	public void setCurPlayer(RiskPlayerModel test) {
+		curPlayer=test;
+	}
+	
+	public Vector<RiskPlayerModel> getPlayer(){
+		return players;
+	}
+	
+	public void setPlayer(Vector<RiskPlayerModel> test) {
+		players=test;
+	}
+
+	public RiskGameModel(String test) {
+		
+	}
 
 	public RiskGameModel() {
 
@@ -84,11 +137,6 @@ public class RiskGameModel {
 		return true;
 	}
 
-	public static int fetchTradedArmiesCount()
-	{
-		GAME_TRADE_CARD_PHASE_COUNT ++;
-		return GAME_TRADE_CARD_PHASE_COUNT * 5;
-	}
 	public void initalPlayer() {
 		curPlayer = players.elementAt(0);
 	}
@@ -110,7 +158,7 @@ public class RiskGameModel {
 
 	public void distubuteArmies() {
 		int numOfPlayers = players.size();
-		int armies = 0;
+		armies = 0;
 
 		if (numOfPlayers == 3)
 			armies = 15;// 35;
@@ -313,7 +361,7 @@ public class RiskGameModel {
 					next = mapfile.nextLine();
 					int i = 0;
 					do {
-						if (!(next.equals("-") || next.equals("") || next.equals("[Adjacents]"))) {
+						if (!next.equals("-")) {
 							id = i++;
 							name = next.split(",")[0];
 							x = Integer.parseInt(next.split(",")[1]);
@@ -350,10 +398,10 @@ public class RiskGameModel {
 					boolean Notendfile = true;
 					do {
 						next = mapfile1.nextLine();
-			
+
 						if (next.equals(";;"))
 							Notendfile = false;
-						else if (!(next.equals("-") || next.equals("") || next.equals("[Adjacents]"))) {
+						else if (!next.equals("-")) {
 							String[] all = next.split(",");
 							String c = all[0];
 
@@ -375,16 +423,11 @@ public class RiskGameModel {
 					} while (Notendfile);
 
 				} // end if adjacents
+
 			}
-			file.close();
-			file1.close();
-			mapfile.close();
-			mapfile1.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-		
 
 	}
 
@@ -466,10 +509,9 @@ public class RiskGameModel {
 		}
 
 		if (getState() == ATTACKING) {
-			if (country != -1) {// not a country
+				if (country != -1) {// not a country
 				RiskTerritoryModel d = territories.elementAt(country); // defending
 				// territory
-
 				System.out.println(aTerritory.getAdjacents().size());
 
 				for (int i : aTerritory.getAdjacents()) {
@@ -692,14 +734,19 @@ public class RiskGameModel {
 	public RiskPlayerModel getCurrentPlayer() {
 		return curPlayer;
 	}
+	
+	public void seTCurrentPlayer(RiskPlayerModel test) {
+		curPlayer=test;
+	}
 
 	public Vector<RiskPlayerModel> getPlayers() {
 		return players;
 	}
 
 	public RiskTerritoryModel getTerritoryAt(int i) {
-//		if (i >= 0)
+		if (i > 0)
 			return territories.elementAt(i);
+		return null;
 	}
 
 	public int numOfArmiesOnTerritory(int i) {

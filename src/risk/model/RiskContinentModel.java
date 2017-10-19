@@ -9,7 +9,7 @@ public class RiskContinentModel {
 	private int value;
 	RiskTerritoryModel t;
 
-	RiskContinentModel(String nm, Vector<Integer> t, int v) {
+	public RiskContinentModel(String nm, Vector<Integer> t, int v) {
 		name = nm;
 		value = v;
 		territories = t;

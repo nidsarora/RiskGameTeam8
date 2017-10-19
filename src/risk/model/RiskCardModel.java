@@ -12,28 +12,28 @@ package risk.model;
 
 public class RiskCardModel {
 
-	public String card_type;
+	public String value;
 	public int territory;
 
-	public RiskCardModel(int r_territory_number, String r_card_type) {
-		this.territory = r_territory_number;
-		this.card_type = r_card_type;		
+	public RiskCardModel(int t, String v) {
+		this.value = v;
+		this.territory = t;
 	}
 
-	public RiskCardModel(int r_territory_number, int r_int_card_type) {
-		this.territory = r_territory_number;
-		switch (r_int_card_type) {
+	public RiskCardModel(int v, int t) {
+		this.territory = t;
+		switch (v) {
 		case 0:
-			this.card_type = "INFANTRY";
+			this.value = "INFANTRY";
 			break;
 		case 1:
-			this.card_type = "CAVALRY";
+			this.value = "CAVALRY";
 			break;
 		case 2:
-			this.card_type = "ARTILLERY";
+			this.value = "ARTILLERY";
 			break;
 		default:
-			this.card_type = "WILD";
+			this.value = "WILD";
 			break;
 		}
 
@@ -41,8 +41,8 @@ public class RiskCardModel {
 
 	@Override
 	public String toString() {
-		return "Territory \n" + String.valueOf(territory) + "\n\n Value \n" + String.valueOf(card_type) + "-"
-				+ String.valueOf(territory) + "-" + card_type;
+		return "Territory \n" + String.valueOf(territory) + "\n\n Value \n" + String.valueOf(value) + "-"
+				+ String.valueOf(territory) + "-" + value;
 	}
 
 }
