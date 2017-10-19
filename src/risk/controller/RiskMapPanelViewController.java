@@ -237,47 +237,47 @@ public class RiskMapPanelViewController extends JPanel {
 		 *********************************************/
 
 		if (state == RiskGameModel.TRADE_CARDS) {
-			int num = risk.curPlayer.getCard().size();
-			Vector<RiskCardModel> hand = risk.curPlayer.getCard();
-			g.setColor(Color.white);
-			g.fillRect(250, 100, 500, 300);// Draw main window
-
-			g.setColor(Color.black);
-			Font names = new Font("Arial", Font.BOLD, 36);
-			Font f1 = new Font("Arial", Font.BOLD, 15);
-			g.setFont(names);
-
-			g.drawString("Trade Cards", 400, 160);
-			if (num < 3) {
-
-				g.drawRect(475, 350, 50, 30);// exit box
-				g.setFont(f1);
-				g.drawString("You dont have enough cards", 400, 320);
-				g.drawString("Exit", 485, 370);
-
-			}
-
-			if (num > 2) {
-
-				g.setFont(f1);
-				int temp;
-
-				for (int c = 0; c < num; c++) {
-					g.drawString(risk.getCountryName(hand.elementAt(c).territory) + " value = "
-							+ risk.curPlayer.getCard().elementAt(c - 1).card_type, 350, 250 + (c * 30));
-
-					if (c < num - 1) {
-
-						if (risk.curPlayer.getCard().elementAt(c - 1).card_type
-								.equals(risk.curPlayer.getCard().elementAt(c).card_type))
-							risk.attackNum++;
-					}
-
-				}
-
-				g.drawRect(475, 350, 50, 30);// exit box
-				g.drawString("Exit", 485, 370);
-			}
+//			int num = risk.curPlayer.getCard().size();
+//			Vector<RiskCardModel> hand = risk.curPlayer.getCard();
+//			g.setColor(Color.white);
+//			g.fillRect(250, 100, 500, 300);// Draw main window
+//
+//			g.setColor(Color.black);
+//			Font names = new Font("Arial", Font.BOLD, 36);
+//			Font f1 = new Font("Arial", Font.BOLD, 15);
+//			g.setFont(names);
+//
+//			g.drawString("Trade Cards", 400, 160);
+//			if (num < 3) {
+//
+//				g.drawRect(475, 350, 50, 30);// exit box
+//				g.setFont(f1);
+//				g.drawString("You dont have enough cards", 400, 320);
+//				g.drawString("Exit", 485, 370);
+//
+//			}
+//
+//			if (num > 2) {
+//
+//				g.setFont(f1);
+//				int temp;
+//
+//				for (int c = 0; c < num; c++) {
+//					g.drawString(risk.getCountryName(hand.elementAt(c).territory) + " value = "
+//							+ risk.curPlayer.getCard().elementAt(c - 1).card_type, 350, 250 + (c * 30));
+//
+//					if (c < num - 1) {
+//
+//						if (risk.curPlayer.getCard().elementAt(c - 1).card_type
+//								.equals(risk.curPlayer.getCard().elementAt(c).card_type))
+//							risk.attackNum++;
+//					}
+//
+//				}
+//
+//				g.drawRect(475, 350, 50, 30);// exit box
+//				g.drawString("Exit", 485, 370);
+//			}
 
 		} // end card menu
 

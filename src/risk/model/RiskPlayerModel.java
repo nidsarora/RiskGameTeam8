@@ -11,7 +11,7 @@ public class RiskPlayerModel {
 	private int armies;
 	// private int territoriesCaptured; //Same as occupiedTerritories.size()
 
-	RiskPlayerModel(String nm, int i) {
+	public RiskPlayerModel(String nm, int i) {
 		name = nm;
 		index = i;
 		occupiedTerritories = new Vector<RiskTerritoryModel>();
