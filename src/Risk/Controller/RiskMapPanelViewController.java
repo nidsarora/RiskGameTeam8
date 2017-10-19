@@ -388,7 +388,13 @@ public class RiskMapPanelViewController extends JPanel {
 	    	{
 		    	for(int adjacent: territory.getAdjacents())
 		    	{
+		    		try {
 		    		drawLineforCoordinates(territory.getX(),territory.getY(),risk.getTerritoryAt(adjacent).getX(),risk.getTerritoryAt(adjacent).getY(),g);
+		    		}
+		    		catch(Exception e)
+		    		{
+		    			System.out.println("x1 " + territory.getX() + "y1 " + territory.getY() + "x2 " + risk.getTerritoryAt(adjacent).getX() + "y2 " + risk.getTerritoryAt(adjacent).getY());
+		    		}
 		    	}
 	    	}
 	    }       

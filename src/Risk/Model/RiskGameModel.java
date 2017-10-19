@@ -313,7 +313,7 @@ public class RiskGameModel {
 					next = mapfile.nextLine();
 					int i = 0;
 					do {
-						if (!next.equals("-")) {
+						if (!(next.equals("-") || next.equals("") || next.equals("[Adjacents]"))) {
 							id = i++;
 							name = next.split(",")[0];
 							x = Integer.parseInt(next.split(",")[1]);
@@ -350,10 +350,10 @@ public class RiskGameModel {
 					boolean Notendfile = true;
 					do {
 						next = mapfile1.nextLine();
-
+			
 						if (next.equals(";;"))
 							Notendfile = false;
-						else if (!next.equals("-")) {
+						else if (!(next.equals("-") || next.equals("") || next.equals("[Adjacents]"))) {
 							String[] all = next.split(",");
 							String c = all[0];
 
@@ -376,9 +376,15 @@ public class RiskGameModel {
 
 				} // end if adjacents
 			}
+			file.close();
+			file1.close();
+			mapfile.close();
+			mapfile1.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
+		
 
 	}
 
@@ -692,9 +698,8 @@ public class RiskGameModel {
 	}
 
 	public RiskTerritoryModel getTerritoryAt(int i) {
-		if (i > 0)
+//		if (i >= 0)
 			return territories.elementAt(i);
-		return null;
 	}
 
 	public int numOfArmiesOnTerritory(int i) {

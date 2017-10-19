@@ -133,6 +133,8 @@ public class RiskStartGameController extends java.awt.Frame {
 			public void actionPerformed(ActionEvent arg0) {
 				try {
 					generateChooseMapPanel();
+					populateMapPanel();
+					initializeMapVariables();
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
@@ -169,10 +171,48 @@ public class RiskStartGameController extends java.awt.Frame {
 
 		pack();
 		
-		// Initialize CurrentGameMap with BaseEarthMap content by default. Later is choose map functionality
-		//is called it will overwrite this Map.
+		//This is clear the CurrentGameMap of previous games details
+		//clearCurrentGameMap();
+		initializeCurrentGameMap();	
+	}
+
+	private void clearCurrentGameMap()
+	{
+		try {
+		File currentGameMap = new File(Utility.getMapPathforFile("CurrentGameMap.map"));
+		BufferedWriter brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap));
+		brCurrentMapModifier.write("",0,"".length());
+		brCurrentMapModifier.close();
 		
-		initializeCurrentGameMap();		
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+	private void populateMapPanel() throws IOException {
+		// TODO Auto-generated method stub
+		StringBuilder sbCurrentMap = new StringBuilder();
+		String strCurrentMapLine;
+		BufferedReader brCurrentGameMap = new BufferedReader(new InputStreamReader(
+				RiskStartGameController.class.getResourceAsStream(Utility.getMapPath("CurrentGameMap.map"))));
+	    Boolean reachedTerritories = false;
+		while ((strCurrentMapLine =  brCurrentGameMap.readLine()) != null)
+		{
+			if(reachedTerritories)
+			{
+				if(!strCurrentMapLine.equals("[Adjacents]"))//Do not add new line after the last line.
+					mapEditTextArea.append(strCurrentMapLine + "\n");
+				else
+					break;				
+			}
+			if(strCurrentMapLine.equals("[Territories]"))
+				reachedTerritories = true;
+		}	
+		brCurrentGameMap.close();
+		generateMapFrame.repaint();
+		scrollTextAreaPanel.repaint();
 		
 	}
 
@@ -181,7 +221,7 @@ public class RiskStartGameController extends java.awt.Frame {
 		StringBuilder sbEarthMapReader = new StringBuilder();
 		String strEarthMapLine;
 		BufferedReader brEarthMapReader = new BufferedReader(new InputStreamReader(
-				RiskStartGameController.class.getResourceAsStream(Utility.getMapPath("BaseEarthMap.map"))));
+				RiskStartGameController.class.getResourceAsStream(Utility.getMapPath("BaseEarthMapWithoutCoordinates.map"))));
 		File currentGameMap = new File(Utility.getMapPathforFile("CurrentGameMap.map"));
 		BufferedWriter brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap));
 		
@@ -197,6 +237,7 @@ public class RiskStartGameController extends java.awt.Frame {
 			brCurrentMapModifier.write(sbEarthMapReader.toString(),0,sbEarthMapReader.toString().length());
 			brCurrentMapModifier.close();
 			brEarthMapReader.close();
+
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -227,8 +268,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	 */
 	private void generateChooseMapPanel() throws IOException {
 
-		JFrame generateMapFrame = new JFrame("Generate Map");
-		generateMapFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		generateMapFrame = new JFrame("Generate Map");
+		generateMapFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		generateMapFrame.setResizable(false);
 
 		Container pane = generateMapFrame.getContentPane();
@@ -244,7 +285,7 @@ public class RiskStartGameController extends java.awt.Frame {
 		c.gridx = 1;
 		c.gridy = 0;
 		mapEditTextArea = new JTextArea("", 200, 120);
-		mapEditTextArea.setEditable(false);
+		//mapEditTextArea.setEditable(false);
 		scrollTextAreaPanel.add(new JScrollPane(mapEditTextArea, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
 				ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED));
 		pane.add(scrollTextAreaPanel, c);
@@ -313,6 +354,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	}
 
 	private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+
 		RiskController.ShowGUI();
 		setVisible(false);
 	}
@@ -357,23 +399,23 @@ public class RiskStartGameController extends java.awt.Frame {
 	 */
 	private void CurrentGameMapEditor(String editTextArea) {
 		String EarthMapStaticContent;
-		BufferedWriter brCurrentMapModifier;
 		File currentGameMap;
+		String AdjacentCountryInfo;
 
 		try {
 			currentGameMap = new File(Utility.getMapPathforFile("CurrentGameMap.map"));
-			brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap, true));
 
-			// Called during initialize
+			// Called during initialize to empty the map of previous territories
 			if (editTextArea.equals("")) {
-				brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap, false));
+				BufferedWriter bufferedWriter  = new BufferedWriter(new FileWriter(currentGameMap, false));
 				EarthMapStaticContent = sbBaseMapString.substring(0,
 						sbBaseMapString.indexOf("[Territories]") + String.valueOf("[Territories]").length());
-				brCurrentMapModifier.write(EarthMapStaticContent, 0, EarthMapStaticContent.length());
-				brCurrentMapModifier.close();
+				bufferedWriter.write(EarthMapStaticContent, 0, EarthMapStaticContent.length());
+				bufferedWriter.close();
 			} else {
-				brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap, true));
-				brCurrentMapModifier.write("\n" + editTextArea, 0, ("\n" + editTextArea).length()); // +2 is for ;; appended
+				AdjacentCountryInfo = insertAdjacentCountriesInfoWrapper(editTextArea); //(mapEditTextField.getText()));
+				BufferedWriter brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap, true));
+				brCurrentMapModifier.write("\n" + editTextArea + "\n"+ AdjacentCountryInfo, 0, ("\n" + editTextArea + "\n"+ AdjacentCountryInfo).length()); // +2 is for ;; appended
 				brCurrentMapModifier.write(";;",0,2);
 				brCurrentMapModifier.close();
 			}
@@ -382,6 +424,20 @@ public class RiskStartGameController extends java.awt.Frame {
 		}
 	}
 
+	private String insertAdjacentCountriesInfoWrapper(String editTextArea) {
+		String[] editTextAreaArray = editTextArea.split("\n");
+		StringBuilder adjacentCountryBuilder = new StringBuilder();
+		
+		adjacentCountryBuilder.append("[Adjacents]");
+		for(String inputLine: editTextAreaArray)
+		{
+			adjacentCountryBuilder.append(insertAdjacentCountriesInfo(inputLine) + "\n");
+		}
+		
+		return adjacentCountryBuilder.toString();
+	}
+
+	
 	/**
 	 * Processes user input from the JTextField. Calls another method to fetch and
 	 * insert coordinates for the territory. Appends the input with coordinates to
@@ -394,7 +450,6 @@ public class RiskStartGameController extends java.awt.Frame {
 		try {
 			if (validateMapLineInputText(mapEditTextField.getText())) {
 				mapEditTextArea.append(mapEditTextInsertCoordinates(mapEditTextField.getText()) + "\n");
-				mapEditTextArea.append(insertAdjacentCountriesInfo(mapEditTextField.getText()));
 				scrollTextAreaPanel.repaint();
 				mapEditTextField.setText("");
 			} else {
@@ -503,7 +558,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	 */
 	private String fetchCoordinates(String territory) {
 		String coordinates = "";
-		initializeMapVariables();
+	//	initializeMapVariables();
 		coordinates = recursiveSearchCoordinates(sbBaseMapString.toString(), territory);
 		return coordinates;
 	}
@@ -702,5 +757,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	private JPanel notePanel;
 	private JLabel noteLabel;
 	private StringBuilder sbBaseMapString = new StringBuilder();
+	private JFrame generateMapFrame;
+	private StringBuilder sbAdjacentCountryInfo = new StringBuilder();
 
 }

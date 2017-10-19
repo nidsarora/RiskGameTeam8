@@ -10,9 +10,9 @@
 	<Country coordinate="149,185" continent="North_America">Western_United_States</Country>
 	<Country coordinate="225,203" continent="North_America">Eastern_United_States</Country>
 	<Country coordinate="160,258" continent="North_America">Central_America</Country>
-	<Country coordinate="" continent="South_America">Venezuela</Country>
-	<Country coordinate="" continent="South_America">Peru</Country>
-	<Country coordinate="" continent="South_America">Brazil</Country>
+	<Country coordinate="235,305" continent="South_America">Venezuela</Country>
+	<Country coordinate="235,370" continent="South_America">Peru</Country>
+	<Country coordinate="307,345" continent="South_America">Brazil</Country>
 	<Country coordinate="" continent="South_America">Argentina</Country>
 	<Country coordinate="" continent="Europe">Iceland</Country>
 	<Country coordinate="" continent="Europe">Scandinavia</Country>
