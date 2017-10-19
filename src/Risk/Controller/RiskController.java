@@ -576,13 +576,33 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	  {					  // Logic to add armies!
 			  if (isTradedCardSetValid())
 				  {
-				  risk.curPlayer.addArmies(risk.fetchTradedArmiesCount());
-				  cardStatusLabel.setText("Success");
+				   if(doesCardMatchCurrentPlayerTerritory() > 0) // Even if we have two matching countries to cards we will only give him 2 more armies
+					   risk.curPlayer.addArmies(risk.fetchTradedArmiesCount() + 2);
+				   else
+					   risk.curPlayer.addArmies(risk.fetchTradedArmiesCount());				      
+				   cardStatusLabel.setText("Success");
 				  }
 	  }
 	  
 	  
-	  private boolean isAlreadyAdded(JButton jbn) {
+	  
+	  
+	  private int doesCardMatchCurrentPlayerTerritory() {
+		int countMatchingCards = 0;  	
+
+		for(RiskCardModel card: risk.curPlayer.getCard())
+		{
+			for(RiskTerritoryModel territory: risk.curPlayer.getOccupiedTerritories())
+			{
+				if(territory.getId() == card.territory)
+					countMatchingCards++;
+			}
+		}
+		
+		return countMatchingCards;
+	}
+
+	private boolean isAlreadyAdded(JButton jbn) {
 
 		  for (RiskCardModel card : lstTradedCards) {
 			  if (card.territory == Integer.valueOf(jbn.getName().split("-")[0])
@@ -611,8 +631,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 						  return true;
 				  }
 			  } else
-				  { 
-					  
+				  { 				  
 					  if(isValidCountWildCard())
 						  {
 							  cardStatusLabel.setText("Success");
