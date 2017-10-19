@@ -102,7 +102,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		  });
 		  jPanel3.add(AttackButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 10, 89, -1));
 
-		  EndButton.setVisible(true);
+		  EndButton.setVisible(false);
 		  EndButton.setFont(resourceMap.getFont("EndButton.font")); // NOI18N
 		  EndButton.setText(resourceMap.getString("EndButton.text")); // NOI18N
 		  EndButton.setName("EndButton"); // NOI18N
@@ -164,8 +164,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			risk.defenseNum = 0;
 			risk.attackNum = 0;
 			AttackButton.setText("Attack");
-			EndButton.setVisible(true);
-			FortifyButton.setVisible(true);
+			EndButton.setVisible(false);
+			FortifyButton.setVisible(false);
 			statusLabel.setText("What would you like to do?");
 			jPanel1.repaint();
 		}
@@ -181,8 +181,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		jPanel3.repaint();
 		statusLabel.setText("Recieved a bonus of " + risk.curPlayer.getNumberOfArmies());
 		AttackButton.setVisible(false);
-		EndButton.setVisible(true);
-		FortifyButton.setVisible(true);
+		EndButton.setVisible(false);
+		FortifyButton.setVisible(false);
 		risk.drawn = false;
 
 	}
@@ -270,8 +270,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		  if (risk.getState() == RiskGameModel.ACTIVE_TURN) {
 			  name = risk.curPlayer.getName();
 			  statusLabel.setText("What would you like to do?");
-			  EndButton.setVisible(true);
-			  FortifyButton.setVisible(true);
+			  EndButton.setVisible(false);
+			  FortifyButton.setVisible(false);
 			  AttackButton.setText("Attack");
 			  AttackButton.setVisible(true);
 			  if (risk.curPlayer.getCard().size() > 2)
@@ -360,8 +360,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 						  risk.setState(RiskGameModel.ACTIVE_TURN);
 						  statusLabel.setText(risk.curPlayer.getName() + " has lost the battle");
 						  AttackButton.setText("Attack");
-						  FortifyButton.setVisible(true);
-						  EndButton.setVisible(true);
+						  FortifyButton.setVisible(false);
+						  EndButton.setVisible(false);
 						  risk.defenseNum = 0;
 						  risk.attackNum = 0;
 						  risk.dTerritory = null;
@@ -406,11 +406,11 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					  else
 						  statusLabel.setText(risk.defenseNum + " armies moved to " + risk.dTerritory.getName());
 
-                 EndButton.setVisible(true);
-                 FortifyButton.setVisible(true);
-                 risk.capture();
-               }
-           }
+					  EndButton.setVisible(false);
+					  FortifyButton.setVisible(false);
+					  risk.capture();
+				  }
+			  }
 
 		  } // end capturing
 
@@ -460,8 +460,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					  else
 						  statusLabel.setText(risk.defenseNum + " armies moved to " + risk.dTerritory.getName());
 
-					  EndButton.setVisible(true);
-					  FortifyButton.setVisible(true);
+					  EndButton.setVisible(false);
+					  FortifyButton.setVisible(false);
 					  risk.aTerritory.looseArmies(risk.defenseNum);
 					  risk.dTerritory.addArmies(risk.defenseNum);
 					  risk.setState(RiskGameModel.ACTIVE_TURN);
@@ -474,7 +474,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			  if (y > 350 && y < 380) {
 				  if (x > 475 && x < 525) { // if exxti button pushed
 					  risk.setState(RiskGameModel.ACTIVE_TURN);
-					  System.out.println("exit");
+					  System.out.println("exitt");
 				  }
 			  } // end exit
 
@@ -576,13 +576,33 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	  {					  // Logic to add armies!
 			  if (isTradedCardSetValid())
 				  {
-				  risk.curPlayer.addArmies(risk.fetchTradedArmiesCount());
-				  cardStatusLabel.setText("Success");
+				   if(doesCardMatchCurrentPlayerTerritory() > 0) // Even if we have two matching countries to cards we will only give him 2 more armies
+					   risk.curPlayer.addArmies(risk.fetchTradedArmiesCount() + 2);
+				   else
+					   risk.curPlayer.addArmies(risk.fetchTradedArmiesCount());				      
+				   cardStatusLabel.setText("Success");
 				  }
 	  }
 	  
 	  
-	  private boolean isAlreadyAdded(JButton jbn) {
+	  
+	  
+	  private int doesCardMatchCurrentPlayerTerritory() {
+		int countMatchingCards = 0;  	
+
+		for(RiskCardModel card: risk.curPlayer.getCard())
+		{
+			for(RiskTerritoryModel territory: risk.curPlayer.getOccupiedTerritories())
+			{
+				if(territory.getId() == card.territory)
+					countMatchingCards++;
+			}
+		}
+		
+		return countMatchingCards;
+	}
+
+	private boolean isAlreadyAdded(JButton jbn) {
 
 		  for (RiskCardModel card : lstTradedCards) {
 			  if (card.territory == Integer.valueOf(jbn.getName().split("-")[0])
@@ -611,8 +631,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 						  return true;
 				  }
 			  } else
-				  { 
-					  
+				  { 				  
 					  if(isValidCountWildCard())
 						  {
 							  cardStatusLabel.setText("Success");

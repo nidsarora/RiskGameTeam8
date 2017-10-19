@@ -1,0 +1,25 @@
+[Map]
+author=Brigham Judd
+image=Earth.bmp
+wrap=yes
+scroll=horizontal
+warn=yes
+
+[Continents]
+North America=5
+South America=2
+Africa=3
+Europe=5
+Asia=7
+Australia=2
+
+[Territories]
+Alaska,47,76,North_America,Northwest_Territory,Alberta,Kamchatka
+
+[Adjacents]
+
+Northwest_Territory,155,70,North_America
+Alberta,143,123,North_America
+Kamchatka,910,50,Asia
+
+;;
