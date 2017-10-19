@@ -9,7 +9,7 @@ public class RiskContinentModel {
 	private int value;
 	RiskTerritoryModel t;
 
-	public RiskContinentModel(String nm, Vector<Integer> t, int v) {
+	RiskContinentModel(String nm, Vector<Integer> t, int v) {
 		name = nm;
 		value = v;
 		territories = t;
@@ -31,6 +31,11 @@ public class RiskContinentModel {
 		return (territories.contains(t.getId()));
 	}
 
+	public void AddTerritories(Integer i)
+	{
+		territories.add(i);
+	}
+	
 	public boolean isContinentCaptured(RiskPlayerModel p) {
 		Vector<Integer> t1 = new Vector<Integer>();
 		Vector<RiskTerritoryModel> t2 = p.getOccupiedTerritories();

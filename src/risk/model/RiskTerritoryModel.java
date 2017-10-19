@@ -13,7 +13,7 @@ public class RiskTerritoryModel {
 	private int continent;
 	private Vector<Integer> adjacents;
 
-	public RiskTerritoryModel(int i, String nm, int c, int xloc, int yloc) {
+	RiskTerritoryModel(int i, String nm, int c, int xloc, int yloc) {
 		id = i;
 		name = nm;
 		continent = c;

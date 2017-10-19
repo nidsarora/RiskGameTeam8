@@ -1,49 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Locations>
 <Countries>
-	<Country>Alaska</Country>
-	<Country>Northwest_Territory</Country>
-	<Country>Greenland</Country>
-	<Country>Alberta</Country>
-	<Country>Ontario</Country>
-	<Country>Eastern_Canada</Country>
-	<Country>Western_United_States</Country>
-	<Country>Eastern_United_States</Country>
-	<Country>Central_America</Country>
-	<Country>Venezuela</Country>
-	<Country>Peru</Country>
-	<Country>Brazil</Country>
-	<Country>Argentina</Country>
-	<Country>Iceland</Country>
-	<Country>Scandinavia</Country>
-	<Country>Russia</Country>
-	<Country>Great_Britain</Country>
-	<Country>Northern_Europe</Country>
-	<Country>Western_Europe</Country>
-	<Country>Southern_Europe</Country>
-	<Country>North_Africa</Country>
-	<Country>Egypt</Country>
-	<Country>Central_Africa</Country>
-	<Country>East_Africa</Country>
-	<Country>South_Africa</Country>
-	<Country>Madagascar</Country>
-	<Country>Ural</Country>
-	<Country>Siberia</Country>
-	<Country>Yakutsk</Country>
-	<Country>Irkutsk</Country>
-	<Country>Mongolia</Country>
-	<Country>Kamchatka</Country>
-	<Country>Japan</Country>
-	<Country>Afghanistan</Country>
-	<Country>China</Country>
-	<Country>Middle_East</Country>
-	<Country>India</Country>
-	<Country>Southeast_Asia</Country>
-	<Country>Indonesia</Country>
-	<Country>New_Guinea</Country>
-	<Country>Western_Australia</Country>
-	<Country>Eastern_Australia</Country>
-	<Country>Eastern_Australia</Country>
+	<Country coordinate="47,76" continent="North_America">Alaska</Country>
+	<Country coordinate="155,70" continent="North_America">Northwest_Territory</Country>
+	<Country coordinate="334,38" continent="North_America">Greenland</Country>
+	<Country coordinate="143,123" continent="North_America">Alberta</Country>
+	<Country coordinate="209,128" continent="North_America">Ontario</Country>
+	<Country coordinate="280,134" continent="North_America">Eastern_Canada</Country>
+	<Country coordinate="149,185" continent="North_America">Western_United_States</Country>
+	<Country coordinate="225,203" continent="North_America">Eastern_United_States</Country>
+	<Country coordinate="160,258" continent="North_America">Central_America</Country>
+	<Country coordinate="235,305" continent="South_America">Venezuela</Country>
+	<Country coordinate="235,370" continent="South_America">Peru</Country>
+	<Country coordinate="307,345" continent="South_America">Brazil</Country>
+	<Country coordinate="" continent="South_America">Argentina</Country>
+	<Country coordinate="" continent="Europe">Iceland</Country>
+	<Country coordinate="" continent="Europe">Scandinavia</Country>
+	<Country coordinate="" continent="Africa">Russia</Country>
+	<Country coordinate="" continent="Europe">Great_Britain</Country>
+	<Country coordinate="" continent="Europe">Northern_Europe</Country>
+	<Country coordinate="" continent="Europe">Western_Europe</Country>
+	<Country coordinate="" continent="Europe">Southern_Europe</Country>
+	<Country coordinate="" continent="Africa">North_Africa</Country>
+	<Country coordinate="" continent="Africa">Egypt</Country>
+	<Country coordinate="" continent="Africa">Central_Africa</Country>
+	<Country coordinate="" continent="Africa">East_Africa</Country>
+	<Country coordinate="" continent="Africa">South_Africa</Country>
+	<Country coordinate="" continent="Asia">Madagascar</Country>
+	<Country coordinate="" continent="Asia">Ural</Country>
+	<Country coordinate="" continent="Asia">Siberia</Country>
+	<Country coordinate="" continent="Asia">Yakutsk</Country>
+	<Country coordinate="" continent="Asia">Irkutsk</Country>
+	<Country coordinate="" continent="Asia">Mongolia</Country>
+	<Country coordinate="910,50" continent="Asia">Kamchatka</Country>
+	<Country coordinate="" continent="Asia">Japan</Country>
+	<Country coordinate="" continent="Asia"> Afghanistan</Country>
+	<Country coordinate="" continent="Asia">China</Country>
+	<Country coordinate="" continent="Asia">Middle_East</Country>
+	<Country coordinate="" continent="Asia">India</Country>
+	<Country coordinate="" continent="Asia">Southeast_Asia</Country>
+	<Country coordinate="" continent="Asia">Indonesia</Country>
+	<Country coordinate="" continent="Asia">New_Guinea</Country>
+	<Country coordinate="" continent="Australia">Western_Australia</Country>
+	<Country coordinate="" continent="Australia">Eastern_Australia</Country>
 </Countries>
 <Continents>
 	<Continent>North_America</Continent>
