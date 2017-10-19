@@ -33,6 +33,8 @@ public class RiskGameModel {
 	public static final int FORTIFY_PHASE = 14;
 	public static int GAME_TRADE_CARD_PHASE_COUNT = 0;
 
+	int armies;
+
 	public static final int GAME_OVER = 99;
 
 	static public Vector<RiskTerritoryModel> territories = new Vector<RiskTerritoryModel>();
@@ -50,6 +52,58 @@ public class RiskGameModel {
 	public int attackNum = 0;
 	public int iter = 0;
 	public boolean drawn;
+	
+	public RiskTerritoryModel getaTerritory() {
+		return aTerritory;
+	}
+	
+	public void setaTerritory(RiskTerritoryModel test) {
+		aTerritory=test;
+	}
+	
+	public Vector<RiskTerritoryModel> getTerritories(){
+		return territories;
+	}
+	
+	public void setTerritories(Vector<RiskTerritoryModel> test) {
+		territories=test;
+	}
+	
+	public Vector<RiskContinentModel> getContinents(){
+		return continents;
+	}
+	
+	public void setContinents(Vector<RiskContinentModel> test) {
+		continents=test;
+	}
+	
+	public int getArmies(){
+		return armies;
+	}
+	
+	public void setArmies(int test) {
+		armies=test;
+	}
+	
+	public RiskPlayerModel getCurPlayer() {
+		return curPlayer;
+	}
+	
+	public void setCurPlayer(RiskPlayerModel test) {
+		curPlayer=test;
+	}
+	
+	public Vector<RiskPlayerModel> getPlayer(){
+		return players;
+	}
+	
+	public void setPlayer(Vector<RiskPlayerModel> test) {
+		players=test;
+	}
+
+	public RiskGameModel(String test) {
+		
+	}
 
 	public RiskGameModel() {
 

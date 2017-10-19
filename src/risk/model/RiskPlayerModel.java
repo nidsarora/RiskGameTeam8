@@ -37,6 +37,10 @@ public class RiskPlayerModel {
 	public Vector<RiskTerritoryModel> getOccupiedTerritories() {
 		return occupiedTerritories;
 	}
+	
+	public void setOccupiedTerritories(Vector<RiskTerritoryModel> rtm) {
+		 occupiedTerritories=rtm;
+	}
 
 	public int numOfTerritories() {
 		return occupiedTerritories.size();
