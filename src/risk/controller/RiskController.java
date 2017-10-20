@@ -295,6 +295,17 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			  EndButton.setVisible(true);
 			  FortifyButton.setVisible(true);
 			  AttackButton.setText("Attack");
+			  
+
+			  /* Only for testing */
+			  risk.curPlayer.setCard(new RiskCardModel(0, 0));
+			  risk.curPlayer.setCard(new RiskCardModel(1, 1));
+			  risk.curPlayer.setCard(new RiskCardModel(2, 2));
+			  risk.curPlayer.setCard(new RiskCardModel(3, 2));
+			  risk.curPlayer.setCard(new RiskCardModel(3, 3));
+			  
+			  /* Only for testing */
+			  
 			  AttackButton.setVisible(false);
 			  if (risk.curPlayer.getCard().size() > 2)
 				  CardButton.setVisible(true);
@@ -518,14 +529,6 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		  
 		  lstTradedCards = new ArrayList<RiskCardModel>();
 
-		  /* Only for testing */
-		  risk.curPlayer.setCard(new RiskCardModel(0, 0));
-		  risk.curPlayer.setCard(new RiskCardModel(1, 1));
-		  risk.curPlayer.setCard(new RiskCardModel(2, 2));
-		  risk.curPlayer.setCard(new RiskCardModel(3, 2));
-		  risk.curPlayer.setCard(new RiskCardModel(3, 3));
-		  
-		  /* Only for testing */
 
 		  cardsFrame = new JFrame("Trade Cards");
 		  cardsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

@@ -6,8 +6,8 @@ scroll=horizontal
 warn=yes
 
 [Continents]
-North America=5
-South America=2
+North_America=5
+South_America=2
 Africa=3
 Europe=5
 Asia=7
