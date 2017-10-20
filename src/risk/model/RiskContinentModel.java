@@ -39,7 +39,9 @@ public class RiskContinentModel {
 	public boolean isContinentCaptured(RiskPlayerModel p) {
 		Vector<Integer> t1 = new Vector<Integer>();
 		Vector<RiskTerritoryModel> t2 = p.getOccupiedTerritories();
-
+                
+	        if (territories.size() == 0)
+	             return false;
 		for (int c = 0; c < t2.size(); c++)
 			t1.add(t2.elementAt(c).getId());
 		for (int i = 0; i < territories.size(); i++) {

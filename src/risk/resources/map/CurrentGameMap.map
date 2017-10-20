@@ -6,8 +6,8 @@ scroll=horizontal
 warn=yes
 
 [Continents]
-North America=5
-South America=2
+North_America=5
+South_America=2
 Africa=3
 Europe=5
 Asia=7
@@ -37,6 +37,7 @@ Northern_Europe,502,174,Europe,Scandinavia,Russia,Great_Britain,Western_Europe,S
 Western_Europe,422,247,Europe,Great_Britain,Northern_Europe,Southern_Europe,North_Africa
 Southern_Europe,513,231,Europe,Russia,Northern_Europe,Western_Europe,Middle_East
 
+<<<<<<< HEAD
 North_Africa,475,335,Africa,Brazil,Western_Europe,Southern_Europe,Egypt,Central_Africa,East_Africa
 Egypt,538,305,Africa,Southern_Europe,North_Africa,Middle_East,East_Africa
 Central_Africa,540,404,Africa,North_Africa,East_Africa,South_Africa
@@ -62,3 +63,6 @@ New_Guinea,907,367,Australia,Indonesia,Western_Australia,Eastern_Australia
 Western_Australia,857,461,Australia,Indonesia,New_Guinea,Eastern_Australia
 Eastern_Australia,950,464,Australia,New_Guinea,Western_Australia
 ;;
+=======
+;;
+>>>>>>> 5f348b6208be5b261529f91980b5cfa347e83d0c

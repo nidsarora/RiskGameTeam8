@@ -110,12 +110,12 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 		  statusLabel.setFont(resourceMap.getFont("statusLabel.font")); // NOI18N
 		  statusLabel.setForeground(resourceMap.getColor("statusLabel.foreground")); // NOI18N
-		  statusLabel.setText(resourceMap.getString("statusLabel.text")); // NOI18N
+		  statusLabel.setText("New Game"); // NOI18N
 		  statusLabel.setName("statusLabel"); // NOI18N
 		  jPanel3.add(statusLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 63, 427, -1));
 
 		  AttackButton.setFont(resourceMap.getFont("AttackButton.font")); // NOI18N
-		  AttackButton.setText(resourceMap.getString("AttackButton.text")); // NOI18N
+		  AttackButton.setText("Attack"); // NOI18N
 		  AttackButton.setName("AttackButton"); // NOI18N
 		  AttackButton.addMouseListener(new java.awt.event.MouseAdapter() {
 			  public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -126,36 +126,36 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 		  EndButton.setVisible(false);
 		  EndButton.setFont(resourceMap.getFont("EndButton.font")); // NOI18N
-		  EndButton.setText(resourceMap.getString("EndButton.text")); // NOI18N
+		  EndButton.setText("End"); // NOI18N
 		  EndButton.setName("EndButton"); // NOI18N
 		  EndButton.addMouseListener(new java.awt.event.MouseAdapter() {
 			  public void mouseClicked(java.awt.event.MouseEvent evt) {
 				  EndButtonMouseClicked(evt);
 			  }
 		  });
-		  jPanel3.add(EndButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 10, -1, -1));
+		  jPanel3.add(EndButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 30, -1, 30));
 
 		  FortifyButton.setVisible(false);
 		  FortifyButton.setFont(resourceMap.getFont("FortifyButton.font")); // NOI18N
-		  FortifyButton.setText(resourceMap.getString("FortifyButton.text")); // NOI18N
-		  FortifyButton.setName("FortifyButton"); // NOI18N
+		  FortifyButton.setText("Fortify"); // NOI18N
+		  FortifyButton.setName("Fortify"); // NOI18N
 		  FortifyButton.addMouseListener(new java.awt.event.MouseAdapter() {
 			  public void mouseClicked(java.awt.event.MouseEvent evt) {
 				  FortifyButtonMouseClicked(evt);
 			  }
 		  });
-		  jPanel3.add(FortifyButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(661, 10, 90, -1));
-
+		  jPanel3.add(FortifyButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(661, 30, 90, 30));
+          
 		  CardButton.setVisible(true);
 		  CardButton.setFont(resourceMap.getFont("CardButton.font")); // NOI18N
-		  CardButton.setText(resourceMap.getString("CardButton.text")); // NOI18N
+		  CardButton.setText("Card"); // NOI18N
 		  CardButton.setName("CardButton"); // NOI18N
 		  CardButton.addMouseListener(new java.awt.event.MouseAdapter() {
 			  public void mouseClicked(java.awt.event.MouseEvent evt) {
 				  CardButtonMouseClicked(evt);
 			  }
 		  });
-		  jPanel3.add(CardButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(438, 10, 90, -1));
+		  jPanel3.add(CardButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(438, 25, 220, 25));
 
 		  javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
 		  getContentPane().setLayout(layout);
@@ -215,7 +215,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	}
 
 	private void CardButtonMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_CardButtonMouseClicked
-		risk.setState(RiskGameModel.TRADE_CARDS);
+		//risk.setState(RiskGameModel.TRADE_CARDS);
 		GenerateCardPanel();
 		jPanel1.repaint();
 	}
@@ -519,13 +519,16 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		  lstTradedCards = new ArrayList<RiskCardModel>();
 
 		  /* Only for testing */
-		  risk.curPlayer.setCard(new RiskCardModel(1, 39));
-		  risk.curPlayer.setCard(new RiskCardModel(1, 39));
-		  risk.curPlayer.setCard(new RiskCardModel(3, 11));
+		  risk.curPlayer.setCard(new RiskCardModel(0, 0));
+		  risk.curPlayer.setCard(new RiskCardModel(1, 1));
+		  risk.curPlayer.setCard(new RiskCardModel(2, 2));
+		  risk.curPlayer.setCard(new RiskCardModel(3, 2));
+		  risk.curPlayer.setCard(new RiskCardModel(3, 3));
+		  
 		  /* Only for testing */
 
 		  cardsFrame = new JFrame("Trade Cards");
-		  cardsFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		  cardsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		  cardsFrame.setResizable(false);
 
 		  statusPanel = new JPanel();
@@ -603,10 +606,11 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 				   else
 					   risk.curPlayer.addArmies(risk.fetchTradedArmiesCount());				      
 				   cardStatusLabel.setText("Success");
+				   jPanel3.repaint();
 				  }
 	  }
 	  
-	  
+  
 	  
 	  
 	  private int doesCardMatchCurrentPlayerTerritory() {
