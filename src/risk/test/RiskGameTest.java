@@ -27,18 +27,18 @@ public class RiskGameTest {
 		RiskGameModel riskGameModel=new RiskGameModel("test");
 		RiskPlayerModel rpm=new RiskPlayerModel("player1",1);
 		//riskGameModel.loadMap();
-		RiskTerritoryModel rtm=new RiskTerritoryModel(1,"player1",2,155,70);
-		RiskTerritoryModel rtm1=new RiskTerritoryModel(1,"player1",2,280,134);
-		RiskTerritoryModel rtm2=new RiskTerritoryModel(1,"player1",2,280,134);
-		RiskTerritoryModel rtm3=new RiskTerritoryModel(1,"player1",2,280,134);
-		RiskTerritoryModel rtm4=new RiskTerritoryModel(1,"player1",2,280,134);
-		RiskTerritoryModel rtm5=new RiskTerritoryModel(1,"player1",2,280,134);
-		RiskTerritoryModel rtm6=new RiskTerritoryModel(1,"player1",2,280,134);
-		RiskTerritoryModel rtm7=new RiskTerritoryModel(1,"player1",2,280,134);
-		RiskTerritoryModel rtm8=new RiskTerritoryModel(1,"player1",2,280,134);
-		RiskTerritoryModel rtm9=new RiskTerritoryModel(1,"player1",2,280,134);
-		RiskTerritoryModel rtm10=new RiskTerritoryModel(1,"player1",2,280,134);
-		RiskTerritoryModel rtm11=new RiskTerritoryModel(1,"player1",2,280,134);
+		RiskTerritoryModel rtm=new RiskTerritoryModel(1,"Territory1",2,155,70);
+		RiskTerritoryModel rtm1=new RiskTerritoryModel(2,"Territory2",2,280,134);
+		RiskTerritoryModel rtm2=new RiskTerritoryModel(3,"Territory3",2,280,134);
+		RiskTerritoryModel rtm3=new RiskTerritoryModel(4,"Territory4",2,280,134);
+		RiskTerritoryModel rtm4=new RiskTerritoryModel(5,"Territory5",2,280,134);
+		RiskTerritoryModel rtm5=new RiskTerritoryModel(6,"Territory6",2,280,134);
+		RiskTerritoryModel rtm6=new RiskTerritoryModel(7,"Territory7",2,280,134);
+		RiskTerritoryModel rtm7=new RiskTerritoryModel(8,"Territory8",2,280,134);
+		RiskTerritoryModel rtm8=new RiskTerritoryModel(9,"Territory9",2,280,134);
+		RiskTerritoryModel rtm9=new RiskTerritoryModel(10,"Territory10",2,280,134);
+		RiskTerritoryModel rtm10=new RiskTerritoryModel(11,"Territory11",2,280,134);
+		RiskTerritoryModel rtm11=new RiskTerritoryModel(12,"Territory12",2,280,134);
 		Vector<RiskTerritoryModel> occupiedTerritories=new Vector<RiskTerritoryModel>();
 		occupiedTerritories.add(rtm);
 		occupiedTerritories.add(rtm1);
@@ -57,17 +57,17 @@ public class RiskGameTest {
 		Vector<Integer> val=new Vector<Integer>();
 		val.add(1);
 		val.add(2);
-		RiskContinentModel rcm=new RiskContinentModel("Africa",val,2);
+		RiskContinentModel rcm=new RiskContinentModel("Africa",val,3);
 		Vector<Integer> val1=new Vector<Integer>();
 		val1.add(3);
 		val1.add(4);
-		RiskContinentModel rcm1=new RiskContinentModel("Europe",val1,2);
+		RiskContinentModel rcm1=new RiskContinentModel("Europe",val1,5);
 		Vector<RiskContinentModel> continents=new Vector<RiskContinentModel>();
 		continents.add(rcm);
 		continents.add(rcm1);
 		riskGameModel.setContinents(continents);
 		int result =riskGameModel.turnBonus();
-		assertEquals(4,result);
+		assertEquals(12,result);
 	} 
 	
 	@Test
@@ -97,7 +97,7 @@ public class RiskGameTest {
 		RiskPlayerModel rpm=new RiskPlayerModel("player1",1);
 		rpm.setCard(new RiskCardModel(1, 39));
 		riskGameModel.setCurPlayer(rpm);
-		RiskTerritoryModel rtm=new RiskTerritoryModel(1,"player1",2,155,70);
+		RiskTerritoryModel rtm=new RiskTerritoryModel(1,"Northwest_Territory",2,155,70);
 		boolean result=riskGameModel.occupyTerritory(rtm);
 		assertEquals(false,result);
 	}
@@ -109,7 +109,7 @@ public class RiskGameTest {
 		rc.setRiskCurPlayer(rpm4);
 		rc.GenerateCardPanel();
 		int result=rc.getCountTradeCards();
-		System.out.println(result);
+		assertEquals(0,result);
 		
  	}
 	@Test
@@ -139,7 +139,8 @@ public class RiskGameTest {
 	}
 	@Test
 	public void testFetchCoordinates() {
-		RiskStartGameController rsgc=new RiskStartGameController();
+		RiskStartGameController rsgc=new RiskStartGameController("test");
+		rsgc.initializeMapVariables();
 		String result=rsgc.fetchCoordinates("Alaska");
 		assertEquals(",47,76,",result);
 		

@@ -175,7 +175,7 @@ public class RiskGameModel {
 	 */
 	public void distubuteArmies() {
 		int numOfPlayers = players.size();
-		int armies = 0;
+		//int armies = 0;
 
 		if (numOfPlayers == 3)
 			armies = 35;

@@ -58,6 +58,12 @@ import risk.helpers.Utility;
 public class RiskStartGameController extends java.awt.Frame {
 	/** Creates new form RiskStartGame */
 
+	public RiskStartGameController(String test)
+	{
+		
+	}
+	
+	
 	public RiskStartGameController() {
 		
 		initComponents();
@@ -374,7 +380,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	/**
 	 * Reads the base earth map into string builder to be used in later methods.
 	 */
-	private void initializeMapVariables() {
+	public void initializeMapVariables() {
 		BufferedReader brEarthMapReader = new BufferedReader(new InputStreamReader(
 				RiskStartGameController.class.getResourceAsStream(Utility.getMapPath("BaseEarthMap.map"))));
 		String baseMapLine;
@@ -533,7 +539,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * @return String, the complete line text with the coordinates inserted after
 	 *         the territory.
 	 */
-	private String mapEditTextInsertCoordinates(String mapInputLineText) {
+	public String mapEditTextInsertCoordinates(String mapInputLineText) {
 
 		StringBuilder sbInputWithCoordinates = new StringBuilder();
 		String territory = mapInputLineText.substring(0, mapInputLineText.indexOf(','));

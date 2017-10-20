@@ -621,7 +621,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
   
 	  
 	  
-	  private int doesCardMatchCurrentPlayerTerritory() {
+	  public int doesCardMatchCurrentPlayerTerritory() {
 		int countMatchingCards = 0;  	
 
 		for(RiskCardModel card: risk.curPlayer.getCard())
@@ -745,5 +745,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	  	private JPanel jp;
 	  	private int countTradeCards = 0;
 	  	private List<RiskCardModel> lstTradedCards = new ArrayList<RiskCardModel>();
+
+	
 	  
 }
