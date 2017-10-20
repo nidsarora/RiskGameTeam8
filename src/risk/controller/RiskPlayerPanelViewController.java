@@ -17,8 +17,10 @@ import java.awt.Font;
 import java.awt.Graphics;
 
 /**
- *
- * @author cube
+ *This class creates a panel for the player using a different color to represent each player.
+ *Abstract Window Toolkit(awt) is used for creating the panel.
+ *Number of players allowed vary from 3 to 6.
+ * @author Team8
  */
 public class RiskPlayerPanelViewController extends javax.swing.JPanel {
 	RiskGameModel risk;

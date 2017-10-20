@@ -15,6 +15,12 @@ import java.util.Vector;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
+/**
+ *This class is responsible for the MapPanelView.It is responsible for drawing lines connecting the 
+ *nodes using the coordinate values from the mapfile.It also has the method for creating a fortify panel
+ *where user can select how many number of armies to move from one territory to another.
+ * @author Team8
+ */
 public class RiskMapPanelViewController extends JPanel {
 	private Image map;
 	PixelGrabber pg;
@@ -101,14 +107,13 @@ public class RiskMapPanelViewController extends JPanel {
 			g.drawString(armies, loc[0] + 10 + align, loc[1] + 20);
 
 		} // end draw cilcles and armies
-		/***********************************************************
+		/**
 		 * 
 		 * Attack Window is here
 		 * 
 		 * 
-		 * /
-		 ************************************************************/
-
+		 */
+		 
 		String s = "";
 		if (state == 0)
 			s = "New Game";
@@ -137,12 +142,12 @@ public class RiskMapPanelViewController extends JPanel {
 
 		g.drawString("Current State: " + s, 10, 10);
 
-		/****************************************************
+		/**
 		 *
 		 * Capture
 		 *
 		 *
-		 ****************************************************/
+		 */
 
 		if (state == RiskGameModel.CAPTURE) {
 
@@ -185,12 +190,12 @@ public class RiskMapPanelViewController extends JPanel {
 			g.drawString("MIN", 365, 250);
 		} // end capture
 
-		/**************************************************************
+		/**
 		 *
 		 * Fortify
 		 *
 		 *
-		 ************************************************************/
+		 */
 
 		if (state == RiskGameModel.FORTIFY_PHASE) {
 			int max = risk.aTerritory.getArmies();
@@ -230,11 +235,11 @@ public class RiskMapPanelViewController extends JPanel {
 			g.drawString("MIN", 365, 250);
 		} // end capture
 
-		/**********************************************
+		/**
 		 * 
 		 * RiskCard Menu
 		 * 
-		 *********************************************/
+		 */
 
 		if (state == RiskGameModel.TRADE_CARDS) {
 			int num = risk.curPlayer.getCard().size();
@@ -307,15 +312,15 @@ public class RiskMapPanelViewController extends JPanel {
 			g.drawString(Integer.toString(def), 660, 250);
 			g.setFont(f1);
 
-			/************************************************************
+			/**
 			 *
 			 * Attacker
 			 *
 			 *
-			 *********************************************************/
+			 */
 
 			if (risk.active == risk.curPlayer) {
-				g.drawString("How many armies to attack white?", 390, 180);
+				g.drawString("How many armies to attack with?", 390, 180);
 				g.drawImage(army, 300, 280, this);
 				g.setColor(Color.white);
 
@@ -351,11 +356,11 @@ public class RiskMapPanelViewController extends JPanel {
 				}
 			} // end attttacker painting
 
-			/************************************************************
+			/**
 			 *
 			 * Defender
 			 *
-			 *********************************************************/
+			 */
 
 			if (risk.active == risk.defender) {
 				g.drawString("How many armies to defend with?", 390, 180);

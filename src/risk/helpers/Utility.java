@@ -1,5 +1,8 @@
 package risk.helpers;
 
+/**
+ *This class is used to get the path of the resources used in the project.
+ */
 public final class Utility {
 	
 	public static String getImagePath(String imageNameWithExtention)

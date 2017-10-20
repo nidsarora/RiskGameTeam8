@@ -2,6 +2,9 @@ package risk.model;
 
 import java.util.Vector;
 
+/**
+ *This method initializes the first player as the initial player.
+ */
 public class RiskTerritoryModel {
 	// Need get X,Y
 	protected int id;
@@ -86,22 +89,6 @@ public class RiskTerritoryModel {
 		armies += n;
 	}
 
-	/*
-	 * public boolean territoryChained(RiskTerritory a,RiskTerritory next){
-	 * if(player != a.getPlayer()) return false; if(a.getPlayer() !=
-	 * next.getPlayer()) return false; else{ for(int i = 0;i <
-	 * adjacents.size();i++){
-	 * if(a.isAdjacent(RiskGame.territories.elementAt(adjacents.elementAt(i))))
-	 * System.out.println(i+" is adjacent");
-	 * 
-	 * }
-	 * 
-	 * }
-	 * 
-	 * return false;
-	 * 
-	 * }
-	 */
 
 	public void addArmy() {
 		armies++;

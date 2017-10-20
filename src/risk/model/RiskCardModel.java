@@ -5,9 +5,8 @@
 
 package risk.model;
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * This class represents the model of Card used in Risk Game.
  */
 
 public class RiskCardModel {

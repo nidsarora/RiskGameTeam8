@@ -28,7 +28,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 /**
- * 
+ * This class is used to add RiskPlayers to the game.
  * @author cube
  */
 public class RiskAddPlayerController extends java.awt.Frame {
@@ -53,14 +53,7 @@ public class RiskAddPlayerController extends java.awt.Frame {
 		jPanel1 = new javax.swing.JPanel();
 		jButton1 = new javax.swing.JButton();
 		Integer[] numbers = { 3, 4, 5, 6 };
-		// Create the combo box, select item at index 4.
-		// Indices start at 0, so 4 specifies the pig.
 		JComboBox comboBox = new JComboBox(numbers);
-		// JComboBox<String> jComboBox1 = new javax.swing.JComboBox();
-		// jComboBox1.addItem("3");
-		// jComboBox1.addItem("4");
-		// jComboBox1.addItem("5");
-		// jComboBox1.addItem("6");
 		addWindowListener(new java.awt.event.WindowAdapter() {
 			public void windowClosing(java.awt.event.WindowEvent evt) {
 				exitForm(evt);

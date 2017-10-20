@@ -13,6 +13,11 @@ import risk.model.RiskContinentModel;
 import risk.model.RiskPlayerModel;
 import risk.model.RiskTerritoryModel;
 
+/**
+ *This class consists the business logic of the entire game.It consists of all the phases of the game.
+ *It calculates and assigns the armies to the players as per the territories occupied and the continents
+ *occupied.It also has the logic for loading and parsing the map from the map file.
+ */
 public class RiskGameModel {
 
 	// Game States
@@ -110,20 +115,15 @@ public class RiskGameModel {
 		// Setup Board
 		gameState = NEW_GAME;
 
-		// Temp
-		// addPlayer("Tyler");
-		// addPlayer("Koy");
-		// addPlayer("Jebus");
-		// Cause im lazy
-
 		initalPlayer();
-		// loadMap();
 		loadMap_newformat();
 		initializeDeck();
 		distubuteArmies();
 
 	}
-
+	/**
+	 *This method initializes adds the players.
+	 */
 	static public boolean addPlayer(String nm) {
 		int size = players.size();
 		if (size > 6)
@@ -143,10 +143,17 @@ public class RiskGameModel {
 		GAME_TRADE_CARD_PHASE_COUNT ++;
 		return GAME_TRADE_CARD_PHASE_COUNT * 5;
 	}
+	
+	/**
+	 *This method initializes the first player as the initial player.
+	 */
 	public void initalPlayer() {
 		curPlayer = players.elementAt(0);
 	}
-
+    
+	/**
+	 *This method finds the next player in the loop.
+	 */
 	public void nextPlayer() {
 		if (curPlayer == players.lastElement()) {
 			curPlayer = players.elementAt(0);
@@ -154,22 +161,26 @@ public class RiskGameModel {
 		} else
 			curPlayer = players.elementAt(++iter);
 	}
-
+	/**
+	 *This method removes the players from the vector list.
+	 */
 	public void removePlayer(RiskPlayerModel p) {
 		players.remove(p);
 		players.trimToSize();
 		iter--;
 
 	}
-
+	/**
+	 *This method initializes the number of armies as per the number of players.
+	 */
 	public void distubuteArmies() {
 		int numOfPlayers = players.size();
 		int armies = 0;
 
 		if (numOfPlayers == 3)
-			armies = 15;// 35;
+			armies = 35;
 		else if (numOfPlayers == 4)
-			armies = 30; // temp 30
+			armies = 30; 
 		else if (numOfPlayers == 5)
 			armies = 25;
 		else if (numOfPlayers == 6)
@@ -194,7 +205,9 @@ public class RiskGameModel {
 		deck.trimToSize();
 		p.setCard(c);
 	}
-
+	/**
+	 *This method calculates the bonus.
+	 */
 	public int turnBonus() {
 		int bonus = 0;
 		bonus += collectReinforcements();
@@ -203,7 +216,10 @@ public class RiskGameModel {
 
 		return bonus;
 	}
-
+	/**
+	 *This method calculates the reinforcement as per the number of territories current player owns.
+	 *Min of 3 and max of numTerritory/3
+	 */
 	public int collectReinforcements() {
 		// count how many territories owned by curPlayer
 		int territoryAmount = curPlayer.numOfTerritories();
@@ -214,7 +230,9 @@ public class RiskGameModel {
 			bonus = Math.floor(territoryAmount / 3);
 		return (int) bonus;
 	}
-
+	/**
+	 *This method calculates the reinforcement from Continent as every continent has a different control value.
+	 */
 	public int collectReinforcementsFromContinent() {
 		int continentBonus = 0;
 		int numOfCont = continents.size();
@@ -242,9 +260,6 @@ public class RiskGameModel {
 		Vector<Integer> adjacents;
 		Vector<Integer> contains;
 		InputStream file = RiskGameModel.class.getResourceAsStream(Utility.getImagePath("MapFileNew.txt"));
-		// File file = new File("MapFileOld.txt");
-
-		// try{
 		Scanner mapfile = new Scanner(file);
 
 		while (mapfile.hasNextLine()) {
@@ -315,7 +330,9 @@ public class RiskGameModel {
 		// file
 
 	}// end loadmap
-
+	/**
+	 *This method loads the map by parsing it.
+	 */
 	public void loadMap_newformat() {
 		boolean done = false;
 		String next;
@@ -331,9 +348,6 @@ public class RiskGameModel {
 		try {
 
 			InputStream file = RiskGameModel.class.getResourceAsStream(Utility.getMapPath("CurrentGameMap.map"));
-			// File file = new File("MapFileOld.txt");
-
-			// try{
 			Scanner mapfile = new Scanner(file);
 
 			while (mapfile.hasNextLine()) {
@@ -345,16 +359,9 @@ public class RiskGameModel {
 
 					do {
 
-						// value = Integer.parseInt(next);
 						name = next.split("=")[0];
 						value = Integer.parseInt((next.split("=")[1]).trim());
 						contains = new Vector<Integer>();
-						// next = mapfile.nextLine();
-						/*
-						 * while (!next.equals(";")) { contains.add(Integer.parseInt(next)); next =
-						 * mapfile.next(); }
-						 */
-
 						continents.add(new RiskContinentModel(name, contains, value));
 						next = mapfile.nextLine();
 
@@ -448,7 +455,10 @@ public class RiskGameModel {
 		
 
 	}
-
+	
+	/**
+	 *This method sets up the gamePhaseSetup in the beginning.
+	 */
 	public void gamePhaseSetup(int x, int y) {
 
 		int country = getMapLocation(x, y);
@@ -493,7 +503,9 @@ public class RiskGameModel {
 		} // end if NEW_GAME
 
 	}
-
+	/**
+	 *This method activates the game phase to fortify.
+	 */
 	public String gamePhaseActive(int x, int y) {
 
 		int country = getMapLocation(x, y);
@@ -564,7 +576,10 @@ public class RiskGameModel {
 		} // end attack with
 
 		if (getState() == TRADE_CARDS) {
-
+			if (country != -1) // if not a country
+				if (getOwnership(country) == curPlayer.getPlayerIndex()) // if
+					// owned
+					occupyTerritory(territories.elementAt(country)); // occupy
 		}
 
 		if (getState() == REINFORCE) {
@@ -708,7 +723,9 @@ public class RiskGameModel {
 		return -1;
 
 	}
-
+	/**
+	 *This method checks if the territory is occupied by the current player or not.
+	 */
 	public boolean occupyTerritory(RiskTerritoryModel t) {
 		// Make sure there are availble armies
 		if (curPlayer.getNumberOfArmies() > 0) { // Checks if the territory is

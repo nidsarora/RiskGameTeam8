@@ -1,7 +1,12 @@
 package risk.model;
 
 import java.util.Vector;
-
+/**
+ *This class represents the model class of the Player.
+ *Player has a name, index, territories he occupies, and
+ *cards that he owns.
+ *@author Team8
+ */
 public class RiskPlayerModel {
 
 	private String name;
@@ -9,7 +14,6 @@ public class RiskPlayerModel {
 	private Vector<RiskTerritoryModel> occupiedTerritories;
 	private Vector<RiskCardModel> cards;
 	private int armies;
-	// private int territoriesCaptured; //Same as occupiedTerritories.size()
 
 	public RiskPlayerModel(String nm, int i) {
 		name = nm;
@@ -30,9 +34,6 @@ public class RiskPlayerModel {
 		return armies;
 	}
 
-	/*
-	 * public Vector getCards(){ return cardsOwned; }
-	 */
 
 	public Vector<RiskTerritoryModel> getOccupiedTerritories() {
 		return occupiedTerritories;

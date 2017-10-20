@@ -32,7 +32,12 @@ import javax.swing.JPanel;
 
 import risk.model.*;
 import risk.controller.RiskPlayerPanelViewController;
-
+/**
+ *This class contains the card logic as well as it tales the phase from the RiskGameModel and displays 
+ *when a player should put armies on unoccupied territory and when the army should be placed
+ *on the occupied territory.
+ * @author Team8
+ */
 public class RiskController extends javax.swing.JFrame implements MouseListener {
 
 	
@@ -640,7 +645,11 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		  }
 		  return false;
 	  }
-
+	/**
+	 *This method checks if the TradeCardSet is valid or not i.e. if the number of cards is 3, and then checks 
+	 *if all 3 are either the same or all three are of different types or one of the three is a wild card
+	 * 
+	 */
 	  public Boolean isTradedCardSetValid() {
 	
 		  if (lstTradedCards.size() == 3) {
@@ -677,7 +686,9 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		  cardStatusLabel.setText("Please select only/atleast three cards!");
 		  return false;		
 	  }
-
+		/**
+		 *This method checks if the TradeCardSet is a WildCardSet or not.
+		 */
 	  public Boolean isAWildCardSet() {
 		  for (RiskCardModel card : lstTradedCards) {
 			  if (card.card_type.equals("WILD"))

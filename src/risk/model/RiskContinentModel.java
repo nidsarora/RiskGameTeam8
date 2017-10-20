@@ -2,6 +2,9 @@ package risk.model;
 
 import java.util.Vector;
 
+/**
+ *This class represents the model class of the Continent
+ */
 public class RiskContinentModel {
 
 	private String name;
@@ -35,7 +38,9 @@ public class RiskContinentModel {
 	{
 		territories.add(i);
 	}
-	
+	/**
+	 *This method finds if the continent has been captured or not.
+	 */
 	public boolean isContinentCaptured(RiskPlayerModel p) {
 		Vector<Integer> t1 = new Vector<Integer>();
 		Vector<RiskTerritoryModel> t2 = p.getOccupiedTerritories();
