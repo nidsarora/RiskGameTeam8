@@ -1,0 +1,52 @@
+CODING STANDARD PRINCIPLES AND CONVENTIONS:
+                          --> Code Layout
+						  --> Naming Conventions
+						  --> Commenting Conventions
+CODE LAYOUT:
+  -The body of the function must be indented with respect to its header. Indent nested code. The body of for, while, if or switch must be indented with respect to its first line.
+  -The amount of indentation choosen should be consistent.
+  -To Format statements, use open brace at the end of a line and a close brace appears by itself on a line.
+  -Break up long lines. 100 characters per line maximum.
+  -Blank lines can be added to seperate code components/sections. Adding a blank line is often a good idea  
+                                                                     >between major sections of a long and complicated function.
+                                                                     >between public, protected, and private sections of a class declaration.
+                                                                     >between class declarations in a file.
+                                                                     >between function and method definitions.
+
+NAMING CONVENTIONS:
+  -Global constants must have a long descriptive names.
+  -Names having small scope such as index variable can be short.
+  -Constants are named with upper case letters and may include underscores.
+  -User-defined type names start with a capital letter.
+  -Class names start with capital letter. Use nouns when naming classes.
+  -Variable names that contain multiple words are either separated by a delimiter, such as underscore, or by using an upper case letter at the beginning of each new word.
+  -Methods start with lower-case letter and use uppercase to seperate words. Use verbs when naming methods.
+  -Attributes start with a lower case letter and use underscores to separate words.
+  -Local variables are written entirely in lower case without underscore.
+  -Quantify field variables with 'this' to distinguish them from local variables.
+  
+  
+COMMENTING CONVENTIONS:
+  -Comments which is mainly used to improve existing code should be present at the following places
+          -->At the beginning of each file there should be a comment explaining the purpose of this file in the project. 
+          -->Each class declaration should have a comment explaining what the class is for.
+          -->Each method or function should have comments explaining what it does and how it works, as well as what is the purpose of its parameters. 
+          -->All variables declarations, most importantly class data members, should be appended with a comment describing its role, unless its name makes it obvious. 
+          -->In cases where an elaborated algorithm is used in a long function, inline comments should be used to highlight and explain all the important steps of the algorithm.  
+
+PROGRAMMING CONVENTIONS:
+  -Use nested constructs to eliminate redundant code.
+  -Use return values to report expected state changes.
+  -Always use block statements in control flow constructs.
+  -Always construct objects in a valid state.
+  
+  
+PACKAGING CONVENTIONS:
+  -Use types that are commonly used, changed and released together into the same package.
+  
+CHECK STYLE:
+  -Automated support for certain coding style issues including:
+                  :: variables, parameters and methods conform to regular expressions.
+				  :: lines do not exceed a specified length.
+				  :: JavaDocs are present and provide parameter and return type information.
+				 
