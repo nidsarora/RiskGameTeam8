@@ -85,7 +85,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		 * jPanel1 = new javax.swing.JPanel();
 		 */ jPanel1 = new RiskMapPanelViewController(risk);
 		 /*
-		  *            = new javax.swing.JPanel();
+		  * jPanel3 = new javax.swing.JPanel();
 		  */ jPanel3 = new RiskPlayerPanelViewController(risk);
 		  statusLabel = new javax.swing.JLabel();
 		  AttackButton = new javax.swing.JButton();
@@ -614,8 +614,6 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 				   else
 					   risk.curPlayer.addArmies(risk.fetchTradedArmiesCount());				      
 				   cardStatusLabel.setText("Success");
-				   risk.setState(RiskGameModel.REINFORCE);		//allowing the player to set the armies after trading the card
-				   statusLabel.setText("You have " + risk.curPlayer.getNumberOfArmies() + " left to place");
 				   jPanel3.repaint();
 				  }
 	  }
@@ -748,6 +746,9 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	  	private int countTradeCards = 0;
 	  	private List<RiskCardModel> lstTradedCards = new ArrayList<RiskCardModel>();
 
+	  	public int getcountMatchingCards() {
+			return countTradeCards;
+		}
 	
 	  
 }
