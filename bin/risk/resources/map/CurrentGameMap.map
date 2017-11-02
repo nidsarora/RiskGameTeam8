@@ -14,11 +14,21 @@ Asia=7
 Australia=2
 
 [Territories]
-Alaska,47,76,North_America,Northwest_Territory,Alberta,Kamchatka
+Alaska,47,76,North_America,Alberta,Kamchatka,Northwest_Territory
+Northwest_Territory,155,70,North_America,Alaska,Greenland,Alberta,Ontario
+
+
 [Adjacents]
 
-Northwest_Territory,155,70,North_America
 Alberta,143,123,North_America
 Kamchatka,910,50,Asia
+Northwest_Territory,155,70,North_America
+
+
+
+Alaska,47,76,North_America
+Greenland,334,38,North_America
+Alberta,143,123,North_America
+Ontario,209,128,North_America
 
 ;;
