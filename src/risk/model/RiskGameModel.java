@@ -12,6 +12,13 @@ import risk.model.RiskCardModel;
 import risk.model.RiskContinentModel;
 import risk.model.RiskPlayerModel;
 import risk.model.RiskTerritoryModel;
+import risk.model.Observable.RiskAttackPhaseModel;
+import risk.model.Observable.RiskStartupEndPhaseModel;
+import risk.model.Observable.RiskFortifyPhaseModel;
+import risk.model.Observable.RiskReinforcementPhaseModel;
+import risk.model.Observable.RiskStartupEndPhaseModel;
+import risk.model.Observable.RiskStartupPhaseModel;
+import risk.view.RiskPhaseViewObserver;
 
 /**
  *This class consists the business logic of the entire game.It consists of all the phases of the game.
@@ -57,6 +64,13 @@ public class RiskGameModel {
 	public int attackNum = 0;
 	public int iter = 0;
 	public boolean drawn;
+	private RiskStartupPhaseModel riskStartupPhaseModelObservable;
+	private RiskReinforcementPhaseModel riskRiskReinforcementPhaseModelObservable;
+	private RiskAttackPhaseModel riskAttackPhaseModelObservable;
+	private RiskFortifyPhaseModel riskFortifyPhaseModelObservable;
+	private RiskStartupEndPhaseModel riskStartupEndPhaseModelObservable;
+	
+	private RiskPhaseViewObserver riskPhaseViewObserver;
 	
 	public RiskTerritoryModel getaTerritory() {
 		return aTerritory;
@@ -93,6 +107,56 @@ public class RiskGameModel {
 	public RiskPlayerModel getCurPlayer() {
 		return curPlayer;
 	}
+	
+	public void notifyPhaseViewChange()
+	{
+		//System.out.println(this.getState());
+		
+		if((this.getState() == NEW_GAME) || (this.getState() == INITIAL_REINFORCE)) // 0|1
+		{
+			RiskStartupPhaseModel objRiskStartupPhaseModel = this.getRiskStartupPhaseModelObservable();
+			objRiskStartupPhaseModel.setCurrentRiskGameObject(this);
+			this.setRiskStartupPhaseModelObservable(objRiskStartupPhaseModel);
+			this.getRiskStartupPhaseModelObservable().isChanged();
+			//System.out.println("START_TURN");
+		}
+		
+		if(this.getState() == START_TURN) // 6
+		{
+			RiskStartupEndPhaseModel objRiskStartupEndPhaseModel = this.getRiskStartupEndPhaseModelObservable();
+			objRiskStartupEndPhaseModel.setCurrentRiskGameObject(this);
+			this.setRiskStartupEndPhaseModelObservable(objRiskStartupEndPhaseModel);
+			this.getRiskStartupEndPhaseModelObservable().isChanged();
+			System.out.println("START_TURN");
+		}
+		
+		if(this.getState() == REINFORCE)
+		{
+			RiskReinforcementPhaseModel objRiskReinforcementPhaseModel = this.getRiskRiskReinforcementPhaseModelObservable();
+			objRiskReinforcementPhaseModel.setCurrentRiskGameObject(this);
+			this.setRiskRiskReinforcementPhaseModelObservable(objRiskReinforcementPhaseModel);
+			this.getRiskRiskReinforcementPhaseModelObservable().isChanged();
+		}	
+
+		if(this.getState() == ATTACKING || this.getState() == ATTACK_PHASE || this.getState() == CAPTURE) //8|9|11
+		{
+			RiskAttackPhaseModel objRiskAttackPhaseModel = this.getRiskAttackPhaseModelObservable();
+			objRiskAttackPhaseModel.setCurrentRiskGameObject(this);
+			this.setRiskAttackPhaseModelObservable(objRiskAttackPhaseModel);
+			this.getRiskAttackPhaseModelObservable().isChanged();
+			System.out.println("ATTACK_PHASE");
+		}
+		if(this.getState() == FORTIFYING || this.getState() == FORTIFY_PHASE)
+		{
+			RiskFortifyPhaseModel objRiskFortifyPhaseModel = this.getRiskFortifyPhaseModelObservable();
+			objRiskFortifyPhaseModel.setCurrentRiskGameObject(this);
+			this.setRiskFortifyPhaseModelObservable(objRiskFortifyPhaseModel);
+			this.getRiskFortifyPhaseModelObservable().isChanged();
+			System.out.println("FORTIFY_PHASE");
+		}		
+
+	}
+	
 	
 	public void setCurPlayer(RiskPlayerModel test) {
 		curPlayer=test;
@@ -176,9 +240,8 @@ public class RiskGameModel {
 	public void distubuteArmies() {
 		int numOfPlayers = players.size();
 		//int armies = 0;
-
 		if (numOfPlayers == 3)
-			armies = 35;
+			armies = 15;
 		else if (numOfPlayers == 4)
 			armies = 30; 
 		else if (numOfPlayers == 5)
@@ -480,7 +543,8 @@ public class RiskGameModel {
 			if (i == players.size()) {
 				setState(START_TURN);
 			}
-
+			
+			//startup			
 		} // end if INITIAL_REINFORCE
 
 		if (getState() == NEW_GAME) {
@@ -498,6 +562,8 @@ public class RiskGameModel {
 			} // end if country clicked on
 
 			if (i == num) {
+				//startup
+				
 				setState(INITIAL_REINFORCE);
 			}
 		} // end if NEW_GAME
@@ -517,9 +583,11 @@ public class RiskGameModel {
 				if (getOwnership(country) == curPlayer.getPlayerIndex())
 					if (aTerritory.isAdjacent(dTerritory)) {// if its
 						// adjacent...
+						this.notifyPhaseViewChange(); //2nd country to fortify
 						setState(FORTIFY_PHASE);
 					}
 			} // end if a county
+		
 		} // end fortifying
 
 		if (getState() == FORTIFY) {
@@ -527,6 +595,7 @@ public class RiskGameModel {
 				if (getOwnership(country) == curPlayer.getPlayerIndex()) {
 					setState(FORTIFYING);
 					aTerritory = territories.elementAt(country);
+					this.notifyPhaseViewChange(); // get the first country to fotify
 				}
 			}
 
@@ -538,7 +607,7 @@ public class RiskGameModel {
 
 		}
 
-		if (getState() == ATTACKING) {
+		if (getState() == ATTACKING) { // PLayer click the 2nd country to defend With
 			if (country != -1) {// not a country
 				RiskTerritoryModel d = territories.elementAt(country); // defending
 				// territory
@@ -560,7 +629,7 @@ public class RiskGameModel {
 					System.out.println("That territory is not adjacent, try again.");
 				return "That territory is not adjacent, try again.";
 			}
-
+				this.notifyPhaseViewChange();
 		}
 
 		if (getState() == ATTACK) {
@@ -570,9 +639,10 @@ public class RiskGameModel {
 						return "Not enough armies to battle, need at least 2";
 					else {
 						setState(ATTACKING);
-						aTerritory = territories.elementAt(country);
+						aTerritory = territories.elementAt(country); //first country to attack
 					}
 				} // end is curPlayers country
+		this.notifyPhaseViewChange();
 		} // end attack with
 
 		if (getState() == TRADE_CARDS) {
@@ -798,6 +868,91 @@ public class RiskGameModel {
 
 	public void setDefend(int num) {
 		defenseNum = num;
+	}
+
+
+	/**
+	 * @return the riskStartupPhaseModelObservable
+	 */
+	public RiskStartupPhaseModel getRiskStartupPhaseModelObservable() {
+		return riskStartupPhaseModelObservable;
+	}
+
+	/**
+	 * @param riskStartupPhaseModelObservable the riskStartupPhaseModelObservable to set
+	 */
+	public void setRiskStartupPhaseModelObservable(RiskStartupPhaseModel riskStartupPhaseModelObservable) {
+		this.riskStartupPhaseModelObservable = riskStartupPhaseModelObservable;
+	}
+	
+	/**
+	 * @return the riskStartupPhaseModelObservable
+	 */
+	public RiskStartupEndPhaseModel getRiskStartupEndPhaseModelObservable() {
+		return this.riskStartupEndPhaseModelObservable;
+	}
+
+	/**
+	 * @param riskStartupPhaseModelObservable the riskStartupPhaseModelObservable to set
+	 */
+	public void setRiskStartupEndPhaseModelObservable(RiskStartupEndPhaseModel objriskStartupEndPhaseModelObservable) {
+		this.riskStartupEndPhaseModelObservable = objriskStartupEndPhaseModelObservable;
+	}
+
+	/**
+	 * @return the riskRiskReinforcementPhaseModelObservable
+	 */
+	public RiskReinforcementPhaseModel getRiskRiskReinforcementPhaseModelObservable() {
+		return riskRiskReinforcementPhaseModelObservable;
+	}
+
+	/**
+	 * @param riskRiskReinforcementPhaseModelObservable the riskRiskReinforcementPhaseModelObservable to set
+	 */
+	public void setRiskRiskReinforcementPhaseModelObservable(RiskReinforcementPhaseModel riskRiskReinforcementPhaseModelObservable) {
+		this.riskRiskReinforcementPhaseModelObservable = riskRiskReinforcementPhaseModelObservable;
+	}
+
+	/**
+	 * @return the riskAttackPhaseModelObservable
+	 */
+	public RiskAttackPhaseModel getRiskAttackPhaseModelObservable() {
+		return riskAttackPhaseModelObservable;
+	}
+
+	/**
+	 * @param riskAttackPhaseModelObservable the riskAttackPhaseModelObservable to set
+	 */
+	public void setRiskAttackPhaseModelObservable(RiskAttackPhaseModel riskAttackPhaseModelObservable) {
+		this.riskAttackPhaseModelObservable = riskAttackPhaseModelObservable;
+	}
+
+	/**
+	 * @return the riskFortifyPhaseModelObservable
+	 */
+	public RiskFortifyPhaseModel getRiskFortifyPhaseModelObservable() {
+		return riskFortifyPhaseModelObservable;
+	}
+
+	/**
+	 * @param riskFortifyPhaseModelObservable the riskFortifyPhaseModelObservable to set
+	 */
+	public void setRiskFortifyPhaseModelObservable(RiskFortifyPhaseModel riskFortifyPhaseModelObservable) {
+		this.riskFortifyPhaseModelObservable = riskFortifyPhaseModelObservable;
+	}
+
+	/**
+	 * @return the riskPhaseViewObserver
+	 */
+	public RiskPhaseViewObserver getRiskPhaseViewObserver() {
+		return riskPhaseViewObserver;
+	}
+
+	/**
+	 * @param riskPhaseViewObserver the riskPhaseViewObserver to set
+	 */
+	public void setRiskPhaseViewObserver(RiskPhaseViewObserver riskPhaseViewObserver) {
+		this.riskPhaseViewObserver = riskPhaseViewObserver;
 	}
 
 }
