@@ -21,9 +21,10 @@ import risk.model.Observable.RiskStartupPhaseModel;
 import risk.view.RiskPhaseViewObserver;
 
 /**
- *This class consists the business logic of the entire game.It consists of all the phases of the game.
- *It calculates and assigns the armies to the players as per the territories occupied and the continents
- *occupied.It also has the logic for loading and parsing the map from the map file.
+ * This class consists the business logic of the entire game.It consists of all
+ * the phases of the game. It calculates and assigns the armies to the players
+ * as per the territories occupied and the continents occupied.It also has the
+ * logic for loading and parsing the map from the map file.
  */
 public class RiskGameModel {
 
@@ -43,6 +44,7 @@ public class RiskGameModel {
 	public static final int FORTIFY = 12;
 	public static final int FORTIFYING = 13;
 	public static final int FORTIFY_PHASE = 14;
+	public static final int DEFEATED = 15;
 	public static int GAME_TRADE_CARD_PHASE_COUNT = 0;
 
 	int armies;
@@ -72,63 +74,62 @@ public class RiskGameModel {
 	private RiskFortifyPhaseModel riskFortifyPhaseModelObservable;
 	private RiskStartupEndPhaseModel riskStartupEndPhaseModelObservable;
 	private int currentPlayerBonusArmiesRecieved;
-	
+
 	private RiskPhaseViewObserver riskPhaseViewObserver;
-	
+
 	public RiskTerritoryModel getaTerritory() {
 		return aTerritory;
 	}
-	
+
 	public void setaTerritory(RiskTerritoryModel test) {
-		aTerritory=test;
+		aTerritory = test;
 	}
-	
-	public Vector<RiskTerritoryModel> getTerritories(){
+
+	public Vector<RiskTerritoryModel> getTerritories() {
 		return territories;
 	}
-	
+
 	public void setTerritories(Vector<RiskTerritoryModel> test) {
-		territories=test;
+		territories = test;
 	}
-	
-	public Vector<RiskContinentModel> getContinents(){
+
+	public Vector<RiskContinentModel> getContinents() {
 		return continents;
 	}
-	
-	public int getCurrentPlayerBonusArmiesRecieved() {	
+
+	public int getCurrentPlayerBonusArmiesRecieved() {
 		return currentPlayerBonusArmiesRecieved;
 	}
-	
+
 	public void setContinents(Vector<RiskContinentModel> test) {
-		continents=test;
+		continents = test;
 	}
-	
-	public int getArmies(){
+
+	public int getArmies() {
 		return armies;
 	}
-	
+
 	public void setArmies(int test) {
-		armies=test;
+		armies = test;
 	}
-	
+
 	public RiskPlayerModel getCurPlayer() {
 		return curPlayer;
 	}
-	
-	public void notifyPhaseViewChange()
-	{
-		//System.out.println(this.getState());
-		
-		if((this.getState() == NEW_GAME) || (this.getState() == INITIAL_REINFORCE)) // 0|1
+
+	public void notifyPhaseViewChange() {
+		// System.out.println(this.getState());
+
+		if ((this.getState() == NEW_GAME) || (this.getState() == INITIAL_REINFORCE)) // 0|1
 		{
 			RiskStartupPhaseModel objRiskStartupPhaseModel = this.getRiskStartupPhaseModelObservable();
 			objRiskStartupPhaseModel.setCurrentRiskGameObject(this);
 			this.setRiskStartupPhaseModelObservable(objRiskStartupPhaseModel);
 			this.getRiskStartupPhaseModelObservable().isChanged();
-			//System.out.println("START_TURN");
+			// System.out.println("START_TURN");
 		}
-		
-		if(this.getState() == START_TURN) // 6
+
+		if (this.getState() == START_TURN) // 6
 		{
 			RiskStartupEndPhaseModel objRiskStartupEndPhaseModel = this.getRiskStartupEndPhaseModelObservable();
 			objRiskStartupEndPhaseModel.setCurrentRiskGameObject(this);
@@ -136,16 +137,17 @@ public class RiskGameModel {
 			this.getRiskStartupEndPhaseModelObservable().isChanged();
 			System.out.println("START_TURN");
 		}
-		
-		if(this.getState() == REINFORCE)
-		{
-			RiskReinforcementPhaseModel objRiskReinforcementPhaseModel = this.getRiskRiskReinforcementPhaseModelObservable();
+
+		if (this.getState() == REINFORCE) {
+			RiskReinforcementPhaseModel objRiskReinforcementPhaseModel = this
+					.getRiskRiskReinforcementPhaseModelObservable();
 			objRiskReinforcementPhaseModel.setCurrentRiskGameObject(this);
 			this.setRiskRiskReinforcementPhaseModelObservable(objRiskReinforcementPhaseModel);
 			this.getRiskRiskReinforcementPhaseModelObservable().isChanged();
-		}	
+		}
 
-		if(this.getState() == ATTACK || this.getState() == ATTACKING || this.getState() == ATTACK_PHASE || this.getState() == CAPTURE) //8|9|11
+		if (this.getState() == ATTACK || this.getState() == ATTACKING || this.getState() == ATTACK_PHASE
+				|| this.getState() == CAPTURE || this.getState() == DEFEATED) // 8|9|11
 		{
 			RiskAttackPhaseModel objRiskAttackPhaseModel = this.getRiskAttackPhaseModelObservable();
 			objRiskAttackPhaseModel.setCurrentRiskGameObject(this);
@@ -153,32 +155,30 @@ public class RiskGameModel {
 			this.getRiskAttackPhaseModelObservable().isChanged();
 			System.out.println("ATTACK_PHASE");
 		}
-		if(this.getState() == FORTIFYING || this.getState() == FORTIFY_PHASE)
-		{
+		if (this.getState() == FORTIFYING || this.getState() == FORTIFY_PHASE) {
 			RiskFortifyPhaseModel objRiskFortifyPhaseModel = this.getRiskFortifyPhaseModelObservable();
 			objRiskFortifyPhaseModel.setCurrentRiskGameObject(this);
 			this.setRiskFortifyPhaseModelObservable(objRiskFortifyPhaseModel);
 			this.getRiskFortifyPhaseModelObservable().isChanged();
 			System.out.println("FORTIFY_PHASE");
-		}		
+		}
 
 	}
-	
-	
+
 	public void setCurPlayer(RiskPlayerModel test) {
-		curPlayer=test;
+		curPlayer = test;
 	}
-	
-	public Vector<RiskPlayerModel> getPlayer(){
+
+	public Vector<RiskPlayerModel> getPlayer() {
 		return players;
 	}
-	
+
 	public void setPlayer(Vector<RiskPlayerModel> test) {
-		players=test;
+		players = test;
 	}
 
 	public RiskGameModel(String test) {
-		
+
 	}
 
 	public RiskGameModel() {
@@ -192,8 +192,9 @@ public class RiskGameModel {
 		distubuteArmies();
 
 	}
+
 	/**
-	 *This method initializes adds the players.
+	 * This method initializes adds the players.
 	 */
 	static public boolean addPlayer(String nm) {
 		int size = players.size();
@@ -209,21 +210,20 @@ public class RiskGameModel {
 		return true;
 	}
 
-	public static int fetchTradedArmiesCount()
-	{
-		GAME_TRADE_CARD_PHASE_COUNT ++;
+	public static int fetchTradedArmiesCount() {
+		GAME_TRADE_CARD_PHASE_COUNT++;
 		return GAME_TRADE_CARD_PHASE_COUNT * 5;
 	}
-	
+
 	/**
-	 *This method initializes the first player as the initial player.
+	 * This method initializes the first player as the initial player.
 	 */
 	public void initalPlayer() {
 		curPlayer = players.elementAt(0);
 	}
-    
+
 	/**
-	 *This method finds the next player in the loop.
+	 * This method finds the next player in the loop.
 	 */
 	public void nextPlayer() {
 		if (curPlayer == players.lastElement()) {
@@ -232,8 +232,9 @@ public class RiskGameModel {
 		} else
 			curPlayer = players.elementAt(++iter);
 	}
+
 	/**
-	 *This method removes the players from the vector list.
+	 * This method removes the players from the vector list.
 	 */
 	public void removePlayer(RiskPlayerModel p) {
 		players.remove(p);
@@ -241,16 +242,17 @@ public class RiskGameModel {
 		iter--;
 
 	}
+
 	/**
-	 *This method initializes the number of armies as per the number of players.
+	 * This method initializes the number of armies as per the number of players.
 	 */
 	public void distubuteArmies() {
 		int numOfPlayers = players.size();
-		//int armies = 0;
+		// int armies = 0;
 		if (numOfPlayers == 3)
 			armies = 15;
 		else if (numOfPlayers == 4)
-			armies = 30; 
+			armies = 30;
 		else if (numOfPlayers == 5)
 			armies = 25;
 		else if (numOfPlayers == 6)
@@ -275,8 +277,9 @@ public class RiskGameModel {
 		deck.trimToSize();
 		p.setCard(c);
 	}
+
 	/**
-	 *This method calculates the bonus.
+	 * This method calculates the bonus.
 	 */
 	public int turnBonus() {
 		int bonus = 0;
@@ -286,9 +289,10 @@ public class RiskGameModel {
 
 		return bonus;
 	}
+
 	/**
-	 *This method calculates the reinforcement as per the number of territories current player owns.
-	 *Min of 3 and max of numTerritory/3
+	 * This method calculates the reinforcement as per the number of territories
+	 * current player owns. Min of 3 and max of numTerritory/3
 	 */
 	public int collectReinforcements() {
 		// count how many territories owned by curPlayer
@@ -300,8 +304,10 @@ public class RiskGameModel {
 			bonus = Math.floor(territoryAmount / 3);
 		return (int) bonus;
 	}
+
 	/**
-	 *This method calculates the reinforcement from Continent as every continent has a different control value.
+	 * This method calculates the reinforcement from Continent as every continent
+	 * has a different control value.
 	 */
 	public int collectReinforcementsFromContinent() {
 		int continentBonus = 0;
@@ -400,8 +406,9 @@ public class RiskGameModel {
 		// file
 
 	}// end loadmap
+
 	/**
-	 *This method loads the map by parsing it.
+	 * This method loads the map by parsing it.
 	 */
 	public void loadMap_newformat() {
 		boolean done = false;
@@ -458,13 +465,12 @@ public class RiskGameModel {
 							territories.add(new RiskTerritoryModel(id, name, continent, x, y));
 							// System.out.println(id + " " + name + " " +
 							// continent);
-							
+
 							for (int z = 0; z < continents.size(); z++) {
-                                if(continents.elementAt(z).getName().equals(next.split(",")[3]))
-                                {
-                                continents.elementAt(z).AddTerritories(id);
-                                }
-                            }
+								if (continents.elementAt(z).getName().equals(next.split(",")[3])) {
+									continents.elementAt(z).AddTerritories(id);
+								}
+							}
 
 						}
 						// System.out.println(i);
@@ -488,7 +494,7 @@ public class RiskGameModel {
 					boolean Notendfile = true;
 					do {
 						next = mapfile1.nextLine();
-			
+
 						if (next.equals(";;"))
 							Notendfile = false;
 						else if (!(next.equals("-") || next.equals("") || next.equals("[Adjacents]"))) {
@@ -521,13 +527,11 @@ public class RiskGameModel {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-		
 
 	}
-	
+
 	/**
-	 *This method sets up the gamePhaseSetup in the beginning.
+	 * This method sets up the gamePhaseSetup in the beginning.
 	 */
 	public void gamePhaseSetup(int x, int y) {
 
@@ -551,8 +555,8 @@ public class RiskGameModel {
 				setState(START_TURN);
 				System.out.println("status " + getState());
 			}
-			
-			//startup			
+
+			// startup
 		} // end if INITIAL_REINFORCE
 
 		if (getState() == NEW_GAME) {
@@ -570,16 +574,17 @@ public class RiskGameModel {
 			} // end if country clicked on
 
 			if (i == num) {
-				//startup
-				
+				// startup
+
 				setState(INITIAL_REINFORCE);
 				System.out.println("status " + getState());
 			}
 		} // end if NEW_GAME
 
 	}
+
 	/**
-	 *This method activates the game phase to fortify.
+	 * This method activates the game phase to fortify.
 	 */
 	public String gamePhaseActive(int x, int y) {
 
@@ -592,11 +597,11 @@ public class RiskGameModel {
 				if (getOwnership(country) == curPlayer.getPlayerIndex())
 					if (aTerritory.isAdjacent(dTerritory)) {// if its
 						// adjacent...
-						this.notifyPhaseViewChange(); //2nd country to fortify
+						this.notifyPhaseViewChange(); // 2nd country to fortify
 						setState(FORTIFY_PHASE);
 					}
 			} // end if a county
-		
+
 		} // end fortifying
 
 		if (getState() == FORTIFY) {
@@ -638,7 +643,7 @@ public class RiskGameModel {
 					System.out.println("That territory is not adjacent, try again.");
 				return "That territory is not adjacent, try again.";
 			}
-				this.notifyPhaseViewChange();
+			this.notifyPhaseViewChange();
 		}
 
 		if (getState() == ATTACK) {
@@ -648,10 +653,10 @@ public class RiskGameModel {
 						return "Not enough armies to battle, need at least 2";
 					else {
 						setState(ATTACKING);
-						aTerritory = territories.elementAt(country); //first country to attack
+						aTerritory = territories.elementAt(country); // first country to attack
 					}
 				} // end is curPlayers country
-		this.notifyPhaseViewChange();
+			this.notifyPhaseViewChange();
 		} // end attack with
 
 		if (getState() == TRADE_CARDS) {
@@ -663,7 +668,6 @@ public class RiskGameModel {
 
 		if (getState() == REINFORCE) {
 
-			
 			if (country != -1) // if not a country
 				if (getOwnership(country) == curPlayer.getPlayerIndex()) // if
 					// owned
@@ -672,15 +676,15 @@ public class RiskGameModel {
 		}
 
 		if (getState() == START_TURN) {
-			currentPlayerBonusArmiesRecieved = turnBonus(); 
+			currentPlayerBonusArmiesRecieved = turnBonus();
 			curPlayer.addArmies(currentPlayerBonusArmiesRecieved); // recive turn bonus
 			this.notifyPhaseViewChange();
-			
+
 			if (curPlayer.getCard().size() > 5)
 				setState(TRADE_CARDS);
 			else
 				setState(REINFORCE);
-			
+
 			System.out.println("status " + getState());
 		}
 
@@ -690,7 +694,7 @@ public class RiskGameModel {
 	public void engageBattle() {
 
 		attackDieArray = new Integer[attackNum]; // 3 or 2 or 1
-		defenceDieArray = new Integer[defenseNum];//2 or 1
+		defenceDieArray = new Integer[defenseNum];// 2 or 1
 		Random attDice = new Random();
 
 		// get value for each roll
@@ -727,11 +731,13 @@ public class RiskGameModel {
 			setState(CAPTURE);
 			dTerritory.setPlayer(curPlayer);
 		}
-		if (aTerritory.getArmies() == 0)
-			setState(ACTIVE_TURN);
+		if (aTerritory.getArmies() == 0) {
+			setState(DEFEATED);
+			// setState(ACTIVE_TURN);
+		}
 
 		active = curPlayer;
-		
+
 	}
 
 	public void capture() {
@@ -808,8 +814,9 @@ public class RiskGameModel {
 		return -1;
 
 	}
+
 	/**
-	 *This method checks if the territory is occupied by the current player or not.
+	 * This method checks if the territory is occupied by the current player or not.
 	 */
 	public boolean occupyTerritory(RiskTerritoryModel t) {
 		// Make sure there are availble armies
@@ -861,8 +868,8 @@ public class RiskGameModel {
 	}
 
 	public RiskTerritoryModel getTerritoryAt(int i) {
-//		if (i >= 0)
-			return territories.elementAt(i);
+		// if (i >= 0)
+		return territories.elementAt(i);
 	}
 
 	public int numOfArmiesOnTerritory(int i) {
@@ -885,7 +892,6 @@ public class RiskGameModel {
 		defenseNum = num;
 	}
 
-
 	/**
 	 * @return the riskStartupPhaseModelObservable
 	 */
@@ -894,12 +900,13 @@ public class RiskGameModel {
 	}
 
 	/**
-	 * @param riskStartupPhaseModelObservable the riskStartupPhaseModelObservable to set
+	 * @param riskStartupPhaseModelObservable
+	 *            the riskStartupPhaseModelObservable to set
 	 */
 	public void setRiskStartupPhaseModelObservable(RiskStartupPhaseModel riskStartupPhaseModelObservable) {
 		this.riskStartupPhaseModelObservable = riskStartupPhaseModelObservable;
 	}
-	
+
 	/**
 	 * @return the riskStartupPhaseModelObservable
 	 */
@@ -908,7 +915,8 @@ public class RiskGameModel {
 	}
 
 	/**
-	 * @param riskStartupPhaseModelObservable the riskStartupPhaseModelObservable to set
+	 * @param riskStartupPhaseModelObservable
+	 *            the riskStartupPhaseModelObservable to set
 	 */
 	public void setRiskStartupEndPhaseModelObservable(RiskStartupEndPhaseModel objriskStartupEndPhaseModelObservable) {
 		this.riskStartupEndPhaseModelObservable = objriskStartupEndPhaseModelObservable;
@@ -922,9 +930,11 @@ public class RiskGameModel {
 	}
 
 	/**
-	 * @param riskRiskReinforcementPhaseModelObservable the riskRiskReinforcementPhaseModelObservable to set
+	 * @param riskRiskReinforcementPhaseModelObservable
+	 *            the riskRiskReinforcementPhaseModelObservable to set
 	 */
-	public void setRiskRiskReinforcementPhaseModelObservable(RiskReinforcementPhaseModel riskRiskReinforcementPhaseModelObservable) {
+	public void setRiskRiskReinforcementPhaseModelObservable(
+			RiskReinforcementPhaseModel riskRiskReinforcementPhaseModelObservable) {
 		this.riskRiskReinforcementPhaseModelObservable = riskRiskReinforcementPhaseModelObservable;
 	}
 
@@ -936,7 +946,8 @@ public class RiskGameModel {
 	}
 
 	/**
-	 * @param riskAttackPhaseModelObservable the riskAttackPhaseModelObservable to set
+	 * @param riskAttackPhaseModelObservable
+	 *            the riskAttackPhaseModelObservable to set
 	 */
 	public void setRiskAttackPhaseModelObservable(RiskAttackPhaseModel riskAttackPhaseModelObservable) {
 		this.riskAttackPhaseModelObservable = riskAttackPhaseModelObservable;
@@ -950,7 +961,8 @@ public class RiskGameModel {
 	}
 
 	/**
-	 * @param riskFortifyPhaseModelObservable the riskFortifyPhaseModelObservable to set
+	 * @param riskFortifyPhaseModelObservable
+	 *            the riskFortifyPhaseModelObservable to set
 	 */
 	public void setRiskFortifyPhaseModelObservable(RiskFortifyPhaseModel riskFortifyPhaseModelObservable) {
 		this.riskFortifyPhaseModelObservable = riskFortifyPhaseModelObservable;
@@ -964,7 +976,8 @@ public class RiskGameModel {
 	}
 
 	/**
-	 * @param riskPhaseViewObserver the riskPhaseViewObserver to set
+	 * @param riskPhaseViewObserver
+	 *            the riskPhaseViewObserver to set
 	 */
 	public void setRiskPhaseViewObserver(RiskPhaseViewObserver riskPhaseViewObserver) {
 		this.riskPhaseViewObserver = riskPhaseViewObserver;

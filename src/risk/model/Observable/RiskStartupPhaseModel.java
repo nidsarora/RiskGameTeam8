@@ -72,7 +72,7 @@ public class RiskStartupPhaseModel extends Observable implements PhaseViewInterf
 		sbContentBuilder.append(this.getPhaseInformation() + "\n");
 		sbContentBuilder.append("Statistics:\n\n");
 		sbContentBuilder.append("Number of players:" + this.getNumberOfPlayers() + "\n");
-		sbContentBuilder.append("Number of armies per player:" + getCurrentRiskGameObject().getArmies() + "\n");
+		sbContentBuilder.append("Number of armies per player:" + this.getCurrentRiskGameObject().getArmies() + "\n");
 		return sbContentBuilder.toString();
 	}
 

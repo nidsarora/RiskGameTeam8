@@ -17,6 +17,7 @@ public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterf
 	private String objectType = "RiskFortifyPhaseModel";
 	private RiskGameModel objCurrentRiskGameObject;
 	private static RiskFortifyPhaseModel instance = new RiskFortifyPhaseModel();
+
 	private RiskFortifyPhaseModel() {
 	}
 
@@ -150,16 +151,17 @@ public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterf
 
 	@Override
 	public void setCurrentRiskGameObject(RiskGameModel objCurrentRiskGameContext) {
-			this.setObjCurrentRiskGameObject(objCurrentRiskGameContext);
+		this.setObjCurrentRiskGameObject(objCurrentRiskGameContext);
 	}
 
 	/**
-	 * @param objCurrentRiskGameObject the objCurrentRiskGameObject to set
+	 * @param objCurrentRiskGameObject
+	 *            the objCurrentRiskGameObject to set
 	 */
 	public void setObjCurrentRiskGameObject(RiskGameModel objCurrentRiskGameObject) {
 		this.objCurrentRiskGameObject = objCurrentRiskGameObject;
 	}
-		
+
 	@Override
 	public String toString() {
 		StringBuilder sbContentBuilder = new StringBuilder();
@@ -167,14 +169,20 @@ public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterf
 		sbContentBuilder.append(this.getPhaseInformation() + "\n");
 		sbContentBuilder.append("Statistics:\n\n");
 		sbContentBuilder.append("Fortification from territory: "
-		
-				+ ((this.objCurrentRiskGameObject.aTerritory != null) ? objCurrentRiskGameObject.aTerritory.getName() : "") + 
-		
-		" to " 
-		
-		+ ((this.objCurrentRiskGameObject.dTerritory !=null) ? objCurrentRiskGameObject.dTerritory.getName() : "")
-		
-				);
+
+				+ ((this.objCurrentRiskGameObject.aTerritory != null) ? objCurrentRiskGameObject.aTerritory.getName()
+						: "")
+				+
+
+				" to "
+
+				+ ((this.objCurrentRiskGameObject.dTerritory != null)
+						? objCurrentRiskGameObject.dTerritory.getName() + "\n"
+						: "\n")
+
+		);
+		sbContentBuilder.append("So " + this.objCurrentRiskGameObject.defenseNum + " armies moved from "
+				+ this.objCurrentRiskGameObject.aTerritory + " to " + this.objCurrentRiskGameObject.dTerritory + ".");
 		return sbContentBuilder.toString();
 	}
 

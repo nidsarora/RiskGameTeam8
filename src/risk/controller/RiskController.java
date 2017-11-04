@@ -105,6 +105,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		
 		risk.setRiskPhaseViewObserver(objPhaseViewObserver);
 		risk.getRiskPhaseViewObserver().generatePhaseView();
+		risk.notifyPhaseViewChange();
 	}
 
 	/**
@@ -230,7 +231,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			jPanel1.repaint();
 		}
 		// AttackButton.setText("Retreat");
-
+		risk.notifyPhaseViewChange();
 	}
 
 	private void EndButtonMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_EndButtonMouseClicked
@@ -294,7 +295,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			risk.gamePhaseSetup(x, y);
 			name = risk.curPlayer.getName();
 			statusLabel.setText("Place an army on a unoccupied territory");
-			risk.notifyPhaseViewChange();
+//			risk.notifyPhaseViewChange();
 			
 		}
 
@@ -323,7 +324,6 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			risk.active = risk.curPlayer;
 			name = risk.curPlayer.getName();
 			statusLabel.setText("Recieved a bonus of " + risk.curPlayer.getNumberOfArmies());
-			risk.notifyPhaseViewChange();
 		}
 
 		if (risk.getState() == RiskGameModel.REINFORCE) {
@@ -456,7 +456,13 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			} /// end if defenders turn
 			
 		} // End attackPhase
-
+		
+		if(risk.getState() == RiskGameModel.DEFEATED)
+		{
+			risk.notifyPhaseViewChange(); // show defeat in phase view
+			setState(RiskGameModel.ACTIVE_TURN);
+		}
+		
 		if (risk.getState() == RiskGameModel.CAPTURE) {
 			statusLabel.setText("Select number of armies to move to " + risk.dTerritory.getName());
 			AttackButton.setVisible(false);
@@ -490,12 +496,14 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					else
 						statusLabel.setText(risk.defenseNum + " armies moved to " + risk.dTerritory.getName());
 
+					risk.setAttackDieArray(null);
+					risk.setDefenceDieArray(null);
 					EndButton.setVisible(true);
 					FortifyButton.setVisible(true);
 					risk.capture();
 				}
 			}
-			risk.notifyPhaseViewChange();
+			//risk.notifyPhaseViewChange();
 		} // end capturing
 
 		if (risk.getState() == RiskGameModel.FORTIFY) {
