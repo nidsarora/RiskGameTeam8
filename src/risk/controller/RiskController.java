@@ -290,15 +290,17 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 		if (risk.getState() == RiskGameModel.NEW_GAME) { //0
 		//startup
+			System.out.println("status " + risk.getState());
 			risk.gamePhaseSetup(x, y);
 			name = risk.curPlayer.getName();
 			statusLabel.setText("Place an army on a unoccupied territory");
 			risk.notifyPhaseViewChange();
+			
 		}
 
 		if (risk.getState() == RiskGameModel.INITIAL_REINFORCE) { //1
 			//startup
-			
+			System.out.println("status " + risk.getState());
 			risk.gamePhaseSetup(x, y);
 			name = risk.curPlayer.getName();
 			statusLabel.setText("Place an army on a territory you occupy");
@@ -306,11 +308,12 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		}
 
 		if (risk.getState() == RiskGameModel.ATTACK) {
+			risk.notifyPhaseViewChange();
 			name = risk.curPlayer.getName();
-			if (risk.getState() == RiskGameModel.ATTACKING) {
-				AttackButton.setText("Retreat");
-				statusLabel.setText("Select an opposing territory");
-			}
+//			if (risk.getState() == RiskGameModel.ATTACKING) {
+//				AttackButton.setText("Retreat");
+//				statusLabel.setText("Select an opposing territory");
+//			}
 			out = risk.gamePhaseActive(x, y);
 			risk.notifyPhaseViewChange();
 		}
@@ -324,9 +327,10 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		}
 
 		if (risk.getState() == RiskGameModel.REINFORCE) {
-			risk.notifyPhaseViewChange();
+			
 			name = risk.curPlayer.getName();
 			risk.gamePhaseActive(x, y);
+			risk.notifyPhaseViewChange();
 			statusLabel.setText("You have " + risk.curPlayer.getNumberOfArmies() + " left to place");
 			if (risk.curPlayer.getNumberOfArmies() == 0) {
 				risk.setState(RiskGameModel.ACTIVE_TURN);
@@ -422,7 +426,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 							numofatt = 1;
 					}
 				}
-
+				
+				risk.notifyPhaseViewChange();
 				if (numofatt > 0) {
 					risk.setDefend(numofatt);
 					risk.engageBattle();
@@ -449,7 +454,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 				}
 
 			} /// end if defenders turn
-			risk.notifyPhaseViewChange();
+			
 		} // End attackPhase
 
 		if (risk.getState() == RiskGameModel.CAPTURE) {

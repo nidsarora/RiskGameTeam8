@@ -48,22 +48,6 @@ public class RiskStartupEndPhaseModel extends Observable implements PhaseViewInt
 		return Utility.getPhaseInformtion(this);
 	}
 
-	private int getNumberOfArmiesPerPlayers() {
-		try {
-			return currentRiskGameObject.curPlayer.getNumberOfArmies();
-		} catch (NullPointerException e) {
-			return 0;
-		}
-	}
-
-	private int getNumberOfPlayers() {
-		try {
-			return currentRiskGameObject.getPlayers().size();
-		} catch (NullPointerException e) {
-			return 0;
-		}
-	}
-
 	@Override
 	public String toString() {
 		StringBuilder sbContentBuilder = new StringBuilder();
@@ -71,7 +55,9 @@ public class RiskStartupEndPhaseModel extends Observable implements PhaseViewInt
 		sbContentBuilder.append(this.getPhaseInformation() + "\n");
 		sbContentBuilder.append("Statistics:\n\n");
 		sbContentBuilder.append("The startup phase ends.\n");
-		sbContentBuilder.append(this.getCurrentRiskGameObject().getArmies() + " armies have been placed.");
+		sbContentBuilder.append(this.getCurrentRiskGameObject().getArmies() + " armies have been placed.\n");
+		sbContentBuilder.append("Player recieved " + this.currentRiskGameObject.getCurrentPlayerBonusArmiesRecieved() + " armies as bonus from Continents.\n");
+		sbContentBuilder.append("Player recieved " + 0 + " armies from tading cards.\n");
 		return sbContentBuilder.toString();
 	}
 

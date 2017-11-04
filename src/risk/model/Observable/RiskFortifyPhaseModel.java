@@ -34,6 +34,10 @@ public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterf
 
 	@Override
 	public void isChanged() {
+		// specify that my state was changed
+		setChanged();
+		// notify all attached Observers of a change
+		notifyObservers(this);
 	}
 
 	@Override
@@ -46,16 +50,6 @@ public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterf
 	public String getObjectType() {
 		// TODO Auto-generated method stub
 		return objectType;
-	}
-
-	@Override
-	public String toString() {
-		StringBuilder sbContentBuilder = new StringBuilder();
-		sbContentBuilder.append("************" + getTitle() + "************\n");
-		sbContentBuilder.append(this.getPhaseInformation() + "\n");
-		sbContentBuilder.append("Statistics:\n\n");
-		sbContentBuilder.append("Fortification from territory: "+ objCurrentRiskGameObject.aTerritory.getName() + " to " + objCurrentRiskGameObject.dTerritory.getName());
-		return sbContentBuilder.toString();
 	}
 
 	@Override
@@ -164,6 +158,24 @@ public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterf
 	 */
 	public void setObjCurrentRiskGameObject(RiskGameModel objCurrentRiskGameObject) {
 		this.objCurrentRiskGameObject = objCurrentRiskGameObject;
+	}
+		
+	@Override
+	public String toString() {
+		StringBuilder sbContentBuilder = new StringBuilder();
+		sbContentBuilder.append("************" + getTitle() + "************\n");
+		sbContentBuilder.append(this.getPhaseInformation() + "\n");
+		sbContentBuilder.append("Statistics:\n\n");
+		sbContentBuilder.append("Fortification from territory: "
+		
+				+ ((this.objCurrentRiskGameObject.aTerritory != null) ? objCurrentRiskGameObject.aTerritory.getName() : "") + 
+		
+		" to " 
+		
+		+ ((this.objCurrentRiskGameObject.dTerritory !=null) ? objCurrentRiskGameObject.dTerritory.getName() : "")
+		
+				);
+		return sbContentBuilder.toString();
 	}
 
 }

@@ -33,6 +33,10 @@ public class RiskReinforcementPhaseModel extends Observable implements PhaseView
 	@Override
 	public void isChanged() {
 		// TODO Auto-generated method stub
+		// specify that my state was changed
+		setChanged();
+		// notify all attached Observers of a change
+		notifyObservers(this);
 	}
 
 	public int getCardTradedArmiesRecieved() {

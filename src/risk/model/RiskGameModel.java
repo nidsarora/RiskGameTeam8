@@ -64,11 +64,14 @@ public class RiskGameModel {
 	public int attackNum = 0;
 	public int iter = 0;
 	public boolean drawn;
+	private Integer[] attackDieArray;
+	private Integer[] defenceDieArray;
 	private RiskStartupPhaseModel riskStartupPhaseModelObservable;
 	private RiskReinforcementPhaseModel riskRiskReinforcementPhaseModelObservable;
 	private RiskAttackPhaseModel riskAttackPhaseModelObservable;
 	private RiskFortifyPhaseModel riskFortifyPhaseModelObservable;
 	private RiskStartupEndPhaseModel riskStartupEndPhaseModelObservable;
+	private int currentPlayerBonusArmiesRecieved;
 	
 	private RiskPhaseViewObserver riskPhaseViewObserver;
 	
@@ -90,6 +93,10 @@ public class RiskGameModel {
 	
 	public Vector<RiskContinentModel> getContinents(){
 		return continents;
+	}
+	
+	public int getCurrentPlayerBonusArmiesRecieved() {	
+		return currentPlayerBonusArmiesRecieved;
 	}
 	
 	public void setContinents(Vector<RiskContinentModel> test) {
@@ -138,7 +145,7 @@ public class RiskGameModel {
 			this.getRiskRiskReinforcementPhaseModelObservable().isChanged();
 		}	
 
-		if(this.getState() == ATTACKING || this.getState() == ATTACK_PHASE || this.getState() == CAPTURE) //8|9|11
+		if(this.getState() == ATTACK || this.getState() == ATTACKING || this.getState() == ATTACK_PHASE || this.getState() == CAPTURE) //8|9|11
 		{
 			RiskAttackPhaseModel objRiskAttackPhaseModel = this.getRiskAttackPhaseModelObservable();
 			objRiskAttackPhaseModel.setCurrentRiskGameObject(this);
@@ -542,6 +549,7 @@ public class RiskGameModel {
 
 			if (i == players.size()) {
 				setState(START_TURN);
+				System.out.println("status " + getState());
 			}
 			
 			//startup			
@@ -565,6 +573,7 @@ public class RiskGameModel {
 				//startup
 				
 				setState(INITIAL_REINFORCE);
+				System.out.println("status " + getState());
 			}
 		} // end if NEW_GAME
 
@@ -653,6 +662,8 @@ public class RiskGameModel {
 		}
 
 		if (getState() == REINFORCE) {
+
+			
 			if (country != -1) // if not a country
 				if (getOwnership(country) == curPlayer.getPlayerIndex()) // if
 					// owned
@@ -661,12 +672,16 @@ public class RiskGameModel {
 		}
 
 		if (getState() == START_TURN) {
-
-			curPlayer.addArmies(turnBonus()); // recive turn bonus
+			currentPlayerBonusArmiesRecieved = turnBonus(); 
+			curPlayer.addArmies(currentPlayerBonusArmiesRecieved); // recive turn bonus
+			this.notifyPhaseViewChange();
+			
 			if (curPlayer.getCard().size() > 5)
 				setState(TRADE_CARDS);
 			else
 				setState(REINFORCE);
+			
+			System.out.println("status " + getState());
 		}
 
 		return "";
@@ -674,40 +689,40 @@ public class RiskGameModel {
 
 	public void engageBattle() {
 
-		Integer[] att = new Integer[attackNum];
-		Integer[] def = new Integer[defenseNum];
+		attackDieArray = new Integer[attackNum]; // 3 or 2 or 1
+		defenceDieArray = new Integer[defenseNum];//2 or 1
 		Random attDice = new Random();
 
 		// get value for each roll
 		for (int i = 0; i < attackNum; i++)
-			att[i] = attDice.nextInt(6) + 1;
+			attackDieArray[i] = attDice.nextInt(6) + 1;
 		for (int i = 0; i < defenseNum; i++)
-			def[i] = attDice.nextInt(6) + 1;
-		Arrays.sort(att, Collections.reverseOrder());
-		Arrays.sort(def, Collections.reverseOrder());
+			defenceDieArray[i] = attDice.nextInt(6) + 1;
+		Arrays.sort(attackDieArray, Collections.reverseOrder());
+		Arrays.sort(defenceDieArray, Collections.reverseOrder());
 
 		if (attackNum == 1) {
-			System.out.println(att[0] + " vs " + def[0]);
-			if (att[0] > def[0])
+			System.out.println(attackDieArray[0] + " vs " + defenceDieArray[0]);
+			if (attackDieArray[0] > defenceDieArray[0])
 				dTerritory.looseArmy();
 			else
 				aTerritory.looseArmy();
 		}
 		if (attackNum > 1) { // attacking with more than 1
-			System.out.println(att[0] + " vs " + def[0]);
-			if (att[0] > def[0])
+			System.out.println(attackDieArray[0] + " vs " + defenceDieArray[0]);
+			if (attackDieArray[0] > defenceDieArray[0])
 				dTerritory.looseArmy();
 			else
 				aTerritory.looseArmy();
 			if (defenseNum == 2) {
-				System.out.print(att[1] + " vs " + def[1]);
-				if (att[1] > def[1])
+				System.out.print(attackDieArray[1] + " vs " + defenceDieArray[1]);
+				if (attackDieArray[1] > defenceDieArray[1])
 					dTerritory.looseArmy();
 				else
 					aTerritory.looseArmy();
-			} // if defneding with two
+			} // if defending with two
 		}
-
+		notifyPhaseViewChange();
 		if (dTerritory.getArmies() == 0) {
 			setState(CAPTURE);
 			dTerritory.setPlayer(curPlayer);
@@ -716,7 +731,7 @@ public class RiskGameModel {
 			setState(ACTIVE_TURN);
 
 		active = curPlayer;
-
+		
 	}
 
 	public void capture() {
@@ -953,6 +968,22 @@ public class RiskGameModel {
 	 */
 	public void setRiskPhaseViewObserver(RiskPhaseViewObserver riskPhaseViewObserver) {
 		this.riskPhaseViewObserver = riskPhaseViewObserver;
+	}
+
+	public Integer[] getDefenceDieArray() {
+		return defenceDieArray;
+	}
+
+	public void setDefenceDieArray(Integer[] defenceDieArray) {
+		this.defenceDieArray = defenceDieArray;
+	}
+
+	public Integer[] getAttackDieArray() {
+		return attackDieArray;
+	}
+
+	public void setAttackDieArray(Integer[] attackDieArray) {
+		this.attackDieArray = attackDieArray;
 	}
 
 }
