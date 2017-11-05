@@ -1,6 +1,7 @@
 package risk.model;
 
 import java.io.InputStream;
+import java.io.ObjectInputStream.GetField;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
@@ -19,6 +20,7 @@ import risk.model.Observable.RiskReinforcementPhaseModel;
 import risk.model.Observable.RiskStartupEndPhaseModel;
 import risk.model.Observable.RiskStartupPhaseModel;
 import risk.view.RiskPhaseViewObserver;
+import risk.view.RiskPlayerDominationViewObserver;
 
 /**
  * This class consists the business logic of the entire game.It consists of all
@@ -73,6 +75,7 @@ public class RiskGameModel {
 	private RiskAttackPhaseModel riskAttackPhaseModelObservable;
 	private RiskFortifyPhaseModel riskFortifyPhaseModelObservable;
 	private RiskStartupEndPhaseModel riskStartupEndPhaseModelObservable;
+	private RiskPlayerDominationViewObserver riskPlayerDominationViewObserver;
 	private int currentPlayerBonusArmiesRecieved;
 
 	private RiskPhaseViewObserver riskPhaseViewObserver;
@@ -184,12 +187,22 @@ public class RiskGameModel {
 
 		// Setup Board
 		gameState = NEW_GAME;
-
+		
 		initalPlayer();
+		initializePlayerDominationView();
 		loadMap_newformat();
 		initializeDeck();
 		distubuteArmies();
 
+	}
+
+	private void initializePlayerDominationView() {
+		// TODO Auto-generated method stub
+		RiskPlayerDominationViewObserver riskPlayerDominationViewObserver = RiskPlayerDominationViewObserver
+				.getInstance();
+		for (RiskPlayerModel player : this.players)
+			player.addObserver(riskPlayerDominationViewObserver);
+		riskPlayerDominationViewObserver.generatePhaseView();
 	}
 
 	/**
@@ -744,8 +757,8 @@ public class RiskGameModel {
 		int armies = defenseNum;
 		RiskTerritoryModel d = dTerritory;
 		RiskTerritoryModel a = aTerritory;
-		defender.looseTerritory(d);
-		active.occupyTerritory(d);
+		defender.looseTerritory(d,this);
+		active.occupyTerritory(d,this);
 
 		if (defender.getOccupiedTerritories().size() == 0) {
 			System.out.println(defender.getName() + " lost the game.");
@@ -827,6 +840,7 @@ public class RiskGameModel {
 				t.setPlayer(curPlayer);
 				t.addArmies(1);
 				curPlayer.looseArmy();
+				curPlayer.occupyTerritory(t,this);
 				return true;
 			} // end if
 		} // end if availble
@@ -840,7 +854,7 @@ public class RiskGameModel {
 		if (curPlayer.getNumberOfArmies() > 0) {
 			RiskTerritoryModel t = territories.elementAt(id);
 			t.setPlayer(curPlayer);
-			curPlayer.occupyTerritory(t);
+			curPlayer.occupyTerritory(t,this);
 			t.addArmy();
 			curPlayer.looseArmy();
 			nextPlayer();
@@ -997,6 +1011,14 @@ public class RiskGameModel {
 
 	public void setAttackDieArray(Integer[] attackDieArray) {
 		this.attackDieArray = attackDieArray;
+	}
+
+	public RiskPlayerDominationViewObserver getRiskPlayerDominationViewObserver() {
+		return riskPlayerDominationViewObserver;
+	}
+
+	public void setRiskPlayerDominationViewObserver(RiskPlayerDominationViewObserver riskPlayerDominationViewObserver) {
+		this.riskPlayerDominationViewObserver = riskPlayerDominationViewObserver;
 	}
 
 }

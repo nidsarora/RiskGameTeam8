@@ -18,6 +18,7 @@ import risk.model.Observable.RiskReinforcementPhaseModel;
 import risk.model.Observable.RiskStartupEndPhaseModel;
 import risk.model.Observable.RiskStartupPhaseModel;
 import risk.view.RiskPhaseViewObserver;
+import risk.view.RiskPlayerDominationViewObserver;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
@@ -79,6 +80,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		jPanel1.addMouseListener(this);
 		AttackButton.setVisible(false);
 	}
+
+
 
 	private void initializePhaseView(RiskGameModel risk) {
 
