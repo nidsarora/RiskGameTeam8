@@ -316,13 +316,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			risk.notifyPhaseViewChange();
 		}
 
-		if (risk.getState() == RiskGameModel.START_TURN) {
-			risk.gamePhaseActive(x, y);
-			risk.active = risk.curPlayer;
-			name = risk.curPlayer.getName();
-			statusLabel.setText("Recieved a bonus of " + risk.curPlayer.getNumberOfArmies());
-		}
-
+		
 		if (risk.getState() == RiskGameModel.REINFORCE) {
 
 			name = risk.curPlayer.getName();
@@ -335,6 +329,14 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 		}
 
+		if (risk.getState() == RiskGameModel.START_TURN) {
+			risk.gamePhaseActive(x, y);
+			risk.active = risk.curPlayer;
+			name = risk.curPlayer.getName();
+			statusLabel.setText("Recieved a bonus of " + risk.curPlayer.getNumberOfArmies());
+		}
+
+		
 		if (risk.getState() == RiskGameModel.ACTIVE_TURN) {
 			name = risk.curPlayer.getName();
 			statusLabel.setText("What would you like to do?");

@@ -166,23 +166,27 @@ public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterf
 	public String toString() {
 		StringBuilder sbContentBuilder = new StringBuilder();
 
-		if (this.objCurrentRiskGameObject.getState() == this.objCurrentRiskGameObject.FORTIFY) {
-			sbContentBuilder.append("\n************" + getTitle() + "************\n");
-			sbContentBuilder.append(this.getPhaseInformation() + "\n");
-			sbContentBuilder.append("Statistics:\n\n");
-		}
+		// if (this.objCurrentRiskGameObject.getState() ==
+		// this.objCurrentRiskGameObject.FORTIFY) {
+		sbContentBuilder.append("\n************" + getTitle() + "************\n");
+		sbContentBuilder.append(this.getPhaseInformation() + "\n");
+		sbContentBuilder.append("Statistics:\n\n");
+		// }
 
-		if (this.objCurrentRiskGameObject.getState() == this.objCurrentRiskGameObject.FORTIFYING) {
+		// if (this.objCurrentRiskGameObject.getState() ==
+		// this.objCurrentRiskGameObject.FORTIFYING) {
 
-			sbContentBuilder.append(""
+		sbContentBuilder.append(""
 
-					+ ((this.objCurrentRiskGameObject.aTerritory != null
-							&& this.objCurrentRiskGameObject.dTerritory != null)
-									? "Fortification from territory: " + objCurrentRiskGameObject.aTerritory.getName()
-											+ " to " + objCurrentRiskGameObject.dTerritory.getName() + "\n"
-									: ""));
-		}
-		if (this.objCurrentRiskGameObject.getState() == this.objCurrentRiskGameObject.FORTIFY_PHASE) {
+				+ ((this.objCurrentRiskGameObject.aTerritory != null
+						&& this.objCurrentRiskGameObject.dTerritory != null)
+								? "Fortification from territory: " + objCurrentRiskGameObject.aTerritory.getName()
+										+ " to " + objCurrentRiskGameObject.dTerritory.getName() + "\n"
+								: ""));
+		// }
+		if (this.objCurrentRiskGameObject.getState() == this.objCurrentRiskGameObject.FORTIFY_PHASE
+				&& ((this.objCurrentRiskGameObject.aTerritory != null
+						&& this.objCurrentRiskGameObject.dTerritory != null))) {
 			sbContentBuilder.append("So " + this.objCurrentRiskGameObject.defenseNum + " armies moved from "
 					+ this.objCurrentRiskGameObject.aTerritory.getName() + " to "
 					+ this.objCurrentRiskGameObject.dTerritory.getName() + ".\n");
