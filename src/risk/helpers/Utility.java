@@ -28,19 +28,19 @@ public final class Utility {
 		String phaseInformation;
 		switch (objectType) {
 		case "RiskStartupPhaseModel":
-			phaseInformation = "I am RiskStartupPhaseModel";
+			phaseInformation = "This is the Start up phase which is about placing armies etc etc...";
 			break;
 		case "RiskReinforcementPhaseModel":
-			phaseInformation = "I am RiskReinforcementPhaseModel";
+			phaseInformation = "This is the Reinforcement phase which is about reinforcing etc etc...";
 			break;
 		case "RiskAttackPhaseModel":
-			phaseInformation = "I am RiskAttackPhaseModel";
+			phaseInformation = "This is the Attack phase which is about attacking etc etc...";
 			break;
 		case "RiskFortifyPhaseModel":
-			phaseInformation = "I am RiskFortifyPhaseModel";
+			phaseInformation = "This is the Fortifying phase which is about fortiying etc etc...";
 			break;
 		default:
-			phaseInformation = "I am no one";
+			phaseInformation = "Who am I?";
 			break;
 		}
 		

@@ -132,16 +132,16 @@ public class RiskGameModel {
 			// System.out.println("START_TURN");
 		}
 
-		if (this.getState() == START_TURN) // 6
-		{
-			RiskStartupEndPhaseModel objRiskStartupEndPhaseModel = this.getRiskStartupEndPhaseModelObservable();
-			objRiskStartupEndPhaseModel.setCurrentRiskGameObject(this);
-			this.setRiskStartupEndPhaseModelObservable(objRiskStartupEndPhaseModel);
-			this.getRiskStartupEndPhaseModelObservable().isChanged();
-			System.out.println("START_TURN");
-		}
+//		if (this.getState() == START_TURN) // 6
+//		{
+//			RiskStartupEndPhaseModel objRiskStartupEndPhaseModel = this.getRiskStartupEndPhaseModelObservable();
+//			objRiskStartupEndPhaseModel.setCurrentRiskGameObject(this);
+//			this.setRiskStartupEndPhaseModelObservable(objRiskStartupEndPhaseModel);
+//			this.getRiskStartupEndPhaseModelObservable().isChanged();
+//			System.out.println("START_TURN");
+//		}
 
-		if (this.getState() == REINFORCE) {
+		if (this.getState() == REINFORCE || this.getState() == START_TURN) {
 			RiskReinforcementPhaseModel objRiskReinforcementPhaseModel = this
 					.getRiskRiskReinforcementPhaseModelObservable();
 			objRiskReinforcementPhaseModel.setCurrentRiskGameObject(this);
