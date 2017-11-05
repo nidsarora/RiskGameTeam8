@@ -4,6 +4,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Date;
 
 /**
  * This class is used to get the path of the resources used in the project.
@@ -30,7 +31,7 @@ public final class Utility {
 		try (FileWriter fw = new FileWriter("log\\log.txt", true);
 				BufferedWriter bw = new BufferedWriter(fw);
 				PrintWriter out = new PrintWriter(bw)) {
-			out.println(text);
+			out.println(new Date().toString() + ":" + text);
 
 		} catch (IOException e) {
 			e.printStackTrace();

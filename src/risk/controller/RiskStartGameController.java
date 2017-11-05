@@ -23,6 +23,10 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Vector;
 
 import javax.sound.midi.InvalidMidiDataException;
 import javax.sound.midi.MidiSystem;
@@ -52,19 +56,24 @@ import org.xml.sax.SAXException;
 import risk.helpers.Utility;
 
 /**
- *This class is the main controller of the application and contains the logic for the map editor
+ * This class is the main controller of the application and contains the logic
+ * for the map editor
+ * 
  * @author Team8
  */
 public class RiskStartGameController extends java.awt.Frame {
+
+	static HashMap<String, String> HmAdjusentadded = new HashMap<String, String>();
+
 	/** Creates new form RiskStartGame */
 
-	public RiskStartGameController(String test)
-	{
-		
+	public RiskStartGameController(String test) {
+
 	}
-	
-	
+
 	public RiskStartGameController() {
+		Utility.writeLog("-------------------------------------------------------");
+		Utility.writeLog("application start");
 		
 		initComponents();
 		jButton1.setEnabled(false);
@@ -89,6 +98,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * This method is called from within the constructor to initialize the form.
 	 */
 	public void initComponents() {
+		
 		jPanel1 = new javax.swing.JPanel();
 		jButton1 = new javax.swing.JButton();
 		jButton3 = new javax.swing.JButton();
@@ -174,25 +184,24 @@ public class RiskStartGameController extends java.awt.Frame {
 		add(jPanel1, java.awt.BorderLayout.CENTER);
 
 		pack();
-		
-		//This is clear the CurrentGameMap of previous games details
-		//clearCurrentGameMap();
-		initializeCurrentGameMap();	
+
+		// This is clear the CurrentGameMap of previous games details
+		// clearCurrentGameMap();
+		initializeCurrentGameMap();
 	}
 
-	private void clearCurrentGameMap()
-	{
+	private void clearCurrentGameMap() {
 		try {
-		File currentGameMap = new File(Utility.getMapPathforFile("CurrentGameMap.map"));
-		BufferedWriter brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap));
-		brCurrentMapModifier.write("",0,"".length());
-		brCurrentMapModifier.close();
-		
+			File currentGameMap = new File(Utility.getMapPathforFile("CurrentGameMap.map"));
+			BufferedWriter brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap));
+			brCurrentMapModifier.write("", 0, "".length());
+			brCurrentMapModifier.close();
+
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 	}
 
 	private void populateMapPanel() throws IOException {
@@ -201,53 +210,53 @@ public class RiskStartGameController extends java.awt.Frame {
 		String strCurrentMapLine;
 		BufferedReader brCurrentGameMap = new BufferedReader(new InputStreamReader(
 				RiskStartGameController.class.getResourceAsStream(Utility.getMapPath("CurrentGameMap.map"))));
-	    Boolean reachedTerritories = false;
-		while ((strCurrentMapLine =  brCurrentGameMap.readLine()) != null)
-		{
-			if(reachedTerritories)
-			{
-				if(!strCurrentMapLine.equals("[Adjacents]"))//Do not add new line after the last line.
+		Boolean reachedTerritories = false;
+		while ((strCurrentMapLine = brCurrentGameMap.readLine()) != null) {
+			if (reachedTerritories) {
+				if (!strCurrentMapLine.equals("[Adjacents]"))// Do not add new
+																// line after
+																// the last
+																// line.
 					mapEditTextArea.append(strCurrentMapLine + "\n");
 				else
-					break;				
+					break;
 			}
-			if(strCurrentMapLine.equals("[Territories]"))
+			if (strCurrentMapLine.equals("[Territories]"))
 				reachedTerritories = true;
-		}	
+		}
 		brCurrentGameMap.close();
 		generateMapFrame.repaint();
 		scrollTextAreaPanel.repaint();
-		
+		Utility.writeLog("Map Editor is provided for the user.");
 	}
 
 	private void initializeCurrentGameMap() {
 		try {
-		StringBuilder sbEarthMapReader = new StringBuilder();
-		String strEarthMapLine;
-		BufferedReader brEarthMapReader = new BufferedReader(new InputStreamReader(
-				RiskStartGameController.class.getResourceAsStream(Utility.getMapPath("BaseEarthMapWithoutCoordinates.map"))));
-		File currentGameMap = new File(Utility.getMapPathforFile("CurrentGameMap.map"));
-		BufferedWriter brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap));
-		
-	
-			while ((strEarthMapLine =  brEarthMapReader.readLine()) != null)
-			{
-				if(!strEarthMapLine.equals(";;"))//Do not add new line after the last line.
+			StringBuilder sbEarthMapReader = new StringBuilder();
+			String strEarthMapLine;
+			BufferedReader brEarthMapReader = new BufferedReader(new InputStreamReader(RiskStartGameController.class
+					.getResourceAsStream(Utility.getMapPath("BaseEarthMapWithoutCoordinates.map"))));
+			File currentGameMap = new File(Utility.getMapPathforFile("CurrentGameMap.map"));
+			BufferedWriter brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap));
+
+			while ((strEarthMapLine = brEarthMapReader.readLine()) != null) {
+				if (!strEarthMapLine.equals(";;"))// Do not add new line after
+													// the last line.
 					sbEarthMapReader.append(strEarthMapLine + "\n");
 				else
 					sbEarthMapReader.append(strEarthMapLine);
 			}
-			
-			brCurrentMapModifier.write(sbEarthMapReader.toString(),0,sbEarthMapReader.toString().length());
+
+			brCurrentMapModifier.write(sbEarthMapReader.toString(), 0, sbEarthMapReader.toString().length());
 			brCurrentMapModifier.close();
 			brEarthMapReader.close();
+			Utility.writeLog("Load the entries from Base Map file");
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
+
 	}
 
 	/** Exit the Application */
@@ -265,8 +274,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	}
 
 	/**
-	 * Creates the JFrame and JPanels within on the click on Choose Map Button. Uses
-	 * GridBagLayout for the components within.
+	 * Creates the JFrame and JPanels within on the click on Choose Map Button.
+	 * Uses GridBagLayout for the components within.
 	 * 
 	 * @throws IOException
 	 */
@@ -289,7 +298,7 @@ public class RiskStartGameController extends java.awt.Frame {
 		c.gridx = 1;
 		c.gridy = 0;
 		mapEditTextArea = new JTextArea("", 200, 120);
-		//mapEditTextArea.setEditable(false);
+		// mapEditTextArea.setEditable(false);
 		scrollTextAreaPanel.add(new JScrollPane(mapEditTextArea, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
 				ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED));
 		pane.add(scrollTextAreaPanel, c);
@@ -318,11 +327,12 @@ public class RiskStartGameController extends java.awt.Frame {
 		});
 
 		/**
-		 * Handles the click event for the finish button in the Choose Map Panel.
+		 * Handles the click event for the finish button in the Choose Map
+		 * Panel.
 		 */
 		finishButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				finishButtonPressed(e);
+				finishButtonPressed(e, generateMapFrame);
 			}
 
 		});
@@ -335,24 +345,25 @@ public class RiskStartGameController extends java.awt.Frame {
 		c.gridy = 3;
 		pane.add(buttonsPanel, c);
 
-	    notePanel = new JPanel();
-		noteLabel = new JLabel("");	
+		notePanel = new JPanel();
+		noteLabel = new JLabel("");
 		notePanel.add(noteLabel);
 		c.weightx = 1;
 		c.gridx = 1;
 		c.ipady = 50;
 		c.gridy = 4;
 		pane.add(notePanel, c);
-		
+
 		JPanel formatInfoPanel = new JPanel();
-		JLabel formatInforLabel = new JLabel("Please enter the data in the following format - '<Territory>,<Continent>,<Adjacent_Country1>,<Adjacent_Country2>...'");
+		JLabel formatInforLabel = new JLabel(
+				"Please enter the data in the following format - '<Territory>,<Continent>,<Adjacent_Country1>,<Adjacent_Country2>...'");
 		formatInfoPanel.add(formatInforLabel);
 		c.weightx = 1;
 		c.gridx = 1;
 		c.ipady = 50;
 		c.gridy = 5;
 		pane.add(formatInfoPanel, c);
-		
+
 		generateMapFrame.pack();
 		generateMapFrame.setVisible(true);
 	}
@@ -364,17 +375,20 @@ public class RiskStartGameController extends java.awt.Frame {
 	}
 
 	/**
-	 * Performs final activities for creating and saving the newly created Map for
-	 * the current game. Creating the file CurrentGameMap.map and initializes it till
-	 * '[Territories]' from the earth map. Copies the contents of the JTextArea in
-	 * Choose Map Panel and save the file in the Risk.resources package.
+	 * Performs final activities for creating and saving the newly created Map
+	 * for the current game. Creating the file CurrentGameMap.map and
+	 * initializes it till '[Territories]' from the earth map. Copies the
+	 * contents of the JTextArea in Choose Map Panel and save the file in the
+	 * Risk.resources package.
 	 * 
-	 * @param e,
-	 *            Action event for the click of the Finish button.
+	 * @param e,frame
+	 *            Action event for the click of the Finish button. jframe to close the parent window.
 	 */
-	private void finishButtonPressed(ActionEvent e) {
+	private void finishButtonPressed(ActionEvent e, JFrame jframe) {
 		CurrentGameMapEditor("");
 		CurrentGameMapEditor(mapEditTextArea.getText());
+		jframe.dispose();
+		Utility.writeLog("map editor closed by the user");
 	}
 
 	/**
@@ -394,9 +408,9 @@ public class RiskStartGameController extends java.awt.Frame {
 	}
 
 	/**
-	 * Creates a new instance of the CurrentGameMap.map file and initializes with text
-	 * will '[Territories]' from the base earth map. Appends the contents of the
-	 * JTextArea in Choose Map Panel to the newly created file
+	 * Creates a new instance of the CurrentGameMap.map file and initializes
+	 * with text will '[Territories]' from the base earth map. Appends the
+	 * contents of the JTextArea in Choose Map Panel to the newly created file
 	 * 
 	 * @param editTextArea,
 	 *            content of the JTextArea in Choose Map Panel.
@@ -411,17 +425,23 @@ public class RiskStartGameController extends java.awt.Frame {
 
 			// Called during initialize to empty the map of previous territories
 			if (editTextArea.equals("")) {
-				BufferedWriter bufferedWriter  = new BufferedWriter(new FileWriter(currentGameMap, false));
+				BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(currentGameMap, false));
 				EarthMapStaticContent = sbBaseMapString.substring(0,
 						sbBaseMapString.indexOf("[Territories]") + String.valueOf("[Territories]").length());
 				bufferedWriter.write(EarthMapStaticContent, 0, EarthMapStaticContent.length());
 				bufferedWriter.close();
 			} else {
-				AdjacentCountryInfo = insertAdjacentCountriesInfoWrapper(editTextArea); //(mapEditTextField.getText()));
+				AdjacentCountryInfo = insertAdjacentCountriesInfoWrapper(editTextArea); // (mapEditTextField.getText()));
 				BufferedWriter brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap, true));
-				brCurrentMapModifier.write("\n" + editTextArea + "\n"+ AdjacentCountryInfo, 0, ("\n" + editTextArea + "\n"+ AdjacentCountryInfo).length()); // +2 is for ;; appended
-				brCurrentMapModifier.write(";;",0,2);
+				brCurrentMapModifier.write("\n" + editTextArea + "\n" + AdjacentCountryInfo, 0,
+						("\n" + editTextArea + "\n" + AdjacentCountryInfo).length()); // +2
+																						// is
+																						// for
+																						// ;;
+																						// appended
+				brCurrentMapModifier.write(";;", 0, 2);
 				brCurrentMapModifier.close();
+				Utility.writeLog("write the current game map file.");
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -431,113 +451,104 @@ public class RiskStartGameController extends java.awt.Frame {
 	private String insertAdjacentCountriesInfoWrapper(String editTextArea) {
 		String[] editTextAreaArray = editTextArea.split("\n");
 		StringBuilder adjacentCountryBuilder = new StringBuilder();
-		
-		adjacentCountryBuilder.append("[Adjacents]");
-		for(String inputLine: editTextAreaArray)
-		{
-			adjacentCountryBuilder.append(insertAdjacentCountriesInfo(inputLine) + "\n");
+
+		// adjacentCountryBuilder.append("[Adjacents]");
+		for (String inputLine : editTextAreaArray) {
+			insertAdjacentCountriesInfo(inputLine);
 		}
-		
+
+		Iterator itAdjusten = HmAdjusentadded.entrySet().iterator();
+		while (itAdjusten.hasNext()) {
+			Map.Entry pair = (Map.Entry) itAdjusten.next();
+			adjacentCountryBuilder.append(pair.getValue() + "\n");
+			// itAdjusten.remove(); // avoids a ConcurrentModificationException
+		}
+
 		return adjacentCountryBuilder.toString();
 	}
 
-	
 	/**
-	 * Processes user input from the JTextField. Calls another method to fetch and
-	 * insert coordinates for the territory. Appends the input with coordinates to
-	 * the JTextArea in Choose Map Panel
+	 * This method will find the coordinates and continent of the adjacent
+	 * countries supplied by the user and append it to JTextArea.
 	 * 
-	 * @param e
-	 *            ActionEvent passed for the button click event.
-	 */
-	private void addButtonPressed(ActionEvent e) {
-		try {
-			if (validateMapLineInputText(mapEditTextField.getText())) {
-				mapEditTextArea.append(mapEditTextInsertCoordinates(mapEditTextField.getText()) + "\n");
-				scrollTextAreaPanel.repaint();
-				mapEditTextField.setText("");
-			} else {
-				notePanel.repaint();
-			}
-		} catch (ParserConfigurationException | SAXException | IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-	}
-	
-	/**
-	 * This method will find the coordinates and continent of the adjacent countries supplied by the
-	 * user and append it to JTextArea.
 	 * @param mapInputLineText
 	 * @return
 	 */
-	private String insertAdjacentCountriesInfo(String mapInputLineText) {
+	private void insertAdjacentCountriesInfo(String mapInputLineText) {
 		StringBuilder adjacentCountriesInfo = new StringBuilder();
 		String ajacentCountryInfo = "";
 		int reachAdjacent = 0;
-		
-		for(String adjacentTerritory: mapInputLineText.split(","))
-		{
-			reachAdjacent++; //Skip the country and the continent to reach adjacent territory only.
-			if(reachAdjacent > 2)
-			{
+
+		for (int i = 4; i < mapInputLineText.split(",").length; i++) {
+
+			if (!HmAdjusentadded.containsKey(mapInputLineText.split(",")[i])) {
 				try {
-					ajacentCountryInfo = getAdjacentCountryInfo(adjacentTerritory);
-					adjacentCountriesInfo.append(ajacentCountryInfo + "\n");
+
+					ajacentCountryInfo = getAdjacentCountryInfo(mapInputLineText.split(",")[i]);
+					ajacentCountryInfo += "," + mapInputLineText.split(",")[0];
+					HmAdjusentadded.put(mapInputLineText.split(",")[i], ajacentCountryInfo);
+					// adjacentCountriesInfo.append(ajacentCountryInfo + "\n");
 				} catch (ParserConfigurationException | SAXException | IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+			} else {
+				HmAdjusentadded.put(mapInputLineText.split(",")[i],
+						HmAdjusentadded.get(mapInputLineText.split(",")[i]) + "," + mapInputLineText.split(",")[0]);
+				ajacentCountryInfo = HmAdjusentadded.get(mapInputLineText.split(",")[i]);
+				// adjacentCountriesInfo.append(ajacentCountryInfo + "\n");
 			}
-			
+
 		}
 		
-		
-		return adjacentCountriesInfo.toString();
-		
+		// return adjacentCountriesInfo.toString();
+
 	}
 
 	/**
-	 * This method will find the coordinates and continent of the adjacent countries supplied by the
-	 * user and append it to JTextArea.
-	 * @param adjacentTerritory, individual adjacent country to find the information for.
-	 * @return String with coordinates and continent for adjacent country - adjacentTerritory.
-	 * @throws ParserConfigurationException 
-	 * @throws IOException 
-	 * @throws SAXException 
+	 * This method will find the coordinates and continent of the adjacent
+	 * countries supplied by the user and append it to JTextArea.
+	 * 
+	 * @param adjacentTerritory,
+	 *            individual adjacent country to find the information for.
+	 * @return String with coordinates and continent for adjacent country -
+	 *         adjacentTerritory.
+	 * @throws ParserConfigurationException
+	 * @throws IOException
+	 * @throws SAXException
 	 */
-	private String getAdjacentCountryInfo(String adjacentTerritory) throws ParserConfigurationException, SAXException, IOException {
+	private String getAdjacentCountryInfo(String adjacentTerritory)
+			throws ParserConfigurationException, SAXException, IOException {
 		String countryInfo = "";
 		File locationsXml = new File(Utility.getPathforFile("Locations.xml"));
-		DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance()
-                .newDocumentBuilder();
+		DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
 		Document doc = dBuilder.parse(locationsXml);
 		NodeList countryList;
 		countryList = doc.getElementsByTagName("Country");
-		
-		for(int countryIndex = 0; countryIndex < countryList.getLength(); countryIndex++ )
-			{
-				Node countryNode = (Node) countryList.item(countryIndex);
-				if(countryNode.getTextContent().toLowerCase().equals((adjacentTerritory.toLowerCase())))
-				{
-					countryInfo =  adjacentTerritory  + "," + countryNode.getAttributes().getNamedItem("coordinate").getNodeValue() + "," + countryNode.getAttributes().getNamedItem("continent").getNodeValue(); 
+
+		for (int countryIndex = 0; countryIndex < countryList.getLength(); countryIndex++) {
+			Node countryNode = (Node) countryList.item(countryIndex);
+			if (countryNode.getTextContent().toLowerCase().equals((adjacentTerritory.toLowerCase()))) {
+				countryInfo = adjacentTerritory + ","
+						+ countryNode.getAttributes().getNamedItem("coordinate").getNodeValue() + ","
+						+ countryNode.getAttributes().getNamedItem("continent").getNodeValue();
 				break;
-				}
 			}
+		}
 		return countryInfo;
 	}
 
 	/**
-	 * To find the territory which the user supplied in his/her input text. To find
-	 * the coordinates of the supplied territory from the baseMap - EarthMap. Append
-	 * the found coordinates to the input text and insert them in the JTextArea in
-	 * Choose Map Panel.
+	 * To find the territory which the user supplied in his/her input text. To
+	 * find the coordinates of the supplied territory from the baseMap -
+	 * EarthMap. Append the found coordinates to the input text and insert them
+	 * in the JTextArea in Choose Map Panel.
 	 * 
 	 * @param mapInputLineText,
-	 *            input text inserted by the user specifying the territory and the
-	 *            adjacent countries.
-	 * @return String, the complete line text with the coordinates inserted after
-	 *         the territory.
+	 *            input text inserted by the user specifying the territory and
+	 *            the adjacent countries.
+	 * @return String, the complete line text with the coordinates inserted
+	 *         after the territory.
 	 */
 	public String mapEditTextInsertCoordinates(String mapInputLineText) {
 
@@ -557,27 +568,50 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * 
 	 * @param territory,
 	 *            territory inserted by the user.
-	 * @return = String, the coordinates of the territory supplied in string - e.g -
-	 *         ,XX,YY, - format.
+	 * @return = String, the coordinates of the territory supplied in string -
+	 *         e.g - ,XX,YY, - format.
 	 */
 	public String fetchCoordinates(String territory) {
 		String coordinates = "";
-	//	initializeMapVariables();
+		// initializeMapVariables();
 		coordinates = recursiveSearchCoordinates(sbBaseMapString.toString(), territory);
 		return coordinates;
 	}
 
 	/**
-	 * The base earth map has individual territories specified in multiple places.
-	 * At times as countries with coordinates next to it and at times as an adjacent
-	 * country to some other country during which it does not have coordinates next
-	 * to it. Hence a recursive search is needed to find only that particular
-	 * instance of country which has coordinates next to it in the base map. This
-	 * function performs that recursive search needed.
+	 * Processes user input from the JTextField. Calls another method to fetch
+	 * and insert coordinates for the territory. Appends the input with
+	 * coordinates to the JTextArea in Choose Map Panel
+	 * 
+	 * @param e
+	 *            ActionEvent passed for the button click event.
+	 */
+	private void addButtonPressed(ActionEvent e) {
+		try {
+			if (validateMapLineInputText(mapEditTextField.getText())) {
+				mapEditTextArea.append(mapEditTextInsertCoordinates(mapEditTextField.getText()) + "\n");
+				scrollTextAreaPanel.repaint();
+				mapEditTextField.setText("");
+			} else {
+				notePanel.repaint();
+			}
+		} catch (ParserConfigurationException | SAXException | IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+	}
+
+	/**
+	 * The base earth map has individual territories specified in multiple
+	 * places. At times as countries with coordinates next to it and at times as
+	 * an adjacent country to some other country during which it does not have
+	 * coordinates next to it. Hence a recursive search is needed to find only
+	 * that particular instance of country which has coordinates next to it in
+	 * the base map. This function performs that recursive search needed.
 	 * 
 	 * @param baseMapString,
-	 *            this class level variable has the earth map read into it in string
-	 *            format.
+	 *            this class level variable has the earth map read into it in
+	 *            string format.
 	 * @param territory,
 	 *            this is the territory inserted by the user.
 	 * @return coordinates, returns the coordinates of the needed territory in
@@ -590,8 +624,11 @@ public class RiskStartGameController extends java.awt.Frame {
 		if (index != -1) {
 			if (isCoordinatesNextToIt(baseMapString, index, territory)) {
 				fetchedCoordinates = fetchCoordinates(index + territory.length(), baseMapString); // alaska-,27,29,-abc
-																									// : pass char
-																									// within colon.
+																									// :
+																									// pass
+																									// char
+																									// within
+																									// colon.
 				return fetchedCoordinates;
 			} else {
 				updatedindex = updateIndexToNextTerritory(baseMapString, territory, index);
@@ -605,15 +642,16 @@ public class RiskStartGameController extends java.awt.Frame {
 
 	/**
 	 * The recursive search take a smaller text every iteration till the correct
-	 * instance of territory is found. This method sends the begin index for the new
-	 * cut-shorted string for the next recursive search.
+	 * instance of territory is found. This method sends the begin index for the
+	 * new cut-shorted string for the next recursive search.
 	 * 
 	 * @param baseMapString,
 	 *            string for the entire base map.
 	 * @param territory,
 	 *            territory supplied by the user.
 	 * @param index,
-	 *            index of the first character of the incorrect territory instance.
+	 *            index of the first character of the incorrect territory
+	 *            instance.
 	 * @return begin index, for the upcoming recursive search.
 	 */
 	private int updateIndexToNextTerritory(String baseMapString, String territory, int index) {
@@ -625,11 +663,12 @@ public class RiskStartGameController extends java.awt.Frame {
 	}
 
 	/**
-	 * Once the correct instance of the word territory is found in the base earth
-	 * map, this method will read the coordinates next to it.
+	 * Once the correct instance of the word territory is found in the base
+	 * earth map, this method will read the coordinates next to it.
 	 * 
 	 * @param index,
-	 *            index of the correct instance of the territory in the base map.
+	 *            index of the correct instance of the territory in the base
+	 *            map.
 	 * @param baseMapString,
 	 *            the base map in string format.
 	 * @return coordinates, in the format XX/X,YY/Y.
@@ -657,8 +696,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	 *            index of the first occurrence 'territory' in the base map.
 	 * @param territory,
 	 *            the territory supplied by the user.
-	 * @return Boolean, true if this is the instance of territory with coordinates
-	 *         next to it else False.
+	 * @return Boolean, true if this is the instance of territory with
+	 *         coordinates next to it else False.
 	 */
 	private boolean isCoordinatesNextToIt(String baseMapString, int index, String territory) {
 		String subbaseMapString = baseMapString.substring(index);
@@ -673,57 +712,51 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * corresponding territories and continents exist.
 	 * 
 	 * @param mapInputLineText,
-	 *            the input text from the user in the needed format specifying the
-	 *            adjacent countries.
+	 *            the input text from the user in the needed format specifying
+	 *            the adjacent countries.
 	 * @return Boolean, returns true if input text is valid, else false.
-	 * @throws ParserConfigurationException 
-	 * @throws IOException 
-	 * @throws SAXException 
+	 * @throws ParserConfigurationException
+	 * @throws IOException
+	 * @throws SAXException
 	 */
-	public Boolean validateMapLineInputText(String mapInputLineText) throws ParserConfigurationException, SAXException, IOException {
-	Boolean isValid = false;
-		if(mapInputLineText.split(",").length >= 3)
-		{
+	public Boolean validateMapLineInputText(String mapInputLineText)
+			throws ParserConfigurationException, SAXException, IOException {
+		Boolean isValid = false;
+		if (mapInputLineText.split(",").length >= 3) {
 			File locationsXml = new File("src/risk/resources/Locations.xml");
-			DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance()
-                    .newDocumentBuilder();
+			DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
 			Document doc = dBuilder.parse(locationsXml);
-			NodeList countryList,continentList;
-			Boolean isCountryValid,isContinentValid;
-			for(int location = 0; location<mapInputLineText.split(",").length; location++)
-			{
-				if(location == 0 || location > 1)
-				{
-					//Need to present in the locations xml as a country
+			NodeList countryList, continentList;
+			Boolean isCountryValid, isContinentValid;
+			for (int location = 0; location < mapInputLineText.split(",").length; location++) {
+				if (location == 0 || location > 1) {
+					// Need to present in the locations xml as a country
 					countryList = doc.getElementsByTagName("Country");
 					isCountryValid = false;
-					for(int countryIndex = 0; countryIndex <countryList.getLength(); countryIndex++ )
-						{
-							Node countryNode = (Node) countryList.item(countryIndex);
-							if(countryNode.getTextContent().toLowerCase().equals((mapInputLineText.split(",")[location]).toLowerCase()))
-								isCountryValid =  true;
-						}
-					if(!isCountryValid)
-						{
-						noteLabel.setText("The Country "+mapInputLineText.split(",")[location]+ " mentioned is not correct");
+					for (int countryIndex = 0; countryIndex < countryList.getLength(); countryIndex++) {
+						Node countryNode = (Node) countryList.item(countryIndex);
+						if (countryNode.getTextContent().toLowerCase()
+								.equals((mapInputLineText.split(",")[location]).toLowerCase()))
+							isCountryValid = true;
+					}
+					if (!isCountryValid) {
+						noteLabel.setText(
+								"The Country " + mapInputLineText.split(",")[location] + " mentioned is not correct");
 						isValid = false;
 						break;
-						} 
-					
-				}
-				else if (location == 1)
-				{
-					//Need to present in the locations xml as a country			
+					}
+
+				} else if (location == 1) {
+					// Need to present in the locations xml as a country
 					continentList = doc.getElementsByTagName("Continent");
 					isContinentValid = false;
-					for(int continentIndex = 0; continentIndex <continentList.getLength(); continentIndex++ )
-					{
+					for (int continentIndex = 0; continentIndex < continentList.getLength(); continentIndex++) {
 						Node continentNode = (Node) continentList.item(continentIndex);
-						if(continentNode.getTextContent().toLowerCase().equals((mapInputLineText.split(",")[location]).toLowerCase()))
+						if (continentNode.getTextContent().toLowerCase()
+								.equals((mapInputLineText.split(",")[location]).toLowerCase()))
 							isContinentValid = true;
 					}
-					if(!isContinentValid)
-					{
+					if (!isContinentValid) {
 						noteLabel.setText("The Continent mentioned is not correct");
 						isValid = false;
 						break;
@@ -731,10 +764,10 @@ public class RiskStartGameController extends java.awt.Frame {
 				}
 				isValid = true;
 			}
-		}
-	else
-		return isValid; // Need to have atleast 3 parts - territory, continent, one adjacent country.
-	return isValid;
+		} else
+			return isValid; // Need to have atleast 3 parts - territory,
+							// continent, one adjacent country.
+		return isValid;
 	}
 
 	/**
