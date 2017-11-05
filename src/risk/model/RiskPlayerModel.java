@@ -62,7 +62,8 @@ public class RiskPlayerModel extends Observable {
 	}
 
 	public void occupyTerritory(RiskTerritoryModel t, RiskGameModel risk) {
-		occupiedTerritories.add(t);
+		if(!occupiedTerritories.contains(t))
+			occupiedTerritories.add(t);
 		currentRiskGameModel = risk;
 		isChanged();
 	}
