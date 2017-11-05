@@ -49,6 +49,42 @@ public class RiskAttackPhaseModel extends Observable implements PhaseViewInterfa
 		return this.toString();
 	}
 
+	
+	//
+	// private String annouceResults() {
+	// // TODO Auto-generated method stub
+	// if(this.objCurrentRiskGameObject.getDefenceDieArray() !=null &&
+	// this.objCurrentRiskGameObject.getAttackDieArray() != null)
+	// {
+	// int countDefenceWins = 0;
+	// for(int match = 0; match <
+	// this.objCurrentRiskGameObject.getDefenceDieArray().length ; match ++)
+	// {
+	// if(this.objCurrentRiskGameObject.getDefenceDieArray()[match] <
+	// this.objCurrentRiskGameObject.getAttackDieArray()[match])
+	// countDefenceWins--;
+	// else
+	// countDefenceWins++;
+	// }
+	//
+	// return (countDefenceWins >= 0 ? "Defence" : "Attack");
+	// }
+	// return "No one won!";
+	// }
+
+	@Override
+	public void setCurrentRiskGameObject(RiskGameModel objCurrentRiskGameContext) {
+		this.setObjCurrentRiskGameObject(objCurrentRiskGameContext);
+	}
+
+	/**
+	 * @param objCurrentRiskGameObject
+	 *            the objCurrentRiskGameObject to set
+	 */
+	public void setObjCurrentRiskGameObject(RiskGameModel objCurrentRiskGameObject) {
+		this.objCurrentRiskGameObject = objCurrentRiskGameObject;
+	}
+	
 	@Override
 	public String toString() {
 		StringBuilder sbContentBuilder = new StringBuilder();
@@ -84,7 +120,7 @@ public class RiskAttackPhaseModel extends Observable implements PhaseViewInterfa
 							defence + 1 + ". It was " + this.objCurrentRiskGameObject.getAttackDieArray()[defence]
 									+ " vs " + this.objCurrentRiskGameObject.getDefenceDieArray()[defence] + ".");
 					if (this.objCurrentRiskGameObject.getAttackDieArray()[defence] > this.objCurrentRiskGameObject
-							.getAttackDieArray()[defence])
+							.getDefenceDieArray()[defence])
 						sbContentBuilder.append("Attacker Won this round!\n");
 					else
 						sbContentBuilder.append("Defender Won this round!\n");
@@ -99,14 +135,14 @@ public class RiskAttackPhaseModel extends Observable implements PhaseViewInterfa
 		}
 		sbContentBuilder.append("\n\n");
 
-		if (this.objCurrentRiskGameObject.getState() == this.objCurrentRiskGameObject.CAPTURE) {
+		if (this.objCurrentRiskGameObject.getState() == RiskGameModel.CAPTURE) {
 
 			sbContentBuilder.append(this.objCurrentRiskGameObject.defenseNum + " armies moved from "
 					+ this.objCurrentRiskGameObject.aTerritory.getName() + " to "
 					+ this.objCurrentRiskGameObject.dTerritory.getName() +"\n");
 		}
 
-		if (this.objCurrentRiskGameObject.getState() == this.objCurrentRiskGameObject.DEFEATED) {
+		if (this.objCurrentRiskGameObject.getState() == RiskGameModel.DEFEATED) {
 
 			sbContentBuilder.append(this.objCurrentRiskGameObject.dTerritory.getName()
 					+ " won!! They defended themseleves successfully from "
@@ -114,39 +150,5 @@ public class RiskAttackPhaseModel extends Observable implements PhaseViewInterfa
 		}
 
 		return sbContentBuilder.toString();
-	}
-	//
-	// private String annouceResults() {
-	// // TODO Auto-generated method stub
-	// if(this.objCurrentRiskGameObject.getDefenceDieArray() !=null &&
-	// this.objCurrentRiskGameObject.getAttackDieArray() != null)
-	// {
-	// int countDefenceWins = 0;
-	// for(int match = 0; match <
-	// this.objCurrentRiskGameObject.getDefenceDieArray().length ; match ++)
-	// {
-	// if(this.objCurrentRiskGameObject.getDefenceDieArray()[match] <
-	// this.objCurrentRiskGameObject.getAttackDieArray()[match])
-	// countDefenceWins--;
-	// else
-	// countDefenceWins++;
-	// }
-	//
-	// return (countDefenceWins >= 0 ? "Defence" : "Attack");
-	// }
-	// return "No one won!";
-	// }
-
-	@Override
-	public void setCurrentRiskGameObject(RiskGameModel objCurrentRiskGameContext) {
-		this.setObjCurrentRiskGameObject(objCurrentRiskGameContext);
-	}
-
-	/**
-	 * @param objCurrentRiskGameObject
-	 *            the objCurrentRiskGameObject to set
-	 */
-	public void setObjCurrentRiskGameObject(RiskGameModel objCurrentRiskGameObject) {
-		this.objCurrentRiskGameObject = objCurrentRiskGameObject;
 	}
 }

@@ -84,25 +84,24 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 		RiskStartupPhaseModel objStartupPhaseModelObservable = RiskStartupPhaseModel.getInstance();
 		RiskStartupEndPhaseModel objRiskStartupEndPhaseModel = RiskStartupEndPhaseModel.getInstance();
-		RiskReinforcementPhaseModel objRiskReinforcementPhaseModelObservable = RiskReinforcementPhaseModel.getInstance();
+		RiskReinforcementPhaseModel objRiskReinforcementPhaseModelObservable = RiskReinforcementPhaseModel
+				.getInstance();
 		RiskAttackPhaseModel objRiskAttackPhaseModelObservable = RiskAttackPhaseModel.getInstance();
 		RiskFortifyPhaseModel objRiskFortifyPhaseModelObservable = RiskFortifyPhaseModel.getInstance();
 		RiskPhaseViewObserver objPhaseViewObserver = RiskPhaseViewObserver.getInstance();
-		
-		
+
 		objStartupPhaseModelObservable.addObserver(objPhaseViewObserver);
 		objRiskReinforcementPhaseModelObservable.addObserver(objPhaseViewObserver);
 		objRiskAttackPhaseModelObservable.addObserver(objPhaseViewObserver);
 		objRiskFortifyPhaseModelObservable.addObserver(objPhaseViewObserver);
 		objRiskStartupEndPhaseModel.addObserver(objPhaseViewObserver);
-		
+
 		risk.setRiskStartupPhaseModelObservable(objStartupPhaseModelObservable);
 		risk.setRiskRiskReinforcementPhaseModelObservable(objRiskReinforcementPhaseModelObservable);
 		risk.setRiskAttackPhaseModelObservable(objRiskAttackPhaseModelObservable);
 		risk.setRiskFortifyPhaseModelObservable(objRiskFortifyPhaseModelObservable);
 		risk.setRiskStartupEndPhaseModelObservable(objRiskStartupEndPhaseModel);
 
-		
 		risk.setRiskPhaseViewObserver(objPhaseViewObserver);
 		risk.getRiskPhaseViewObserver().generatePhaseView();
 		risk.notifyPhaseViewChange();
@@ -250,6 +249,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 	private void FortifyButtonMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_FortifyButtonMouseClicked
 		risk.setState(RiskGameModel.FORTIFY);
+		risk.notifyPhaseViewChange();
 		statusLabel.setText("Select a country move armies from");
 	}
 
@@ -289,32 +289,29 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		String name;
 		String out;
 
-		if (risk.getState() == RiskGameModel.NEW_GAME) { //0
-		//startup
+		if (risk.getState() == RiskGameModel.NEW_GAME) { // 0
+			// startup
 			System.out.println("status " + risk.getState());
 			risk.gamePhaseSetup(x, y);
 			name = risk.curPlayer.getName();
 			statusLabel.setText("Place an army on a unoccupied territory");
-//			risk.notifyPhaseViewChange();
-			
 		}
 
-		if (risk.getState() == RiskGameModel.INITIAL_REINFORCE) { //1
-			//startup
+		if (risk.getState() == RiskGameModel.INITIAL_REINFORCE) { // 1
+			// startup
 			System.out.println("status " + risk.getState());
 			risk.gamePhaseSetup(x, y);
 			name = risk.curPlayer.getName();
 			statusLabel.setText("Place an army on a territory you occupy");
-			risk.notifyPhaseViewChange();
 		}
 
 		if (risk.getState() == RiskGameModel.ATTACK) {
 			risk.notifyPhaseViewChange();
 			name = risk.curPlayer.getName();
-//			if (risk.getState() == RiskGameModel.ATTACKING) {
-//				AttackButton.setText("Retreat");
-//				statusLabel.setText("Select an opposing territory");
-//			}
+			// if (risk.getState() == RiskGameModel.ATTACKING) {
+			// AttackButton.setText("Retreat");
+			// statusLabel.setText("Select an opposing territory");
+			// }
 			out = risk.gamePhaseActive(x, y);
 			risk.notifyPhaseViewChange();
 		}
@@ -327,7 +324,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		}
 
 		if (risk.getState() == RiskGameModel.REINFORCE) {
-			
+
 			name = risk.curPlayer.getName();
 			risk.gamePhaseActive(x, y);
 			risk.notifyPhaseViewChange();
@@ -345,21 +342,12 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			FortifyButton.setVisible(true);
 			AttackButton.setText("Attack");
 
-//			/* Only for testing */
-//			risk.curPlayer.setCard(new RiskCardModel(0, 0));
-//			risk.curPlayer.setCard(new RiskCardModel(1, 1));
-//			risk.curPlayer.setCard(new RiskCardModel(2, 2));
-//			risk.curPlayer.setCard(new RiskCardModel(3, 2));
-//			risk.curPlayer.setCard(new RiskCardModel(3, 3));
-//
-//			/* Only for testing */
-
 			AttackButton.setVisible(true);
 			if (risk.curPlayer.getCard().size() > 2)
 				CardButton.setVisible(true);
 			else
 				CardButton.setVisible(false);
-			//risk.notifyPhaseViewChange();
+			// risk.notifyPhaseViewChange();
 		}
 
 		if (risk.getState() == RiskGameModel.ATTACKING) {
@@ -426,7 +414,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 							numofatt = 1;
 					}
 				}
-				
+
 				risk.notifyPhaseViewChange();
 				if (numofatt > 0) {
 					risk.setDefend(numofatt);
@@ -454,15 +442,14 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 				}
 
 			} /// end if defenders turn
-			
+
 		} // End attackPhase
-		
-		if(risk.getState() == RiskGameModel.DEFEATED)
-		{
+
+		if (risk.getState() == RiskGameModel.DEFEATED) {
 			risk.notifyPhaseViewChange(); // show defeat in phase view
 			setState(RiskGameModel.ACTIVE_TURN);
 		}
-		
+
 		if (risk.getState() == RiskGameModel.CAPTURE) {
 			statusLabel.setText("Select number of armies to move to " + risk.dTerritory.getName());
 			AttackButton.setVisible(false);
@@ -503,14 +490,13 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					risk.capture();
 				}
 			}
-			//risk.notifyPhaseViewChange();
+			// risk.notifyPhaseViewChange();
 		} // end capturing
 
 		if (risk.getState() == RiskGameModel.FORTIFY) {
-			risk.notifyPhaseViewChange();
 			risk.gamePhaseActive(x, y);
 			statusLabel.setText("Select a country to move armies too");
-			
+
 		}
 
 		if (risk.getState() == RiskGameModel.FORTIFYING) {
@@ -552,15 +538,14 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 						statusLabel.setText("1 army moved to " + risk.dTerritory.getName());
 					else
 						statusLabel.setText(risk.defenseNum + " armies moved to " + risk.dTerritory.getName());
-
+					risk.notifyPhaseViewChange();
 					EndButton.setVisible(true);
 					FortifyButton.setVisible(false);
 					risk.aTerritory.looseArmies(risk.defenseNum);
 					risk.dTerritory.addArmies(risk.defenseNum);
 					risk.setState(RiskGameModel.ACTIVE_TURN);
 				} // end y
-			} // end x for movwe
-			risk.notifyPhaseViewChange();
+			} // end x for movwe			
 		} // ..fortify phase
 
 		if (risk.getState() == RiskGameModel.TRADE_CARDS) {

@@ -48,19 +48,6 @@ public class RiskStartupEndPhaseModel extends Observable implements PhaseViewInt
 		return Utility.getPhaseInformtion(this);
 	}
 
-	@Override
-	public String toString() {
-		StringBuilder sbContentBuilder = new StringBuilder();
-		sbContentBuilder.append("************" + this.getTitle() + "************\n");
-		sbContentBuilder.append(this.getPhaseInformation() + "\n");
-		sbContentBuilder.append("Statistics:\n\n");
-		sbContentBuilder.append("The startup phase ends.\n");
-		sbContentBuilder.append(this.getCurrentRiskGameObject().getArmies() + " armies have been placed.\n");
-		sbContentBuilder.append("Player recieved " + this.currentRiskGameObject.getCurrentPlayerBonusArmiesRecieved() + " armies as bonus from Continents.\n");
-		sbContentBuilder.append("Player recieved " + 0 + " armies from tading cards.\n");
-		return sbContentBuilder.toString();
-	}
-
 	public RiskGameModel getCurrentRiskGameObject() {
 		return currentRiskGameObject;
 	}
@@ -72,5 +59,19 @@ public class RiskStartupEndPhaseModel extends Observable implements PhaseViewInt
 	@Override
 	public String getObjectType() {
 		return objectType;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder sbContentBuilder = new StringBuilder();
+		sbContentBuilder.append("\n************" + this.getTitle() + "************\n");
+		sbContentBuilder.append(this.getPhaseInformation() + "\n");
+		sbContentBuilder.append("Statistics:\n\n");
+		sbContentBuilder.append("The startup phase ends.\n");
+		sbContentBuilder.append(this.getCurrentRiskGameObject().getArmies() + " armies have been placed.\n");
+		sbContentBuilder.append("Player recieved " + this.currentRiskGameObject.getCurrentPlayerBonusArmiesRecieved()
+				+ " armies as bonus from Continents.\n");
+		sbContentBuilder.append("Player recieved " + 0 + " armies from tading cards.\n");
+		return sbContentBuilder.toString();
 	}
 }

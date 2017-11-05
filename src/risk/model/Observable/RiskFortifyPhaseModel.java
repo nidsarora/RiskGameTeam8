@@ -165,25 +165,28 @@ public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterf
 	@Override
 	public String toString() {
 		StringBuilder sbContentBuilder = new StringBuilder();
-		sbContentBuilder.append("************" + getTitle() + "************\n");
-		sbContentBuilder.append(this.getPhaseInformation() + "\n");
-		sbContentBuilder.append("Statistics:\n\n");
-		sbContentBuilder.append("Fortification from territory: "
 
-				+ ((this.objCurrentRiskGameObject.aTerritory != null) ? objCurrentRiskGameObject.aTerritory.getName()
-						: "")
-				+
+		if (this.objCurrentRiskGameObject.getState() == this.objCurrentRiskGameObject.FORTIFY) {
+			sbContentBuilder.append("\n************" + getTitle() + "************\n");
+			sbContentBuilder.append(this.getPhaseInformation() + "\n");
+			sbContentBuilder.append("Statistics:\n\n");
+		}
 
-				" to "
+		if (this.objCurrentRiskGameObject.getState() == this.objCurrentRiskGameObject.FORTIFYING) {
 
-				+ ((this.objCurrentRiskGameObject.dTerritory != null)
-						? objCurrentRiskGameObject.dTerritory.getName() + "\n"
-						: "\n")
+			sbContentBuilder.append(""
 
-		);
-		sbContentBuilder.append("So " + this.objCurrentRiskGameObject.defenseNum + " armies moved from "
-				+ this.objCurrentRiskGameObject.aTerritory + " to " + this.objCurrentRiskGameObject.dTerritory + ".");
+					+ ((this.objCurrentRiskGameObject.aTerritory != null
+							&& this.objCurrentRiskGameObject.dTerritory != null)
+									? "Fortification from territory: " + objCurrentRiskGameObject.aTerritory.getName()
+											+ " to " + objCurrentRiskGameObject.dTerritory.getName() + "\n"
+									: ""));
+		}
+		if (this.objCurrentRiskGameObject.getState() == this.objCurrentRiskGameObject.FORTIFY_PHASE) {
+			sbContentBuilder.append("So " + this.objCurrentRiskGameObject.defenseNum + " armies moved from "
+					+ this.objCurrentRiskGameObject.aTerritory.getName() + " to "
+					+ this.objCurrentRiskGameObject.dTerritory.getName() + ".\n");
+		}
 		return sbContentBuilder.toString();
 	}
-
 }

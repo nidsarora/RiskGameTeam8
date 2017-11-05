@@ -65,17 +65,6 @@ public class RiskStartupPhaseModel extends Observable implements PhaseViewInterf
 		}
 	}
 
-	@Override
-	public String toString() {
-		StringBuilder sbContentBuilder = new StringBuilder();
-		sbContentBuilder.append("************" + this.getTitle() + "************\n");
-		sbContentBuilder.append(this.getPhaseInformation() + "\n");
-		sbContentBuilder.append("Statistics:\n\n");
-		sbContentBuilder.append("Number of players:" + this.getNumberOfPlayers() + "\n");
-		sbContentBuilder.append("Number of armies per player:" + this.getCurrentRiskGameObject().getArmies() + "\n");
-		return sbContentBuilder.toString();
-	}
-
 	public RiskGameModel getCurrentRiskGameObject() {
 		return currentRiskGameObject;
 	}
@@ -89,4 +78,14 @@ public class RiskStartupPhaseModel extends Observable implements PhaseViewInterf
 		return objectType;
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder sbContentBuilder = new StringBuilder();
+		sbContentBuilder.append("************" + this.getTitle() + "************\n");
+		sbContentBuilder.append(this.getPhaseInformation() + "\n");
+		sbContentBuilder.append("Statistics:\n\n");
+		sbContentBuilder.append("Number of players:" + this.getNumberOfPlayers() + "\n");
+		sbContentBuilder.append("Number of armies per player:" + this.getCurrentRiskGameObject().getArmies() + "\n");
+		return sbContentBuilder.toString();
+	}
 }

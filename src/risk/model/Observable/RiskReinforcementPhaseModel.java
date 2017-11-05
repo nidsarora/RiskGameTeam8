@@ -63,17 +63,6 @@ public class RiskReinforcementPhaseModel extends Observable implements PhaseView
 		this.currentPlayer = currentPlayer;
 	}
 
-	@Override
-	public String toString() {
-		StringBuilder sbContentBuilder = new StringBuilder();
-		sbContentBuilder.append("************" +this.getTitle() + "************\n");
-		sbContentBuilder.append("Player: " + objCurrentRiskGameObject.curPlayer.getName() +"\n");
-		sbContentBuilder.append(this.getPhaseInformation() + "\n");
-		sbContentBuilder.append("Statistics:\n\n");
-		sbContentBuilder.append("Player army count:" + getNumberOfArmiesPerPlayers() + "\n");
-		return sbContentBuilder.toString();
-	}
-
 	private int getNumberOfArmiesPerPlayers() {
 		try {
 			return objCurrentRiskGameObject.curPlayer.getNumberOfArmies();
@@ -110,6 +99,17 @@ public class RiskReinforcementPhaseModel extends Observable implements PhaseView
 	@Override
 	public String getTitle() {
 		return Utility.getPhaseTitle(this);
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder sbContentBuilder = new StringBuilder();
+		sbContentBuilder.append("\n************" + this.getTitle() + "************\n");
+		sbContentBuilder.append("Player: " + objCurrentRiskGameObject.curPlayer.getName() + "\n");
+		sbContentBuilder.append(this.getPhaseInformation() + "\n");
+		sbContentBuilder.append("Statistics:\n\n");
+		sbContentBuilder.append("Player army count:" + getNumberOfArmiesPerPlayers() + "\n");
+		return sbContentBuilder.toString();
 	}
 
 }
