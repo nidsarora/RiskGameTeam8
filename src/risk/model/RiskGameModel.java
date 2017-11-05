@@ -153,9 +153,8 @@ public class RiskGameModel {
 			objRiskAttackPhaseModel.setCurrentRiskGameObject(this);
 			this.setRiskAttackPhaseModelObservable(objRiskAttackPhaseModel);
 			this.getRiskAttackPhaseModelObservable().isChanged();
-			System.out.println("ATTACK_PHASE");
 		}
-		if (this.getState() == FORTIFYING || this.getState() == FORTIFY_PHASE) {
+		if (this.getState() == FORTIFY || this.getState() == FORTIFYING || this.getState() == FORTIFY_PHASE) {
 			RiskFortifyPhaseModel objRiskFortifyPhaseModel = this.getRiskFortifyPhaseModelObservable();
 			objRiskFortifyPhaseModel.setCurrentRiskGameObject(this);
 			this.setRiskFortifyPhaseModelObservable(objRiskFortifyPhaseModel);
@@ -733,6 +732,7 @@ public class RiskGameModel {
 		}
 		if (aTerritory.getArmies() == 0) {
 			setState(DEFEATED);
+			this.notifyPhaseViewChange(); // show defeat in phase view
 			// setState(ACTIVE_TURN);
 		}
 

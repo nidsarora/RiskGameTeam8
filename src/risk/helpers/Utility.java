@@ -56,7 +56,7 @@ public final class Utility {
 			phaseTitle = "*********** Start Up Phase *************";
 			break;
 		case "RiskAttackStartupEndPhaseModel":
-			phaseTitle = "********** Start Up Ended **************";
+			phaseTitle = "********** Start Up Phase **************";
 			break;
 		case "RiskReinforcementPhaseModel":
 			phaseTitle = "*********** Reinforcement Phase *************";

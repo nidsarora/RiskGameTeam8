@@ -69,7 +69,7 @@ public class RiskStartupEndPhaseModel extends Observable implements PhaseViewInt
 		sbContentBuilder.append("Statistics:\n\n");
 		sbContentBuilder.append("The startup phase ends.\n");
 		sbContentBuilder.append(this.getCurrentRiskGameObject().getArmies() + " armies have been placed.\n");
-		sbContentBuilder.append("Player recieved " + this.currentRiskGameObject.getCurrentPlayerBonusArmiesRecieved()
+		sbContentBuilder.append("Player: "+ this.getCurrentRiskGameObject().curPlayer.getName() + " recieved " + this.currentRiskGameObject.getCurrentPlayerBonusArmiesRecieved()
 				+ " armies as bonus from Continents.\n");
 		sbContentBuilder.append("Player recieved " + 0 + " armies from tading cards.\n");
 		return sbContentBuilder.toString();

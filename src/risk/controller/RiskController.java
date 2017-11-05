@@ -446,7 +446,6 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		} // End attackPhase
 
 		if (risk.getState() == RiskGameModel.DEFEATED) {
-			risk.notifyPhaseViewChange(); // show defeat in phase view
 			setState(RiskGameModel.ACTIVE_TURN);
 		}
 
@@ -482,7 +481,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 						statusLabel.setText("1 army moved to " + risk.dTerritory.getName());
 					else
 						statusLabel.setText(risk.defenseNum + " armies moved to " + risk.dTerritory.getName());
-
+					
+					risk.notifyPhaseViewChange();
 					risk.setAttackDieArray(null);
 					risk.setDefenceDieArray(null);
 					EndButton.setVisible(true);
