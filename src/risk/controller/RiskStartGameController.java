@@ -50,6 +50,10 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import risk.helpers.Utility;
+import risk.model.RiskGameModel;
+import risk.model.Observable.RiskStartupPhaseModel;
+import risk.view.RiskPhaseViewObserver;
+import risk.view.RiskPlayerDominationViewObserver;
 
 /**
  *This class is the main controller of the application and contains the logic for the map editor
@@ -77,13 +81,19 @@ public class RiskStartGameController extends java.awt.Frame {
 
 			sequencer.setSequence(song);
 			sequencer.setLoopCount(2);
-			// sequencer.start();
 
 		} catch (IOException e) {
 		} catch (MidiUnavailableException e) {
 		} catch (InvalidMidiDataException e) {
 		}
 	}
+	
+	
+
+	private void initObservers() {
+		
+	}
+
 
 	/**
 	 * This method is called from within the constructor to initialize the form.
@@ -360,6 +370,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
 
 		RiskController.ShowGUI();
+		//Open the Phase View
 		setVisible(false);
 	}
 
