@@ -12,6 +12,7 @@
 package risk.controller;
 
 import risk.controller.RiskStartGameController;
+import risk.helpers.Utility;
 import risk.controller.RiskStartGameController;
 import risk.model.*;
 
@@ -132,6 +133,7 @@ public class RiskAddPlayerController extends java.awt.Frame {
 			System.out.println(" added.");
 			setVisible(false);
 			RiskStartGameController.jButton1.setEnabled(true);
+			Utility.writeLog("All players Added");
 		}
 	}
 
