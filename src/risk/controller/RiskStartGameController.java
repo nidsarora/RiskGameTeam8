@@ -51,7 +51,8 @@ import org.xml.sax.SAXException;
 import risk.helpers.Utility;
 
 /**
- *
+ * This is the main controller which has the main method to start the game.
+ *  
  * @author Group8
  */
 public class RiskStartGameController extends java.awt.Frame {

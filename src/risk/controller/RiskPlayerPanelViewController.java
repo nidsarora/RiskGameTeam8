@@ -18,7 +18,7 @@ import java.awt.Graphics;
 
 /**
  * The Class RiskPlayerPanelViewController.
- * @author cube
+ * @author Group8
  */
 public class RiskPlayerPanelViewController extends javax.swing.JPanel {
 	RiskGameModel risk;
@@ -32,7 +32,6 @@ public class RiskPlayerPanelViewController extends javax.swing.JPanel {
 	/**
 	 * Instantiates a new risk player panel view controller.
 	 *
-	 * @param r 
 	 */
 	public RiskPlayerPanelViewController(RiskGameModel r) {
 		risk = r;
