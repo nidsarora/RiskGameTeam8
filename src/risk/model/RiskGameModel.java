@@ -19,6 +19,7 @@ import risk.model.Observable.RiskFortifyPhaseModel;
 import risk.model.Observable.RiskReinforcementPhaseModel;
 import risk.model.Observable.RiskStartupEndPhaseModel;
 import risk.model.Observable.RiskStartupPhaseModel;
+import risk.view.RiskCardExchangeViewObserver;
 import risk.view.RiskPhaseViewObserver;
 import risk.view.RiskPlayerDominationViewObserver;
 
@@ -132,14 +133,15 @@ public class RiskGameModel {
 			// System.out.println("START_TURN");
 		}
 
-//		if (this.getState() == START_TURN) // 6
-//		{
-//			RiskStartupEndPhaseModel objRiskStartupEndPhaseModel = this.getRiskStartupEndPhaseModelObservable();
-//			objRiskStartupEndPhaseModel.setCurrentRiskGameObject(this);
-//			this.setRiskStartupEndPhaseModelObservable(objRiskStartupEndPhaseModel);
-//			this.getRiskStartupEndPhaseModelObservable().isChanged();
-//			System.out.println("START_TURN");
-//		}
+		// if (this.getState() == START_TURN) // 6
+		// {
+		// RiskStartupEndPhaseModel objRiskStartupEndPhaseModel =
+		// this.getRiskStartupEndPhaseModelObservable();
+		// objRiskStartupEndPhaseModel.setCurrentRiskGameObject(this);
+		// this.setRiskStartupEndPhaseModelObservable(objRiskStartupEndPhaseModel);
+		// this.getRiskStartupEndPhaseModelObservable().isChanged();
+		// System.out.println("START_TURN");
+		// }
 
 		if (this.getState() == REINFORCE || this.getState() == START_TURN) {
 			RiskReinforcementPhaseModel objRiskReinforcementPhaseModel = this
@@ -187,20 +189,26 @@ public class RiskGameModel {
 
 		// Setup Board
 		gameState = NEW_GAME;
-		
 		initalPlayer();
 		initializePlayerDominationView();
+		initializeCardExchangeView();
 		loadMap_newformat();
 		initializeDeck();
 		distubuteArmies();
 
 	}
 
+	private void initializeCardExchangeView() {
+		RiskCardExchangeViewObserver riskCardExchangeViewObserver = RiskCardExchangeViewObserver.getInstance();
+		for (RiskPlayerModel player : RiskGameModel.players)
+			player.addObserver(riskCardExchangeViewObserver);
+		riskCardExchangeViewObserver.generateCardExchangeView();
+	}
+
 	private void initializePlayerDominationView() {
-		// TODO Auto-generated method stub
 		RiskPlayerDominationViewObserver riskPlayerDominationViewObserver = RiskPlayerDominationViewObserver
 				.getInstance();
-		for (RiskPlayerModel player : this.players)
+		for (RiskPlayerModel player : RiskGameModel.players)
 			player.addObserver(riskPlayerDominationViewObserver);
 		riskPlayerDominationViewObserver.generatePhaseView();
 	}
@@ -256,7 +264,8 @@ public class RiskGameModel {
 	}
 
 	/**
-	 * This method initializes the number of armies as per the number of players.
+	 * This method initializes the number of armies as per the number of
+	 * players.
 	 */
 	public void distubuteArmies() {
 		int numOfPlayers = players.size();
@@ -318,8 +327,8 @@ public class RiskGameModel {
 	}
 
 	/**
-	 * This method calculates the reinforcement from Continent as every continent
-	 * has a different control value.
+	 * This method calculates the reinforcement from Continent as every
+	 * continent has a different control value.
 	 */
 	public int collectReinforcementsFromContinent() {
 		int continentBonus = 0;
@@ -621,7 +630,8 @@ public class RiskGameModel {
 				if (getOwnership(country) == curPlayer.getPlayerIndex()) {
 					setState(FORTIFYING);
 					aTerritory = territories.elementAt(country);
-					this.notifyPhaseViewChange(); // get the first country to fotify
+					this.notifyPhaseViewChange(); // get the first country to
+													// fotify
 				}
 			}
 
@@ -633,7 +643,8 @@ public class RiskGameModel {
 
 		}
 
-		if (getState() == ATTACKING) { // PLayer click the 2nd country to defend With
+		if (getState() == ATTACKING) { // PLayer click the 2nd country to defend
+										// With
 			if (country != -1) {// not a country
 				RiskTerritoryModel d = territories.elementAt(country); // defending
 				// territory
@@ -665,7 +676,10 @@ public class RiskGameModel {
 						return "Not enough armies to battle, need at least 2";
 					else {
 						setState(ATTACKING);
-						aTerritory = territories.elementAt(country); // first country to attack
+						aTerritory = territories.elementAt(country); // first
+																		// country
+																		// to
+																		// attack
 					}
 				} // end is curPlayers country
 			this.notifyPhaseViewChange();
@@ -689,7 +703,9 @@ public class RiskGameModel {
 
 		if (getState() == START_TURN) {
 			currentPlayerBonusArmiesRecieved = turnBonus();
-			curPlayer.addArmies(currentPlayerBonusArmiesRecieved); // recive turn bonus
+			curPlayer.addArmies(currentPlayerBonusArmiesRecieved); // recive
+																	// turn
+																	// bonus
 			this.notifyPhaseViewChange();
 
 			if (curPlayer.getCard().size() > 5)
@@ -757,8 +773,8 @@ public class RiskGameModel {
 		int armies = defenseNum;
 		RiskTerritoryModel d = dTerritory;
 		RiskTerritoryModel a = aTerritory;
-		defender.looseTerritory(d,this);
-		active.occupyTerritory(d,this);
+		defender.looseTerritory(d);
+		active.occupyTerritory(d);
 
 		if (defender.getOccupiedTerritories().size() == 0) {
 			System.out.println(defender.getName() + " lost the game.");
@@ -829,7 +845,8 @@ public class RiskGameModel {
 	}
 
 	/**
-	 * This method checks if the territory is occupied by the current player or not.
+	 * This method checks if the territory is occupied by the current player or
+	 * not.
 	 */
 	public boolean occupyTerritory(RiskTerritoryModel t) {
 		// Make sure there are availble armies
@@ -840,7 +857,7 @@ public class RiskGameModel {
 				t.setPlayer(curPlayer);
 				t.addArmies(1);
 				curPlayer.looseArmy();
-				curPlayer.occupyTerritory(t,this);
+				curPlayer.occupyTerritory(t);
 				return true;
 			} // end if
 		} // end if availble
@@ -854,7 +871,7 @@ public class RiskGameModel {
 		if (curPlayer.getNumberOfArmies() > 0) {
 			RiskTerritoryModel t = territories.elementAt(id);
 			t.setPlayer(curPlayer);
-			curPlayer.occupyTerritory(t,this);
+			curPlayer.occupyTerritory(t);
 			t.addArmy();
 			curPlayer.looseArmy();
 			nextPlayer();

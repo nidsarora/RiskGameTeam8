@@ -343,10 +343,10 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			AttackButton.setText("Attack");
 
 			AttackButton.setVisible(true);
-			if (risk.curPlayer.getCard().size() > 2)
-				CardButton.setVisible(true);
-			else
-				CardButton.setVisible(false);
+//			if (risk.curPlayer.getCard().size() > 2)
+//				CardButton.setVisible(true);
+//			else
+//				CardButton.setVisible(false);
 			// risk.notifyPhaseViewChange();
 		}
 
@@ -627,8 +627,15 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		OKButton = new JButton("OK");
 		cardbuttonsPanel.add(new Label(""));
 		cardbuttonsPanel.add(OKButton);
+		cardbuttonsPanel.setVisible(false);
+		
+		if(risk.getState() == risk.REINFORCE)
+			cardbuttonsPanel.setVisible(true);
+		
 		cardsFrame.add(cardbuttonsPanel, BorderLayout.SOUTH);
 
+		
+		
 		cardsFrame.pack();
 		cardsFrame.setVisible(true);
 

@@ -55,7 +55,7 @@ public class RiskPlayerDominationViewObserver implements Observer {
 
 	@Override
 	public void update(Observable o, Object arg) {
-		playerDominationViewTextArea.setText(((RiskPlayerModel)o).toString());
+		playerDominationViewTextArea.setText(((RiskPlayerModel)o).getPlayerDominationViewContent());
 		playerDominationViewFrame.repaint();
 	}
 }

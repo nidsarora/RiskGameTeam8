@@ -16,7 +16,6 @@ public class RiskPlayerModel extends Observable {
 	private Vector<RiskTerritoryModel> occupiedTerritories;
 	private Vector<RiskCardModel> cards;
 	private int armies;
-	private RiskGameModel currentRiskGameModel;
 
 	public RiskPlayerModel(String nm, int i) {
 		name = nm;
@@ -61,22 +60,21 @@ public class RiskPlayerModel extends Observable {
 		return occupiedTerritories.size();
 	}
 
-	public void occupyTerritory(RiskTerritoryModel t, RiskGameModel risk) {
-		if(!occupiedTerritories.contains(t))
+	public void occupyTerritory(RiskTerritoryModel t) {
+		if (!occupiedTerritories.contains(t))
 			occupiedTerritories.add(t);
-		currentRiskGameModel = risk;
 		isChanged();
 	}
 
-	public void looseTerritory(RiskTerritoryModel t, RiskGameModel risk) {
+	public void looseTerritory(RiskTerritoryModel t) {
 		occupiedTerritories.remove(t);
 		occupiedTerritories.trimToSize();
-		currentRiskGameModel = risk;
 		isChanged();
 	}
 
 	public void setCard(RiskCardModel c) {
 		cards.add(c);
+		isChanged();
 	}
 
 	public Vector<RiskCardModel> getCard() {
@@ -99,8 +97,35 @@ public class RiskPlayerModel extends Observable {
 		armies--;
 	}
 
-	@Override
-	public String toString() {
+	public String getCardExchangeViewContent() {
+		StringBuilder sbCardExchangeViewContent = new StringBuilder();
+		sbCardExchangeViewContent.append("*************The Card Exchange View************\n");
+		sbCardExchangeViewContent.append("Current Player Statistics- \n");
+
+		sbCardExchangeViewContent.append(
+				this.getName() + " has " + this.getNumberOfArmies() + " armies and " + this.cards.size() + " cards.\n");
+
+		sbCardExchangeViewContent.append("The following below are the card details - \n");
+
+		if(cards.size() > 0)
+			for (RiskCardModel card: this.cards) {
+				sbCardExchangeViewContent.append("The card type is " + card.card_type + " and number is + " + card.territory + ".\n");
+		}
+		else
+			sbCardExchangeViewContent.append("Current player has no cards yet!\n");
+
+		sbCardExchangeViewContent.append("Global Statictics- \n");
+
+		for (RiskPlayerModel player : RiskGameModel.players) {
+			if (!this.getName().equals(player.getName()))
+				sbCardExchangeViewContent.append(player.getName() + " has " + player.getNumberOfArmies() + " armies and "
+						+ player.cards.size() + " number of cards.\n");
+		}
+
+		return sbCardExchangeViewContent.toString();
+	}
+
+	public String getPlayerDominationViewContent() {
 		StringBuilder sbPlayerDominationViewContent = new StringBuilder();
 		sbPlayerDominationViewContent.append("**********Player Domination View**********\n");
 		sbPlayerDominationViewContent.append("Statistics\n\n");
@@ -109,13 +134,13 @@ public class RiskPlayerModel extends Observable {
 		for (int territoryCount = 1; territoryCount <= this.numOfTerritories() / 5 + 1; territoryCount++)
 			sbPlayerDominationViewContent.append("*");
 		sbPlayerDominationViewContent.append("\n");
-	
-		for (RiskPlayerModel player : this.currentRiskGameModel.players) {
+
+		for (RiskPlayerModel player : RiskGameModel.players) {
 			if (!this.getName().equals(player.getName())) {
 				sbPlayerDominationViewContent.append("\n");
 				sbPlayerDominationViewContent
 						.append("Player: " + player.getName() + ":" + player.numOfTerritories() + " territories: ");
-				for (int territoryCount = 1; territoryCount <= player.numOfTerritories()/5 + 1; territoryCount++)
+				for (int territoryCount = 1; territoryCount <= player.numOfTerritories() / 5 + 1; territoryCount++)
 					sbPlayerDominationViewContent.append(player.numOfTerritories() != 0 ? "*" : "");
 
 			}
@@ -123,9 +148,4 @@ public class RiskPlayerModel extends Observable {
 
 		return sbPlayerDominationViewContent.toString();
 	}
-
-	public void setCurrentRiskGameModel(RiskGameModel currentRiskGameModel) {
-		this.currentRiskGameModel = currentRiskGameModel;
-	}
-
 }
