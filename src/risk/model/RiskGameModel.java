@@ -8,8 +8,6 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.Vector;
 
-import risk.controller.RiskController;
-import risk.controller.RiskStartGameController;
 import risk.helpers.Utility;
 import risk.model.RiskCardModel;
 import risk.model.RiskContinentModel;
@@ -80,7 +78,7 @@ public class RiskGameModel {
 	private RiskStartupEndPhaseModel riskStartupEndPhaseModelObservable;
 	private RiskPlayerDominationViewObserver riskPlayerDominationViewObserver;
 	private int currentPlayerBonusArmiesRecieved;
-	private Boolean isBaseMapEdited;
+
 	private RiskPhaseViewObserver riskPhaseViewObserver;
 
 	public RiskTerritoryModel getaTerritory() {
@@ -173,7 +171,6 @@ public class RiskGameModel {
 
 	public void setCurPlayer(RiskPlayerModel test) {
 		curPlayer = test;
-
 	}
 
 	public Vector<RiskPlayerModel> getPlayer() {
@@ -185,16 +182,20 @@ public class RiskGameModel {
 	}
 
 	public RiskGameModel(String test) {
+
 	}
 
 	public RiskGameModel() {
+
+		// Setup Board
 		gameState = NEW_GAME;
 		initalPlayer();
 		initializePlayerDominationView();
 		initializeCardExchangeView();
-		loadGameMap();
+		loadMap_newformat();
 		initializeDeck();
 		distubuteArmies();
+
 	}
 
 	private void initializeCardExchangeView() {
@@ -263,7 +264,8 @@ public class RiskGameModel {
 	}
 
 	/**
-	 * This method initializes the number of armies as per the number of players.
+	 * This method initializes the number of armies as per the number of
+	 * players.
 	 */
 	public void distubuteArmies() {
 		int numOfPlayers = players.size();
@@ -283,7 +285,11 @@ public class RiskGameModel {
 
 	public void initializeDeck() {
 		for (int i = 0; i < territories.size(); i++)
-			deck.add(new RiskCardModel(i % 3, i));
+			deck.add(new RiskCardModel(i, i % 3));
+		//Insert two Wild Cards
+		Random wildIndex = new Random();
+		for(int wildCardCount =1; wildCardCount <=2; wildCardCount ++)
+			deck.add(wildIndex.nextInt(deck.size()),new RiskCardModel(wildIndex.nextInt(deck.size()), -1));		
 	}
 
 	public void drawCard(RiskPlayerModel p) {
@@ -325,8 +331,8 @@ public class RiskGameModel {
 	}
 
 	/**
-	 * This method calculates the reinforcement from Continent as every continent
-	 * has a different control value.
+	 * This method calculates the reinforcement from Continent as every
+	 * continent has a different control value.
 	 */
 	public int collectReinforcementsFromContinent() {
 		int continentBonus = 0;
@@ -342,82 +348,159 @@ public class RiskGameModel {
 		return continentBonus;
 	}
 
+	public void loadMap() {
+
+		boolean done = false;
+		String next;
+		String name;
+		int value;
+		int id;
+		int continent;
+		int x;
+		int y;
+		Vector<Integer> adjacents;
+		Vector<Integer> contains;
+		InputStream file = RiskGameModel.class.getResourceAsStream(Utility.getImagePath("MapFileNew.txt"));
+		Scanner mapfile = new Scanner(file);
+
+		while (mapfile.hasNextLine()) {
+			done = false;
+			next = mapfile.nextLine();
+
+			if (next.equals("{continents}")) {
+				next = mapfile.next();
+
+				do {
+					value = Integer.parseInt(next);
+					name = mapfile.next().replace("_", " ");
+					contains = new Vector<Integer>();
+					next = mapfile.next();
+					while (!next.equals(";")) {
+						contains.add(Integer.parseInt(next));
+						next = mapfile.next();
+					}
+
+					continents.add(new RiskContinentModel(name, contains, value));
+					next = mapfile.next();
+
+					if (next.equals(";;"))
+						done = true;
+				} while (done == false);
+			} // end if continents
+
+			if (next.equals("{countries}")) {
+				next = mapfile.next();
+
+				do {
+					id = Integer.parseInt(next);
+					name = mapfile.next().replace("_", " ");
+					continent = Integer.parseInt(mapfile.next());
+					x = Integer.parseInt(mapfile.next());
+					y = Integer.parseInt(mapfile.next());
+
+					territories.add(new RiskTerritoryModel(id, name, continent, x, y));
+					// System.out.println(id + " " + name + " " + continent);
+					next = mapfile.next();
+					if (next.equals(";;"))
+						done = true;
+
+				} while (done == false);
+
+			} // end if countries
+
+			if (next.equals("{adjacents}")) {
+				String c = mapfile.next();
+				do {
+					adjacents = new Vector<Integer>();
+					next = mapfile.next();
+					while (!next.equals(";")) {
+						adjacents.add(Integer.parseInt(next));
+						next = mapfile.next();
+					}
+					territories.elementAt(Integer.parseInt(c) - 1).setAdjacent(adjacents);
+					c = mapfile.next();
+					if (c.equals(";;"))
+						done = true;
+				} while (done == false);
+
+			} // end if adjacents
+
+		} // end while
+
+		// } catch(FileNotFoundException e){e.printStackTrace();} //end try read
+		// file
+
+	}// end loadmap
+
 	/**
 	 * This method loads the map by parsing it.
 	 */
-	public void loadGameMap() {
+	public void loadMap_newformat() {
 		boolean done = false;
-		String nextLine;
-		String regionName = "";
-		int continentValue = 0;
-		int territoryId;
-		int territoriesContinent;
-		int x_coordinate;
-		int y_coordinate;
+		String next;
+		String name;
+		int value;
+		int id;
+		int continent;
+		int x;
+		int y;
 		Vector<Integer> adjacents;
 		Vector<Integer> contains;
-		this.isBaseMapEdited = RiskController.isBaseMapEdited;
+
 		try {
-			InputStream fileLoadContinentTerritory;
-			if (this.isBaseMapEdited)
-				fileLoadContinentTerritory = RiskGameModel.class
-						.getResourceAsStream(Utility.getMapPath("CurrentGameMap.map"));
-			else
-				fileLoadContinentTerritory = RiskGameModel.class
-						.getResourceAsStream(Utility.getMapPath("BaseEarthMap.map"));
 
-			Scanner fileLoadContinentTerritoryScanner = new Scanner(fileLoadContinentTerritory);
+			InputStream file = RiskGameModel.class.getResourceAsStream(Utility.getMapPath("CurrentGameMap.map"));
+			Scanner mapfile = new Scanner(file);
 
-			while (fileLoadContinentTerritoryScanner.hasNextLine()) {
+			while (mapfile.hasNextLine()) {
 				done = false;
-				nextLine = fileLoadContinentTerritoryScanner.nextLine();
+				next = mapfile.nextLine();
 
-				if (nextLine.equals("[Continents]")) {
-					nextLine = fileLoadContinentTerritoryScanner.nextLine();
+				if (next.equals("[Continents]")) {
+					next = mapfile.nextLine();
 
 					do {
 
-						if (nextLine.split("=").length > 2) {
-							regionName = nextLine.split("=")[0];
-							continentValue = Integer.parseInt((nextLine.split("=")[1]).trim());
-						}
+						name = next.split("=")[0];
+						value = Integer.parseInt((next.split("=")[1]).trim());
 						contains = new Vector<Integer>();
-						continents.add(new RiskContinentModel(regionName, contains, continentValue));
-						nextLine = fileLoadContinentTerritoryScanner.nextLine();
+						continents.add(new RiskContinentModel(name, contains, value));
+						next = mapfile.nextLine();
 
-						if (nextLine.equals(""))
+						if (next.equals(""))
 							done = true;
 					} while (done == false);
 				} // end if continents
 
-				if (nextLine.equals("[Territories]")) {
-					nextLine = fileLoadContinentTerritoryScanner.nextLine();
+				if (next.equals("[Territories]")) {
+					next = mapfile.nextLine();
 					int i = 0;
 					do {
-						if (!(nextLine.equals("-") || nextLine.equals("") || nextLine.equals("[Adjacents]"))) {
-							territoryId = i++;
-							regionName = nextLine.split(",")[0];
-							x_coordinate = Integer.parseInt(nextLine.split(",")[1]);
-							y_coordinate = Integer.parseInt(nextLine.split(",")[2]);
-							territoriesContinent = -1;
+						if (!(next.equals("-") || next.equals("") || next.equals("[Adjacents]"))) {
+							id = i++;
+							name = next.split(",")[0];
+							x = Integer.parseInt(next.split(",")[1]);
+							y = Integer.parseInt(next.split(",")[2]);
+							continent = -1;
 							for (int k = 0; k < continents.size(); k++) {
-								if (continents.elementAt(k).getName().equals(nextLine.split(",")[3]))
-									territoriesContinent = k;
+								if (continents.elementAt(k).getName().equals(next.split(",")[3]))
+									continent = k;
 							}
 
-							territories.add(new RiskTerritoryModel(territoryId, regionName, territoriesContinent,
-									x_coordinate, y_coordinate));
+							territories.add(new RiskTerritoryModel(id, name, continent, x, y));
+							// System.out.println(id + " " + name + " " +
+							// continent);
 
 							for (int z = 0; z < continents.size(); z++) {
-								if (continents.elementAt(z).getName().equals(nextLine.split(",")[3])) {
-									continents.elementAt(z).AddTerritories(territoryId);
+								if (continents.elementAt(z).getName().equals(next.split(",")[3])) {
+									continents.elementAt(z).AddTerritories(id);
 								}
 							}
 
 						}
 						// System.out.println(i);
-						nextLine = fileLoadContinentTerritoryScanner.nextLine();
-						if (nextLine.equals(";;"))
+						next = mapfile.nextLine();
+						if (next.equals(";;"))
 							done = true;
 					} while (done == false);
 
@@ -425,51 +508,47 @@ public class RiskGameModel {
 
 			} // end while
 
-			InputStream fileLoadAdjacents;
-			if (this.isBaseMapEdited)
-				fileLoadAdjacents = RiskGameModel.class.getResourceAsStream(Utility.getMapPath("CurrentGameMap.map"));
-			else
-				fileLoadAdjacents = RiskGameModel.class.getResourceAsStream(Utility.getMapPath("BaseEarthMap.map"));
+			// @SuppressWarnings("resource")
+			InputStream file1 = RiskGameModel.class.getResourceAsStream(Utility.getMapPath("CurrentGameMap.map"));
+			Scanner mapfile1 = new Scanner(file1);
+			while (mapfile1.hasNextLine()) {
 
-			Scanner fileLoadAdjacentsScanner = new Scanner(fileLoadAdjacents);
-			while (fileLoadAdjacentsScanner.hasNextLine()) {
-
-				nextLine = fileLoadAdjacentsScanner.nextLine();
-				if (nextLine.equals("[Territories]")) {
+				next = mapfile1.nextLine();
+				if (next.equals("[Territories]")) {
 
 					boolean Notendfile = true;
 					do {
-						nextLine = fileLoadAdjacentsScanner.nextLine();
+						next = mapfile1.nextLine();
 
-						if (nextLine.equals(";;"))
+						if (next.equals(";;"))
 							Notendfile = false;
-						else if (!(nextLine.equals("-") || nextLine.equals("") || nextLine.equals("[Adjacents]"))) {
-							String[] compenents = nextLine.split(",");
-							String currentTerritory = compenents[0];
+						else if (!(next.equals("-") || next.equals("") || next.equals("[Adjacents]"))) {
+							String[] all = next.split(",");
+							String c = all[0];
 
 							adjacents = new Vector<Integer>();
 
-							for (int j = 4; j < compenents.length; j++) {
+							for (int j = 4; j < all.length; j++) {
 								for (int z = 0; z < territories.size(); z++) {
-									if (territories.elementAt(z).getName().equals(compenents[j])) {
+									if (territories.elementAt(z).getName().equals(all[j])) {
 										adjacents.add(territories.elementAt(z).getId());
 									}
 								}
 							}
 
-							for (RiskTerritoryModel territory : territories) {
-								if (territory.getName().equals(currentTerritory))
-									territory.setAdjacent(adjacents);
+							for (RiskTerritoryModel t : territories) {
+								if (t.getName().equals(c))
+									t.setAdjacent(adjacents);
 							}
 						}
 					} while (Notendfile);
 
 				} // end if adjacents
 			}
-			fileLoadContinentTerritory.close();
-			fileLoadAdjacents.close();
-			fileLoadContinentTerritoryScanner.close();
-			fileLoadAdjacentsScanner.close();
+			file.close();
+			file1.close();
+			mapfile.close();
+			mapfile1.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -770,7 +849,8 @@ public class RiskGameModel {
 	}
 
 	/**
-	 * This method checks if the territory is occupied by the current player or not.
+	 * This method checks if the territory is occupied by the current player or
+	 * not.
 	 */
 	public boolean occupyTerritory(RiskTerritoryModel t) {
 		// Make sure there are availble armies
@@ -960,14 +1040,6 @@ public class RiskGameModel {
 
 	public void setRiskPlayerDominationViewObserver(RiskPlayerDominationViewObserver riskPlayerDominationViewObserver) {
 		this.riskPlayerDominationViewObserver = riskPlayerDominationViewObserver;
-	}
-
-	public Boolean getIsBaseMapEdited() {
-		return isBaseMapEdited;
-	}
-
-	public void setIsBaseMapEdited(Boolean isBaseMapEdited) {
-		this.isBaseMapEdited = isBaseMapEdited;
 	}
 
 }
