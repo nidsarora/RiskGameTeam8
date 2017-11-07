@@ -71,7 +71,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	}
 
 	public RiskController() {
-		risk = new RiskGameModel();
+		risk = new RiskGameModel();		
 		initComponents();
 		initializePhaseView(risk);
 		setLocationRelativeTo(null);
@@ -791,5 +791,5 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	private JPanel jp;
 	private int countTradeCards = 0;
 	private List<RiskCardModel> lstTradedCards = new ArrayList<RiskCardModel>();
-
+	public static Boolean isBaseMapEdited = false;
 }
