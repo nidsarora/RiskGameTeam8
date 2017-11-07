@@ -48,7 +48,7 @@ public class RiskCardExchangeViewObserver implements Observer {
 		cardExchangeViewPanel.add(scrollPane);
 		
 		cardExchangeViewFrame.add(cardExchangeViewPanel);
-		cardExchangeViewFrame.setResizable(false);
+		cardExchangeViewFrame.setResizable(true);
 		cardExchangeViewFrame.pack();
 		cardExchangeViewFrame.setVisible(true);
 	}
