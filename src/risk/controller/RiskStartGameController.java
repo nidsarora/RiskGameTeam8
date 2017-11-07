@@ -220,23 +220,7 @@ public class RiskStartGameController extends java.awt.Frame {
 
 		pack();
 
-		// This is clear the CurrentGameMap of previous games details
-		// clearCurrentGameMap();
-		// initializeCurrentGameMap();
-	}
-
-	private void clearCurrentGameMap() {
-		try {
-			File currentGameMap = new File(Utility.getMapPathforFile("CurrentGameMap.map"));
-			BufferedWriter brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap));
-			brCurrentMapModifier.write("", 0, "".length());
-			brCurrentMapModifier.close();
-
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
+		initializeCurrentGameMap();
 	}
 
 	private void populateMapPanel() throws IOException {
@@ -251,9 +235,7 @@ public class RiskStartGameController extends java.awt.Frame {
 			if (reachedContinents) {
 				if (!strCurrentMapLine.equals(";;"))
 					mapEditTextArea.append(strCurrentMapLine + "\n");
-			} else
-				break;
-
+			}
 		}
 		brCurrentGameMap.close();
 		generateMapFrame.repaint();
@@ -264,17 +246,18 @@ public class RiskStartGameController extends java.awt.Frame {
 		try {
 			StringBuilder sbEarthMapReader = new StringBuilder();
 			String strEarthMapLine;
-//			BufferedReader brEarthMapReader = new BufferedReader(new InputStreamReader(RiskStartGameController.class
-//					.getResourceAsStream(Utility.getMapPath("BaseEarthMapWithoutCoordinates.map"))));
+			// BufferedReader brEarthMapReader = new BufferedReader(new
+			// InputStreamReader(RiskStartGameController.class
+			// .getResourceAsStream(Utility.getMapPath("BaseEarthMapWithoutCoordinates.map"))));
 			File currentGameMap = new File(Utility.getMapPathforFile("CurrentGameMap.map"));
 			BufferedWriter brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap));
-//
-//			while ((strEarthMapLine = brEarthMapReader.readLine()) != null) {
-//				if (!strEarthMapLine.equals(";;"))// Do not add new line after the last line.
-//					sbEarthMapReader.append(strEarthMapLine + "\n");
-//				else
-//					sbEarthMapReader.append(strEarthMapLine);
-//			}
+			//
+			// while ((strEarthMapLine = brEarthMapReader.readLine()) != null) {
+			// if (!strEarthMapLine.equals(";;"))// Do not add new line after the last line.
+			// sbEarthMapReader.append(strEarthMapLine + "\n");
+			// else
+			// sbEarthMapReader.append(strEarthMapLine);
+			// }
 
 			brCurrentMapModifier.write("");
 			brCurrentMapModifier.close();
@@ -343,7 +326,7 @@ public class RiskStartGameController extends java.awt.Frame {
 		addButton = new JButton("Add Country");
 		addButton.setVisible(false);
 		finishButton = new JButton("Finish");
-		finishButton.setVisible(false);
+		//finishButton.setVisible(false);
 		addContinent = new JButton("Add Continent");
 		continentDoneButton = new JButton("Done");
 		/**
@@ -504,19 +487,34 @@ public class RiskStartGameController extends java.awt.Frame {
 	 *            ActionEvent passed for the button click event.
 	 */
 	private void addButtonPressed(ActionEvent e) {
-		// if (validateMapLineInputText(mapEditTextField.getText())) {
 		if (RiskStartGameController.predefinedTerritoryCoordinatesList.size() == 0) {
 			noteLabel.setText("Cannot add anymore country, max is 42 inclusing adjacents");
 			return;
 		}
-		if (validateContinentLineText(mapEditTextField.getText()))
-			mapEditTextArea.append(mapEditTextInsertCoordinates(mapEditTextField.getText()) + "\n");
+		if (validateContinentLineText(mapEditTextField.getText())) {
+			sbMapTerritoryContents.append(mapEditTextInsertCoordinates(mapEditTextField.getText()) + "\n");
+			updateMapEditTextArea();
+			noteLabel.setText("");
+			notePanel.repaint();
+		}
 		else {
 			noteLabel.setText("Invalid Continent, choose from what was defined before.");
 			notePanel.repaint();
 		}
-		scrollTextAreaPanel.repaint();
 		mapEditTextField.setText("");
+	}
+
+	private void updateMapEditTextArea() {
+		sbMapContinentContents = new StringBuilder();
+		sbMapContinentContents.append("[Continents]\n");
+		for (String userDefinedContinentKey : this.userDefinedContinentList.keySet())
+			sbMapContinentContents.append(
+					userDefinedContinentKey + "=" + this.userDefinedContinentList.get(userDefinedContinentKey) + "\n");
+		sbMapContinentContents.append("\n\n[Territories]\n\n");
+		sbMapContinentContents.append(sbMapTerritoryContents.toString());
+
+		mapEditTextArea.setText(sbMapContinentContents.toString());
+		scrollTextAreaPanel.repaint();
 	}
 
 	private void continentDoneButtonPressed(ActionEvent e) {
@@ -524,14 +522,8 @@ public class RiskStartGameController extends java.awt.Frame {
 		addContinent.setVisible(false);
 		finishButton.setVisible(true);
 		addButton.setVisible(true);
-		mapEditTextArea.setText("");
-		mapEditTextArea.append("[Continents]\n");
-		for (String userDefinedContinentKey : this.userDefinedContinentList.keySet())
-			mapEditTextArea.append(
-					userDefinedContinentKey + "=" + this.userDefinedContinentList.get(userDefinedContinentKey) + "\n");
-		mapEditTextArea.append("\n");
-		mapEditTextArea.append("[Territories]\n");
-		scrollTextAreaPanel.repaint();
+
+		updateMapEditTextArea();
 	}
 
 	private boolean validateContinentLineText(String mapInputLineText) {
@@ -854,4 +846,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	private JButton finishButton;
 	private JButton addContinent;
 	private JButton continentDoneButton;
+	private StringBuilder sbMapTerritoryContents = new StringBuilder();
+	private StringBuilder sbMapContinentContents = new StringBuilder();
+
 }
