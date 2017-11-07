@@ -23,10 +23,12 @@ import risk.view.RiskPlayerDominationViewObserver;
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import java.awt.Label;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,6 +41,7 @@ import javax.swing.JPanel;
 
 import risk.model.*;
 import risk.controller.RiskPlayerPanelViewController;
+import risk.helpers.Utility;
 
 /**
  * This class contains the card logic as well as it tales the phase from the
@@ -205,10 +208,13 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 						.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
 						.addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)));
 
+		Utility.writeLog("Build the Game Panel");
+
 		pack();
 	}
 
 	private void AttackButtonMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_AttackButtonMouseClicked
+		Utility.writeLog("Attack Phase entered");
 		risk.setState(RiskGameModel.ATTACK);
 		FortifyButton.setVisible(false);
 		EndButton.setVisible(false);
@@ -226,6 +232,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			FortifyButton.setVisible(true);
 			statusLabel.setText("What would you like to do?");
 			jPanel1.repaint();
+			Utility.writeLog("Attack operation cancelled");
 		}
 		// AttackButton.setText("Retreat");
 		risk.notifyPhaseViewChange();
@@ -242,13 +249,14 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		EndButton.setVisible(false);
 		FortifyButton.setVisible(false);
 		risk.drawn = false;
-
+		Utility.writeLog("Current player turn ends");
 	}
 
 	private void FortifyButtonMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_FortifyButtonMouseClicked
 		risk.setState(RiskGameModel.FORTIFY);
 		risk.notifyPhaseViewChange();
 		statusLabel.setText("Select a country move armies from");
+		Utility.writeLog("Fortify Phase entered");
 	}
 
 	private void CardButtonMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_CardButtonMouseClicked
@@ -301,6 +309,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			risk.gamePhaseSetup(x, y);
 			name = risk.curPlayer.getName();
 			statusLabel.setText("Place an army on a territory you occupy");
+			Utility.writeLog("initial reinforcement stage");
 		}
 
 		if (risk.getState() == RiskGameModel.ATTACK) {
@@ -312,11 +321,14 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			// }
 			out = risk.gamePhaseActive(x, y);
 			risk.notifyPhaseViewChange();
-if (risk.getState() == RiskGameModel.START_TURN) {
-			  risk.gamePhaseActive(x, y);
-			  risk.active = risk.curPlayer;
-			  name = risk.curPlayer.getName();
-			  statusLabel.setText("Recieved a bonus of " + risk.curPlayer.getNumberOfArmies());
+	
+		}
+		if (risk.getState() == RiskGameModel.START_TURN) {
+			risk.gamePhaseActive(x, y);
+			risk.active = risk.curPlayer;
+			name = risk.curPlayer.getName();
+			statusLabel.setText("Recieved a bonus of " + risk.curPlayer.getNumberOfArmies());
+			Utility.writeLog(name + " got bonus armies");
 		}
 
 		
@@ -325,9 +337,11 @@ if (risk.getState() == RiskGameModel.START_TURN) {
 			name = risk.curPlayer.getName();
 			risk.gamePhaseActive(x, y);
 			risk.notifyPhaseViewChange();
+				Utility.writeLog(name + " got" + risk.curPlayer.getNumberOfArmies() + " left to place");
 			statusLabel.setText("You have " + risk.curPlayer.getNumberOfArmies() + " left to place");
 			if (risk.curPlayer.getNumberOfArmies() == 0) {
 				risk.setState(RiskGameModel.ACTIVE_TURN);
+					Utility.writeLog(name + " entered active turn");
 			}
 
 		}
@@ -360,6 +374,7 @@ if (risk.getState() == RiskGameModel.START_TURN) {
 			AttackButton.setText("Retreat");
 			statusLabel.setText("Select an opposing territory");
 			out = risk.gamePhaseActive(x, y);
+			Utility.writeLog(name + " entered attacking phase.");
 			// System.out.println(out);
 			risk.notifyPhaseViewChange();
 		}
@@ -400,6 +415,8 @@ if (risk.getState() == RiskGameModel.START_TURN) {
 				if (numofatt != 0) {// change player is num is selected
 					risk.active = risk.defender;
 					risk.setAttack(numofatt);
+					Utility.writeLog(risk.getCurrentPlayer().getName() + " has " + attackArmies + " armies");
+					Utility.writeLog(risk.getCurrentPlayer().getName() + " attacking with " + numofatt + " armies");
 				}
 
 			} // end attackers turn
@@ -424,14 +441,19 @@ if (risk.getState() == RiskGameModel.START_TURN) {
 				if (numofatt > 0) {
 					risk.setDefend(numofatt);
 					risk.engageBattle();
-					if (defenseArmies - risk.dTerritory.getArmies() == 1)
+					if (defenseArmies - risk.dTerritory.getArmies() == 1){
 						statusLabel.setText(risk.curPlayer.getName() + " has destroyed an army");
-					else if (defenseArmies - risk.dTerritory.getArmies() == 2)
+						Utility.writeLog(risk.curPlayer.getName() + " has destroyed an army");
+					} else if (defenseArmies - risk.dTerritory.getArmies() == 2) {
 						statusLabel.setText(risk.curPlayer.getName() + " has destroyed two armies");
-					else if (attackArmies - risk.aTerritory.getArmies() == 1)
+						Utility.writeLog(risk.curPlayer.getName() + " has destroyed two armies");
+					} else if (attackArmies - risk.aTerritory.getArmies() == 1) {
 						statusLabel.setText(risk.curPlayer.getName() + " has lost an army");
-					else if (attackArmies - risk.aTerritory.getArmies() == 2)
+						Utility.writeLog(risk.curPlayer.getName() + " has lost an army");
+					} else if (attackArmies - risk.aTerritory.getArmies() == 2) {
 						statusLabel.setText(risk.curPlayer.getName() + " has lost two armies");
+						Utility.writeLog(risk.curPlayer.getName() + " has lost two armies");
+					}
 
 					if (risk.aTerritory.getArmies() == 1) {
 						risk.setState(RiskGameModel.ACTIVE_TURN);
@@ -490,6 +512,8 @@ if (risk.getState() == RiskGameModel.START_TURN) {
 					risk.notifyPhaseViewChange();
 					risk.setAttackDieArray(null);
 					risk.setDefenceDieArray(null);
+					Utility.writeLog(risk.getCurrentPlayer().getName() + " has " + risk.defenseNum + " armies moved to "
+							+ risk.dTerritory.getName());
 					EndButton.setVisible(true);
 					FortifyButton.setVisible(true);
 					risk.capture();
@@ -544,6 +568,8 @@ if (risk.getState() == RiskGameModel.START_TURN) {
 					else
 						statusLabel.setText(risk.defenseNum + " armies moved to " + risk.dTerritory.getName());
 					risk.notifyPhaseViewChange();
+					Utility.writeLog(risk.getCurrentPlayer().getName() + " has " + risk.defenseNum + " armies moved to "
+							+ risk.dTerritory.getName());
 					EndButton.setVisible(true);
 					FortifyButton.setVisible(false);
 					risk.aTerritory.looseArmies(risk.defenseNum);
@@ -557,7 +583,7 @@ if (risk.getState() == RiskGameModel.START_TURN) {
 			if (y > 350 && y < 380) {
 				if (x > 475 && x < 525) { // if exxti button pushed
 					risk.setState(RiskGameModel.ACTIVE_TURN);
-					System.out.println("exitt");
+					System.out.println("exit");
 				}
 			} // end exit
 			risk.notifyPhaseViewChange();
@@ -647,7 +673,7 @@ if (risk.getState() == RiskGameModel.START_TURN) {
 		OKButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
-				cardsOKButtonPressed();
+				cardsOKButtonPressed(cardsFrame);
 			}
 		});
 	  }
@@ -719,11 +745,13 @@ if (risk.getState() == RiskGameModel.START_TURN) {
 						&& !lstTradedCards.get(1).card_type.equals(lstTradedCards.get(2).card_type)
 						&& !lstTradedCards.get(0).card_type.equals(lstTradedCards.get(2).card_type)) {
 					cardStatusLabel.setText("Success");
+					Utility.writeLog("card traded successfully");
 					return true;
 				}
 			} else {
 				if (isValidCountWildCard()) {
 					cardStatusLabel.setText("Success");
+					Utility.writeLog("card traded successfully");
 					return true;
 				} else {
 					cardStatusLabel.setText("Please select only/atleast three cards!");

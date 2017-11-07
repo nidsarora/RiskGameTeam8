@@ -23,6 +23,10 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Vector;
 
 import javax.sound.midi.InvalidMidiDataException;
 import javax.sound.midi.MidiSystem;
@@ -60,6 +64,7 @@ import risk.view.RiskPlayerDominationViewObserver;
  * @author Team8
  */
 public class RiskStartGameController extends java.awt.Frame {
+	static HashMap<String, String> HmAdjusentadded = new HashMap<String, String>();
 	/** Creates new form RiskStartGame */
 
 	public RiskStartGameController(String test)
@@ -69,6 +74,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	
 	
 	public RiskStartGameController() {
+		Utility.writeLog("-------------------------------------------------------");
+		Utility.writeLog("application start");
 		
 		initComponents();
 		jButton1.setEnabled(false);
@@ -430,9 +437,15 @@ public class RiskStartGameController extends java.awt.Frame {
 			} else {
 				AdjacentCountryInfo = insertAdjacentCountriesInfoWrapper(editTextArea); //(mapEditTextField.getText()));
 				BufferedWriter brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap, true));
-				brCurrentMapModifier.write("\n" + editTextArea + "\n"+ AdjacentCountryInfo, 0, ("\n" + editTextArea + "\n"+ AdjacentCountryInfo).length()); // +2 is for ;; appended
-				brCurrentMapModifier.write(";;",0,2);
+				brCurrentMapModifier.write("\n" + editTextArea + "\n" + AdjacentCountryInfo, 0,
+						("\n" + editTextArea + "\n" + AdjacentCountryInfo).length()); // +2
+																						// is
+																						// for
+																						// ;;
+																						// appended
+				brCurrentMapModifier.write(";;", 0, 2);
 				brCurrentMapModifier.close();
+				Utility.writeLog("write the current game map file.");
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -442,17 +455,133 @@ public class RiskStartGameController extends java.awt.Frame {
 	private String insertAdjacentCountriesInfoWrapper(String editTextArea) {
 		String[] editTextAreaArray = editTextArea.split("\n");
 		StringBuilder adjacentCountryBuilder = new StringBuilder();
-		
-		adjacentCountryBuilder.append("[Adjacents]");
-		for(String inputLine: editTextAreaArray)
-		{
-			adjacentCountryBuilder.append(insertAdjacentCountriesInfo(inputLine) + "\n");
+
+		// adjacentCountryBuilder.append("[Adjacents]");
+		for (String inputLine : editTextAreaArray) {
+			insertAdjacentCountriesInfo(inputLine);
+		}
+
+		Iterator itAdjusten = HmAdjusentadded.entrySet().iterator();
+		while (itAdjusten.hasNext()) {
+			Map.Entry pair = (Map.Entry) itAdjusten.next();
+			adjacentCountryBuilder.append(pair.getValue() + "\n");
+			// itAdjusten.remove(); // avoids a ConcurrentModificationException
 		}
 		
 		return adjacentCountryBuilder.toString();
 	}
 
-	
+	/**
+	 * This method will find the coordinates and continent of the adjacent
+	 * countries supplied by the user and append it to JTextArea.
+	 * 
+	 * @param mapInputLineText
+	 * @return
+	 */
+	private void insertAdjacentCountriesInfo(String mapInputLineText) {
+		StringBuilder adjacentCountriesInfo = new StringBuilder();
+		String ajacentCountryInfo = "";
+		int reachAdjacent = 0;
+
+		for (int i = 4; i < mapInputLineText.split(",").length; i++) {
+
+			if (!HmAdjusentadded.containsKey(mapInputLineText.split(",")[i])) {
+				try {
+
+					ajacentCountryInfo = getAdjacentCountryInfo(mapInputLineText.split(",")[i]);
+					ajacentCountryInfo += "," + mapInputLineText.split(",")[0];
+					HmAdjusentadded.put(mapInputLineText.split(",")[i], ajacentCountryInfo);
+					// adjacentCountriesInfo.append(ajacentCountryInfo + "\n");
+				} catch (ParserConfigurationException | SAXException | IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			} else {
+				HmAdjusentadded.put(mapInputLineText.split(",")[i],
+						HmAdjusentadded.get(mapInputLineText.split(",")[i]) + "," + mapInputLineText.split(",")[0]);
+				ajacentCountryInfo = HmAdjusentadded.get(mapInputLineText.split(",")[i]);
+				// adjacentCountriesInfo.append(ajacentCountryInfo + "\n");
+			}
+
+		}
+		
+		// return adjacentCountriesInfo.toString();
+
+	}
+
+	/**
+	 * This method will find the coordinates and continent of the adjacent
+	 * countries supplied by the user and append it to JTextArea.
+	 * 
+	 * @param adjacentTerritory,
+	 *            individual adjacent country to find the information for.
+	 * @return String with coordinates and continent for adjacent country -
+	 *         adjacentTerritory.
+	 * @throws ParserConfigurationException
+	 * @throws IOException
+	 * @throws SAXException
+	 */
+	private String getAdjacentCountryInfo(String adjacentTerritory)
+			throws ParserConfigurationException, SAXException, IOException {
+		String countryInfo = "";
+		File locationsXml = new File(Utility.getPathforFile("Locations.xml"));
+		DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+		Document doc = dBuilder.parse(locationsXml);
+		NodeList countryList;
+		countryList = doc.getElementsByTagName("Country");
+
+		for (int countryIndex = 0; countryIndex < countryList.getLength(); countryIndex++) {
+			Node countryNode = (Node) countryList.item(countryIndex);
+			if (countryNode.getTextContent().toLowerCase().equals((adjacentTerritory.toLowerCase()))) {
+				countryInfo = adjacentTerritory + ","
+						+ countryNode.getAttributes().getNamedItem("coordinate").getNodeValue() + ","
+						+ countryNode.getAttributes().getNamedItem("continent").getNodeValue();
+				break;
+			}
+		}
+		return countryInfo;
+	}
+
+	/**
+	 * To find the territory which the user supplied in his/her input text. To
+	 * find the coordinates of the supplied territory from the baseMap -
+	 * EarthMap. Append the found coordinates to the input text and insert them
+	 * in the JTextArea in Choose Map Panel.
+	 * 
+	 * @param mapInputLineText,
+	 *            input text inserted by the user specifying the territory and
+	 *            the adjacent countries.
+	 * @return String, the complete line text with the coordinates inserted
+	 *         after the territory.
+	 */
+	public String mapEditTextInsertCoordinates(String mapInputLineText) {
+
+		StringBuilder sbInputWithCoordinates = new StringBuilder();
+		String territory = mapInputLineText.substring(0, mapInputLineText.indexOf(','));
+		String coordinates = fetchCoordinates(territory);
+
+		sbInputWithCoordinates.append(mapInputLineText.substring(0, mapInputLineText.indexOf(','))).append(coordinates)
+				.append(mapInputLineText.substring(mapInputLineText.indexOf(',') + 1, mapInputLineText.length()));
+
+		return sbInputWithCoordinates.toString();
+	}
+
+	/**
+	 * Fetch the coordinates of the territories given to this method. Call the
+	 * recursive search function to perform the search.
+	 * 
+	 * @param territory,
+	 *            territory inserted by the user.
+	 * @return = String, the coordinates of the territory supplied in string -
+	 *         e.g - ,XX,YY, - format.
+	 */
+	public String fetchCoordinates(String territory) {
+		String coordinates = "";
+		// initializeMapVariables();
+		coordinates = recursiveSearchCoordinates(sbBaseMapString.toString(), territory);
+		return coordinates;
+	}
+
 	/**
 	 * Processes user input from the JTextField. Calls another method to fetch and
 	 * insert coordinates for the territory. Appends the input with coordinates to
@@ -476,67 +605,7 @@ public class RiskStartGameController extends java.awt.Frame {
 		}
 	}
 	
-	/**
-	 * This method will find the coordinates and continent of the adjacent countries supplied by the
-	 * user and append it to JTextArea.
-	 * @param mapInputLineText
-	 * @return
-	 */
-	private String insertAdjacentCountriesInfo(String mapInputLineText) {
-		StringBuilder adjacentCountriesInfo = new StringBuilder();
-		String ajacentCountryInfo = "";
-		int reachAdjacent = 0;
-		
-		for(String adjacentTerritory: mapInputLineText.split(","))
-		{
-			reachAdjacent++; //Skip the country and the continent to reach adjacent territory only.
-			if(reachAdjacent > 2)
-			{
-				try {
-					ajacentCountryInfo = getAdjacentCountryInfo(adjacentTerritory);
-					adjacentCountriesInfo.append(ajacentCountryInfo + "\n");
-				} catch (ParserConfigurationException | SAXException | IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-			
-		}
-		
-		
-		return adjacentCountriesInfo.toString();
-		
-	}
 
-	/**
-	 * This method will find the coordinates and continent of the adjacent countries supplied by the
-	 * user and append it to JTextArea.
-	 * @param adjacentTerritory, individual adjacent country to find the information for.
-	 * @return String with coordinates and continent for adjacent country - adjacentTerritory.
-	 * @throws ParserConfigurationException 
-	 * @throws IOException 
-	 * @throws SAXException 
-	 */
-	private String getAdjacentCountryInfo(String adjacentTerritory) throws ParserConfigurationException, SAXException, IOException {
-		String countryInfo = "";
-		File locationsXml = new File(Utility.getPathforFile("Locations.xml"));
-		DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance()
-                .newDocumentBuilder();
-		Document doc = dBuilder.parse(locationsXml);
-		NodeList countryList;
-		countryList = doc.getElementsByTagName("Country");
-		
-		for(int countryIndex = 0; countryIndex < countryList.getLength(); countryIndex++ )
-			{
-				Node countryNode = (Node) countryList.item(countryIndex);
-				if(countryNode.getTextContent().toLowerCase().equals((adjacentTerritory.toLowerCase())))
-				{
-					countryInfo =  adjacentTerritory  + "," + countryNode.getAttributes().getNamedItem("coordinate").getNodeValue() + "," + countryNode.getAttributes().getNamedItem("continent").getNodeValue(); 
-				break;
-				}
-			}
-		return countryInfo;
-	}
 
 	/**
 	 * To find the territory which the user supplied in his/her input text. To find
@@ -691,13 +760,12 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * @throws IOException 
 	 * @throws SAXException 
 	 */
-	public Boolean validateMapLineInputText(String mapInputLineText) throws ParserConfigurationException, SAXException, IOException {
-	Boolean isValid = false;
-		if(mapInputLineText.split(",").length >= 3)
-		{
+	public Boolean validateMapLineInputText(String mapInputLineText)
+			throws ParserConfigurationException, SAXException, IOException {
+		Boolean isValid = false;
+		if (mapInputLineText.split(",").length >= 3) {
 			File locationsXml = new File("src/risk/resources/Locations.xml");
-			DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance()
-                    .newDocumentBuilder();
+			DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
 			Document doc = dBuilder.parse(locationsXml);
 			NodeList countryList,continentList;
 			Boolean isCountryValid,isContinentValid;

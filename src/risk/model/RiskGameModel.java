@@ -189,6 +189,8 @@ public class RiskGameModel {
 
 		// Setup Board
 		gameState = NEW_GAME;
+		Utility.writeLog("New Game starts");
+
 		initalPlayer();
 		initializePlayerDominationView();
 		initializeCardExchangeView();
@@ -281,11 +283,18 @@ public class RiskGameModel {
 
 		for (int i = 0; i < numOfPlayers; i++)
 			players.elementAt(i).addArmies(armies);
+
+		Utility.writeLog(armies + " armies added to each player");
 	}
 
 	public void initializeDeck() {
 		for (int i = 0; i < territories.size(); i++)
-			deck.add(new RiskCardModel(i % 3, i));
+			deck.add(new RiskCardModel(i, i % 3));
+
+		deck.add(new RiskCardModel(-1, 4)); // adding wild card - goutham
+		deck.add(new RiskCardModel(-1, 4)); // adding wild card - goutham
+
+		Utility.writeLog("riskgame cards are added for player.");
 	}
 
 	public void drawCard(RiskPlayerModel p) {
@@ -545,6 +554,7 @@ public class RiskGameModel {
 			file1.close();
 			mapfile.close();
 			mapfile1.close();
+			Utility.writeLog("countries and continent loaded from map file.");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -688,8 +698,12 @@ public class RiskGameModel {
 		if (getState() == TRADE_CARDS) {
 			if (country != -1) // if not a country
 				if (getOwnership(country) == curPlayer.getPlayerIndex()) // if
-					// owned
+				// owned
+				{
 					occupyTerritory(territories.elementAt(country)); // occupy
+					setState(REINFORCE);
+				}
+
 		}
 
 		if (getState() == REINFORCE) {
