@@ -55,7 +55,7 @@ public class RiskPhaseViewObserver implements Observer {
 		phaseViewPanel.add(scrollPane);
 		
 		phaseViewFrame.add(phaseViewPanel);
-		phaseViewFrame.setResizable(true);
+		phaseViewFrame.setResizable(false);
 		phaseViewFrame.pack();
 		phaseViewFrame.setVisible(true);
 	}
