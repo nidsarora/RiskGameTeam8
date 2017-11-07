@@ -113,7 +113,7 @@ public class RiskReinforcementPhaseModel extends Observable implements PhaseView
 		sbContentBuilder.append("Player: " + this.getCurrentRiskGameObject().curPlayer.getName() + " recieved "
 				+ this.getCurrentRiskGameObject().getCurrentPlayerBonusArmiesRecieved()
 				+ " armies as bonus from Continents.\n");
-		sbContentBuilder.append("Player " + this.getCurrentRiskGameObject().curPlayer.getName() + " recieved " + 0
+		sbContentBuilder.append("Player " + this.getCurrentRiskGameObject().curPlayer.getName() + " recieved " + this.getCurrentRiskGameObject().curPlayer.getArmiesRecivedByTradingCards()
 				+ " armies from tading cards.\n");
 		sbContentBuilder.append("Player army count:" + getNumberOfArmiesPerPlayers() + "\n");
 		return sbContentBuilder.toString();

@@ -16,6 +16,7 @@ public class RiskPlayerModel extends Observable {
 	private Vector<RiskTerritoryModel> occupiedTerritories;
 	private Vector<RiskCardModel> cards;
 	private int armies;
+	private int armiesRecivedByTradingCards; 
 
 	public RiskPlayerModel(String nm, int i) {
 		name = nm;
@@ -147,5 +148,13 @@ public class RiskPlayerModel extends Observable {
 		}
 
 		return sbPlayerDominationViewContent.toString();
+	}
+
+	public int getArmiesRecivedByTradingCards() {
+		return armiesRecivedByTradingCards;
+	}
+
+	public void setArmiesRecivedByTradingCards(int armiesRecivedByTradingCards) {
+		this.armiesRecivedByTradingCards = armiesRecivedByTradingCards;
 	}
 }
