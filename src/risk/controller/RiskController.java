@@ -673,7 +673,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		OKButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
-				cardsOKButtonPressed(cardsFrame);
+				cardsOKButtonPressed();
 			}
 		});
 	  }

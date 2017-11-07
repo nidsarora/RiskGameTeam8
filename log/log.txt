@@ -1,1 +1,54 @@
 
+Mon Nov 06 20:17:07 EST 2017:-------------------------------------------------------
+Mon Nov 06 20:17:07 EST 2017:application start
+Mon Nov 06 20:17:10 EST 2017:All players Added
+Mon Nov 06 20:17:11 EST 2017:New Game starts
+Mon Nov 06 20:17:11 EST 2017:countries and continent loaded from map file.
+Mon Nov 06 20:17:11 EST 2017:riskgame cards are added for player.
+Mon Nov 06 20:17:11 EST 2017:15 armies added to each player
+Mon Nov 06 20:17:12 EST 2017:Build the Game Panel
+Mon Nov 06 20:18:24 EST 2017:initial reinforcement stage
+Mon Nov 06 20:18:43 EST 2017:initial reinforcement stage
+Mon Nov 06 20:18:49 EST 2017:initial reinforcement stage
+Mon Nov 06 20:18:50 EST 2017:initial reinforcement stage
+Mon Nov 06 20:18:50 EST 2017:initial reinforcement stage
+Mon Nov 06 20:18:51 EST 2017:initial reinforcement stage
+Mon Nov 06 20:18:52 EST 2017:initial reinforcement stage
+Mon Nov 06 20:18:54 EST 2017:initial reinforcement stage
+Mon Nov 06 20:18:55 EST 2017:initial reinforcement stage
+Mon Nov 06 20:18:55 EST 2017:Player_1 got bonus armies
+Mon Nov 06 20:18:55 EST 2017:Player_1 got4 left to place
+Mon Nov 06 20:18:58 EST 2017:Player_1 got3 left to place
+Mon Nov 06 20:18:58 EST 2017:Player_1 got2 left to place
+Mon Nov 06 20:21:14 EST 2017:Player_1 got1 left to place
+Mon Nov 06 20:21:15 EST 2017:Player_1 got0 left to place
+Mon Nov 06 20:21:15 EST 2017:Player_1 entered active turn
+Mon Nov 06 20:21:17 EST 2017:Attack Phase entered
+Mon Nov 06 20:21:20 EST 2017:Player_1 entered attacking phase.
+Mon Nov 06 20:21:21 EST 2017:Player_1 entered attacking phase.
+Mon Nov 06 20:21:22 EST 2017:Player_1 has 3 armies
+Mon Nov 06 20:21:22 EST 2017:Player_1 attacking with 1 armies
+Mon Nov 06 20:21:27 EST 2017:Player_1 has lost an army
+Mon Nov 06 20:21:33 EST 2017:Player_1 has 2 armies
+Mon Nov 06 20:21:33 EST 2017:Player_1 attacking with 1 armies
+Mon Nov 06 20:21:35 EST 2017:Player_1 has destroyed an army
+Mon Nov 06 20:21:36 EST 2017:Player_1 has 1 armies moved to Venezuela
+Mon Nov 06 20:21:47 EST 2017:-------------------------------------------------------
+Mon Nov 06 20:21:47 EST 2017:application start
+Mon Nov 06 20:22:03 EST 2017:write the current game map file.
+Mon Nov 06 20:22:11 EST 2017:All players Added
+Mon Nov 06 20:22:12 EST 2017:New Game starts
+Mon Nov 06 20:22:12 EST 2017:countries and continent loaded from map file.
+Mon Nov 06 20:22:12 EST 2017:riskgame cards are added for player.
+Mon Nov 06 20:22:12 EST 2017:15 armies added to each player
+Mon Nov 06 20:22:12 EST 2017:Build the Game Panel
+Mon Nov 06 20:22:31 EST 2017:-------------------------------------------------------
+Mon Nov 06 20:22:31 EST 2017:application start
+Mon Nov 06 20:22:34 EST 2017:All players Added
+Mon Nov 06 20:22:41 EST 2017:write the current game map file.
+Mon Nov 06 20:23:13 EST 2017:New Game starts
+Mon Nov 06 20:23:13 EST 2017:countries and continent loaded from map file.
+Mon Nov 06 20:23:13 EST 2017:riskgame cards are added for player.
+Mon Nov 06 20:23:13 EST 2017:15 armies added to each player
+Mon Nov 06 20:23:14 EST 2017:Build the Game Panel
+Mon Nov 06 20:23:16 EST 2017:initial reinforcement stage

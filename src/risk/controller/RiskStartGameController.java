@@ -543,30 +543,6 @@ public class RiskStartGameController extends java.awt.Frame {
 	}
 
 	/**
-	 * To find the territory which the user supplied in his/her input text. To
-	 * find the coordinates of the supplied territory from the baseMap -
-	 * EarthMap. Append the found coordinates to the input text and insert them
-	 * in the JTextArea in Choose Map Panel.
-	 * 
-	 * @param mapInputLineText,
-	 *            input text inserted by the user specifying the territory and
-	 *            the adjacent countries.
-	 * @return String, the complete line text with the coordinates inserted
-	 *         after the territory.
-	 */
-	public String mapEditTextInsertCoordinates(String mapInputLineText) {
-
-		StringBuilder sbInputWithCoordinates = new StringBuilder();
-		String territory = mapInputLineText.substring(0, mapInputLineText.indexOf(','));
-		String coordinates = fetchCoordinates(territory);
-
-		sbInputWithCoordinates.append(mapInputLineText.substring(0, mapInputLineText.indexOf(','))).append(coordinates)
-				.append(mapInputLineText.substring(mapInputLineText.indexOf(',') + 1, mapInputLineText.length()));
-
-		return sbInputWithCoordinates.toString();
-	}
-
-	/**
 	 * Fetch the coordinates of the territories given to this method. Call the
 	 * recursive search function to perform the search.
 	 * 
@@ -640,12 +616,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * @return = String, the coordinates of the territory supplied in string - e.g -
 	 *         ,XX,YY, - format.
 	 */
-	public String fetchCoordinates(String territory) {
-		String coordinates = "";
-	//	initializeMapVariables();
-		coordinates = recursiveSearchCoordinates(sbBaseMapString.toString(), territory);
-		return coordinates;
-	}
+
 
 	/**
 	 * The base earth map has individual territories specified in multiple places.
