@@ -48,7 +48,7 @@ public class RiskPlayerDominationViewObserver implements Observer {
 		playerDominationViewPanel.add(scrollPane);
 		
 		playerDominationViewFrame.add(playerDominationViewPanel);
-		playerDominationViewFrame.setResizable(false);
+		playerDominationViewFrame.setResizable(true);
 		playerDominationViewFrame.pack();
 		playerDominationViewFrame.setVisible(true);
 	}
