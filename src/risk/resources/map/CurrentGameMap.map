@@ -1,0 +1,22 @@
+[Map]
+author=Brigham Judd
+image=Earth.bmp
+wrap=yes
+scroll=horizontal
+warn=yes
+
+
+[Continents]
+africa=0
+india=2
+
+
+[Territories]
+
+ok,47,76,india,pl,ij
+pl,155,70,india,ok
+ij,334,38,india,ok
+
+
+
+;;

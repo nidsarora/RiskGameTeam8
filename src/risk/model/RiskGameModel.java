@@ -83,6 +83,19 @@ public class RiskGameModel {
 	private Boolean isBaseMapEdited;
 	private RiskPhaseViewObserver riskPhaseViewObserver;
 
+	public RiskGameModel(String test) {
+	}
+
+	public RiskGameModel() {
+		gameState = NEW_GAME;
+		initalPlayer();
+		initializePlayerDominationView();
+		initializeCardExchangeView();
+		loadGameMap();
+		initializeDeck();
+		distubuteArmies();
+	}
+
 	public RiskTerritoryModel getaTerritory() {
 		return aTerritory;
 	}
@@ -184,18 +197,6 @@ public class RiskGameModel {
 		players = test;
 	}
 
-	public RiskGameModel(String test) {
-	}
-
-	public RiskGameModel() {
-		gameState = NEW_GAME;
-		initalPlayer();
-		initializePlayerDominationView();
-		initializeCardExchangeView();
-		loadGameMap();
-		initializeDeck();
-		distubuteArmies();
-	}
 
 	private void initializeCardExchangeView() {
 		RiskCardExchangeViewObserver riskCardExchangeViewObserver = RiskCardExchangeViewObserver.getInstance();
