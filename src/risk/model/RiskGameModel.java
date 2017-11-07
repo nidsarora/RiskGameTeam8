@@ -284,7 +284,11 @@ public class RiskGameModel {
 
 	public void initializeDeck() {
 		for (int i = 0; i < territories.size(); i++)
-			deck.add(new RiskCardModel(i % 3, i));
+			deck.add(new RiskCardModel(i, i % 3));
+		//Insert two Wild Cards
+		Random wildIndex = new Random();
+		for(int wildCardCount =1; wildCardCount <=2; wildCardCount ++)
+			deck.add(wildIndex.nextInt(deck.size()),new RiskCardModel(wildIndex.nextInt(deck.size()), -1));	
 	}
 
 	public void drawCard(RiskPlayerModel p) {
