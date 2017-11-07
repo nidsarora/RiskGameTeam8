@@ -1,5 +1,10 @@
 # RiskGameTeam8
 
+-- All armies
+ - check card functionality, select card count label, generic message all the time.
+ 
+--user defined
+-code breaks a lot
  + Game holds a deck of 56 cards, 5 dice and a game board which is marked 6 continents and 42 territories(countries).
  +  Armies used to attack is of 3 types: Infantry [ 1 value ]
  +                                     Cavalry  [ 5 value ] 
