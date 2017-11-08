@@ -223,7 +223,7 @@ public class RiskStartGameController extends java.awt.Frame {
 
 		pack();
 
-		initializeCurrentGameMap();
+		//initializeCurrentGameMap();
 	}
 
 	private void populateMapPanel() throws IOException {
@@ -329,7 +329,7 @@ public class RiskStartGameController extends java.awt.Frame {
 		addButton = new JButton("Add Country");
 		addButton.setVisible(false);
 		finishButton = new JButton("Finish");
-		//finishButton.setVisible(false);
+		// finishButton.setVisible(false);
 		addContinent = new JButton("Add Continent");
 		continentDoneButton = new JButton("Done");
 		/**
@@ -435,14 +435,25 @@ public class RiskStartGameController extends java.awt.Frame {
 	public void initializeMapVariables() {
 		BufferedReader brEarthMapReader = new BufferedReader(new InputStreamReader(
 				RiskStartGameController.class.getResourceAsStream(Utility.getMapPath("BaseEarthMap.map"))));
+		BufferedReader brCurrentMapReader = new BufferedReader(new InputStreamReader(
+				RiskStartGameController.class.getResourceAsStream(Utility.getMapPath("CurrentGameMap.map"))));
+
 		String baseMapLine;
+		String currentMapLine;
+		sbBaseMapString = new StringBuilder();
+		sbCurrentMapString = new StringBuilder();
 		try {
-			while ((baseMapLine = brEarthMapReader.readLine()) != null) {
+			
+			while ((baseMapLine = brEarthMapReader.readLine()) != null)
 				sbBaseMapString.append(baseMapLine + "\n");
-			}
+
+			while ((currentMapLine = brCurrentMapReader.readLine()) != null)
+				sbCurrentMapString.append(currentMapLine + "\n");
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
 	}
 
 	/**
@@ -499,8 +510,7 @@ public class RiskStartGameController extends java.awt.Frame {
 			updateMapEditTextArea();
 			noteLabel.setText("");
 			notePanel.repaint();
-		}
-		else {
+		} else {
 			noteLabel.setText("Invalid Continent, choose from what was defined before.");
 			notePanel.repaint();
 		}
@@ -840,7 +850,6 @@ public class RiskStartGameController extends java.awt.Frame {
 	private JPanel scrollTextAreaPanel;
 	private JPanel notePanel;
 	private JLabel noteLabel;
-	private StringBuilder sbBaseMapString = new StringBuilder();
 	private JFrame generateMapFrame;
 	private StringBuilder sbAdjacentCountryInfo = new StringBuilder();
 	private static List<String> predefinedTerritoryCoordinatesList;
@@ -851,5 +860,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	private JButton continentDoneButton;
 	private StringBuilder sbMapTerritoryContents = new StringBuilder();
 	private StringBuilder sbMapContinentContents = new StringBuilder();
+	private StringBuilder sbBaseMapString = new StringBuilder();
+	private StringBuilder sbCurrentMapString = new StringBuilder();
 
 }
