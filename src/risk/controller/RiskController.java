@@ -84,8 +84,6 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		AttackButton.setVisible(false);
 	}
 
-
-
 	private void initializePhaseView(RiskGameModel risk) {
 
 		RiskStartupPhaseModel objStartupPhaseModelObservable = RiskStartupPhaseModel.getInstance();
@@ -262,7 +260,22 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	private void CardButtonMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_CardButtonMouseClicked
 		// risk.setState(RiskGameModel.TRADE_CARDS);
 		GenerateCardPanel();
+		toggleCardButtonsPanel();
 		jPanel1.repaint();
+	}
+
+	private Boolean toggleCardButtonsPanel() {
+		// TODO Auto-generated method stub
+		if (risk.getState() == RiskGameModel.REINFORCE || risk.getState() == RiskGameModel.START_TURN) {
+			cardStatusLabel.setText("");
+			statusPanel.repaint();
+			return true;
+
+		} else {
+			cardStatusLabel.setText("Card can be traded only during reinforcement.");
+			statusPanel.repaint();
+			return false;
+		}
 	}
 
 	public static void ShowGUI() {
@@ -331,7 +344,6 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			Utility.writeLog(name + " got bonus armies");
 		}
 
-		
 		if (risk.getState() == RiskGameModel.REINFORCE) {
 
 			name = risk.curPlayer.getName();
@@ -353,7 +365,6 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			statusLabel.setText("Recieved a bonus of " + risk.curPlayer.getNumberOfArmies());
 		}
 
-		
 		if (risk.getState() == RiskGameModel.ACTIVE_TURN) {
 			name = risk.curPlayer.getName();
 			statusLabel.setText("What would you like to do?");
@@ -362,10 +373,10 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			AttackButton.setText("Attack");
 
 			AttackButton.setVisible(true);
-//			if (risk.curPlayer.getCard().size() > 2)
-//				CardButton.setVisible(true);
-//			else
-//				CardButton.setVisible(false);
+			// if (risk.curPlayer.getCard().size() > 2)
+			// CardButton.setVisible(true);
+			// else
+			// CardButton.setVisible(false);
 			// risk.notifyPhaseViewChange();
 		}
 
@@ -508,7 +519,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 						statusLabel.setText("1 army moved to " + risk.dTerritory.getName());
 					else
 						statusLabel.setText(risk.defenseNum + " armies moved to " + risk.dTerritory.getName());
-					
+
 					risk.notifyPhaseViewChange();
 					risk.setAttackDieArray(null);
 					risk.setDefenceDieArray(null);
@@ -576,7 +587,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					risk.dTerritory.addArmies(risk.defenseNum);
 					risk.setState(RiskGameModel.ACTIVE_TURN);
 				} // end y
-			} // end x for movwe			
+			} // end x for movwe
 		} // ..fortify phase
 
 		if (risk.getState() == RiskGameModel.TRADE_CARDS) {
@@ -598,7 +609,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 	public void GenerateCardPanel() {
 		JFrame cardsFrame;
-		JPanel statusPanel, cardPanel, cardbuttonsPanel;
+		JPanel cardPanel, cardbuttonsPanel;
 		JButton OKButton;
 
 		lstTradedCards = new ArrayList<RiskCardModel>();
@@ -628,9 +639,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					if (jbn.isEnabled()) {
 						lstTradedCards.add(new RiskCardModel(Integer.valueOf(jbn.getName().split("-")[0]),
 								jbn.getName().split("-")[1]));
-						countTradeCards++;
 						jbn.setEnabled(false);
-						cardStatusLabel.setText(String.valueOf(countTradeCards));
+						cardStatusLabel.setText(String.valueOf(lstTradedCards.size()));
 					}
 
 					else {
@@ -641,7 +651,6 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 								if (card.card_type.equals(jbn.getName().split("-")[1])
 										&& card.territory == Integer.valueOf(jbn.getName().split("-")[0])) {
 									lstTradedCards.remove(card);
-									countTradeCards--;
 									break;
 								}
 							}
@@ -658,15 +667,9 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		OKButton = new JButton("OK");
 		cardbuttonsPanel.add(new Label(""));
 		cardbuttonsPanel.add(OKButton);
-		cardbuttonsPanel.setVisible(false);
-		
-		if(risk.getState() == risk.REINFORCE)
-			cardbuttonsPanel.setVisible(true);
-		
+
 		cardsFrame.add(cardbuttonsPanel, BorderLayout.SOUTH);
 
-		
-		
 		cardsFrame.pack();
 		cardsFrame.setVisible(true);
 
@@ -676,35 +679,40 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 				cardsOKButtonPressed();
 			}
 		});
-	  }
+	}
 
-	  
-	  private void cardsOKButtonPressed()
-	  {					  // Logic to add armies!
-			  if (isTradedCardSetValid())
-				  {
-				   if(doesCardMatchCurrentPlayerTerritory() > 0) // Even if we have two matching countries to cards we will only give him 2 more armies
-					   risk.curPlayer.addArmies(risk.fetchTradedArmiesCount() + 2);
-				   else
-					   risk.curPlayer.addArmies(risk.fetchTradedArmiesCount());				      
-				   cardStatusLabel.setText("Success");
-				   risk.setState(RiskGameModel.REINFORCE);		//allowing the player to set the armies after trading the card
-				   statusLabel.setText("You have " + risk.curPlayer.getNumberOfArmies() + " left to place");
-				   jPanel3.repaint();
-				  }
-	  }
-	  
-  
-	  
-	  
-	  public int doesCardMatchCurrentPlayerTerritory() {
-		int countMatchingCards = 0;  	
+	private void cardsOKButtonPressed() { // Logic to add armies!
+		int count;
+		if (toggleCardButtonsPanel())
+			if (isTradedCardSetValid()) {
+				if (doesCardMatchCurrentPlayerTerritory() > 0) 
+				{
+					count = 	risk.curPlayer.getArmiesRecivedByTradingCards()
+							+ RiskGameModel.fetchTradedArmiesCount() + 2;				
+					risk.curPlayer.setArmiesRecivedByTradingCards(count);
+					risk.curPlayer.addArmies(count);
+				} else {
+					count = risk.curPlayer.getArmiesRecivedByTradingCards()
+							+ RiskGameModel.fetchTradedArmiesCount();
+					risk.curPlayer.setArmiesRecivedByTradingCards(count);
+					risk.curPlayer.addArmies(count);
+				}
+				cardStatusLabel.setText("Success");
+				risk.setState(RiskGameModel.REINFORCE); // allowing the player
+				risk.notifyPhaseViewChange();	  		// to
+														// set the armies after
+														// trading the card
+				statusLabel.setText("You have " + risk.curPlayer.getNumberOfArmies() + " left to place");
+				jPanel3.repaint();
+			}
+	}
 
-		for(RiskCardModel card: risk.curPlayer.getCard())
-		{
-			for(RiskTerritoryModel territory: risk.curPlayer.getOccupiedTerritories())
-			{
-				if(territory.getId() == card.territory)
+	public int doesCardMatchCurrentPlayerTerritory() {
+		int countMatchingCards = 0;
+
+		for (RiskCardModel card : risk.curPlayer.getCard()) {
+			for (RiskTerritoryModel territory : risk.curPlayer.getOccupiedTerritories()) {
+				if (territory.getId() == card.territory)
 					countMatchingCards++;
 			}
 		}
@@ -723,9 +731,9 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	}
 
 	/**
-	 * This method checks if the TradeCardSet is valid or not i.e. if the number of
-	 * cards is 3, and then checks if all 3 are either the same or all three are of
-	 * different types or one of the three is a wild card
+	 * This method checks if the TradeCardSet is valid or not i.e. if the number
+	 * of cards is 3, and then checks if all 3 are either the same or all three
+	 * are of different types or one of the three is a wild card
 	 * 
 	 */
 	public Boolean isTradedCardSetValid() {
@@ -821,8 +829,10 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	private JLabel cardStatusLabel;
 	private RiskGameModel risk;
 	private JFrame jfmCard;
-	private JPanel jp;
+	private JPanel jp, statusPanel;
 	private int countTradeCards = 0;
 	private List<RiskCardModel> lstTradedCards = new ArrayList<RiskCardModel>();
-
+	public static Boolean isBaseMapEdited = false;
+	private JFrame cardsFrame;
+	private JPanel cardbuttonsPanel;
 }
