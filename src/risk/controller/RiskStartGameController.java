@@ -252,7 +252,7 @@ public class RiskStartGameController extends java.awt.Frame {
 
 		pack();
 
-		 initializeCurrentGameMap();
+		initializeCurrentGameMap();
 	}
 
 	/**
@@ -284,7 +284,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * Initialize current game map.
 	 */
 	private void initializeCurrentGameMap() {
-		try {	
+		try {
 			File currentGameMap = new File(Utility.getMapPathforFile("CurrentGameMap.map"));
 			BufferedWriter brCurrentMapModifier = new BufferedWriter(new FileWriter(currentGameMap, false));
 			brCurrentMapModifier.write("");
@@ -444,7 +444,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	}
 
 	private boolean validateContinent(String continent) {
-		return continent.trim().equals("")  ? false : true;
+		return continent.trim().equals("") ? false : true;
 	}
 
 	/**
@@ -537,12 +537,23 @@ public class RiskStartGameController extends java.awt.Frame {
 	 *            ActionEvent passed for the button click event.
 	 */
 	private void addButtonPressed(ActionEvent event) {
+		String updatedEditLineText = mapEditTextField.getText();
 		if (RiskStartGameController.predefinedTerritoryCoordinatesList.size() == 0) {
 			noteLabel.setText("Cannot add anymore country, max is 42 inclusing adjacents");
 			return;
 		}
 		if (validateContinentLineText(mapEditTextField.getText())) {
-			sbMapTerritoryContents.append(mapEditTextInsertCoordinates(mapEditTextField.getText()) + "\n");
+			updatedEditLineText = removePreviousDefinedAdjacents(updatedEditLineText);
+			sbMapTerritoryContents.append(mapEditTextInsertCoordinates(updatedEditLineText) + "\n");
+			
+//			if (!isCountryPreviousDefined(updatedEditLineText)) {
+//				updatedEditLineText = removePreviousDefinedAdjacents(updatedEditLineText);
+//				sbMapTerritoryContents.append(mapEditTextInsertCoordinates(updatedEditLineText) + "\n");
+//			} else {
+//				
+//				sbMapTerritoryContents.append(insertAdjacentCountriesInfo(updatedEditLineText)); 
+//			}
+
 			updateMapEditTextArea();
 			noteLabel.setText("");
 			notePanel.repaint();
@@ -551,6 +562,36 @@ public class RiskStartGameController extends java.awt.Frame {
 			notePanel.repaint();
 		}
 		mapEditTextField.setText("");
+	}
+
+	private Boolean isCountryPreviousDefined(String mapEditLineText) {
+		if (isTerritoryPreviousDefined(mapEditLineText.split(",")[0]))
+			return true;
+		else
+			return false;
+	}
+
+	private String removePreviousDefinedAdjacents(String mapEditLineText) {
+		String updatedEditLineText = "";
+		for (int index = 0; index < mapEditLineText.split(",").length; index++) {
+			if (index < 2)
+				updatedEditLineText = updatedEditLineText + mapEditLineText.split(",")[index] + ",";
+			else {
+				if (!isTerritoryPreviousDefined(mapEditLineText.split(",")[index])) {
+					updatedEditLineText += mapEditLineText.split(",")[index] + ",";
+				}
+			}
+		}
+		return updatedEditLineText.substring(0, updatedEditLineText.length() - 1);
+	}
+
+	private boolean isTerritoryPreviousDefined(String territory) {
+		int territoryIndex;
+		territoryIndex = mapEditTextArea.getText().indexOf(territory);
+		if (territoryIndex != -1)
+			return recursiveSearchCoordinates(mapEditTextArea.getText(), territory) == "" ? false : true;
+		else
+			return false;
 	}
 
 	/**

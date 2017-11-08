@@ -250,3 +250,18 @@ Player_1 entered attacking phase.
 Attack Phase entered
 Attack operation cancelled
 Fortify Phase entered
+-------------------------------------------------------
+application start
+-------------------------------------------------------
+application start
+-------------------------------------------------------
+application start
+-------------------------------------------------------
+application start
+-------------------------------------------------------
+application start
+-------------------------------------------------------
+application start
+-------------------------------------------------------
+application start
+All players Added

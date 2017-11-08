@@ -7,18 +7,17 @@ warn=yes
 
 
 [Continents]
-Asia=2
+india=4
 
 
 [Territories]
 
-India,47,76,Asia,AA,BB
-AA,155,70,Asia,India
-BB,334,38,Asia,India
+ok,47,76,india,aa,bb
+aa,155,70,india,ok
+bb,334,38,india,ok
 
-China,143,123,Asia,CC,DD
-CC,209,128,Asia,China
-DD,280,134,Asia,China
+pl,143,123,india,oo
+oo,209,128,india,pl
 
 
 ;;
