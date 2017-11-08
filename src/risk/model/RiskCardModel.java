@@ -1,12 +1,10 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package risk.model;
 
 /**
  * This class represents the model of Card used in Risk Game.
+ * 
+ * @author Team8
  */
 
 public class RiskCardModel {

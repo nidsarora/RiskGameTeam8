@@ -12,22 +12,52 @@ import risk.model.interfaces.PhaseViewInterface;
  */
 public final class Utility {
 
+	/**
+	 * Gets the image path.
+	 *
+	 * @param imageNameWithExtention the image name with extention
+	 * @return the image path
+	 */
 	public static String getImagePath(String imageNameWithExtention) {
 		return "/risk/resources/images/" + imageNameWithExtention;
 	}
 
+	/**
+	 * Gets the map path.
+	 *
+	 * @param mapNameWithExtension the map name with extension
+	 * @return the map path
+	 */
 	public static String getMapPath(String mapNameWithExtension) {
 		return "/risk/resources/map/" + mapNameWithExtension;
 	}
 
+	/**
+	 * Gets the map pathfor file.
+	 *
+	 * @param mapNameWithExtension the map name with extension
+	 * @return the map pathfor file
+	 */
 	public static String getMapPathforFile(String mapNameWithExtension) {
 		return "src/risk/resources/map/" + mapNameWithExtension;
 	}
 
+	/**
+	 * Gets the pathfor file.
+	 *
+	 * @param fileNameWithExtension the file name with extension
+	 * @return the pathfor file
+	 */
 	public static String getPathforFile(String fileNameWithExtension) {
 		return "src/risk/resources/" + fileNameWithExtension;
 	}
 
+	/**
+	 * Gets the phase informtion.
+	 *
+	 * @param IPhaseViewInterface the i phase view interface
+	 * @return the phase informtion
+	 */
 	public static String getPhaseInformtion(PhaseViewInterface IPhaseViewInterface) {
 		String objectType = (IPhaseViewInterface).getObjectType();
 		String phaseInformation;
@@ -56,6 +86,12 @@ public final class Utility {
 		return phaseInformation;
 	}
 	
+	/**
+	 * Gets the phase title.
+	 *
+	 * @param IPhaseViewInterface the i phase view interface
+	 * @return the phase title
+	 */
 	public static String getPhaseTitle(PhaseViewInterface IPhaseViewInterface)
 	{
 		String objectType = (IPhaseViewInterface).getObjectType();
@@ -84,6 +120,11 @@ public final class Utility {
 		return phaseTitle;
 	}
 
+	/**
+	 * Write log.
+	 *
+	 * @param text the text
+	 */
 	public static void writeLog(String text) {
 		try (FileWriter fw = new FileWriter("log\\log.txt", true);
 				BufferedWriter bw = new BufferedWriter(fw);

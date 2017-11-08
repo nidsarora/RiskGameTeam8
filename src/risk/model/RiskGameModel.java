@@ -31,6 +31,8 @@ import risk.view.RiskPlayerDominationViewObserver;
  * the phases of the game. It calculates and assigns the armies to the players
  * as per the territories occupied and the continents occupied.It also has the
  * logic for loading and parsing the map from the map file.
+ * 
+ * @author Team8
  */
 public class RiskGameModel {
 
@@ -52,6 +54,7 @@ public class RiskGameModel {
 	public static final int FORTIFY_PHASE = 14;
 	public static final int DEFEATED = 15;
 	public static int GAME_TRADE_CARD_PHASE_COUNT = 0;
+	public static final int END_GAME = 100;
 
 	int armies;
 
