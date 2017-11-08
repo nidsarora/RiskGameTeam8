@@ -6,17 +6,34 @@ import risk.helpers.Utility;
 import risk.model.RiskGameModel;
 import risk.model.interfaces.PhaseViewInterface;
 
+/**
+ * The Class RiskStartupPhaseModel.
+ */
 public class RiskStartupPhaseModel extends Observable implements PhaseViewInterface {
 
+	/** The title. */
 	private String title;
+	
+	/** The object type. */
 	private String objectType = "RiskStartupPhaseModel";
+	
+	/** The current risk game object. */
 	private RiskGameModel currentRiskGameObject;
 
+	/** The instance. */
 	private static RiskStartupPhaseModel instance = new RiskStartupPhaseModel();
 
+	/**
+	 * Instantiates a new risk startup phase model.
+	 */
 	private RiskStartupPhaseModel() {
 	}
 
+	/**
+	 * Gets the single instance of RiskStartupPhaseModel.
+	 *
+	 * @return single instance of RiskStartupPhaseModel
+	 */
 	public static RiskStartupPhaseModel getInstance() {
 		if (instance == null)
 			instance = new RiskStartupPhaseModel();
@@ -25,15 +42,12 @@ public class RiskStartupPhaseModel extends Observable implements PhaseViewInterf
 
 	@Override
 	public String getContent() {
-		// TODO Auto-generated method stub
 		return this.toString();
 	}
 
 	@Override
 	public void isChanged() {
-		// specify that my state was changed
 		setChanged();
-		// notify all attached Observers of a change
 		notifyObservers(this);
 	}
 
@@ -41,6 +55,11 @@ public class RiskStartupPhaseModel extends Observable implements PhaseViewInterf
 		return Utility.getPhaseTitle(this);
 	}
 
+	/**
+	 * Sets the title.
+	 *
+	 * @param title the new title
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
@@ -49,6 +68,11 @@ public class RiskStartupPhaseModel extends Observable implements PhaseViewInterf
 		return Utility.getPhaseInformtion(this);
 	}
 
+	/**
+	 * Gets the number of armies per players.
+	 *
+	 * @return the number of armies per players
+	 */
 	private int getNumberOfArmiesPerPlayers() {
 		try {
 			return currentRiskGameObject.curPlayer.getNumberOfArmies();
@@ -57,6 +81,11 @@ public class RiskStartupPhaseModel extends Observable implements PhaseViewInterf
 		}
 	}
 
+	/**
+	 * Gets the number of players.
+	 *
+	 * @return the number of players
+	 */
 	private int getNumberOfPlayers() {
 		try {
 			return currentRiskGameObject.getPlayers().size();
@@ -65,6 +94,11 @@ public class RiskStartupPhaseModel extends Observable implements PhaseViewInterf
 		}
 	}
 
+	/**
+	 * Gets the current risk game object.
+	 *
+	 * @return the current risk game object
+	 */
 	public RiskGameModel getCurrentRiskGameObject() {
 		return currentRiskGameObject;
 	}

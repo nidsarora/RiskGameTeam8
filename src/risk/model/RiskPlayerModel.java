@@ -16,8 +16,16 @@ public class RiskPlayerModel extends Observable {
 	private Vector<RiskTerritoryModel> occupiedTerritories;
 	private Vector<RiskCardModel> cards;
 	private int armies;
+	
+	/** The armies received by trading cards. */
 	private int armiesRecivedByTradingCards; 
 
+	/**
+	 * Instantiates a new risk player model.
+	 *
+	 * @param playername, player name
+	 * @param playerindex, player index
+	 */
 	public RiskPlayerModel(String playername, int playerindex) {
 		name = playername;
 		index = playerindex;
@@ -25,79 +33,151 @@ public class RiskPlayerModel extends Observable {
 		cards = new Vector<RiskCardModel>();
 	}
 
+	/**
+	 * Instantiates a new risk player model.
+	 */
 	public RiskPlayerModel() {
 		// TODO Auto-generated constructor stub
 	}
 
+	/**
+	 * Gets the player index.
+	 *
+	 * @return the player index
+	 */
 	public int getPlayerIndex() {
 		return index;
 	}
 
+	/**
+	 * Gets the name.
+	 *
+	 * @return the name
+	 */
 	public String getName() {
 		return name;
 	}
 
+	/**
+	 * Gets the number of armies.
+	 *
+	 * @return the number of armies
+	 */
 	public int getNumberOfArmies() {
 		return armies;
 	}
 
+	/**
+	 * Checks if is changed.
+	 */
 	public void isChanged() {
 		setChanged();
 		notifyObservers(this);
 	}
 
+	/**
+	 * Gets the occupied territories.
+	 *
+	 * @return the occupied territories
+	 */
 	public Vector<RiskTerritoryModel> getOccupiedTerritories() {
 		return occupiedTerritories;
 	}
 
+	/**
+	 * Sets the occupied territories.
+	 *
+	 * @param riskterritorymodel the new occupied territories
+	 */
 	public void setOccupiedTerritories(Vector<RiskTerritoryModel> riskterritorymodel) {
 		occupiedTerritories = riskterritorymodel;
 		isChanged();
 	}
 
+	/**
+	 * Number of territories.
+	 *
+	 */
 	public int numOfTerritories() {
 		if (occupiedTerritories == null)
 			return 0;
 		return occupiedTerritories.size();
 	}
 
+	/**
+	 * Occupy territory.
+	 */
 	public void occupyTerritory(RiskTerritoryModel riskterritorymodel) {
 		if (!occupiedTerritories.contains(riskterritorymodel))
 			occupiedTerritories.add(riskterritorymodel);
 		isChanged();
 	}
 
+	/**
+	 * Loose territory.
+	 *
+	 */
 	public void looseTerritory(RiskTerritoryModel riskterritorymodel) {
 		occupiedTerritories.remove(riskterritorymodel);
 		occupiedTerritories.trimToSize();
 		isChanged();
 	}
 
+	/**
+	 * Sets the card.
+	 *
+	 */
 	public void setCard(RiskCardModel riskcardmodel) {
 		cards.add(riskcardmodel);
 		isChanged();
 	}
 
+	/**
+	 * Gets the card.
+	 *
+	 * @return the card
+	 */
 	public Vector<RiskCardModel> getCard() {
 		return cards;
 	}
 
+	/**
+	 * Adds the armies.
+	 *
+	 * @param army the army
+	 */
 	public void addArmies(int army) {
 		armies += army;
 	}
 
+	/**
+	 * Adds the army.
+	 */
 	public void addArmy() {
 		armies++;
 	}
 
+	/**
+	 * Loose armies.
+	 *
+	 * @param army the army
+	 */
 	public void looseArmies(int army) {
 		armies -= army;
 	}
 
+	/**
+	 * Loose army.
+	 */
 	public void looseArmy() {
 		armies--;
 	}
 
+	/**
+	 * Gets the card exchange view content.
+	 *
+	 * @return the card exchange view content
+	 */
 	public String getCardExchangeViewContent() {
 		StringBuilder sbCardExchangeViewContent = new StringBuilder();
 		sbCardExchangeViewContent.append("*************The Card Exchange View************\n");
@@ -126,6 +206,11 @@ public class RiskPlayerModel extends Observable {
 		return sbCardExchangeViewContent.toString();
 	}
 
+	/**
+	 * Gets the player domination view content.
+	 *
+	 * @return the player domination view content
+	 */
 	public String getPlayerDominationViewContent() {
 		StringBuilder sbPlayerDominationViewContent = new StringBuilder();
 		sbPlayerDominationViewContent.append("**********Player Domination View**********\n");
@@ -150,10 +235,20 @@ public class RiskPlayerModel extends Observable {
 		return sbPlayerDominationViewContent.toString();
 	}
 
+	/**
+	 * Gets the armies received by trading cards.
+	 *
+	 * @return the armies received by trading cards
+	 */
 	public int getArmiesRecivedByTradingCards() {
 		return armiesRecivedByTradingCards;
 	}
 
+	/**
+	 * Sets the armies received by trading cards.
+	 *
+	 * @param armiesRecivedByTradingCards, the new armies received by trading cards
+	 */
 	public void setArmiesRecivedByTradingCards(int armiesRecivedByTradingCards) {
 		this.armiesRecivedByTradingCards = armiesRecivedByTradingCards;
 	}

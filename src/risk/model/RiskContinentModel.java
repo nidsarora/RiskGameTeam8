@@ -4,6 +4,8 @@ import java.util.Vector;
 
 /**
  * This class represents the model class of the Continent.
+ * 
+ * @author Team8
  */
 public class RiskContinentModel {
 
@@ -16,8 +18,8 @@ public class RiskContinentModel {
 	 * Instantiates a new risk continent model.
 	 *
 	 * @param nm, the continent name
-	 * @param t,
-	 * @param v,
+	 * @param t, territory 
+	 * @param v, 
 	 */
 	public RiskContinentModel(String nm, Vector<Integer> t, int v) {
 		name = nm;
@@ -53,7 +55,7 @@ public class RiskContinentModel {
 	}
 
 	/**
-	 * Checks if is territory of.
+	 * Checks if is territory of the continent.
 	 *
 	 * @param territorymodel the territorymodel
 	 * @return true, if is territory of

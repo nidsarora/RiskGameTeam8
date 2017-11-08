@@ -471,7 +471,14 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					Utility.writeLog(risk.getCurrentPlayer().getName() + " has " + attackArmies + " armies");
 					Utility.writeLog(risk.getCurrentPlayer().getName() + " attacking with " + numofatt + " armies");
 				}
-
+				if (risk.territories.size() == risk.getCurrentPlayer().getOccupiedTerritories().size()) {
+					risk.setState(RiskGameModel.GAME_OVER);
+					AttackButton.setVisible(false);
+					EndButton.setVisible(false);
+					FortifyButton.setVisible(false);
+					statusLabel.setText(risk.getCurrentPlayer().getName() + " has wont the game.");
+					Utility.writeLog(risk.getCurrentPlayer().getName() + " has wont the game.");
+				}
 			} // end attackers turn
 
 			// If defenders turn
@@ -733,15 +740,13 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		int count;
 		if (toggleCardButtonsPanel())
 			if (isTradedCardSetValid()) {
-				if (doesCardMatchCurrentPlayerTerritory() > 0) 
-				{
-					count = 	risk.curPlayer.getArmiesRecivedByTradingCards()
-							+ RiskGameModel.fetchTradedArmiesCount() + 2;				
+				if (doesCardMatchCurrentPlayerTerritory() > 0) {
+					count = risk.curPlayer.getArmiesRecivedByTradingCards() + RiskGameModel.fetchTradedArmiesCount()
+							+ 2;
 					risk.curPlayer.setArmiesRecivedByTradingCards(count);
 					risk.curPlayer.addArmies(count);
 				} else {
-					count = risk.curPlayer.getArmiesRecivedByTradingCards()
-							+ RiskGameModel.fetchTradedArmiesCount();
+					count = risk.curPlayer.getArmiesRecivedByTradingCards() + RiskGameModel.fetchTradedArmiesCount();
 					risk.curPlayer.setArmiesRecivedByTradingCards(count);
 					risk.curPlayer.addArmies(count);
 				}

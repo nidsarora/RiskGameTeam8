@@ -6,16 +6,34 @@ import risk.helpers.Utility;
 import risk.model.RiskGameModel;
 import risk.model.interfaces.PhaseViewInterface;
 
+/**
+ * The Class RiskStartupEndPhaseModel.
+ */
 public class RiskStartupEndPhaseModel extends Observable implements PhaseViewInterface {
+	
+	/** The title. */
 	private String title;
+	
+	/** The object type. */
 	private String objectType = "RiskAttackStartupEndPhaseModel";
+	
+	/** The current risk game object. */
 	private RiskGameModel currentRiskGameObject;
 
+	/** The instance. */
 	private static RiskStartupEndPhaseModel instance = new RiskStartupEndPhaseModel();
 
+	/**
+	 * Instantiates a new risk startup end phase model.
+	 */
 	private RiskStartupEndPhaseModel() {
 	}
 
+	/**
+	 * Gets the single instance of RiskStartupEndPhaseModel.
+	 *
+	 * @return single instance of RiskStartupEndPhaseModel
+	 */
 	public static RiskStartupEndPhaseModel getInstance() {
 		if (instance == null)
 			instance = new RiskStartupEndPhaseModel();
@@ -40,6 +58,10 @@ public class RiskStartupEndPhaseModel extends Observable implements PhaseViewInt
 		return Utility.getPhaseTitle(this);
 	}
 
+	/**
+	 * Sets the title.
+	 *
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
@@ -48,6 +70,11 @@ public class RiskStartupEndPhaseModel extends Observable implements PhaseViewInt
 		return Utility.getPhaseInformtion(this);
 	}
 
+	/**
+	 * Gets the current risk game object.
+	 *
+	 * @return the current risk game object
+	 */
 	public RiskGameModel getCurrentRiskGameObject() {
 		return currentRiskGameObject;
 	}
