@@ -52,11 +52,3 @@ Mon Nov 06 20:23:13 EST 2017:riskgame cards are added for player.
 Mon Nov 06 20:23:13 EST 2017:15 armies added to each player
 Mon Nov 06 20:23:14 EST 2017:Build the Game Panel
 Mon Nov 06 20:23:16 EST 2017:initial reinforcement stage
-Wed Nov 08 12:48:08 EST 2017:-------------------------------------------------------
-Wed Nov 08 12:48:08 EST 2017:application start
--------------------------------------------------------
-application start
-All players Added
--------------------------------------------------------
-application start
-All players Added

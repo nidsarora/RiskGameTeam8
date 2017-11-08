@@ -81,16 +81,11 @@ public class RiskStartupPhaseModel extends Observable implements PhaseViewInterf
 	@Override
 	public String toString() {
 		StringBuilder sbContentBuilder = new StringBuilder();
-		if (this.getCurrentRiskGameObject().getIsGameMapValid()) {
-			sbContentBuilder.append("************" + this.getTitle() + "************\n");
-			sbContentBuilder.append(this.getPhaseInformation() + "\n");
-			sbContentBuilder.append("Statistics:\n\n");
-			sbContentBuilder.append("Number of players:" + this.getNumberOfPlayers() + "\n");
-			sbContentBuilder
-					.append("Number of armies per player:" + this.getCurrentRiskGameObject().getArmies() + "\n");
-		} else {
-			sbContentBuilder.append("********INVALID MAP FILE*******");
-		}
+		sbContentBuilder.append("************" + this.getTitle() + "************\n");
+		sbContentBuilder.append(this.getPhaseInformation() + "\n");
+		sbContentBuilder.append("Statistics:\n\n");
+		sbContentBuilder.append("Number of players:" + this.getNumberOfPlayers() + "\n");
+		sbContentBuilder.append("Number of armies per player:" + this.getCurrentRiskGameObject().getArmies() + "\n");
 		return sbContentBuilder.toString();
 	}
 }
