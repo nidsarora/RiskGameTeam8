@@ -1,0 +1,24 @@
+[Map]
+author=Brigham Judd
+image=Earth.bmp
+wrap=yes
+scroll=horizontal
+warn=yes
+
+
+[Continents]
+Asia=2
+
+
+[Territories]
+
+India,47,76,Asia,AA,BB
+AA,155,70,Asia,India
+BB,334,38,Asia,India
+
+China,143,123,Asia,CC,DD
+CC,209,128,Asia,China
+DD,280,134,Asia,China
+
+
+;;
