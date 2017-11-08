@@ -52,3 +52,30 @@ Mon Nov 06 20:23:13 EST 2017:riskgame cards are added for player.
 Mon Nov 06 20:23:13 EST 2017:15 armies added to each player
 Mon Nov 06 20:23:14 EST 2017:Build the Game Panel
 Mon Nov 06 20:23:16 EST 2017:initial reinforcement stage
+-------------------------------------------------------
+application start
+All players Added
+Build the Game Panel
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+Player_1 got bonus armies
+Player_1 got4 left to place
+Player_1 got3 left to place
+Player_1 got2 left to place
+Player_1 got1 left to place
+Player_1 got0 left to place
+Player_1 entered active turn
+-------------------------------------------------------
+application start
+All players Added
+Build the Game Panel
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+Player_1 got bonus armies
+Player_1 got4 left to place

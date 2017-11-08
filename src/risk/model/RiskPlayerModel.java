@@ -4,7 +4,7 @@ import java.util.Observable;
 import java.util.Vector;
 
 /**
- * This class represents the model class of the Player. Player has a name,
+ * This class represents the model class of the Player. Player has army name,
  * index, territories he occupies, and cards that he owns.
  * 
  * @author Team8
@@ -18,9 +18,9 @@ public class RiskPlayerModel extends Observable {
 	private int armies;
 	private int armiesRecivedByTradingCards; 
 
-	public RiskPlayerModel(String nm, int i) {
-		name = nm;
-		index = i;
+	public RiskPlayerModel(String playername, int playerindex) {
+		name = playername;
+		index = playerindex;
 		occupiedTerritories = new Vector<RiskTerritoryModel>();
 		cards = new Vector<RiskCardModel>();
 	}
@@ -50,8 +50,8 @@ public class RiskPlayerModel extends Observable {
 		return occupiedTerritories;
 	}
 
-	public void setOccupiedTerritories(Vector<RiskTerritoryModel> rtm) {
-		occupiedTerritories = rtm;
+	public void setOccupiedTerritories(Vector<RiskTerritoryModel> riskterritorymodel) {
+		occupiedTerritories = riskterritorymodel;
 		isChanged();
 	}
 
@@ -61,20 +61,20 @@ public class RiskPlayerModel extends Observable {
 		return occupiedTerritories.size();
 	}
 
-	public void occupyTerritory(RiskTerritoryModel t) {
-		if (!occupiedTerritories.contains(t))
-			occupiedTerritories.add(t);
+	public void occupyTerritory(RiskTerritoryModel riskterritorymodel) {
+		if (!occupiedTerritories.contains(riskterritorymodel))
+			occupiedTerritories.add(riskterritorymodel);
 		isChanged();
 	}
 
-	public void looseTerritory(RiskTerritoryModel t) {
-		occupiedTerritories.remove(t);
+	public void looseTerritory(RiskTerritoryModel riskterritorymodel) {
+		occupiedTerritories.remove(riskterritorymodel);
 		occupiedTerritories.trimToSize();
 		isChanged();
 	}
 
-	public void setCard(RiskCardModel c) {
-		cards.add(c);
+	public void setCard(RiskCardModel riskcardmodel) {
+		cards.add(riskcardmodel);
 		isChanged();
 	}
 
@@ -82,16 +82,16 @@ public class RiskPlayerModel extends Observable {
 		return cards;
 	}
 
-	public void addArmies(int a) {
-		armies += a;
+	public void addArmies(int army) {
+		armies += army;
 	}
 
 	public void addArmy() {
 		armies++;
 	}
 
-	public void looseArmies(int a) {
-		armies -= a;
+	public void looseArmies(int army) {
+		armies -= army;
 	}
 
 	public void looseArmy() {

@@ -3,54 +3,89 @@ package risk.model;
 import java.util.Vector;
 
 /**
- *This class represents the model class of the Continent
+ * This class represents the model class of the Continent.
  */
 public class RiskContinentModel {
 
 	private String name;
 	private Vector<Integer> territories;
 	private int value;
-	RiskTerritoryModel t;
+	RiskTerritoryModel territorymodel;
 
+	/**
+	 * Instantiates a new risk continent model.
+	 *
+	 * @param nm, the continent name
+	 * @param t,
+	 * @param v,
+	 */
 	public RiskContinentModel(String nm, Vector<Integer> t, int v) {
 		name = nm;
 		value = v;
 		territories = t;
 	}
 
+	/**
+	 * Gets the continent name.
+	 *
+	 * @return the continent name
+	 */
 	public String getName() {
 		return name;
 	}
 
+	/**
+	 * Gets the territories.
+	 *
+	 * @return the territories
+	 */
 	public Vector<Integer> getTerritories() {
 		return territories;
 	}
 
+	/**
+	 * Gets the value.
+	 *
+	 * @return the value
+	 */
 	public int getValue() {
 		return value;
 	}
 
-	public boolean isTerritoryOf(RiskTerritoryModel t) {
-		return (territories.contains(t.getId()));
+	/**
+	 * Checks if is territory of.
+	 *
+	 * @param territorymodel the territorymodel
+	 * @return true, if is territory of
+	 */
+	public boolean isTerritoryOf(RiskTerritoryModel territorymodel) {
+		return (territories.contains(territorymodel.getId()));
 	}
 
-	public void AddTerritories(Integer i)
-	{
-		territories.add(i);
-	}
 	/**
-	 *This method finds if the continent has been captured or not.
+	 * Adds the territories.
+	 */
+	public void AddTerritories(Integer intvalue)
+	{
+		territories.add(intvalue);
+	}
+	
+	/**
+	 * This method finds if the continent has been captured or not.
+	 *
+	 * @param p, risk player
+	 * @return true, if is continent captured
 	 */
 	public boolean isContinentCaptured(RiskPlayerModel p) {
-		Vector<Integer> t1 = new Vector<Integer>();
-		Vector<RiskTerritoryModel> t2 = p.getOccupiedTerritories();
+		Vector<Integer> vectorintegers = new Vector<Integer>();
+		Vector<RiskTerritoryModel> territorymodel= p.getOccupiedTerritories();
                 
 	        if (territories.size() == 0)
 	             return false;
-		for (int c = 0; c < t2.size(); c++)
-			t1.add(t2.elementAt(c).getId());
-		for (int i = 0; i < territories.size(); i++) {
-			if (!t1.contains(territories.elementAt(i)))
+		for (int c_index = 0; c_index < territorymodel.size(); c_index++)
+			vectorintegers.add(territorymodel.elementAt(c_index).getId());
+		for (int index = 0; index < territories.size(); index++) {
+			if (!vectorintegers.contains(territories.elementAt(index)))
 				return false;
 		}
 		return true;

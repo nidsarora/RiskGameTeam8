@@ -179,17 +179,17 @@ public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterf
 		sbContentBuilder.append(""
 
 				+ ((this.objCurrentRiskGameObject.aTerritory != null
-						&& this.objCurrentRiskGameObject.dTerritory != null)
+						&& this.objCurrentRiskGameObject.defenseTerritory != null)
 								? "Fortification from territory: " + objCurrentRiskGameObject.aTerritory.getName()
-										+ " to " + objCurrentRiskGameObject.dTerritory.getName() + "\n"
+										+ " to " + objCurrentRiskGameObject.defenseTerritory.getName() + "\n"
 								: ""));
 		// }
 		if (this.objCurrentRiskGameObject.getState() == this.objCurrentRiskGameObject.FORTIFY_PHASE
 				&& ((this.objCurrentRiskGameObject.aTerritory != null
-						&& this.objCurrentRiskGameObject.dTerritory != null))) {
+						&& this.objCurrentRiskGameObject.defenseTerritory != null))) {
 			sbContentBuilder.append("So " + this.objCurrentRiskGameObject.defenseNum + " armies moved from "
 					+ this.objCurrentRiskGameObject.aTerritory.getName() + " to "
-					+ this.objCurrentRiskGameObject.dTerritory.getName() + ".\n");
+					+ this.objCurrentRiskGameObject.defenseTerritory.getName() + ".\n");
 		}
 		return sbContentBuilder.toString();
 	}

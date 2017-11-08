@@ -30,7 +30,7 @@ import java.awt.event.ActionEvent;
 
 /**
  * This class is used to add RiskPlayers to the game.
- * @author cube
+ * @author Team8
  */
 public class RiskAddPlayerController extends java.awt.Frame {
 

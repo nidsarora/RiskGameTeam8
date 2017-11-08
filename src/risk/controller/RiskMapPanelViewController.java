@@ -29,6 +29,9 @@ public class RiskMapPanelViewController extends JPanel {
 	private Image shield;
 	public int armies;
 
+	/**
+	 * Instantiates a new risk map panel view controller.
+	 */
 	public RiskMapPanelViewController() {
 
 		try {
@@ -36,48 +39,63 @@ public class RiskMapPanelViewController extends JPanel {
 			this.army = ImageIO.read(getClass().getResourceAsStream(Utility.getImagePath("army.gif")));
 			this.shield = ImageIO.read(getClass().getResourceAsStream(Utility.getImagePath("shield.gif")));
 			map = map.getScaledInstance(1000, 550, Image.SCALE_SMOOTH);
-		} catch (Exception e) {
-			throw new RuntimeException(e);
+		} catch (Exception exception) {
+			throw new RuntimeException(exception);
 		}
 	}
 
-	public RiskMapPanelViewController(RiskGameModel r) {
+	/**
+	 * Instantiates a new risk map panel view controller.
+	 */
+	public RiskMapPanelViewController(RiskGameModel riskgamemodel) {
 		this();
-		risk = r;
+		risk = riskgamemodel;
 	}
 
+	/**
+	 * Refresh.
+	 */
 	public void refresh() {
 		repaint();
 	}
 
+	/**
+	 * Select country by color.
+	 *
+	 * @param x, x-coordinate
+	 * @param y, y-coordinate
+	 */
 	public void selectCountrybyColor(int x, int y) {
 
 	}
 
+	/* (non-Javadoc)
+	 * @see javax.swing.JComponent#paintComponent(java.awt.Graphics)
+	 */
 	@Override
-	public void paintComponent(Graphics g) {
+	public void paintComponent(Graphics graphics) {
 		int playerIndex;
 		int loc[] = new int[2];
 		int align;
 		String armies = "";
 		int state = risk.getState();
 
-		super.paintComponents(g);
-		g.drawImage(map, 0, 0, null);
-		g.setColor(Color.white);
+		super.paintComponents(graphics);
+		graphics.drawImage(map, 0, 0, null);
+		graphics.setColor(Color.white);
 
-		int i = risk.numOfTerroitories();
-		for (int c = 0; c < i; c++) {
-			loc = risk.drawMap(c);
-			g.drawArc(loc[0], loc[1], 30, 30, 0, 360);
+		int numTerritories = risk.numOfTerroitories();
+		for (int cindex = 0; cindex < numTerritories; cindex++) {
+			loc = risk.drawMap(cindex);
+			graphics.drawArc(loc[0], loc[1], 30, 30, 0, 360);
 		}
-		if(i > 0)
-		drawConnectAdjacentCountries(g);
+		if(numTerritories > 0)
+		drawConnectAdjacentCountries(graphics);
 
-		for (int c = 0; c < i; c++) {
-			playerIndex = risk.getOwnership(c);
+		for (int cindex = 0; cindex < numTerritories; cindex++) {
+			playerIndex = risk.getOwnership(cindex);
 			RiskPlayerModel p = risk.getCurrentPlayer();
-			int num = risk.numOfArmiesOnTerritory(c);
+			int num = risk.numOfArmiesOnTerritory(cindex);
 			if (num > 9)
 				align = -3;
 			else
@@ -87,65 +105,62 @@ public class RiskMapPanelViewController extends JPanel {
 				armies = "";
 			// System.out.println(playerIndex + " index = " + c); //Debugging
 			if (playerIndex == 0)
-				g.setColor(Color.red);
+				graphics.setColor(Color.red);
 			if (playerIndex == 1)
-				g.setColor(Color.blue);
+				graphics.setColor(Color.blue);
 			if (playerIndex == 2)
-				g.setColor(Color.yellow);
+				graphics.setColor(Color.yellow);
 			if (playerIndex == 3)
-				g.setColor(Color.green);
+				graphics.setColor(Color.green);
 			if (playerIndex == 4)
-				g.setColor(Color.pink);
+				graphics.setColor(Color.pink);
 			if (playerIndex == 5)
-				g.setColor(Color.orange);
+				graphics.setColor(Color.orange);
 			if (playerIndex == -1)
-				g.setColor(Color.white);
+				graphics.setColor(Color.white);
 
-			loc = risk.fillDrawMap(c, playerIndex);
-			g.fillArc(loc[0], loc[1], 30, 30, 0, 360);
-			g.setColor(Color.white);
-			g.drawString(armies, loc[0] + 10 + align, loc[1] + 20);
+			loc = risk.fillDrawMap(cindex, playerIndex);
+			graphics.fillArc(loc[0], loc[1], 30, 30, 0, 360);
+			graphics.setColor(Color.white);
+			graphics.drawString(armies, loc[0] + 10 + align, loc[1] + 20);
 
 		} // end draw cilcles and armies
 		/**
 		 * 
 		 * Attack Window is here
 		 * 
-		 * 
 		 */
 		 
-		String s = "";
+		String game_state = "";
 		if (state == 0)
-			s = "New Game";
+			game_state = "New Game";
 		if (state == 1)
-			s = "Initial Reinforce";
+			game_state = "Initial Reinforce";
 		if (state == 2)
-			s = "Active Game";
+			game_state = "Active Game";
 		if (state == 3)
-			s = "Turn Bonus";
+			game_state = "Turn Bonus";
 		if (state == 4)
-			s = "Reinforce";
+			game_state = "Reinforce";
 		if (state == 5)
-			s = "Trade Cards";
+			game_state = "Trade Cards";
 		if (state == 6)
-			s = "Start turn";
+			game_state = "Start turn";
 		if (state == 7)
-			s = "Attack";
+			game_state = "Attack";
 		if (state == 8)
-			s = "Attacking";
+			game_state = "Attacking";
 		if (state == 9)
-			s = "Attack_Phase";
+			game_state = "Attack_Phase";
 		if (state == 10)
-			s = "Battling";
+			game_state = "Battling";
 		if (state == 11)
-			s = "Capture";
+			game_state = "Capture";
 
-		g.drawString("Current State: " + s, 10, 10);
+		graphics.drawString("Current State: " + game_state, 10, 10);
 
 		/**
-		 *
 		 * Capture
-		 *
 		 *
 		 */
 
@@ -158,36 +173,36 @@ public class RiskMapPanelViewController extends JPanel {
 				risk.defenseNum = min;
 			// risk.defenseNum Store the armies to move here in RiskUI
 
-			g.setColor(Color.white);
+			graphics.setColor(Color.white);
 			Font h2 = new Font("Arial", Font.BOLD, 36);
 			Font h3 = new Font("Arial", Font.BOLD, 20);
-			g.fillRect(250, 100, 500, 300);// Draw main window
+			graphics.fillRect(250, 100, 500, 300);// Draw main window
 
-			g.setColor(Color.black);
-			g.drawString("How many armies to move?", 430, 200);
+			graphics.setColor(Color.black);
+			graphics.drawString("How many armies to move?", 430, 200);
 
-			g.setFont(h2);
-			g.setColor(Color.red);
-			g.drawString("Occupy RiskTerritory", 360, 160);
-			g.drawString(Integer.toString(risk.defenseNum), 490, 305); // ARMIES
+			graphics.setFont(h2);
+			graphics.setColor(Color.red);
+			graphics.drawString("Occupy RiskTerritory", 360, 160);
+			graphics.drawString(Integer.toString(risk.defenseNum), 490, 305); // ARMIES
 
-			g.drawRect(600, 230, 50, 27); // max
-			g.drawRect(520, 230, 50, 27); // inc
-			g.drawRect(440, 230, 50, 27); // dec
-			g.drawRect(360, 230, 50, 27); // min
+			graphics.drawRect(600, 230, 50, 27); // max
+			graphics.drawRect(520, 230, 50, 27); // inc
+			graphics.drawRect(440, 230, 50, 27); // dec
+			graphics.drawRect(360, 230, 50, 27); // min
 
-			g.setFont(new Font("Arial", Font.BOLD, 26));
-			g.drawString("MOVE", 465, 350);
+			graphics.setFont(new Font("Arial", Font.BOLD, 26));
+			graphics.drawString("MOVE", 465, 350);
 
-			g.setFont(h3);
-			g.setColor(Color.black);
+			graphics.setFont(h3);
+			graphics.setColor(Color.black);
 
-			g.drawRect(460, 325, 85, 30); // move box
+			graphics.drawRect(460, 325, 85, 30); // move box
 
-			g.drawString("MAX", 605, 250);
-			g.drawString("INC", 528, 250);
-			g.drawString("DEC", 445, 250);
-			g.drawString("MIN", 365, 250);
+			graphics.drawString("MAX", 605, 250);
+			graphics.drawString("INC", 528, 250);
+			graphics.drawString("DEC", 445, 250);
+			graphics.drawString("MIN", 365, 250);
 		} // end capture
 
 		/**
@@ -203,36 +218,36 @@ public class RiskMapPanelViewController extends JPanel {
 
 			// risk.defenseNum Store the armies to move here in RiskUI
 
-			g.setColor(Color.white);
-			Font h2 = new Font("Arial", Font.BOLD, 36);
-			Font h3 = new Font("Arial", Font.BOLD, 20);
-			g.fillRect(250, 100, 500, 300);// Draw main window
+			graphics.setColor(Color.white);
+			Font font2 = new Font("Arial", Font.BOLD, 36);
+			Font font3 = new Font("Arial", Font.BOLD, 20);
+			graphics.fillRect(250, 100, 500, 300);// Draw main window
 
-			g.setColor(Color.black);
-			g.drawString("How many armies to move?", 430, 200);
+			graphics.setColor(Color.black);
+			graphics.drawString("How many armies to move?", 430, 200);
 
-			g.setFont(h2);
-			g.setColor(Color.red);
-			g.drawString("Fortify RiskTerritory", 360, 160);
-			g.drawString(Integer.toString(risk.defenseNum), 490, 305); // ARMIES
+			graphics.setFont(font2);
+			graphics.setColor(Color.red);
+			graphics.drawString("Fortify RiskTerritory", 360, 160);
+			graphics.drawString(Integer.toString(risk.defenseNum), 490, 305); // ARMIES
 
-			g.drawRect(600, 230, 50, 27); // max
-			g.drawRect(520, 230, 50, 27); // inc
-			g.drawRect(440, 230, 50, 27); // dec
-			g.drawRect(360, 230, 50, 27); // min
+			graphics.drawRect(600, 230, 50, 27); // max
+			graphics.drawRect(520, 230, 50, 27); // inc
+			graphics.drawRect(440, 230, 50, 27); // dec
+			graphics.drawRect(360, 230, 50, 27); // min
 
-			g.setFont(new Font("Arial", Font.BOLD, 26));
-			g.drawString("MOVE", 465, 350);
+			graphics.setFont(new Font("Arial", Font.BOLD, 26));
+			graphics.drawString("MOVE", 465, 350);
 
-			g.setFont(h3);
-			g.setColor(Color.black);
+			graphics.setFont(font3);
+			graphics.setColor(Color.black);
 
-			g.drawRect(460, 325, 85, 30); // move box
+			graphics.drawRect(460, 325, 85, 30); // move box
 
-			g.drawString("MAX", 605, 250);
-			g.drawString("INC", 528, 250);
-			g.drawString("DEC", 445, 250);
-			g.drawString("MIN", 365, 250);
+			graphics.drawString("MAX", 605, 250);
+			graphics.drawString("INC", 528, 250);
+			graphics.drawString("DEC", 445, 250);
+			graphics.drawString("MIN", 365, 250);
 		} // end capture
 
 		/**
@@ -244,115 +259,112 @@ public class RiskMapPanelViewController extends JPanel {
 		if (state == RiskGameModel.TRADE_CARDS) {
 			int num = risk.curPlayer.getCard().size();
 			Vector<RiskCardModel> hand = risk.curPlayer.getCard();
-			g.setColor(Color.white);
-			g.fillRect(250, 100, 500, 300);// Draw main window
+			graphics.setColor(Color.white);
+			graphics.fillRect(250, 100, 500, 300);// Draw main window
 
-			g.setColor(Color.black);
+			graphics.setColor(Color.black);
 			Font names = new Font("Arial", Font.BOLD, 36);
 			Font f1 = new Font("Arial", Font.BOLD, 15);
-			g.setFont(names);
+			graphics.setFont(names);
 
-			g.drawString("Trade Cards", 400, 160);
+			graphics.drawString("Trade Cards", 400, 160);
 			if (num < 3) {
 
-				g.drawRect(475, 350, 50, 30);// exit box
-				g.setFont(f1);
-				g.drawString("You dont have enough cards", 400, 320);
-				g.drawString("Exit", 485, 370);
+				graphics.drawRect(475, 350, 50, 30);// exit box
+				graphics.setFont(f1);
+				graphics.drawString("You dont have enough cards", 400, 320);
+				graphics.drawString("Exit", 485, 370);
 
 			}
 
 			if (num > 2) {
 
-				g.setFont(f1);
+				graphics.setFont(f1);
 				int temp;
 
-				for (int c = 0; c < num; c++) {
-					g.drawString(risk.getCountryName(hand.elementAt(c).territory) + " value = "
-							+ risk.curPlayer.getCard().elementAt(c - 1).card_type, 350, 250 + (c * 30));
+				for (int c_index = 0; c_index < num; c_index++) {
+					graphics.drawString(risk.getCountryName(hand.elementAt(c_index).territory) + " value = "
+							+ risk.curPlayer.getCard().elementAt(c_index - 1).card_type, 350, 250 + (c_index * 30));
 
-					if (c < num - 1) {
+					if (c_index < num - 1) {
 
-						if (risk.curPlayer.getCard().elementAt(c - 1).card_type
-								.equals(risk.curPlayer.getCard().elementAt(c).card_type))
+						if (risk.curPlayer.getCard().elementAt(c_index - 1).card_type
+								.equals(risk.curPlayer.getCard().elementAt(c_index).card_type))
 							risk.attackNum++;
 					}
 
 				}
 
-				g.drawRect(475, 350, 50, 30);// exit box
-				g.drawString("Exit", 485, 370);
+				graphics.drawRect(475, 350, 50, 30);// exit box
+				graphics.drawString("Exit", 485, 370);
 			}
 
 		} // end card menu
 
 		if ((state == RiskGameModel.ATTACK || state == RiskGameModel.ATTACKING || state == RiskGameModel.ATTACK_PHASE)
 				&& risk.aTerritory != null) {
-			g.drawString("Attacking white " + risk.aTerritory.getName(), 10, 460);
+			graphics.drawString("Attacking white " + risk.aTerritory.getName(), 10, 460);
 		}
 
 		if (state == RiskGameModel.ATTACK_PHASE) {
 			// This Paint the attack "popup" window
 			int att = risk.aTerritory.getArmies();
-			int def = risk.dTerritory.getArmies();
-			// int att = 2;
-			// int def = 3;
+			int def = risk.defenseTerritory.getArmies();
 
-			g.setColor(Color.white);
-			g.fillRect(250, 100, 500, 300);// Draw main window
+			graphics.setColor(Color.white);
+			graphics.fillRect(250, 100, 500, 300);// Draw main window
 
-			g.setColor(Color.black);
+			graphics.setColor(Color.black);
 			Font names = new Font("Arial", Font.BOLD, 36);
 			Font f1 = new Font("Arial", Font.BOLD, 15);
-			g.setFont(names);
-			g.drawString(risk.curPlayer.getName(), 270, 145); // RiskPlayer Attacking
-			g.drawString(risk.defender.getName(), 600, 145);
-			g.setColor(Color.red);
-			g.drawString(Integer.toString(att), 300, 250);
-			g.drawString(Integer.toString(def), 660, 250);
-			g.setFont(f1);
+			graphics.setFont(names);
+			graphics.drawString(risk.curPlayer.getName(), 270, 145); // RiskPlayer Attacking
+			graphics.drawString(risk.defender.getName(), 600, 145);
+			graphics.setColor(Color.red);
+			graphics.drawString(Integer.toString(att), 300, 250);
+			graphics.drawString(Integer.toString(def), 660, 250);
+			graphics.setFont(f1);
 
 			/**
 			 *
 			 * Attacker
 			 *
-			 *
 			 */
 
 			if (risk.active == risk.curPlayer) {
-				g.drawString("How many armies to attack with?", 390, 180);
-				g.drawImage(army, 300, 280, this);
-				g.setColor(Color.white);
+				graphics.drawString("How many armies to attack with?", 390, 180);
+				graphics.drawImage(army, 300, 280, this);
+				graphics.setColor(Color.white);
 
 				if (att > 3) {
-					g.fillRect(420, 250, 40, 40);
-					g.fillRect(480, 250, 40, 40);
-					g.fillRect(540, 250, 40, 40);
-					g.setColor(Color.black);
+					graphics.fillRect(420, 250, 40, 40);
+					graphics.fillRect(480, 250, 40, 40);
+					graphics.fillRect(540, 250, 40, 40);
+					graphics.setColor(Color.black);
 					// die 1
-					g.fillArc(435, 265, 10, 10, 0, 360);
+					graphics.fillArc(435, 265, 10, 10, 0, 360);
 					// die 2
-					g.fillArc(485, 255, 10, 10, 0, 360);
-					g.fillArc(505, 275, 10, 10, 0, 360);
+					graphics.fillArc(485, 255, 10, 10, 0, 360);
+					graphics.fillArc(505, 275, 10, 10, 0, 360);
 					// die3
-					g.fillArc(565, 255, 10, 10, 0, 360);
-					g.fillArc(555, 265, 10, 10, 0, 360);
-					g.fillArc(545, 275, 10, 10, 0, 360);
+					graphics.fillArc(565, 255, 10, 10, 0, 360);
+					graphics.fillArc(555, 265, 10, 10, 0, 360);
+					graphics.fillArc(545, 275, 10, 10, 0, 360);
 
 				}
 				if (att == 3) {
-					g.fillRect(460, 250, 40, 40);
-					g.fillRect(510, 250, 40, 40);
-					g.setColor(Color.black);
-					g.fillArc(475, 265, 10, 10, 0, 360);
-					g.fillArc(515, 255, 10, 10, 0, 360);
-					g.fillArc(535, 275, 10, 10, 0, 360);
+					graphics.fillRect(460, 250, 40, 40);
+					graphics.fillRect(510, 250, 40, 40);
+					graphics.setColor(Color.black);
+					graphics.fillArc(475, 265, 10, 10, 0, 360);
+					graphics.fillArc(515, 255, 10, 10, 0, 360);
+					graphics.fillArc(535, 275, 10, 10, 0, 360);
 
 				}
 				if (att == 2) {
-					g.fillRect(480, 250, 40, 40);
-					g.setColor(Color.black);
-					g.fillArc(495, 265, 10, 10, 0, 360);
+					graphics.fillRect(480, 250, 40, 40);
+					graphics.setColor(Color.black);
+					graphics.fillArc(495, 265, 10, 10, 0, 360);
 				}
 			} // end attttacker painting
 
@@ -363,20 +375,20 @@ public class RiskMapPanelViewController extends JPanel {
 			 */
 
 			if (risk.active == risk.defender) {
-				g.drawString("How many armies to defend with?", 390, 180);
-				g.drawImage(shield, 630, 280, this);
-				g.setColor(Color.white);
+				graphics.drawString("How many armies to defend with?", 390, 180);
+				graphics.drawImage(shield, 630, 280, this);
+				graphics.setColor(Color.white);
 				if (def > 1 && risk.attackNum > 1) {
-					g.fillRect(460, 250, 40, 40);
-					g.fillRect(510, 250, 40, 40);
-					g.setColor(Color.black);
-					g.fillArc(475, 265, 10, 10, 0, 360);
-					g.fillArc(515, 255, 10, 10, 0, 360);
-					g.fillArc(535, 275, 10, 10, 0, 360);
+					graphics.fillRect(460, 250, 40, 40);
+					graphics.fillRect(510, 250, 40, 40);
+					graphics.setColor(Color.black);
+					graphics.fillArc(475, 265, 10, 10, 0, 360);
+					graphics.fillArc(515, 255, 10, 10, 0, 360);
+					graphics.fillArc(535, 275, 10, 10, 0, 360);
 				} else {
-					g.fillRect(480, 250, 40, 40);
-					g.setColor(Color.black);
-					g.fillArc(495, 265, 10, 10, 0, 360);
+					graphics.fillRect(480, 250, 40, 40);
+					graphics.setColor(Color.black);
+					graphics.fillArc(495, 265, 10, 10, 0, 360);
 				}
 
 			} // end defender painting
@@ -385,7 +397,11 @@ public class RiskMapPanelViewController extends JPanel {
 
 	}
 
-	private void drawConnectAdjacentCountries(Graphics g) {
+	/**
+	 * Draw connect adjacent countries.
+	 *
+	 */
+	private void drawConnectAdjacentCountries(Graphics graphics) {
 		// TODO Auto-generated method stub			
 	    for(RiskTerritoryModel territory: RiskGameModel.territories)
 	    {
@@ -394,7 +410,7 @@ public class RiskMapPanelViewController extends JPanel {
 		    	for(int adjacent: territory.getAdjacents())
 		    	{
 		    		try {
-		    		drawLineforCoordinates(territory.getX(),territory.getY(),risk.getTerritoryAt(adjacent).getX(),risk.getTerritoryAt(adjacent).getY(),g);
+		    		drawLineforCoordinates(territory.getX(),territory.getY(),risk.getTerritoryAt(adjacent).getX(),risk.getTerritoryAt(adjacent).getY(),graphics);
 		    		}
 		    		catch(Exception e)
 		    		{
@@ -405,11 +421,20 @@ public class RiskMapPanelViewController extends JPanel {
 	    }       
 	}
 
-	private void drawLineforCoordinates(int start_x,int start_y, int destination_x, int destination_y, Graphics g)
+	/**
+	 * Draw line for coordinates.
+	 *
+	 * @param start_x the start x
+	 * @param start_y the start y
+	 * @param destination_x the destination x
+	 * @param destination_y the destination y
+	 * @param graphics the graphics
+	 */
+	private void drawLineforCoordinates(int start_x,int start_y, int destination_x, int destination_y, Graphics graphics)
 	{
-			Graphics2D g2 = (Graphics2D)g;
-			g2.setColor(Color.black);
-			g2.setStroke(new BasicStroke(2));
-	        g2.draw(new Line2D.Float(start_x, start_y, destination_x, destination_y));
+			Graphics2D graphics2 = (Graphics2D)graphics;
+			graphics2.setColor(Color.black);
+			graphics2.setStroke(new BasicStroke(2));
+			graphics2.draw(new Line2D.Float(start_x, start_y, destination_x, destination_y));
 	}
 }

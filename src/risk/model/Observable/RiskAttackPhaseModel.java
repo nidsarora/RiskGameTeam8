@@ -100,7 +100,7 @@ public class RiskAttackPhaseModel extends Observable implements PhaseViewInterfa
 
 				+ " attacks " +
 
-				((this.objCurrentRiskGameObject.dTerritory != null) ? this.objCurrentRiskGameObject.dTerritory.getName()
+				((this.objCurrentRiskGameObject.defenseTerritory != null) ? this.objCurrentRiskGameObject.defenseTerritory.getName()
 						: "")
 
 		);
@@ -126,11 +126,11 @@ public class RiskAttackPhaseModel extends Observable implements PhaseViewInterfa
 						sbContentBuilder.append("Defender Won this round!\n");
 				}
 
-			if (this.objCurrentRiskGameObject.dTerritory.getArmies() == 0) {
+			if (this.objCurrentRiskGameObject.defenseTerritory.getArmies() == 0) {
 				sbContentBuilder.append("Results are out!\n\n");
 				sbContentBuilder
 						.append("Attack successfully prevailed.\n" + this.objCurrentRiskGameObject.aTerritory.getName()
-								+ " defeated " + this.objCurrentRiskGameObject.dTerritory.getName() + ".");
+								+ " defeated " + this.objCurrentRiskGameObject.defenseTerritory.getName() + ".");
 			}
 		}
 		sbContentBuilder.append("\n\n");
@@ -139,12 +139,12 @@ public class RiskAttackPhaseModel extends Observable implements PhaseViewInterfa
 
 			sbContentBuilder.append(this.objCurrentRiskGameObject.defenseNum + " armies moved from "
 					+ this.objCurrentRiskGameObject.aTerritory.getName() + " to "
-					+ this.objCurrentRiskGameObject.dTerritory.getName() +"\n");
+					+ this.objCurrentRiskGameObject.defenseTerritory.getName() +"\n");
 		}
 
 		if (this.objCurrentRiskGameObject.getState() == RiskGameModel.DEFEATED) {
 
-			sbContentBuilder.append(this.objCurrentRiskGameObject.dTerritory.getName()
+			sbContentBuilder.append(this.objCurrentRiskGameObject.defenseTerritory.getName()
 					+ " won!! They defended themseleves successfully from "
 					+ this.objCurrentRiskGameObject.aTerritory.getName() +"\n");
 		}

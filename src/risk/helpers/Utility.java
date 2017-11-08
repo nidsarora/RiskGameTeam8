@@ -90,8 +90,8 @@ public final class Utility {
 				PrintWriter out = new PrintWriter(bw)) {
 			out.println(text);
 
-		} catch (IOException e) {
-			e.printStackTrace();
+		} catch (IOException exception) {
+			exception.printStackTrace();
 		}
 	}
 }

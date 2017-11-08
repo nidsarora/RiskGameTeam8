@@ -54,8 +54,8 @@ public class RiskCardExchangeViewObserver implements Observer {
 	}
 
 	@Override
-	public void update(Observable o, Object arg) {
-		cardExchangeViewTextArea.setText(((RiskPlayerModel)o).getCardExchangeViewContent());
+	public void update(Observable object, Object argument) {
+		cardExchangeViewTextArea.setText(((RiskPlayerModel)object).getCardExchangeViewContent());
 		cardExchangeViewFrame.repaint();
 	}
 }

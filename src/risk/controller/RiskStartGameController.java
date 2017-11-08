@@ -63,16 +63,23 @@ import risk.view.RiskPlayerDominationViewObserver;
 
 /**
  * This class is the main controller of the application and contains the logic
- * for the map editor
- * 
+ * for the map editor.
+ *
  * @author Team8
  */
 public class RiskStartGameController extends java.awt.Frame {
-	/** Creates new form RiskStartGame */
+	
+	/**
+	 *  Creates new form RiskStartGame.
+	 *
+	 */
 	public RiskStartGameController(String test) {
 
 	}
 
+	/**
+	 * Instantiates a new risk start game controller.
+	 */
 	public RiskStartGameController() {
 
 		Utility.writeLog("-------------------------------------------------------");
@@ -80,9 +87,9 @@ public class RiskStartGameController extends java.awt.Frame {
 		initComponents();
 		try {
 			populatePredefinedTerritoryCoordinatesList();
-		} catch (ParserConfigurationException | SAXException | IOException e1) {
+		} catch (ParserConfigurationException | SAXException | IOException exception) {
 			// TODO Auto-generated catch block
-			e1.printStackTrace();
+			exception.printStackTrace();
 		}
 		jButton1.setEnabled(false);
 		setLocationRelativeTo(null);
@@ -95,12 +102,19 @@ public class RiskStartGameController extends java.awt.Frame {
 			sequencer.setSequence(song);
 			sequencer.setLoopCount(2);
 
-		} catch (IOException e) {
-		} catch (MidiUnavailableException e) {
-		} catch (InvalidMidiDataException e) {
+		} catch (IOException exception) {
+		} catch (MidiUnavailableException exception) {
+		} catch (InvalidMidiDataException exception) {
 		}
 	}
 
+	/**
+	 * Populate predefined territory coordinates list.
+	 *
+	 * @throws ParserConfigurationException the parser configuration exception
+	 * @throws SAXException the SAX exception
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	private void populatePredefinedTerritoryCoordinatesList()
 			throws ParserConfigurationException, SAXException, IOException {
 		predefinedTerritoryCoordinatesList = new ArrayList<String>();
@@ -118,16 +132,28 @@ public class RiskStartGameController extends java.awt.Frame {
 		}
 	}
 
+	/**
+	 * Update predefined territory coordinates list.
+	 *
+	 */
 	private void updatePredefinedTerritoryCoordinatesList(String coordinate) {
 		predefinedTerritoryCoordinatesList.remove(coordinate);
 	}
 
+	/**
+	 * Gets the from predefined territory coordinates list.
+	 *
+	 * @return the from predefined territory coordinates list
+	 */
 	private String getFromPredefinedTerritoryCoordinatesList() {
 		String coordinate = predefinedTerritoryCoordinatesList.get(0);
 		predefinedTerritoryCoordinatesList.remove(0);
 		return coordinate;
 	}
 
+	/**
+	 * Initiates the observers.
+	 */
 	private void initObservers() {
 
 	}
@@ -144,8 +170,8 @@ public class RiskStartGameController extends java.awt.Frame {
 
 		setBackground(new java.awt.Color(1, 1, 1));
 		addWindowListener(new java.awt.event.WindowAdapter() {
-			public void windowClosing(java.awt.event.WindowEvent evt) {
-				exitForm(evt);
+			public void windowClosing(java.awt.event.WindowEvent event) {
+				exitForm(event);
 			}
 		});
 
@@ -155,24 +181,24 @@ public class RiskStartGameController extends java.awt.Frame {
 		jButton1.setText("Start Game");
 		jButton1.setName("jButton1"); // NOI18N
 		jButton1.addActionListener(new java.awt.event.ActionListener() {
-			public void actionPerformed(java.awt.event.ActionEvent evt) {
-				jButton1ActionPerformed(evt);
+			public void actionPerformed(java.awt.event.ActionEvent event) {
+				jButton1ActionPerformed(event);
 			}
 		});
 
 		jButton3.setText("Exit");
 		jButton3.setName("jButton3"); // NOI18N
 		jButton3.addActionListener(new java.awt.event.ActionListener() {
-			public void actionPerformed(java.awt.event.ActionEvent evt) {
-				jButton3ActionPerformed(evt);
+			public void actionPerformed(java.awt.event.ActionEvent event) {
+				jButton3ActionPerformed(event);
 			}
 		});
 
 		jButton2.setText("Add RiskPlayer");
 		jButton2.setName("jButton2"); // NOI18N
 		jButton2.addActionListener(new java.awt.event.ActionListener() {
-			public void actionPerformed(java.awt.event.ActionEvent evt) {
-				jButton2ActionPerformed(evt);
+			public void actionPerformed(java.awt.event.ActionEvent event) {
+				jButton2ActionPerformed(event);
 			}
 		});
 
@@ -187,8 +213,8 @@ public class RiskStartGameController extends java.awt.Frame {
 					populateMapPanel();
 					initializeMapVariables();
 					RiskController.isBaseMapEdited = true;
-				} catch (IOException e) {
-					e.printStackTrace();
+				} catch (IOException exception) {
+					exception.printStackTrace();
 				}
 			}
 
@@ -226,6 +252,11 @@ public class RiskStartGameController extends java.awt.Frame {
 		initializeCurrentGameMap();
 	}
 
+	/**
+	 * Populate map panel.
+	 *
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	private void populateMapPanel() throws IOException {
 		String strCurrentMapLine;
 		BufferedReader brCurrentGameMap = new BufferedReader(new InputStreamReader(
@@ -245,6 +276,9 @@ public class RiskStartGameController extends java.awt.Frame {
 		scrollTextAreaPanel.repaint();
 	}
 
+	/**
+	 * Initialize current game map.
+	 */
 	private void initializeCurrentGameMap() {
 		try {
 			StringBuilder sbEarthMapReader = new StringBuilder();
@@ -264,23 +298,27 @@ public class RiskStartGameController extends java.awt.Frame {
 
 			brCurrentMapModifier.write("");
 			brCurrentMapModifier.close();
-		} catch (IOException e) {
+		} catch (IOException exception) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			exception.printStackTrace();
 		}
 
 	}
 
-	/** Exit the Application */
-	private void exitForm(java.awt.event.WindowEvent evt) {
+	/**
+	 *  Exit the Application.
+	 *
+	 * @param event 
+	 */
+	private void exitForm(java.awt.event.WindowEvent event) {
 		System.exit(0);
 	}
 
-	private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
+	private void jButton3ActionPerformed(java.awt.event.ActionEvent event) {
 		System.exit(0);
 	}
 
-	private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+	private void jButton2ActionPerformed(java.awt.event.ActionEvent event) {
 		RiskAddPlayerController add = new RiskAddPlayerController();
 		add.setVisible(true);
 	}
@@ -288,8 +326,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	/**
 	 * Creates the JFrame and JPanels within on the click on Choose Map Button. Uses
 	 * GridBagLayout for the components within.
-	 * 
-	 * @throws IOException
+	 *
+	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	public void generateChooseMapPanel() throws IOException {
 
@@ -301,29 +339,29 @@ public class RiskStartGameController extends java.awt.Frame {
 		pane.setLayout(new GridBagLayout());
 		pane.setComponentOrientation(ComponentOrientation.UNKNOWN);
 
-		GridBagConstraints c = new GridBagConstraints();
+		GridBagConstraints gridbagconstraints = new GridBagConstraints();
 
 		scrollTextAreaPanel = new JPanel();
-		c.fill = GridBagConstraints.HORIZONTAL;
-		c.weightx = 30;
-		c.ipady = 400;
-		c.gridx = 1;
-		c.gridy = 0;
+		gridbagconstraints.fill = GridBagConstraints.HORIZONTAL;
+		gridbagconstraints.weightx = 30;
+		gridbagconstraints.ipady = 400;
+		gridbagconstraints.gridx = 1;
+		gridbagconstraints.gridy = 0;
 		mapEditTextArea = new JTextArea("", 200, 120);
 		mapEditTextArea.setEditable(false);
 		scrollTextAreaPanel.add(new JScrollPane(mapEditTextArea, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
 				ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED));
-		pane.add(scrollTextAreaPanel, c);
+		pane.add(scrollTextAreaPanel, gridbagconstraints);
 
 		JPanel inputLinePanel = new JPanel();
 		mapEditTextField = new JTextField("", 120);
 		inputLinePanel.add(mapEditTextField);
-		c.fill = GridBagConstraints.HORIZONTAL;
-		c.weightx = 1;
-		c.gridx = 1;
-		c.ipady = 50;
-		c.gridy = 2;
-		pane.add(inputLinePanel, c);
+		gridbagconstraints.fill = GridBagConstraints.HORIZONTAL;
+		gridbagconstraints.weightx = 1;
+		gridbagconstraints.gridx = 1;
+		gridbagconstraints.ipady = 50;
+		gridbagconstraints.gridy = 2;
+		pane.add(inputLinePanel, gridbagconstraints);
 
 		JPanel buttonsPanel = new JPanel();
 		addButton = new JButton("Add Country");
@@ -336,21 +374,21 @@ public class RiskStartGameController extends java.awt.Frame {
 		 * Handles the click event for the add button in the Choose Map Panel.
 		 */
 		addContinent.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				continentButtonPressed(e);
+			public void actionPerformed(ActionEvent exception) {
+				continentButtonPressed(exception);
 			}
 		});
 		continentDoneButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				continentDoneButtonPressed(e);
+			public void actionPerformed(ActionEvent exception) {
+				continentDoneButtonPressed(exception);
 			}
 		});
 		/**
 		 * Handles the click event for the add button in the Choose Map Panel.
 		 */
 		addButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				addButtonPressed(e);
+			public void actionPerformed(ActionEvent exception) {
+				addButtonPressed(exception);
 			}
 		});
 
@@ -358,8 +396,8 @@ public class RiskStartGameController extends java.awt.Frame {
 		 * Handles the click event for the finish button in the Choose Map Panel.
 		 */
 		finishButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				finishButtonPressed(e);
+			public void actionPerformed(ActionEvent exception) {
+				finishButtonPressed(exception);
 			}
 
 		});
@@ -368,46 +406,50 @@ public class RiskStartGameController extends java.awt.Frame {
 		buttonsPanel.add(finishButton);
 		buttonsPanel.add(addContinent);
 		buttonsPanel.add(continentDoneButton);
-		c.weightx = 0.5;
-		c.gridx = 1;
-		c.ipady = 50;
-		c.gridy = 3;
-		pane.add(buttonsPanel, c);
+		gridbagconstraints.weightx = 0.5;
+		gridbagconstraints.gridx = 1;
+		gridbagconstraints.ipady = 50;
+		gridbagconstraints.gridy = 3;
+		pane.add(buttonsPanel, gridbagconstraints);
 
 		notePanel = new JPanel();
 		noteLabel = new JLabel("");
 		notePanel.add(noteLabel);
-		c.weightx = 1;
-		c.gridx = 1;
-		c.ipady = 50;
-		c.gridy = 4;
-		pane.add(notePanel, c);
+		gridbagconstraints.weightx = 1;
+		gridbagconstraints.gridx = 1;
+		gridbagconstraints.ipady = 50;
+		gridbagconstraints.gridy = 4;
+		pane.add(notePanel, gridbagconstraints);
 
 		JPanel formatInfoPanel = new JPanel();
 		JLabel formatInforLabel = new JLabel(
 				"Please enter the data in the following format - '<Territory>,<Continent>,<Adjacent_Country1>,<Adjacent_Country2>...'");
 		formatInfoPanel.add(formatInforLabel);
-		c.weightx = 1;
-		c.gridx = 1;
-		c.ipady = 50;
-		c.gridy = 5;
-		pane.add(formatInfoPanel, c);
+		gridbagconstraints.weightx = 1;
+		gridbagconstraints.gridx = 1;
+		gridbagconstraints.ipady = 50;
+		gridbagconstraints.gridy = 5;
+		pane.add(formatInfoPanel, gridbagconstraints);
 
 		generateMapFrame.pack();
 		generateMapFrame.setVisible(true);
 	}
 
-	private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+	private void jButton1ActionPerformed(java.awt.event.ActionEvent event) {
 
 		RiskController.ShowGUI();
 		// Open the Phase View
 		setVisible(false);
 	}
 
-	private void continentButtonPressed(ActionEvent e) {
+	private void continentButtonPressed(ActionEvent exception) {
 		addUserDefinedContinent(mapEditTextField.getText());
 	}
 
+	/**
+	 * Adds the user defined continent.
+	 *
+	 */
 	public void addUserDefinedContinent(String continent) {
 		Random continentValueRandom = new Random();
 		int continentValue;
@@ -421,11 +463,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * the current game. Creating the file CurrentGameMap.map and initializes it
 	 * till '[Territories]' from the earth map. Copies the contents of the JTextArea
 	 * in Choose Map Panel and save the file in the Risk.resources package.
-	 * 
-	 * @param e,
-	 *            Action event for the click of the Finish button.
 	 */
-	private void finishButtonPressed(ActionEvent e) {
+	private void finishButtonPressed(ActionEvent exception) {
 		CurrentGameMapEditor(mapEditTextArea.getText());
 	}
 
@@ -440,8 +479,8 @@ public class RiskStartGameController extends java.awt.Frame {
 			while ((baseMapLine = brEarthMapReader.readLine()) != null) {
 				sbBaseMapString.append(baseMapLine + "\n");
 			}
-		} catch (IOException e) {
-			e.printStackTrace();
+		} catch (IOException exception) {
+			exception.printStackTrace();
 		}
 	}
 
@@ -449,9 +488,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * Creates a new instance of the CurrentGameMap.map file and initializes with
 	 * text will '[Territories]' from the base earth map. Appends the contents of
 	 * the JTextArea in Choose Map Panel to the newly created file
-	 * 
-	 * @param editTextArea,
-	 *            content of the JTextArea in Choose Map Panel.
+	 *
+	 * @param editTextArea the edit text area
 	 */
 	private void CurrentGameMapEditor(String editTextArea) {
 		String EarthMapStaticContent;
@@ -464,11 +502,17 @@ public class RiskStartGameController extends java.awt.Frame {
 
 			bufferedWriter.write(EarthMapStaticContent + editTextArea + "\n;;");
 			bufferedWriter.close();
-		} catch (IOException e) {
-			e.printStackTrace();
+		} catch (IOException exception) {
+			exception.printStackTrace();
 		}
 	}
 
+	/**
+	 * Insert adjacent countries info wrapper.
+	 *
+	 * @param editTextArea the edit text area
+	 * @return the string
+	 */
 	private String insertAdjacentCountriesInfoWrapper(String editTextArea) {
 		String[] editTextAreaArray = editTextArea.split("\n");
 		StringBuilder adjacentCountryBuilder = new StringBuilder();
@@ -486,10 +530,10 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * insert coordinates for the territory. Appends the input with coordinates to
 	 * the JTextArea in Choose Map Panel
 	 * 
-	 * @param e
+	 * @param event
 	 *            ActionEvent passed for the button click event.
 	 */
-	private void addButtonPressed(ActionEvent e) {
+	private void addButtonPressed(ActionEvent event) {
 		if (RiskStartGameController.predefinedTerritoryCoordinatesList.size() == 0) {
 			noteLabel.setText("Cannot add anymore country, max is 42 inclusing adjacents");
 			return;
@@ -507,6 +551,9 @@ public class RiskStartGameController extends java.awt.Frame {
 		mapEditTextField.setText("");
 	}
 
+	/**
+	 * Update map edit text area.
+	 */
 	private void updateMapEditTextArea() {
 		sbMapContinentContents = new StringBuilder();
 		sbMapContinentContents.append("[Continents]\n");
@@ -520,6 +567,10 @@ public class RiskStartGameController extends java.awt.Frame {
 		scrollTextAreaPanel.repaint();
 	}
 
+	/**
+	 * Continent done button pressed.
+	 *
+	 */
 	private void continentDoneButtonPressed(ActionEvent e) {
 		continentDoneButton.setVisible(false);
 		addContinent.setVisible(false);
@@ -529,6 +580,12 @@ public class RiskStartGameController extends java.awt.Frame {
 		updateMapEditTextArea();
 	}
 
+	/**
+	 * Validate continent line text.
+	 *
+	 * @param mapInputLineText the map input line text
+	 * @return true, if successful
+	 */
 	private boolean validateContinentLineText(String mapInputLineText) {
 		String userDefinedContinent = mapInputLineText.split(",").length > 1 ? mapInputLineText.split(",")[1] : "";
 		return this.userDefinedContinentList.containsKey(userDefinedContinent) ? true : false;
@@ -537,9 +594,9 @@ public class RiskStartGameController extends java.awt.Frame {
 	/**
 	 * This method will find the coordinates and continent of the adjacent countries
 	 * supplied by the user and append it to JTextArea.
-	 * 
-	 * @param mapInputLineText
-	 * @return
+	 *
+	 * @param mapInputLineText the map input line text
+	 * @return the string
 	 */
 	private String insertAdjacentCountriesInfo(String mapInputLineText) {
 		StringBuilder adjacentCountriesInfo = new StringBuilder();
@@ -558,9 +615,9 @@ public class RiskStartGameController extends java.awt.Frame {
 																												// -
 					// ajdacentcountry,coordinates,continent,currentcountry
 					adjacentCountriesInfo.append(ajacentCountryInfo + "\n");
-				} catch (ParserConfigurationException | SAXException | IOException e) {
+				} catch (ParserConfigurationException | SAXException | IOException exception) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+					exception.printStackTrace();
 				}
 			}
 			reachAdjacent++;
@@ -573,14 +630,15 @@ public class RiskStartGameController extends java.awt.Frame {
 	/**
 	 * This method will find the coordinates and continent of the adjacent countries
 	 * supplied by the user and append it to JTextArea.
-	 * 
-	 * @param adjacentTerritory,
-	 *            individual adjacent country to find the information for.
+	 *
+	 * @param adjacentTerritory the adjacent territory
+	 * @param currentCountry the current country
+	 * @param currentContinent the current continent
 	 * @return String with coordinates and continent for adjacent country -
 	 *         adjacentTerritory.
-	 * @throws ParserConfigurationException
-	 * @throws IOException
-	 * @throws SAXException
+	 * @throws ParserConfigurationException the parser configuration exception
+	 * @throws SAXException the SAX exception
+	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	private String getAdjacentCountryInfo(String adjacentTerritory, String currentCountry, String currentContinent)
 			throws ParserConfigurationException, SAXException, IOException {
@@ -613,10 +671,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * the coordinates of the supplied territory from the baseMap - EarthMap. Append
 	 * the found coordinates to the input text and insert them in the JTextArea in
 	 * Choose Map Panel.
-	 * 
-	 * @param mapInputLineText,
-	 *            input text inserted by the user specifying the territory and the
-	 *            adjacent countries.
+	 *
+	 * @param mapInputLineText the map input line text
 	 * @return String, the complete line text with the coordinates inserted after
 	 *         the territory.
 	 */
@@ -638,9 +694,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	/**
 	 * Fetch the coordinates of the territories given to this method. Call the
 	 * recursive search function to perform the search.
-	 * 
-	 * @param territory,
-	 *            territory inserted by the user.
+	 *
+	 * @param territory the territory
 	 * @return = String, the coordinates of the territory supplied in string - e.g -
 	 *         ,XX,YY, - format.
 	 */
@@ -661,12 +716,9 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * to it. Hence a recursive search is needed to find only that particular
 	 * instance of country which has coordinates next to it in the base map. This
 	 * function performs that recursive search needed.
-	 * 
-	 * @param baseMapString,
-	 *            this class level variable has the earth map read into it in string
-	 *            format.
-	 * @param territory,
-	 *            this is the territory inserted by the user.
+	 *
+	 * @param baseMapString the base map string
+	 * @param territory the territory
 	 * @return coordinates, returns the coordinates of the needed territory in
 	 *         string - ,XX/X,YY/Y, - format.
 	 */
@@ -694,13 +746,10 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * The recursive search take a smaller text every iteration till the correct
 	 * instance of territory is found. This method sends the begin index for the new
 	 * cut-shorted string for the next recursive search.
-	 * 
-	 * @param baseMapString,
-	 *            string for the entire base map.
-	 * @param territory,
-	 *            territory supplied by the user.
-	 * @param index,
-	 *            index of the first character of the incorrect territory instance.
+	 *
+	 * @param baseMapString the base map string
+	 * @param territory the territory
+	 * @param index the index
 	 * @return begin index, for the upcoming recursive search.
 	 */
 	private int updateIndexToNextTerritory(String baseMapString, String territory, int index) {
@@ -818,8 +867,9 @@ public class RiskStartGameController extends java.awt.Frame {
 	}
 
 	/**
-	 * @param args
-	 *            the command line arguments
+	 * The main method.
+	 *
+	 * @param args the command line arguments
 	 */
 	public static void main(String args[]) {
 		java.awt.EventQueue.invokeLater(new Runnable() {

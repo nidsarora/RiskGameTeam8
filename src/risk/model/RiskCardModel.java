@@ -14,11 +14,20 @@ public class RiskCardModel {
 	public String card_type;
 	public int territory;
 
+	/**
+	 * Instantiates a new risk card model.
+	 *
+	 * @param r_territory_number, the risk territory number
+	 * @param r_card_type, risk card type
+	 */
 	public RiskCardModel(int r_territory_number, String r_card_type) {
 		this.territory = r_territory_number;
 		this.card_type = r_card_type;		
 	}
 
+	/**
+	 * Instantiates a new risk card model.
+	 */
 	public RiskCardModel(int r_territory_number, int r_int_card_type) {
 		this.territory = r_territory_number;
 		switch (r_int_card_type) {

@@ -67,7 +67,7 @@ public class RiskGameModel {
 
 	static private int gameState;
 	public RiskTerritoryModel aTerritory;
-	public RiskTerritoryModel dTerritory;
+	public RiskTerritoryModel defenseTerritory;
 	public int defenseNum = 0;
 	public int attackNum = 0;
 	public int iter = 0;
@@ -146,18 +146,8 @@ public class RiskGameModel {
 			objRiskStartupPhaseModel.setCurrentRiskGameObject(this);
 			this.setRiskStartupPhaseModelObservable(objRiskStartupPhaseModel);
 			this.getRiskStartupPhaseModelObservable().isChanged();
-			// System.out.println("START_TURN");
 		}
 
-		// if (this.getState() == START_TURN) // 6
-		// {
-		// RiskStartupEndPhaseModel objRiskStartupEndPhaseModel =
-		// this.getRiskStartupEndPhaseModelObservable();
-		// objRiskStartupEndPhaseModel.setCurrentRiskGameObject(this);
-		// this.setRiskStartupEndPhaseModelObservable(objRiskStartupEndPhaseModel);
-		// this.getRiskStartupEndPhaseModelObservable().isChanged();
-		// System.out.println("START_TURN");
-		// }
 
 		if (this.getState() == REINFORCE || this.getState() == START_TURN) {
 			RiskReinforcementPhaseModel objRiskReinforcementPhaseModel = this
@@ -269,7 +259,6 @@ public class RiskGameModel {
 	 */
 	public void distubuteArmies() {
 		int numOfPlayers = players.size();
-		// int armies = 0;
 		if (numOfPlayers == 3)
 			armies = 15;
 		else if (numOfPlayers == 4)
@@ -279,13 +268,13 @@ public class RiskGameModel {
 		else if (numOfPlayers == 6)
 			armies = 20;
 
-		for (int i = 0; i < numOfPlayers; i++)
-			players.elementAt(i).addArmies(armies);
+		for (int index = 0; index < numOfPlayers; index++)
+			players.elementAt(index).addArmies(armies);
 	}
 
 	public void initializeDeck() {
-		for (int i = 0; i < territories.size(); i++)
-			deck.add(new RiskCardModel(i, i % 3));
+		for (int index = 0; index < territories.size(); index++)
+			deck.add(new RiskCardModel(index, index % 3));
 		//Insert two Wild Cards
 		Random wildIndex = new Random();
 		for(int wildCardCount =1; wildCardCount <=2; wildCardCount ++)
@@ -297,10 +286,10 @@ public class RiskGameModel {
 		System.out.println(deck.size());
 		int card = draw.nextInt(deck.size());
 
-		RiskCardModel c = deck.elementAt(card);
+		RiskCardModel riskcardmodel = deck.elementAt(card);
 		deck.remove(deck.elementAt(card));
 		deck.trimToSize();
-		p.setCard(c);
+		p.setCard(riskcardmodel);
 	}
 
 	/**
@@ -338,11 +327,11 @@ public class RiskGameModel {
 		int continentBonus = 0;
 		int numOfCont = continents.size();
 		// # of continents = 6
-		for (int i = 0; i < numOfCont; i++) {
-			boolean captured = continents.elementAt(i).isContinentCaptured(curPlayer);
+		for (int index = 0; index < numOfCont; index++) {
+			boolean captured = continents.elementAt(index).isContinentCaptured(curPlayer);
 			if (captured)
-				continentBonus += continents.elementAt(i).getValue();
-			System.out.println("Bonus " + continentBonus + " for " + continents.elementAt(i).getName());
+				continentBonus += continents.elementAt(index).getValue();
+			System.out.println("Bonus " + continentBonus + " for " + continents.elementAt(index).getName());
 
 		}
 		return continentBonus;
@@ -398,10 +387,10 @@ public class RiskGameModel {
 
 				if (nextLine.equals("[Territories]")) {
 					nextLine = fileLoadContinentTerritoryScanner.nextLine();
-					int i = 0;
+					int index = 0;
 					do {
 						if (!(nextLine.equals("-") || nextLine.equals("") || nextLine.equals("[Adjacents]"))) {
-							territoryId = i++;
+							territoryId = index++;
 							regionName = nextLine.split(",")[0];
 							x_coordinate = Integer.parseInt(nextLine.split(",")[1]);
 							y_coordinate = Integer.parseInt(nextLine.split(",")[2]);
@@ -421,7 +410,7 @@ public class RiskGameModel {
 							}
 
 						}
-						// System.out.println(i);
+						// System.out.println(index);
 						nextLine = fileLoadContinentTerritoryScanner.nextLine();
 						if (nextLine.equals(";;"))
 							done = true;
@@ -488,7 +477,7 @@ public class RiskGameModel {
 	public void gamePhaseSetup(int x, int y) {
 
 		int country = getMapLocation(x, y);
-		int i = 0; // num of occupied countries
+		int index = 0; // num of occupied countries
 
 		if (getState() == INITIAL_REINFORCE) {
 			if (country != -1) {
@@ -498,12 +487,12 @@ public class RiskGameModel {
 				}
 			}
 
-			for (int c = 0; c < players.size(); c++) {
-				if (players.elementAt(c).getNumberOfArmies() == 0)
-					i++;
+			for (int riskcardmodel = 0; riskcardmodel < players.size(); riskcardmodel++) {
+				if (players.elementAt(riskcardmodel).getNumberOfArmies() == 0)
+					index++;
 			}
 
-			if (i == players.size()) {
+			if (index == players.size()) {
 				setState(START_TURN);
 				System.out.println("status " + getState());
 			}
@@ -519,13 +508,13 @@ public class RiskGameModel {
 					initialOccupyTerritories(country); // current player now
 				// owns
 				// How many countries are already owned?
-				for (int c = 0; c < num; c++) {
-					if (getOwnership(c) != -1) // if country owned
-						i++; // count number of owned countries
+				for (int riskcardmodel = 0; riskcardmodel < num; riskcardmodel++) {
+					if (getOwnership(riskcardmodel) != -1) // if country owned
+						index++; // count number of owned countries
 				} // end for loop
 			} // end if country clicked on
 
-			if (i == num) {
+			if (index == num) {
 				// startup
 
 				setState(INITIAL_REINFORCE);
@@ -544,10 +533,10 @@ public class RiskGameModel {
 
 		if (getState() == FORTIFYING) {
 			if (country != -1) {// not a country
-				dTerritory = territories.elementAt(country); // move to
+				defenseTerritory = territories.elementAt(country); // move to
 				// territory
 				if (getOwnership(country) == curPlayer.getPlayerIndex())
-					if (aTerritory.isAdjacent(dTerritory)) {// if its
+					if (aTerritory.isAdjacent(defenseTerritory)) {// if its
 						// adjacent...
 						this.notifyPhaseViewChange(); // 2nd country to fortify
 						setState(FORTIFY_PHASE);
@@ -582,15 +571,15 @@ public class RiskGameModel {
 
 				System.out.println(aTerritory.getAdjacents().size());
 
-				for (int i : aTerritory.getAdjacents()) {
-					System.out.println(territories.get(i));
+				for (int index : aTerritory.getAdjacents()) {
+					System.out.println(territories.get(index));
 				}
 
 				if (getOwnership(country) == curPlayer.getPlayerIndex())
 					return "You own that territory.";
 				if (aTerritory.isAdjacent(d)) {// if its adjacent...
 					setState(ATTACK_PHASE);
-					dTerritory = d;
+					defenseTerritory = d;
 					defender = d.getPlayer();
 				} else
 					// if its not adjacent
@@ -658,38 +647,38 @@ public class RiskGameModel {
 		Random attDice = new Random();
 
 		// get value for each roll
-		for (int i = 0; i < attackNum; i++)
-			attackDieArray[i] = attDice.nextInt(6) + 1;
-		for (int i = 0; i < defenseNum; i++)
-			defenceDieArray[i] = attDice.nextInt(6) + 1;
+		for (int index = 0; index < attackNum; index++)
+			attackDieArray[index] = attDice.nextInt(6) + 1;
+		for (int index = 0; index < defenseNum; index++)
+			defenceDieArray[index] = attDice.nextInt(6) + 1;
 		Arrays.sort(attackDieArray, Collections.reverseOrder());
 		Arrays.sort(defenceDieArray, Collections.reverseOrder());
 
 		if (attackNum == 1) {
 			System.out.println(attackDieArray[0] + " vs " + defenceDieArray[0]);
 			if (attackDieArray[0] > defenceDieArray[0])
-				dTerritory.looseArmy();
+				defenseTerritory.looseArmy();
 			else
 				aTerritory.looseArmy();
 		}
 		if (attackNum > 1) { // attacking with more than 1
 			System.out.println(attackDieArray[0] + " vs " + defenceDieArray[0]);
 			if (attackDieArray[0] > defenceDieArray[0])
-				dTerritory.looseArmy();
+				defenseTerritory.looseArmy();
 			else
 				aTerritory.looseArmy();
 			if (defenseNum == 2) {
 				System.out.print(attackDieArray[1] + " vs " + defenceDieArray[1]);
 				if (attackDieArray[1] > defenceDieArray[1])
-					dTerritory.looseArmy();
+					defenseTerritory.looseArmy();
 				else
 					aTerritory.looseArmy();
 			} // if defending with two
 		}
 		notifyPhaseViewChange();
-		if (dTerritory.getArmies() == 0) {
+		if (defenseTerritory.getArmies() == 0) {
 			setState(CAPTURE);
-			dTerritory.setPlayer(curPlayer);
+			defenseTerritory.setPlayer(curPlayer);
 		}
 		if (aTerritory.getArmies() == 0) {
 			setState(DEFEATED);
@@ -703,7 +692,7 @@ public class RiskGameModel {
 
 	public void capture() {
 		int armies = defenseNum;
-		RiskTerritoryModel d = dTerritory;
+		RiskTerritoryModel d = defenseTerritory;
 		RiskTerritoryModel a = aTerritory;
 		defender.looseTerritory(d);
 		active.occupyTerritory(d);
@@ -730,27 +719,27 @@ public class RiskGameModel {
 		// Reset battle variables
 		defenseNum = 0;
 		attackNum = 0;
-		dTerritory = null;
+		defenseTerritory = null;
 		aTerritory = null;
 
 	}
 
-	public int[] drawMap(int i) {
+	public int[] drawMap(int index) {
 		int out[] = new int[2];
-		out[0] = territories.elementAt(i).getX();
-		out[1] = territories.elementAt(i).getY();
+		out[0] = territories.elementAt(index).getX();
+		out[1] = territories.elementAt(index).getY();
 		return out;
 	}
 
-	public int[] fillDrawMap(int i, int p) {
+	public int[] fillDrawMap(int index, int p) {
 		int loc[] = new int[2];
-		if (territories.elementAt(i).getPlayer().getPlayerIndex() == p)
-			loc = drawMap(i);
+		if (territories.elementAt(index).getPlayer().getPlayerIndex() == p)
+			loc = drawMap(index);
 		return loc;
 	}
 
-	public int getOwnership(int i) {
-		return territories.elementAt(i).getPlayer().getPlayerIndex();
+	public int getOwnership(int index) {
+		return territories.elementAt(index).getPlayer().getPlayerIndex();
 
 	}
 
@@ -763,12 +752,12 @@ public class RiskGameModel {
 		int x1;
 		int y1;
 		int size = 30;
-		for (int i = 0; i < territories.size(); i++) {
-			x1 = territories.elementAt(i).getX();
-			y1 = territories.elementAt(i).getY();
+		for (int index = 0; index < territories.size(); index++) {
+			x1 = territories.elementAt(index).getX();
+			y1 = territories.elementAt(index).getY();
 			if (Math.abs(x1 - x) <= size || Math.abs(x1 - x) <= size) {
 				if (Math.abs(y1 - y) <= size || Math.abs(y1 - y) <= size) {
-					return i;
+					return index;
 				} // end if y
 			} // end if x
 		} // end for
@@ -779,16 +768,16 @@ public class RiskGameModel {
 	/**
 	 * This method checks if the territory is occupied by the current player or not.
 	 */
-	public boolean occupyTerritory(RiskTerritoryModel t) {
+	public boolean occupyTerritory(RiskTerritoryModel riskterritorymodel) {
 		// Make sure there are availble armies
 		if (curPlayer.getNumberOfArmies() > 0) { // Checks if the territory is
 			// occupied by the current
 			// player.
-			if (t.getPlayer() == curPlayer) {
-				t.setPlayer(curPlayer);
-				t.addArmies(1);
+			if (riskterritorymodel.getPlayer() == curPlayer) {
+				riskterritorymodel.setPlayer(curPlayer);
+				riskterritorymodel.addArmies(1);
 				curPlayer.looseArmy();
-				curPlayer.occupyTerritory(t);
+				curPlayer.occupyTerritory(riskterritorymodel);
 				return true;
 			} // end if
 		} // end if availble
@@ -800,10 +789,10 @@ public class RiskGameModel {
 	public void initialOccupyTerritories(int id) {
 
 		if (curPlayer.getNumberOfArmies() > 0) {
-			RiskTerritoryModel t = territories.elementAt(id);
-			t.setPlayer(curPlayer);
-			curPlayer.occupyTerritory(t);
-			t.addArmy();
+			RiskTerritoryModel riskterritorymodel = territories.elementAt(id);
+			riskterritorymodel.setPlayer(curPlayer);
+			curPlayer.occupyTerritory(riskterritorymodel);
+			riskterritorymodel.addArmy();
 			curPlayer.looseArmy();
 			nextPlayer();
 		} else
@@ -829,13 +818,12 @@ public class RiskGameModel {
 		return players;
 	}
 
-	public RiskTerritoryModel getTerritoryAt(int i) {
-		// if (i >= 0)
-		return territories.elementAt(i);
+	public RiskTerritoryModel getTerritoryAt(int index) {
+		return territories.elementAt(index);
 	}
 
-	public int numOfArmiesOnTerritory(int i) {
-		return territories.elementAt(i).getArmies();
+	public int numOfArmiesOnTerritory(int index) {
+		return territories.elementAt(index).getArmies();
 	}
 
 	public int getState() {
