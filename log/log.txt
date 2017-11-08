@@ -79,3 +79,19 @@ initial reinforcement stage
 initial reinforcement stage
 Player_1 got bonus armies
 Player_1 got4 left to place
+-------------------------------------------------------
+application start
+All players Added
+Build the Game Panel
+-------------------------------------------------------
+application start
+All players Added
+-------------------------------------------------------
+application start
+All players Added
+-------------------------------------------------------
+application start
+All players Added
+-------------------------------------------------------
+application start
+All players Added

@@ -249,7 +249,7 @@ public class RiskStartGameController extends java.awt.Frame {
 
 		pack();
 
-		initializeCurrentGameMap();
+		//initializeCurrentGameMap();
 	}
 
 	/**
