@@ -7,7 +7,7 @@ import risk.model.RiskGameModel;
 import risk.model.interfaces.PhaseViewInterface;
 
 /**
- * The Class RiskStartupPhaseModel.
+ * The Class Risk Startup Phase Model.
  */
 public class RiskStartupPhaseModel extends Observable implements PhaseViewInterface {
 

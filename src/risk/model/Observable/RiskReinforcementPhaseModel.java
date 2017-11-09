@@ -6,9 +6,8 @@ import risk.helpers.Utility;
 import risk.model.RiskGameModel;
 import risk.model.interfaces.PhaseViewInterface;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Class RiskReinforcementPhaseModel.
+ * The Class Risk Reinforcement Phase Model.
  */
 public class RiskReinforcementPhaseModel extends Observable implements PhaseViewInterface {
 
@@ -142,17 +141,12 @@ public class RiskReinforcementPhaseModel extends Observable implements PhaseView
 		}
 	}
 
-	/* (non-Javadoc)
-	 * @see risk.model.interfaces.PhaseViewInterface#getPhaseInformation()
-	 */
+	
 	@Override
 	public String getPhaseInformation() {
 		return Utility.getPhaseInformtion(this);
 	}
 
-	/* (non-Javadoc)
-	 * @see risk.model.interfaces.PhaseViewInterface#getObjectType()
-	 */
 	public String getObjectType() {
 		return objectType;
 	}
@@ -166,24 +160,15 @@ public class RiskReinforcementPhaseModel extends Observable implements PhaseView
 		return objCurrentRiskGameObject;
 	}
 
-	/* (non-Javadoc)
-	 * @see risk.model.interfaces.PhaseViewInterface#setCurrentRiskGameObject(risk.model.RiskGameModel)
-	 */
 	public void setCurrentRiskGameObject(RiskGameModel currentRiskGameObject) {
 		this.objCurrentRiskGameObject = currentRiskGameObject;
 	}
 
-	/* (non-Javadoc)
-	 * @see risk.model.interfaces.PhaseViewInterface#getTitle()
-	 */
 	@Override
 	public String getTitle() {
 		return Utility.getPhaseTitle(this);
 	}
 
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
 	public String toString() {
 		StringBuilder sbContentBuilder = new StringBuilder();

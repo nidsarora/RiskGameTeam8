@@ -6,21 +6,49 @@ import risk.helpers.Utility;
 import risk.model.RiskGameModel;
 import risk.model.interfaces.PhaseViewInterface;
 
+/**
+ * The Class Risk Fortify Phase Model.
+ */
 public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterface {
 
+	/** The origin territory. */
 	private String originTerritory;
+	
+	/** The destination territory. */
 	private String destinationTerritory;
+	
+	/** The origin territory pre fortify army count. */
 	private String originTerritoryPreFortifyArmyCount;
+	
+	/** The origin territoryost fortify army count. */
 	private String originTerritoryostFortifyArmyCount;
+	
+	/** The destination territory pre fortify army count. */
 	private String destinationTerritoryPreFortifyArmyCount;
+	
+	/** The destination territory post fortify army count. */
 	private String destinationTerritoryPostFortifyArmyCount;
+	
+	/** The object type. */
 	private String objectType = "RiskFortifyPhaseModel";
+	
+	/** The obj current risk game object. */
 	private RiskGameModel objCurrentRiskGameObject;
+	
+	/** The instance. */
 	private static RiskFortifyPhaseModel instance = new RiskFortifyPhaseModel();
 
+	/**
+	 * Instantiates a new risk fortify phase model.
+	 */
 	private RiskFortifyPhaseModel() {
 	}
 
+	/**
+	 * Gets the single instance of Risk Fortify Phase Model.
+	 *
+	 * @return single instance of Risk Fortify Phase Model
+	 */
 	public static RiskFortifyPhaseModel getInstance() {
 		if (instance == null)
 			instance = new RiskFortifyPhaseModel();
@@ -29,7 +57,6 @@ public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterf
 
 	@Override
 	public String getContent() {
-		// TODO Auto-generated method stub
 		return this.toString();
 	}
 
@@ -43,38 +70,40 @@ public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterf
 
 	@Override
 	public String getPhaseInformation() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public String getObjectType() {
-		// TODO Auto-generated method stub
 		return objectType;
 	}
 
 	@Override
 	public String getTitle() {
-		// TODO Auto-generated method stub
 		return Utility.getPhaseTitle(this);
 	}
 
 	/**
-	 * @return the originTerritory
+	 * Gets the origin territory.
+	 *
+	 * @return the origin Territory
 	 */
 	public String getOriginTerritory() {
 		return originTerritory;
 	}
 
 	/**
-	 * @param originTerritory
-	 *            the originTerritory to set
+	 * Sets the origin territory.
+	 *
+	 * @param originTerritory the origin Territory to set
 	 */
 	public void setOriginTerritory(String originTerritory) {
 		this.originTerritory = originTerritory;
 	}
 
 	/**
+	 * Gets the destination territory.
+	 *
 	 * @return the destinationTerritory
 	 */
 	public String getDestinationTerritory() {
@@ -82,14 +111,17 @@ public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterf
 	}
 
 	/**
-	 * @param destinationTerritory
-	 *            the destinationTerritory to set
+	 * Sets the destination territory.
+	 *
+	 * @param destinationTerritory the destinationTerritory to set
 	 */
 	public void setDestinationTerritory(String destinationTerritory) {
 		this.destinationTerritory = destinationTerritory;
 	}
 
 	/**
+	 * Gets the origin territory pre fortify army count.
+	 *
 	 * @return the originTerritoryPreFortifyArmyCount
 	 */
 	public String getOriginTerritoryPreFortifyArmyCount() {
@@ -97,14 +129,17 @@ public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterf
 	}
 
 	/**
-	 * @param originTerritoryPreFortifyArmyCount
-	 *            the originTerritoryPreFortifyArmyCount to set
+	 * Sets the origin territory pre fortify army count.
+	 *
+	 * @param originTerritoryPreFortifyArmyCount the origin Territory Pre Fortify Army Count to set
 	 */
 	public void setOriginTerritoryPreFortifyArmyCount(String originTerritoryPreFortifyArmyCount) {
 		this.originTerritoryPreFortifyArmyCount = originTerritoryPreFortifyArmyCount;
 	}
 
 	/**
+	 * Gets the origin territoryost fortify army count.
+	 *
 	 * @return the originTerritoryostFortifyArmyCount
 	 */
 	public String getOriginTerritoryostFortifyArmyCount() {
@@ -112,14 +147,17 @@ public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterf
 	}
 
 	/**
-	 * @param originTerritoryostFortifyArmyCount
-	 *            the originTerritoryostFortifyArmyCount to set
+	 * Sets the origin territoryost fortify army count.
+	 *
+	 * @param originTerritoryostFortifyArmyCount the originTerritoryostFortifyArmyCount to set
 	 */
 	public void setOriginTerritoryostFortifyArmyCount(String originTerritoryostFortifyArmyCount) {
 		this.originTerritoryostFortifyArmyCount = originTerritoryostFortifyArmyCount;
 	}
 
 	/**
+	 * Gets the destination territory pre fortify army count.
+	 *
 	 * @return the destinationTerritoryPreFortifyArmyCount
 	 */
 	public String getDestinationTerritoryPreFortifyArmyCount() {
@@ -127,14 +165,17 @@ public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterf
 	}
 
 	/**
-	 * @param destinationTerritoryPreFortifyArmyCount
-	 *            the destinationTerritoryPreFortifyArmyCount to set
+	 * Sets the destination territory pre fortify army count.
+	 *
+	 * @param destinationTerritoryPreFortifyArmyCount the destinationTerritoryPreFortifyArmyCount to set
 	 */
 	public void setDestinationTerritoryPreFortifyArmyCount(String destinationTerritoryPreFortifyArmyCount) {
 		this.destinationTerritoryPreFortifyArmyCount = destinationTerritoryPreFortifyArmyCount;
 	}
 
 	/**
+	 * Gets the destination territory post fortify army count.
+	 *
 	 * @return the destinationTerritoryPostFortifyArmyCount
 	 */
 	public String getDestinationTerritoryPostFortifyArmyCount() {
@@ -142,8 +183,9 @@ public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterf
 	}
 
 	/**
-	 * @param destinationTerritoryPostFortifyArmyCount
-	 *            the destinationTerritoryPostFortifyArmyCount to set
+	 * Sets the destination territory post fortify army count.
+	 *
+	 * @param destinationTerritoryPostFortifyArmyCount the destination Territory Post Fortify Army Count to set
 	 */
 	public void setDestinationTerritoryPostFortifyArmyCount(String destinationTerritoryPostFortifyArmyCount) {
 		this.destinationTerritoryPostFortifyArmyCount = destinationTerritoryPostFortifyArmyCount;
@@ -155,8 +197,9 @@ public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterf
 	}
 
 	/**
-	 * @param objCurrentRiskGameObject
-	 *            the objCurrentRiskGameObject to set
+	 * Sets the obj current risk game object.
+	 *
+	 * @param objCurrentRiskGameObject the obj Current Risk Game Object to set
 	 */
 	public void setObjCurrentRiskGameObject(RiskGameModel objCurrentRiskGameObject) {
 		this.objCurrentRiskGameObject = objCurrentRiskGameObject;
@@ -166,15 +209,11 @@ public class RiskFortifyPhaseModel extends Observable implements PhaseViewInterf
 	public String toString() {
 		StringBuilder sbContentBuilder = new StringBuilder();
 
-		// if (this.objCurrentRiskGameObject.getState() ==
-		// this.objCurrentRiskGameObject.FORTIFY) {
 		sbContentBuilder.append("\n************" + getTitle() + "************\n");
 		sbContentBuilder.append(this.getPhaseInformation() + "\n");
 		sbContentBuilder.append("Statistics:\n\n");
 		// }
 
-		// if (this.objCurrentRiskGameObject.getState() ==
-		// this.objCurrentRiskGameObject.FORTIFYING) {
 
 		sbContentBuilder.append(""
 

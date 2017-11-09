@@ -7,7 +7,7 @@ import risk.model.RiskGameModel;
 import risk.model.interfaces.PhaseViewInterface;
 
 /**
- * The Class RiskStartupEndPhaseModel.
+ * The Class Risk Startup End Phase Model.
  */
 public class RiskStartupEndPhaseModel extends Observable implements PhaseViewInterface {
 	
@@ -30,7 +30,7 @@ public class RiskStartupEndPhaseModel extends Observable implements PhaseViewInt
 	}
 
 	/**
-	 * Gets the single instance of RiskStartupEndPhaseModel.
+	 * Gets the single instance of Risk Startup End Phase Model.
 	 *
 	 * @return single instance of RiskStartupEndPhaseModel
 	 */
@@ -42,7 +42,6 @@ public class RiskStartupEndPhaseModel extends Observable implements PhaseViewInt
 
 	@Override
 	public String getContent() {
-		// TODO Auto-generated method stub
 		return this.toString();
 	}
 
