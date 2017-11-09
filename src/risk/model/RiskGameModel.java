@@ -683,7 +683,7 @@ public class RiskGameModel {
 
 					do {
 
-						if (nextLine.split("=").length > 2) {
+						if (nextLine.split("=").length > 1) {
 							regionName = nextLine.split("=")[0];
 							continentValue = Integer.parseInt((nextLine.split("=")[1]).trim());
 						}
