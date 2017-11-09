@@ -17,14 +17,14 @@ public class RiskContinentModel {
 	/**
 	 * Instantiates a new risk continent model.
 	 *
-	 * @param nm, the continent name
-	 * @param t, territory 
-	 * @param v, 
+	 * @param continentname, the continent name
+	 * @param territory risk territory 
+	 * @param continentvalue 
 	 */
-	public RiskContinentModel(String nm, Vector<Integer> t, int v) {
-		name = nm;
-		value = v;
-		territories = t;
+	public RiskContinentModel(String continentname, Vector<Integer> territory, int continentvalue) {
+		name = continentname;
+		value = continentvalue;
+		territories = territory;
 	}
 
 	/**
@@ -57,7 +57,7 @@ public class RiskContinentModel {
 	/**
 	 * Checks if is territory of the continent.
 	 *
-	 * @param territorymodel the territorymodel
+	 * @param territorymodel the territory model
 	 * @return true, if is territory of
 	 */
 	public boolean isTerritoryOf(RiskTerritoryModel territorymodel) {

@@ -980,7 +980,7 @@ public class RiskGameModel {
 	 * Fill draw map.
 	 *
 	 * @param index the index
-	 * @param p the p
+	 * @param p, risk game player
 	 * @return the int[]
 	 */
 	public int[] fillDrawMap(int index, int p) {
@@ -993,7 +993,7 @@ public class RiskGameModel {
 	/**
 	 * Gets the ownership.
 	 *
-	 * @param index the index
+	 * @param index, risk player index
 	 * @return the ownership
 	 */
 	public int getOwnership(int index) {
@@ -1002,9 +1002,9 @@ public class RiskGameModel {
 	}
 
 	/**
-	 * Number of terroitories.
+	 * Number of territories.
 	 *
-	 * @return the int
+	 * @return the number of territories
 	 */
 	public int numOfTerroitories() {
 		int num = territories.size();
@@ -1038,7 +1038,7 @@ public class RiskGameModel {
 	/**
 	 * This method checks if the territory is occupied by the current player or not.
 	 *
-	 * @param riskterritorymodel the riskterritorymodel
+	 * @param riskterritorymodel 
 	 * @return true, if successful
 	 */
 	public boolean occupyTerritory(RiskTerritoryModel riskterritorymodel) {
@@ -1062,7 +1062,7 @@ public class RiskGameModel {
 	/**
 	 * Initial occupy territories.
 	 *
-	 * @param id the id
+	 * @param id risk game player id
 	 */
 	public void initialOccupyTerritories(int id) {
 
@@ -1081,7 +1081,7 @@ public class RiskGameModel {
 	/**
 	 * Gets the country name.
 	 *
-	 * @param id the id
+	 * @param id country id
 	 * @return the country name
 	 */
 	public String getCountryName(int id) {
@@ -1093,7 +1093,7 @@ public class RiskGameModel {
 	/**
 	 * Gets the player name.
 	 *
-	 * @param id the id
+	 * @param id risk player id
 	 * @return the player name
 	 */
 	public String getPlayerName(int id) {
@@ -1121,7 +1121,7 @@ public class RiskGameModel {
 	/**
 	 * Gets the territory at.
 	 *
-	 * @param index the index
+	 * @param index 
 	 * @return the territory at
 	 */
 	public RiskTerritoryModel getTerritoryAt(int index) {
@@ -1131,8 +1131,8 @@ public class RiskGameModel {
 	/**
 	 * Number of armies on territory.
 	 *
-	 * @param index the index
-	 * @return the int
+	 * @param index territory id
+	 * @return the number of armies in territory
 	 */
 	public int numOfArmiesOnTerritory(int index) {
 		return territories.elementAt(index).getArmies();
@@ -1186,7 +1186,7 @@ public class RiskGameModel {
 	/**
 	 * Sets the risk startup phase model observable.
 	 *
-	 * @param riskStartupPhaseModelObservable            the riskStartupPhaseModelObservable to set
+	 * @param riskStartupPhaseModelObservable the riskStartupPhaseModelObservable to set
 	 */
 	public void setRiskStartupPhaseModelObservable(RiskStartupPhaseModel riskStartupPhaseModelObservable) {
 		this.riskStartupPhaseModelObservable = riskStartupPhaseModelObservable;
