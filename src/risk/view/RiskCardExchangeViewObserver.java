@@ -13,22 +13,53 @@ import javax.swing.ScrollPaneConstants;
 
 import risk.model.RiskPlayerModel;
 
+/**
+ * An asynchronous update interface for receiving notifications
+ * about RiskCardExchangeView information as the Risk Card Exchange View is constructed.
+ */
 public class RiskCardExchangeViewObserver implements Observer {
+	
+	/** The card exchange view panel. */
 	JPanel cardExchangeViewPanel;
+	
+	/** The card exchange view text area. */
 	JTextArea cardExchangeViewTextArea;
+	
+	/** The card exchange view frame. */
 	JFrame cardExchangeViewFrame;
+	
+	/** The card exchange view text area string. */
 	StringBuilder cardExchangeViewTextAreaString = new StringBuilder();
+	
+	/** The instance. */
 	private static RiskCardExchangeViewObserver instance = new RiskCardExchangeViewObserver();
 
+	/**
+	 * This method is called when information about an RiskCardExchangeView
+	 * which was previously requested using an asynchronous
+	 * interface becomes available.
+	 */
 	private RiskCardExchangeViewObserver() {
 	}
 
+	/**
+	 * This method is called when information about an RiskCardExchangeView
+	 * which was previously requested using an asynchronous
+	 * interface becomes available.
+	 *
+	 * @return the instance
+	 */
 	public static RiskCardExchangeViewObserver getInstance() {
 		if (instance == null)
 			instance = new RiskCardExchangeViewObserver();
 		return instance;
 	}
 
+	/**
+	 * This method is called when information about an RiskCardExchangeView
+	 * which was previously requested using an asynchronous
+	 * interface becomes available.
+	 */
 	public void generateCardExchangeView() {
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		int height = screenSize.height * 2 / 3;

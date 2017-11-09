@@ -16,16 +16,29 @@ import risk.controller.RiskController;
 import risk.controller.RiskStartGameController;
 import risk.model.RiskPlayerModel;
 
-
-
+/**
+ * The Class Test Risk Start Game Controller.
+ */
 public class TestRiskStartGameController {
+	
+	/** The risk start game controller. */
 	RiskStartGameController riskstartgamecontroller;
 	
+	/**
+	 * Before.
+	 */
 	@Before
 	public void before() {
 		riskstartgamecontroller = new RiskStartGameController("test");
 	}
 
+	/**
+	 * Test validate map line input text.
+	 *
+	 * @throws ParserConfigurationException the parser configuration exception
+	 * @throws SAXException the SAX exception
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	@Test
 	public void testValidateMapLineInputText() throws ParserConfigurationException, SAXException, IOException {
 		boolean q = riskstartgamecontroller.validateMapLineInputText("India,Asia,China,Japan");
@@ -35,14 +48,24 @@ public class TestRiskStartGameController {
 		assertEquals(false,q1);
 	}
 
-	@Test
-	public void testgetAdjacentCountryInfo() throws ParserConfigurationException, SAXException, IOException {
-		riskstartgamecontroller.populatePredefinedTerritoryCoordinatesList();
-		String h = riskstartgamecontroller.getAdjacentCountryInfo("India", "Japan", "Asia");
-		assertEquals("India,47,76,Asia,Japan", h);
+    /**
+     * Test get adjacent country info.
+     *
+     * @throws ParserConfigurationException the parser configuration exception
+     * @throws SAXException the SAX exception
+     * @throws IOException Signals that an I/O exception has occurred.
+     */
+    public void testgetAdjacentCountryInfo() throws ParserConfigurationException, SAXException, IOException
+    {
+    	riskstartgamecontroller.populatePredefinedTerritoryCoordinatesList();
+    	String h=riskstartgamecontroller.getAdjacentCountryInfo("India","Japan","Asia");
+    	assertEquals("India,47,76,Asia,Japan",h);
+    	
+    }
 
-	}
-
+    /**
+     * Test validate all countries
+     */
 	@Test
 	public void testValidateAllCountriesConnected() {
 		HashMap<String, String> countries = new HashMap<String, String>();

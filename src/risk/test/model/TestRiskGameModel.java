@@ -13,14 +13,25 @@ import risk.model.RiskGameModel;
 import risk.model.RiskPlayerModel;
 import risk.model.RiskTerritoryModel;
 
+/**
+ * The Class Test Risk Game Model.
+ */
 public class TestRiskGameModel {
+	
+	/** The risk game model. */
 	RiskGameModel riskGameModel;
 
+	/**
+	 * Before.
+	 */
 	@Before
 	public void before() {
 		riskGameModel = new RiskGameModel("test");
 	}
 
+	/**
+	 * Test occupy territory.
+	 */
 	@Test
 	public void testOccupyTerritory() {
 
@@ -32,6 +43,9 @@ public class TestRiskGameModel {
 		assertEquals(false, result);
 	}
 
+	/**
+	 * Test distribute.
+	 */
 	@Test
 	public void testDistribute() {
 		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1);
@@ -52,6 +66,9 @@ public class TestRiskGameModel {
 		assertEquals(25, result);
 	}
 
+	/**
+	 * Test turn bonus.
+	 */
 	@Test
 	public void testTurnBonus() {
 		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1);
@@ -99,6 +116,9 @@ public class TestRiskGameModel {
 		assertEquals(12, result);
 	}
 
+	/**
+	 * Test bonus territory.
+	 */
 	@Test
 	public void testBonusTerritory() {
 		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1);
@@ -134,6 +154,9 @@ public class TestRiskGameModel {
 
 	}
 
+	/**
+	 * Test bonus continent.
+	 */
 	@Test
 	public void testBonusContinent() {
 		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 2);
@@ -155,6 +178,9 @@ public class TestRiskGameModel {
 
 	}
 
+	/**
+	 * Test add player.
+	 */
 	@Test
 	public void testAddplayer() {
 		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1);
@@ -175,16 +201,27 @@ public class TestRiskGameModel {
 		riskGameModel.setPlayer(players);
 	}
 
-	@Test
-	public void testGetOwnership() {
-		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1);
-		riskGameModel.setCurPlayer(riskplayermodel);
-		RiskTerritoryModel riskterritorymodel = new RiskTerritoryModel(1, "Alaska", 1, 47, 76);
-		riskterritorymodel.setPlayer(riskplayermodel);
-		riskGameModel.territories = new Vector<RiskTerritoryModel>();
-		riskGameModel.territories.addElement(riskterritorymodel);
-		assertEquals(1, riskGameModel.getOwnership(0));
+
+    
+    /**
+     * Test get ownership.
+     */
+    @Test
+	public void testGetOwnership() 
+	{
+		RiskPlayerModel rpm=new RiskPlayerModel("player1",1);
+		riskGameModel.setCurPlayer(rpm);
+		RiskTerritoryModel rttm= new RiskTerritoryModel(1,"Alaska",1,47,76);
+		rttm.setPlayer(rpm);
+		riskGameModel.territories= new Vector<RiskTerritoryModel>();
+	    riskGameModel.territories.addElement(rttm);
+		int c=riskGameModel.getOwnership(0);
+		assertEquals(1,c);
 	}
+	
+	/**
+	 * Test risk fortifying.
+	 */
 
 	@Test
 	public void testRiskFortifying() {
@@ -209,6 +246,11 @@ public class TestRiskGameModel {
 
 	}
 
+	
+	/**
+	 * Test risk not fortifying.
+	 */
+
 	@Test
 	public void testRiskNotFortifying() {
 		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1);
@@ -229,6 +271,11 @@ public class TestRiskGameModel {
 		assertEquals("false", nfortify);
 
 	}
+
+	
+	/**
+	 * Test risk attack.
+	 */
 
 	@Test
 	public void testRiskAttack() {
@@ -254,6 +301,11 @@ public class TestRiskGameModel {
 
 	}
 
+	
+	/**
+	 * Test not enough armies to attack.
+	 */
+
 	@Test
 	public void testNOEnoughArmiesToAttack() {
 		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1);
@@ -278,6 +330,9 @@ public class TestRiskGameModel {
 
 	}
 	
+	/**
+	 * Test adjacent territory.
+	 */
 	@Test
 	public void testAdjacentTerritory() {
 		RiskTerritoryModel riskterritorymodel = new RiskTerritoryModel(1, "Alaska", 1, 47, 76);
@@ -291,6 +346,11 @@ public class TestRiskGameModel {
 		assertEquals(true, riskterritorymodel.isAdjacent(riskterritorymodel1));
 	}
 
+	
+	/**
+	 * Test not adjacent territory.
+	 */
+
 	@Test
 	public void testNotAdjacentTerritory() {
 		RiskTerritoryModel riskterritorymodel = new RiskTerritoryModel(1, "Alaska", 1, 47, 76);
@@ -301,6 +361,10 @@ public class TestRiskGameModel {
 		val.add(1);
 		assertEquals(false, riskterritorymodel.isAdjacent(riskterritorymodel1));
 	}
+	
+	/**
+	 * Test check tags present.
+	 */
 	@Test
 	public void testcheckTagsPresent() {
 		riskGameModel.initializeMapVariables();
@@ -311,6 +375,9 @@ public class TestRiskGameModel {
 		assertEquals(true, riskGameModel.checkTagsPresent(riskGameModel.sbCurrentMapString.toString()));
 	}
 
+	/**
+	 * Test check adjacent present all territories.
+	 */
 	@Test
 	public void testcheckAdjacentsPresentAllTerritories() {
 		riskGameModel.initializeMapVariables();
@@ -318,6 +385,9 @@ public class TestRiskGameModel {
 		assertEquals(true, flag);
 	}
 
+	/**
+	 * Test check continents are valid.
+	 */
 	@Test
 	public void testcheckContinentsareValid() {
 		// Check is the continents listed is present in the ones defined above
@@ -326,15 +396,24 @@ public class TestRiskGameModel {
 		assertEquals(true, flag);
 	}
 
-	@Test
-	public void testTradeCardArmiesCount() {
 
-		assertEquals(5, RiskGameModel.fetchTradedArmiesCount());
-		assertEquals(10, RiskGameModel.fetchTradedArmiesCount());
-		assertEquals(15, RiskGameModel.fetchTradedArmiesCount());
-		assertEquals(20, RiskGameModel.fetchTradedArmiesCount());
+	
+		/**
+		 * Test trade card armies count.
+		 */
+		@Test
+	public void testTradeCardArmiesCount()
+	{
+		
+		assertEquals(5,RiskGameModel.fetchTradedArmiesCount());
+		assertEquals(10,RiskGameModel.fetchTradedArmiesCount());
+		assertEquals(15,RiskGameModel.fetchTradedArmiesCount());
+		assertEquals(20,RiskGameModel.fetchTradedArmiesCount());
 	}
-
+	
+	/**
+	 * Test trade cards count.
+	 */
 	@Test
 	public void testTradeCardsCount() {
 		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1);
@@ -347,6 +426,10 @@ public class TestRiskGameModel {
 		assertEquals(1, riskplayermodel.getCard().size());// Card count is 1.so reinforce, can't trade in.
 
 	}
+	
+	/**
+	 * Test capture.
+	 */
 	@Test
 	public void testCapture() {
 		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1);
