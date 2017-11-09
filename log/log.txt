@@ -732,3 +732,831 @@ application start
 All players Added
 15 armies added to each player
 Build the Game Panel
+-------------------------------------------------------
+application start
+All players Added
+15 armies added to each player
+Build the Game Panel
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+Player_1 got bonus armies
+Player_1 got4 left to place
+Player_1 got3 left to place
+Player_1 got2 left to place
+Player_1 got1 left to place
+Player_1 got0 left to place
+Player_1 entered active turn
+Attack Phase entered
+Player_1 entered attacking phase.
+Player_1 entered attacking phase.
+Player_1 has 5 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 3 armies moved to Brazil
+Fortify Phase entered
+Fortify Phase entered
+Fortify Phase entered
+-------------------------------------------------------
+application start
+All players Added
+-------------------------------------------------------
+application start
+All players Added
+15 armies added to each player
+Build the Game Panel
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+Player_1 got bonus armies
+Player_1 got3 left to place
+Player_1 got2 left to place
+Player_1 got2 left to place
+Player_1 got2 left to place
+Player_1 got1 left to place
+Player_1 got0 left to place
+Player_1 entered active turn
+Attack Phase entered
+Player_1 entered attacking phase.
+Player_1 entered attacking phase.
+Player_1 has 18 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 17 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 17 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 15 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 13 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 11 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 9 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 7 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 6 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 6 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 5 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 3 armies
+Player_1 attacking with 2 armies
+Player_1 has destroyed an army
+Player_1 has 2 armies
+Player_1 attacking with 1 armies
+Player_1 has lost an army
+Current player turn ends
+Player_2 got2 left to place
+Player_2 got1 left to place
+Player_2 got0 left to place
+Player_2 entered active turn
+Attack Phase entered
+Player_2 entered attacking phase.
+Player_2 entered attacking phase.
+Player_2 has 18 armies
+Player_2 attacking with 3 armies
+Player_2 has destroyed an army
+Player_2 has 3 armies moved to aa
+Attack Phase entered
+Player_2 entered attacking phase.
+Player_2 entered attacking phase.
+Attack Phase entered
+Attack operation cancelled
+Attack Phase entered
+Player_2 entered attacking phase.
+Player_2 entered attacking phase.
+Player_2 has 3 armies
+Player_2 attacking with 2 armies
+Player_2 has lost two armies
+Fortify Phase entered
+Attack Phase entered
+Player_2 entered attacking phase.
+Player_2 entered attacking phase.
+Current player turn ends
+Player_3 got2 left to place
+Player_3 got1 left to place
+Player_3 got0 left to place
+Player_3 entered active turn
+Attack Phase entered
+Player_3 entered attacking phase.
+Player_3 entered attacking phase.
+Player_3 has 10 armies
+Player_3 attacking with 3 armies
+Player_3 has destroyed an army
+Player_3 has 9 armies moved to aa
+Attack Phase entered
+Player_3 entered attacking phase.
+Player_3 entered attacking phase.
+Player_3 has 9 armies
+Player_3 attacking with 3 armies
+Player_3 has lost two armies
+Player_3 has 7 armies
+Player_3 attacking with 3 armies
+Player_3 has lost two armies
+Player_3 has 5 armies
+Player_3 attacking with 3 armies
+Player_3 has destroyed an army
+Player_3 has 4 armies
+Player_3 attacking with 3 armies
+Player_3 has destroyed an army
+Player_3 has 3 armies
+Player_3 attacking with 2 armies
+Player_3 has destroyed an army
+Player_3 has 2 armies
+Player_3 attacking with 1 armies
+Player_3 has lost an army
+Fortify Phase entered
+-------------------------------------------------------
+application start
+All players Added
+15 armies added to each player
+Build the Game Panel
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+Player_1 got bonus armies
+Player_1 got3 left to place
+Player_1 got2 left to place
+Player_1 got1 left to place
+Player_1 got0 left to place
+Player_1 entered active turn
+Attack Phase entered
+Player_1 entered attacking phase.
+Player_1 entered attacking phase.
+Player_1 has 18 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 16 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 15 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 15 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 15 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 15 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 15 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 15 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 14 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 12 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 10 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 10 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 4 armies moved to bb
+Attack Phase entered
+Player_3 entered attacking phase.
+Player_3 entered attacking phase.
+-------------------------------------------------------
+application start
+All players Added
+15 armies added to each player
+Build the Game Panel
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+Player_1 got bonus armies
+Player_1 got3 left to place
+Player_1 got3 left to place
+Player_1 got2 left to place
+Player_1 got1 left to place
+Player_1 got0 left to place
+Player_1 entered active turn
+Attack Phase entered
+Player_1 entered attacking phase.
+Player_1 entered attacking phase.
+Player_1 has 18 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 16 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 15 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 13 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 13 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 13 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 13 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 12 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 11 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 10 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 10 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 10 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 3 armies moved to bb
+Attack Phase entered
+Player_3 entered attacking phase.
+Player_3 entered attacking phase.
+Player_3 entered attacking phase.
+-------------------------------------------------------
+application start
+All players Added
+15 armies added to each player
+Build the Game Panel
+-------------------------------------------------------
+application start
+All players Added
+15 armies added to each player
+Build the Game Panel
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+Player_1 got bonus armies
+Player_1 got3 left to place
+Player_1 got2 left to place
+Player_1 got1 left to place
+Player_1 got0 left to place
+Player_1 entered active turn
+Attack Phase entered
+Player_1 entered attacking phase.
+Player_1 entered attacking phase.
+Player_1 has 18 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 16 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 15 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 14 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 12 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 11 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 10 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 9 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 8 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 6 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 4 armies
+Player_1 attacking with 2 armies
+Player_1 has lost two armies
+Player_1 has 2 armies
+Player_1 attacking with 1 armies
+Player_1 has lost an army
+Current player turn ends
+Player_2 got2 left to place
+Player_2 got1 left to place
+Player_2 got0 left to place
+Player_2 entered active turn
+Attack Phase entered
+Attack Phase entered
+Player_2 entered attacking phase.
+Player_2 entered attacking phase.
+Player_2 has 18 armies
+Player_2 attacking with 3 armies
+Player_2 has lost an army
+Player_2 has 17 armies
+Player_2 attacking with 3 armies
+Player_2 has lost an army
+Player_2 has 16 armies
+Player_2 attacking with 3 armies
+Player_2 has destroyed an army
+Player_2 has 3 armies moved to aa
+Fortify Phase entered
+Attack Phase entered
+Player_2 entered attacking phase.
+Player_2 entered attacking phase.
+-------------------------------------------------------
+application start
+All players Added
+15 armies added to each player
+Build the Game Panel
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+Player_1 got bonus armies
+Player_1 got3 left to place
+Player_1 got2 left to place
+Player_1 got1 left to place
+Player_1 got0 left to place
+Player_1 entered active turn
+Attack Phase entered
+Player_1 entered attacking phase.
+Player_1 entered attacking phase.
+Player_1 has 18 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 18 armies
+Player_1 attacking with 2 armies
+Player_1 has lost two armies
+Player_1 has 16 armies
+Player_1 attacking with 2 armies
+Player_1 has lost two armies
+Player_1 has 14 armies
+Player_1 attacking with 2 armies
+Player_1 has lost two armies
+Player_1 has 12 armies
+Player_1 attacking with 2 armies
+Player_1 has lost two armies
+Player_1 has 10 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 8 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 7 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 5 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 5 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 5 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 4 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 4 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 4 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 4 armies
+Player_1 attacking with 3 armies
+Player_1 has lost an army
+Player_1 has 3 armies
+Player_1 attacking with 2 armies
+Player_1 has destroyed an army
+Player_1 has 2 armies moved to bb
+Current player turn ends
+Player_1 got2 left to place
+Player_1 got1 left to place
+Player_1 got0 left to place
+Player_1 entered active turn
+Attack Phase entered
+Player_1 entered attacking phase.
+Player_1 entered attacking phase.
+-------------------------------------------------------
+application start
+-------------------------------------------------------
+application start
+All players Added
+15 armies added to each player
+Build the Game Panel
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+initial reinforcement stage
+Player_1 got bonus armies
+Player_1 got3 left to place
+Player_1 got2 left to place
+Player_1 got1 left to place
+Player_1 got0 left to place
+Player_1 entered active turn
+Attack Phase entered
+Player_1 entered attacking phase.
+Player_1 entered attacking phase.
+Player_1 has 18 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 18 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed two armies
+Player_1 has 18 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 16 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 14 armies
+Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Player_1 has 13 armies
+Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Player_1 has 11 armies
+Player_1 attacking with 2 armies
+Player_1 has destroyed an army
+Player_1 has 10 armies
+Player_1 attacking with 2 armies
+Player_1 has lost two armies
+Player_1 has 8 armies
+Player_1 attacking with 2 armies
+Player_1 has lost two armies
+Player_1 has 6 armies
+Player_1 attacking with 2 armies
+Player_1 has lost two armies
+Player_1 has 4 armies
+Player_1 attacking with 2 armies
+Player_1 has destroyed an army
+Player_1 has 3 armies
+Player_1 attacking with 2 armies
+Player_1 has destroyed two armies
+Player_1 has 3 armies
+Player_1 attacking with 2 armies
+Player_1 has lost two armies
+Current player turn ends
+Player_2 got2 left to place
+Player_2 got1 left to place
+Player_2 got0 left to place
+Player_2 entered active turn
+Attack Phase entered
+Player_2 entered attacking phase.
+Player_2 entered attacking phase.
+Player_2 has 18 armies
+Player_2 attacking with 3 armies
+Player_2 has destroyed an army
+Player_2 has 3 armies moved to aa
+Fortify Phase entered
+Current player turn ends
+Player_3 got2 left to place
+Player_3 got1 left to place
+Player_3 got0 left to place
+Player_3 entered active turn
+Attack Phase entered
+Player_3 entered attacking phase.
+Player_3 entered attacking phase.
+Player_3 has 9 armies
+Player_3 attacking with 3 armies
+Player_3 has lost two armies
+Player_3 has 7 armies
+Player_3 attacking with 3 armies
+Player_3 has destroyed an army
+Player_3 has 6 armies
+Player_3 attacking with 3 armies
+Player_3 has lost two armies
+Player_3 has 4 armies
+Player_3 attacking with 3 armies
+Player_3 has lost two armies
+Player_3 has 2 armies
+Player_3 attacking with 1 armies
+Player_3 has destroyed an army
+Player_3 has 2 armies
+Player_3 attacking with 1 armies
+Player_3 has destroyed an army
+Player_3 has 1 armies moved to aa
+Current player turn ends
+Player_2 got2 left to place
+Player_2 got1 left to place
+Player_2 got0 left to place
+Player_2 entered active turn
+Attack Phase entered
+Player_2 entered attacking phase.
+Player_2 entered attacking phase.
+Player_2 has 18 armies
+Player_2 attacking with 3 armies
+Player_2 has lost an army
+Player_2 has 17 armies
+Player_2 attacking with 3 armies
+Player_2 has lost an army
+Player_2 has 16 armies
+Player_2 attacking with 3 armies
+Player_2 has lost an army
+Player_2 has 15 armies
+Player_2 attacking with 3 armies
+Player_2 has destroyed an army
+Player_2 has 4 armies moved to aa
+Attack Phase entered
+Player_2 entered attacking phase.
+Player_2 entered attacking phase.
+Player_2 has 4 armies
+Player_2 attacking with 3 armies
+Player_2 has lost an army
+Player_2 has 3 armies
+Player_2 attacking with 2 armies
+Player_2 has destroyed an army
+Player_2 has 2 armies moved to cc
+Current player turn ends
+Current player turn ends

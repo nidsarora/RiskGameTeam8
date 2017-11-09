@@ -570,8 +570,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 						statusLabel.setText(risk.defenseNum + " armies moved to " + risk.defenseTerritory.getName());
 
 					risk.notifyPhaseViewChange();
-					risk.setAttackDieArray(null);
-					risk.setDefenceDieArray(null);
+					risk.setAttackDieArray(new Integer[] {0,0,0});
+					risk.setDefenceDieArray(new Integer[] {0,0,0});
 					Utility.writeLog(risk.getCurrentPlayer().getName() + " has " + risk.defenseNum + " armies moved to "
 							+ risk.defenseTerritory.getName());
 					EndButton.setVisible(true);
