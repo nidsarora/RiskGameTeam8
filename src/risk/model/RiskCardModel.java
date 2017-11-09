@@ -15,8 +15,8 @@ public class RiskCardModel {
 	/**
 	 * Instantiates a new risk card model.
 	 *
-	 * @param r_territory_number the risk territory number
-	 * @param r_card_type risk card type
+	 * @param r_territory_number, the risk territory number
+	 * @param r_card_type, risk card type
 	 */
 	public RiskCardModel(int r_territory_number, String r_card_type) {
 		this.territory = r_territory_number;
