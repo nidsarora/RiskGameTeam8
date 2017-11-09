@@ -1135,3 +1135,8 @@ player1 attacking with 2 armies
 player1 has 5 armies
 player1 attacking with 2 armies
 25 armies added to each player
+-------------------------------------------------------
+application start
+All players Added
+35 armies added to each player
+Build the Game Panel

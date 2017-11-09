@@ -5,6 +5,8 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Date;
+
 import risk.model.interfaces.PhaseViewInterface;
 
 /**
@@ -130,6 +132,7 @@ public final class Utility {
 				BufferedWriter bw = new BufferedWriter(fw);
 				PrintWriter out = new PrintWriter(bw)) {
 			out.println(text);
+			out.println(new Date().toString() + ":" + text);
 
 		} catch (IOException exception) {
 			exception.printStackTrace();
