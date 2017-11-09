@@ -39,72 +39,6 @@ import risk.view.RiskPlayerDominationViewObserver;
  * @author Team8
  */
 public class RiskGameModel {
-
-//<<<<<<< HEAD
-//	// Game States
-//	public static final int NEW_GAME = 0;
-//	public static final int INITIAL_REINFORCE = 1;
-//	public static final int ACTIVE_TURN = 2;
-//	public static final int TURN_BONUS = 3;
-//	public static final int REINFORCE = 4;
-//	public static final int TRADE_CARDS = 5;
-//	public static final int START_TURN = 6;
-//	public static final int ATTACK = 7;
-//	public static final int ATTACKING = 8;
-//	public static final int ATTACK_PHASE = 9;
-//	public static final int BATTLING = 10;
-//	public static final int CAPTURE = 11;
-//	public static final int FORTIFY = 12;
-//	public static final int FORTIFYING = 13;
-//	public static final int FORTIFY_PHASE = 14;
-//	public static final int DEFEATED = 15;
-//	public static int GAME_TRADE_CARD_PHASE_COUNT = 0;
-//	public static final int END_GAME = 100;
-//
-//	int armies;
-//
-//	public static final int GAME_OVER = 99;
-//
-//	static public Vector<RiskTerritoryModel> territories = new Vector<RiskTerritoryModel>();
-//	public Vector<RiskContinentModel> continents = new Vector<RiskContinentModel>();
-//	static public Vector<RiskPlayerModel> players = new Vector<RiskPlayerModel>();
-//	public Vector<RiskCardModel> deck = new Vector<RiskCardModel>();
-//	public RiskPlayerModel curPlayer;
-//	public RiskPlayerModel defender;
-//	public RiskPlayerModel active;
-//
-//	static private int gameState;
-//	public RiskTerritoryModel aTerritory;
-//	public RiskTerritoryModel defenseTerritory;
-//	public int defenseNum = 0;
-//	public int attackNum = 0;
-//	public int iter = 0;
-//	public boolean drawn;
-//	private Integer[] attackDieArray;
-//	private Integer[] defenceDieArray;
-//	private RiskStartupPhaseModel riskStartupPhaseModelObservable;
-//	private RiskReinforcementPhaseModel riskRiskReinforcementPhaseModelObservable;
-//	private RiskAttackPhaseModel riskAttackPhaseModelObservable;
-//	private RiskFortifyPhaseModel riskFortifyPhaseModelObservable;
-//	private RiskStartupEndPhaseModel riskStartupEndPhaseModelObservable;
-//	private RiskPlayerDominationViewObserver riskPlayerDominationViewObserver;
-//	private int currentPlayerBonusArmiesRecieved;
-//	private Boolean isBaseMapEdited;
-//	private RiskPhaseViewObserver riskPhaseViewObserver;
-//	private Boolean isGameMapValid = false;
-//
-//	public RiskGameModel(String test) {
-//	}
-//
-//	public RiskGameModel() {
-//		gameState = NEW_GAME;
-//		this.isBaseMapEdited = RiskController.isBaseMapEdited;
-//		initalPlayer();
-//		initializePlayerDominationView();
-//		initializeCardExchangeView();
-//		initializeMapVariables();
-//		ValidateLoadMap();
-//=======
 	/** The Constant NEW_GAME. */
 	// Game States
 	public static final int NEW_GAME = 0;
@@ -256,26 +190,25 @@ public class RiskGameModel {
 	 * Instantiates a new risk game model.
 	 */
 	public RiskGameModel() {
+		setIsBaseMapEdited(RiskController.isBaseMapEdited);
 		gameState = NEW_GAME;
 		initalPlayer();
 		initializePlayerDominationView();
 		initializeCardExchangeView();
-		loadGameMap();
-//>>>>>>> ce3fc670b0622dafa319e8ecc5327f203c1885f8
+		initializeMapVariables();
+		ValidateLoadMap();
 		initializeDeck();
 		distubuteArmies();
 	}
 
 
 	private void ValidateLoadMap() {
-
 		if (isGameMapValid()) {
 			loadGameMap();
 			this.setIsGameMapValid(true);
 		} else {
 			this.setIsGameMapValid(false);
 		}
-
 	}
 
 	private boolean isGameMapValid() {
@@ -563,7 +496,7 @@ public class RiskGameModel {
 	public void distubuteArmies() {
 		int numOfPlayers = players.size();
 		if (numOfPlayers == 3)
-			armies = 5;
+			armies = 15;
 		else if (numOfPlayers == 4)
 			armies = 30;
 		else if (numOfPlayers == 5)

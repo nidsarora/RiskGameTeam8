@@ -1,3 +1,15 @@
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*
+ * RiskStartGame.java
+ *
+ * Created on Nov 15, 2010, 11:13:31 AM
+ */
+
 package risk.controller;
 
 import java.awt.ComponentOrientation;
@@ -286,6 +298,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	/**
 	 * Exit the Application.
 	 *
+	 * @param event
 	 */
 	private void exitForm(java.awt.event.WindowEvent event) {
 		System.exit(0);

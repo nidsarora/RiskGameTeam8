@@ -196,5 +196,7 @@ public class TestRiskGameModel {
 		assertEquals(true,rttm.isAdjacent(rttm1));
 	}
 	
+
+	
 	
 }

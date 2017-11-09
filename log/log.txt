@@ -474,3 +474,47 @@ Attack Phase entered
 Attack Phase entered
 Attack Phase entered
 >>>>>>> dfaae2a1c3c712442acfe903761c32d167eaca52
+-------------------------------------------------------
+application start
+All players Added
+5 armies added to each player
+Build the Game Panel
+-------------------------------------------------------
+application start
+All players Added
+5 armies added to each player
+Build the Game Panel
+-------------------------------------------------------
+application start
+All players Added
+15 armies added to each player
+Build the Game Panel
+-------------------------------------------------------
+application start
+All players Added
+-------------------------------------------------------
+application start
+All players Added
+-------------------------------------------------------
+application start
+All players Added
+-------------------------------------------------------
+application start
+All players Added
+-------------------------------------------------------
+application start
+All players Added
+-------------------------------------------------------
+application start
+All players Added
+-------------------------------------------------------
+application start
+All players Added
+-------------------------------------------------------
+application start
+All players Added
+-------------------------------------------------------
+application start
+All players Added
+15 armies added to each player
+Build the Game Panel
