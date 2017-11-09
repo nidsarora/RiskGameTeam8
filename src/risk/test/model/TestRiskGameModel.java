@@ -24,9 +24,9 @@ public class TestRiskGameModel {
 	@Test
 	public void testOccupyTerritory() {
 
-		RiskPlayerModel rpm = new RiskPlayerModel("player1", 1);
-		rpm.setCard(new RiskCardModel(1, 39));
-		riskGameModel.setCurPlayer(rpm);
+		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1);
+		riskplayermodel.setCard(new RiskCardModel(1, 39));
+		riskGameModel.setCurPlayer(riskplayermodel);
 		RiskTerritoryModel rtm = new RiskTerritoryModel(1, "Northwest_Territory", 2, 155, 70);
 		boolean result = riskGameModel.occupyTerritory(rtm);
 		assertEquals(false, result);
@@ -54,7 +54,7 @@ public class TestRiskGameModel {
 
 	@Test
 	public void testTurnBonus() {
-		RiskPlayerModel rpm = new RiskPlayerModel("player1", 1);
+		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1);
 		// riskGameModel.loadMap();
 		RiskTerritoryModel riskterritorymodel = new RiskTerritoryModel(1, "Territory1", 2, 155, 70);
 		RiskTerritoryModel riskterritorymodel1 = new RiskTerritoryModel(2, "Territory2", 2, 280, 134);
@@ -81,8 +81,8 @@ public class TestRiskGameModel {
 		occupiedTerritories.add(riskterritorymodel9);
 		occupiedTerritories.add(riskterritorymodel10);
 		occupiedTerritories.add(riskterritorymodel11);
-		rpm.setOccupiedTerritories(occupiedTerritories);
-		riskGameModel.setCurPlayer(rpm);
+		riskplayermodel.setOccupiedTerritories(occupiedTerritories);
+		riskGameModel.setCurPlayer(riskplayermodel);
 		Vector<Integer> val = new Vector<Integer>();
 		val.add(1);
 		val.add(2);
@@ -174,104 +174,107 @@ public class TestRiskGameModel {
 		players.add(riskplayermodel6);
 		riskGameModel.setPlayer(players);
 	}
-    @Test
-	public void testGetOwnership() 
-	{
-		RiskPlayerModel rpm=new RiskPlayerModel("player1",1);
-		riskGameModel.setCurPlayer(rpm);
-		RiskTerritoryModel rttm= new RiskTerritoryModel(1,"Alaska",1,47,76);
-		rttm.setPlayer(rpm);
-		riskGameModel.territories= new Vector<RiskTerritoryModel>();
-	    riskGameModel.territories.addElement(rttm);
-		int c=riskGameModel.getOwnership(0);
-		assertEquals(1,c);
+
+	@Test
+	public void testGetOwnership() {
+		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1);
+		riskGameModel.setCurPlayer(riskplayermodel);
+		RiskTerritoryModel riskterritorymodel = new RiskTerritoryModel(1, "Alaska", 1, 47, 76);
+		riskterritorymodel.setPlayer(riskplayermodel);
+		riskGameModel.territories = new Vector<RiskTerritoryModel>();
+		riskGameModel.territories.addElement(riskterritorymodel);
+		assertEquals(1, riskGameModel.getOwnership(0));
 	}
+
 	@Test
 	public void testRiskFortifying() {
-		RiskPlayerModel rpm=new RiskPlayerModel("player1",1);
-		riskGameModel.setCurPlayer(rpm);
-		RiskTerritoryModel rttm= new RiskTerritoryModel(1,"Alaska",1,47,76);
-		Vector<Integer> val=new Vector<Integer>();
-	    val.add(2);
-	    rttm.setPlayer(rpm);
-	    RiskTerritoryModel rttm1= new RiskTerritoryModel(2,"Northwest_Territory",1,155,70);
-	    Vector<Integer> val1=new Vector<Integer>();
-	    val.add(1);
-	    rttm1.setPlayer(rpm);
-	    rttm.setAdjacent(val);
-	    rttm1.setAdjacent(val1);
-	    riskGameModel.territories= new Vector<RiskTerritoryModel>();
-	    riskGameModel.territories.addElement(rttm);
-	    riskGameModel.territories.addElement(rttm1);
-	    riskGameModel.aTerritory = rttm;
-	    String d = riskGameModel.RiskFortifying(1);
-	    assertEquals("",d);
-	    
+		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1);
+		riskGameModel.setCurPlayer(riskplayermodel);
+		RiskTerritoryModel riskterritorymodel = new RiskTerritoryModel(1, "Alaska", 1, 47, 76);
+		Vector<Integer> val = new Vector<Integer>();
+		val.add(2);
+		riskterritorymodel.setPlayer(riskplayermodel);
+		RiskTerritoryModel riskterritorymodel1 = new RiskTerritoryModel(2, "Northwest_Territory", 1, 155, 70);
+		Vector<Integer> val1 = new Vector<Integer>();
+		val.add(1);
+		riskterritorymodel1.setPlayer(riskplayermodel);
+		riskterritorymodel.setAdjacent(val);
+		riskterritorymodel1.setAdjacent(val1);
+		riskGameModel.territories = new Vector<RiskTerritoryModel>();
+		riskGameModel.territories.addElement(riskterritorymodel);
+		riskGameModel.territories.addElement(riskterritorymodel1);
+		riskGameModel.aTerritory = riskterritorymodel;
+		String fortify = riskGameModel.RiskFortifying(1, true);
+		assertEquals("true", fortify);
+
 	}
+
 	@Test
 	public void testRiskNotFortifying() {
-		RiskPlayerModel rpm=new RiskPlayerModel("player1",1);
-		riskGameModel.setCurPlayer(rpm);
-		RiskTerritoryModel rttm= new RiskTerritoryModel(1,"India",1,47,76);
-		Vector<Integer> val=new Vector<Integer>();
-	    val.add(2);
-	    rttm.setPlayer(rpm);
-	    RiskTerritoryModel rttm1= new RiskTerritoryModel(2,"Japan",1,155,70);
-	    Vector<Integer> val1=new Vector<Integer>();
-	    val.add(1);
-	    rttm1.setPlayer(rpm);
-	    riskGameModel.territories= new Vector<RiskTerritoryModel>();
-	    riskGameModel.territories.addElement(rttm);
-	    riskGameModel.territories.addElement(rttm1);
-	    riskGameModel.aTerritory = rttm;
-	    String d = riskGameModel.RiskFortifying(1);
-	    assertEquals("",d);
-	    
+		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1);
+		riskGameModel.setCurPlayer(riskplayermodel);
+		RiskTerritoryModel riskterritorymodel = new RiskTerritoryModel(1, "India", 1, 47, 76);
+		Vector<Integer> val = new Vector<Integer>();
+		val.add(2);
+		riskterritorymodel.setPlayer(riskplayermodel);
+		RiskTerritoryModel riskterritorymodel1 = new RiskTerritoryModel(2, "Japan", 1, 155, 70);
+		Vector<Integer> val1 = new Vector<Integer>();
+		val.add(1);
+		riskterritorymodel1.setPlayer(riskplayermodel);
+		riskGameModel.territories = new Vector<RiskTerritoryModel>();
+		riskGameModel.territories.addElement(riskterritorymodel);
+		riskGameModel.territories.addElement(riskterritorymodel1);
+		riskGameModel.aTerritory = riskterritorymodel;
+		String nfortify = riskGameModel.RiskFortifying(1, true);
+		assertEquals("false", nfortify);
+
 	}
+
 	@Test
 	public void testRiskAttack() {
-		RiskPlayerModel rpm=new RiskPlayerModel("player1",1);
-		RiskPlayerModel rpm1=new RiskPlayerModel("player1",1);
-		riskGameModel.setCurPlayer(rpm);
-		RiskTerritoryModel rttm= new RiskTerritoryModel(1,"India",1,47,76);
-		Vector<Integer> val=new Vector<Integer>();
-	    val.add(2);
-	    rttm.setPlayer(rpm);
-	    RiskTerritoryModel rttm1= new RiskTerritoryModel(2,"Japan",1,155,70);
-	    Vector<Integer> val1=new Vector<Integer>();
-	    val.add(1);
-	    rttm1.setPlayer(rpm1);
-	    rttm.setAdjacent(val);
-	    rttm1.setAdjacent(val1);
-	    riskGameModel.territories= new Vector<RiskTerritoryModel>();
-	    riskGameModel.territories.addElement(rttm);
-	    riskGameModel.territories.addElement(rttm1);
-		rttm.addArmies(7);
-		
-		assertEquals("true",riskGameModel.Riskattack(0));
-		
+		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1);
+		RiskPlayerModel riskplayermodel1 = new RiskPlayerModel("player1", 1);
+		riskGameModel.setCurPlayer(riskplayermodel);
+		RiskTerritoryModel riskterritorymodel = new RiskTerritoryModel(1, "India", 1, 47, 76);
+		Vector<Integer> val = new Vector<Integer>();
+		val.add(2);
+		riskterritorymodel.setPlayer(riskplayermodel);
+		RiskTerritoryModel riskterritorymodel1 = new RiskTerritoryModel(2, "Japan", 1, 155, 70);
+		Vector<Integer> val1 = new Vector<Integer>();
+		val.add(1);
+		riskterritorymodel1.setPlayer(riskplayermodel1);
+		riskterritorymodel.setAdjacent(val);
+		riskterritorymodel1.setAdjacent(val1);
+		riskGameModel.territories = new Vector<RiskTerritoryModel>();
+		riskGameModel.territories.addElement(riskterritorymodel);
+		riskGameModel.territories.addElement(riskterritorymodel1);
+		riskterritorymodel.addArmies(7);
+
+		assertEquals("true", riskGameModel.Riskattack(0));
+
 	}
+
 	@Test
 	public void testNOEnoughArmiesToAttack() {
-		RiskPlayerModel rpm=new RiskPlayerModel("player1",1);
-		RiskPlayerModel rpm1=new RiskPlayerModel("player1",1);
-		riskGameModel.setCurPlayer(rpm);
-		RiskTerritoryModel rttm= new RiskTerritoryModel(1,"India",1,47,76);
-		Vector<Integer> val=new Vector<Integer>();
-	    val.add(2);
-	    rttm.setPlayer(rpm);
-	    RiskTerritoryModel rttm1= new RiskTerritoryModel(2,"Japan",1,155,70);
-	    Vector<Integer> val1=new Vector<Integer>();
-	    val.add(1);
-	    rttm1.setPlayer(rpm1);
-	    rttm.setAdjacent(val);
-	    rttm1.setAdjacent(val1);
-	    riskGameModel.territories= new Vector<RiskTerritoryModel>();
-	    riskGameModel.territories.addElement(rttm);
-	    riskGameModel.territories.addElement(rttm1);
-		rpm.addArmies(1);
-		String e=riskGameModel.Riskattack(0);
-		assertEquals("Not enough armies to battle, need at least 2",e);
+		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1);
+		RiskPlayerModel riskplayermodel1 = new RiskPlayerModel("player1", 1);
+		riskGameModel.setCurPlayer(riskplayermodel);
+		RiskTerritoryModel riskterritorymodel = new RiskTerritoryModel(1, "India", 1, 47, 76);
+		Vector<Integer> val = new Vector<Integer>();
+		val.add(2);
+		riskterritorymodel.setPlayer(riskplayermodel);
+		RiskTerritoryModel riskterritorymodel1 = new RiskTerritoryModel(2, "Japan", 1, 155, 70);
+		Vector<Integer> val1 = new Vector<Integer>();
+		val.add(1);
+		riskterritorymodel1.setPlayer(riskplayermodel1);
+		riskterritorymodel.setAdjacent(val);
+		riskterritorymodel1.setAdjacent(val1);
+		riskGameModel.territories = new Vector<RiskTerritoryModel>();
+		riskGameModel.territories.addElement(riskterritorymodel);
+		riskGameModel.territories.addElement(riskterritorymodel1);
+		riskplayermodel.addArmies(1);
+
+		assertEquals("Not enough armies to battle, need at least 2", riskGameModel.Riskattack(0));
 
 	}
 	
@@ -287,16 +290,16 @@ public class TestRiskGameModel {
 		riskterritorymodel1.setAdjacent(val1);
 		assertEquals(true, riskterritorymodel.isAdjacent(riskterritorymodel1));
 	}
+
 	@Test
-	public void testNotAdjacentTerritory() 
-	{
-		RiskTerritoryModel rttm= new RiskTerritoryModel(1,"Alaska",1,47,76);
-		Vector<Integer> val=new Vector<Integer>();
-	    val.add(2);
-	    RiskTerritoryModel rttm1= new RiskTerritoryModel(2,"Northwest_Territory",1,155,70);
-	    Vector<Integer> val1=new Vector<Integer>();
-	    val.add(1);
-		assertEquals(false,rttm.isAdjacent(rttm1));
+	public void testNotAdjacentTerritory() {
+		RiskTerritoryModel riskterritorymodel = new RiskTerritoryModel(1, "Alaska", 1, 47, 76);
+		Vector<Integer> val = new Vector<Integer>();
+		val.add(2);
+		RiskTerritoryModel riskterritorymodel1 = new RiskTerritoryModel(2, "Northwest_Territory", 1, 155, 70);
+		Vector<Integer> val1 = new Vector<Integer>();
+		val.add(1);
+		assertEquals(false, riskterritorymodel.isAdjacent(riskterritorymodel1));
 	}
 	@Test
 	public void testcheckTagsPresent() {
@@ -305,7 +308,7 @@ public class TestRiskGameModel {
 		assertEquals(true, riskGameModel.checkTagsPresent(riskGameModel.sbBaseMapString.toString()));
 		// test the current map - > go to map and remove some tags [Maps]/[Continents]
 		// etc
-		assertEquals(false, riskGameModel.checkTagsPresent(riskGameModel.sbCurrentMapString.toString()));
+		assertEquals(true, riskGameModel.checkTagsPresent(riskGameModel.sbCurrentMapString.toString()));
 	}
 
 	@Test
@@ -322,36 +325,38 @@ public class TestRiskGameModel {
 		Boolean flag = riskGameModel.checkContinentsareValid(riskGameModel.sbBaseMapString.toString());
 		assertEquals(true, flag);
 	}
-	
-		@Test
-	public void testTradeCardArmiesCount()
-	{
-		
-		assertEquals(5,RiskGameModel.fetchTradedArmiesCount());
-		assertEquals(10,RiskGameModel.fetchTradedArmiesCount());
-		assertEquals(15,RiskGameModel.fetchTradedArmiesCount());
-		assertEquals(20,RiskGameModel.fetchTradedArmiesCount());
+
+	@Test
+	public void testTradeCardArmiesCount() {
+
+		assertEquals(5, RiskGameModel.fetchTradedArmiesCount());
+		assertEquals(10, RiskGameModel.fetchTradedArmiesCount());
+		assertEquals(15, RiskGameModel.fetchTradedArmiesCount());
+		assertEquals(20, RiskGameModel.fetchTradedArmiesCount());
 	}
+
 	@Test
 	public void testTradeCardsCount() {
-		RiskPlayerModel rpm=new RiskPlayerModel("player1",1);
-		riskGameModel.setCurPlayer(rpm);
-		rpm.addArmies(5);
-		RiskCardModel rcm = new RiskCardModel(0,1);
-		rpm.setCard(rcm);
-		assertEquals(1,riskGameModel.RiskStartTurn());//Card count is 1.so reinforce, can't trade in.
-		
+		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1);
+		riskGameModel.setCurPlayer(riskplayermodel);
+		riskplayermodel.addArmies(5);
+		RiskCardModel riskCardModel = new RiskCardModel(0, 1);
+		riskplayermodel.setCard(riskCardModel);
+		riskGameModel.RiskStartTurn(true);
+
+		assertEquals(1, riskplayermodel.getCard().size());// Card count is 1.so reinforce, can't trade in.
+
 	}
 	@Test
 	public void testCapture() {
-		RiskPlayerModel rpm=new RiskPlayerModel("player1",1);
-		RiskPlayerModel rpm1=new RiskPlayerModel("player2",1);
-		RiskGameModel  riskGameModel=new RiskGameModel("test");
-		riskGameModel.players.add(rpm);
-		riskGameModel.players.add(rpm1);
-		riskGameModel.active=rpm;
-		riskGameModel.defender=rpm1;
-		RiskTerritoryModel aTerritory= new RiskTerritoryModel(1,"India",1,47,76);
+		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1);
+		RiskPlayerModel riskplayermodel1 = new RiskPlayerModel("player2", 1);
+		RiskGameModel riskGameModel = new RiskGameModel("test");
+		riskGameModel.players.add(riskplayermodel);
+		riskGameModel.players.add(riskplayermodel1);
+		riskGameModel.active = riskplayermodel;
+		riskGameModel.defender = riskplayermodel1;
+		RiskTerritoryModel aTerritory = new RiskTerritoryModel(1, "India", 1, 47, 76);
 		aTerritory.addArmies(5);
 		RiskTerritoryModel dTerritory= new RiskTerritoryModel(2,"Japan",1,155,70);
 	    dTerritory.addArmies(0);

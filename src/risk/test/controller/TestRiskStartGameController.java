@@ -2,7 +2,9 @@ package risk.test.controller;
 
 import static org.junit.Assert.*;
 
+import java.awt.event.ActionEvent;
 import java.io.IOException;
+import java.util.HashMap;
 
 import javax.xml.parsers.ParserConfigurationException;
 
@@ -20,28 +22,36 @@ public class TestRiskStartGameController {
 	RiskStartGameController riskstartgamecontroller;
 	
 	@Before
-	public void before()
-	{
-		 riskstartgamecontroller=new RiskStartGameController("test");
+	public void before() {
+		riskstartgamecontroller = new RiskStartGameController("test");
 	}
 
 	@Test
-	public void testValidateMapLineInputText() throws ParserConfigurationException, SAXException, IOException 
-	{
-//		riskstartgamecontroller.initComponents();
-		boolean q= riskstartgamecontroller.validateMapLineInputText("India,Asia,China,Japan");
+	public void testValidateMapLineInputText() throws ParserConfigurationException, SAXException, IOException {
+		boolean q = riskstartgamecontroller.validateMapLineInputText("India,Asia,China,Japan");
 		riskstartgamecontroller.generateChooseMapPanel();
 		boolean q1= riskstartgamecontroller.validateMapLineInputText("Indie,Asiw,China,Japan");
 		assertEquals(true,q);
 		assertEquals(false,q1);
 	}
-    public void testgetAdjacentCountryInfo() throws ParserConfigurationException, SAXException, IOException
-    {
-    	riskstartgamecontroller.populatePredefinedTerritoryCoordinatesList();
-    	String h=riskstartgamecontroller.getAdjacentCountryInfo("India","Japan","Asia");
-    	assertEquals("India,47,76,Asia,Japan",h);
-    	
-    }
 
+	@Test
+	public void testgetAdjacentCountryInfo() throws ParserConfigurationException, SAXException, IOException {
+		riskstartgamecontroller.populatePredefinedTerritoryCoordinatesList();
+		String h = riskstartgamecontroller.getAdjacentCountryInfo("India", "Japan", "Asia");
+		assertEquals("India,47,76,Asia,Japan", h);
+
+	}
+
+	@Test
+	public void testValidateAllCountriesConnected() {
+		HashMap<String, String> countries = new HashMap<String, String>();
+		countries.put("aa", "aa,100,100,india,bb,cc");
+		countries.put("bb", "bb,100,100,india,aa");
+		countries.put("cc", "aa,100,100,india,aa");
+
+		riskstartgamecontroller.copyhmCountryDetails = (HashMap<String, String>) countries.clone();
+		assertEquals(true, riskstartgamecontroller.CheckCountriesConnected(countries));
+	}
 
 }

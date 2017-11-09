@@ -13,15 +13,27 @@ import risk.model.RiskGameModel;
 import risk.model.RiskPlayerModel;
 import risk.model.RiskTerritoryModel;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class TestRiskController.
+ */
 public class TestRiskController {
+	
+	/** The rc. */
 	RiskController rc;
 	
+	/**
+	 * Before method.
+	 */
 	@Before
 	public void before()
 	{
 	    rc= new RiskController("test");
 	}
 
+	/**
+	 * Test case for Test generate panel function.
+	 */
 	@Test
 	public void testGeneratePanel() 
 	{
@@ -32,6 +44,10 @@ public class TestRiskController {
 		assertEquals(0,result);
 		
  	}
+	
+	/**
+	 * Testdoes card match current player territory.
+	 */
 	@Test
 	public void testdoesCardMatchCurrentPlayerTerritory() 
 	{
@@ -48,6 +64,10 @@ public class TestRiskController {
 			int tc=rc.doesCardMatchCurrentPlayerTerritory();
 			assertEquals(2,tc);
 		}
+	
+	/**
+	 * Test fortify armies count.
+	 */
 	@Test
 	public void testFortifyArmiesCount() {
 		RiskTerritoryModel aTerritory= new RiskTerritoryModel(1,"Alaska",1,47,76);
@@ -66,6 +86,10 @@ public class TestRiskController {
 	    int acount=rc.getRisk().getaTerritory().getArmies();
 	    assertEquals(2,acount);
 	}
+	
+	/**
+	 * Test attacker dice.
+	 */
 	@Test
 	public void testAttackerDice() {
 		RiskPlayerModel rpm=new RiskPlayerModel("player1",1);
@@ -97,6 +121,9 @@ public class TestRiskController {
 	    
 	}
 	
+	/**
+	 * Test defend winner.
+	 */
 	@Test
 	public void testDefendWinner() {
 		RiskPlayerModel rpm=new RiskPlayerModel("player1",1);

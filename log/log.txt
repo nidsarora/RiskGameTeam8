@@ -1196,3 +1196,21 @@ Player_1 got0 left to place
 Thu Nov 09 11:12:22 EST 2017:Player_1 got0 left to place
 Player_1 entered active turn
 Thu Nov 09 11:12:22 EST 2017:Player_1 entered active turn
+player1 has 5 armies
+Thu Nov 09 11:54:07 EST 2017:player1 has 5 armies
+player1 attacking with 2 armies
+Thu Nov 09 11:54:07 EST 2017:player1 attacking with 2 armies
+25 armies added to each player
+Thu Nov 09 11:54:07 EST 2017:25 armies added to each player
+player1 has 5 armies
+Thu Nov 09 11:54:33 EST 2017:player1 has 5 armies
+player1 attacking with 2 armies
+Thu Nov 09 11:54:33 EST 2017:player1 attacking with 2 armies
+25 armies added to each player
+Thu Nov 09 11:54:33 EST 2017:25 armies added to each player
+player1 has 5 armies
+Thu Nov 09 11:57:10 EST 2017:player1 has 5 armies
+player1 attacking with 2 armies
+Thu Nov 09 11:57:10 EST 2017:player1 attacking with 2 armies
+25 armies added to each player
+Thu Nov 09 11:57:10 EST 2017:25 armies added to each player

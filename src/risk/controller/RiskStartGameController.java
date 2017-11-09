@@ -74,7 +74,7 @@ import risk.view.RiskPlayerDominationViewObserver;
 public class RiskStartGameController extends java.awt.Frame {
 
 	HashMap<String, String> hmCountryDetails = new HashMap<String, String>();
-	HashMap<String, String> copyhmCountryDetails = new HashMap<String, String>();
+	public HashMap<String, String> copyhmCountryDetails = new HashMap<String, String>();
 	Vector<String> LinkedCountries = new Vector<String>();
 
 	/**
@@ -607,7 +607,7 @@ public class RiskStartGameController extends java.awt.Frame {
 		scrollTextAreaPanel.repaint();
 	}
 
-	private boolean CheckCountriesConnected(HashMap<String, String> countrylistdetials) {
+	public boolean CheckCountriesConnected(HashMap<String, String> countrylistdetials) {
 
 		int i = 0;
 

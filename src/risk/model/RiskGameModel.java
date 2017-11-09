@@ -507,7 +507,7 @@ public class RiskGameModel {
 	public void distubuteArmies() {
 		int numOfPlayers = players.size();
 		if (numOfPlayers == 3)
-			armies = 15;
+			armies = 35;
 		else if (numOfPlayers == 4)
 			armies = 30;
 		else if (numOfPlayers == 5)
@@ -607,10 +607,12 @@ public class RiskGameModel {
 	private Boolean isMapFormatValid() {
 		if (this.getIsBaseMapEdited())
 			return checkTagsPresent(sbCurrentMapString.toString())
-					&& checkAdjacentsPresentAllTerritories(sbCurrentMapString.toString()) && checkContinentsareValid(sbCurrentMapString.toString());
+					&& checkAdjacentsPresentAllTerritories(sbCurrentMapString.toString())
+					&& checkContinentsareValid(sbCurrentMapString.toString());
 		else
 			return checkTagsPresent(sbBaseMapString.toString())
-					&& checkAdjacentsPresentAllTerritories(sbBaseMapString.toString()) && checkContinentsareValid(sbBaseMapString.toString());
+					&& checkAdjacentsPresentAllTerritories(sbBaseMapString.toString())
+					&& checkContinentsareValid(sbBaseMapString.toString());
 	}
 
 	/**
@@ -665,8 +667,8 @@ public class RiskGameModel {
 			if (reachedContinent && !reachedTerritories) {
 				mapContinents.add(mapTextLine.split("=")[0]);
 			}
-			if (!mapTextLine.trim().equals("[Territories]") && !mapTextLine.trim().equals("-") && !mapTextLine.trim().equals("") && !mapTextLine.trim().equals(";;")
-					&& reachedTerritories) {
+			if (!mapTextLine.trim().equals("[Territories]") && !mapTextLine.trim().equals("-")
+					&& !mapTextLine.trim().equals("") && !mapTextLine.trim().equals(";;") && reachedTerritories) {
 				if (!mapContinents.contains(mapTextLine.split(",")[3]))
 					return false;
 			}
@@ -904,7 +906,7 @@ public class RiskGameModel {
 		int country = getMapLocation(x, y);
 
 		if (getState() == FORTIFYING) {
-			RiskFortifying(country);
+			RiskFortifying(country, false);
 		} // end fortifying
 
 		if (getState() == FORTIFY) {
@@ -932,7 +934,7 @@ public class RiskGameModel {
 		}
 
 		if (getState() == START_TURN) {
-			RiskStartTurn();
+			RiskStartTurn(false);
 		}
 
 		return "";
@@ -944,17 +946,21 @@ public class RiskGameModel {
 	 * @param country the country
 	 * @return the string
 	 */
-	public String RiskFortifying(int country) {
+	public String RiskFortifying(int country, boolean flag) {
 		if (country != -1) {// not a country
 			defenseTerritory = territories.elementAt(country); // move to
 			// territory
 			if (getOwnership(country) == curPlayer.getPlayerIndex())
 				if (aTerritory.isAdjacent(defenseTerritory)) {// if its
-																// adjacent...
+					// adjacent...
+
+					if (flag)
+						return "true";
 					this.notifyPhaseViewChange();
 					setState(FORTIFY_PHASE);
 					return "true";
-				}
+				} else
+					return "false";
 		} // end if a county
 		return "";
 	}
@@ -983,10 +989,11 @@ public class RiskGameModel {
 	 *
 	 * @return the string
 	 */
-	public String RiskStartTurn() {
+	public String RiskStartTurn(boolean isTest) {
 		currentPlayerBonusArmiesRecieved = turnBonus();
 		curPlayer.addArmies(currentPlayerBonusArmiesRecieved);
-		this.notifyPhaseViewChange();
+		if (!isTest)
+			this.notifyPhaseViewChange();
 		// recive turn bonus
 		if (curPlayer.getCard().size() > 5) {
 			setState(TRADE_CARDS);
@@ -1030,7 +1037,7 @@ public class RiskGameModel {
 				return "true";
 			}
 		}
-		return "";
+		return "false";
 	}
 
 	/**
@@ -1082,6 +1089,7 @@ public class RiskGameModel {
 				else {
 					setState(ATTACKING);
 					aTerritory = territories.elementAt(country);
+					return "true";
 				}
 			} // end is curPlayers country
 		this.notifyPhaseViewChange();
