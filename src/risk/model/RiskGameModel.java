@@ -1,7 +1,10 @@
 
 package risk.model;
 
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.ObjectInputStream.GetField;
 import java.util.Arrays;
 import java.util.Collections;
@@ -71,6 +74,8 @@ public class RiskGameModel {
 	static private int gameState;
 	public RiskTerritoryModel aTerritory;
 	public RiskTerritoryModel defenseTerritory;
+	public StringBuilder sbBaseMapString;
+	public StringBuilder sbCurrentMapString;
 	public int defenseNum = 0;
 	public int attackNum = 0;
 	public int iter = 0;
@@ -86,18 +91,37 @@ public class RiskGameModel {
 	private int currentPlayerBonusArmiesRecieved;
 	private Boolean isBaseMapEdited;
 	private RiskPhaseViewObserver riskPhaseViewObserver;
+	private Boolean isGameMapValid = false;
 
 	public RiskGameModel(String test) {
 	}
 
 	public RiskGameModel() {
 		gameState = NEW_GAME;
+		this.isBaseMapEdited = RiskController.isBaseMapEdited;
 		initalPlayer();
 		initializePlayerDominationView();
 		initializeCardExchangeView();
-		loadGameMap();
+		initializeMapVariables();
+		ValidateLoadMap();
 		initializeDeck();
 		distubuteArmies();
+	}
+
+	private void ValidateLoadMap() {
+
+		if (isGameMapValid()) {
+			loadGameMap();
+			this.setIsGameMapValid(true);
+		} else {
+			this.setIsGameMapValid(false);
+		}
+
+	}
+
+	private boolean isGameMapValid() {
+		// TODO Auto-generated method stub
+		return isMapFormatValid();
 	}
 
 	public RiskTerritoryModel getaTerritory() {
@@ -151,7 +175,6 @@ public class RiskGameModel {
 			this.getRiskStartupPhaseModelObservable().isChanged();
 		}
 
-
 		if (this.getState() == REINFORCE || this.getState() == START_TURN) {
 			RiskReinforcementPhaseModel objRiskReinforcementPhaseModel = this
 					.getRiskRiskReinforcementPhaseModelObservable();
@@ -190,7 +213,6 @@ public class RiskGameModel {
 	public void setPlayer(Vector<RiskPlayerModel> test) {
 		players = test;
 	}
-
 
 	private void initializeCardExchangeView() {
 		RiskCardExchangeViewObserver riskCardExchangeViewObserver = RiskCardExchangeViewObserver.getInstance();
@@ -279,8 +301,9 @@ public class RiskGameModel {
 		for (int index = 0; index < territories.size(); index++)
 			deck.add(new RiskCardModel(index, index % 3));
 		Random wildIndex = new Random();
-		for(int wildCardCount =1; wildCardCount <=2; wildCardCount ++)
-			deck.add(new RiskCardModel(wildIndex.nextInt(deck.size()), -1));	
+		if(deck.size() > 0)
+		for (int wildCardCount = 1; wildCardCount <= 2; wildCardCount++)
+			deck.add(new RiskCardModel(wildIndex.nextInt(deck.size()), -1));
 	}
 
 	public void drawCard(RiskPlayerModel p) {
@@ -337,6 +360,39 @@ public class RiskGameModel {
 
 		}
 		return continentBonus;
+	}
+
+	private Boolean isMapFormatValid() {
+		if (this.getIsBaseMapEdited())
+			return checkTagsPresent(sbCurrentMapString.toString());
+		else
+			return checkTagsPresent(sbBaseMapString.toString());
+	}
+
+	
+	private Boolean checkTagsPresent(String mapText) {
+		return ((mapText.indexOf("[Map]") != -1) && (mapText.indexOf("[Territories]") !=-1) && (mapText.indexOf("[Continents]") != -1) && (mapText.indexOf("[;;]") != -1));  // != -1 && );
+	}
+
+	public void initializeMapVariables() {
+		sbBaseMapString = new StringBuilder();
+		sbCurrentMapString = new StringBuilder();
+		
+		BufferedReader brEarthMapReader = new BufferedReader(new InputStreamReader(
+				RiskStartGameController.class.getResourceAsStream(Utility.getMapPath("BaseEarthMap.map"))));
+		BufferedReader brCurrentMapReader = new BufferedReader(new InputStreamReader(
+				RiskStartGameController.class.getResourceAsStream(Utility.getMapPath("CurrentGameMap.map"))));
+		String baseMapLine, currentMapLine;
+		try {
+			while ((baseMapLine = brEarthMapReader.readLine()) != null)
+				sbBaseMapString.append(baseMapLine + "\n");
+
+			while ((currentMapLine = brCurrentMapReader.readLine()) != null)
+				sbCurrentMapString.append(currentMapLine + "\n");
+
+		} catch (IOException exception) {
+			exception.printStackTrace();
+		}
 	}
 
 	/**
@@ -612,7 +668,7 @@ public class RiskGameModel {
 				if (getOwnership(country) == curPlayer.getPlayerIndex()) // if
 					// owned
 					occupyTerritory(territories.elementAt(country)); // occupy
-					setState(REINFORCE);//??
+			setState(REINFORCE);// ??
 		}
 
 		if (getState() == REINFORCE) {
@@ -967,5 +1023,12 @@ public class RiskGameModel {
 		this.isBaseMapEdited = isBaseMapEdited;
 	}
 
-}
+	public Boolean getIsGameMapValid() {
+		return isGameMapValid;
+	}
 
+	public void setIsGameMapValid(Boolean isGameMapValid) {
+		this.isGameMapValid = isGameMapValid;
+	}
+
+}
