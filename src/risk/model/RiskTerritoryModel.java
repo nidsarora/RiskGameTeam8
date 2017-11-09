@@ -214,7 +214,7 @@ public class RiskTerritoryModel {
 	}
 
 	/**
-	 * Prints the adjacents.
+	 * Prints the adjacent.
 	 */
 	public void printAdjacents() {
 		for (int index = 0; index < adjacents.size(); index++) {

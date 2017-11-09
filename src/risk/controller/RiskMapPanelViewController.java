@@ -19,6 +19,7 @@ import javax.swing.JPanel;
  *This class is responsible for the MapPanelView.It is responsible for drawing lines connecting the 
  *nodes using the coordinate values from the mapfile.It also has the method for creating a fortify panel
  *where user can select how many number of armies to move from one territory to another.
+ *
  * @author Team8
  */
 public class RiskMapPanelViewController extends JPanel {
@@ -62,16 +63,13 @@ public class RiskMapPanelViewController extends JPanel {
 	/**
 	 * Select country by color.
 	 *
-	 * @param x, x-coordinate
-	 * @param y, y-coordinate
+	 * @param x, x-coordinate of country position
+	 * @param y, y-coordinate of country position
 	 */
 	public void selectCountrybyColor(int x, int y) {
 
 	}
-
-	/* (non-Javadoc)
-	 * @see javax.swing.JComponent#paintComponent(java.awt.Graphics)
-	 */
+ 
 	@Override
 	public void paintComponent(Graphics graphics) {
 		int playerIndex;
@@ -366,7 +364,7 @@ public class RiskMapPanelViewController extends JPanel {
 					graphics.setColor(Color.black);
 					graphics.fillArc(495, 265, 10, 10, 0, 360);
 				}
-			} // end attttacker painting
+			} // end attacker painting
 
 			/**
 			 *
@@ -402,7 +400,7 @@ public class RiskMapPanelViewController extends JPanel {
 	 *
 	 */
 	private void drawConnectAdjacentCountries(Graphics graphics) {
-		// TODO Auto-generated method stub			
+					
 	    for(RiskTerritoryModel territory: RiskGameModel.territories)
 	    {
 	    	if(territory.getAdjacents().size() > 0)
