@@ -254,17 +254,8 @@ Fortify Phase entered
 application start
 -------------------------------------------------------
 application start
--------------------------------------------------------
-application start
--------------------------------------------------------
-application start
--------------------------------------------------------
-application start
--------------------------------------------------------
-application start
--------------------------------------------------------
-application start
 All players Added
+<<<<<<< HEAD
 -------------------------------------------------------
 application start
 All players Added
@@ -286,4 +277,14 @@ Build the Game Panel
 -------------------------------------------------------
 application start
 All players Added
+=======
+5 armies added to each player
+>>>>>>> ce3fc670b0622dafa319e8ecc5327f203c1885f8
 Build the Game Panel
+-------------------------------------------------------
+application start
+All players Added
+5 armies added to each player
+Build the Game Panel
+-------------------------------------------------------
+application start
