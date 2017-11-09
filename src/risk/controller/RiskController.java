@@ -43,7 +43,7 @@ import risk.helpers.Utility;
 public class RiskController extends javax.swing.JFrame implements MouseListener {
 
 	/**
-	 * Gets the count trade cards.
+	 * Gets the cEndButton.setVisible(true)ount trade cards.
 	 *
 	 * @return the count trade cards
 	 */
@@ -175,7 +175,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		});
 		jPanel3.add(AttackButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 10, 89, -1));
 
-		EndButton.setVisible(false);
+		EndButton.setVisible(true);
 		EndButton.setFont(resourceMap.getFont("EndButton.font")); // NOI18N
 		EndButton.setText("End"); // NOI18N
 		EndButton.setName("EndButton"); // NOI18N
@@ -233,7 +233,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		Utility.writeLog("Attack Phase entered");
 		risk.setState(RiskGameModel.ATTACK);
 		FortifyButton.setVisible(false);
-		EndButton.setVisible(false);
+		EndButton.setVisible(true);
 		statusLabel.setText("Select a territory to attack with");
 		if (AttackButton.getText().equals("Retreat")) {
 			risk.setState(RiskGameModel.ACTIVE_TURN);
@@ -265,7 +265,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		jPanel3.repaint();
 		statusLabel.setText("Recieved a bonus of " + risk.curPlayer.getNumberOfArmies());
 		AttackButton.setVisible(false);
-		EndButton.setVisible(false);
+		EndButton.setVisible(true);
 		FortifyButton.setVisible(false);
 		risk.drawn = false;
 		Utility.writeLog("Current player turn ends");
@@ -474,7 +474,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 				if (risk.territories.size() == risk.getCurrentPlayer().getOccupiedTerritories().size()) {
 					risk.setState(RiskGameModel.GAME_OVER);
 					AttackButton.setVisible(false);
-					EndButton.setVisible(false);
+					EndButton.setVisible(true);
 					FortifyButton.setVisible(false);
 					statusLabel.setText(risk.getCurrentPlayer().getName() + " has wont the game.");
 					Utility.writeLog(risk.getCurrentPlayer().getName() + " has wont the game.");
