@@ -1140,3 +1140,59 @@ application start
 All players Added
 35 armies added to each player
 Build the Game Panel
+-------------------------------------------------------
+Thu Nov 09 11:08:32 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 09 11:08:32 EST 2017:application start
+All players Added
+Thu Nov 09 11:08:40 EST 2017:All players Added
+-------------------------------------------------------
+Thu Nov 09 11:08:51 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 09 11:08:51 EST 2017:application start
+All players Added
+Thu Nov 09 11:08:55 EST 2017:All players Added
+35 armies added to each player
+Thu Nov 09 11:08:56 EST 2017:35 armies added to each player
+Build the Game Panel
+Thu Nov 09 11:08:56 EST 2017:Build the Game Panel
+-------------------------------------------------------
+Thu Nov 09 11:10:23 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 09 11:10:23 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 09 11:10:59 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 09 11:10:59 EST 2017:application start
+All players Added
+Thu Nov 09 11:11:04 EST 2017:All players Added
+15 armies added to each player
+Thu Nov 09 11:11:05 EST 2017:15 armies added to each player
+Build the Game Panel
+Thu Nov 09 11:11:05 EST 2017:Build the Game Panel
+initial reinforcement stage
+Thu Nov 09 11:11:26 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Thu Nov 09 11:11:29 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Thu Nov 09 11:11:30 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Thu Nov 09 11:11:32 EST 2017:initial reinforcement stage
+Player_1 got bonus armies
+Thu Nov 09 11:11:32 EST 2017:Player_1 got bonus armies
+Player_1 got6 left to place
+Thu Nov 09 11:11:32 EST 2017:Player_1 got6 left to place
+Player_1 got5 left to place
+Thu Nov 09 11:12:17 EST 2017:Player_1 got5 left to place
+Player_1 got4 left to place
+Thu Nov 09 11:12:17 EST 2017:Player_1 got4 left to place
+Player_1 got3 left to place
+Thu Nov 09 11:12:18 EST 2017:Player_1 got3 left to place
+Player_1 got2 left to place
+Thu Nov 09 11:12:21 EST 2017:Player_1 got2 left to place
+Player_1 got1 left to place
+Thu Nov 09 11:12:21 EST 2017:Player_1 got1 left to place
+Player_1 got0 left to place
+Thu Nov 09 11:12:22 EST 2017:Player_1 got0 left to place
+Player_1 entered active turn
+Thu Nov 09 11:12:22 EST 2017:Player_1 entered active turn

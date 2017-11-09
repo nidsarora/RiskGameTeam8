@@ -378,10 +378,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		if (risk.getState() == RiskGameModel.ATTACK) {
 			risk.notifyPhaseViewChange();
 			name = risk.curPlayer.getName();
-			// if (risk.getState() == RiskGameModel.ATTACKING) {
-			// AttackButton.setText("Retreat");
-			// statusLabel.setText("Select an opposing territory");
-			// }
+			
 			out = risk.gamePhaseActive(x_coordinate, y_coordinate);
 			risk.notifyPhaseViewChange();
 
@@ -423,11 +420,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			AttackButton.setText("Attack");
 
 			AttackButton.setVisible(true);
-			// if (risk.curPlayer.getCard().size() > 2)
-			// CardButton.setVisible(true);
-			// else
-			// CardButton.setVisible(false);
-			// risk.notifyPhaseViewChange();
+			
 		}
 
 		if (risk.getState() == RiskGameModel.ATTACKING) {

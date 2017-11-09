@@ -116,11 +116,8 @@ public class RiskPlayerPanelViewController extends javax.swing.JPanel {
 			if (playerIndex == 5)
 				graphics.setColor(Color.orange);
 
-			// System.out.println(name + " width = " + w + " " + graphics.getColor().toString());
 			graphics.fillRect(position + (index * 75), 63, width, 20);
 			// Go to next player
-			// if((risk.getState() == RiskGame.NEW_GAME) || (risk.getState() ==
-			// RiskGame.INITIAL_REINFORCE))
 			risk.nextPlayer();
 		}
 

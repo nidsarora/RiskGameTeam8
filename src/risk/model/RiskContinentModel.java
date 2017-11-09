@@ -17,8 +17,8 @@ public class RiskContinentModel {
 	/**
 	 * Instantiates a new risk continent model.
 	 *
-	 * @param nm, the continent name
-	 * @param t, territory 
+	 * @param nm the continent name
+	 * @param t territory 
 	 * @param v, 
 	 */
 	public RiskContinentModel(String nm, Vector<Integer> t, int v) {
@@ -57,7 +57,7 @@ public class RiskContinentModel {
 	/**
 	 * Checks if is territory of the continent.
 	 *
-	 * @param territorymodel the territorymodel
+	 * @param territorymodel the territory model
 	 * @return true, if is territory of
 	 */
 	public boolean isTerritoryOf(RiskTerritoryModel territorymodel) {
@@ -75,7 +75,7 @@ public class RiskContinentModel {
 	/**
 	 * This method finds if the continent has been captured or not.
 	 *
-	 * @param p, risk player
+	 * @param p risk player
 	 * @return true, if is continent captured
 	 */
 	public boolean isContinentCaptured(RiskPlayerModel p) {

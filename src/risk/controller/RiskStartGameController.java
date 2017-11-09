@@ -299,7 +299,7 @@ public class RiskStartGameController extends java.awt.Frame {
 			brCurrentMapModifier.write("");
 			brCurrentMapModifier.close();
 		} catch (IOException exception) {
-			// TODO Auto-generated catch block
+			
 			exception.printStackTrace();
 		}
 	}
@@ -307,7 +307,6 @@ public class RiskStartGameController extends java.awt.Frame {
 	/**
 	 * Exit the Application.
 	 *
-	 * @param event
 	 */
 	private void exitForm(java.awt.event.WindowEvent event) {
 		System.exit(0);
@@ -478,7 +477,6 @@ public class RiskStartGameController extends java.awt.Frame {
 	 */
 	private void finishButtonPressed(ActionEvent exception, JFrame mainwindow) {
 
-		// goutham
 		copyhmCountryDetails = (HashMap<String, String>) hmCountryDetails.clone();
 
 		String NotLinkedCountries = "";
@@ -518,8 +516,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * with text will '[Territories]' from the base earth map. Appends the
 	 * contents of the JTextArea in Choose Map Panel to the newly created file
 	 *
-	 * @param editTextArea
-	 *            the edit text area
+	 * @param editTextArea the edit text area
+	 *            
 	 */
 	private void CurrentGameMapEditor(String editTextArea) {
 		String EarthMapStaticContent;
@@ -541,8 +539,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	/**
 	 * Insert adjacent countries info wrapper.
 	 *
-	 * @param editTextArea
-	 *            the edit text area
+	 * @param editTextArea the edit text area
+	 *            
 	 * @return the string
 	 */
 	private String insertAdjacentCountriesInfoWrapper(String editTextArea) {
@@ -562,8 +560,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * and insert coordinates for the territory. Appends the input with
 	 * coordinates to the JTextArea in Choose Map Panel
 	 * 
-	 * @param event
-	 *            ActionEvent passed for the button click event.
+	 * @param event ActionEvent passed for the button click event.
+	 *            
 	 */
 	private void addButtonPressed(ActionEvent event) {
 		if (RiskStartGameController.predefinedTerritoryCoordinatesList.size() == 0) {
@@ -674,8 +672,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	/**
 	 * Validate continent line text.
 	 *
-	 * @param mapInputLineText
-	 *            the map input line text
+	 * @param mapInputLineText the map input line text
+	 *            
 	 * @return true, if successful
 	 */
 	private boolean validateContinentLineText(String mapInputLineText) {
@@ -687,8 +685,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * This method will find the coordinates and continent of the adjacent
 	 * countries supplied by the user and append it to JTextArea.
 	 *
-	 * @param mapInputLineText
-	 *            the map input line text
+	 * @param mapInputLineText the map input line text
+	 *            
 	 * @return the string
 	 */
 	private String insertAdjacentCountriesInfo(String mapInputLineText) {
@@ -727,12 +725,12 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * This method will find the coordinates and continent of the adjacent
 	 * countries supplied by the user and append it to JTextArea.
 	 *
-	 * @param adjacentTerritory
-	 *            the adjacent territory
-	 * @param currentCountry
-	 *            the current country
-	 * @param currentContinent
-	 *            the current continent
+	 * @param adjacentTerritory the adjacent territory
+	 *            
+	 * @param currentCountry the current country
+	 *            
+	 * @param currentContinent the current continent
+	 *            
 	 * @return String with coordinates and continent for adjacent country -
 	 *         adjacentTerritory.
 	 * @throws ParserConfigurationException
@@ -754,8 +752,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * EarthMap. Append the found coordinates to the input text and insert them
 	 * in the JTextArea in Choose Map Panel.
 	 *
-	 * @param mapInputLineText
-	 *            the map input line text
+	 * @param mapInputLineText the map input line text
+	 *            
 	 * @return String, the complete line text with the coordinates inserted
 	 *         after the territory.
 	 */
@@ -794,8 +792,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * Fetch the coordinates of the territories given to this method. Call the
 	 * recursive search function to perform the search.
 	 *
-	 * @param territory
-	 *            the territory
+	 * @param territory the territory
+	 *           
 	 * @return = String, the coordinates of the territory supplied in string -
 	 *         e.g - ,XX,YY, - format.
 	 */
@@ -817,10 +815,10 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * that particular instance of country which has coordinates next to it in
 	 * the base map. This function performs that recursive search needed.
 	 *
-	 * @param baseMapString
-	 *            the base map string
-	 * @param territory
-	 *            the territory
+	 * @param baseMapString the base map string
+	 *            
+	 * @param territory the territory
+	 *            
 	 * @return coordinates, returns the coordinates of the needed territory in
 	 *         string - ,XX/X,YY/Y, - format.
 	 */
@@ -852,10 +850,10 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * instance of territory is found. This method sends the begin index for the
 	 * new cut-shorted string for the next recursive search.
 	 *
-	 * @param baseMapString
-	 *            the base map string
-	 * @param territory
-	 *            the territory
+	 * @param baseMapString the base map string
+	 *            
+	 * @param territory the territory
+	 *            
 	 * @param index
 	 *            the index
 	 * @return begin index, for the upcoming recursive search.
@@ -872,15 +870,14 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * Once the correct instance of the word territory is found in the base
 	 * earth map, this method will read the coordinates next to it.
 	 * 
-	 * @param index,
-	 *            index of the correct instance of the territory in the base
+	 * @param index index of the correct instance of the territory in the base
 	 *            map.
-	 * @param baseMapString,
-	 *            the base map in string format.
+	 *            
+	 * @param baseMapString the base map in string format.
+	 *            
 	 * @return coordinates, in the format XX/X,YY/Y.
 	 */
 	private String fetchCoordinates(int index, String baseMapString) {
-		// TODO Auto-generated method stub
 		StringBuilder coordinates = new StringBuilder();
 		for (char a : baseMapString.substring(index, baseMapString.length() - 1).toCharArray()) {
 			if (!Character.isDigit(a)) {
@@ -896,12 +893,12 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * Checks whether the instance of territory found in the base map has
 	 * coordinates next to it or not.
 	 * 
-	 * @param baseMapString,
-	 *            base earth map in string format.
-	 * @param index,
-	 *            index of the first occurrence 'territory' in the base map.
-	 * @param territory,
-	 *            the territory supplied by the user.
+	 * @param baseMapString base earth map in string format.
+	 *            
+	 * @param index index of the first occurrence 'territory' in the base map
+	 *            
+	 * @param territory the territory supplied by the user.
+	 *            
 	 * @return Boolean, true if this is the instance of territory with
 	 *         coordinates next to it else False.
 	 */
@@ -917,8 +914,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * To check of the user has inserted the text in the proper format. Check if
 	 * corresponding territories and continents exist.
 	 * 
-	 * @param mapInputLineText,
-	 *            the input text from the user in the needed format specifying
+	 * @param mapInputLineText the input text from the user in the needed format specifying
 	 *            the adjacent countries.
 	 * @return Boolean, returns true if input text is valid, else false.
 	 * @throws ParserConfigurationException
@@ -979,8 +975,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	/**
 	 * The main method.
 	 *
-	 * @param args
-	 *            the command line arguments
+	 * @param args the command line arguments
+	 *            
 	 */
 	public static void main(String args[]) {
 		java.awt.EventQueue.invokeLater(new Runnable() {

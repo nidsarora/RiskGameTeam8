@@ -69,9 +69,6 @@ public class RiskMapPanelViewController extends JPanel {
 
 	}
 
-	/* (non-Javadoc)
-	 * @see javax.swing.JComponent#paintComponent(java.awt.Graphics)
-	 */
 	@Override
 	public void paintComponent(Graphics graphics) {
 		int playerIndex;

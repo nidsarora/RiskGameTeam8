@@ -6,15 +6,31 @@ import risk.helpers.Utility;
 import risk.model.RiskGameModel;
 import risk.model.interfaces.PhaseViewInterface;
 
+/**
+ * The Class RiskAttackPhaseModel.
+ */
 public class RiskAttackPhaseModel extends Observable implements PhaseViewInterface {
 
+	/** The object type. */
 	private String objectType = "RiskAttackPhaseModel";
+	
+	/** The obj current risk game object. */
 	private RiskGameModel objCurrentRiskGameObject;
+	
+	/** The instance. */
 	private static RiskAttackPhaseModel instance = new RiskAttackPhaseModel();
 
+	/**
+	 * Instantiates a new risk attack phase model.
+	 */
 	private RiskAttackPhaseModel() {
 	}
 
+	/**
+	 * Gets the single instance of Risk Attack Phase Model.
+	 *
+	 * @return single instance of Risk Attack Phase Model
+	 */
 	public static RiskAttackPhaseModel getInstance() {
 		if (instance == null)
 			instance = new RiskAttackPhaseModel();
@@ -27,7 +43,6 @@ public class RiskAttackPhaseModel extends Observable implements PhaseViewInterfa
 
 	@Override
 	public String getObjectType() {
-		// TODO Auto-generated method stub
 		return objectType;
 	}
 
@@ -50,36 +65,15 @@ public class RiskAttackPhaseModel extends Observable implements PhaseViewInterfa
 	}
 
 	
-	//
-	// private String annouceResults() {
-	// // TODO Auto-generated method stub
-	// if(this.objCurrentRiskGameObject.getDefenceDieArray() !=null &&
-	// this.objCurrentRiskGameObject.getAttackDieArray() != null)
-	// {
-	// int countDefenceWins = 0;
-	// for(int match = 0; match <
-	// this.objCurrentRiskGameObject.getDefenceDieArray().length ; match ++)
-	// {
-	// if(this.objCurrentRiskGameObject.getDefenceDieArray()[match] <
-	// this.objCurrentRiskGameObject.getAttackDieArray()[match])
-	// countDefenceWins--;
-	// else
-	// countDefenceWins++;
-	// }
-	//
-	// return (countDefenceWins >= 0 ? "Defence" : "Attack");
-	// }
-	// return "No one won!";
-	// }
-
 	@Override
 	public void setCurrentRiskGameObject(RiskGameModel objCurrentRiskGameContext) {
 		this.setObjCurrentRiskGameObject(objCurrentRiskGameContext);
 	}
 
 	/**
-	 * @param objCurrentRiskGameObject
-	 *            the objCurrentRiskGameObject to set
+	 * Sets the obj current risk game object.
+	 *
+	 * @param objCurrentRiskGameObject            the objCurrentRiskGameObject to set
 	 */
 	public void setObjCurrentRiskGameObject(RiskGameModel objCurrentRiskGameObject) {
 		this.objCurrentRiskGameObject = objCurrentRiskGameObject;
