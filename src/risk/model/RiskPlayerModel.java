@@ -1,7 +1,10 @@
 package risk.model;
 
+import java.io.StreamTokenizer;
 import java.util.Observable;
 import java.util.Vector;
+
+import risk.model.interfaces.StrategyInterface;
 
 /**
  * This class represents the model class of the Player. Player has army name,
@@ -16,15 +19,18 @@ public class RiskPlayerModel extends Observable {
 	private Vector<RiskTerritoryModel> occupiedTerritories;
 	private Vector<RiskCardModel> cards;
 	private int armies;
-	
+	private StrategyInterface strategy;
+
 	/** The armies received by trading cards. */
-	private int armiesRecivedByTradingCards; 
+	private int armiesRecivedByTradingCards;
 
 	/**
 	 * Instantiates a new risk player model.
 	 *
-	 * @param playername, player name
-	 * @param playerindex, player index
+	 * @param playername,
+	 *            player name
+	 * @param playerindex,
+	 *            player index
 	 */
 	public RiskPlayerModel(String playername, int playerindex) {
 		name = playername;
@@ -87,7 +93,8 @@ public class RiskPlayerModel extends Observable {
 	/**
 	 * Sets the occupied territories.
 	 *
-	 * @param riskterritorymodel the new occupied territories
+	 * @param riskterritorymodel
+	 *            the new occupied territories
 	 */
 	public void setOccupiedTerritories(Vector<RiskTerritoryModel> riskterritorymodel) {
 		occupiedTerritories = riskterritorymodel;
@@ -144,7 +151,8 @@ public class RiskPlayerModel extends Observable {
 	/**
 	 * Adds the armies.
 	 *
-	 * @param army the army
+	 * @param army
+	 *            the army
 	 */
 	public void addArmies(int army) {
 		armies += army;
@@ -160,7 +168,8 @@ public class RiskPlayerModel extends Observable {
 	/**
 	 * Loose armies.
 	 *
-	 * @param army the army
+	 * @param army
+	 *            the army
 	 */
 	public void looseArmies(int army) {
 		armies -= army;
@@ -188,10 +197,11 @@ public class RiskPlayerModel extends Observable {
 
 		sbCardExchangeViewContent.append("The following below are the card details - \n");
 
-		if(cards.size() > 0)
-			for (RiskCardModel card: this.cards) {
-				sbCardExchangeViewContent.append("The card type is " + card.card_type + " and number is + " + card.territory + ".\n");
-		}
+		if (cards.size() > 0)
+			for (RiskCardModel card : this.cards) {
+				sbCardExchangeViewContent
+						.append("The card type is " + card.card_type + " and number is + " + card.territory + ".\n");
+			}
 		else
 			sbCardExchangeViewContent.append("Current player has no cards yet!\n");
 
@@ -199,8 +209,8 @@ public class RiskPlayerModel extends Observable {
 
 		for (RiskPlayerModel player : RiskGameModel.players) {
 			if (!this.getName().equals(player.getName()))
-				sbCardExchangeViewContent.append(player.getName() + " has " + player.getNumberOfArmies() + " armies and "
-						+ player.cards.size() + " number of cards.\n");
+				sbCardExchangeViewContent.append(player.getName() + " has " + player.getNumberOfArmies()
+						+ " armies and " + player.cards.size() + " number of cards.\n");
 		}
 
 		return sbCardExchangeViewContent.toString();
@@ -247,10 +257,27 @@ public class RiskPlayerModel extends Observable {
 	/**
 	 * Sets the armies received by trading cards.
 	 *
-	 * @param armiesRecivedByTradingCards, the new armies received by trading cards
+	 * @param armiesRecivedByTradingCards,
+	 *            the new armies received by trading cards
 	 */
 	public void setArmiesRecivedByTradingCards(int armiesRecivedByTradingCards) {
 		this.armiesRecivedByTradingCards = armiesRecivedByTradingCards;
 	}
-}
 
+	public StrategyInterface getStrategy() {
+		return strategy;
+	}
+
+	public void setStrategy(StrategyInterface strategy) {
+		this.strategy = strategy;
+	}
+
+	public Boolean isValidAttack() {
+		return true;
+	}
+
+	public void attack() {
+		if (isValidAttack())
+			this.strategy.attack();
+	}
+}
