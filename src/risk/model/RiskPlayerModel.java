@@ -245,6 +245,10 @@ public class RiskPlayerModel extends Observable {
 		return sbPlayerDominationViewContent.toString();
 	}
 
+	public void fortify(int territory,RiskGameModel riskModel) {
+		this.strategy.fortify(territory,riskModel);
+	}
+
 	/**
 	 * Gets the armies received by trading cards.
 	 *
@@ -276,8 +280,20 @@ public class RiskPlayerModel extends Observable {
 		return true;
 	}
 
-	public void attack() {
-		if (isValidAttack())
-			this.strategy.attack();
+	public void attack(int territory,RiskGameModel riskModel) {
+			this.strategy.attack(territory,riskModel);
 	}
+
+	public void startTurn(RiskGameModel riskModel) {
+		
+	}
+
+	public String reinforce(int territory,RiskGameModel riskGameModel) {
+		return this.strategy.reinforce(territory, riskGameModel);
+	}
+
+	public void tradeCard(RiskGameModel riskModel) {
+
+	}
+
 }

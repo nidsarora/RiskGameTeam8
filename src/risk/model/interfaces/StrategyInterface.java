@@ -1,10 +1,12 @@
 package risk.model.interfaces;
 
+import risk.model.RiskGameModel;
+
 public interface StrategyInterface {
 
-	public void attack();
+	public String attack(int territory,RiskGameModel riskGameModel);
 
-	public void reinforce();
+	public String reinforce(int territory,RiskGameModel riskGameModel);
 
-	public void fortify();
+	public String fortify(int territory,RiskGameModel riskGameModel);
 }

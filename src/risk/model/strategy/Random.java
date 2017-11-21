@@ -1,25 +1,28 @@
 package risk.model.strategy;
 
+import risk.model.RiskGameModel;
 import risk.model.interfaces.StrategyInterface;
 
 public class Random implements StrategyInterface {
 
 	@Override
-	public void attack() {
+	public String attack(int territory, RiskGameModel riskGameModel) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String reinforce(int territory, RiskGameModel riskGameModel) {
+		return null;
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void reinforce() {
+	public String fortify(int territory, RiskGameModel riskGameModel) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 
-	@Override
-	public void fortify() {
-		// TODO Auto-generated method stub
-		
-	}
 
 }

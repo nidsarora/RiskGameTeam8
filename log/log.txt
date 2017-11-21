@@ -1279,3 +1279,293 @@ Thu Nov 09 11:54:06 EST 2017:Player_1 has 2 armies moved to Brazil
 Current player turn ends
 Thu Nov 09 11:54:12 EST 2017:Current player turn ends
 >>>>>>> Stashed changes
+-------------------------------------------------------
+Mon Nov 20 13:44:18 EST 2017:-------------------------------------------------------
+application start
+Mon Nov 20 13:44:18 EST 2017:application start
+All players Added
+Mon Nov 20 13:45:53 EST 2017:All players Added
+35 armies added to each player
+Mon Nov 20 13:45:54 EST 2017:35 armies added to each player
+Build the Game Panel
+Mon Nov 20 13:45:55 EST 2017:Build the Game Panel
+initial reinforcement stage
+Mon Nov 20 13:46:11 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:46:35 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:46:36 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:46:41 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:46:43 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:46:44 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:46:46 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:46:46 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:47:21 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:47:22 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:47:23 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:47:26 EST 2017:initial reinforcement stage
+-------------------------------------------------------
+Mon Nov 20 13:47:43 EST 2017:-------------------------------------------------------
+application start
+Mon Nov 20 13:47:43 EST 2017:application start
+All players Added
+Mon Nov 20 13:47:45 EST 2017:All players Added
+-------------------------------------------------------
+Mon Nov 20 13:50:13 EST 2017:-------------------------------------------------------
+application start
+Mon Nov 20 13:50:13 EST 2017:application start
+All players Added
+Mon Nov 20 13:50:23 EST 2017:All players Added
+15 armies added to each player
+Mon Nov 20 13:50:23 EST 2017:15 armies added to each player
+Build the Game Panel
+Mon Nov 20 13:50:23 EST 2017:Build the Game Panel
+initial reinforcement stage
+Mon Nov 20 13:50:41 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:42 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:43 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:44 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:45 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:45 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:48 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:49 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:50 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:50 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:51 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:51 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:52 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:53 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:53 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:54 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:54 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:55 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:55 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:56 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:57 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:57 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:59 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:00 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:00 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:00 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:01 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:01 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:01 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:01 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:02 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:02 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:03 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:03 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:04 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:04 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:05 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:05 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:05 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:06 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:06 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:07 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:07 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:07 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:07 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:08 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:08 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:08 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:08 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:09 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:09 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:09 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:09 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:10 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:10 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:11 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:11 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:12 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:14 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:15 EST 2017:initial reinforcement stage
+Player_1 got bonus armies
+Mon Nov 20 13:51:15 EST 2017:Player_1 got bonus armies
+Player_1 got3 left to place
+Mon Nov 20 13:51:15 EST 2017:Player_1 got3 left to place
+Player_1 got2 left to place
+Mon Nov 20 13:54:04 EST 2017:Player_1 got2 left to place
+Player_1 got1 left to place
+Mon Nov 20 13:54:04 EST 2017:Player_1 got1 left to place
+Player_1 got0 left to place
+Mon Nov 20 13:54:05 EST 2017:Player_1 got0 left to place
+Player_1 entered active turn
+Mon Nov 20 13:54:05 EST 2017:Player_1 entered active turn
+Attack Phase entered
+Mon Nov 20 13:54:08 EST 2017:Attack Phase entered
+Player_1 entered attacking phase.
+Mon Nov 20 13:54:13 EST 2017:Player_1 entered attacking phase.
+Player_1 entered attacking phase.
+Mon Nov 20 13:54:14 EST 2017:Player_1 entered attacking phase.
+Player_1 has 5 armies
+Mon Nov 20 13:54:15 EST 2017:Player_1 has 5 armies
+Player_1 attacking with 3 armies
+Mon Nov 20 13:54:15 EST 2017:Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Mon Nov 20 13:54:16 EST 2017:Player_1 has destroyed an army
+Player_1 has 3 armies moved to cc
+Mon Nov 20 13:54:18 EST 2017:Player_1 has 3 armies moved to cc
+Current player turn ends
+Mon Nov 20 13:54:25 EST 2017:Current player turn ends
+Current player turn ends
+Mon Nov 20 13:54:37 EST 2017:Current player turn ends
+Current player turn ends
+Mon Nov 20 13:54:38 EST 2017:Current player turn ends
+Player_1 got2 left to place
+Mon Nov 20 14:30:43 EST 2017:Player_1 got2 left to place
+Player_1 got1 left to place
+Mon Nov 20 14:30:43 EST 2017:Player_1 got1 left to place
+Player_1 got0 left to place
+Mon Nov 20 14:30:47 EST 2017:Player_1 got0 left to place
+Player_1 entered active turn
+Mon Nov 20 14:30:47 EST 2017:Player_1 entered active turn
+Fortify Phase entered
+Mon Nov 20 14:30:52 EST 2017:Fortify Phase entered
+Player_1 has 1 armies moved to cc
+Mon Nov 20 14:31:03 EST 2017:Player_1 has 1 armies moved to cc
+Current player turn ends
+Mon Nov 20 14:31:13 EST 2017:Current player turn ends
+Player_2 got5 left to place
+Mon Nov 20 14:31:17 EST 2017:Player_2 got5 left to place
+Player_2 got4 left to place
+Mon Nov 20 14:31:17 EST 2017:Player_2 got4 left to place
+Player_2 got3 left to place
+Mon Nov 20 14:31:17 EST 2017:Player_2 got3 left to place
+Player_2 got2 left to place
+Mon Nov 20 14:31:17 EST 2017:Player_2 got2 left to place
+Player_2 got1 left to place
+Mon Nov 20 14:31:17 EST 2017:Player_2 got1 left to place
+Player_2 got0 left to place
+Mon Nov 20 14:31:17 EST 2017:Player_2 got0 left to place
+Player_2 entered active turn
+Mon Nov 20 14:31:17 EST 2017:Player_2 entered active turn
+Attack Phase entered
+Mon Nov 20 14:31:19 EST 2017:Attack Phase entered
+Player_2 entered attacking phase.
+Mon Nov 20 14:31:21 EST 2017:Player_2 entered attacking phase.
+Player_2 entered attacking phase.
+Mon Nov 20 14:31:22 EST 2017:Player_2 entered attacking phase.
+Player_2 has 20 armies
+Mon Nov 20 14:31:23 EST 2017:Player_2 has 20 armies
+Player_2 attacking with 3 armies
+Mon Nov 20 14:31:23 EST 2017:Player_2 attacking with 3 armies
+Player_2 has lost an army
+Mon Nov 20 14:31:24 EST 2017:Player_2 has lost an army
+Player_2 has 19 armies
+Mon Nov 20 14:31:25 EST 2017:Player_2 has 19 armies
+Player_2 attacking with 3 armies
+Mon Nov 20 14:31:25 EST 2017:Player_2 attacking with 3 armies
+Player_2 has destroyed an army
+Mon Nov 20 14:31:26 EST 2017:Player_2 has destroyed an army
+Player_2 has 3 armies moved to aa
+Mon Nov 20 14:31:27 EST 2017:Player_2 has 3 armies moved to aa
+-------------------------------------------------------
+Mon Nov 20 15:11:45 EST 2017:-------------------------------------------------------
+application start
+Mon Nov 20 15:11:45 EST 2017:application start
+All players Added
+Mon Nov 20 15:11:53 EST 2017:All players Added
+15 armies added to each player
+Mon Nov 20 15:11:56 EST 2017:15 armies added to each player
+Build the Game Panel
+Mon Nov 20 15:11:56 EST 2017:Build the Game Panel
+initial reinforcement stage
+Mon Nov 20 15:12:11 EST 2017:initial reinforcement stage
+Player_2 got bonus armies
+Mon Nov 20 15:12:11 EST 2017:Player_2 got bonus armies
+Player_2 got3 left to place
+Mon Nov 20 15:12:11 EST 2017:Player_2 got3 left to place
+Player_2 got2 left to place
+Mon Nov 20 15:12:20 EST 2017:Player_2 got2 left to place
+Player_2 got1 left to place
+Mon Nov 20 15:12:20 EST 2017:Player_2 got1 left to place
+Player_2 got0 left to place
+Mon Nov 20 15:12:20 EST 2017:Player_2 got0 left to place
+Player_2 entered active turn
+Mon Nov 20 15:12:20 EST 2017:Player_2 entered active turn
+-------------------------------------------------------
+Mon Nov 20 16:31:55 EST 2017:-------------------------------------------------------
+application start
+Mon Nov 20 16:31:55 EST 2017:application start
+All players Added
+Mon Nov 20 16:31:57 EST 2017:All players Added
+15 armies added to each player
+Mon Nov 20 16:32:02 EST 2017:15 armies added to each player
+Build the Game Panel
+Mon Nov 20 16:32:02 EST 2017:Build the Game Panel
+initial reinforcement stage
+Mon Nov 20 16:32:21 EST 2017:initial reinforcement stage
+Player_2 got bonus armies
+Mon Nov 20 16:32:21 EST 2017:Player_2 got bonus armies
+Player_2 got3 left to place
+Mon Nov 20 16:32:21 EST 2017:Player_2 got3 left to place
