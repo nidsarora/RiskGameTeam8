@@ -4,9 +4,11 @@ import risk.model.RiskGameModel;
 
 public interface StrategyInterface {
 
-	public String attack(int territory,RiskGameModel riskGameModel);
+	public String startTurn(boolean isTest, RiskGameModel riskGameModel);
 
-	public String reinforce(int territory,RiskGameModel riskGameModel);
+	public String reinforce(boolean isTest, int territory, RiskGameModel riskGameModel);
 
-	public String fortify(int territory,RiskGameModel riskGameModel);
+	public String attack(boolean isTest, int territory, RiskGameModel riskGameModel);
+
+	public String fortify(boolean isTest, int territory, RiskGameModel riskGameModel);
 }

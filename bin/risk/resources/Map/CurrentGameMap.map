@@ -7,19 +7,16 @@ warn=yes
 
 
 [Continents]
-africa=0
-india=0
+india=6
 
 
 [Territories]
 
 aa,47,76,india,bb,cc
-bb,155,70,india,aa,ee,ff
+bb,155,70,india,aa,gg,kk
 cc,334,38,india,aa
-ee,209,128,india,bb
-ff,280,134,india,bb
-
-
+gg,209,128,india,bb
+kk,280,134,india,bb
 
 
 ;;

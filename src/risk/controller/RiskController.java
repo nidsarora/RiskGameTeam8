@@ -52,13 +52,13 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	public int getCountTradeCards() {
 		return countTradeCards;
 	}
-	
+
 	public RiskGameModel getRisk() {
 		return risk;
 	}
-	
+
 	public void setRisk(RiskGameModel test) {
-		risk=test;
+		risk = test;
 	}
 
 	public RiskController(String test) {
@@ -101,6 +101,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		jPanel1.repaint();
 		jPanel1.addMouseListener(this);
 		AttackButton.setVisible(false);
+		risk.curPlayer.startTurn(risk);
 	}
 
 	/**
@@ -355,6 +356,10 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	public void mouseClicked(MouseEvent me) {
 		int x_coordinate = me.getX();
 		int y_coordinate = me.getY();
+
+		risk.xCoordinate = x_coordinate; //Strategy
+		risk.yCoordinate = y_coordinate;
+
 		String name;
 		String out;
 
@@ -378,7 +383,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		if (risk.getState() == RiskGameModel.ATTACK) {
 			risk.notifyPhaseViewChange();
 			name = risk.curPlayer.getName();
-			
+
 			out = risk.gamePhaseActive(x_coordinate, y_coordinate);
 			risk.notifyPhaseViewChange();
 
@@ -420,7 +425,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			AttackButton.setText("Attack");
 
 			AttackButton.setVisible(true);
-			
+
 		}
 
 		if (risk.getState() == RiskGameModel.ATTACKING) {
@@ -434,100 +439,36 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		}
 
 		if (risk.getState() == RiskGameModel.ATTACK_PHASE) {
-			// jInternalFrame1.setVisible(true);
-			int attackArmies = risk.aTerritory.getArmies();
 			int defenseArmies = risk.defenseTerritory.getArmies();
-			int numofatt = 0;
-			// If attackers turn
-			if (risk.active == risk.curPlayer) {
-				if (attackArmies > 3) {
-					if (y_coordinate > 250 && y_coordinate < 280) {// if in
-																	// y_coordinate
-																	// coord
-						if (x_coordinate > 420 && x_coordinate < 460) // If dice
-																		// one
-							numofatt = 1;
-						if (x_coordinate > 480 && x_coordinate < 520) // if dice
-																		// two
-							numofatt = 2;
-						if (x_coordinate > 540 && x_coordinate < 580)
-							numofatt = 3;
-					} // in y_coordinate coord
-				} // if attcking with 3
-				if (attackArmies == 3) {// if attakking with two
-					if (y_coordinate > 250 && y_coordinate < 280) {
-						if (x_coordinate > 460 && x_coordinate < 500)
-							numofatt = 1;
-						if (x_coordinate > 510 && x_coordinate < 550)
-							numofatt = 2;
-					} // in y_coordinate coord
-				} // end if can attack with two
-
-				if (attackArmies == 2) {// can only attack with one
-					if (y_coordinate > 250 && y_coordinate < 280) {
-						if (x_coordinate > 480 && x_coordinate < 520)
-							numofatt = 1;
-					} // in y_coordinate
-				} // end only attack with one
-
-				if (numofatt != 0) {// change player is num is selected
-					risk.active = risk.defender;
-					risk.setAttack(numofatt);
-					Utility.writeLog(risk.getCurrentPlayer().getName() + " has " + attackArmies + " armies");
-					Utility.writeLog(risk.getCurrentPlayer().getName() + " attacking with " + numofatt + " armies");
+			int attackArmies = risk.defenseTerritory.getArmies();
+			
+			if (Integer.valueOf(risk.gamePhaseActive(x_coordinate, y_coordinate)) > 0) {
+				if (defenseArmies - risk.defenseTerritory.getArmies() == 1) {
+					statusLabel.setText(risk.curPlayer.getName() + " has destroyed an army");
+					Utility.writeLog(risk.curPlayer.getName() + " has destroyed an army");
+				} else if (defenseArmies - risk.defenseTerritory.getArmies() == 2) {
+					statusLabel.setText(risk.curPlayer.getName() + " has destroyed two armies");
+					Utility.writeLog(risk.curPlayer.getName() + " has destroyed two armies");
+				} else if (attackArmies - risk.aTerritory.getArmies() == 1) {
+					statusLabel.setText(risk.curPlayer.getName() + " has lost an army");
+					Utility.writeLog(risk.curPlayer.getName() + " has lost an army");
+				} else if (attackArmies - risk.aTerritory.getArmies() == 2) {
+					statusLabel.setText(risk.curPlayer.getName() + " has lost two armies");
+					Utility.writeLog(risk.curPlayer.getName() + " has lost two armies");
 				}
 
-			} // end attackers turn
-
-			// If defenders turn
-			else if (risk.active == risk.defender) {
-				if (defenseArmies > 1 && risk.attackNum > 1) {
-					if (y_coordinate > 250 && y_coordinate < 280) {
-						if (x_coordinate > 460 && x_coordinate < 500)
-							numofatt = 1;
-						if (x_coordinate > 510 && x_coordinate < 550)
-							numofatt = 2;
-					}
-				} else {
-					if (y_coordinate > 250 && y_coordinate < 280) {
-						if (x_coordinate > 480 && x_coordinate < 520)
-							numofatt = 1;
-					}
+				if (risk.aTerritory.getArmies() == 1) {
+					risk.setState(RiskGameModel.ACTIVE_TURN);
+					statusLabel.setText(risk.curPlayer.getName() + " has lost the battle");
+					AttackButton.setText("Attack");
+					FortifyButton.setVisible(true);
+					EndButton.setVisible(true);
+					risk.defenseNum = 0;
+					risk.attackNum = 0;
+					risk.defenseTerritory = null;
+					risk.aTerritory = null;
 				}
-
-				risk.notifyPhaseViewChange();
-				if (numofatt > 0) {
-					risk.setDefend(numofatt);
-					risk.engageBattle();
-					if (defenseArmies - risk.defenseTerritory.getArmies() == 1) {
-						statusLabel.setText(risk.curPlayer.getName() + " has destroyed an army");
-						Utility.writeLog(risk.curPlayer.getName() + " has destroyed an army");
-					} else if (defenseArmies - risk.defenseTerritory.getArmies() == 2) {
-						statusLabel.setText(risk.curPlayer.getName() + " has destroyed two armies");
-						Utility.writeLog(risk.curPlayer.getName() + " has destroyed two armies");
-					} else if (attackArmies - risk.aTerritory.getArmies() == 1) {
-						statusLabel.setText(risk.curPlayer.getName() + " has lost an army");
-						Utility.writeLog(risk.curPlayer.getName() + " has lost an army");
-					} else if (attackArmies - risk.aTerritory.getArmies() == 2) {
-						statusLabel.setText(risk.curPlayer.getName() + " has lost two armies");
-						Utility.writeLog(risk.curPlayer.getName() + " has lost two armies");
-					}
-
-					if (risk.aTerritory.getArmies() == 1) {
-						risk.setState(RiskGameModel.ACTIVE_TURN);
-						statusLabel.setText(risk.curPlayer.getName() + " has lost the battle");
-						AttackButton.setText("Attack");
-						FortifyButton.setVisible(true);
-						EndButton.setVisible(true);
-						risk.defenseNum = 0;
-						risk.attackNum = 0;
-						risk.defenseTerritory = null;
-						risk.aTerritory = null;
-					}
-				}
-
-			} /// end if defenders turn
-
+			}
 		} // End attackPhase
 
 		if (risk.getState() == RiskGameModel.DEFEATED) {
@@ -571,8 +512,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 						statusLabel.setText(risk.defenseNum + " armies moved to " + risk.defenseTerritory.getName());
 
 					risk.notifyPhaseViewChange();
-					risk.setAttackDieArray(new Integer[] {0,0,0});
-					risk.setDefenceDieArray(new Integer[] {0,0,0});
+					risk.setAttackDieArray(new Integer[] { 0, 0, 0 });
+					risk.setDefenceDieArray(new Integer[] { 0, 0, 0 });
 					Utility.writeLog(risk.getCurrentPlayer().getName() + " has " + risk.defenseNum + " armies moved to "
 							+ risk.defenseTerritory.getName());
 					EndButton.setVisible(true);
@@ -805,9 +746,9 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	}
 
 	/**
-	 * This method checks if the TradeCardSet is valid or not i.e. if the number
-	 * of cards is 3, and then checks if all 3 are either the same or all three
-	 * are of different types or one of the three is a wild card
+	 * This method checks if the TradeCardSet is valid or not i.e. if the number of
+	 * cards is 3, and then checks if all 3 are either the same or all three are of
+	 * different types or one of the three is a wild card
 	 *
 	 * @return the boolean
 	 */
@@ -910,8 +851,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 	public void mouseExited(MouseEvent me) {
 	}
-	
-	public void fortifyPhase(int x,int y) {
+
+	public void fortifyPhase(int x, int y) {
 		if (risk.getState() == RiskGameModel.FORTIFY_PHASE) {
 			int from = risk.aTerritory.getArmies();
 
@@ -949,9 +890,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			} // end x for movwe
 		} // ..fortify phase
 	}
-	
-	
-	public void attackPhase(int x,int y) {
+
+	public void attackPhase(int x, int y) {
 		if (risk.getState() == RiskGameModel.ATTACK_PHASE) {
 			// jInternalFrame1.setVisible(true);
 			int attackArmies = risk.aTerritory.getArmies();
@@ -1010,11 +950,11 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					}
 				}
 
-				//risk.notifyPhaseViewChange();
+				// risk.notifyPhaseViewChange();
 				if (numofatt > 0) {
 					risk.setDefend(numofatt);
-					//risk.engageBattle();
-					if (defenseArmies - risk.defenseTerritory.getArmies() == 1){
+					// risk.engageBattle();
+					if (defenseArmies - risk.defenseTerritory.getArmies() == 1) {
 						statusLabel.setText(risk.curPlayer.getName() + " has destroyed an army");
 						Utility.writeLog(risk.curPlayer.getName() + " has destroyed an army");
 					} else if (defenseArmies - risk.defenseTerritory.getArmies() == 2) {
@@ -1080,23 +1020,24 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					if (risk.defenseNum == 1)
 						statusLabel.setText("1 army moved to " + risk.defenseTerritory.getName());
 					else
-						//statusLabel.setText(risk.defenseNum + " armies moved to " + risk.dTerritory.getName());
+						// statusLabel.setText(risk.defenseNum + " armies moved to " +
+						// risk.dTerritory.getName());
 
-					risk.notifyPhaseViewChange();
+						risk.notifyPhaseViewChange();
 					risk.setAttackDieArray(null);
 					risk.setDefenceDieArray(null);
 					Utility.writeLog(risk.getCurrentPlayer().getName() + " has " + risk.defenseNum + " armies moved to "
 							+ risk.defenseTerritory.getName());
-					//EndButton.setVisible(true);
-					//FortifyButton.setVisible(true);
+					// EndButton.setVisible(true);
+					// FortifyButton.setVisible(true);
 					risk.capture();
 				}
 			}
 			// risk.notifyPhaseViewChange();
 		} // end capturing
 
-
 	}
+
 	private JLabel cardStatusLabel;
 	private RiskGameModel risk;
 	private JFrame jfmCard;

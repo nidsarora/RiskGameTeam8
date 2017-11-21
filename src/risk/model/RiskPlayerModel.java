@@ -5,6 +5,7 @@ import java.util.Observable;
 import java.util.Vector;
 
 import risk.model.interfaces.StrategyInterface;
+import risk.model.strategy.Human;
 
 /**
  * This class represents the model class of the Player. Player has army name,
@@ -37,6 +38,7 @@ public class RiskPlayerModel extends Observable {
 		index = playerindex;
 		occupiedTerritories = new Vector<RiskTerritoryModel>();
 		cards = new Vector<RiskCardModel>();
+		setStrategy("Human");//Strategy
 	}
 
 	/**
@@ -246,7 +248,7 @@ public class RiskPlayerModel extends Observable {
 	}
 
 	public void fortify(int territory,RiskGameModel riskModel) {
-		this.strategy.fortify(territory,riskModel);
+		this.strategy.fortify(false,territory,riskModel);
 	}
 
 	/**
@@ -272,8 +274,9 @@ public class RiskPlayerModel extends Observable {
 		return strategy;
 	}
 
-	public void setStrategy(StrategyInterface strategy) {
-		this.strategy = strategy;
+	public void setStrategy(String strategy) {	
+		//Make this conditional eventually //Strategy
+		this.strategy = new Human();
 	}
 
 	public Boolean isValidAttack() {
@@ -281,15 +284,15 @@ public class RiskPlayerModel extends Observable {
 	}
 
 	public void attack(int territory,RiskGameModel riskModel) {
-			this.strategy.attack(territory,riskModel);
+			this.strategy.attack(false,territory,riskModel);
 	}
 
-	public void startTurn(RiskGameModel riskModel) {
-		
+	public void startTurn(RiskGameModel riskGameModel) {
+		this.strategy.startTurn(false, riskGameModel);
 	}
 
 	public String reinforce(int territory,RiskGameModel riskGameModel) {
-		return this.strategy.reinforce(territory, riskGameModel);
+		return this.strategy.reinforce(false,territory, riskGameModel);
 	}
 
 	public void tradeCard(RiskGameModel riskModel) {

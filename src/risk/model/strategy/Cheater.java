@@ -6,20 +6,26 @@ import risk.model.interfaces.StrategyInterface;
 public class Cheater  implements StrategyInterface {
 
 	@Override
-	public String attack(int territory, RiskGameModel riskGameModel) {
+	public String attack(boolean isTest,int territory, RiskGameModel riskGameModel) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public String reinforce(int territory, RiskGameModel riskGameModel) {
+	public String reinforce(boolean isTest,int territory, RiskGameModel riskGameModel) {
 		return null;
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public String fortify(int territory, RiskGameModel riskGameModel) {
+	public String fortify(boolean isTest,int territory, RiskGameModel riskGameModel) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String startTurn(boolean isTest,RiskGameModel riskGameModel) {
 		// TODO Auto-generated method stub
 		return null;
 	}

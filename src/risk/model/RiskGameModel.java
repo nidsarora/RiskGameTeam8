@@ -188,6 +188,10 @@ public class RiskGameModel {
 
 	/** The attack dice. */
 	public Integer[] attackdice;
+	
+	public int xCoordinate;
+	
+	public int yCoordinate;
 
 	/**
 	 * Instantiates a new risk game model.
@@ -203,7 +207,7 @@ public class RiskGameModel {
 	 */
 	public RiskGameModel() {
 		setIsBaseMapEdited(RiskController.isBaseMapEdited);
-		gameState = NEW_GAME;
+		gameState = START_TURN;
 		initalPlayer();
 		initializePlayerDominationView();
 		initializeCardExchangeView();
@@ -991,7 +995,7 @@ public class RiskGameModel {
 		// Riskattack(country);
 		// } // end attack with
 
-		if (getState() == ATTACKING || getState() == ATTACK) {
+		if (getState() == ATTACKING || getState() == ATTACK || getState() == ATTACK_PHASE) {
 			this.curPlayer.attack(country,this);
 		}
 
