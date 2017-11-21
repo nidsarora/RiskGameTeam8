@@ -101,7 +101,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		jPanel1.repaint();
 		jPanel1.addMouseListener(this);
 		AttackButton.setVisible(false);
-		risk.curPlayer.startTurn(risk);
+		//risk.curPlayer.startTurn(risk);
 	}
 
 	/**

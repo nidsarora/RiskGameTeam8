@@ -247,8 +247,8 @@ public class RiskPlayerModel extends Observable {
 		return sbPlayerDominationViewContent.toString();
 	}
 
-	public void fortify(int territory,RiskGameModel riskModel) {
-		this.strategy.fortify(false,territory,riskModel);
+	public String fortify(int territory,RiskGameModel riskModel) {
+		return this.strategy.fortify(false,territory,riskModel);
 	}
 
 	/**
@@ -283,12 +283,12 @@ public class RiskPlayerModel extends Observable {
 		return true;
 	}
 
-	public void attack(int territory,RiskGameModel riskModel) {
-			this.strategy.attack(false,territory,riskModel);
+	public String attack(int territory,RiskGameModel riskModel) {
+		return	this.strategy.attack(false,territory,riskModel);
 	}
 
-	public void startTurn(RiskGameModel riskGameModel) {
-		this.strategy.startTurn(false, riskGameModel);
+	public String startTurn(RiskGameModel riskGameModel) {
+		return this.strategy.startTurn(false, riskGameModel);
 	}
 
 	public String reinforce(int territory,RiskGameModel riskGameModel) {

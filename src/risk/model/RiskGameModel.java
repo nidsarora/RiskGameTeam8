@@ -207,7 +207,7 @@ public class RiskGameModel {
 	 */
 	public RiskGameModel() {
 		setIsBaseMapEdited(RiskController.isBaseMapEdited);
-		gameState = START_TURN;
+		gameState = INITIAL_REINFORCE;
 		initalPlayer();
 		initializePlayerDominationView();
 		initializeCardExchangeView();
@@ -220,13 +220,16 @@ public class RiskGameModel {
 	}
 
 	private void assignTerritories() {
-		while (!armiesExhaustedForAllPlayers()) {
-			int territoryId = -1;
-			if ((territoryId = getUnOccupiedTerritory()) != -1) {
-				occupyTerritoryByPlayer(territoryId, curPlayer);
-			} else {
-				occupyTerritoryByPlayer(getRandomOccupiedTerritoryByPlayer(curPlayer), curPlayer);
-			}
+		int territoryId = -1;
+		while ((territoryId = getUnOccupiedTerritory()) != -1) {
+
+			occupyTerritoryByPlayer(territoryId, curPlayer);
+//			if ((territoryId = getUnOccupiedTerritory()) != -1) {
+//				occupyTerritoryByPlayer(territoryId, curPlayer);
+//			} else {
+//				occupyTerritoryByPlayer(getRandomOccupiedTerritoryByPlayer(curPlayer), curPlayer);
+//			}
+			
 			nextPlayer();
 		}
 	}
@@ -980,7 +983,7 @@ public class RiskGameModel {
 		// } // end forty
 
 		if (getState() == FORTIFY || getState() == FORTIFYING) {
-			this.curPlayer.fortify(country,this);
+			return this.curPlayer.fortify(country,this);
 		}
 
 		// if (getState() == ATTACK_PHASE) {
@@ -996,7 +999,7 @@ public class RiskGameModel {
 		// } // end attack with
 
 		if (getState() == ATTACKING || getState() == ATTACK || getState() == ATTACK_PHASE) {
-			this.curPlayer.attack(country,this);
+			return this.curPlayer.attack(country,this);
 		}
 
 		
@@ -1014,7 +1017,7 @@ public class RiskGameModel {
 //		}
 
 		if (getState() == REINFORCE) {
-			this.curPlayer.reinforce(country,this);
+			return this.curPlayer.reinforce(country,this);
 		}
 
 //		if (getState() == START_TURN) {
@@ -1022,7 +1025,7 @@ public class RiskGameModel {
 //		}
 
 		if (getState() == START_TURN) {
-			this.curPlayer.startTurn(this);
+			return this.curPlayer.startTurn(this);
 		}
 
 		return "";
