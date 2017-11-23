@@ -23,6 +23,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -30,6 +31,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Random;
+import java.util.Scanner;
 import java.util.Vector;
 
 import javax.sound.midi.InvalidMidiDataException;
@@ -356,7 +358,7 @@ public class RiskStartGameController extends java.awt.Frame {
 		pane.add(scrollTextAreaPanel, gridbagconstraints);
 
 		JPanel inputLinePanel = new JPanel();
-		mapEditTextField = new JTextField("", 120);
+		mapEditTextField = new JTextField("", 60);
 		inputLinePanel.add(mapEditTextField);
 		gridbagconstraints.fill = GridBagConstraints.HORIZONTAL;
 		gridbagconstraints.weightx = 1;
@@ -372,6 +374,18 @@ public class RiskStartGameController extends java.awt.Frame {
 		// finishButton.setVisible(false);
 		addContinent = new JButton("Add Continent");
 		continentDoneButton = new JButton("Done");
+		jButtonCustomMap = new javax.swing.JButton("Custom Map");
+		jButtonCustomMap.setName("jButtonCustomMap");
+		jTecxtCustomMap = new javax.swing.JTextField("", 40);
+		jLabelCustomMap = new javax.swing.JLabel("Map File Name");
+		inputLinePanel.add(jLabelCustomMap);
+		inputLinePanel.add(jTecxtCustomMap);
+
+		jButtonCustomMap.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent exception) {
+				CustomMapButtonPressed(exception);
+			}
+		});
 		/**
 		 * Handles the click event for the add button in the Choose Map Panel.
 		 */
@@ -409,6 +423,7 @@ public class RiskStartGameController extends java.awt.Frame {
 		buttonsPanel.add(finishButton);
 		buttonsPanel.add(addContinent);
 		buttonsPanel.add(continentDoneButton);
+		buttonsPanel.add(jButtonCustomMap);
 		gridbagconstraints.weightx = 0.5;
 		gridbagconstraints.gridx = 1;
 		gridbagconstraints.ipady = 50;
@@ -453,6 +468,53 @@ public class RiskStartGameController extends java.awt.Frame {
 			notePanel.repaint();
 		}
 
+	}
+
+	void CustomMapButtonPressed(ActionEvent exception) {
+
+		continentDoneButton.setVisible(false);
+		addContinent.setVisible(false);
+		addButton.setVisible(true);
+		
+		String Filename = jTecxtCustomMap.getText() + ".map";
+		String nextLine = "";
+		hmCountryDetails.clear();
+		userDefinedContinentList.clear();
+		boolean done;
+		InputStream MapInput = RiskGameModel.class.getResourceAsStream(Utility.getMapPath(Filename));
+
+		Scanner ContinentTerritoryScanner = new Scanner(MapInput);
+
+		while (ContinentTerritoryScanner.hasNextLine()) {
+			nextLine = ContinentTerritoryScanner.nextLine();
+			if (nextLine.equals("[Continents]")) {
+				nextLine = ContinentTerritoryScanner.nextLine();
+				done = false;
+				do {
+					userDefinedContinentList.put(nextLine.split("=")[0], nextLine.split("=")[1]);
+					// mapEditTextArea.append(nextLine.split("=")[0] + "=" +
+					// nextLine.split("=")[1] + "\n");
+					// mapEditTextField.setText("");
+					nextLine = ContinentTerritoryScanner.nextLine();
+					if (nextLine.equals(""))
+						done = true;
+				} while (done == false);
+			}
+			if (nextLine.equals("[Territories]")) {
+				done = false;
+				nextLine = ContinentTerritoryScanner.nextLine();
+
+				do {
+					if (!nextLine.equals(""))
+						hmCountryDetails.put(nextLine.split(",")[0], nextLine);
+
+					nextLine = ContinentTerritoryScanner.hasNext() ? ContinentTerritoryScanner.nextLine() : ";;";
+					if (nextLine.equals(";;"))
+						done = true;
+				} while (done == false);
+			}
+		}
+		updateMapEditTextArea();
 	}
 
 	private boolean validateContinent(String continent) {
@@ -604,7 +666,11 @@ public class RiskStartGameController extends java.awt.Frame {
 			return;
 		}
 		if (validateContinentLineText(mapEditTextField.getText())) {
+
+			// below line not used. instead loading the country details through
+			// hashmap
 			sbMapTerritoryContents.append(mapEditTextInsertCoordinates(mapEditTextField.getText()) + "\n");
+
 			updateMapEditTextArea();
 			noteLabel.setText("");
 			notePanel.repaint();
@@ -1046,6 +1112,9 @@ public class RiskStartGameController extends java.awt.Frame {
 	private javax.swing.JButton jButton3;
 	private javax.swing.JLabel jLabel1;
 	private javax.swing.JPanel jPanel1;
+	javax.swing.JLabel jLabelCustomMap;
+	javax.swing.JButton jButtonCustomMap;
+	javax.swing.JTextField jTecxtCustomMap;
 	private javax.swing.JTextArea mapEditTextArea;
 	private javax.swing.JTextField mapEditTextField;
 	private String fetchedCoordinates;
