@@ -1,11 +1,8 @@
 package risk.model;
 
-import java.io.StreamTokenizer;
 import java.util.Observable;
 import java.util.Vector;
-
 import risk.model.interfaces.StrategyInterface;
-import risk.model.strategy.Human;
 
 /**
  * This class represents the model class of the Player. Player has army name,
@@ -33,19 +30,18 @@ public class RiskPlayerModel extends Observable {
 	 * @param playerindex,
 	 *            player index
 	 */
-	public RiskPlayerModel(String playername, int playerindex) {
+	public RiskPlayerModel(String playername, int playerindex, StrategyInterface IStrategy) {
 		name = playername;
 		index = playerindex;
 		occupiedTerritories = new Vector<RiskTerritoryModel>();
 		cards = new Vector<RiskCardModel>();
-		setStrategy("Human");//Strategy
+		setStrategy(IStrategy);// Strategy
 	}
 
 	/**
 	 * Instantiates a new risk player model.
 	 */
 	public RiskPlayerModel() {
-		// TODO Auto-generated constructor stub
 	}
 
 	/**
@@ -247,8 +243,8 @@ public class RiskPlayerModel extends Observable {
 		return sbPlayerDominationViewContent.toString();
 	}
 
-	public String fortify(int territory,RiskGameModel riskModel) {
-		return this.strategy.fortify(false,territory,riskModel);
+	public String fortify(int territory, RiskGameModel riskModel) {
+		return this.strategy.fortify(false, riskModel, territory);
 	}
 
 	/**
@@ -274,25 +270,33 @@ public class RiskPlayerModel extends Observable {
 		return strategy;
 	}
 
-	public void setStrategy(String strategy) {	
-		//Make this conditional eventually //Strategy
-		this.strategy = new Human();
+	public void setStrategy(StrategyInterface IStrategy) {
+		// Make this conditional eventually //Strategy
+		this.strategy = IStrategy;
 	}
 
 	public Boolean isValidAttack() {
 		return true;
 	}
 
-	public String attack(int territory,RiskGameModel riskModel) {
-		return	this.strategy.attack(false,territory,riskModel);
+	public String takeTurn(RiskGameModel riskGameModel) {
+		return this.strategy.takeTurn(false, riskGameModel);
+	}
+
+	public String initialReinforce(int territory, RiskGameModel riskModel) {
+		return this.strategy.initialReinforce(false, riskModel, territory);
+	}
+
+	public String attack(int territory, RiskGameModel riskModel) {
+		return this.strategy.attack(false, riskModel, territory);
 	}
 
 	public String startTurn(RiskGameModel riskGameModel) {
 		return this.strategy.startTurn(false, riskGameModel);
 	}
 
-	public String reinforce(int territory,RiskGameModel riskGameModel) {
-		return this.strategy.reinforce(false,territory, riskGameModel);
+	public String reinforce(int territory, RiskGameModel riskGameModel) {
+		return this.strategy.reinforce(false, riskGameModel, territory);
 	}
 
 	public void tradeCard(RiskGameModel riskModel) {

@@ -96,12 +96,14 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		risk = new RiskGameModel();
 		initComponents();
 		initializePhaseView(risk);
+		risk.mainPanel = jPanel1;
+		risk.subPanel = jPanel3;
 		setLocationRelativeTo(null);
 		setResizable(false);
 		jPanel1.repaint();
 		jPanel1.addMouseListener(this);
 		AttackButton.setVisible(false);
-		//risk.curPlayer.startTurn(risk);
+		risk.curPlayer.takeTurn(risk);
 	}
 
 	/**
@@ -229,7 +231,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 						.addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)));
 
 		Utility.writeLog("Build the Game Panel");
-
+		
 		pack();
 	}
 
@@ -279,6 +281,10 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		Utility.writeLog("Current player turn ends");
 	}
 
+//	private void gamePausePlay() {
+//		Thread.sleep(millis);
+//	}
+	
 	/**
 	 * Fortify button mouse clicked.
 	 */
@@ -357,7 +363,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		int x_coordinate = me.getX();
 		int y_coordinate = me.getY();
 
-		risk.xCoordinate = x_coordinate; //Strategy
+		risk.xCoordinate = x_coordinate; // Strategy
 		risk.yCoordinate = y_coordinate;
 
 		String name;
@@ -441,7 +447,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		if (risk.getState() == RiskGameModel.ATTACK_PHASE) {
 			int defenseArmies = risk.defenseTerritory.getArmies();
 			int attackArmies = risk.defenseTerritory.getArmies();
-			
+
 			if (Integer.valueOf(risk.gamePhaseActive(x_coordinate, y_coordinate)) > 0) {
 				if (defenseArmies - risk.defenseTerritory.getArmies() == 1) {
 					statusLabel.setText(risk.curPlayer.getName() + " has destroyed an army");
@@ -476,46 +482,16 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		}
 
 		if (risk.getState() == RiskGameModel.CAPTURE) {
-			statusLabel.setText("Select number of armies to move to " + risk.defenseTerritory.getName());
-			AttackButton.setVisible(false);
-			AttackButton.setText("Attack");
-			int max = risk.aTerritory.getArmies() - 1;
-			int min = risk.attackNum;
-			if (y_coordinate > 230 && y_coordinate < 257) {// if y_coordinate is
-															// correct
-				if (x_coordinate > 600 && x_coordinate < 650)// if max
-					risk.defenseNum = risk.aTerritory.getArmies() - 1; // max
-				if (x_coordinate > 520 && x_coordinate < 570) { // if inc
-					if (risk.defenseNum < max)
-						risk.defenseNum++;
-					else
-						statusLabel.setText("Maximum units already selected");
-				} // end if sub
-				if (x_coordinate > 440 && x_coordinate < 490) {// if dec
-					if (risk.defenseNum > min)
-						risk.defenseNum--;
-					else
-						statusLabel.setText("Minimum units already selected");
-				} // end if add
-				if (x_coordinate > 360 && x_coordinate < 410)// min
-					risk.defenseNum = min;
-			} // end if y_coordinate coord
-
-			if (x_coordinate > 460 && x_coordinate < 545) {// move has ben
-															// clicked
-				if (y_coordinate > 325 && y_coordinate < 355) {// then occupy
-																// the territory
-					AttackButton.setVisible(true);
-					if (risk.defenseNum == 1)
-						statusLabel.setText("1 army moved to " + risk.defenseTerritory.getName());
-					else
-						statusLabel.setText(risk.defenseNum + " armies moved to " + risk.defenseTerritory.getName());
-
-					risk.notifyPhaseViewChange();
-					risk.setAttackDieArray(new Integer[] { 0, 0, 0 });
-					risk.setDefenceDieArray(new Integer[] { 0, 0, 0 });
-					Utility.writeLog(risk.getCurrentPlayer().getName() + " has " + risk.defenseNum + " armies moved to "
-							+ risk.defenseTerritory.getName());
+			 
+			 statusLabel.setText("Select number of armies to move to " +
+			 risk.defenseTerritory.getName());
+			 AttackButton.setVisible(false);
+			 AttackButton.setText("Attack");
+			 
+			statusLabel.setText(risk.gamePhaseActive(x_coordinate, y_coordinate)); 
+			if (risk.xCoordinate > 460 && risk.xCoordinate < 545) {// move has ben
+				// clicked
+				if (risk.yCoordinate > 325 && risk.yCoordinate < 355) {// then occupy
 					EndButton.setVisible(true);
 					FortifyButton.setVisible(true);
 					if (risk.capture()) {
@@ -523,14 +499,12 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 						FortifyButton.setVisible(false);
 						CardButton.setVisible(false);
 						EndButton.setVisible(false);
-						statusLabel.setText(risk.getCurrentPlayer().getName() + " has won the game");
 						JOptionPane.showMessageDialog(null, risk.getCurrentPlayer().getName() + " has won the game",
 								"Alert", JOptionPane.INFORMATION_MESSAGE);
 					}
 				}
 			}
-			// risk.notifyPhaseViewChange();
-		} // end capturing
+		}
 
 		if (risk.getState() == RiskGameModel.FORTIFY) {
 			risk.gamePhaseActive(x_coordinate, y_coordinate);
@@ -543,64 +517,26 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		}
 
 		if (risk.getState() == RiskGameModel.FORTIFY_PHASE) {
-			int from = risk.aTerritory.getArmies();
-
-			if (y_coordinate > 230 && y_coordinate < 257) {// if y_coordinate is
-															// correct
-				if (x_coordinate > 600 && x_coordinate < 650)// if max
-					if (risk.defenseNum == (from - 1))
-						statusLabel.setText("Maximum units already selected");
-					else
-						risk.defenseNum = (from - 1);// all but one
-				if (x_coordinate > 520 && x_coordinate < 570) { // if inc
-					if (risk.defenseNum < (from - 1))
-						risk.defenseNum++;
-					else
-						statusLabel.setText("Maximum units already selected");
-				} // end if inc
-				if (x_coordinate > 440 && x_coordinate < 490) {// if dec
-					if (risk.defenseNum > (from - 1))
-						risk.defenseNum--;
-					else
-						statusLabel.setText("Minimum units already selected");
-				} // end if add
-				if (x_coordinate > 360 && x_coordinate < 410)// min
-					if (risk.defenseNum == 0)
-						statusLabel.setText("Minimum units already selected");
-					else
-						risk.defenseNum = 0;
-			} // end if y_coordinate coord
-
-			if (x_coordinate > 460 && x_coordinate < 545) {// move has ben
-															// clicked
-				if (y_coordinate > 325 && y_coordinate < 355) {// then occupy
-																// the territory
+			statusLabel.setText(risk.gamePhaseActive(x_coordinate, y_coordinate));
+			if (risk.xCoordinate > 460 && risk.xCoordinate < 545) {
+				if (risk.yCoordinate > 325 && risk.yCoordinate < 355) {
 					AttackButton.setVisible(false);
-					if (risk.defenseNum == 1)
-						statusLabel.setText("1 army moved to " + risk.defenseTerritory.getName());
-					else
-						statusLabel.setText(risk.defenseNum + " armies moved to " + risk.defenseTerritory.getName());
-					risk.notifyPhaseViewChange();
-					Utility.writeLog(risk.getCurrentPlayer().getName() + " has " + risk.defenseNum + " armies moved to "
-							+ risk.defenseTerritory.getName());
 					EndButton.setVisible(true);
 					FortifyButton.setVisible(false);
-					risk.aTerritory.looseArmies(risk.defenseNum);
-					risk.defenseTerritory.addArmies(risk.defenseNum);
-					risk.setState(RiskGameModel.ACTIVE_TURN);
-				} // end y_coordinate
-			} // end x_coordinate for movwe
-		} // ..fortify phase
+				}
+			}
+		}
 
 		if (risk.getState() == RiskGameModel.TRADE_CARDS) {
-			if (y_coordinate > 350 && y_coordinate < 380) {
-				if (x_coordinate > 475 && x_coordinate < 525) { // if exxti
-																// button pushed
-					risk.setState(RiskGameModel.ACTIVE_TURN);
-					System.out.println("exit");
-				}
-			} // end exit
-			risk.notifyPhaseViewChange();
+			// if (y_coordinate > 350 && y_coordinate < 380) { //Commented - Not sure we are
+			// using it
+			// if (x_coordinate > 475 && x_coordinate < 525) { // if exxti
+			// // button pushed
+			// risk.setState(RiskGameModel.ACTIVE_TURN);
+			// System.out.println("exit");
+			// }
+			// } // end exit
+			// risk.notifyPhaseViewChange();
 		} // end trade cards
 
 		System.out.println("(" + x_coordinate + ", " + y_coordinate + ")");

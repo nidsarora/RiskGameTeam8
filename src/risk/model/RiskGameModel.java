@@ -15,7 +15,11 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.Vector;
 
+import javax.swing.JPanel;
+
 import risk.controller.RiskController;
+import risk.controller.RiskMapPanelViewController;
+import risk.controller.RiskPlayerPanelViewController;
 import risk.controller.RiskStartGameController;
 import risk.helpers.Utility;
 import risk.model.RiskCardModel;
@@ -28,6 +32,7 @@ import risk.model.Observable.RiskFortifyPhaseModel;
 import risk.model.Observable.RiskReinforcementPhaseModel;
 import risk.model.Observable.RiskStartupEndPhaseModel;
 import risk.model.Observable.RiskStartupPhaseModel;
+import risk.model.interfaces.StrategyInterface;
 import risk.view.RiskCardExchangeViewObserver;
 import risk.view.RiskPhaseViewObserver;
 import risk.view.RiskPlayerDominationViewObserver;
@@ -129,6 +134,10 @@ public class RiskGameModel {
 	/** The defender. */
 	public RiskPlayerModel defender;
 
+	public JPanel mainPanel;
+
+	public JPanel subPanel;
+
 	/** The active. */
 	public RiskPlayerModel active;
 
@@ -146,6 +155,8 @@ public class RiskGameModel {
 
 	/** The attack num. */
 	public int attackNum = 0;
+
+	public int numberofAttack = 0;
 
 	/** The iter. */
 	public int iter = 0;
@@ -188,9 +199,9 @@ public class RiskGameModel {
 
 	/** The attack dice. */
 	public Integer[] attackdice;
-	
+
 	public int xCoordinate;
-	
+
 	public int yCoordinate;
 
 	/**
@@ -224,13 +235,14 @@ public class RiskGameModel {
 		while ((territoryId = getUnOccupiedTerritory()) != -1) {
 
 			occupyTerritoryByPlayer(territoryId, curPlayer);
-//			if ((territoryId = getUnOccupiedTerritory()) != -1) {
-//				occupyTerritoryByPlayer(territoryId, curPlayer);
-//			} else {
-//				occupyTerritoryByPlayer(getRandomOccupiedTerritoryByPlayer(curPlayer), curPlayer);
-//			}
-			
-			nextPlayer();
+			// if ((territoryId = getUnOccupiedTerritory()) != -1) {
+			// occupyTerritoryByPlayer(territoryId, curPlayer);
+			// } else {
+			// occupyTerritoryByPlayer(getRandomOccupiedTerritoryByPlayer(curPlayer),
+			// curPlayer);
+			// }
+
+			nextPlayer(true);
 		}
 	}
 
@@ -247,7 +259,7 @@ public class RiskGameModel {
 		return true;
 	}
 
-	private void occupyTerritoryByPlayer(int territoryId, RiskPlayerModel riskPlayer) {
+	public void occupyTerritoryByPlayer(int territoryId, RiskPlayerModel riskPlayer) {
 		RiskTerritoryModel riskterritorymodel = territories.elementAt(territoryId);
 		riskterritorymodel.setPlayer(riskPlayer);
 		riskPlayer.occupyTerritory(riskterritorymodel);
@@ -401,6 +413,8 @@ public class RiskGameModel {
 
 	/**
 	 * Notify phase view change.
+	 * 
+	 * @throws InterruptedException
 	 */
 	public void notifyPhaseViewChange() {
 		// System.out.println(this.getState());
@@ -436,7 +450,16 @@ public class RiskGameModel {
 			this.getRiskFortifyPhaseModelObservable().isChanged();
 			System.out.println("FORTIFY_PHASE");
 		}
-
+		try {
+			if (this.mainPanel != null && this.subPanel != null) {
+				this.mainPanel.repaint();
+				this.subPanel.repaint();
+			}
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	/**
@@ -500,11 +523,11 @@ public class RiskGameModel {
 	 * 
 	 * @return true, if successful
 	 */
-	static public boolean addPlayer(String nm) {
+	static public boolean addPlayer(String nm, StrategyInterface IStrategy) {
 		int size = players.size();
 		if (size > 6)
 			return false;
-		RiskPlayerModel p = new RiskPlayerModel(nm, size);
+		RiskPlayerModel p = new RiskPlayerModel(nm, size, IStrategy);
 		players.add(p);
 		return true;
 	}
@@ -538,12 +561,15 @@ public class RiskGameModel {
 	/**
 	 * This method finds the next player in the loop.
 	 */
-	public void nextPlayer() {
+	public void nextPlayer(Boolean... isInitialization) {
 		if (curPlayer == players.lastElement()) {
 			curPlayer = players.elementAt(0);
 			iter = 0;
 		} else
 			curPlayer = players.elementAt(++iter);
+
+		if (isInitialization != null && isInitialization.length == 0)
+			curPlayer.takeTurn(this);
 	}
 
 	/**
@@ -982,8 +1008,8 @@ public class RiskGameModel {
 		// RiskFortify(country);
 		// } // end forty
 
-		if (getState() == FORTIFY || getState() == FORTIFYING) {
-			return this.curPlayer.fortify(country,this);
+		if (getState() == FORTIFY || getState() == FORTIFYING || getState() == FORTIFY_PHASE) {
+			return this.curPlayer.fortify(country, this);
 		}
 
 		// if (getState() == ATTACK_PHASE) {
@@ -998,31 +1024,29 @@ public class RiskGameModel {
 		// Riskattack(country);
 		// } // end attack with
 
-		if (getState() == ATTACKING || getState() == ATTACK || getState() == ATTACK_PHASE) {
-			return this.curPlayer.attack(country,this);
+		if (getState() == ATTACKING || getState() == ATTACK || getState() == ATTACK_PHASE || getState() == CAPTURE) {
+			return this.curPlayer.attack(country, this);
 		}
 
-		
-//		if (getState() == TRADE_CARDS) {
-//			RiskTradeCards(country);
-//		}
+		// if (getState() == TRADE_CARDS) {
+		// RiskTradeCards(country);
+		// }
 
-		if(getState() == TRADE_CARDS)
-		{
+		if (getState() == TRADE_CARDS) {
 			this.curPlayer.tradeCard(this);
 		}
-		
-//		if (getState() == REINFORCE) {
-//			RiskReinforce(country);
-//		}
+
+		// if (getState() == REINFORCE) {
+		// RiskReinforce(country);
+		// }
 
 		if (getState() == REINFORCE) {
-			return this.curPlayer.reinforce(country,this);
+			return this.curPlayer.reinforce(country, this);
 		}
 
-//		if (getState() == START_TURN) {
-//			RiskStartTurn(false);
-//		}
+		// if (getState() == START_TURN) {
+		// RiskStartTurn(false);
+		// }
 
 		if (getState() == START_TURN) {
 			return this.curPlayer.startTurn(this);
@@ -1214,31 +1238,49 @@ public class RiskGameModel {
 
 		if (attackNum == 1) {
 			System.out.println(attackDieArray[0] + " vs " + defenceDieArray[0]);
-			if (attackDieArray[0] > defenceDieArray[0])
+			Utility.writeLog("Round 1 - Attacker - " + attackDieArray[0] + " Vs Defender " + defenceDieArray[0]);
+			if (attackDieArray[0] > defenceDieArray[0]) {
 				defenseTerritory.looseArmy();
-			else
+				Utility.writeLog(
+						"Defender lost round and one army. Current army count + " + defenseTerritory.getArmies());
+			} else {
 				aTerritory.looseArmy();
+				Utility.writeLog("Attacker lost round and one army. Current army count + " + aTerritory.getArmies());
+			}
 		}
 		if (attackNum > 1) { // attacking with more than 1
 			System.out.println(attackDieArray[0] + " vs " + defenceDieArray[0]);
-			if (attackDieArray[0] > defenceDieArray[0])
+			Utility.writeLog("Round 1 - Attacker - " + attackDieArray[0] + " Vs Defender " + defenceDieArray[0]);
+			if (attackDieArray[0] > defenceDieArray[0]) {
 				defenseTerritory.looseArmy();
-			else
+				Utility.writeLog(
+						"Defender lost round and one army. Current army count + " + defenseTerritory.getArmies());
+			} else {
 				aTerritory.looseArmy();
+				Utility.writeLog("Attacker lost round and one army. Current army count + " + aTerritory.getArmies());
+			}
+			Utility.writeLog("Round 2 - Attacker - " + attackDieArray[1] + " Vs Defender " + defenceDieArray[1]);
 			if (defenseNum == 2) {
 				System.out.print(attackDieArray[1] + " vs " + defenceDieArray[1]);
-				if (attackDieArray[1] > defenceDieArray[1])
+				if (attackDieArray[1] > defenceDieArray[1]) {
+					Utility.writeLog(
+							"Defender lost round and one army. Current army count + " + defenseTerritory.getArmies());
 					defenseTerritory.looseArmy();
-				else
+				} else {
+					Utility.writeLog(
+							"Attacker lost round and one army. Current army count + " + aTerritory.getArmies());
 					aTerritory.looseArmy();
+				}
 			} // if defending with two
 		}
 		notifyPhaseViewChange();
 		if (defenseTerritory.getArmies() == 0) {
+			Utility.writeLog("Defender Lost!!");
 			setState(CAPTURE);
 			defenseTerritory.setPlayer(curPlayer);
 		}
 		if (aTerritory.getArmies() == 0) {
+			Utility.writeLog("Attacker Lost!!");
 			setState(DEFEATED);
 			this.notifyPhaseViewChange(); // show defeat in phase view
 			// setState(ACTIVE_TURN);
@@ -1762,4 +1804,5 @@ public class RiskGameModel {
 	public void setIsGameMapValid(Boolean isGameMapValid) {
 		this.isGameMapValid = isGameMapValid;
 	}
+
 }

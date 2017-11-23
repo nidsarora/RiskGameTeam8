@@ -1,6 +1,7 @@
 package risk.model;
 
 import java.util.Vector;
+import risk.model.strategy.*;
 
 /**
  *This method initializes the first player as the initial player.
@@ -50,7 +51,7 @@ public class RiskTerritoryModel {
 		adjacents = new Vector<Integer>();
 		x_coordinate = xlocation;
 		y_coordinate = ylocation;
-		player = new RiskPlayerModel(null, -1);
+		player = new RiskPlayerModel(null, -1,new Human());
 	}
 
 	/**

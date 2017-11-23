@@ -118,7 +118,7 @@ public class RiskPlayerPanelViewController extends javax.swing.JPanel {
 
 			graphics.fillRect(position + (index * 75), 63, width, 20);
 			// Go to next player
-			risk.nextPlayer();
+			risk.nextPlayer(true);
 		}
 
 	}

@@ -15,6 +15,7 @@ import risk.controller.RiskStartGameController;
 import risk.helpers.Utility;
 import risk.controller.RiskStartGameController;
 import risk.model.*;
+import risk.model.strategy.Human;
 
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.GroupLayout;
@@ -26,10 +27,12 @@ import java.awt.Color;
 import javax.swing.JComboBox;
 
 import java.awt.event.ActionListener;
+import java.util.Random;
 import java.awt.event.ActionEvent;
 
 /**
  * This class is used to add RiskPlayers to the game.
+ * 
  * @author Team8
  */
 public class RiskAddPlayerController extends java.awt.Frame {
@@ -85,21 +88,21 @@ public class RiskAddPlayerController extends java.awt.Frame {
 
 		javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
 		jPanel1Layout
-		.setHorizontalGroup(
-				jPanel1Layout.createParallelGroup(Alignment.TRAILING)
-				.addGroup(jPanel1Layout.createSequentialGroup().addContainerGap(202, Short.MAX_VALUE)
-						.addComponent(lblEnterTheNumber, GroupLayout.PREFERRED_SIZE, 197,
-								GroupLayout.PREFERRED_SIZE)
-						.addGap(114))
-				.addGroup(jPanel1Layout.createSequentialGroup().addContainerGap(377, Short.MAX_VALUE)
-						.addComponent(jButton1, GroupLayout.PREFERRED_SIZE, 124,
-								GroupLayout.PREFERRED_SIZE)
-						.addGap(12))
-				.addGroup(
-						jPanel1Layout.createSequentialGroup().addGap(239)
-						.addComponent(comboBox, GroupLayout.PREFERRED_SIZE,
-								GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addContainerGap(243, Short.MAX_VALUE)));
+				.setHorizontalGroup(
+						jPanel1Layout.createParallelGroup(Alignment.TRAILING)
+								.addGroup(jPanel1Layout.createSequentialGroup().addContainerGap(202, Short.MAX_VALUE)
+										.addComponent(lblEnterTheNumber, GroupLayout.PREFERRED_SIZE, 197,
+												GroupLayout.PREFERRED_SIZE)
+										.addGap(114))
+								.addGroup(jPanel1Layout.createSequentialGroup().addContainerGap(377, Short.MAX_VALUE)
+										.addComponent(jButton1, GroupLayout.PREFERRED_SIZE, 124,
+												GroupLayout.PREFERRED_SIZE)
+										.addGap(12))
+								.addGroup(
+										jPanel1Layout.createSequentialGroup().addGap(239)
+												.addComponent(comboBox, GroupLayout.PREFERRED_SIZE,
+														GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+												.addContainerGap(243, Short.MAX_VALUE)));
 		jPanel1Layout.setVerticalGroup(jPanel1Layout.createParallelGroup(Alignment.TRAILING)
 				.addGroup(jPanel1Layout.createSequentialGroup().addContainerGap().addComponent(lblEnterTheNumber)
 						.addPreferredGap(ComponentPlacement.RELATED).addComponent(comboBox, GroupLayout.PREFERRED_SIZE,
@@ -122,11 +125,14 @@ public class RiskAddPlayerController extends java.awt.Frame {
 		if (RiskGameModel.removeAllPlayer())
 			System.out.println("all players removed");
 
-		for (int i = 1; i <= noOfPlayers; i++) {
-			RiskGameModel.addPlayer("Player_" + i);
-			added = true;
-		}
-
+		// for (int i = 1; i <= noOfPlayers; i++) {
+		// RiskGameModel.addPlayer("Player_" + i);
+		// added = true;
+		// }
+		RiskGameModel.addPlayer("Player_" + 1, new Human());
+		RiskGameModel.addPlayer("Player_" + 2, new risk.model.strategy.Random());
+		RiskGameModel.addPlayer("Player_" + 3, new risk.model.strategy.Random());
+		added = true;
 		if (added == true) {
 			System.out.println(" added.");
 			setVisible(false);
