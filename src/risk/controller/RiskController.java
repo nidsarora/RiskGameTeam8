@@ -270,9 +270,11 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	private void EndButtonMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_EndButtonMouseClicked
 		risk.nextPlayer();
 		risk.setState(RiskGameModel.START_TURN);
-		risk.gamePhaseActive(0, 0);
+		//risk.gamePhaseActive(0, 0);
+		risk.curPlayer.startTurn(risk);
 		risk.active = risk.curPlayer;
 		jPanel3.repaint();
+		jPanel1.repaint();
 		statusLabel.setText("Recieved a bonus of " + risk.curPlayer.getNumberOfArmies());
 		AttackButton.setVisible(false);
 		EndButton.setVisible(true);
@@ -446,21 +448,21 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 		if (risk.getState() == RiskGameModel.ATTACK_PHASE) {
 			int defenseArmies = risk.defenseTerritory.getArmies();
-			int attackArmies = risk.defenseTerritory.getArmies();
+			int attackArmies = risk.aTerritory.getArmies();
 
 			if (Integer.valueOf(risk.gamePhaseActive(x_coordinate, y_coordinate)) > 0) {
 				if (defenseArmies - risk.defenseTerritory.getArmies() == 1) {
 					statusLabel.setText(risk.curPlayer.getName() + " has destroyed an army");
-					Utility.writeLog(risk.curPlayer.getName() + " has destroyed an army");
+					//Utility.writeLog(risk.curPlayer.getName() + " has destroyed an army");
 				} else if (defenseArmies - risk.defenseTerritory.getArmies() == 2) {
 					statusLabel.setText(risk.curPlayer.getName() + " has destroyed two armies");
-					Utility.writeLog(risk.curPlayer.getName() + " has destroyed two armies");
+					//Utility.writeLog(risk.curPlayer.getName() + " has destroyed two armies");
 				} else if (attackArmies - risk.aTerritory.getArmies() == 1) {
 					statusLabel.setText(risk.curPlayer.getName() + " has lost an army");
-					Utility.writeLog(risk.curPlayer.getName() + " has lost an army");
+					//Utility.writeLog(risk.curPlayer.getName() + " has lost an army");
 				} else if (attackArmies - risk.aTerritory.getArmies() == 2) {
 					statusLabel.setText(risk.curPlayer.getName() + " has lost two armies");
-					Utility.writeLog(risk.curPlayer.getName() + " has lost two armies");
+					//Utility.writeLog(risk.curPlayer.getName() + " has lost two armies");
 				}
 
 				if (risk.aTerritory.getArmies() == 1) {

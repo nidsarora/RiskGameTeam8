@@ -450,16 +450,16 @@ public class RiskGameModel {
 			this.getRiskFortifyPhaseModelObservable().isChanged();
 			System.out.println("FORTIFY_PHASE");
 		}
-		try {
+//		try {
 			if (this.mainPanel != null && this.subPanel != null) {
 				this.mainPanel.repaint();
 				this.subPanel.repaint();
 			}
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//			Thread.sleep(0);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 	}
 
 	/**
@@ -1259,8 +1259,9 @@ public class RiskGameModel {
 				aTerritory.looseArmy();
 				Utility.writeLog("Attacker lost round and one army. Current army count + " + aTerritory.getArmies());
 			}
-			Utility.writeLog("Round 2 - Attacker - " + attackDieArray[1] + " Vs Defender " + defenceDieArray[1]);
+			
 			if (defenseNum == 2) {
+				Utility.writeLog("Round 2 - Attacker - " + attackDieArray[1] + " Vs Defender " + defenceDieArray[1]);
 				System.out.print(attackDieArray[1] + " vs " + defenceDieArray[1]);
 				if (attackDieArray[1] > defenceDieArray[1]) {
 					Utility.writeLog(
@@ -1277,6 +1278,7 @@ public class RiskGameModel {
 		if (defenseTerritory.getArmies() == 0) {
 			Utility.writeLog("Defender Lost!!");
 			setState(CAPTURE);
+			notifyPhaseViewChange();
 			defenseTerritory.setPlayer(curPlayer);
 		}
 		if (aTerritory.getArmies() == 0) {

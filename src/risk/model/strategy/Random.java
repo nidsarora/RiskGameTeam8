@@ -246,8 +246,8 @@ public class Random implements StrategyInterface {
 		}
 		Utility.writeLog("FORTIFY - Some Random dude called - " + riskGameModel.curPlayer.getName()
 				+ " is done fortifying/cannot fortify any more/ choose not to and end his turn");
-		riskGameModel.nextPlayer();
 		riskGameModel.setState(RiskGameModel.START_TURN);
+		riskGameModel.nextPlayer();
 		riskGameModel.notifyPhaseViewChange();
 		return "";
 	}

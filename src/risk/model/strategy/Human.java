@@ -53,6 +53,8 @@ public class Human implements StrategyInterface {
 			if (riskGameModel.getOwnership(territory[0]) == riskGameModel.curPlayer.getPlayerIndex()) // if owned
 			{
 				riskGameModel.occupyTerritory(RiskGameModel.territories.elementAt(territory[0])); // occupy
+				Utility.writeLog("INITIAL REINFORCE - Some Human called - " + riskGameModel.curPlayer.getName()
+				+ " placed one of his army on " + riskGameModel.getTerritoryAt(territory[0]).getName());
 				riskGameModel.notifyPhaseViewChange();
 				return "true";
 			}
@@ -187,10 +189,10 @@ public class Human implements StrategyInterface {
 					// AttackButton.setText("Attack");
 					// FortifyButton.setVisible(true);
 					// EndButton.setVisible(true);
-					risk.defenseNum = 0;
-					risk.attackNum = 0;
-					risk.defenseTerritory = null;
-					risk.aTerritory = null;
+//					risk.defenseNum = 0;
+//					risk.attackNum = 0;
+//					risk.defenseTerritory = null;
+//					risk.aTerritory = null;
 				}
 			}
 
