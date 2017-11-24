@@ -137,9 +137,12 @@ public final class Utility {
 				PrintWriter out = new PrintWriter(bw)) {
 			out.println(text);
 			out.println();
-
+			out.close();
+			bw.close();
+			fw.close();
 		} catch (IOException exception) {
 			exception.printStackTrace();
 		}
+		
 	}
 }

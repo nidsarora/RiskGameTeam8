@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 import risk.helpers.Utility;
+import risk.model.RiskCardModel;
 import risk.model.RiskGameModel;
 import risk.model.RiskPlayerModel;
 import risk.model.RiskTerritoryModel;
@@ -46,11 +47,11 @@ public class Random implements StrategyInterface {
 				startTurn(false, riskGameModel);
 			} else
 				riskGameModel.nextPlayer();
-		} else
-			{Utility.writeLog("armies less than 0");
+		} else {
+			Utility.writeLog("armies less than 0");
 			riskGameModel.nextPlayer();
-			
-			}
+
+		}
 		return "";
 	}
 
@@ -60,7 +61,7 @@ public class Random implements StrategyInterface {
 		/* Place all the armies randomly, and place the turn bonus too randomly */
 		Utility.writeLog("START TURN - Some Random dude called - " + riskGameModel.curPlayer.getName()
 				+ " has started his turn.");
-		if (riskGameModel.curPlayer.getCard().size() > 5) {
+		if (riskGameModel.curPlayer.getCard().size() >= 5) {
 			return tradeCards(riskGameModel);
 		} else {
 			return reinforce(false, riskGameModel);
@@ -69,18 +70,29 @@ public class Random implements StrategyInterface {
 	}
 
 	private String tradeCards(RiskGameModel riskGameModel) {
-		int count = 0;
+		int count = 0, cardCount = 0;
+		riskGameModel.lstTradedCards = new ArrayList<RiskCardModel>();
 		riskGameModel.setState(RiskGameModel.REINFORCE);
 		Utility.writeLog("TRADE CARD - Some Random dude called - " + riskGameModel.curPlayer.getName()
 				+ " decided to trade cards as he has 5 or more cards!");
-		while (riskGameModel.isTradedCardSetValid()) {
-			if (riskGameModel.doesCardMatchCurrentPlayerTerritory() > 0)
-				count = RiskGameModel.fetchTradedArmiesCount() + 2;
-			else
-				count = RiskGameModel.fetchTradedArmiesCount();
-			riskGameModel.curPlayer.setArmiesRecivedByTradingCards(count);
-			riskGameModel.curPlayer.addArmies(count);
-		}
+
+		do {
+			riskGameModel.curPlayer.setCards(riskGameModel.lstTradedCards);
+			riskGameModel.lstTradedCards = new ArrayList<RiskCardModel>();
+			while (cardCount < 3) {
+				riskGameModel.lstTradedCards.add(riskGameModel.curPlayer.getCard()
+						.remove(new java.util.Random().nextInt(riskGameModel.curPlayer.getCard().size())));
+				cardCount++;
+			}
+		} while (!riskGameModel.isTradedCardSetValid());
+
+		if (riskGameModel.doesCardMatchCurrentPlayerTerritory() > 0)
+			count = RiskGameModel.fetchTradedArmiesCount() + 2;
+		else
+			count = RiskGameModel.fetchTradedArmiesCount();
+		riskGameModel.curPlayer.setArmiesRecivedByTradingCards(count);
+		riskGameModel.curPlayer.addArmies(count);
+		riskGameModel.deck.addAll(riskGameModel.lstTradedCards);
 		riskGameModel.notifyPhaseViewChange();
 		return null;
 	}
@@ -179,8 +191,8 @@ public class Random implements StrategyInterface {
 						riskGameModel.defenseTerritory = null;
 						riskGameModel.aTerritory = null;
 					}
-					
-				}while (!(riskGameModel.getState() == RiskGameModel.CAPTURE
+
+				} while (!(riskGameModel.getState() == RiskGameModel.CAPTURE
 						|| riskGameModel.getState() == RiskGameModel.ACTIVE_TURN));
 				if (riskGameModel.getState() == RiskGameModel.CAPTURE)
 					if (capture(false, riskGameModel))
@@ -214,8 +226,11 @@ public class Random implements StrategyInterface {
 		riskGameModel.setAttackDieArray(new Integer[] { 0, 0, 0 });
 		riskGameModel.setDefenceDieArray(new Integer[] { 0, 0, 0 });
 		if (isEndOfGame = riskGameModel.capture()) {
-			Utility.writeLog(riskGameModel.getCurrentPlayer().getName() + " has won the game");
-			JOptionPane.showMessageDialog(null, riskGameModel.getCurrentPlayer().getName() + " has won the game",
+			Utility.writeLog(riskGameModel.getCurrentPlayer().getName() + " has won the game using "
+					+ riskGameModel.curPlayer.getStrategy().getClass().getName() + " strategy!");
+			JOptionPane.showMessageDialog(null,
+					riskGameModel.getCurrentPlayer().getName() + " has won the game with his "
+							+ riskGameModel.curPlayer.getStrategy().getClass().getName() + " strategy!",
 					"Alert", JOptionPane.INFORMATION_MESSAGE);
 		}
 		return isEndOfGame;

@@ -33,6 +33,7 @@ import risk.model.Observable.RiskReinforcementPhaseModel;
 import risk.model.Observable.RiskStartupEndPhaseModel;
 import risk.model.Observable.RiskStartupPhaseModel;
 import risk.model.interfaces.StrategyInterface;
+import risk.model.strategy.Cheater;
 import risk.view.RiskCardExchangeViewObserver;
 import risk.view.RiskPhaseViewObserver;
 import risk.view.RiskPlayerDominationViewObserver;
@@ -203,8 +204,8 @@ public class RiskGameModel {
 	public int xCoordinate;
 
 	public int yCoordinate;
-	
-	public List<RiskCardModel> lstTradedCards = new ArrayList<RiskCardModel>(); 
+
+	public List<RiskCardModel> lstTradedCards = new ArrayList<RiskCardModel>();
 
 	/**
 	 * Instantiates a new risk game model.
@@ -240,7 +241,6 @@ public class RiskGameModel {
 		return false;
 	}
 
-	
 	/**
 	 * This method checks if the TradeCardSet is valid or not i.e. if the number of
 	 * cards is 3, and then checks if all 3 are either the same or all three are of
@@ -290,7 +290,7 @@ public class RiskGameModel {
 		}
 		return false;
 	}
-	
+
 	/**
 	 * Does card match current player territory.
 	 */
@@ -720,12 +720,17 @@ public class RiskGameModel {
 	public void drawCard(RiskPlayerModel player) {
 		Random draw = new Random();
 		System.out.println(deck.size());
-		int card = draw.nextInt(deck.size());
+		if (deck.size() > 0) {
+			int card = draw.nextInt(deck.size());
+			RiskCardModel riskcardmodel = deck.elementAt(card);
+			deck.remove(deck.elementAt(card));
+			deck.trimToSize();
+			player.setCard(riskcardmodel);
+		}
+	}
 
-		RiskCardModel riskcardmodel = deck.elementAt(card);
-		deck.remove(deck.elementAt(card));
-		deck.trimToSize();
-		player.setCard(riskcardmodel);
+	public void looseCard(List<RiskCardModel> riskCards) {
+		deck.addAll(riskCards);
 	}
 
 	/**
@@ -1429,7 +1434,8 @@ public class RiskGameModel {
 		// Draw a card
 		if (drawn == false) {
 			drawCard(curPlayer);
-			//Utility.writeLog("RiskCardModel " + getCountryName(curPlayer.getCard().firstElement().territory));
+			// Utility.writeLog("RiskCardModel " +
+			// getCountryName(curPlayer.getCard().firstElement().territory));
 			drawn = true;
 		}
 

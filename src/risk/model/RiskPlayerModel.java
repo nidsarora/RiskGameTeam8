@@ -1,5 +1,6 @@
 package risk.model;
 
+import java.util.List;
 import java.util.Observable;
 import java.util.Vector;
 import risk.model.interfaces.StrategyInterface;
@@ -136,6 +137,14 @@ public class RiskPlayerModel extends Observable {
 		cards.add(riskcardmodel);
 		isChanged();
 	}
+	
+	public void setCards(List<RiskCardModel> riskcardmodel) {
+		cards.addAll(riskcardmodel);
+	}
+	
+	public void removeCard(List<RiskCardModel> riskcardmodel) {
+		cards.removeAll(riskcardmodel);
+	}
 
 	/**
 	 * Gets the card.
@@ -145,6 +154,7 @@ public class RiskPlayerModel extends Observable {
 	public Vector<RiskCardModel> getCard() {
 		return cards;
 	}
+
 
 	/**
 	 * Adds the armies.
