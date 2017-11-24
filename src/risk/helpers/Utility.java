@@ -132,7 +132,7 @@ public final class Utility {
 				BufferedWriter bw = new BufferedWriter(fw);
 				PrintWriter out = new PrintWriter(bw)) {
 			out.println(text);
-			out.println(new Date().toString() + ":" + text);
+			out.println();
 
 		} catch (IOException exception) {
 			exception.printStackTrace();

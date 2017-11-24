@@ -129,7 +129,7 @@ public class RiskAddPlayerController extends java.awt.Frame {
 		// RiskGameModel.addPlayer("Player_" + i);
 		// added = true;
 		// }
-		RiskGameModel.addPlayer("Player_" + 1, new Human());
+		RiskGameModel.addPlayer("Player_" + 1, new risk.model.strategy.Random());
 		RiskGameModel.addPlayer("Player_" + 2, new risk.model.strategy.Random());
 		RiskGameModel.addPlayer("Player_" + 3, new risk.model.strategy.Random());
 		added = true;

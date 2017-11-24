@@ -203,6 +203,8 @@ public class RiskGameModel {
 	public int xCoordinate;
 
 	public int yCoordinate;
+	
+	public List<RiskCardModel> lstTradedCards = new ArrayList<RiskCardModel>(); 
 
 	/**
 	 * Instantiates a new risk game model.
@@ -228,6 +230,96 @@ public class RiskGameModel {
 		distubuteArmies();
 		assignTerritories();// TODO - Auto distribution of armies - set the current player phase to
 							// reinforcement
+	}
+
+	public Boolean anyPlayerHasArmies() {
+		for (RiskPlayerModel player : this.players) {
+			if (player.getNumberOfArmies() > 0)
+				return true;
+		}
+		return false;
+	}
+
+	
+	/**
+	 * This method checks if the TradeCardSet is valid or not i.e. if the number of
+	 * cards is 3, and then checks if all 3 are either the same or all three are of
+	 * different types or one of the three is a wild card
+	 *
+	 * @return the boolean
+	 */
+	public Boolean isTradedCardSetValid() {
+
+		if (lstTradedCards.size() == 3) {
+
+			if (!isAWildCardSet()) {
+				// If all the cards are same
+				if (lstTradedCards.get(0).card_type.equals(lstTradedCards.get(1).card_type)
+						&& lstTradedCards.get(1).card_type.equals(lstTradedCards.get(2).card_type)) {
+					return true;
+				}
+
+				// all 3 are different
+				else if (!lstTradedCards.get(0).card_type.equals(lstTradedCards.get(1).card_type)
+						&& !lstTradedCards.get(1).card_type.equals(lstTradedCards.get(2).card_type)
+						&& !lstTradedCards.get(0).card_type.equals(lstTradedCards.get(2).card_type)) {
+					Utility.writeLog("card traded successfully");
+					return true;
+				}
+			} else {
+				if (isValidCountWildCard()) {
+					Utility.writeLog("card traded successfully");
+					return true;
+				} else {
+					return false;
+				}
+			}
+		}
+		return false;
+	}
+
+	/**
+	 * This method checks if the TradeCardSet is a WildCardSet or not.
+	 *
+	 * @return the boolean
+	 */
+	public Boolean isAWildCardSet() {
+		for (RiskCardModel card : lstTradedCards) {
+			if (card.card_type.equals("WILD"))
+				return true;
+		}
+		return false;
+	}
+	
+	/**
+	 * Does card match current player territory.
+	 */
+	public int doesCardMatchCurrentPlayerTerritory() {
+		int countMatchingCards = 0;
+
+		for (RiskCardModel card : this.curPlayer.getCard()) {
+			for (RiskTerritoryModel territory : this.curPlayer.getOccupiedTerritories()) {
+				if (territory.getId() == card.territory)
+					countMatchingCards++;
+			}
+		}
+
+		return countMatchingCards;
+	}
+
+	/**
+	 * Checks if is valid count wild card.
+	 *
+	 * @return the boolean
+	 */
+	public Boolean isValidCountWildCard() {
+		int count = 0;
+		for (RiskCardModel card : lstTradedCards) {
+			if (card.card_type.equals("WILD")) {
+				count++;
+			}
+		}
+		return (count > 1 ? false : true);
 	}
 
 	private void assignTerritories() {
@@ -450,16 +542,16 @@ public class RiskGameModel {
 			this.getRiskFortifyPhaseModelObservable().isChanged();
 			System.out.println("FORTIFY_PHASE");
 		}
-//		try {
-			if (this.mainPanel != null && this.subPanel != null) {
-				this.mainPanel.repaint();
-				this.subPanel.repaint();
-			}
-//			Thread.sleep(0);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+		// try {
+		if (this.mainPanel != null && this.subPanel != null) {
+			this.mainPanel.repaint();
+			this.subPanel.repaint();
+		}
+		// Thread.sleep(0);
+		// } catch (InterruptedException e) {
+		// // TODO Auto-generated catch block
+		// e.printStackTrace();
+		// }
 	}
 
 	/**
@@ -1259,7 +1351,7 @@ public class RiskGameModel {
 				aTerritory.looseArmy();
 				Utility.writeLog("Attacker lost round and one army. Current army count + " + aTerritory.getArmies());
 			}
-			
+
 			if (defenseNum == 2) {
 				Utility.writeLog("Round 2 - Attacker - " + attackDieArray[1] + " Vs Defender " + defenceDieArray[1]);
 				System.out.print(attackDieArray[1] + " vs " + defenceDieArray[1]);
