@@ -73,7 +73,6 @@ public class RiskCardExchangeViewObserver implements Observer {
 		cardExchangeViewPanel = new JPanel();
 		cardExchangeViewTextArea = new JTextArea("", 40, 40);
 		cardExchangeViewTextArea.setEditable(false);
-
 		scrollPane = new JScrollPane(cardExchangeViewTextArea);
 		scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 		cardExchangeViewPanel.add(scrollPane);
@@ -86,7 +85,9 @@ public class RiskCardExchangeViewObserver implements Observer {
 
 	@Override
 	public void update(Observable object, Object argument) {
-		cardExchangeViewTextArea.setText(((RiskPlayerModel)object).getCardExchangeViewContent());
+		cardExchangeViewTextAreaString.append(((RiskPlayerModel)object).getCardExchangeViewContent());
+		cardExchangeViewTextAreaString.append("*************************************************************");
+		cardExchangeViewTextArea.setText(cardExchangeViewTextAreaString.toString());
 		cardExchangeViewFrame.repaint();
 	}
 }

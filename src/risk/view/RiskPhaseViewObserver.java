@@ -62,7 +62,8 @@ public class RiskPhaseViewObserver implements Observer {
 
 	@Override
 	public void update(Observable object, Object argument) {
-		phaseViewTextArea.setText(((PhaseViewInterface)object).getContent());
+		phaseViewTextAreaString.append(((PhaseViewInterface)object).getContent());
+		phaseViewTextArea.setText(phaseViewTextAreaString.toString());
 		phaseViewFrame.repaint();
 	}
 

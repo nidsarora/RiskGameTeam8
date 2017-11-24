@@ -40,7 +40,7 @@ public class RiskPlayerDominationViewObserver implements Observer {
 		playerDominationViewFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		playerDominationViewFrame.setPreferredSize(new Dimension(width, height));
 		playerDominationViewPanel = new JPanel();
-		playerDominationViewTextArea = new JTextArea("", 25, 40);
+		playerDominationViewTextArea = new JTextArea("", 40, 60);
 		playerDominationViewTextArea.setEditable(false);
 
 		scrollPane = new JScrollPane(playerDominationViewTextArea);
@@ -55,7 +55,8 @@ public class RiskPlayerDominationViewObserver implements Observer {
 
 	@Override
 	public void update(Observable object, Object argument) {
-		playerDominationViewTextArea.setText(((RiskPlayerModel)object).getPlayerDominationViewContent());
+		playerDominationViewTextAreaString.append(((RiskPlayerModel)object).getPlayerDominationViewContent());
+		playerDominationViewTextArea.setText(playerDominationViewTextAreaString.toString());
 		playerDominationViewFrame.repaint();
 	}
 }

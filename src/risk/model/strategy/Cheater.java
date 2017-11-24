@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Vector;
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 import risk.helpers.Utility;
@@ -75,11 +76,11 @@ public class Cheater implements StrategyInterface {
 		riskGameModel.lstTradedCards = riskGameModel.curPlayer.getCard().subList(0,
 				new Random().nextInt(riskGameModel.curPlayer.getCard().size()));
 		riskGameModel.looseCard(riskGameModel.lstTradedCards);
-	//	riskGameModel.curPlayer.removeCard(riskGameModel.lstTradedCards);
+		// riskGameModel.curPlayer.removeCard(riskGameModel.lstTradedCards);
 		riskGameModel.curPlayer.setArmiesRecivedByTradingCards(count);
 		riskGameModel.curPlayer.addArmies(count);
 		riskGameModel.notifyPhaseViewChange();
-		return reinforce(false,riskGameModel);
+		return reinforce(false, riskGameModel);
 	}
 
 	@Override
@@ -123,23 +124,30 @@ public class Cheater implements StrategyInterface {
 		 * He will keep on attacking untill he has teeritories which armies > 1 and of
 		 * which have others territories adjacent to him
 		 */
-		Vector<RiskTerritoryModel> cheaterOccupiedTerritories = new Vector<RiskTerritoryModel>(); 
+		Boolean endGame = false;
+		Vector<RiskTerritoryModel> cheaterOccupiedTerritories = new Vector<RiskTerritoryModel>();
 		cheaterOccupiedTerritories.addAll(riskGameModel.curPlayer.getOccupiedTerritories());
 		Utility.writeLog(
 				"ATTACK - Some Cheater called - " + riskGameModel.curPlayer.getName() + " has option to attack.");
 		riskGameModel.setState(RiskGameModel.ATTACK);
 
 		for (RiskTerritoryModel cheaterTerritory : cheaterOccupiedTerritories) {
-			cheaterCaptureAdjacent(cheaterTerritory);
-			riskGameModel.notifyPhaseViewChange();
+			if (endGame = cheaterCaptureAdjacent(cheaterTerritory))
+				break;
 		}
-		Utility.writeLog(
-				"ATTACK - Some Cheater dude called - " + riskGameModel.curPlayer.getName() + " is done with attack.");
-		riskGameModel.notifyPhaseViewChange();
-		return fortify(false, currentRiskModel);
+
+		if (!endGame) {
+			Utility.writeLog("ATTACK - Some Cheater dude called - " + riskGameModel.curPlayer.getName()
+					+ " is done with attack.");
+			riskGameModel.notifyPhaseViewChange();
+			return fortify(false, currentRiskModel);
+		} else {
+			endGame(riskGameModel);
+			return "";
+		}
 	}
 
-	private void cheaterCaptureAdjacent(RiskTerritoryModel cheaterTerritory) {
+	private Boolean cheaterCaptureAdjacent(RiskTerritoryModel cheaterTerritory) {
 
 		for (int adjacentTerritoryId : cheaterTerritory.getAdjacents()) {
 			if (!currentRiskModel.getTerritoryAt(adjacentTerritoryId).getPlayer().equals(currentRiskModel.curPlayer)) {
@@ -157,22 +165,24 @@ public class Cheater implements StrategyInterface {
 					currentRiskModel.removePlayer(currentRiskModel.defender);
 					if (RiskGameModel.players.size() == 1) {
 						Utility.writeLog(currentRiskModel.active.getName() + " has won the game");
-						endGame(currentRiskModel);
+						currentRiskModel.notifyPhaseViewChange();
+						return true;
 					}
 				}
 				currentRiskModel.drawCard(currentRiskModel.curPlayer);
 			}
 		}
+		currentRiskModel.notifyPhaseViewChange();
+		return false;
 	}
 
 	public void endGame(RiskGameModel riskGameModel) {
 		Utility.writeLog("Thats all ya, " + riskGameModel.curPlayer.getName() + " won the game with his "
 				+ riskGameModel.curPlayer.getStrategy().getClass().getName() + " strategy!!!!");
-		JOptionPane.showMessageDialog(null,
+		JOptionPane.showMessageDialog(new JFrame("The End"),
 				riskGameModel.getCurrentPlayer().getName() + " has won the game with his "
 						+ riskGameModel.curPlayer.getStrategy().getClass().getName() + " strategy!",
 				"Alert", JOptionPane.INFORMATION_MESSAGE);
-		System.exit(0);
 	}
 
 	private int getRandomOccupiedTerritoryByPlayer(RiskPlayerModel riskPlayer) {

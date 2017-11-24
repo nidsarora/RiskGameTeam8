@@ -231,7 +231,7 @@ public class RiskPlayerModel extends Observable {
 	 */
 	public String getPlayerDominationViewContent() {
 		StringBuilder sbPlayerDominationViewContent = new StringBuilder();
-		sbPlayerDominationViewContent.append("**********Player Domination View**********\n");
+		sbPlayerDominationViewContent.append("\n\n**********Player Domination View**********\n");
 		sbPlayerDominationViewContent.append("Statistics\n\n");
 		sbPlayerDominationViewContent
 				.append("Current Player: " + this.getName() + ":" + this.numOfTerritories() + " territories: ");
