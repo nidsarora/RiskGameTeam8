@@ -47,7 +47,10 @@ public class Random implements StrategyInterface {
 			} else
 				riskGameModel.nextPlayer();
 		} else
+			{Utility.writeLog("armies less than 0");
 			riskGameModel.nextPlayer();
+			
+			}
 		return "";
 	}
 
@@ -128,53 +131,57 @@ public class Random implements StrategyInterface {
 			if ((fighterTerritories = getValidRandomAttackDefendTerritory(riskGameModel)) != null
 					&& fighterTerritories.length > 0) {
 
-				int attackArmies = (riskGameModel.aTerritory = fighterTerritories[0]).getArmies();
-				int defenseArmies = (riskGameModel.defenseTerritory = fighterTerritories[1]).getArmies();
+				do {
+					int attackArmies = (riskGameModel.aTerritory = fighterTerritories[0]).getArmies();
+					int defenseArmies = (riskGameModel.defenseTerritory = fighterTerritories[1]).getArmies();
 
-				Utility.writeLog("ATTACK - Some Random dude called - " + riskGameModel.curPlayer.getName()
-						+ " has warred against " + riskGameModel.defenseTerritory.getName() + " using his territory - "
-						+ riskGameModel.aTerritory.getName());
+					Utility.writeLog("ATTACK - Some Random dude called - " + riskGameModel.curPlayer.getName()
+							+ " has warred against " + riskGameModel.defenseTerritory.getName()
+							+ " using his territory - " + riskGameModel.aTerritory.getName());
 
-				// Set the attack number of die
-				if (riskGameModel.aTerritory.getArmies() > 3)
-					riskGameModel.setAttack(new java.util.Random().nextInt(3) + 1);
-				if (riskGameModel.aTerritory.getArmies() == 3)
-					riskGameModel.setAttack(new java.util.Random().nextInt(2) + 1);
-				if (riskGameModel.aTerritory.getArmies() == 2)
-					riskGameModel.setAttack(1);
+					// Set the attack number of die
+					if (riskGameModel.aTerritory.getArmies() > 3)
+						riskGameModel.setAttack(new java.util.Random().nextInt(3) + 1);
+					if (riskGameModel.aTerritory.getArmies() == 3)
+						riskGameModel.setAttack(new java.util.Random().nextInt(2) + 1);
+					if (riskGameModel.aTerritory.getArmies() == 2)
+						riskGameModel.setAttack(1);
 
-				// Set the defence number of die
-				if (riskGameModel.defenseTerritory.getArmies() > 1 && riskGameModel.attackNum > 1)
-					riskGameModel.setDefend(new java.util.Random().nextInt(2) + 1);
-				else
-					riskGameModel.setDefend(1);
+					// Set the defence number of die
+					if (riskGameModel.defenseTerritory.getArmies() > 1 && riskGameModel.attackNum > 1)
+						riskGameModel.setDefend(new java.util.Random().nextInt(2) + 1);
+					else
+						riskGameModel.setDefend(1);
 
-				Utility.writeLog("ATTACK - Some Random dude " + riskGameModel.curPlayer.getName()
-						+ " attack results as follows!!");
-				Utility.writeLog("ATTACK is with " + riskGameModel.attackNum + " defence is with "
-						+ riskGameModel.defenseNum + "dies.");
+					Utility.writeLog("ATTACK - Some Random dude " + riskGameModel.curPlayer.getName()
+							+ " attack results as follows!!");
+					Utility.writeLog("ATTACK is with " + riskGameModel.attackNum + " defence is with "
+							+ riskGameModel.defenseNum + "dies.");
 
-				riskGameModel.engageBattle();
+					riskGameModel.engageBattle();
 
-				if (defenseArmies - riskGameModel.defenseTerritory.getArmies() == 1) {
-					Utility.writeLog(riskGameModel.curPlayer.getName() + " has destroyed an army");
-				} else if (defenseArmies - riskGameModel.defenseTerritory.getArmies() == 2) {
-					Utility.writeLog(riskGameModel.curPlayer.getName() + " has destroyed two armies");
-				} else if (attackArmies - riskGameModel.aTerritory.getArmies() == 1) {
-					;
-					Utility.writeLog(riskGameModel.curPlayer.getName() + " has lost an army");
-				} else if (attackArmies - riskGameModel.aTerritory.getArmies() == 2) {
-					Utility.writeLog(riskGameModel.curPlayer.getName() + " has lost two armies");
-				}
+					if (defenseArmies - riskGameModel.defenseTerritory.getArmies() == 1) {
+						Utility.writeLog(riskGameModel.curPlayer.getName() + " has destroyed an army");
+					} else if (defenseArmies - riskGameModel.defenseTerritory.getArmies() == 2) {
+						Utility.writeLog(riskGameModel.curPlayer.getName() + " has destroyed two armies");
+					} else if (attackArmies - riskGameModel.aTerritory.getArmies() == 1) {
+						;
+						Utility.writeLog(riskGameModel.curPlayer.getName() + " has lost an army");
+					} else if (attackArmies - riskGameModel.aTerritory.getArmies() == 2) {
+						Utility.writeLog(riskGameModel.curPlayer.getName() + " has lost two armies");
+					}
 
-				if (riskGameModel.aTerritory.getArmies() == 1) {
-					riskGameModel.setState(RiskGameModel.ACTIVE_TURN);
-					Utility.writeLog(riskGameModel.curPlayer.getName() + " has lost the battle");
-					riskGameModel.defenseNum = 0;
-					riskGameModel.attackNum = 0;
-					riskGameModel.defenseTerritory = null;
-					riskGameModel.aTerritory = null;
-				}
+					if (riskGameModel.aTerritory.getArmies() == 1) {
+						riskGameModel.setState(RiskGameModel.ACTIVE_TURN);
+						Utility.writeLog(riskGameModel.curPlayer.getName() + " has lost the battle");
+						riskGameModel.defenseNum = 0;
+						riskGameModel.attackNum = 0;
+						riskGameModel.defenseTerritory = null;
+						riskGameModel.aTerritory = null;
+					}
+					
+				}while (!(riskGameModel.getState() == RiskGameModel.CAPTURE
+						|| riskGameModel.getState() == RiskGameModel.ACTIVE_TURN));
 				if (riskGameModel.getState() == RiskGameModel.CAPTURE)
 					if (capture(false, riskGameModel))
 						endGame(riskGameModel);

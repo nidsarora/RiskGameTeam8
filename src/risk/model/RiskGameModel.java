@@ -1415,10 +1415,10 @@ public class RiskGameModel {
 		boolean flag = false;
 
 		if (defender.getOccupiedTerritories().size() == 0) {
-			System.out.println(defender.getName() + " lost the game.");
+			Utility.writeLog(defender.getName() + " lost the game.");
 			removePlayer(defender);
 			if (players.size() == 1) {
-				System.out.print(active.getName() + " has won the game");
+				Utility.writeLog(active.getName() + " has won the game");
 				flag = true;
 			}
 		}
@@ -1429,7 +1429,7 @@ public class RiskGameModel {
 		// Draw a card
 		if (drawn == false) {
 			drawCard(curPlayer);
-			System.out.println("RiskCardModel " + getCountryName(curPlayer.getCard().firstElement().territory));
+			//Utility.writeLog("RiskCardModel " + getCountryName(curPlayer.getCard().firstElement().territory));
 			drawn = true;
 		}
 
