@@ -71,10 +71,10 @@ public class Random implements StrategyInterface {
 		Utility.writeLog("TRADE CARD - Some Random dude called - " + riskGameModel.curPlayer.getName()
 				+ " decided to trade cards as he has 5 or more cards!");
 		while (riskGameModel.isTradedCardSetValid()) {
-			if (riskGameModel.doesCardMatchCurrentPlayerTerritory() > 0) 
+			if (riskGameModel.doesCardMatchCurrentPlayerTerritory() > 0)
 				count = RiskGameModel.fetchTradedArmiesCount() + 2;
-			 else 
-				count = RiskGameModel.fetchTradedArmiesCount();			
+			else
+				count = RiskGameModel.fetchTradedArmiesCount();
 			riskGameModel.curPlayer.setArmiesRecivedByTradingCards(count);
 			riskGameModel.curPlayer.addArmies(count);
 		}
@@ -175,10 +175,11 @@ public class Random implements StrategyInterface {
 					riskGameModel.defenseTerritory = null;
 					riskGameModel.aTerritory = null;
 				}
+				if (riskGameModel.getState() == RiskGameModel.CAPTURE)
+					if (capture(false, riskGameModel))
+						endGame(riskGameModel);
 			}
-			if (riskGameModel.getState() == RiskGameModel.CAPTURE)
-				if (capture(false, riskGameModel))
-					endGame(riskGameModel);
+
 		}
 		Utility.writeLog("ATTACK - Some Random dude called - " + riskGameModel.curPlayer.getName()
 				+ " could not attack/is done with attack/decided not to attack.");
@@ -235,6 +236,8 @@ public class Random implements StrategyInterface {
 		for (RiskTerritoryModel validAttackerTerritory : riskGameModel.curPlayer.getOccupiedTerritories()) {
 			if (validAttackerTerritory.getArmies() > 1) {
 				if ((validDefenderTerritory = getValidRandomDefender(validAttackerTerritory, riskGameModel)) != null) {
+					riskGameModel.active = riskGameModel.curPlayer;
+					riskGameModel.defender = validDefenderTerritory.getPlayer();
 					return new RiskTerritoryModel[] { validAttackerTerritory, validDefenderTerritory };
 				}
 			}
@@ -263,6 +266,7 @@ public class Random implements StrategyInterface {
 		RiskTerritoryModel fortifierTerritory, fortifiedTerritory;
 		int fortifiedArmyCount;
 		while (shouldFireInTheHole()) {
+			fortifiableTerritories = new ArrayList<RiskTerritoryModel>();
 			Utility.writeLog("FORTIFY - Some Random dude called - " + riskGameModel.curPlayer.getName()
 					+ " has decided to Fortify.");
 			for (RiskTerritoryModel viableTerritory : riskGameModel.curPlayer.getOccupiedTerritories()) {

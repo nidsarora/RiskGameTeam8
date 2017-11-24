@@ -1,6 +1,5 @@
 package risk.helpers;
 
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -17,7 +16,8 @@ public final class Utility {
 	/**
 	 * Gets the image path.
 	 *
-	 * @param imageNameWithExtention the image name with extention
+	 * @param imageNameWithExtention
+	 *            the image name with extention
 	 * @return the image path
 	 */
 	public static String getImagePath(String imageNameWithExtention) {
@@ -27,7 +27,8 @@ public final class Utility {
 	/**
 	 * Gets the map path.
 	 *
-	 * @param mapNameWithExtension the map name with extension
+	 * @param mapNameWithExtension
+	 *            the map name with extension
 	 * @return the map path
 	 */
 	public static String getMapPath(String mapNameWithExtension) {
@@ -37,7 +38,8 @@ public final class Utility {
 	/**
 	 * Gets the map pathfor file.
 	 *
-	 * @param mapNameWithExtension the map name with extension
+	 * @param mapNameWithExtension
+	 *            the map name with extension
 	 * @return the map pathfor file
 	 */
 	public static String getMapPathforFile(String mapNameWithExtension) {
@@ -47,7 +49,8 @@ public final class Utility {
 	/**
 	 * Gets the pathfor file.
 	 *
-	 * @param fileNameWithExtension the file name with extension
+	 * @param fileNameWithExtension
+	 *            the file name with extension
 	 * @return the pathfor file
 	 */
 	public static String getPathforFile(String fileNameWithExtension) {
@@ -57,7 +60,8 @@ public final class Utility {
 	/**
 	 * Gets the phase informtion.
 	 *
-	 * @param IPhaseViewInterface the i phase view interface
+	 * @param IPhaseViewInterface
+	 *            the i phase view interface
 	 * @return the phase informtion
 	 */
 	public static String getPhaseInformtion(PhaseViewInterface IPhaseViewInterface) {
@@ -68,11 +72,10 @@ public final class Utility {
 			phaseInformation = "This is the Start up phase. Start the game by choosing the map,number of players and distribution of armies depending upon the number of players accordingly..";
 			break;
 		case "RiskReinforcementPhaseModel":
-			phaseInformation = "Getting additional armies, that you may allocate among your territories.\r\n" + 
-					"No. of armies you get :\r\n" + 
-					"       -1 army per 3 territories, rounded down, minimum of 3.\r\n" + 
-					"       -For complete continent\r\n" + 
-					"       -set of Risk Cards cashed in.";
+			phaseInformation = "Getting additional armies, that you may allocate among your territories.\r\n"
+					+ "No. of armies you get :\r\n"
+					+ "       -1 army per 3 territories, rounded down, minimum of 3.\r\n"
+					+ "       -For complete continent\r\n" + "       -set of Risk Cards cashed in.";
 			break;
 		case "RiskAttackPhaseModel":
 			phaseInformation = "An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.";
@@ -84,18 +87,18 @@ public final class Utility {
 			phaseInformation = "Who am I?";
 			break;
 		}
-		
+
 		return phaseInformation;
 	}
-	
+
 	/**
 	 * Gets the phase title.
 	 *
-	 * @param IPhaseViewInterface the i phase view interface
+	 * @param IPhaseViewInterface
+	 *            the i phase view interface
 	 * @return the phase title
 	 */
-	public static String getPhaseTitle(PhaseViewInterface IPhaseViewInterface)
-	{
+	public static String getPhaseTitle(PhaseViewInterface IPhaseViewInterface) {
 		String objectType = (IPhaseViewInterface).getObjectType();
 		String phaseTitle;
 		switch (objectType) {
@@ -118,17 +121,18 @@ public final class Utility {
 			phaseTitle = "I am no one";
 			break;
 		}
-		
+
 		return phaseTitle;
 	}
 
 	/**
 	 * Write log.
 	 *
-	 * @param text the text
+	 * @param text
+	 *            the text
 	 */
-	public static void writeLog(String text) {
-		try (FileWriter fw = new FileWriter("log\\log.txt", true);
+	public static void writeLog(String text, Boolean... isApplicationStart) {
+		try (FileWriter fw = new FileWriter("log\\log.txt", isApplicationStart.length == 0); // Overwrite
 				BufferedWriter bw = new BufferedWriter(fw);
 				PrintWriter out = new PrintWriter(bw)) {
 			out.println(text);

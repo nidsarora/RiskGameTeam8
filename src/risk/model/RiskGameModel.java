@@ -1373,7 +1373,7 @@ public class RiskGameModel {
 			notifyPhaseViewChange();
 			defenseTerritory.setPlayer(curPlayer);
 		}
-		if (aTerritory.getArmies() == 0) {
+		if (aTerritory.getArmies() == 1) {
 			Utility.writeLog("Attacker Lost!!");
 			setState(DEFEATED);
 			this.notifyPhaseViewChange(); // show defeat in phase view
