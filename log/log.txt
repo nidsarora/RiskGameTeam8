@@ -1279,3 +1279,2119 @@ Thu Nov 09 11:54:06 EST 2017:Player_1 has 2 armies moved to Brazil
 Current player turn ends
 Thu Nov 09 11:54:12 EST 2017:Current player turn ends
 >>>>>>> Stashed changes
+-------------------------------------------------------
+Mon Nov 20 13:44:18 EST 2017:-------------------------------------------------------
+application start
+Mon Nov 20 13:44:18 EST 2017:application start
+All players Added
+Mon Nov 20 13:45:53 EST 2017:All players Added
+35 armies added to each player
+Mon Nov 20 13:45:54 EST 2017:35 armies added to each player
+Build the Game Panel
+Mon Nov 20 13:45:55 EST 2017:Build the Game Panel
+initial reinforcement stage
+Mon Nov 20 13:46:11 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:46:35 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:46:36 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:46:41 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:46:43 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:46:44 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:46:46 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:46:46 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:47:21 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:47:22 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:47:23 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:47:26 EST 2017:initial reinforcement stage
+-------------------------------------------------------
+Mon Nov 20 13:47:43 EST 2017:-------------------------------------------------------
+application start
+Mon Nov 20 13:47:43 EST 2017:application start
+All players Added
+Mon Nov 20 13:47:45 EST 2017:All players Added
+-------------------------------------------------------
+Mon Nov 20 13:50:13 EST 2017:-------------------------------------------------------
+application start
+Mon Nov 20 13:50:13 EST 2017:application start
+All players Added
+Mon Nov 20 13:50:23 EST 2017:All players Added
+15 armies added to each player
+Mon Nov 20 13:50:23 EST 2017:15 armies added to each player
+Build the Game Panel
+Mon Nov 20 13:50:23 EST 2017:Build the Game Panel
+initial reinforcement stage
+Mon Nov 20 13:50:41 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:42 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:43 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:44 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:45 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:45 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:48 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:49 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:50 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:50 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:51 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:51 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:52 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:53 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:53 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:54 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:54 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:55 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:55 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:56 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:57 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:57 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:50:59 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:00 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:00 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:00 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:01 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:01 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:01 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:01 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:02 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:02 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:03 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:03 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:04 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:04 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:05 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:05 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:05 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:06 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:06 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:07 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:07 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:07 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:07 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:08 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:08 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:08 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:08 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:09 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:09 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:09 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:09 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:10 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:10 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:11 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:11 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:12 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:14 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Mon Nov 20 13:51:15 EST 2017:initial reinforcement stage
+Player_1 got bonus armies
+Mon Nov 20 13:51:15 EST 2017:Player_1 got bonus armies
+Player_1 got3 left to place
+Mon Nov 20 13:51:15 EST 2017:Player_1 got3 left to place
+Player_1 got2 left to place
+Mon Nov 20 13:54:04 EST 2017:Player_1 got2 left to place
+Player_1 got1 left to place
+Mon Nov 20 13:54:04 EST 2017:Player_1 got1 left to place
+Player_1 got0 left to place
+Mon Nov 20 13:54:05 EST 2017:Player_1 got0 left to place
+Player_1 entered active turn
+Mon Nov 20 13:54:05 EST 2017:Player_1 entered active turn
+Attack Phase entered
+Mon Nov 20 13:54:08 EST 2017:Attack Phase entered
+Player_1 entered attacking phase.
+Mon Nov 20 13:54:13 EST 2017:Player_1 entered attacking phase.
+Player_1 entered attacking phase.
+Mon Nov 20 13:54:14 EST 2017:Player_1 entered attacking phase.
+Player_1 has 5 armies
+Mon Nov 20 13:54:15 EST 2017:Player_1 has 5 armies
+Player_1 attacking with 3 armies
+Mon Nov 20 13:54:15 EST 2017:Player_1 attacking with 3 armies
+Player_1 has destroyed an army
+Mon Nov 20 13:54:16 EST 2017:Player_1 has destroyed an army
+Player_1 has 3 armies moved to cc
+Mon Nov 20 13:54:18 EST 2017:Player_1 has 3 armies moved to cc
+Current player turn ends
+Mon Nov 20 13:54:25 EST 2017:Current player turn ends
+Current player turn ends
+Mon Nov 20 13:54:37 EST 2017:Current player turn ends
+Current player turn ends
+Mon Nov 20 13:54:38 EST 2017:Current player turn ends
+Player_1 got2 left to place
+Mon Nov 20 14:30:43 EST 2017:Player_1 got2 left to place
+Player_1 got1 left to place
+Mon Nov 20 14:30:43 EST 2017:Player_1 got1 left to place
+Player_1 got0 left to place
+Mon Nov 20 14:30:47 EST 2017:Player_1 got0 left to place
+Player_1 entered active turn
+Mon Nov 20 14:30:47 EST 2017:Player_1 entered active turn
+Fortify Phase entered
+Mon Nov 20 14:30:52 EST 2017:Fortify Phase entered
+Player_1 has 1 armies moved to cc
+Mon Nov 20 14:31:03 EST 2017:Player_1 has 1 armies moved to cc
+Current player turn ends
+Mon Nov 20 14:31:13 EST 2017:Current player turn ends
+Player_2 got5 left to place
+Mon Nov 20 14:31:17 EST 2017:Player_2 got5 left to place
+Player_2 got4 left to place
+Mon Nov 20 14:31:17 EST 2017:Player_2 got4 left to place
+Player_2 got3 left to place
+Mon Nov 20 14:31:17 EST 2017:Player_2 got3 left to place
+Player_2 got2 left to place
+Mon Nov 20 14:31:17 EST 2017:Player_2 got2 left to place
+Player_2 got1 left to place
+Mon Nov 20 14:31:17 EST 2017:Player_2 got1 left to place
+Player_2 got0 left to place
+Mon Nov 20 14:31:17 EST 2017:Player_2 got0 left to place
+Player_2 entered active turn
+Mon Nov 20 14:31:17 EST 2017:Player_2 entered active turn
+Attack Phase entered
+Mon Nov 20 14:31:19 EST 2017:Attack Phase entered
+Player_2 entered attacking phase.
+Mon Nov 20 14:31:21 EST 2017:Player_2 entered attacking phase.
+Player_2 entered attacking phase.
+Mon Nov 20 14:31:22 EST 2017:Player_2 entered attacking phase.
+Player_2 has 20 armies
+Mon Nov 20 14:31:23 EST 2017:Player_2 has 20 armies
+Player_2 attacking with 3 armies
+Mon Nov 20 14:31:23 EST 2017:Player_2 attacking with 3 armies
+Player_2 has lost an army
+Mon Nov 20 14:31:24 EST 2017:Player_2 has lost an army
+Player_2 has 19 armies
+Mon Nov 20 14:31:25 EST 2017:Player_2 has 19 armies
+Player_2 attacking with 3 armies
+Mon Nov 20 14:31:25 EST 2017:Player_2 attacking with 3 armies
+Player_2 has destroyed an army
+Mon Nov 20 14:31:26 EST 2017:Player_2 has destroyed an army
+Player_2 has 3 armies moved to aa
+Mon Nov 20 14:31:27 EST 2017:Player_2 has 3 armies moved to aa
+-------------------------------------------------------
+Mon Nov 20 15:11:45 EST 2017:-------------------------------------------------------
+application start
+Mon Nov 20 15:11:45 EST 2017:application start
+All players Added
+Mon Nov 20 15:11:53 EST 2017:All players Added
+15 armies added to each player
+Mon Nov 20 15:11:56 EST 2017:15 armies added to each player
+Build the Game Panel
+Mon Nov 20 15:11:56 EST 2017:Build the Game Panel
+initial reinforcement stage
+Mon Nov 20 15:12:11 EST 2017:initial reinforcement stage
+Player_2 got bonus armies
+Mon Nov 20 15:12:11 EST 2017:Player_2 got bonus armies
+Player_2 got3 left to place
+Mon Nov 20 15:12:11 EST 2017:Player_2 got3 left to place
+Player_2 got2 left to place
+Mon Nov 20 15:12:20 EST 2017:Player_2 got2 left to place
+Player_2 got1 left to place
+Mon Nov 20 15:12:20 EST 2017:Player_2 got1 left to place
+Player_2 got0 left to place
+Mon Nov 20 15:12:20 EST 2017:Player_2 got0 left to place
+Player_2 entered active turn
+Mon Nov 20 15:12:20 EST 2017:Player_2 entered active turn
+-------------------------------------------------------
+Mon Nov 20 16:31:55 EST 2017:-------------------------------------------------------
+application start
+Mon Nov 20 16:31:55 EST 2017:application start
+All players Added
+Mon Nov 20 16:31:57 EST 2017:All players Added
+15 armies added to each player
+Mon Nov 20 16:32:02 EST 2017:15 armies added to each player
+Build the Game Panel
+Mon Nov 20 16:32:02 EST 2017:Build the Game Panel
+initial reinforcement stage
+Mon Nov 20 16:32:21 EST 2017:initial reinforcement stage
+Player_2 got bonus armies
+Mon Nov 20 16:32:21 EST 2017:Player_2 got bonus armies
+Player_2 got3 left to place
+Mon Nov 20 16:32:21 EST 2017:Player_2 got3 left to place
+-------------------------------------------------------
+Tue Nov 21 11:09:42 EST 2017:-------------------------------------------------------
+application start
+Tue Nov 21 11:09:42 EST 2017:application start
+-------------------------------------------------------
+Tue Nov 21 11:25:28 EST 2017:-------------------------------------------------------
+application start
+Tue Nov 21 11:25:28 EST 2017:application start
+All players Added
+Tue Nov 21 11:26:18 EST 2017:All players Added
+15 armies added to each player
+Tue Nov 21 11:26:27 EST 2017:15 armies added to each player
+Build the Game Panel
+Tue Nov 21 11:26:27 EST 2017:Build the Game Panel
+-------------------------------------------------------
+Tue Nov 21 11:42:40 EST 2017:-------------------------------------------------------
+application start
+Tue Nov 21 11:42:40 EST 2017:application start
+All players Added
+Tue Nov 21 11:42:47 EST 2017:All players Added
+15 armies added to each player
+Tue Nov 21 11:42:48 EST 2017:15 armies added to each player
+Build the Game Panel
+Tue Nov 21 11:42:48 EST 2017:Build the Game Panel
+Player_1 got bonus armies
+Tue Nov 21 11:43:03 EST 2017:Player_1 got bonus armies
+-------------------------------------------------------
+Tue Nov 21 11:44:06 EST 2017:-------------------------------------------------------
+application start
+Tue Nov 21 11:44:06 EST 2017:application start
+-------------------------------------------------------
+Tue Nov 21 11:44:07 EST 2017:-------------------------------------------------------
+application start
+Tue Nov 21 11:44:07 EST 2017:application start
+All players Added
+Tue Nov 21 11:44:11 EST 2017:All players Added
+15 armies added to each player
+Tue Nov 21 11:44:11 EST 2017:15 armies added to each player
+Build the Game Panel
+Tue Nov 21 11:44:11 EST 2017:Build the Game Panel
+-------------------------------------------------------
+Tue Nov 21 11:46:11 EST 2017:-------------------------------------------------------
+application start
+Tue Nov 21 11:46:11 EST 2017:application start
+All players Added
+Tue Nov 21 11:46:15 EST 2017:All players Added
+15 armies added to each player
+Tue Nov 21 11:46:16 EST 2017:15 armies added to each player
+Build the Game Panel
+Tue Nov 21 11:46:16 EST 2017:Build the Game Panel
+-------------------------------------------------------
+Tue Nov 21 11:47:48 EST 2017:-------------------------------------------------------
+application start
+Tue Nov 21 11:47:48 EST 2017:application start
+All players Added
+Tue Nov 21 11:47:52 EST 2017:All players Added
+15 armies added to each player
+Tue Nov 21 11:47:53 EST 2017:15 armies added to each player
+Build the Game Panel
+Tue Nov 21 11:47:53 EST 2017:Build the Game Panel
+-------------------------------------------------------
+Tue Nov 21 11:50:57 EST 2017:-------------------------------------------------------
+application start
+Tue Nov 21 11:50:57 EST 2017:application start
+All players Added
+Tue Nov 21 11:51:00 EST 2017:All players Added
+15 armies added to each player
+Tue Nov 21 11:51:35 EST 2017:15 armies added to each player
+-------------------------------------------------------
+Tue Nov 21 11:54:34 EST 2017:-------------------------------------------------------
+application start
+Tue Nov 21 11:54:34 EST 2017:application start
+All players Added
+Tue Nov 21 11:54:58 EST 2017:All players Added
+15 armies added to each player
+Tue Nov 21 11:54:59 EST 2017:15 armies added to each player
+-------------------------------------------------------
+Tue Nov 21 11:55:46 EST 2017:-------------------------------------------------------
+application start
+Tue Nov 21 11:55:46 EST 2017:application start
+All players Added
+Tue Nov 21 11:56:28 EST 2017:All players Added
+15 armies added to each player
+Tue Nov 21 11:56:29 EST 2017:15 armies added to each player
+-------------------------------------------------------
+Tue Nov 21 11:57:35 EST 2017:-------------------------------------------------------
+application start
+Tue Nov 21 11:57:35 EST 2017:application start
+All players Added
+Tue Nov 21 11:57:37 EST 2017:All players Added
+15 armies added to each player
+Tue Nov 21 11:57:43 EST 2017:15 armies added to each player
+Build the Game Panel
+Tue Nov 21 11:57:55 EST 2017:Build the Game Panel
+Player_1 got bonus armies
+Tue Nov 21 11:58:32 EST 2017:Player_1 got bonus armies
+Player_1 got3 left to place
+Tue Nov 21 11:58:32 EST 2017:Player_1 got3 left to place
+-------------------------------------------------------
+Tue Nov 21 12:03:00 EST 2017:-------------------------------------------------------
+application start
+Tue Nov 21 12:03:00 EST 2017:application start
+All players Added
+Tue Nov 21 12:03:05 EST 2017:All players Added
+15 armies added to each player
+Tue Nov 21 12:03:05 EST 2017:15 armies added to each player
+Build the Game Panel
+Tue Nov 21 12:03:05 EST 2017:Build the Game Panel
+Player_1 got2 left to place
+Tue Nov 21 12:03:11 EST 2017:Player_1 got2 left to place
+Player_1 got1 left to place
+Tue Nov 21 12:03:11 EST 2017:Player_1 got1 left to place
+Player_1 got0 left to place
+Tue Nov 21 12:03:11 EST 2017:Player_1 got0 left to place
+Player_1 entered active turn
+Tue Nov 21 12:03:11 EST 2017:Player_1 entered active turn
+-------------------------------------------------------
+Wed Nov 22 21:03:14 EST 2017:-------------------------------------------------------
+application start
+Wed Nov 22 21:03:14 EST 2017:application start
+-------------------------------------------------------
+Wed Nov 22 21:03:47 EST 2017:-------------------------------------------------------
+application start
+Wed Nov 22 21:03:47 EST 2017:application start
+All players Added
+Wed Nov 22 21:03:59 EST 2017:All players Added
+15 armies added to each player
+Wed Nov 22 21:04:00 EST 2017:15 armies added to each player
+Build the Game Panel
+Wed Nov 22 21:04:00 EST 2017:Build the Game Panel
+initial reinforcement stage
+Wed Nov 22 21:04:41 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:04:43 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:04:47 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:12 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:14 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:15 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:16 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:17 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:17 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:18 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:21 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:22 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:22 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:23 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:24 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:25 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:26 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:26 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:27 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:28 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:29 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:30 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:31 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:33 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:34 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:34 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:35 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:36 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:37 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:37 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:38 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:38 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:39 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:40 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:41 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:41 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:42 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:43 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:44 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:45 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 21:05:45 EST 2017:initial reinforcement stage
+Player_1 got bonus armies
+Wed Nov 22 21:05:47 EST 2017:Player_1 got bonus armies
+Player_1 got3 left to place
+Wed Nov 22 21:05:49 EST 2017:Player_1 got3 left to place
+Player_1 got3 left to place
+Wed Nov 22 21:05:52 EST 2017:Player_1 got3 left to place
+Player_1 got3 left to place
+Wed Nov 22 21:05:54 EST 2017:Player_1 got3 left to place
+Player_1 got2 left to place
+Wed Nov 22 21:06:54 EST 2017:Player_1 got2 left to place
+Player_1 got1 left to place
+Wed Nov 22 21:06:58 EST 2017:Player_1 got1 left to place
+Player_1 got0 left to place
+Wed Nov 22 21:07:02 EST 2017:Player_1 got0 left to place
+Player_1 entered active turn
+Wed Nov 22 21:07:02 EST 2017:Player_1 entered active turn
+START TURN - Some Random dude called - Player_2 has started his turn.
+Wed Nov 22 21:07:09 EST 2017:START TURN - Some Random dude called - Player_2 has started his turn.
+REINFORCE - Some Random dude called - Player_2 recieved 3 armies as turn bonus.
+Wed Nov 22 21:07:13 EST 2017:REINFORCE - Some Random dude called - Player_2 recieved 3 armies as turn bonus.
+REINFORCE - Some Random dude called - Player_2 decided to Reinforce his armies.
+Wed Nov 22 21:07:13 EST 2017:REINFORCE - Some Random dude called - Player_2 decided to Reinforce his armies.
+REINFORCE - Some Random dude called - Player_2 reinforced bb army count is 2
+Wed Nov 22 21:07:13 EST 2017:REINFORCE - Some Random dude called - Player_2 reinforced bb army count is 2
+REINFORCE - Some Random dude called - Player_2 reinforced bb army count is 1
+Wed Nov 22 21:07:13 EST 2017:REINFORCE - Some Random dude called - Player_2 reinforced bb army count is 1
+REINFORCE - Some Random dude called - Player_2 reinforced kk army count is 0
+Wed Nov 22 21:07:13 EST 2017:REINFORCE - Some Random dude called - Player_2 reinforced kk army count is 0
+REINFORCE - Some Random dude called - Player_2 is done with reinforcement and his army count is 0
+Wed Nov 22 21:07:13 EST 2017:REINFORCE - Some Random dude called - Player_2 is done with reinforcement and his army count is 0
+ATTACK - Some Random dude called - Player_2 has option to attack.
+Wed Nov 22 21:07:15 EST 2017:ATTACK - Some Random dude called - Player_2 has option to attack.
+-------------------------------------------------------
+Wed Nov 22 21:38:20 EST 2017:-------------------------------------------------------
+application start
+Wed Nov 22 21:38:20 EST 2017:application start
+All players Added
+Wed Nov 22 21:38:24 EST 2017:All players Added
+15 armies added to each player
+Wed Nov 22 21:38:30 EST 2017:15 armies added to each player
+Build the Game Panel
+Wed Nov 22 21:38:30 EST 2017:Build the Game Panel
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 21:38:32 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Wed Nov 22 21:38:41 EST 2017:initial reinforcement stage
+-------------------------------------------------------
+Wed Nov 22 21:41:13 EST 2017:-------------------------------------------------------
+application start
+Wed Nov 22 21:41:13 EST 2017:application start
+All players Added
+Wed Nov 22 21:41:17 EST 2017:All players Added
+15 armies added to each player
+Wed Nov 22 21:41:18 EST 2017:15 armies added to each player
+-------------------------------------------------------
+Wed Nov 22 21:48:37 EST 2017:-------------------------------------------------------
+application start
+Wed Nov 22 21:48:37 EST 2017:application start
+All players Added
+Wed Nov 22 21:48:42 EST 2017:All players Added
+15 armies added to each player
+Wed Nov 22 21:48:42 EST 2017:15 armies added to each player
+-------------------------------------------------------
+Wed Nov 22 21:51:56 EST 2017:-------------------------------------------------------
+application start
+Wed Nov 22 21:51:56 EST 2017:application start
+All players Added
+Wed Nov 22 21:52:00 EST 2017:All players Added
+15 armies added to each player
+Wed Nov 22 21:52:01 EST 2017:15 armies added to each player
+Build the Game Panel
+Wed Nov 22 21:52:01 EST 2017:Build the Game Panel
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 21:52:03 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+-------------------------------------------------------
+Wed Nov 22 22:52:28 EST 2017:-------------------------------------------------------
+application start
+Wed Nov 22 22:52:28 EST 2017:application start
+All players Added
+Wed Nov 22 22:52:32 EST 2017:All players Added
+15 armies added to each player
+Wed Nov 22 22:52:33 EST 2017:15 armies added to each player
+Build the Game Panel
+Wed Nov 22 22:52:33 EST 2017:Build the Game Panel
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 22:52:35 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Wed Nov 22 22:53:02 EST 2017:initial reinforcement stage
+-------------------------------------------------------
+Wed Nov 22 22:54:38 EST 2017:-------------------------------------------------------
+application start
+Wed Nov 22 22:54:38 EST 2017:application start
+All players Added
+Wed Nov 22 22:54:43 EST 2017:All players Added
+15 armies added to each player
+Wed Nov 22 22:54:43 EST 2017:15 armies added to each player
+Build the Game Panel
+Wed Nov 22 22:55:15 EST 2017:Build the Game Panel
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 22:55:17 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+-------------------------------------------------------
+Wed Nov 22 22:56:04 EST 2017:-------------------------------------------------------
+application start
+Wed Nov 22 22:56:04 EST 2017:application start
+All players Added
+Wed Nov 22 22:56:06 EST 2017:All players Added
+15 armies added to each player
+Wed Nov 22 22:56:07 EST 2017:15 armies added to each player
+-------------------------------------------------------
+Wed Nov 22 22:56:31 EST 2017:-------------------------------------------------------
+application start
+Wed Nov 22 22:56:31 EST 2017:application start
+All players Added
+Wed Nov 22 22:56:35 EST 2017:All players Added
+15 armies added to each player
+Wed Nov 22 22:56:36 EST 2017:15 armies added to each player
+Build the Game Panel
+Wed Nov 22 22:56:41 EST 2017:Build the Game Panel
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 22:56:43 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Wed Nov 22 22:56:54 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 22:57:00 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Wed Nov 22 22:57:02 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 22:57:04 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 22:57:06 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 22:57:08 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Wed Nov 22 22:57:13 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Wed Nov 22 22:57:13 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 22:57:15 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 22:57:17 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 22:57:19 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 22:57:21 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 22:57:23 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Wed Nov 22 22:57:25 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 22:57:27 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Wed Nov 22 22:57:29 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 22:57:29 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 22:57:31 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Wed Nov 22 22:57:33 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 22:57:35 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 22:57:37 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 22:57:40 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 22:57:42 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 22:57:44 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Wed Nov 22 22:57:46 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 22:57:46 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 22:57:48 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Wed Nov 22 22:57:50 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Wed Nov 22 22:57:50 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 22:57:52 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Wed Nov 22 22:57:54 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Wed Nov 22 22:58:22 EST 2017:initial reinforcement stage
+-------------------------------------------------------
+Wed Nov 22 23:04:45 EST 2017:-------------------------------------------------------
+application start
+Wed Nov 22 23:04:45 EST 2017:application start
+All players Added
+Wed Nov 22 23:04:49 EST 2017:All players Added
+15 armies added to each player
+Wed Nov 22 23:04:49 EST 2017:15 armies added to each player
+Build the Game Panel
+Wed Nov 22 23:04:50 EST 2017:Build the Game Panel
+-------------------------------------------------------
+Wed Nov 22 23:05:40 EST 2017:-------------------------------------------------------
+application start
+Wed Nov 22 23:05:40 EST 2017:application start
+All players Added
+Wed Nov 22 23:05:44 EST 2017:All players Added
+15 armies added to each player
+Wed Nov 22 23:05:45 EST 2017:15 armies added to each player
+Build the Game Panel
+Wed Nov 22 23:05:45 EST 2017:Build the Game Panel
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:05:47 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 23:05:49 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:05:51 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 23:05:53 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:05:55 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Wed Nov 22 23:05:57 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:05:59 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 23:06:01 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:06:03 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 23:06:05 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:06:07 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 23:06:09 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:06:11 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Wed Nov 22 23:06:13 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:06:15 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 23:06:17 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:06:19 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Wed Nov 22 23:06:21 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:06:23 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Wed Nov 22 23:06:25 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:06:27 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Wed Nov 22 23:06:29 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:06:32 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Wed Nov 22 23:06:34 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:06:36 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 23:06:38 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:06:40 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+-------------------------------------------------------
+Wed Nov 22 23:19:26 EST 2017:-------------------------------------------------------
+application start
+Wed Nov 22 23:19:26 EST 2017:application start
+All players Added
+Wed Nov 22 23:19:31 EST 2017:All players Added
+15 armies added to each player
+Wed Nov 22 23:19:31 EST 2017:15 armies added to each player
+Build the Game Panel
+Wed Nov 22 23:20:40 EST 2017:Build the Game Panel
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:20:56 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 23:22:22 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:22:31 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Wed Nov 22 23:23:21 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:23:23 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Wed Nov 22 23:23:25 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:23:28 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 23:23:36 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:23:38 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 23:23:39 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:23:40 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 23:23:41 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:23:42 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Wed Nov 22 23:23:43 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:23:44 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Wed Nov 22 23:23:45 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:23:46 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Wed Nov 22 23:23:47 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Wed Nov 22 23:23:48 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+-------------------------------------------------------
+Thu Nov 23 00:11:22 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 00:11:22 EST 2017:application start
+All players Added
+Thu Nov 23 00:11:26 EST 2017:All players Added
+15 armies added to each player
+Thu Nov 23 00:11:47 EST 2017:15 armies added to each player
+Build the Game Panel
+Thu Nov 23 00:11:47 EST 2017:Build the Game Panel
+-------------------------------------------------------
+Thu Nov 23 00:11:59 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 00:11:59 EST 2017:application start
+All players Added
+Thu Nov 23 00:12:20 EST 2017:All players Added
+15 armies added to each player
+Thu Nov 23 00:12:35 EST 2017:15 armies added to each player
+Build the Game Panel
+Thu Nov 23 00:12:35 EST 2017:Build the Game Panel
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:13:53 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:16:46 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:17:40 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+-------------------------------------------------------
+Thu Nov 23 00:21:05 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 00:21:05 EST 2017:application start
+All players Added
+Thu Nov 23 00:21:10 EST 2017:All players Added
+15 armies added to each player
+Thu Nov 23 00:21:18 EST 2017:15 armies added to each player
+Build the Game Panel
+Thu Nov 23 00:21:28 EST 2017:Build the Game Panel
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:21:36 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:23:15 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:23:23 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:23:26 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:23:58 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:23:59 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:24:00 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Thu Nov 23 00:24:06 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:24:07 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:24:08 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Thu Nov 23 00:24:10 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:24:11 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:24:12 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:24:49 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:24:50 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:24:51 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:25:07 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:25:08 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:25:09 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Thu Nov 23 00:25:09 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:25:10 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:25:11 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Thu Nov 23 00:25:15 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:25:16 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:25:17 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:25:18 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:25:19 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:25:20 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Thu Nov 23 00:25:23 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:25:24 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:25:25 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:25:28 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:25:29 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:25:30 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Thu Nov 23 00:25:33 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:25:34 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:25:35 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+Thu Nov 23 00:25:43 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on kk
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:25:44 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:25:45 EST 2017:initial reinforcement stage
+Player_1 got bonus armies
+Thu Nov 23 00:25:46 EST 2017:Player_1 got bonus armies
+Player_1 got2 left to place
+Thu Nov 23 00:25:48 EST 2017:Player_1 got2 left to place
+Player_1 got1 left to place
+Thu Nov 23 00:26:06 EST 2017:Player_1 got1 left to place
+Player_1 got0 left to place
+Thu Nov 23 00:26:09 EST 2017:Player_1 got0 left to place
+Player_1 entered active turn
+Thu Nov 23 00:26:09 EST 2017:Player_1 entered active turn
+Attack Phase entered
+Thu Nov 23 00:26:23 EST 2017:Attack Phase entered
+Player_1 entered attacking phase.
+Thu Nov 23 00:26:31 EST 2017:Player_1 entered attacking phase.
+Player_1 entered attacking phase.
+Thu Nov 23 00:26:35 EST 2017:Player_1 entered attacking phase.
+Player_1 has 12 armies
+Thu Nov 23 00:26:42 EST 2017:Player_1 has 12 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 00:26:42 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 6 Vs Defender 3
+Thu Nov 23 00:26:44 EST 2017:Round 1 - Attacker - 6 Vs Defender 3
+Defender lost round and one army. Current army count + 6
+Thu Nov 23 00:26:44 EST 2017:Defender lost round and one army. Current army count + 6
+Round 2 - Attacker - 6 Vs Defender 2
+Thu Nov 23 00:26:44 EST 2017:Round 2 - Attacker - 6 Vs Defender 2
+Defender lost round and one army. Current army count + 6
+Thu Nov 23 00:26:44 EST 2017:Defender lost round and one army. Current army count + 6
+Player_1 has destroyed two armies
+Thu Nov 23 00:26:45 EST 2017:Player_1 has destroyed two armies
+Player_1 has destroyed two armies
+Thu Nov 23 00:26:46 EST 2017:Player_1 has destroyed two armies
+Player_1 has 12 armies
+Thu Nov 23 00:26:48 EST 2017:Player_1 has 12 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 00:26:48 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 6 Vs Defender 3
+Thu Nov 23 00:26:54 EST 2017:Round 1 - Attacker - 6 Vs Defender 3
+Defender lost round and one army. Current army count + 4
+Thu Nov 23 00:26:54 EST 2017:Defender lost round and one army. Current army count + 4
+Round 2 - Attacker - 4 Vs Defender 2
+Thu Nov 23 00:26:54 EST 2017:Round 2 - Attacker - 4 Vs Defender 2
+Defender lost round and one army. Current army count + 4
+Thu Nov 23 00:26:54 EST 2017:Defender lost round and one army. Current army count + 4
+Player_1 has destroyed two armies
+Thu Nov 23 00:26:55 EST 2017:Player_1 has destroyed two armies
+Player_1 has destroyed two armies
+Thu Nov 23 00:26:55 EST 2017:Player_1 has destroyed two armies
+Player_1 has 12 armies
+Thu Nov 23 00:27:02 EST 2017:Player_1 has 12 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 00:27:02 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 6 Vs Defender 4
+Thu Nov 23 00:27:04 EST 2017:Round 1 - Attacker - 6 Vs Defender 4
+Defender lost round and one army. Current army count + 2
+Thu Nov 23 00:27:04 EST 2017:Defender lost round and one army. Current army count + 2
+Round 2 - Attacker - 5 Vs Defender 4
+Thu Nov 23 00:27:04 EST 2017:Round 2 - Attacker - 5 Vs Defender 4
+Defender lost round and one army. Current army count + 2
+Thu Nov 23 00:27:04 EST 2017:Defender lost round and one army. Current army count + 2
+Player_1 has destroyed two armies
+Thu Nov 23 00:27:05 EST 2017:Player_1 has destroyed two armies
+Player_1 has destroyed two armies
+Thu Nov 23 00:27:05 EST 2017:Player_1 has destroyed two armies
+Player_1 has 12 armies
+Thu Nov 23 00:27:09 EST 2017:Player_1 has 12 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 00:27:09 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 5 Vs Defender 3
+Thu Nov 23 00:27:11 EST 2017:Round 1 - Attacker - 5 Vs Defender 3
+Defender lost round and one army. Current army count + 0
+Thu Nov 23 00:27:11 EST 2017:Defender lost round and one army. Current army count + 0
+START TURN - Some Random dude called - Player_2 has started his turn.
+Thu Nov 23 00:28:18 EST 2017:START TURN - Some Random dude called - Player_2 has started his turn.
+REINFORCE - Some Random dude called - Player_2 recieved 3 armies as turn bonus.
+Thu Nov 23 00:28:20 EST 2017:REINFORCE - Some Random dude called - Player_2 recieved 3 armies as turn bonus.
+REINFORCE - Some Random dude called - Player_2 decided to Reinforce his armies.
+Thu Nov 23 00:28:20 EST 2017:REINFORCE - Some Random dude called - Player_2 decided to Reinforce his armies.
+REINFORCE - Some Random dude called - Player_2 reinforced kk army count is 2
+Thu Nov 23 00:28:20 EST 2017:REINFORCE - Some Random dude called - Player_2 reinforced kk army count is 2
+REINFORCE - Some Random dude called - Player_2 reinforced bb army count is 1
+Thu Nov 23 00:28:20 EST 2017:REINFORCE - Some Random dude called - Player_2 reinforced bb army count is 1
+REINFORCE - Some Random dude called - Player_2 reinforced bb army count is 0
+Thu Nov 23 00:28:20 EST 2017:REINFORCE - Some Random dude called - Player_2 reinforced bb army count is 0
+REINFORCE - Some Random dude called - Player_2 is done with reinforcement and his army count is 0
+Thu Nov 23 00:28:20 EST 2017:REINFORCE - Some Random dude called - Player_2 is done with reinforcement and his army count is 0
+ATTACK - Some Random dude called - Player_2 has option to attack.
+Thu Nov 23 00:28:22 EST 2017:ATTACK - Some Random dude called - Player_2 has option to attack.
+ATTACK - Some Random dude called - Player_2 could not attack/is done with attack/decided not to attack.
+Thu Nov 23 00:28:23 EST 2017:ATTACK - Some Random dude called - Player_2 could not attack/is done with attack/decided not to attack.
+FORTIFY - Some Random dude called - Player_2 has an option to Fortify any of his armies.
+Thu Nov 23 00:28:24 EST 2017:FORTIFY - Some Random dude called - Player_2 has an option to Fortify any of his armies.
+FORTIFY - Some Random dude called - Player_2 has decided to Fortify.
+Thu Nov 23 00:28:25 EST 2017:FORTIFY - Some Random dude called - Player_2 has decided to Fortify.
+FORTIFY - Some Random dude called - Player_2 fortified kk through kk by 2 armie(s).
+Thu Nov 23 00:28:25 EST 2017:FORTIFY - Some Random dude called - Player_2 fortified kk through kk by 2 armie(s).
+FORTIFY - Some Random dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+Thu Nov 23 00:28:25 EST 2017:FORTIFY - Some Random dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+Current player turn ends
+Thu Nov 23 00:28:26 EST 2017:Current player turn ends
+-------------------------------------------------------
+Thu Nov 23 00:39:46 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 00:39:46 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 00:40:18 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 00:40:18 EST 2017:application start
+All players Added
+Thu Nov 23 00:40:51 EST 2017:All players Added
+15 armies added to each player
+Thu Nov 23 00:40:52 EST 2017:15 armies added to each player
+Build the Game Panel
+Thu Nov 23 00:40:52 EST 2017:Build the Game Panel
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ll
+Thu Nov 23 00:41:02 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ll
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on oo
+Thu Nov 23 00:41:02 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on oo
+initial reinforcement stage
+Thu Nov 23 00:41:02 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:41:07 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:41:07 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:41:07 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:41:10 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on oo
+Thu Nov 23 00:41:10 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on oo
+initial reinforcement stage
+Thu Nov 23 00:41:10 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:41:11 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:41:11 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:41:11 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:41:12 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:41:12 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:41:12 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ll
+Thu Nov 23 00:41:15 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ll
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on oo
+Thu Nov 23 00:41:15 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on oo
+initial reinforcement stage
+Thu Nov 23 00:41:15 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ll
+Thu Nov 23 00:41:15 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ll
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:41:15 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:41:15 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ll
+Thu Nov 23 00:41:16 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ll
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:41:16 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:41:16 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ll
+Thu Nov 23 00:41:16 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ll
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:41:16 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:41:16 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:41:16 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on oo
+Thu Nov 23 00:41:16 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on oo
+initial reinforcement stage
+Thu Nov 23 00:41:16 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ll
+Thu Nov 23 00:41:17 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ll
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on oo
+Thu Nov 23 00:41:17 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on oo
+initial reinforcement stage
+Thu Nov 23 00:41:17 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ll
+Thu Nov 23 00:41:18 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ll
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:41:18 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:41:18 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ll
+Thu Nov 23 00:41:19 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ll
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on oo
+Thu Nov 23 00:41:19 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on oo
+initial reinforcement stage
+Thu Nov 23 00:41:19 EST 2017:initial reinforcement stage
+Player_1 got bonus armies
+Thu Nov 23 00:41:19 EST 2017:Player_1 got bonus armies
+INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on dd
+Thu Nov 23 00:41:19 EST 2017:INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on dd
+Player_1 got2 left to place
+Thu Nov 23 00:41:19 EST 2017:Player_1 got2 left to place
+INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on aa
+Thu Nov 23 00:41:23 EST 2017:INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on aa
+Player_1 got1 left to place
+Thu Nov 23 00:41:23 EST 2017:Player_1 got1 left to place
+INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on aa
+Thu Nov 23 00:41:23 EST 2017:INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on aa
+Player_1 got0 left to place
+Thu Nov 23 00:41:23 EST 2017:Player_1 got0 left to place
+Player_1 entered active turn
+Thu Nov 23 00:41:23 EST 2017:Player_1 entered active turn
+Attack Phase entered
+Thu Nov 23 00:41:28 EST 2017:Attack Phase entered
+Player_1 entered attacking phase.
+Thu Nov 23 00:41:30 EST 2017:Player_1 entered attacking phase.
+Player_1 entered attacking phase.
+Thu Nov 23 00:41:31 EST 2017:Player_1 entered attacking phase.
+Player_1 has 4 armies
+Thu Nov 23 00:41:33 EST 2017:Player_1 has 4 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 00:41:33 EST 2017:Player_1 attacking with 3 armies
+Player_1 has lost two armies
+Thu Nov 23 00:41:33 EST 2017:Player_1 has lost two armies
+Round 1 - Attacker - 4 Vs Defender 6
+Thu Nov 23 00:41:33 EST 2017:Round 1 - Attacker - 4 Vs Defender 6
+Attacker lost round and one army. Current army count + 3
+Thu Nov 23 00:41:33 EST 2017:Attacker lost round and one army. Current army count + 3
+Round 2 - Attacker - 4 Vs Defender 2
+Thu Nov 23 00:41:33 EST 2017:Round 2 - Attacker - 4 Vs Defender 2
+Defender lost round and one army. Current army count + 6
+Thu Nov 23 00:41:33 EST 2017:Defender lost round and one army. Current army count + 6
+Player_1 has destroyed an army
+Thu Nov 23 00:41:33 EST 2017:Player_1 has destroyed an army
+Player_1 has destroyed an army
+Thu Nov 23 00:41:33 EST 2017:Player_1 has destroyed an army
+Player_1 has 3 armies
+Thu Nov 23 00:41:35 EST 2017:Player_1 has 3 armies
+Player_1 attacking with 2 armies
+Thu Nov 23 00:41:35 EST 2017:Player_1 attacking with 2 armies
+Player_1 has lost two armies
+Thu Nov 23 00:41:35 EST 2017:Player_1 has lost two armies
+Round 1 - Attacker - 5 Vs Defender 1
+Thu Nov 23 00:41:35 EST 2017:Round 1 - Attacker - 5 Vs Defender 1
+Defender lost round and one army. Current army count + 4
+Thu Nov 23 00:41:35 EST 2017:Defender lost round and one army. Current army count + 4
+Round 2 - Attacker - 4 Vs Defender 1
+Thu Nov 23 00:41:35 EST 2017:Round 2 - Attacker - 4 Vs Defender 1
+Defender lost round and one army. Current army count + 4
+Thu Nov 23 00:41:35 EST 2017:Defender lost round and one army. Current army count + 4
+Player_1 has destroyed two armies
+Thu Nov 23 00:41:35 EST 2017:Player_1 has destroyed two armies
+Player_1 has destroyed two armies
+Thu Nov 23 00:41:35 EST 2017:Player_1 has destroyed two armies
+Player_1 has 3 armies
+Thu Nov 23 00:41:36 EST 2017:Player_1 has 3 armies
+Player_1 attacking with 2 armies
+Thu Nov 23 00:41:36 EST 2017:Player_1 attacking with 2 armies
+Round 1 - Attacker - 3 Vs Defender 6
+Thu Nov 23 00:41:37 EST 2017:Round 1 - Attacker - 3 Vs Defender 6
+Attacker lost round and one army. Current army count + 2
+Thu Nov 23 00:41:37 EST 2017:Attacker lost round and one army. Current army count + 2
+Round 2 - Attacker - 1 Vs Defender 4
+Thu Nov 23 00:41:37 EST 2017:Round 2 - Attacker - 1 Vs Defender 4
+Attacker lost round and one army. Current army count + 2
+Thu Nov 23 00:41:37 EST 2017:Attacker lost round and one army. Current army count + 2
+Player_1 has lost two armies
+Thu Nov 23 00:41:37 EST 2017:Player_1 has lost two armies
+-------------------------------------------------------
+Thu Nov 23 00:46:34 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 00:46:34 EST 2017:application start
+All players Added
+Thu Nov 23 00:46:49 EST 2017:All players Added
+15 armies added to each player
+Thu Nov 23 00:47:12 EST 2017:15 armies added to each player
+Build the Game Panel
+Thu Nov 23 00:47:12 EST 2017:Build the Game Panel
+-------------------------------------------------------
+Thu Nov 23 00:47:27 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 00:47:27 EST 2017:application start
+All players Added
+Thu Nov 23 00:48:06 EST 2017:All players Added
+15 armies added to each player
+Thu Nov 23 00:48:06 EST 2017:15 armies added to each player
+Build the Game Panel
+Thu Nov 23 00:48:07 EST 2017:Build the Game Panel
+-------------------------------------------------------
+Thu Nov 23 00:48:34 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 00:48:34 EST 2017:application start
+All players Added
+Thu Nov 23 00:48:48 EST 2017:All players Added
+15 armies added to each player
+Thu Nov 23 00:48:49 EST 2017:15 armies added to each player
+Build the Game Panel
+Thu Nov 23 00:48:49 EST 2017:Build the Game Panel
+-------------------------------------------------------
+Thu Nov 23 00:48:58 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 00:48:58 EST 2017:application start
+All players Added
+Thu Nov 23 00:49:32 EST 2017:All players Added
+15 armies added to each player
+Thu Nov 23 00:49:33 EST 2017:15 armies added to each player
+Build the Game Panel
+Thu Nov 23 00:49:33 EST 2017:Build the Game Panel
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:49:33 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+Thu Nov 23 00:49:37 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:49:37 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:49:37 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+Thu Nov 23 00:49:39 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:49:39 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:49:39 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+Thu Nov 23 00:49:39 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:49:39 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:49:39 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+Thu Nov 23 00:49:40 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:49:40 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:49:40 EST 2017:initial reinforcement stage
+initial reinforcement stage
+Thu Nov 23 00:49:41 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:49:42 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:49:42 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:49:42 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:49:43 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:49:43 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:49:43 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+Thu Nov 23 00:49:43 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:49:43 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:49:43 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:49:44 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:49:44 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:49:44 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+Thu Nov 23 00:49:44 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:49:44 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:49:44 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+Thu Nov 23 00:49:45 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:49:45 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:49:45 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+Thu Nov 23 00:49:47 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:49:47 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:49:47 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:49:47 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:49:47 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:49:47 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:49:47 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:49:47 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:49:47 EST 2017:initial reinforcement stage
+Player_1 got bonus armies
+Thu Nov 23 00:49:47 EST 2017:Player_1 got bonus armies
+INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on hh
+Thu Nov 23 00:49:47 EST 2017:INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on hh
+Player_1 got2 left to place
+Thu Nov 23 00:49:47 EST 2017:Player_1 got2 left to place
+INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on hh
+Thu Nov 23 00:49:48 EST 2017:INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on hh
+Player_1 got1 left to place
+Thu Nov 23 00:49:48 EST 2017:Player_1 got1 left to place
+INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on hh
+Thu Nov 23 00:49:48 EST 2017:INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on hh
+Player_1 got0 left to place
+Thu Nov 23 00:49:48 EST 2017:Player_1 got0 left to place
+Player_1 entered active turn
+Thu Nov 23 00:49:48 EST 2017:Player_1 entered active turn
+Attack Phase entered
+Thu Nov 23 00:49:53 EST 2017:Attack Phase entered
+Player_1 entered attacking phase.
+Thu Nov 23 00:50:00 EST 2017:Player_1 entered attacking phase.
+Player_1 entered attacking phase.
+Thu Nov 23 00:50:00 EST 2017:Player_1 entered attacking phase.
+Player_1 has 5 armies
+Thu Nov 23 00:50:02 EST 2017:Player_1 has 5 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 00:50:02 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 5 Vs Defender 3
+Thu Nov 23 00:50:03 EST 2017:Round 1 - Attacker - 5 Vs Defender 3
+Defender lost round and one army. Current army count + 5
+Thu Nov 23 00:50:03 EST 2017:Defender lost round and one army. Current army count + 5
+Round 2 - Attacker - 5 Vs Defender 2
+Thu Nov 23 00:50:03 EST 2017:Round 2 - Attacker - 5 Vs Defender 2
+Defender lost round and one army. Current army count + 5
+Thu Nov 23 00:50:03 EST 2017:Defender lost round and one army. Current army count + 5
+Player_1 has destroyed two armies
+Thu Nov 23 00:50:03 EST 2017:Player_1 has destroyed two armies
+Player_1 has 5 armies
+Thu Nov 23 00:50:03 EST 2017:Player_1 has 5 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 00:50:03 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 4 Vs Defender 4
+Thu Nov 23 00:50:04 EST 2017:Round 1 - Attacker - 4 Vs Defender 4
+Attacker lost round and one army. Current army count + 4
+Thu Nov 23 00:50:04 EST 2017:Attacker lost round and one army. Current army count + 4
+Round 2 - Attacker - 1 Vs Defender 2
+Thu Nov 23 00:50:04 EST 2017:Round 2 - Attacker - 1 Vs Defender 2
+Attacker lost round and one army. Current army count + 4
+Thu Nov 23 00:50:04 EST 2017:Attacker lost round and one army. Current army count + 4
+Player_1 has lost two armies
+Thu Nov 23 00:50:04 EST 2017:Player_1 has lost two armies
+Player_1 has 3 armies
+Thu Nov 23 00:50:05 EST 2017:Player_1 has 3 armies
+Player_1 attacking with 2 armies
+Thu Nov 23 00:50:05 EST 2017:Player_1 attacking with 2 armies
+Round 1 - Attacker - 3 Vs Defender 6
+Thu Nov 23 00:50:06 EST 2017:Round 1 - Attacker - 3 Vs Defender 6
+Attacker lost round and one army. Current army count + 2
+Thu Nov 23 00:50:06 EST 2017:Attacker lost round and one army. Current army count + 2
+Round 2 - Attacker - 1 Vs Defender 2
+Thu Nov 23 00:50:06 EST 2017:Round 2 - Attacker - 1 Vs Defender 2
+Attacker lost round and one army. Current army count + 2
+Thu Nov 23 00:50:06 EST 2017:Attacker lost round and one army. Current army count + 2
+Player_1 has lost two armies
+Thu Nov 23 00:50:06 EST 2017:Player_1 has lost two armies
+START TURN - Some Random dude called - Player_2 has started his turn.
+Thu Nov 23 00:50:11 EST 2017:START TURN - Some Random dude called - Player_2 has started his turn.
+REINFORCE - Some Random dude called - Player_2 recieved 3 armies as turn bonus.
+Thu Nov 23 00:50:11 EST 2017:REINFORCE - Some Random dude called - Player_2 recieved 3 armies as turn bonus.
+REINFORCE - Some Random dude called - Player_2 decided to Reinforce his armies.
+Thu Nov 23 00:50:11 EST 2017:REINFORCE - Some Random dude called - Player_2 decided to Reinforce his armies.
+REINFORCE - Some Random dude called - Player_2 reinforced uu army count is 2
+Thu Nov 23 00:50:11 EST 2017:REINFORCE - Some Random dude called - Player_2 reinforced uu army count is 2
+REINFORCE - Some Random dude called - Player_2 reinforced bb army count is 1
+Thu Nov 23 00:50:11 EST 2017:REINFORCE - Some Random dude called - Player_2 reinforced bb army count is 1
+REINFORCE - Some Random dude called - Player_2 reinforced uu army count is 0
+Thu Nov 23 00:50:11 EST 2017:REINFORCE - Some Random dude called - Player_2 reinforced uu army count is 0
+REINFORCE - Some Random dude called - Player_2 is done with reinforcement and his army count is 0
+Thu Nov 23 00:50:11 EST 2017:REINFORCE - Some Random dude called - Player_2 is done with reinforcement and his army count is 0
+ATTACK - Some Random dude called - Player_2 has option to attack.
+Thu Nov 23 00:50:11 EST 2017:ATTACK - Some Random dude called - Player_2 has option to attack.
+ATTACK - Some Random dude called - Player_2 has decided to attack.
+Thu Nov 23 00:50:11 EST 2017:ATTACK - Some Random dude called - Player_2 has decided to attack.
+ATTACK - Some Random dude called - Player_2 has warred against aa using his territory - bb
+Thu Nov 23 00:50:11 EST 2017:ATTACK - Some Random dude called - Player_2 has warred against aa using his territory - bb
+ATTACK - Some Random dude Player_2 attack results as follows!!
+Thu Nov 23 00:50:11 EST 2017:ATTACK - Some Random dude Player_2 attack results as follows!!
+ATTACK is with 1 defence is with 1dies.
+Thu Nov 23 00:50:11 EST 2017:ATTACK is with 1 defence is with 1dies.
+Round 1 - Attacker - 2 Vs Defender 4
+Thu Nov 23 00:50:11 EST 2017:Round 1 - Attacker - 2 Vs Defender 4
+Attacker lost round and one army. Current army count + 4
+Thu Nov 23 00:50:11 EST 2017:Attacker lost round and one army. Current army count + 4
+Player_2 has lost an army
+Thu Nov 23 00:50:11 EST 2017:Player_2 has lost an army
+ATTACK - Some Random dude called - Player_2 could not attack/is done with attack/decided not to attack.
+Thu Nov 23 00:50:11 EST 2017:ATTACK - Some Random dude called - Player_2 could not attack/is done with attack/decided not to attack.
+FORTIFY - Some Random dude called - Player_2 has an option to Fortify any of his armies.
+Thu Nov 23 00:50:11 EST 2017:FORTIFY - Some Random dude called - Player_2 has an option to Fortify any of his armies.
+FORTIFY - Some Random dude called - Player_2 has decided to Fortify.
+Thu Nov 23 00:50:11 EST 2017:FORTIFY - Some Random dude called - Player_2 has decided to Fortify.
+FORTIFY - Some Random dude called - Player_2 has decided to Fortify.
+Thu Nov 23 00:50:11 EST 2017:FORTIFY - Some Random dude called - Player_2 has decided to Fortify.
+FORTIFY - Some Random dude called - Player_2 has decided to Fortify.
+Thu Nov 23 00:50:11 EST 2017:FORTIFY - Some Random dude called - Player_2 has decided to Fortify.
+FORTIFY - Some Random dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+Thu Nov 23 00:50:11 EST 2017:FORTIFY - Some Random dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+Current player turn ends
+Thu Nov 23 00:50:11 EST 2017:Current player turn ends
+-------------------------------------------------------
+Thu Nov 23 00:57:49 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 00:57:49 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 00:58:05 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 00:58:05 EST 2017:application start
+All players Added
+Thu Nov 23 00:58:31 EST 2017:All players Added
+15 armies added to each player
+Thu Nov 23 00:58:32 EST 2017:15 armies added to each player
+Build the Game Panel
+Thu Nov 23 00:58:32 EST 2017:Build the Game Panel
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ff
+Thu Nov 23 00:58:34 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ff
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on kk
+Thu Nov 23 00:58:34 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on kk
+initial reinforcement stage
+Thu Nov 23 00:58:34 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ff
+Thu Nov 23 00:58:34 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ff
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on kk
+Thu Nov 23 00:58:34 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on kk
+initial reinforcement stage
+Thu Nov 23 00:58:34 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:58:35 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:58:35 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:58:35 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:58:35 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:58:35 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:58:35 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:58:35 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:58:35 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:58:35 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ff
+Thu Nov 23 00:58:35 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ff
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:58:35 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:58:35 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ff
+Thu Nov 23 00:58:35 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ff
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on kk
+Thu Nov 23 00:58:35 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on kk
+initial reinforcement stage
+Thu Nov 23 00:58:35 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ff
+Thu Nov 23 00:58:36 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ff
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:58:36 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:58:36 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:58:36 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on kk
+Thu Nov 23 00:58:36 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on kk
+initial reinforcement stage
+Thu Nov 23 00:58:36 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ff
+Thu Nov 23 00:58:36 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on ff
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:58:36 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:58:36 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:58:37 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:58:37 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:58:37 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:58:37 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on kk
+Thu Nov 23 00:58:37 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on kk
+initial reinforcement stage
+Thu Nov 23 00:58:37 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 00:58:37 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 00:58:37 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 00:58:37 EST 2017:initial reinforcement stage
+Player_1 got bonus armies
+Thu Nov 23 00:58:37 EST 2017:Player_1 got bonus armies
+INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on aa
+Thu Nov 23 00:58:37 EST 2017:INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on aa
+Player_1 got2 left to place
+Thu Nov 23 00:58:37 EST 2017:Player_1 got2 left to place
+INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on aa
+Thu Nov 23 00:58:37 EST 2017:INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on aa
+Player_1 got1 left to place
+Thu Nov 23 00:58:37 EST 2017:Player_1 got1 left to place
+INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on aa
+Thu Nov 23 00:58:38 EST 2017:INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on aa
+Player_1 got0 left to place
+Thu Nov 23 00:58:38 EST 2017:Player_1 got0 left to place
+Player_1 entered active turn
+Thu Nov 23 00:58:38 EST 2017:Player_1 entered active turn
+Attack Phase entered
+Thu Nov 23 00:58:44 EST 2017:Attack Phase entered
+Player_1 entered attacking phase.
+Thu Nov 23 00:58:53 EST 2017:Player_1 entered attacking phase.
+Player_1 entered attacking phase.
+Thu Nov 23 00:58:54 EST 2017:Player_1 entered attacking phase.
+Player_1 has 10 armies
+Thu Nov 23 00:58:55 EST 2017:Player_1 has 10 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 00:58:55 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 6 Vs Defender 1
+Thu Nov 23 00:58:56 EST 2017:Round 1 - Attacker - 6 Vs Defender 1
+Defender lost round and one army. Current army count + 7
+Thu Nov 23 00:58:56 EST 2017:Defender lost round and one army. Current army count + 7
+Round 2 - Attacker - 5 Vs Defender 1
+Thu Nov 23 00:58:56 EST 2017:Round 2 - Attacker - 5 Vs Defender 1
+Defender lost round and one army. Current army count + 7
+Thu Nov 23 00:58:56 EST 2017:Defender lost round and one army. Current army count + 7
+Player_1 has destroyed two armies
+Thu Nov 23 00:58:56 EST 2017:Player_1 has destroyed two armies
+Player_1 has 10 armies
+Thu Nov 23 00:58:57 EST 2017:Player_1 has 10 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 00:58:57 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 4 Vs Defender 3
+Thu Nov 23 00:58:58 EST 2017:Round 1 - Attacker - 4 Vs Defender 3
+Defender lost round and one army. Current army count + 5
+Thu Nov 23 00:58:58 EST 2017:Defender lost round and one army. Current army count + 5
+Round 2 - Attacker - 3 Vs Defender 2
+Thu Nov 23 00:58:58 EST 2017:Round 2 - Attacker - 3 Vs Defender 2
+Defender lost round and one army. Current army count + 5
+Thu Nov 23 00:58:58 EST 2017:Defender lost round and one army. Current army count + 5
+Player_1 has destroyed two armies
+Thu Nov 23 00:58:58 EST 2017:Player_1 has destroyed two armies
+Player_1 has 10 armies
+Thu Nov 23 00:58:58 EST 2017:Player_1 has 10 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 00:58:58 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 6 Vs Defender 5
+Thu Nov 23 00:58:59 EST 2017:Round 1 - Attacker - 6 Vs Defender 5
+Defender lost round and one army. Current army count + 3
+Thu Nov 23 00:58:59 EST 2017:Defender lost round and one army. Current army count + 3
+Round 2 - Attacker - 6 Vs Defender 1
+Thu Nov 23 00:58:59 EST 2017:Round 2 - Attacker - 6 Vs Defender 1
+Defender lost round and one army. Current army count + 3
+Thu Nov 23 00:58:59 EST 2017:Defender lost round and one army. Current army count + 3
+Player_1 has destroyed two armies
+Thu Nov 23 00:58:59 EST 2017:Player_1 has destroyed two armies
+Player_1 has 10 armies
+Thu Nov 23 00:58:59 EST 2017:Player_1 has 10 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 00:58:59 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 6 Vs Defender 6
+Thu Nov 23 00:59:00 EST 2017:Round 1 - Attacker - 6 Vs Defender 6
+Attacker lost round and one army. Current army count + 9
+Thu Nov 23 00:59:00 EST 2017:Attacker lost round and one army. Current army count + 9
+Round 2 - Attacker - 4 Vs Defender 3
+Thu Nov 23 00:59:00 EST 2017:Round 2 - Attacker - 4 Vs Defender 3
+Defender lost round and one army. Current army count + 2
+Thu Nov 23 00:59:00 EST 2017:Defender lost round and one army. Current army count + 2
+Player_1 has destroyed an army
+Thu Nov 23 00:59:00 EST 2017:Player_1 has destroyed an army
+Player_1 has 9 armies
+Thu Nov 23 00:59:00 EST 2017:Player_1 has 9 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 00:59:00 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 5 Vs Defender 5
+Thu Nov 23 00:59:02 EST 2017:Round 1 - Attacker - 5 Vs Defender 5
+Attacker lost round and one army. Current army count + 8
+Thu Nov 23 00:59:02 EST 2017:Attacker lost round and one army. Current army count + 8
+Player_1 has lost an army
+Thu Nov 23 00:59:02 EST 2017:Player_1 has lost an army
+Player_1 has 8 armies
+Thu Nov 23 00:59:03 EST 2017:Player_1 has 8 armies
+Player_1 attacking with 2 armies
+Thu Nov 23 00:59:03 EST 2017:Player_1 attacking with 2 armies
+Round 1 - Attacker - 5 Vs Defender 6
+Thu Nov 23 00:59:04 EST 2017:Round 1 - Attacker - 5 Vs Defender 6
+Attacker lost round and one army. Current army count + 7
+Thu Nov 23 00:59:04 EST 2017:Attacker lost round and one army. Current army count + 7
+Player_1 has lost an army
+Thu Nov 23 00:59:04 EST 2017:Player_1 has lost an army
+Player_1 has 7 armies
+Thu Nov 23 00:59:04 EST 2017:Player_1 has 7 armies
+Player_1 attacking with 2 armies
+Thu Nov 23 00:59:04 EST 2017:Player_1 attacking with 2 armies
+Round 1 - Attacker - 5 Vs Defender 1
+Thu Nov 23 00:59:05 EST 2017:Round 1 - Attacker - 5 Vs Defender 1
+Defender lost round and one army. Current army count + 0
+Thu Nov 23 00:59:05 EST 2017:Defender lost round and one army. Current army count + 0
+Defender Lost!!
+Thu Nov 23 00:59:05 EST 2017:Defender Lost!!
+Player_1 has destroyed an army
+Thu Nov 23 00:59:05 EST 2017:Player_1 has destroyed an army
+-------------------------------------------------------
+Thu Nov 23 01:04:59 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 01:04:59 EST 2017:application start
+All players Added
+Thu Nov 23 01:05:35 EST 2017:All players Added
+15 armies added to each player
+Thu Nov 23 01:05:36 EST 2017:15 armies added to each player
+Build the Game Panel
+Thu Nov 23 01:05:36 EST 2017:Build the Game Panel
+-------------------------------------------------------
+Thu Nov 23 01:05:45 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 01:05:45 EST 2017:application start
+All players Added
+Thu Nov 23 01:06:24 EST 2017:All players Added
+15 armies added to each player
+Thu Nov 23 01:06:25 EST 2017:15 armies added to each player
+Build the Game Panel
+Thu Nov 23 01:06:25 EST 2017:Build the Game Panel
+-------------------------------------------------------
+Thu Nov 23 01:06:38 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 01:06:38 EST 2017:application start
+All players Added
+Thu Nov 23 01:07:13 EST 2017:All players Added
+15 armies added to each player
+Thu Nov 23 01:07:14 EST 2017:15 armies added to each player
+Build the Game Panel
+Thu Nov 23 01:07:14 EST 2017:Build the Game Panel
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 01:07:14 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 01:07:17 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 01:07:17 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 01:07:17 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+Thu Nov 23 01:07:17 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 01:07:17 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 01:07:17 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+Thu Nov 23 01:07:17 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 01:07:17 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 01:07:17 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+Thu Nov 23 01:07:17 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 01:07:17 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 01:07:17 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 01:07:18 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 01:07:18 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 01:07:18 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 01:07:18 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 01:07:18 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 01:07:18 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+Thu Nov 23 01:07:19 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 01:07:19 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 01:07:19 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 01:07:19 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 01:07:19 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 01:07:19 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 01:07:19 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 01:07:19 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 01:07:19 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+Thu Nov 23 01:07:19 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 01:07:19 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 01:07:19 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 01:07:20 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 01:07:20 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 01:07:20 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+Thu Nov 23 01:07:20 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on uu
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 01:07:20 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 01:07:20 EST 2017:initial reinforcement stage
+INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+Thu Nov 23 01:07:20 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
+INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+Thu Nov 23 01:07:20 EST 2017:INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
+initial reinforcement stage
+Thu Nov 23 01:07:20 EST 2017:initial reinforcement stage
+Player_1 got bonus armies
+Thu Nov 23 01:07:20 EST 2017:Player_1 got bonus armies
+INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on ss
+Thu Nov 23 01:07:20 EST 2017:INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on ss
+Player_1 got2 left to place
+Thu Nov 23 01:07:20 EST 2017:Player_1 got2 left to place
+INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on ss
+Thu Nov 23 01:07:21 EST 2017:INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on ss
+Player_1 got1 left to place
+Thu Nov 23 01:07:21 EST 2017:Player_1 got1 left to place
+INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on ss
+Thu Nov 23 01:07:22 EST 2017:INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on ss
+Player_1 got0 left to place
+Thu Nov 23 01:07:22 EST 2017:Player_1 got0 left to place
+Player_1 entered active turn
+Thu Nov 23 01:07:22 EST 2017:Player_1 entered active turn
+Attack Phase entered
+Thu Nov 23 01:07:25 EST 2017:Attack Phase entered
+Player_1 entered attacking phase.
+Thu Nov 23 01:07:30 EST 2017:Player_1 entered attacking phase.
+Player_1 entered attacking phase.
+Thu Nov 23 01:07:33 EST 2017:Player_1 entered attacking phase.
+Player_1 has 12 armies
+Thu Nov 23 01:07:35 EST 2017:Player_1 has 12 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 01:07:35 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 6 Vs Defender 6
+Thu Nov 23 01:07:35 EST 2017:Round 1 - Attacker - 6 Vs Defender 6
+Attacker lost round and one army. Current army count + 11
+Thu Nov 23 01:07:35 EST 2017:Attacker lost round and one army. Current army count + 11
+Round 2 - Attacker - 5 Vs Defender 2
+Thu Nov 23 01:07:35 EST 2017:Round 2 - Attacker - 5 Vs Defender 2
+Defender lost round and one army. Current army count + 15
+Thu Nov 23 01:07:35 EST 2017:Defender lost round and one army. Current army count + 15
+Player_1 has destroyed an army
+Thu Nov 23 01:07:35 EST 2017:Player_1 has destroyed an army
+Player_1 has 11 armies
+Thu Nov 23 01:07:36 EST 2017:Player_1 has 11 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 01:07:36 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 6 Vs Defender 2
+Thu Nov 23 01:07:38 EST 2017:Round 1 - Attacker - 6 Vs Defender 2
+Defender lost round and one army. Current army count + 13
+Thu Nov 23 01:07:38 EST 2017:Defender lost round and one army. Current army count + 13
+Round 2 - Attacker - 5 Vs Defender 2
+Thu Nov 23 01:07:38 EST 2017:Round 2 - Attacker - 5 Vs Defender 2
+Defender lost round and one army. Current army count + 13
+Thu Nov 23 01:07:38 EST 2017:Defender lost round and one army. Current army count + 13
+Player_1 has destroyed two armies
+Thu Nov 23 01:07:38 EST 2017:Player_1 has destroyed two armies
+Player_1 has 11 armies
+Thu Nov 23 01:07:39 EST 2017:Player_1 has 11 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 01:07:39 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 5 Vs Defender 6
+Thu Nov 23 01:07:39 EST 2017:Round 1 - Attacker - 5 Vs Defender 6
+Attacker lost round and one army. Current army count + 10
+Thu Nov 23 01:07:39 EST 2017:Attacker lost round and one army. Current army count + 10
+Round 2 - Attacker - 2 Vs Defender 1
+Thu Nov 23 01:07:39 EST 2017:Round 2 - Attacker - 2 Vs Defender 1
+Defender lost round and one army. Current army count + 12
+Thu Nov 23 01:07:39 EST 2017:Defender lost round and one army. Current army count + 12
+Player_1 has destroyed an army
+Thu Nov 23 01:07:39 EST 2017:Player_1 has destroyed an army
+Player_1 has 10 armies
+Thu Nov 23 01:07:41 EST 2017:Player_1 has 10 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 01:07:41 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 6 Vs Defender 1
+Thu Nov 23 01:07:42 EST 2017:Round 1 - Attacker - 6 Vs Defender 1
+Defender lost round and one army. Current army count + 10
+Thu Nov 23 01:07:42 EST 2017:Defender lost round and one army. Current army count + 10
+Round 2 - Attacker - 4 Vs Defender 1
+Thu Nov 23 01:07:42 EST 2017:Round 2 - Attacker - 4 Vs Defender 1
+Defender lost round and one army. Current army count + 10
+Thu Nov 23 01:07:42 EST 2017:Defender lost round and one army. Current army count + 10
+Player_1 has destroyed two armies
+Thu Nov 23 01:07:42 EST 2017:Player_1 has destroyed two armies
+Player_1 has 10 armies
+Thu Nov 23 01:07:42 EST 2017:Player_1 has 10 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 01:07:42 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 3 Vs Defender 4
+Thu Nov 23 01:07:43 EST 2017:Round 1 - Attacker - 3 Vs Defender 4
+Attacker lost round and one army. Current army count + 9
+Thu Nov 23 01:07:43 EST 2017:Attacker lost round and one army. Current army count + 9
+Round 2 - Attacker - 3 Vs Defender 1
+Thu Nov 23 01:07:43 EST 2017:Round 2 - Attacker - 3 Vs Defender 1
+Defender lost round and one army. Current army count + 9
+Thu Nov 23 01:07:43 EST 2017:Defender lost round and one army. Current army count + 9
+Player_1 has destroyed an army
+Thu Nov 23 01:07:43 EST 2017:Player_1 has destroyed an army
+Player_1 has 9 armies
+Thu Nov 23 01:07:44 EST 2017:Player_1 has 9 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 01:07:44 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 5 Vs Defender 6
+Thu Nov 23 01:07:45 EST 2017:Round 1 - Attacker - 5 Vs Defender 6
+Attacker lost round and one army. Current army count + 8
+Thu Nov 23 01:07:45 EST 2017:Attacker lost round and one army. Current army count + 8
+Round 2 - Attacker - 3 Vs Defender 3
+Thu Nov 23 01:07:45 EST 2017:Round 2 - Attacker - 3 Vs Defender 3
+Attacker lost round and one army. Current army count + 8
+Thu Nov 23 01:07:45 EST 2017:Attacker lost round and one army. Current army count + 8
+Player_1 has lost two armies
+Thu Nov 23 01:07:45 EST 2017:Player_1 has lost two armies
+Player_1 has 7 armies
+Thu Nov 23 01:07:46 EST 2017:Player_1 has 7 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 01:07:46 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 6 Vs Defender 5
+Thu Nov 23 01:07:47 EST 2017:Round 1 - Attacker - 6 Vs Defender 5
+Defender lost round and one army. Current army count + 7
+Thu Nov 23 01:07:47 EST 2017:Defender lost round and one army. Current army count + 7
+Round 2 - Attacker - 5 Vs Defender 1
+Thu Nov 23 01:07:47 EST 2017:Round 2 - Attacker - 5 Vs Defender 1
+Defender lost round and one army. Current army count + 7
+Thu Nov 23 01:07:47 EST 2017:Defender lost round and one army. Current army count + 7
+Player_1 has destroyed two armies
+Thu Nov 23 01:07:47 EST 2017:Player_1 has destroyed two armies
+Player_1 has 7 armies
+Thu Nov 23 01:07:47 EST 2017:Player_1 has 7 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 01:07:47 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 6 Vs Defender 6
+Thu Nov 23 01:07:48 EST 2017:Round 1 - Attacker - 6 Vs Defender 6
+Attacker lost round and one army. Current army count + 6
+Thu Nov 23 01:07:48 EST 2017:Attacker lost round and one army. Current army count + 6
+Round 2 - Attacker - 5 Vs Defender 4
+Thu Nov 23 01:07:48 EST 2017:Round 2 - Attacker - 5 Vs Defender 4
+Defender lost round and one army. Current army count + 6
+Thu Nov 23 01:07:48 EST 2017:Defender lost round and one army. Current army count + 6
+Player_1 has destroyed an army
+Thu Nov 23 01:07:48 EST 2017:Player_1 has destroyed an army
+Player_1 has 6 armies
+Thu Nov 23 01:07:48 EST 2017:Player_1 has 6 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 01:07:48 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 4 Vs Defender 4
+Thu Nov 23 01:07:49 EST 2017:Round 1 - Attacker - 4 Vs Defender 4
+Attacker lost round and one army. Current army count + 5
+Thu Nov 23 01:07:49 EST 2017:Attacker lost round and one army. Current army count + 5
+Round 2 - Attacker - 1 Vs Defender 2
+Thu Nov 23 01:07:49 EST 2017:Round 2 - Attacker - 1 Vs Defender 2
+Attacker lost round and one army. Current army count + 5
+Thu Nov 23 01:07:49 EST 2017:Attacker lost round and one army. Current army count + 5
+Player_1 has lost two armies
+Thu Nov 23 01:07:49 EST 2017:Player_1 has lost two armies
+Player_1 has 4 armies
+Thu Nov 23 01:07:49 EST 2017:Player_1 has 4 armies
+Player_1 attacking with 3 armies
+Thu Nov 23 01:07:49 EST 2017:Player_1 attacking with 3 armies
+Round 1 - Attacker - 6 Vs Defender 6
+Thu Nov 23 01:07:50 EST 2017:Round 1 - Attacker - 6 Vs Defender 6
+Attacker lost round and one army. Current army count + 3
+Thu Nov 23 01:07:50 EST 2017:Attacker lost round and one army. Current army count + 3
+Round 2 - Attacker - 4 Vs Defender 6
+Thu Nov 23 01:07:50 EST 2017:Round 2 - Attacker - 4 Vs Defender 6
+Attacker lost round and one army. Current army count + 3
+Thu Nov 23 01:07:50 EST 2017:Attacker lost round and one army. Current army count + 3
+Player_1 has lost two armies
+Thu Nov 23 01:07:50 EST 2017:Player_1 has lost two armies
+Player_1 has 2 armies
+Thu Nov 23 01:07:51 EST 2017:Player_1 has 2 armies
+Player_1 attacking with 1 armies
+Thu Nov 23 01:07:51 EST 2017:Player_1 attacking with 1 armies
+Round 1 - Attacker - 2 Vs Defender 6
+Thu Nov 23 01:07:52 EST 2017:Round 1 - Attacker - 2 Vs Defender 6
+Attacker lost round and one army. Current army count + 1
+Thu Nov 23 01:07:52 EST 2017:Attacker lost round and one army. Current army count + 1
+Player_1 has lost an army
+Thu Nov 23 01:07:52 EST 2017:Player_1 has lost an army
+START TURN - Some Random dude called - Player_2 has started his turn.
+Thu Nov 23 01:08:09 EST 2017:START TURN - Some Random dude called - Player_2 has started his turn.
+REINFORCE - Some Random dude called - Player_2 recieved 3 armies as turn bonus.
+Thu Nov 23 01:08:09 EST 2017:REINFORCE - Some Random dude called - Player_2 recieved 3 armies as turn bonus.
+REINFORCE - Some Random dude called - Player_2 decided to Reinforce his armies.
+Thu Nov 23 01:08:09 EST 2017:REINFORCE - Some Random dude called - Player_2 decided to Reinforce his armies.
+REINFORCE - Some Random dude called - Player_2 reinforced uu army count is 2
+Thu Nov 23 01:08:09 EST 2017:REINFORCE - Some Random dude called - Player_2 reinforced uu army count is 2
+REINFORCE - Some Random dude called - Player_2 reinforced bb army count is 1
+Thu Nov 23 01:08:09 EST 2017:REINFORCE - Some Random dude called - Player_2 reinforced bb army count is 1
+REINFORCE - Some Random dude called - Player_2 reinforced uu army count is 0
+Thu Nov 23 01:08:09 EST 2017:REINFORCE - Some Random dude called - Player_2 reinforced uu army count is 0
+REINFORCE - Some Random dude called - Player_2 is done with reinforcement and his army count is 0
+Thu Nov 23 01:08:09 EST 2017:REINFORCE - Some Random dude called - Player_2 is done with reinforcement and his army count is 0
+ATTACK - Some Random dude called - Player_2 has option to attack.
+Thu Nov 23 01:08:09 EST 2017:ATTACK - Some Random dude called - Player_2 has option to attack.
+ATTACK - Some Random dude called - Player_2 could not attack/is done with attack/decided not to attack.
+Thu Nov 23 01:08:09 EST 2017:ATTACK - Some Random dude called - Player_2 could not attack/is done with attack/decided not to attack.
+FORTIFY - Some Random dude called - Player_2 has an option to Fortify any of his armies.
+Thu Nov 23 01:08:09 EST 2017:FORTIFY - Some Random dude called - Player_2 has an option to Fortify any of his armies.
+FORTIFY - Some Random dude called - Player_2 has decided to Fortify.
+Thu Nov 23 01:08:09 EST 2017:FORTIFY - Some Random dude called - Player_2 has decided to Fortify.
+FORTIFY - Some Random dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+Thu Nov 23 01:08:09 EST 2017:FORTIFY - Some Random dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+Current player turn ends
+Thu Nov 23 01:08:09 EST 2017:Current player turn ends
+-------------------------------------------------------
+Thu Nov 23 13:32:16 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 13:32:16 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 15:26:28 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 15:26:28 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 15:28:16 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 15:28:16 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 15:40:55 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 15:40:55 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 15:42:01 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 15:42:01 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 15:59:43 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 15:59:43 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 16:08:36 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 16:08:36 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 16:09:02 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 16:09:02 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 16:09:53 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 16:09:53 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 16:11:33 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 16:11:33 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 16:19:03 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 16:19:03 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 16:39:38 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 16:39:38 EST 2017:application start
+All players Added
+Thu Nov 23 16:39:58 EST 2017:All players Added
+-------------------------------------------------------
+Thu Nov 23 16:40:11 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 16:40:11 EST 2017:application start
+All players Added
+Thu Nov 23 16:40:39 EST 2017:All players Added
+-------------------------------------------------------
+Thu Nov 23 16:41:08 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 16:41:08 EST 2017:application start
+All players Added
+Thu Nov 23 16:41:22 EST 2017:All players Added
+-------------------------------------------------------
+Thu Nov 23 16:41:36 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 16:41:36 EST 2017:application start
+All players Added
+Thu Nov 23 16:41:52 EST 2017:All players Added
+All players Added
+Thu Nov 23 16:42:16 EST 2017:All players Added
+-------------------------------------------------------
+Thu Nov 23 16:42:34 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 16:42:34 EST 2017:application start
+All players Added
+Thu Nov 23 16:42:51 EST 2017:All players Added
+-------------------------------------------------------
+Thu Nov 23 18:21:42 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 18:21:42 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 18:29:42 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 18:29:42 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 18:39:58 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 18:39:58 EST 2017:application start
+All players Added
+Thu Nov 23 18:40:14 EST 2017:All players Added
+-------------------------------------------------------
+Thu Nov 23 18:40:46 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 18:40:46 EST 2017:application start
+All players Added
+Thu Nov 23 18:40:58 EST 2017:All players Added
+-------------------------------------------------------
+Thu Nov 23 18:42:52 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 18:42:52 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 18:44:22 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 18:44:22 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 18:51:53 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 18:51:53 EST 2017:application start
+All players Added
+Thu Nov 23 18:52:02 EST 2017:All players Added
+-------------------------------------------------------
+Thu Nov 23 19:20:16 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 19:20:16 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 19:23:49 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 19:23:49 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 19:25:50 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 19:25:50 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 19:34:03 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 19:34:03 EST 2017:application start
+All players Added
+Thu Nov 23 19:34:08 EST 2017:All players Added
+-------------------------------------------------------
+Thu Nov 23 19:36:49 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 19:36:49 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 19:37:51 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 19:37:51 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 19:38:38 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 19:38:38 EST 2017:application start
+All players Added
+Thu Nov 23 19:38:55 EST 2017:All players Added
+-------------------------------------------------------
+Thu Nov 23 19:39:02 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 19:39:02 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 19:39:17 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 19:39:17 EST 2017:application start
+All players Added
+Thu Nov 23 19:39:43 EST 2017:All players Added
+-------------------------------------------------------
+Thu Nov 23 19:41:20 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 19:41:20 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 19:48:28 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 19:48:28 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 19:51:42 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 19:51:42 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 20:00:04 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 20:00:04 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 23:10:01 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 23:10:01 EST 2017:application start
+All players Added
+Thu Nov 23 23:10:29 EST 2017:All players Added
+-------------------------------------------------------
+Thu Nov 23 23:12:22 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 23:12:22 EST 2017:application start
+All players Added
+Thu Nov 23 23:12:46 EST 2017:All players Added
+-------------------------------------------------------
+Thu Nov 23 23:12:46 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 23:12:46 EST 2017:application start
+-------------------------------------------------------
+Thu Nov 23 23:14:16 EST 2017:-------------------------------------------------------
+application start
+Thu Nov 23 23:14:16 EST 2017:application start

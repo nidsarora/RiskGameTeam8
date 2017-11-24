@@ -15,7 +15,11 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.Vector;
 
+import javax.swing.JPanel;
+
 import risk.controller.RiskController;
+import risk.controller.RiskMapPanelViewController;
+import risk.controller.RiskPlayerPanelViewController;
 import risk.controller.RiskStartGameController;
 import risk.helpers.Utility;
 import risk.model.RiskCardModel;
@@ -28,6 +32,7 @@ import risk.model.Observable.RiskFortifyPhaseModel;
 import risk.model.Observable.RiskReinforcementPhaseModel;
 import risk.model.Observable.RiskStartupEndPhaseModel;
 import risk.model.Observable.RiskStartupPhaseModel;
+import risk.model.interfaces.StrategyInterface;
 import risk.view.RiskCardExchangeViewObserver;
 import risk.view.RiskPhaseViewObserver;
 import risk.view.RiskPlayerDominationViewObserver;
@@ -129,6 +134,10 @@ public class RiskGameModel {
 	/** The defender. */
 	public RiskPlayerModel defender;
 
+	public JPanel mainPanel;
+
+	public JPanel subPanel;
+
 	/** The active. */
 	public RiskPlayerModel active;
 
@@ -146,6 +155,8 @@ public class RiskGameModel {
 
 	/** The attack num. */
 	public int attackNum = 0;
+
+	public int numberofAttack = 0;
 
 	/** The iter. */
 	public int iter = 0;
@@ -178,21 +189,26 @@ public class RiskGameModel {
 	private RiskPlayerDominationViewObserver riskPlayerDominationViewObserver;
 
 	/** The current player bonus armies received. */
-	private int currentPlayerBonusArmiesRecieved;
+	public int currentPlayerBonusArmiesRecieved;
 
 	/** The is base map edited. */
 	private Boolean isBaseMapEdited;
 
 	/** The risk phase view observer. */
 	private RiskPhaseViewObserver riskPhaseViewObserver;
-	
+
 	/** The attack dice. */
 	public Integer[] attackdice;
+
+	public int xCoordinate;
+
+	public int yCoordinate;
 
 	/**
 	 * Instantiates a new risk game model.
 	 *
-	 * @param test the test
+	 * @param test
+	 *            the test
 	 */
 	public RiskGameModel(String test) {
 	}
@@ -202,7 +218,7 @@ public class RiskGameModel {
 	 */
 	public RiskGameModel() {
 		setIsBaseMapEdited(RiskController.isBaseMapEdited);
-		gameState = NEW_GAME;
+		gameState = INITIAL_REINFORCE;
 		initalPlayer();
 		initializePlayerDominationView();
 		initializeCardExchangeView();
@@ -210,6 +226,53 @@ public class RiskGameModel {
 		ValidateLoadMap();
 		initializeDeck();
 		distubuteArmies();
+		assignTerritories();// TODO - Auto distribution of armies - set the current player phase to
+							// reinforcement
+	}
+
+	private void assignTerritories() {
+		int territoryId = -1;
+		while ((territoryId = getUnOccupiedTerritory()) != -1) {
+
+			occupyTerritoryByPlayer(territoryId, curPlayer);
+			// if ((territoryId = getUnOccupiedTerritory()) != -1) {
+			// occupyTerritoryByPlayer(territoryId, curPlayer);
+			// } else {
+			// occupyTerritoryByPlayer(getRandomOccupiedTerritoryByPlayer(curPlayer),
+			// curPlayer);
+			// }
+
+			nextPlayer(true);
+		}
+	}
+
+	private int getRandomOccupiedTerritoryByPlayer(RiskPlayerModel riskPlayer) {
+		return riskPlayer.getOccupiedTerritories()
+				.get(new Random().nextInt(riskPlayer.getOccupiedTerritories().size())).id;
+	}
+
+	private Boolean armiesExhaustedForAllPlayers() {
+		for (RiskPlayerModel player : players) {
+			if (player.getNumberOfArmies() > 0)
+				return false;
+		}
+		return true;
+	}
+
+	public void occupyTerritoryByPlayer(int territoryId, RiskPlayerModel riskPlayer) {
+		RiskTerritoryModel riskterritorymodel = territories.elementAt(territoryId);
+		riskterritorymodel.setPlayer(riskPlayer);
+		riskPlayer.occupyTerritory(riskterritorymodel);
+		riskterritorymodel.addArmy();
+		riskPlayer.looseArmy();
+	}
+
+	public int getUnOccupiedTerritory() {
+		for (int territory = 0; territory < territories.size(); territory++) {
+			if (!territories.get(territory).isOccupied())
+				return territory;
+		}
+		return -1;
 	}
 
 	/**
@@ -230,7 +293,7 @@ public class RiskGameModel {
 	 * @return true, if is game map valid
 	 */
 	private boolean isGameMapValid() {
-		
+
 		return isMapFormatValid();
 	}
 
@@ -246,7 +309,8 @@ public class RiskGameModel {
 	/**
 	 * Sets the attacker territory.
 	 *
-	 * @param test the new attacker territory
+	 * @param test
+	 *            the new attacker territory
 	 */
 	public void setaTerritory(RiskTerritoryModel test) {
 		aTerritory = test;
@@ -260,11 +324,12 @@ public class RiskGameModel {
 	public RiskTerritoryModel getdTerritories() {
 		return defenseTerritory;
 	}
-	
+
 	/**
 	 * Sets the defender territory.
 	 *
-	 * @param test the new defender territory
+	 * @param test
+	 *            the new defender territory
 	 */
 	public void setdTerritory(RiskTerritoryModel test) {
 		defenseTerritory = test;
@@ -282,7 +347,8 @@ public class RiskGameModel {
 	/**
 	 * Sets the territories.
 	 *
-	 * @param test the new territories
+	 * @param test
+	 *            the new territories
 	 */
 	public void setTerritories(Vector<RiskTerritoryModel> test) {
 		territories = test;
@@ -309,8 +375,9 @@ public class RiskGameModel {
 	/**
 	 * Sets the continents.
 	 *
-	 * @param test the new continents
-     */
+	 * @param test
+	 *            the new continents
+	 */
 	public void setContinents(Vector<RiskContinentModel> test) {
 		continents = test;
 	}
@@ -327,8 +394,9 @@ public class RiskGameModel {
 	/**
 	 * Sets the armies.
 	 *
-	 * @param test the new armies
-	 *            
+	 * @param test
+	 *            the new armies
+	 * 
 	 */
 	public void setArmies(int test) {
 		armies = test;
@@ -345,6 +413,8 @@ public class RiskGameModel {
 
 	/**
 	 * Notify phase view change.
+	 * 
+	 * @throws InterruptedException
 	 */
 	public void notifyPhaseViewChange() {
 		// System.out.println(this.getState());
@@ -380,14 +450,24 @@ public class RiskGameModel {
 			this.getRiskFortifyPhaseModelObservable().isChanged();
 			System.out.println("FORTIFY_PHASE");
 		}
-
+//		try {
+			if (this.mainPanel != null && this.subPanel != null) {
+				this.mainPanel.repaint();
+				this.subPanel.repaint();
+			}
+//			Thread.sleep(0);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 	}
 
 	/**
 	 * Sets the current player.
 	 *
-	 * @param test the new current player
-	 *            
+	 * @param test
+	 *            the new current player
+	 * 
 	 */
 	public void setCurPlayer(RiskPlayerModel test) {
 		curPlayer = test;
@@ -406,8 +486,9 @@ public class RiskGameModel {
 	/**
 	 * Sets the player.
 	 *
-	 * @param test the new player
-	 *            
+	 * @param test
+	 *            the new player
+	 * 
 	 */
 	public void setPlayer(Vector<RiskPlayerModel> test) {
 		players = test;
@@ -437,15 +518,16 @@ public class RiskGameModel {
 	/**
 	 * This method initializes adds the players.
 	 *
-	 * @param nm the player name
-	 *            
+	 * @param nm
+	 *            the player name
+	 * 
 	 * @return true, if successful
 	 */
-	static public boolean addPlayer(String nm) {
+	static public boolean addPlayer(String nm, StrategyInterface IStrategy) {
 		int size = players.size();
 		if (size > 6)
 			return false;
-		RiskPlayerModel p = new RiskPlayerModel(nm, size);
+		RiskPlayerModel p = new RiskPlayerModel(nm, size, IStrategy);
 		players.add(p);
 		return true;
 	}
@@ -479,19 +561,23 @@ public class RiskGameModel {
 	/**
 	 * This method finds the next player in the loop.
 	 */
-	public void nextPlayer() {
+	public void nextPlayer(Boolean... isInitialization) {
 		if (curPlayer == players.lastElement()) {
 			curPlayer = players.elementAt(0);
 			iter = 0;
 		} else
 			curPlayer = players.elementAt(++iter);
+
+		if (isInitialization != null && isInitialization.length == 0)
+			curPlayer.takeTurn(this);
 	}
 
 	/**
 	 * This method removes the players from the vector list.
 	 *
-	 * @param p risk game player
-	 *            
+	 * @param p
+	 *            risk game player
+	 * 
 	 */
 	public void removePlayer(RiskPlayerModel p) {
 		players.remove(p);
@@ -501,13 +587,12 @@ public class RiskGameModel {
 	}
 
 	/**
-	 * This method initializes the number of armies as per the number of
-	 * players.
+	 * This method initializes the number of armies as per the number of players.
 	 */
 	public void distubuteArmies() {
 		int numOfPlayers = players.size();
 		if (numOfPlayers == 3)
-			armies = 35;
+			armies = 15;
 		else if (numOfPlayers == 4)
 			armies = 30;
 		else if (numOfPlayers == 5)
@@ -518,6 +603,7 @@ public class RiskGameModel {
 		for (int index = 0; index < numOfPlayers; index++)
 			players.elementAt(index).addArmies(armies);
 		Utility.writeLog(armies + " armies added to each player");
+
 	}
 
 	/**
@@ -527,15 +613,17 @@ public class RiskGameModel {
 		for (int index = 0; index < territories.size(); index++)
 			deck.add(new RiskCardModel(index, index % 3));
 		Random wildIndex = new Random();
-		for (int wildCardCount = 1; wildCardCount <= 2; wildCardCount++)
-			deck.add(new RiskCardModel(wildIndex.nextInt(deck.size()), -1));
+		if (deck.size() > 0)
+			for (int wildCardCount = 1; wildCardCount <= 2; wildCardCount++)
+				deck.add(new RiskCardModel(wildIndex.nextInt(deck.size()), -1));
 	}
 
 	/**
 	 * Draw card.
 	 *
-	 * @param player risk game player
-	 *            
+	 * @param player
+	 *            risk game player
+	 * 
 	 */
 	public void drawCard(RiskPlayerModel player) {
 		Random draw = new Random();
@@ -580,8 +668,8 @@ public class RiskGameModel {
 	}
 
 	/**
-	 * This method calculates the reinforcement from Continent as every
-	 * continent has a different control value.
+	 * This method calculates the reinforcement from Continent as every continent
+	 * has a different control value.
 	 *
 	 * @return the int
 	 */
@@ -618,7 +706,8 @@ public class RiskGameModel {
 	/**
 	 * Check tags present.
 	 *
-	 * @param mapText the map text
+	 * @param mapText
+	 *            the map text
 	 * @return the boolean
 	 */
 	public Boolean checkTagsPresent(String mapText) {
@@ -630,7 +719,8 @@ public class RiskGameModel {
 	/**
 	 * Check adjacents present all territories.
 	 *
-	 * @param mapText the map text
+	 * @param mapText
+	 *            the map text
 	 * @return the boolean
 	 */
 	public Boolean checkAdjacentsPresentAllTerritories(String mapText) {
@@ -651,7 +741,8 @@ public class RiskGameModel {
 	/**
 	 * Check continents are valid.
 	 *
-	 * @param mapText the map text
+	 * @param mapText
+	 *            the map text
 	 * @return the boolean
 	 */
 	public Boolean checkContinentsareValid(String mapText) {
@@ -660,10 +751,10 @@ public class RiskGameModel {
 		Boolean isContinentValid = true;
 		List<String> mapContinents = new ArrayList<String>();
 		for (String mapTextLine : mapText.split("\n")) {
-			
+
 			if (mapTextLine.equals("[Territories]"))
 				reachedTerritories = true;
-			
+
 			if (reachedContinent && !reachedTerritories) {
 				mapContinents.add(mapTextLine.split("=")[0]);
 			}
@@ -841,8 +932,10 @@ public class RiskGameModel {
 	/**
 	 * This method sets up the gamePhaseSetup in the beginning.
 	 *
-	 * @param xcoordinate the x-coordinate of country position
-	 * @param ycoordinate the y-coordinate of country position
+	 * @param xcoordinate
+	 *            the x-coordinate of country position
+	 * @param ycoordinate
+	 *            the y-coordinate of country position
 	 */
 	public void gamePhaseSetup(int xcoordinate, int ycoordinate) {
 
@@ -897,44 +990,66 @@ public class RiskGameModel {
 	/**
 	 * This method activates the game phase to fortify.
 	 *
-	 * @param x the x-coordinate of country position
-	 * @param y the y-coordinate of country position
+	 * @param x
+	 *            the x-coordinate of country position
+	 * @param y
+	 *            the y-coordinate of country position
 	 * @return the string
 	 */
 	public String gamePhaseActive(int x, int y) {
 
 		int country = getMapLocation(x, y);
 
-		if (getState() == FORTIFYING) {
-			RiskFortifying(country, false);
-		} // end fortifying
+		// if (getState() == FORTIFYING) {
+		// RiskFortifying(country, false);
+		// } // end fortifying
+		//
+		// if (getState() == FORTIFY) {
+		// RiskFortify(country);
+		// } // end forty
 
-		if (getState() == FORTIFY) {
-			RiskFortify(country);
-		} // end forty
-
-		if (getState() == ATTACK_PHASE) {
-			// engageBattle();
+		if (getState() == FORTIFY || getState() == FORTIFYING || getState() == FORTIFY_PHASE) {
+			return this.curPlayer.fortify(country, this);
 		}
 
-		if (getState() == ATTACKING) {
-			RiskAttacking(country);
+		// if (getState() == ATTACK_PHASE) {
+		// // engageBattle(); // always commented
+		// }
+
+		// if (getState() == ATTACKING) {
+		// RiskAttacking(country);
+		// }
+		//
+		// if (getState() == ATTACK) {
+		// Riskattack(country);
+		// } // end attack with
+
+		if (getState() == ATTACKING || getState() == ATTACK || getState() == ATTACK_PHASE || getState() == CAPTURE) {
+			return this.curPlayer.attack(country, this);
 		}
 
-		if (getState() == ATTACK) {
-			Riskattack(country);
-		} // end attack with
+		// if (getState() == TRADE_CARDS) {
+		// RiskTradeCards(country);
+		// }
 
 		if (getState() == TRADE_CARDS) {
-			RiskTradeCards(country);
+			this.curPlayer.tradeCard(this);
 		}
+
+		// if (getState() == REINFORCE) {
+		// RiskReinforce(country);
+		// }
 
 		if (getState() == REINFORCE) {
-			RiskReinforce(country);
+			return this.curPlayer.reinforce(country, this);
 		}
 
+		// if (getState() == START_TURN) {
+		// RiskStartTurn(false);
+		// }
+
 		if (getState() == START_TURN) {
-			RiskStartTurn(false);
+			return this.curPlayer.startTurn(this);
 		}
 
 		return "";
@@ -943,7 +1058,8 @@ public class RiskGameModel {
 	/**
 	 * this function is for Risk fortifying.
 	 *
-	 * @param country the country
+	 * @param country
+	 *            the country
 	 * @return the string
 	 */
 	public String RiskFortifying(int country, boolean flag) {
@@ -968,7 +1084,8 @@ public class RiskGameModel {
 	/**
 	 * this function is for Risk trade cards.
 	 *
-	 * @param country the country
+	 * @param country
+	 *            the country
 	 * @return the string
 	 */
 	public String RiskTradeCards(int country) {
@@ -985,7 +1102,7 @@ public class RiskGameModel {
 	}
 
 	/**
-	 *this function is for Risk start turn.
+	 * this function is for Risk start turn.
 	 *
 	 * @return the string
 	 */
@@ -1007,7 +1124,8 @@ public class RiskGameModel {
 	/**
 	 * this function is for Risk reinforce.
 	 *
-	 * @param country the country
+	 * @param country
+	 *            the country
 	 * @return the string
 	 */
 	public String RiskReinforce(int country) {
@@ -1024,7 +1142,8 @@ public class RiskGameModel {
 	/**
 	 * this function is for Risk fortify.
 	 *
-	 * @param country the country
+	 * @param country
+	 *            the country
 	 * @return the string
 	 */
 	public String RiskFortify(int country) {
@@ -1033,7 +1152,7 @@ public class RiskGameModel {
 				setState(FORTIFYING);
 				aTerritory = territories.elementAt(country);
 				this.notifyPhaseViewChange(); // get the first country to
-												// fotify
+				// fotify
 				return "true";
 			}
 		}
@@ -1043,7 +1162,8 @@ public class RiskGameModel {
 	/**
 	 * this function is for Risk attacking.
 	 *
-	 * @param country the country
+	 * @param country
+	 *            the country
 	 * @return the string
 	 */
 	public String RiskAttacking(int country) {
@@ -1078,7 +1198,8 @@ public class RiskGameModel {
 	/**
 	 * This function is about Risk attack.
 	 *
-	 * @param country the country
+	 * @param country
+	 *            the country
 	 * @return the string
 	 */
 	public String Riskattack(int country) {
@@ -1117,31 +1238,51 @@ public class RiskGameModel {
 
 		if (attackNum == 1) {
 			System.out.println(attackDieArray[0] + " vs " + defenceDieArray[0]);
-			if (attackDieArray[0] > defenceDieArray[0])
+			Utility.writeLog("Round 1 - Attacker - " + attackDieArray[0] + " Vs Defender " + defenceDieArray[0]);
+			if (attackDieArray[0] > defenceDieArray[0]) {
 				defenseTerritory.looseArmy();
-			else
+				Utility.writeLog(
+						"Defender lost round and one army. Current army count + " + defenseTerritory.getArmies());
+			} else {
 				aTerritory.looseArmy();
+				Utility.writeLog("Attacker lost round and one army. Current army count + " + aTerritory.getArmies());
+			}
 		}
 		if (attackNum > 1) { // attacking with more than 1
 			System.out.println(attackDieArray[0] + " vs " + defenceDieArray[0]);
-			if (attackDieArray[0] > defenceDieArray[0])
+			Utility.writeLog("Round 1 - Attacker - " + attackDieArray[0] + " Vs Defender " + defenceDieArray[0]);
+			if (attackDieArray[0] > defenceDieArray[0]) {
 				defenseTerritory.looseArmy();
-			else
+				Utility.writeLog(
+						"Defender lost round and one army. Current army count + " + defenseTerritory.getArmies());
+			} else {
 				aTerritory.looseArmy();
+				Utility.writeLog("Attacker lost round and one army. Current army count + " + aTerritory.getArmies());
+			}
+			
 			if (defenseNum == 2) {
+				Utility.writeLog("Round 2 - Attacker - " + attackDieArray[1] + " Vs Defender " + defenceDieArray[1]);
 				System.out.print(attackDieArray[1] + " vs " + defenceDieArray[1]);
-				if (attackDieArray[1] > defenceDieArray[1])
+				if (attackDieArray[1] > defenceDieArray[1]) {
+					Utility.writeLog(
+							"Defender lost round and one army. Current army count + " + defenseTerritory.getArmies());
 					defenseTerritory.looseArmy();
-				else
+				} else {
+					Utility.writeLog(
+							"Attacker lost round and one army. Current army count + " + aTerritory.getArmies());
 					aTerritory.looseArmy();
+				}
 			} // if defending with two
 		}
 		notifyPhaseViewChange();
 		if (defenseTerritory.getArmies() == 0) {
+			Utility.writeLog("Defender Lost!!");
 			setState(CAPTURE);
+			notifyPhaseViewChange();
 			defenseTerritory.setPlayer(curPlayer);
 		}
 		if (aTerritory.getArmies() == 0) {
+			Utility.writeLog("Attacker Lost!!");
 			setState(DEFEATED);
 			this.notifyPhaseViewChange(); // show defeat in phase view
 			// setState(ACTIVE_TURN);
@@ -1154,21 +1295,20 @@ public class RiskGameModel {
 	/**
 	 * Checks if is captured.
 	 *
-	  */
+	 */
 	public int isCaptured() {
-		
+
 		if (defender.getOccupiedTerritories().size() == 0) {
 			System.out.println(defender.getName() + " lost the game.");
 			removePlayer(defender);
 			if (players.size() == 1) {
 				System.out.print(active.getName() + " has won the game");
 			}
-			
+
 		}
 		return players.size();
 	}
-		
-			
+
 	/**
 	 * Capture.
 	 *
@@ -1214,8 +1354,9 @@ public class RiskGameModel {
 	/**
 	 * Draw map.
 	 *
-	 * @param index the country index
-	 *            
+	 * @param index
+	 *            the country index
+	 * 
 	 * @return the int[]
 	 */
 	public int[] drawMap(int index) {
@@ -1228,10 +1369,12 @@ public class RiskGameModel {
 	/**
 	 * Fill draw map.
 	 *
-	 * @param index the country index
-	 *            
-	 * @param p risk game player 
-	 *            
+	 * @param index
+	 *            the country index
+	 * 
+	 * @param p
+	 *            risk game player
+	 * 
 	 * @return the int[]
 	 */
 	public int[] fillDrawMap(int index, int p) {
@@ -1244,8 +1387,9 @@ public class RiskGameModel {
 	/**
 	 * Gets the ownership.
 	 *
-	 * @param index the country index
-	 *          
+	 * @param index
+	 *            the country index
+	 * 
 	 * @return the ownership
 	 */
 	public int getOwnership(int index) {
@@ -1265,10 +1409,12 @@ public class RiskGameModel {
 	/**
 	 * Gets the map location.
 	 *
-	 * @param xcoordinate the x-coordinate of territory
-	 *            
-	 * @param ycoordinate the y-coordinate of territory
-	 *            
+	 * @param xcoordinate
+	 *            the x-coordinate of territory
+	 * 
+	 * @param ycoordinate
+	 *            the y-coordinate of territory
+	 * 
 	 * @return the map location
 	 */
 	public int getMapLocation(int xcoordinate, int ycoordinate) {
@@ -1289,11 +1435,11 @@ public class RiskGameModel {
 	}
 
 	/**
-	 * This method checks if the territory is occupied by the current player or
-	 * not.
+	 * This method checks if the territory is occupied by the current player or not.
 	 *
-	 * @param riskterritorymodel the risk territory model
-	 *            
+	 * @param riskterritorymodel
+	 *            the risk territory model
+	 * 
 	 * @return true, if successful
 	 */
 	public boolean occupyTerritory(RiskTerritoryModel riskterritorymodel) {
@@ -1317,18 +1463,14 @@ public class RiskGameModel {
 	/**
 	 * Initial occupy territories.
 	 *
-	 * @param id the territory id
-	 *            
+	 * @param id
+	 *            the territory id
+	 * 
 	 */
 	public void initialOccupyTerritories(int id) {
 
 		if (curPlayer.getNumberOfArmies() > 0) {
-			RiskTerritoryModel riskterritorymodel = territories.elementAt(id);
-			riskterritorymodel.setPlayer(curPlayer);
-			curPlayer.occupyTerritory(riskterritorymodel);
-			riskterritorymodel.addArmy();
-			curPlayer.looseArmy();
-			nextPlayer();
+			occupyTerritoryByPlayer(id, curPlayer);
 		} else
 			System.out.println(curPlayer.getName() + " has no more Armies.");
 
@@ -1425,11 +1567,12 @@ public class RiskGameModel {
 	public int getAttack() {
 		return attackNum;
 	}
-	
+
 	/**
 	 * Sets the attack.
 	 *
-	 * @param num the new attack
+	 * @param num
+	 *            the new attack
 	 */
 	public void setAttack(int num) {
 		attackNum = num;
@@ -1443,11 +1586,12 @@ public class RiskGameModel {
 	public int getDefend() {
 		return defenseNum;
 	}
-	
+
 	/**
 	 * Sets the defend.
 	 *
-	 * @param num the new defend
+	 * @param num
+	 *            the new defend
 	 */
 	public void setDefend(int num) {
 		defenseNum = num;
@@ -1656,9 +1800,11 @@ public class RiskGameModel {
 	/**
 	 * Sets the checks if is game map valid.
 	 *
-	 * @param isGameMapValid the new checks if is game map valid
+	 * @param isGameMapValid
+	 *            the new checks if is game map valid
 	 */
 	public void setIsGameMapValid(Boolean isGameMapValid) {
 		this.isGameMapValid = isGameMapValid;
 	}
+
 }
