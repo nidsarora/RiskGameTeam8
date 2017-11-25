@@ -1,10 +1,6 @@
 **************The Risk Begin************
 
-Sat Nov 25 09:57:50 EST 2017
+Sat Nov 25 10:12:16 EST 2017
 
 All players Added
-
-0 armies added to each player
-
-Build the Game Panel
 
