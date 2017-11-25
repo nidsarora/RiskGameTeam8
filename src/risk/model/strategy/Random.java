@@ -73,6 +73,7 @@ public class Random implements StrategyInterface {
 		int count = 0, cardCount = 0;
 		riskGameModel.lstTradedCards = new ArrayList<RiskCardModel>();
 		riskGameModel.setState(RiskGameModel.REINFORCE);
+		ArrayList<RiskCardModel> cardsRemoved = new ArrayList<RiskCardModel>();
 		Utility.writeLog("TRADE CARD - Some Random dude called - " + riskGameModel.curPlayer.getName()
 				+ " decided to trade cards as he has 5 or more cards!");
 
@@ -93,6 +94,8 @@ public class Random implements StrategyInterface {
 		riskGameModel.curPlayer.setArmiesRecivedByTradingCards(count);
 		riskGameModel.curPlayer.addArmies(count);
 		riskGameModel.deck.addAll(riskGameModel.lstTradedCards);
+		cardsRemoved.addAll(riskGameModel.lstTradedCards); 
+		riskGameModel.looseCard(cardsRemoved);
 		riskGameModel.notifyPhaseViewChange();
 		return null;
 	}
@@ -196,7 +199,7 @@ public class Random implements StrategyInterface {
 						|| riskGameModel.getState() == RiskGameModel.ACTIVE_TURN));
 				if (riskGameModel.getState() == RiskGameModel.CAPTURE)
 					if (capture(false, riskGameModel))
-						endGame(riskGameModel);
+					{ endGame(riskGameModel); return "";} 
 			}
 
 		}

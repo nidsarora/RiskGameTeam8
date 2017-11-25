@@ -530,15 +530,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		}
 
 		if (risk.getState() == RiskGameModel.TRADE_CARDS) {
-			// if (y_coordinate > 350 && y_coordinate < 380) { //Commented - Not sure we are
-			// using it
-			// if (x_coordinate > 475 && x_coordinate < 525) { // if exxti
-			// // button pushed
-			// risk.setState(RiskGameModel.ACTIVE_TURN);
-			// System.out.println("exit");
-			// }
-			// } // end exit
-			// risk.notifyPhaseViewChange();
+			statusLabel.setText("You have to trade your cards to proceed!!!");
 		} // end trade cards
 
 		System.out.println("(" + x_coordinate + ", " + y_coordinate + ")");
@@ -630,6 +622,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	 */
 	public void cardsOKButtonPressed() { // Logic to add armies!
 		int count;
+		ArrayList<RiskCardModel> cardsRemoved = new ArrayList<RiskCardModel>();
 		if (toggleCardButtonsPanel())
 			if (risk.isTradedCardSetValid()) {
 				cardStatusLabel.setText("Success!");
@@ -640,6 +633,10 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 				}
 				risk.curPlayer.setArmiesRecivedByTradingCards(count);
 				risk.curPlayer.addArmies(count);
+				
+				cardsRemoved.addAll(risk.lstTradedCards);
+				risk.looseCard(cardsRemoved);
+				
 				cardStatusLabel.setText("Success");
 				risk.setState(RiskGameModel.REINFORCE); // allowing the player
 				risk.notifyPhaseViewChange(); // to

@@ -731,6 +731,7 @@ public class RiskGameModel {
 
 	public void looseCard(List<RiskCardModel> riskCards) {
 		deck.addAll(riskCards);
+		this.curPlayer.removeCard(riskCards);
 	}
 
 	/**

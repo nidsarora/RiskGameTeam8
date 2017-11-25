@@ -8,6 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 import risk.helpers.Utility;
+import risk.model.RiskCardModel;
 import risk.model.RiskGameModel;
 import risk.model.RiskPlayerModel;
 import risk.model.RiskTerritoryModel;
@@ -70,13 +71,15 @@ public class Cheater implements StrategyInterface {
 	private String tradeCards(RiskGameModel riskGameModel) {
 		int count = 0;
 		riskGameModel.setState(RiskGameModel.REINFORCE);
+		ArrayList<RiskCardModel> cardsRemoved = new ArrayList<RiskCardModel>();
 		Utility.writeLog("TRADE CARD - Some Cheater called - " + riskGameModel.curPlayer.getName()
 				+ " decided to trade cards as he has " + riskGameModel.curPlayer.getCard().size() + " cards!");
 		count = RiskGameModel.fetchTradedArmiesCount();
 		riskGameModel.lstTradedCards = riskGameModel.curPlayer.getCard().subList(0,
 				new Random().nextInt(riskGameModel.curPlayer.getCard().size()));
-		riskGameModel.looseCard(riskGameModel.lstTradedCards);
-		// riskGameModel.curPlayer.removeCard(riskGameModel.lstTradedCards);
+		cardsRemoved.addAll(riskGameModel.lstTradedCards);
+		riskGameModel.looseCard(cardsRemoved);
+		//riskGameModel.curPlayer.removeCard(riskGameModel.lstTradedCards);
 		riskGameModel.curPlayer.setArmiesRecivedByTradingCards(count);
 		riskGameModel.curPlayer.addArmies(count);
 		riskGameModel.notifyPhaseViewChange();
