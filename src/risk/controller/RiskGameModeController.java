@@ -1,14 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * RiskAddPlayerUI.java
- *
- * Created on Nov 15, 2010, 12:39:35 PM
- */
-
 package risk.controller;
 
 import risk.controller.RiskStartGameController;
