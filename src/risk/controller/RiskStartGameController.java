@@ -104,7 +104,7 @@ public class RiskStartGameController extends java.awt.Frame {
 			// TODO Auto-generated catch block
 			exception.printStackTrace();
 		}
-		jButton1.setEnabled(false);
+		btnStartGame.setEnabled(false);
 		setLocationRelativeTo(null);
 
 		try {
@@ -179,10 +179,9 @@ public class RiskStartGameController extends java.awt.Frame {
 	 */
 	public void initComponents() {
 		jPanel1 = new javax.swing.JPanel();
-		jButton1 = new javax.swing.JButton();
-		jButton3 = new javax.swing.JButton();
-		jButton2 = new javax.swing.JButton();
-		jLabel1 = new javax.swing.JLabel();
+		btnStartGame = new javax.swing.JButton();
+		btnExit = new javax.swing.JButton();
+		gameImage = new javax.swing.JLabel();
 
 		setBackground(new java.awt.Color(1, 1, 1));
 		addWindowListener(new java.awt.event.WindowAdapter() {
@@ -194,73 +193,63 @@ public class RiskStartGameController extends java.awt.Frame {
 		jPanel1.setBackground(new java.awt.Color(1, 1, 1));
 		jPanel1.setName("jPanel1"); // NOI18N
 
-		jButton1.setText("Start Game");
-		jButton1.setName("jButton1"); // NOI18N
-		jButton1.addActionListener(new java.awt.event.ActionListener() {
+		btnStartGame.setText("Start Game");
+		btnStartGame.setName("jButton1"); // NOI18N
+		btnStartGame.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent event) {
 				jButton1ActionPerformed(event);
 			}
 		});
 
-		jButton3.setText("Exit");
-		jButton3.setName("jButton3"); // NOI18N
-		jButton3.addActionListener(new java.awt.event.ActionListener() {
+		btnExit.setText("Exit");
+		btnExit.setName("jButton3"); // NOI18N
+		btnExit.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent event) {
 				jButton3ActionPerformed(event);
 			}
 		});
 
-		jButton2.setText("Add RiskPlayer");
-		jButton2.setName("jButton2"); // NOI18N
-		jButton2.addActionListener(new java.awt.event.ActionListener() {
-			public void actionPerformed(java.awt.event.ActionEvent event) {
-				jButton2ActionPerformed(event);
+		gameImage.setIcon(new javax.swing.ImageIcon(getClass().getResource(Utility.getImagePath("risk-logo.jpg")))); // NOI18N
+		gameImage.setName("jLabel1");
+		
+		btnChooseGameMode = new JButton("Choose Game Mode");
+		btnChooseGameMode.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				RiskGameModeController mode = new RiskGameModeController();
+				mode.setVisible(true);
 			}
 		});
-
-		jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource(Utility.getImagePath("risk-logo.jpg")))); // NOI18N
-		jLabel1.setName("jLabel1");
-
-		JButton btnChooseMap = new JButton();
-		btnChooseMap.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				try {
-					userDefinedContinentList.clear();
-					hmCountryDetails.clear();
-					generateChooseMapPanel();
-					populateMapPanel();
-					initializeMapVariables();
-					RiskController.isBaseMapEdited = true;
-				} catch (IOException exception) {
-					exception.printStackTrace();
-				}
-			}
-
-		});
-		btnChooseMap.setText("Choose Map");
-		btnChooseMap.setName("jButton1");
-		btnChooseMap.setEnabled(true);
 
 		javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-		jPanel1Layout.setHorizontalGroup(jPanel1Layout.createParallelGroup(Alignment.TRAILING)
-				.addGroup(jPanel1Layout.createSequentialGroup().addContainerGap()
-						.addGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
-								.addGroup(jPanel1Layout.createSequentialGroup().addComponent(jLabel1)
-										.addContainerGap(43, Short.MAX_VALUE))
-								.addGroup(jPanel1Layout.createSequentialGroup().addGap(109)
-										.addGroup(jPanel1Layout.createParallelGroup(Alignment.CENTER)
-												.addComponent(jButton2, GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE)
-												.addComponent(jButton3, GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE)
-												.addComponent(btnChooseMap, GroupLayout.PREFERRED_SIZE, 113,
-														GroupLayout.PREFERRED_SIZE)
-												.addComponent(jButton1, GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE))
-										.addGap(87)))));
-		jPanel1Layout.setVerticalGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
-				.addGroup(jPanel1Layout.createSequentialGroup().addContainerGap().addComponent(jLabel1)
-						.addPreferredGap(ComponentPlacement.UNRELATED).addComponent(btnChooseMap).addGap(12)
-						.addComponent(jButton1).addPreferredGap(ComponentPlacement.RELATED).addComponent(jButton2)
-						.addPreferredGap(ComponentPlacement.UNRELATED).addComponent(jButton3)
-						.addContainerGap(42, Short.MAX_VALUE)));
+		jPanel1Layout.setHorizontalGroup(
+			jPanel1Layout.createParallelGroup(Alignment.TRAILING)
+				.addGroup(jPanel1Layout.createSequentialGroup()
+					.addContainerGap()
+					.addGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
+						.addGroup(jPanel1Layout.createSequentialGroup()
+							.addComponent(gameImage)
+							.addContainerGap(49, Short.MAX_VALUE))
+						.addGroup(jPanel1Layout.createSequentialGroup()
+							.addGap(109)
+							.addGroup(jPanel1Layout.createParallelGroup(Alignment.CENTER)
+								.addComponent(btnStartGame, GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+								.addComponent(btnChooseGameMode)
+								.addComponent(btnExit, GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE))
+							.addGap(87))))
+		);
+		jPanel1Layout.setVerticalGroup(
+			jPanel1Layout.createParallelGroup(Alignment.LEADING)
+				.addGroup(jPanel1Layout.createSequentialGroup()
+					.addContainerGap()
+					.addComponent(gameImage)
+					.addGap(46)
+					.addComponent(btnStartGame)
+					.addPreferredGap(ComponentPlacement.UNRELATED)
+					.addComponent(btnChooseGameMode)
+					.addPreferredGap(ComponentPlacement.UNRELATED)
+					.addComponent(btnExit)
+					.addContainerGap(37, Short.MAX_VALUE))
+		);
 		jPanel1.setLayout(jPanel1Layout);
 
 		add(jPanel1, java.awt.BorderLayout.CENTER);
@@ -270,6 +259,18 @@ public class RiskStartGameController extends java.awt.Frame {
 		initializeCurrentGameMap();
 	}
 
+	public void onChooseMap() {
+		try {
+			userDefinedContinentList.clear();
+			hmCountryDetails.clear();
+			generateChooseMapPanel();
+			populateMapPanel();
+			initializeMapVariables();
+			RiskController.isBaseMapEdited = true;
+		} catch (IOException exception) {
+			exception.printStackTrace();
+		}
+	}
 	/**
 	 * Populate map panel.
 	 *
@@ -322,10 +323,7 @@ public class RiskStartGameController extends java.awt.Frame {
 		System.exit(0);
 	}
 
-	private void jButton2ActionPerformed(java.awt.event.ActionEvent event) {
-		RiskAddPlayerController add = new RiskAddPlayerController();
-		add.setVisible(true);
-	}
+
 
 	/**
 	 * Creates the JFrame and JPanels within on the click on Choose Map Button.
@@ -1108,10 +1106,9 @@ public class RiskStartGameController extends java.awt.Frame {
 		});
 	}
 
-	public static javax.swing.JButton jButton1;
-	private javax.swing.JButton jButton2;
-	private javax.swing.JButton jButton3;
-	private javax.swing.JLabel jLabel1;
+	public static javax.swing.JButton btnStartGame;
+	private javax.swing.JButton btnExit;
+	private javax.swing.JLabel gameImage;
 	private javax.swing.JPanel jPanel1;
 	javax.swing.JLabel jLabelCustomMap;
 	javax.swing.JButton jButtonCustomMap;
@@ -1133,5 +1130,6 @@ public class RiskStartGameController extends java.awt.Frame {
 	private JButton continentDoneButton;
 	private StringBuilder sbMapTerritoryContents = new StringBuilder();
 	private StringBuilder sbMapContinentContents = new StringBuilder();
+	private JButton btnChooseGameMode;
 
 }
