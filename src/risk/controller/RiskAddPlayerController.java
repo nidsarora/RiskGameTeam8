@@ -27,10 +27,9 @@ import java.awt.Color;
 import javax.swing.JComboBox;
 
 import java.awt.event.ActionListener;
-<<<<<<< HEAD
-=======
+
 import java.util.ArrayList;
->>>>>>> UI_Code
+
 import java.util.Random;
 import java.awt.event.ActionEvent;
 
@@ -137,29 +136,7 @@ public class RiskAddPlayerController extends java.awt.Frame {
 		
 		
 		javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-<<<<<<< HEAD
-		jPanel1Layout
-				.setHorizontalGroup(
-						jPanel1Layout.createParallelGroup(Alignment.TRAILING)
-								.addGroup(jPanel1Layout.createSequentialGroup().addContainerGap(202, Short.MAX_VALUE)
-										.addComponent(lblEnterTheNumber, GroupLayout.PREFERRED_SIZE, 197,
-												GroupLayout.PREFERRED_SIZE)
-										.addGap(114))
-								.addGroup(jPanel1Layout.createSequentialGroup().addContainerGap(377, Short.MAX_VALUE)
-										.addComponent(jButton1, GroupLayout.PREFERRED_SIZE, 124,
-												GroupLayout.PREFERRED_SIZE)
-										.addGap(12))
-								.addGroup(
-										jPanel1Layout.createSequentialGroup().addGap(239)
-												.addComponent(comboBox, GroupLayout.PREFERRED_SIZE,
-														GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-												.addContainerGap(243, Short.MAX_VALUE)));
-		jPanel1Layout.setVerticalGroup(jPanel1Layout.createParallelGroup(Alignment.TRAILING)
-				.addGroup(jPanel1Layout.createSequentialGroup().addContainerGap().addComponent(lblEnterTheNumber)
-						.addPreferredGap(ComponentPlacement.RELATED).addComponent(comboBox, GroupLayout.PREFERRED_SIZE,
-								GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addGap(12).addComponent(jButton1).addGap(20)));
-=======
+
 		jPanel1Layout.setHorizontalGroup(
 			jPanel1Layout.createParallelGroup(Alignment.LEADING)
 				.addGroup(jPanel1Layout.createSequentialGroup()
@@ -246,7 +223,7 @@ public class RiskAddPlayerController extends java.awt.Frame {
 					.addComponent(doneSelectingPlayers)
 					.addGap(29))
 		);
->>>>>>> UI_Code
+
 		jPanel1.setLayout(jPanel1Layout);
 
 		add(jPanel1, java.awt.BorderLayout.CENTER);
@@ -376,19 +353,34 @@ public class RiskAddPlayerController extends java.awt.Frame {
 
 		if (RiskGameModel.removeAllPlayer())
 			System.out.println("all players removed");
-<<<<<<< HEAD
+
 
 		// for (int i = 1; i <= noOfPlayers; i++) {
 		// RiskGameModel.addPlayer("Player_" + i);
 		// added = true;
 		// }
-		RiskGameModel.addPlayer("Player_" + 1, new risk.model.strategy.Random());
-		RiskGameModel.addPlayer("Player_" + 2, new risk.model.strategy.Cheater());
-=======
-		RiskGameModel.addPlayer("Player_" + 1, new Human());
-		RiskGameModel.addPlayer("Player_" + 2, new risk.model.strategy.Random());
->>>>>>> UI_Code
-		RiskGameModel.addPlayer("Player_" + 3, new risk.model.strategy.Random());
+		System.out.println("size of list"+noOfPlayers);
+		
+		for(int i=0;i<noOfPlayers;i++) {
+			System.out.println("player"+(i+1)+" "+behaviourPlayers.get(i));
+			switch(behaviourPlayers.get(i)) {
+			
+			case "Human":
+				RiskGameModel.addPlayer("Player_" + i+1, new risk.model.strategy.Human());
+			case "Aggressive":
+				RiskGameModel.addPlayer("Player_" + i+1, new risk.model.strategy.Aggressive());
+			case "Benevolent":
+				RiskGameModel.addPlayer("Player_" + i+1, new risk.model.strategy.Benevolent());	
+			case "Random":
+				RiskGameModel.addPlayer("Player_" + i+1, new risk.model.strategy.Random());				
+			case "Cheater":
+				RiskGameModel.addPlayer("Player_" + i+1, new risk.model.strategy.Cheater());	
+			}
+				
+		}
+//		RiskGameModel.addPlayer("Player_" + 1, new risk.model.strategy.Random());
+//		RiskGameModel.addPlayer("Player_" + 2, new risk.model.strategy.Cheater());
+//        RiskGameModel.addPlayer("Player_" + 3, new risk.model.strategy.Random());
 		added = true;
 		if (added == true) {
 			System.out.println(" added.");

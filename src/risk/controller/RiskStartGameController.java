@@ -209,32 +209,6 @@ public class RiskStartGameController extends java.awt.Frame {
 			}
 		});
 
-<<<<<<< HEAD
-		jButton2.setText("Add RiskPlayer");
-		jButton2.setName("jButton2"); // NOI18N
-		jButton2.addActionListener(new java.awt.event.ActionListener() {
-			public void actionPerformed(java.awt.event.ActionEvent event) {
-				jButton2ActionPerformed(event);
-			}
-		});
-
-		jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource(Utility.getImagePath("risk-logo.jpg")))); // NOI18N
-		jLabel1.setName("jLabel1");
-
-		JButton btnChooseMap = new JButton();
-		btnChooseMap.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				try {
-					userDefinedContinentList.clear();
-					hmCountryDetails.clear();
-					generateChooseMapPanel();
-					populateMapPanel();
-					initializeMapVariables();
-					RiskController.isBaseMapEdited = true;
-				} catch (IOException exception) {
-					exception.printStackTrace();
-				}
-=======
 		gameImage.setIcon(new javax.swing.ImageIcon(getClass().getResource(Utility.getImagePath("risk-logo.jpg")))); // NOI18N
 		gameImage.setName("jLabel1");
 		
@@ -243,7 +217,6 @@ public class RiskStartGameController extends java.awt.Frame {
 			public void actionPerformed(ActionEvent e) {
 				RiskGameModeController mode = new RiskGameModeController();
 				mode.setVisible(true);
->>>>>>> UI_Code
 			}
 		});
 
@@ -349,6 +322,8 @@ public class RiskStartGameController extends java.awt.Frame {
 	private void jButton3ActionPerformed(java.awt.event.ActionEvent event) {
 		System.exit(0);
 	}
+
+
 
 	/**
 	 * Creates the JFrame and JPanels within on the click on Choose Map Button.
