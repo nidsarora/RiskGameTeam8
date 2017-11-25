@@ -11,10 +11,18 @@ import risk.model.RiskPlayerModel;
 import risk.model.RiskTerritoryModel;
 import risk.model.interfaces.StrategyInterface;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Random.
+ */
 public class Random implements StrategyInterface {
 
+	/** The current risk model. */
 	RiskGameModel currentRiskModel;
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#takeTurn(boolean, risk.model.RiskGameModel)
+	 */
 	@Override
 	public String takeTurn(boolean isTest, RiskGameModel riskGameModel) {
 		Utility.writeLog("***********" + riskGameModel.curPlayer.getName() + " turn *************");
@@ -31,6 +39,9 @@ public class Random implements StrategyInterface {
 		return "";
 	}
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#initialReinforce(boolean, risk.model.RiskGameModel, int[])
+	 */
 	@Override
 	public String initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (riskGameModel.curPlayer.getNumberOfArmies() > 0) {
@@ -55,6 +66,9 @@ public class Random implements StrategyInterface {
 		return "";
 	}
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#startTurn(boolean, risk.model.RiskGameModel)
+	 */
 	@Override
 	public String startTurn(boolean isTest, RiskGameModel riskGameModel) {
 		currentRiskModel = riskGameModel;
@@ -69,6 +83,12 @@ public class Random implements StrategyInterface {
 
 	}
 
+	/**
+	 * Trade cards.
+	 *
+	 * @param riskGameModel the risk game model
+	 * @return the string
+	 */
 	private String tradeCards(RiskGameModel riskGameModel) {
 		int count = 0, cardCount = 0;
 		riskGameModel.lstTradedCards = new ArrayList<RiskCardModel>();
@@ -100,6 +120,9 @@ public class Random implements StrategyInterface {
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#reinforce(boolean, risk.model.RiskGameModel, int[])
+	 */
 	@Override
 	public String reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
@@ -129,6 +152,9 @@ public class Random implements StrategyInterface {
 		return attack(false, riskGameModel);
 	}
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#attack(boolean, risk.model.RiskGameModel, int[])
+	 */
 	@Override
 	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
@@ -209,11 +235,23 @@ public class Random implements StrategyInterface {
 		return fortify(false, currentRiskModel);
 	}
 
+	/**
+	 * End game.
+	 *
+	 * @param riskGameModel the risk game model
+	 */
 	public void endGame(RiskGameModel riskGameModel) {
 		Utility.writeLog("Thats all ya, " + riskGameModel.curPlayer.getName() + " won the game!!!");
 		System.exit(0);
 	}
 
+	/**
+	 * Capture.
+	 *
+	 * @param isTest the is test
+	 * @param riskGameModel the risk game model
+	 * @return the boolean
+	 */
 	public Boolean capture(boolean isTest, RiskGameModel riskGameModel) {
 		/*
 		 * Write Logic for moving random armies after capture and then capture base code
@@ -239,6 +277,11 @@ public class Random implements StrategyInterface {
 		return isEndOfGame;
 	}
 
+	/**
+	 * Should fire in the hole.
+	 *
+	 * @return true, if successful
+	 */
 	private boolean shouldFireInTheHole() {
 		/* Randomly decide to proceed with another attack or not */
 		for (RiskTerritoryModel selfOccupiedTerritory : currentRiskModel.curPlayer.getOccupiedTerritories()) {
@@ -249,6 +292,12 @@ public class Random implements StrategyInterface {
 		return false;
 	}
 
+	/**
+	 * Gets the random occupied territory by player.
+	 *
+	 * @param riskPlayer the risk player
+	 * @return the random occupied territory by player
+	 */
 	private int getRandomOccupiedTerritoryByPlayer(RiskPlayerModel riskPlayer) {
 		if (riskPlayer.getOccupiedTerritories().size() > 0)
 			return riskPlayer.getOccupiedTerritories()
@@ -256,6 +305,12 @@ public class Random implements StrategyInterface {
 		return -1;
 	}
 
+	/**
+	 * Gets the valid random attack defend territory.
+	 *
+	 * @param riskGameModel the risk game model
+	 * @return the valid random attack defend territory
+	 */
 	private RiskTerritoryModel[] getValidRandomAttackDefendTerritory(RiskGameModel riskGameModel) {
 		RiskTerritoryModel validDefenderTerritory;
 		for (RiskTerritoryModel validAttackerTerritory : riskGameModel.curPlayer.getOccupiedTerritories()) {
@@ -270,6 +325,13 @@ public class Random implements StrategyInterface {
 		return null;
 	}
 
+	/**
+	 * Gets the valid random defender.
+	 *
+	 * @param validAttackerTerritory the valid attacker territory
+	 * @param riskGameModel the risk game model
+	 * @return the valid random defender
+	 */
 	private RiskTerritoryModel getValidRandomDefender(RiskTerritoryModel validAttackerTerritory,
 			RiskGameModel riskGameModel) {
 		for (int adjacent : validAttackerTerritory.getAdjacents()) {
@@ -280,6 +342,9 @@ public class Random implements StrategyInterface {
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#fortify(boolean, risk.model.RiskGameModel, int[])
+	 */
 	@Override
 	public String fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		Utility.writeLog("FORTIFY - Some Random dude called - " + riskGameModel.curPlayer.getName()
@@ -323,6 +388,12 @@ public class Random implements StrategyInterface {
 		return "";
 	}
 
+	/**
+	 * Gets the fortified territory.
+	 *
+	 * @param fortifierTerritory the fortifier territory
+	 * @return the fortified territory
+	 */
 	private RiskTerritoryModel getFortifiedTerritory(RiskTerritoryModel fortifierTerritory) {
 		for (int territory : fortifierTerritory.getAdjacents()) {
 			if (currentRiskModel.curPlayer.getOccupiedTerritories()
@@ -332,6 +403,12 @@ public class Random implements StrategyInterface {
 		return null;
 	}
 
+	/**
+	 * Checks for self occupied ajacents.
+	 *
+	 * @param viableTerritory the viable territory
+	 * @return true, if successful
+	 */
 	private boolean hasSelfOccupiedAjacents(RiskTerritoryModel viableTerritory) {
 		for (int territory : viableTerritory.getAdjacents()) {
 			if (currentRiskModel.curPlayer.getOccupiedTerritories()
