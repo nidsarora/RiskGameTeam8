@@ -231,7 +231,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 						.addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)));
 
 		Utility.writeLog("Build the Game Panel");
-
+		
 		pack();
 	}
 
@@ -270,7 +270,11 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	private void EndButtonMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_EndButtonMouseClicked
 		risk.nextPlayer();
 		risk.setState(RiskGameModel.START_TURN);
+<<<<<<< HEAD
 		// risk.gamePhaseActive(0, 0);
+=======
+		//risk.gamePhaseActive(0, 0);
+>>>>>>> UI_Code
 		risk.curPlayer.startTurn(risk);
 		risk.active = risk.curPlayer;
 		jPanel3.repaint();
@@ -283,10 +287,17 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		Utility.writeLog("Current player turn ends");
 	}
 
+<<<<<<< HEAD
 	// private void gamePausePlay() {
 	// Thread.sleep(millis);
 	// }
 
+=======
+//	private void gamePausePlay() {
+//		Thread.sleep(millis);
+//	}
+	
+>>>>>>> UI_Code
 	/**
 	 * Fortify button mouse clicked.
 	 */
@@ -453,6 +464,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			if (Integer.valueOf(risk.gamePhaseActive(x_coordinate, y_coordinate)) > 0) {
 				if (defenseArmies - risk.defenseTerritory.getArmies() == 1) {
 					statusLabel.setText(risk.curPlayer.getName() + " has destroyed an army");
+<<<<<<< HEAD
 					// Utility.writeLog(risk.curPlayer.getName() + " has destroyed an army");
 				} else if (defenseArmies - risk.defenseTerritory.getArmies() == 2) {
 					statusLabel.setText(risk.curPlayer.getName() + " has destroyed two armies");
@@ -463,6 +475,18 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 				} else if (attackArmies - risk.aTerritory.getArmies() == 2) {
 					statusLabel.setText(risk.curPlayer.getName() + " has lost two armies");
 					// Utility.writeLog(risk.curPlayer.getName() + " has lost two armies");
+=======
+					//Utility.writeLog(risk.curPlayer.getName() + " has destroyed an army");
+				} else if (defenseArmies - risk.defenseTerritory.getArmies() == 2) {
+					statusLabel.setText(risk.curPlayer.getName() + " has destroyed two armies");
+					//Utility.writeLog(risk.curPlayer.getName() + " has destroyed two armies");
+				} else if (attackArmies - risk.aTerritory.getArmies() == 1) {
+					statusLabel.setText(risk.curPlayer.getName() + " has lost an army");
+					//Utility.writeLog(risk.curPlayer.getName() + " has lost an army");
+				} else if (attackArmies - risk.aTerritory.getArmies() == 2) {
+					statusLabel.setText(risk.curPlayer.getName() + " has lost two armies");
+					//Utility.writeLog(risk.curPlayer.getName() + " has lost two armies");
+>>>>>>> UI_Code
 				}
 
 				if (risk.aTerritory.getArmies() == 1) {
@@ -484,12 +508,22 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		}
 
 		if (risk.getState() == RiskGameModel.CAPTURE) {
+<<<<<<< HEAD
 
 			statusLabel.setText("Select number of armies to move to " + risk.defenseTerritory.getName());
 			AttackButton.setVisible(false);
 			AttackButton.setText("Attack");
 
 			statusLabel.setText(risk.gamePhaseActive(x_coordinate, y_coordinate));
+=======
+			 
+			 statusLabel.setText("Select number of armies to move to " +
+			 risk.defenseTerritory.getName());
+			 AttackButton.setVisible(false);
+			 AttackButton.setText("Attack");
+			 
+			statusLabel.setText(risk.gamePhaseActive(x_coordinate, y_coordinate)); 
+>>>>>>> UI_Code
 			if (risk.xCoordinate > 460 && risk.xCoordinate < 545) {// move has ben
 				// clicked
 				if (risk.yCoordinate > 325 && risk.yCoordinate < 355) {// then occupy
@@ -667,6 +701,80 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	}
 
 	/**
+<<<<<<< HEAD
+=======
+	 * This method checks if the TradeCardSet is valid or not i.e. if the number of
+	 * cards is 3, and then checks if all 3 are either the same or all three are of
+	 * different types or one of the three is a wild card
+	 *
+	 * @return the boolean
+	 */
+	public Boolean isTradedCardSetValid() {
+
+		if (lstTradedCards.size() == 3) {
+
+			if (!isAWildCardSet()) {
+				// If all the cards are same
+				if (lstTradedCards.get(0).card_type.equals(lstTradedCards.get(1).card_type)
+						&& lstTradedCards.get(1).card_type.equals(lstTradedCards.get(2).card_type)) {
+					cardStatusLabel.setText("Success");
+					return true;
+				}
+
+				// all 3 are different
+				else if (!lstTradedCards.get(0).card_type.equals(lstTradedCards.get(1).card_type)
+						&& !lstTradedCards.get(1).card_type.equals(lstTradedCards.get(2).card_type)
+						&& !lstTradedCards.get(0).card_type.equals(lstTradedCards.get(2).card_type)) {
+					cardStatusLabel.setText("Success");
+					Utility.writeLog("card traded successfully");
+					return true;
+				}
+			} else {
+				if (isValidCountWildCard()) {
+					cardStatusLabel.setText("Success");
+					Utility.writeLog("card traded successfully");
+					return true;
+				} else {
+					cardStatusLabel.setText("Please select only/atleast three cards!");
+					return false;
+				}
+			}
+		}
+
+		cardStatusLabel.setText("Please select only/atleast three cards!");
+		return false;
+	}
+
+	/**
+	 * This method checks if the TradeCardSet is a WildCardSet or not.
+	 *
+	 * @return the boolean
+	 */
+	public Boolean isAWildCardSet() {
+		for (RiskCardModel card : lstTradedCards) {
+			if (card.card_type.equals("WILD"))
+				return true;
+		}
+		return false;
+	}
+
+	/**
+	 * Checks if is valid count wild card.
+	 *
+	 * @return the boolean
+	 */
+	public Boolean isValidCountWildCard() {
+		int count = 0;
+		for (RiskCardModel card : lstTradedCards) {
+			if (card.card_type.equals("WILD")) {
+				count++;
+			}
+		}
+		return (count > 1 ? false : true);
+	}
+
+	/**
+>>>>>>> UI_Code
 	 * Creates the layout.
 	 */
 	private void createLayout(JComponent... arg) {

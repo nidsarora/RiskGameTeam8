@@ -1,5 +1,6 @@
 package risk.model.strategy;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Vector;
@@ -11,6 +12,9 @@ import risk.helpers.Utility;
 import risk.model.RiskGameModel;
 import risk.model.RiskPlayerModel;
 import risk.model.RiskTerritoryModel;
+=======
+import risk.model.RiskGameModel;
+>>>>>>> UI_Code
 import risk.model.interfaces.StrategyInterface;
 
 public class Cheater implements StrategyInterface {
@@ -84,6 +88,7 @@ public class Cheater implements StrategyInterface {
 	}
 
 	@Override
+<<<<<<< HEAD
 	public String reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
 		 * Randomly reinforce any random countries; assuming this time this player has
@@ -223,6 +228,42 @@ public class Cheater implements StrategyInterface {
 			}
 		}
 		return fortifiableTerritories;
+=======
+	public String startTurn(boolean isTest,RiskGameModel riskGameModel) {
+		// TODO Auto-generated method stub
+		return null;
 	}
+
+	@Override
+	public String reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+		// TODO Auto-generated method stub
+		return null;
+>>>>>>> UI_Code
+	}
+
+	@Override
+	public String fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String takeTurn(boolean isTest, RiskGameModel riskGameModel) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 
 }

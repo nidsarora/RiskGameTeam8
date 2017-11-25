@@ -1,5 +1,8 @@
 package risk.model.strategy;
+<<<<<<< HEAD
 
+=======
+>>>>>>> UI_Code
 import risk.helpers.Utility;
 import risk.model.RiskGameModel;
 import risk.model.RiskTerritoryModel;
@@ -7,12 +10,21 @@ import risk.model.interfaces.StrategyInterface;
 
 public class Human implements StrategyInterface {
 
+<<<<<<< HEAD
+=======
+	
+
+>>>>>>> UI_Code
 	@Override
 	public String takeTurn(boolean isTest, RiskGameModel riskGameModel) {
 		// TODO Auto-generated method stub
 		return null;
 	}
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> UI_Code
 	/**
 	 * this function is for Risk start turn.
 	 *
@@ -42,8 +54,11 @@ public class Human implements StrategyInterface {
 			return Riskattack(territory[0], riskGameModel);
 		if (riskGameModel.getState() == RiskGameModel.ATTACK_PHASE)
 			return RiskAttackPhase(territory[0], riskGameModel.xCoordinate, riskGameModel.yCoordinate, riskGameModel);
+<<<<<<< HEAD
 		if (riskGameModel.getState() == RiskGameModel.CAPTURE)
 			return capture(false,territory[0], riskGameModel);
+=======
+>>>>>>> UI_Code
 
 		return "";
 	}
@@ -55,7 +70,11 @@ public class Human implements StrategyInterface {
 			{
 				riskGameModel.occupyTerritory(RiskGameModel.territories.elementAt(territory[0])); // occupy
 				Utility.writeLog("INITIAL REINFORCE - Some Human called - " + riskGameModel.curPlayer.getName()
+<<<<<<< HEAD
 						+ " placed one of his army on " + riskGameModel.getTerritoryAt(territory[0]).getName());
+=======
+				+ " placed one of his army on " + riskGameModel.getTerritoryAt(territory[0]).getName());
+>>>>>>> UI_Code
 				riskGameModel.notifyPhaseViewChange();
 				return "true";
 			}
@@ -190,10 +209,17 @@ public class Human implements StrategyInterface {
 					// AttackButton.setText("Attack");
 					// FortifyButton.setVisible(true);
 					// EndButton.setVisible(true);
+<<<<<<< HEAD
 					// risk.defenseNum = 0;
 					// risk.attackNum = 0;
 					// risk.defenseTerritory = null;
 					// risk.aTerritory = null;
+=======
+//					risk.defenseNum = 0;
+//					risk.attackNum = 0;
+//					risk.defenseTerritory = null;
+//					risk.aTerritory = null;
+>>>>>>> UI_Code
 				}
 			}
 
@@ -380,16 +406,28 @@ public class Human implements StrategyInterface {
 						+ " armies moved to " + riskGameModel.defenseTerritory.getName());
 				// EndButton.setVisible(true);
 				// FortifyButton.setVisible(true);
+<<<<<<< HEAD
 				//if (riskGameModel.capture()) {
+=======
+				if (riskGameModel.capture()) {
+>>>>>>> UI_Code
 					// AttackButton.setVisible(false);
 					// FortifyButton.setVisible(false);
 					// CardButton.setVisible(false);
 					// EndButton.setVisible(false);
+<<<<<<< HEAD
 					//statusLabelText = riskGameModel.getCurrentPlayer().getName() + " has won the game";
 					// JOptionPane.showMessageDialog(null,
 					// riskGameModel.getCurrentPlayer().getName() + " has won the game",
 					// "Alert", JOptionPane.INFORMATION_MESSAGE);
 				//}
+=======
+					statusLabelText = riskGameModel.getCurrentPlayer().getName() + " has won the game";
+					// JOptionPane.showMessageDialog(null,
+					// riskGameModel.getCurrentPlayer().getName() + " has won the game",
+					// "Alert", JOptionPane.INFORMATION_MESSAGE);
+				}
+>>>>>>> UI_Code
 			}
 		}
 		// risk.notifyPhaseViewChange();

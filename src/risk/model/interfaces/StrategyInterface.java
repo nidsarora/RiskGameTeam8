@@ -10,6 +10,15 @@ public interface StrategyInterface {
 
 	public String startTurn(boolean isTest, RiskGameModel riskGameModel);
 
+<<<<<<< HEAD
+=======
+	public String takeTurn(boolean isTest, RiskGameModel riskGameModel);
+	
+	public String initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory);
+
+	public String startTurn(boolean isTest, RiskGameModel riskGameModel);
+
+>>>>>>> UI_Code
 	public String reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory);
 
 	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory);

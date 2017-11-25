@@ -33,7 +33,10 @@ import risk.model.Observable.RiskReinforcementPhaseModel;
 import risk.model.Observable.RiskStartupEndPhaseModel;
 import risk.model.Observable.RiskStartupPhaseModel;
 import risk.model.interfaces.StrategyInterface;
+<<<<<<< HEAD
 import risk.model.strategy.Cheater;
+=======
+>>>>>>> UI_Code
 import risk.view.RiskCardExchangeViewObserver;
 import risk.view.RiskPhaseViewObserver;
 import risk.view.RiskPlayerDominationViewObserver;
@@ -205,8 +208,11 @@ public class RiskGameModel {
 
 	public int yCoordinate;
 
+<<<<<<< HEAD
 	public List<RiskCardModel> lstTradedCards = new ArrayList<RiskCardModel>();
 
+=======
+>>>>>>> UI_Code
 	/**
 	 * Instantiates a new risk game model.
 	 *
@@ -233,6 +239,7 @@ public class RiskGameModel {
 							// reinforcement
 	}
 
+<<<<<<< HEAD
 	public Boolean anyPlayerHasArmies() {
 		for (RiskPlayerModel player : this.players) {
 			if (player.getNumberOfArmies() > 0)
@@ -322,6 +329,8 @@ public class RiskGameModel {
 		return (count > 1 ? false : true);
 	}
 
+=======
+>>>>>>> UI_Code
 	private void assignTerritories() {
 		int territoryId = -1;
 		while ((territoryId = getUnOccupiedTerritory()) != -1) {
@@ -542,6 +551,7 @@ public class RiskGameModel {
 			this.getRiskFortifyPhaseModelObservable().isChanged();
 			System.out.println("FORTIFY_PHASE");
 		}
+<<<<<<< HEAD
 		// try {
 		if (this.mainPanel != null && this.subPanel != null) {
 			this.mainPanel.repaint();
@@ -552,6 +562,18 @@ public class RiskGameModel {
 		// // TODO Auto-generated catch block
 		// e.printStackTrace();
 		// }
+=======
+//		try {
+			if (this.mainPanel != null && this.subPanel != null) {
+				this.mainPanel.repaint();
+				this.subPanel.repaint();
+			}
+//			Thread.sleep(0);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+>>>>>>> UI_Code
 	}
 
 	/**
@@ -1356,7 +1378,11 @@ public class RiskGameModel {
 				aTerritory.looseArmy();
 				Utility.writeLog("Attacker lost round and one army. Current army count + " + aTerritory.getArmies());
 			}
+<<<<<<< HEAD
 
+=======
+			
+>>>>>>> UI_Code
 			if (defenseNum == 2) {
 				Utility.writeLog("Round 2 - Attacker - " + attackDieArray[1] + " Vs Defender " + defenceDieArray[1]);
 				System.out.print(attackDieArray[1] + " vs " + defenceDieArray[1]);
@@ -1378,7 +1404,11 @@ public class RiskGameModel {
 			notifyPhaseViewChange();
 			defenseTerritory.setPlayer(curPlayer);
 		}
+<<<<<<< HEAD
 		if (aTerritory.getArmies() == 1) {
+=======
+		if (aTerritory.getArmies() == 0) {
+>>>>>>> UI_Code
 			Utility.writeLog("Attacker Lost!!");
 			setState(DEFEATED);
 			this.notifyPhaseViewChange(); // show defeat in phase view

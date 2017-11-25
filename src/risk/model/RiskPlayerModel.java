@@ -1,6 +1,9 @@
 package risk.model;
 
+<<<<<<< HEAD
 import java.util.List;
+=======
+>>>>>>> UI_Code
 import java.util.Observable;
 import java.util.Vector;
 import risk.model.interfaces.StrategyInterface;
@@ -299,6 +302,7 @@ public class RiskPlayerModel extends Observable {
 
 	public String attack(int territory, RiskGameModel riskModel) {
 		return this.strategy.attack(false, riskModel, territory);
+<<<<<<< HEAD
 	}
 
 	public String startTurn(RiskGameModel riskGameModel) {
@@ -309,6 +313,18 @@ public class RiskPlayerModel extends Observable {
 		return this.strategy.reinforce(false, riskGameModel, territory);
 	}
 
+=======
+	}
+
+	public String startTurn(RiskGameModel riskGameModel) {
+		return this.strategy.startTurn(false, riskGameModel);
+	}
+
+	public String reinforce(int territory, RiskGameModel riskGameModel) {
+		return this.strategy.reinforce(false, riskGameModel, territory);
+	}
+
+>>>>>>> UI_Code
 	public void tradeCard(RiskGameModel riskModel) {
 
 	}
