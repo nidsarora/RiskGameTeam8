@@ -146,6 +146,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		statusLabel = new javax.swing.JLabel();
 		AttackButton = new javax.swing.JButton();
 		EndButton = new javax.swing.JButton();
+		SaveButton = new javax.swing.JButton();
 		FortifyButton = new javax.swing.JButton();
 		CardButton = new javax.swing.JButton();
 
@@ -194,6 +195,16 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 				EndButtonMouseClicked(evt);
 			}
 		});
+		SaveButton.setVisible(true);
+		SaveButton.setFont(resourceMap.getFont("SaveButton.font")); // NOI18N
+		SaveButton.setText("Save Game"); // NOI18N
+		SaveButton.setName("SaveButton"); // NOI18N
+		SaveButton.addMouseListener(new java.awt.event.MouseAdapter() {
+			public void mouseClicked(java.awt.event.MouseEvent evt) {
+				SaveGameButtonMouseClicked(evt);
+			}
+		});
+		jPanel3.add(SaveButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 30, -1, 30));
 		jPanel3.add(EndButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 30, -1, 30));
 
 		FortifyButton.setVisible(false);
@@ -233,6 +244,11 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		Utility.writeLog("Build the Game Panel");
 
 		pack();
+	}
+
+	protected void SaveGameButtonMouseClicked(MouseEvent evt) {
+		// TODO Auto-generated method stub
+		RiskStartGameController.btnLoadSavedGame.setEnabled(true);
 	}
 
 	/**
@@ -350,6 +366,9 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	/** The End button. */
 	private javax.swing.JButton EndButton;
 
+	/** The Save Game button. */
+	private javax.swing.JButton SaveButton;
+	
 	/** The Fortify button. */
 	private javax.swing.JButton FortifyButton;
 	/*

@@ -223,6 +223,16 @@ public class RiskStartGameController extends java.awt.Frame {
 				mode.setVisible(true);
 			}
 		});
+		
+		btnLoadSavedGame = new JButton();
+		btnLoadSavedGame.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+			}
+		});
+		btnLoadSavedGame.setText("Load Saved Game");
+		btnLoadSavedGame.setName("jButton1");
+		btnLoadSavedGame.setEnabled(false);
 
 		javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
 		jPanel1Layout.setHorizontalGroup(
@@ -238,7 +248,8 @@ public class RiskStartGameController extends java.awt.Frame {
 							.addGroup(jPanel1Layout.createParallelGroup(Alignment.CENTER)
 								.addComponent(btnStartGame, GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
 								.addComponent(btnChooseGameMode)
-								.addComponent(btnExit, GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE))
+								.addComponent(btnExit, GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+								.addComponent(btnLoadSavedGame, GroupLayout.PREFERRED_SIZE, 127, GroupLayout.PREFERRED_SIZE))
 							.addGap(87))))
 		);
 		jPanel1Layout.setVerticalGroup(
@@ -250,9 +261,11 @@ public class RiskStartGameController extends java.awt.Frame {
 					.addComponent(btnStartGame)
 					.addPreferredGap(ComponentPlacement.UNRELATED)
 					.addComponent(btnChooseGameMode)
-					.addPreferredGap(ComponentPlacement.UNRELATED)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(btnLoadSavedGame)
+					.addPreferredGap(ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
 					.addComponent(btnExit)
-					.addContainerGap(37, Short.MAX_VALUE))
+					.addContainerGap())
 		);
 		jPanel1.setLayout(jPanel1Layout);
 
@@ -460,7 +473,7 @@ public class RiskStartGameController extends java.awt.Frame {
 
 		RiskController.ShowGUI();
 		// Open the Phase View
-		setVisible(false);
+		//setVisible(false);
 	}
 
 	private void continentButtonPressed(ActionEvent exception) {
@@ -1135,5 +1148,5 @@ public class RiskStartGameController extends java.awt.Frame {
 	private StringBuilder sbMapTerritoryContents = new StringBuilder();
 	private StringBuilder sbMapContinentContents = new StringBuilder();
 	private JButton btnChooseGameMode;
-
+	static JButton btnLoadSavedGame;
 }
