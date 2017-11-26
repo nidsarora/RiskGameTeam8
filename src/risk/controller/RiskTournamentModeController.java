@@ -32,7 +32,6 @@ import java.util.Random;
 import java.awt.event.ActionEvent;
 import javax.swing.JButton;
 
-// TODO: Auto-generated Javadoc
 /**
  * This class is used to add RiskPlayers to the game.
  * 
