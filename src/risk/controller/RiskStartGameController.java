@@ -96,6 +96,10 @@ public class RiskStartGameController extends java.awt.Frame {
 	public RiskStartGameController() {
 
 		Utility.writeLog("**************The Risk Begin************",true);
+		Utility.writeCardViewLog("**************The Risk Begin************",true);
+		Utility.writePhaseViewLog("**************The Risk Begin************",true);
+		Utility.writePlayerViewLog("**************The Risk Begin************",true);
+
 		Utility.writeLog(new Date().toString());
 		initComponents();
 		try {

@@ -5,39 +5,39 @@ import risk.model.interfaces.StrategyInterface;
 
 public class Benevolent implements StrategyInterface {
 	@Override
-	public String startTurn(boolean isTest, RiskGameModel riskGameModel) {
+	public void startTurn(boolean isTest, RiskGameModel riskGameModel) {
 		// TODO Auto-generated method stub
-		return null;
+		return;
 	}
 
 	@Override
-	public String reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public void reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		// TODO Auto-generated method stub
-		return null;
+		return;
 	}
 
 	@Override
-	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public void attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		// TODO Auto-generated method stub
-		return null;
+		return;
 	}
 
 	@Override
-	public String fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public void fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		// TODO Auto-generated method stub
-		return null;
+		return;
 	}
 
 	@Override
-	public String initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public void initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		// TODO Auto-generated method stub
-		return null;
+		return;
 	}
 
 	@Override
-	public String takeTurn(boolean isTest, RiskGameModel riskGameModel) {
+	public void takeTurn(boolean isTest, RiskGameModel riskGameModel) {
 		// TODO Auto-generated method stub
-		return null;
+		return;
 	}
 
 }

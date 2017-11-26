@@ -124,7 +124,8 @@ public class RiskPlayerModel extends Observable {
 	 *
 	 */
 	public void looseTerritory(RiskTerritoryModel riskterritorymodel) {
-		occupiedTerritories.remove(riskterritorymodel);
+		if(!occupiedTerritories.remove(riskterritorymodel))
+				System.exit(0);
 		occupiedTerritories.trimToSize();
 		isChanged();
 	}
@@ -137,11 +138,11 @@ public class RiskPlayerModel extends Observable {
 		cards.add(riskcardmodel);
 		isChanged();
 	}
-	
+
 	public void setCards(List<RiskCardModel> riskcardmodel) {
 		cards.addAll(riskcardmodel);
 	}
-	
+
 	public void removeCard(List<RiskCardModel> riskcardmodel) {
 		cards.removeAll(riskcardmodel);
 	}
@@ -154,7 +155,6 @@ public class RiskPlayerModel extends Observable {
 	public Vector<RiskCardModel> getCard() {
 		return cards;
 	}
-
 
 	/**
 	 * Adds the armies.
@@ -231,7 +231,8 @@ public class RiskPlayerModel extends Observable {
 	 */
 	public String getPlayerDominationViewContent() {
 		StringBuilder sbPlayerDominationViewContent = new StringBuilder();
-		sbPlayerDominationViewContent.append("\n\n**********Player Domination View**********\n");
+		sbPlayerDominationViewContent
+				.append("\n\n**********Player: " + this.getName() + " Domination View**********\n");
 		sbPlayerDominationViewContent.append("Statistics\n\n");
 		sbPlayerDominationViewContent
 				.append("Current Player: " + this.getName() + ":" + this.numOfTerritories() + " territories: ");
@@ -249,12 +250,23 @@ public class RiskPlayerModel extends Observable {
 
 			}
 		}
+		
+
+		sbPlayerDominationViewContent.append("Army count " + this.getNumberOfArmies() + "\n");
+
+		sbPlayerDominationViewContent.append("Territories Occupied by me\n");
+		if (this.getOccupiedTerritories().size() > 0)
+			for (RiskTerritoryModel occupiedTerritory : this.getOccupiedTerritories()) {
+				sbPlayerDominationViewContent.append(occupiedTerritory.getName() + "\n");
+			}
+		else
+			sbPlayerDominationViewContent.append("I own nothing!");
 
 		return sbPlayerDominationViewContent.toString();
 	}
 
-	public String fortify(int territory, RiskGameModel riskModel) {
-		return this.strategy.fortify(false, riskModel, territory);
+	public void fortify(int territory, RiskGameModel riskModel) {
+		 this.strategy.fortify(false, riskModel, territory);
 	}
 
 	/**
@@ -289,24 +301,24 @@ public class RiskPlayerModel extends Observable {
 		return true;
 	}
 
-	public String takeTurn(RiskGameModel riskGameModel) {
-		return this.strategy.takeTurn(false, riskGameModel);
+	public void takeTurn(RiskGameModel riskGameModel) {
+		 this.strategy.takeTurn(false, riskGameModel);
 	}
 
-	public String initialReinforce(int territory, RiskGameModel riskModel) {
-		return this.strategy.initialReinforce(false, riskModel, territory);
+	public void initialReinforce(int territory, RiskGameModel riskModel) {
+		 this.strategy.initialReinforce(false, riskModel, territory);
 	}
 
-	public String attack(int territory, RiskGameModel riskModel) {
-		return this.strategy.attack(false, riskModel, territory);
+	public void attack(int territory, RiskGameModel riskModel) {
+		this.strategy.attack(false, riskModel, territory);
 	}
 
-	public String startTurn(RiskGameModel riskGameModel) {
-		return this.strategy.startTurn(false, riskGameModel);
+	public void startTurn(RiskGameModel riskGameModel) {
+		this.strategy.startTurn(false, riskGameModel);
 	}
 
-	public String reinforce(int territory, RiskGameModel riskGameModel) {
-		return this.strategy.reinforce(false, riskGameModel, territory);
+	public void reinforce(int territory, RiskGameModel riskGameModel) {
+		this.strategy.reinforce(false, riskGameModel, territory);
 	}
 
 	public void tradeCard(RiskGameModel riskModel) {

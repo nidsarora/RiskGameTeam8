@@ -1107,7 +1107,8 @@ public class RiskGameModel {
 		// } // end forty
 
 		if (getState() == FORTIFY || getState() == FORTIFYING || getState() == FORTIFY_PHASE) {
-			return this.curPlayer.fortify(country, this);
+			 this.curPlayer.fortify(country, this);
+			 return "";
 		}
 
 		// if (getState() == ATTACK_PHASE) {
@@ -1123,7 +1124,8 @@ public class RiskGameModel {
 		// } // end attack with
 
 		if (getState() == ATTACKING || getState() == ATTACK || getState() == ATTACK_PHASE || getState() == CAPTURE) {
-			return this.curPlayer.attack(country, this);
+			 this.curPlayer.attack(country, this);
+			 return "";
 		}
 
 		// if (getState() == TRADE_CARDS) {
@@ -1139,7 +1141,8 @@ public class RiskGameModel {
 		// }
 
 		if (getState() == REINFORCE) {
-			return this.curPlayer.reinforce(country, this);
+			 this.curPlayer.reinforce(country, this);
+			 return "";
 		}
 
 		// if (getState() == START_TURN) {
@@ -1147,7 +1150,8 @@ public class RiskGameModel {
 		// }
 
 		if (getState() == START_TURN) {
-			return this.curPlayer.startTurn(this);
+			 this.curPlayer.startTurn(this);
+			 return "";
 		}
 
 		return "";
@@ -1417,8 +1421,12 @@ public class RiskGameModel {
 		RiskTerritoryModel d = defenseTerritory;
 		RiskTerritoryModel a = aTerritory;
 		defender.looseTerritory(d);
-		active.occupyTerritory(d);
+		curPlayer.occupyTerritory(d);
+//		if(defender == active)
+//			System.exit(0);
+		d.setPlayer(curPlayer);
 		boolean flag = false;
+		
 
 		if (defender.getOccupiedTerritories().size() == 0) {
 			Utility.writeLog(defender.getName() + " lost the game.");

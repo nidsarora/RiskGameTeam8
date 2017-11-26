@@ -8,9 +8,9 @@ import risk.model.interfaces.StrategyInterface;
 public class Human implements StrategyInterface {
 
 	@Override
-	public String takeTurn(boolean isTest, RiskGameModel riskGameModel) {
+	public void takeTurn(boolean isTest, RiskGameModel riskGameModel) {
 		// TODO Auto-generated method stub
-		return null;
+		return;
 	}
 
 	/**
@@ -19,7 +19,7 @@ public class Human implements StrategyInterface {
 	 * @return the string
 	 */
 	@Override
-	public String startTurn(boolean isTest, RiskGameModel riskGameModel) {
+	public void startTurn(boolean isTest, RiskGameModel riskGameModel) {
 		riskGameModel.currentPlayerBonusArmiesRecieved = riskGameModel.turnBonus();
 		riskGameModel.curPlayer.addArmies(riskGameModel.currentPlayerBonusArmiesRecieved);
 		if (!isTest)
@@ -27,29 +27,29 @@ public class Human implements StrategyInterface {
 		// recive turn bonus
 		if (riskGameModel.curPlayer.getCard().size() > 5) {
 			riskGameModel.setState(RiskGameModel.TRADE_CARDS);
-			return "tradecards";
+			//return "tradecards";
 		} else {
 			riskGameModel.setState(RiskGameModel.REINFORCE);
-			return "reinforce";
+			//return "reinforce";
 		}
 	}
 
 	@Override
-	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public void attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (riskGameModel.getState() == RiskGameModel.ATTACKING)
-			return RiskAttacking(territory[0], riskGameModel);
+			 RiskAttacking(territory[0], riskGameModel);
 		if (riskGameModel.getState() == RiskGameModel.ATTACK)
-			return Riskattack(territory[0], riskGameModel);
+			Riskattack(territory[0], riskGameModel);
 		if (riskGameModel.getState() == RiskGameModel.ATTACK_PHASE)
-			return RiskAttackPhase(territory[0], riskGameModel.xCoordinate, riskGameModel.yCoordinate, riskGameModel);
+			 RiskAttackPhase(territory[0], riskGameModel.xCoordinate, riskGameModel.yCoordinate, riskGameModel);
 		if (riskGameModel.getState() == RiskGameModel.CAPTURE)
-			return capture(false,territory[0], riskGameModel);
+			capture(false,territory[0], riskGameModel);
 
-		return "";
+		return;
 	}
 
 	@Override
-	public String reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public void reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (territory[0] != -1) // if not a country
 			if (riskGameModel.getOwnership(territory[0]) == riskGameModel.curPlayer.getPlayerIndex()) // if owned
 			{
@@ -57,20 +57,20 @@ public class Human implements StrategyInterface {
 				Utility.writeLog("INITIAL REINFORCE - Some Human called - " + riskGameModel.curPlayer.getName()
 						+ " placed one of his army on " + riskGameModel.getTerritoryAt(territory[0]).getName());
 				riskGameModel.notifyPhaseViewChange();
-				return "true";
+//				return "true";
 			}
-		return "";
+		return;
 	}
 
 	@Override
-	public String fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public void fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (riskGameModel.getState() == RiskGameModel.FORTIFYING)
-			return RiskFortifying(territory[0], riskGameModel);
+			RiskFortifying(territory[0], riskGameModel);
 		if (riskGameModel.getState() == RiskGameModel.FORTIFY)
-			return RiskFortify(territory[0], riskGameModel);
+			RiskFortify(territory[0], riskGameModel);
 		if (riskGameModel.getState() == RiskGameModel.FORTIFY_PHASE)
-			return RiskFortifyPhase(territory[0], riskGameModel);
-		return "";
+			RiskFortifyPhase(territory[0], riskGameModel);
+		return;
 	}
 
 	/**
@@ -397,9 +397,9 @@ public class Human implements StrategyInterface {
 	}
 
 	@Override
-	public String initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public void initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		// TODO Auto-generated method stub
-		return null;
+		return;
 	}
 
 }

@@ -10,6 +10,8 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.ScrollPaneConstants;
+
+import risk.helpers.Utility;
 import risk.model.RiskPlayerModel;
 
 public class RiskPlayerDominationViewObserver implements Observer {
@@ -56,7 +58,8 @@ public class RiskPlayerDominationViewObserver implements Observer {
 	@Override
 	public void update(Observable object, Object argument) {
 		playerDominationViewTextAreaString.append(((RiskPlayerModel)object).getPlayerDominationViewContent());
-		playerDominationViewTextArea.setText(playerDominationViewTextAreaString.toString());
+		playerDominationViewTextArea.setText(((RiskPlayerModel)object).getPlayerDominationViewContent());
+		Utility.writePlayerViewLog(((RiskPlayerModel)object).getPlayerDominationViewContent());
 		playerDominationViewFrame.repaint();
 	}
 }

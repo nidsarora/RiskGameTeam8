@@ -17,6 +17,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.ScrollPaneConstants;
 
+import risk.helpers.Utility;
 import risk.model.interfaces.PhaseViewInterface;
 
 public class RiskPhaseViewObserver implements Observer {
@@ -63,7 +64,8 @@ public class RiskPhaseViewObserver implements Observer {
 	@Override
 	public void update(Observable object, Object argument) {
 		phaseViewTextAreaString.append(((PhaseViewInterface)object).getContent());
-		phaseViewTextArea.setText(phaseViewTextAreaString.toString());
+		phaseViewTextArea.setText(((PhaseViewInterface)object).getContent());
+		Utility.writePhaseViewLog(((PhaseViewInterface)object).getContent());
 		phaseViewFrame.repaint();
 	}
 

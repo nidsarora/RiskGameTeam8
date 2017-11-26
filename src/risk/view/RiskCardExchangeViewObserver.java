@@ -11,6 +11,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.ScrollPaneConstants;
 
+import risk.helpers.Utility;
 import risk.model.RiskPlayerModel;
 
 /**
@@ -87,7 +88,8 @@ public class RiskCardExchangeViewObserver implements Observer {
 	public void update(Observable object, Object argument) {
 		cardExchangeViewTextAreaString.append(((RiskPlayerModel)object).getCardExchangeViewContent());
 		cardExchangeViewTextAreaString.append("*************************************************************");
-		cardExchangeViewTextArea.setText(cardExchangeViewTextAreaString.toString());
+		cardExchangeViewTextArea.setText(((RiskPlayerModel)object).getCardExchangeViewContent());
+		Utility.writeCardViewLog(((RiskPlayerModel)object).getCardExchangeViewContent());
 		cardExchangeViewFrame.repaint();
 	}
 }

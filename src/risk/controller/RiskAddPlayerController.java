@@ -366,24 +366,24 @@ public class RiskAddPlayerController extends java.awt.Frame {
 			switch(behaviourPlayers.get(i)) {
 			
 			case "Human":
-				{RiskGameModel.addPlayer("Player_" + i+1, new risk.model.strategy.Human());
+				{RiskGameModel.addPlayer("Player_" + (i+1), new risk.model.strategy.Human());
 				System.out.println((i+1)+"new risk.model.strategy.Human");
 				break;}
 				
 			case "Aggressive":
-				{RiskGameModel.addPlayer("Player_" + i+1, new risk.model.strategy.Aggressive());
+				{RiskGameModel.addPlayer("Player_" + (i+1), new risk.model.strategy.Aggressive());
 				System.out.println((i+1)+"new risk.model.strategy.Aggressive");
 				break;}
 			case "Benevolent":
-				{RiskGameModel.addPlayer("Player_" + i+1, new risk.model.strategy.Benevolent());	
+				{RiskGameModel.addPlayer("Player_" + (i+1), new risk.model.strategy.Benevolent());	
 				System.out.println((i+1)+"new risk.model.strategy.Benevolent");
 				break;}
 			case "Random":
-				{RiskGameModel.addPlayer("Player_" + i+1, new risk.model.strategy.Random());	
+				{RiskGameModel.addPlayer("Player_" + (i+1), new risk.model.strategy.Random());	
 				System.out.println((i+1)+"new risk.model.strategy.Random");
 				break;}
 			case "Cheater":
-				{RiskGameModel.addPlayer("Player_" + i+1, new risk.model.strategy.Cheater());	
+				{RiskGameModel.addPlayer("Player_" + (i+1), new risk.model.strategy.Cheater());	
 				System.out.println((i+1)+"new risk.model.strategy.Cheater");
 				break;}
 			}

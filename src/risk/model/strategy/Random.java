@@ -16,7 +16,7 @@ public class Random implements StrategyInterface {
 	RiskGameModel currentRiskModel;
 
 	@Override
-	public String takeTurn(boolean isTest, RiskGameModel riskGameModel) {
+	public void takeTurn(boolean isTest, RiskGameModel riskGameModel) {
 		Utility.writeLog("***********" + riskGameModel.curPlayer.getName() + " turn *************");
 
 		if (riskGameModel.getState() == RiskGameModel.INITIAL_REINFORCE)
@@ -28,11 +28,11 @@ public class Random implements StrategyInterface {
 		riskGameModel.mainPanel.repaint();
 		riskGameModel.subPanel.repaint();
 
-		return "";
+		//return "";
 	}
 
 	@Override
-	public String initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public void initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (riskGameModel.curPlayer.getNumberOfArmies() > 0) {
 			int occupiedTerritory = getRandomOccupiedTerritoryByPlayer(riskGameModel.curPlayer);
 			if (occupiedTerritory != -1) {
@@ -52,24 +52,24 @@ public class Random implements StrategyInterface {
 			riskGameModel.nextPlayer();
 
 		}
-		return "";
+		//return "";
 	}
 
 	@Override
-	public String startTurn(boolean isTest, RiskGameModel riskGameModel) {
+	public void startTurn(boolean isTest, RiskGameModel riskGameModel) {
 		currentRiskModel = riskGameModel;
 		/* Place all the armies randomly, and place the turn bonus too randomly */
 		Utility.writeLog("START TURN - Some Random dude called - " + riskGameModel.curPlayer.getName()
 				+ " has started his turn.");
 		if (riskGameModel.curPlayer.getCard().size() >= 5) {
-			return tradeCards(riskGameModel);
+			 tradeCards(riskGameModel);
 		} else {
-			return reinforce(false, riskGameModel);
+			 reinforce(false, riskGameModel);
 		}
 
 	}
 
-	private String tradeCards(RiskGameModel riskGameModel) {
+	private void tradeCards(RiskGameModel riskGameModel) {
 		int count = 0, cardCount = 0;
 		riskGameModel.lstTradedCards = new ArrayList<RiskCardModel>();
 		riskGameModel.setState(RiskGameModel.REINFORCE);
@@ -94,14 +94,14 @@ public class Random implements StrategyInterface {
 		riskGameModel.curPlayer.setArmiesRecivedByTradingCards(count);
 		riskGameModel.curPlayer.addArmies(count);
 		riskGameModel.deck.addAll(riskGameModel.lstTradedCards);
-		cardsRemoved.addAll(riskGameModel.lstTradedCards); 
+		cardsRemoved.addAll(riskGameModel.lstTradedCards);
 		riskGameModel.looseCard(cardsRemoved);
 		riskGameModel.notifyPhaseViewChange();
-		return null;
+	//	return null;
 	}
 
 	@Override
-	public String reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public void reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
 		 * Randomly reinforce any random countries; assuming this time this player has
 		 * armies to place recieved from start turn
@@ -126,11 +126,11 @@ public class Random implements StrategyInterface {
 		Utility.writeLog("REINFORCE - Some Random dude called - " + riskGameModel.curPlayer.getName()
 				+ " is done with reinforcement and his army count is " + riskGameModel.curPlayer.getNumberOfArmies());
 		riskGameModel.notifyPhaseViewChange();
-		return attack(false, riskGameModel);
+		attack(false, riskGameModel);
 	}
 
 	@Override
-	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public void attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
 		 * He will keep on attacking untill he has teeritories which armies > 1 and of
 		 * which have others territories adjacent to him
@@ -139,79 +139,78 @@ public class Random implements StrategyInterface {
 		Utility.writeLog(
 				"ATTACK - Some Random dude called - " + riskGameModel.curPlayer.getName() + " has option to attack.");
 		riskGameModel.setState(RiskGameModel.ATTACK);
-		riskGameModel.notifyPhaseViewChange();
 		while (shouldFireInTheHole()) {
 			Utility.writeLog("ATTACK - Some Random dude called - " + riskGameModel.curPlayer.getName()
 					+ " has decided to attack.");
 			if ((fighterTerritories = getValidRandomAttackDefendTerritory(riskGameModel)) != null
 					&& fighterTerritories.length > 0) {
+				int attackArmies = (riskGameModel.aTerritory = fighterTerritories[0]).getArmies();
+				int defenseArmies = (riskGameModel.defenseTerritory = fighterTerritories[1]).getArmies();
 
-				do {
-					int attackArmies = (riskGameModel.aTerritory = fighterTerritories[0]).getArmies();
-					int defenseArmies = (riskGameModel.defenseTerritory = fighterTerritories[1]).getArmies();
+				riskGameModel.notifyPhaseViewChange();
 
-					Utility.writeLog("ATTACK - Some Random dude called - " + riskGameModel.curPlayer.getName()
-							+ " has warred against " + riskGameModel.defenseTerritory.getName()
-							+ " using his territory - " + riskGameModel.aTerritory.getName());
+				Utility.writeLog("ATTACK - Some Random dude called - " + riskGameModel.curPlayer.getName()
+						+ " has warred against " + riskGameModel.defenseTerritory.getName() + " using his territory - "
+						+ riskGameModel.aTerritory.getName());
 
-					// Set the attack number of die
-					if (riskGameModel.aTerritory.getArmies() > 3)
-						riskGameModel.setAttack(new java.util.Random().nextInt(3) + 1);
-					if (riskGameModel.aTerritory.getArmies() == 3)
-						riskGameModel.setAttack(new java.util.Random().nextInt(2) + 1);
-					if (riskGameModel.aTerritory.getArmies() == 2)
-						riskGameModel.setAttack(1);
+				// Set the attack number of die
+				if (riskGameModel.aTerritory.getArmies() > 3)
+					riskGameModel.setAttack(new java.util.Random().nextInt(3) + 1);
+				if (riskGameModel.aTerritory.getArmies() == 3)
+					riskGameModel.setAttack(new java.util.Random().nextInt(2) + 1);
+				if (riskGameModel.aTerritory.getArmies() == 2)
+					riskGameModel.setAttack(1);
 
-					// Set the defence number of die
-					if (riskGameModel.defenseTerritory.getArmies() > 1 && riskGameModel.attackNum > 1)
-						riskGameModel.setDefend(new java.util.Random().nextInt(2) + 1);
-					else
-						riskGameModel.setDefend(1);
+				// Set the defence number of die
+				if (riskGameModel.defenseTerritory.getArmies() > 1 && riskGameModel.attackNum > 1)
+					riskGameModel.setDefend(new java.util.Random().nextInt(2) + 1);
+				else
+					riskGameModel.setDefend(1);
 
-					Utility.writeLog("ATTACK - Some Random dude " + riskGameModel.curPlayer.getName()
-							+ " attack results as follows!!");
-					Utility.writeLog("ATTACK is with " + riskGameModel.attackNum + " defence is with "
-							+ riskGameModel.defenseNum + "dies.");
+				Utility.writeLog("ATTACK - Some Random dude " + riskGameModel.curPlayer.getName()
+						+ " attack results as follows!!");
+				Utility.writeLog("ATTACK is with " + riskGameModel.attackNum + " defence is with "
+						+ riskGameModel.defenseNum + "dies.");
+				riskGameModel.setState(RiskGameModel.ATTACK_PHASE);
+				riskGameModel.engageBattle();
 
-					riskGameModel.engageBattle();
+				if (defenseArmies - riskGameModel.defenseTerritory.getArmies() == 1) {
+					Utility.writeLog(riskGameModel.curPlayer.getName() + " has destroyed an army");
+				} else if (defenseArmies - riskGameModel.defenseTerritory.getArmies() == 2) {
+					Utility.writeLog(riskGameModel.curPlayer.getName() + " has destroyed two armies");
+				} else if (attackArmies - riskGameModel.aTerritory.getArmies() == 1) {
+					;
+					Utility.writeLog(riskGameModel.curPlayer.getName() + " has lost an army");
+				} else if (attackArmies - riskGameModel.aTerritory.getArmies() == 2) {
+					Utility.writeLog(riskGameModel.curPlayer.getName() + " has lost two armies");
+				}
 
-					if (defenseArmies - riskGameModel.defenseTerritory.getArmies() == 1) {
-						Utility.writeLog(riskGameModel.curPlayer.getName() + " has destroyed an army");
-					} else if (defenseArmies - riskGameModel.defenseTerritory.getArmies() == 2) {
-						Utility.writeLog(riskGameModel.curPlayer.getName() + " has destroyed two armies");
-					} else if (attackArmies - riskGameModel.aTerritory.getArmies() == 1) {
-						;
-						Utility.writeLog(riskGameModel.curPlayer.getName() + " has lost an army");
-					} else if (attackArmies - riskGameModel.aTerritory.getArmies() == 2) {
-						Utility.writeLog(riskGameModel.curPlayer.getName() + " has lost two armies");
-					}
+				if (riskGameModel.aTerritory.getArmies() == 1) {
+					riskGameModel.setState(RiskGameModel.ACTIVE_TURN);
+					Utility.writeLog(riskGameModel.curPlayer.getName() + " has lost the battle");
+					riskGameModel.defenseNum = 0;
+					riskGameModel.attackNum = 0;
+					riskGameModel.defenseTerritory = null;
+					riskGameModel.aTerritory = null;
+				}
 
-					if (riskGameModel.aTerritory.getArmies() == 1) {
-						riskGameModel.setState(RiskGameModel.ACTIVE_TURN);
-						Utility.writeLog(riskGameModel.curPlayer.getName() + " has lost the battle");
-						riskGameModel.defenseNum = 0;
-						riskGameModel.attackNum = 0;
-						riskGameModel.defenseTerritory = null;
-						riskGameModel.aTerritory = null;
-					}
-
-				} while (!(riskGameModel.getState() == RiskGameModel.CAPTURE
-						|| riskGameModel.getState() == RiskGameModel.ACTIVE_TURN));
 				if (riskGameModel.getState() == RiskGameModel.CAPTURE)
-					if (capture(false, riskGameModel))
-					{ endGame(riskGameModel); return "";} 
+					if (capture(false, riskGameModel)) {
+						endGame(riskGameModel);	
+						return;
+					}
 			}
 
 		}
 		Utility.writeLog("ATTACK - Some Random dude called - " + riskGameModel.curPlayer.getName()
 				+ " could not attack/is done with attack/decided not to attack.");
 		riskGameModel.notifyPhaseViewChange();
-		return fortify(false, currentRiskModel);
+		 fortify(false, currentRiskModel);
 	}
 
 	public void endGame(RiskGameModel riskGameModel) {
 		Utility.writeLog("Thats all ya, " + riskGameModel.curPlayer.getName() + " won the game!!!");
-		System.exit(0);
+		//System.exit(0);
 	}
 
 	public Boolean capture(boolean isTest, RiskGameModel riskGameModel) {
@@ -281,7 +280,7 @@ public class Random implements StrategyInterface {
 	}
 
 	@Override
-	public String fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public void fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		Utility.writeLog("FORTIFY - Some Random dude called - " + riskGameModel.curPlayer.getName()
 				+ " has an option to Fortify any of his armies.");
 
@@ -320,7 +319,7 @@ public class Random implements StrategyInterface {
 		riskGameModel.setState(RiskGameModel.START_TURN);
 		riskGameModel.nextPlayer();
 		riskGameModel.notifyPhaseViewChange();
-		return "";
+		//return "";
 	}
 
 	private RiskTerritoryModel getFortifiedTerritory(RiskTerritoryModel fortifierTerritory) {

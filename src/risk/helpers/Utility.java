@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
 
+import risk.model.RiskGameModel;
+import risk.model.RiskPlayerModel;
+import risk.model.RiskTerritoryModel;
 import risk.model.interfaces.PhaseViewInterface;
 
 /**
@@ -145,4 +148,88 @@ public final class Utility {
 		}
 		
 	}
+	
+	/**
+	 * Write log.
+	 *
+	 * @param text
+	 *            the text
+	 */
+	public static void writePlayerViewLog(String text, Boolean... isApplicationStart) {
+		try (FileWriter fw = new FileWriter("log\\PlayerViewLog.txt", isApplicationStart.length == 0); // Overwrite
+				BufferedWriter bw = new BufferedWriter(fw);
+				PrintWriter out = new PrintWriter(bw)) {
+			out.println(text);
+			out.println();
+			out.close();
+			bw.close();
+			fw.close();
+		} catch (IOException exception) {
+			exception.printStackTrace();
+		}
+		
+	}
+	
+	/**
+	 * Write log.
+	 *
+	 * @param text
+	 *            the text
+	 */
+	public static void writePhaseViewLog(String text, Boolean... isApplicationStart) {
+		try (FileWriter fw = new FileWriter("log\\PhaseViewLog.txt", isApplicationStart.length == 0); // Overwrite
+				BufferedWriter bw = new BufferedWriter(fw);
+				PrintWriter out = new PrintWriter(bw)) {
+			out.println(text);
+			out.println();
+			out.close();
+			bw.close();
+			fw.close();
+		} catch (IOException exception) {
+			exception.printStackTrace();
+		}
+		
+	}
+	
+	/**
+	 * Write log.
+	 *
+	 * @param text
+	 *            the text
+	 */
+	public static void writeCardViewLog(String text, Boolean... isApplicationStart) {
+		try (FileWriter fw = new FileWriter("log\\CardViewLog.txt", isApplicationStart.length == 0); // Overwrite
+				BufferedWriter bw = new BufferedWriter(fw);
+				PrintWriter out = new PrintWriter(bw)) {
+			out.println(text);
+			out.println();
+			out.close();
+			bw.close();
+			fw.close();
+		} catch (IOException exception) {
+			exception.printStackTrace();
+		}
+		
+	}
+
+	public static void writeGameStats(RiskGameModel riskGameModel) {
+		try (FileWriter fw = new FileWriter("log\\GameStats.txt",true); // Overwrite
+				BufferedWriter bw = new BufferedWriter(fw);
+				PrintWriter out = new PrintWriter(bw)) {
+			out.println("***Game Stats***\n\n");
+			out.println(riskGameModel.curPlayer.getName() + " T Count " + riskGameModel.curPlayer.getOccupiedTerritories().size()
+					+ " Army Count " + riskGameModel.curPlayer.getNumberOfArmies() + "\n\n");
+			for(RiskTerritoryModel terr : riskGameModel.curPlayer.getOccupiedTerritories()) {
+				out.println(terr.getName() + " " + terr.getArmies());
+			}
+			out.println("\n\n\n");
+			out.close();
+			bw.close();
+			fw.close();
+		} catch (IOException exception) {
+			exception.printStackTrace();
+		}
+		
+	}
+	
 }

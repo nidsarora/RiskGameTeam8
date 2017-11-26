@@ -19,7 +19,7 @@ public class Cheater implements StrategyInterface {
 	RiskGameModel currentRiskModel;
 
 	@Override
-	public String takeTurn(boolean isTest, RiskGameModel riskGameModel) {
+	public void takeTurn(boolean isTest, RiskGameModel riskGameModel) {
 		Utility.writeLog("***********" + riskGameModel.curPlayer.getName() + " turn *************");
 		currentRiskModel = riskGameModel;
 		if (riskGameModel.getState() == RiskGameModel.INITIAL_REINFORCE)
@@ -31,11 +31,11 @@ public class Cheater implements StrategyInterface {
 		riskGameModel.mainPanel.repaint();
 		riskGameModel.subPanel.repaint();
 
-		return "";
+		return;
 	}
 
 	@Override
-	public String initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public void initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (riskGameModel.curPlayer.getNumberOfArmies() > 0) {
 			int occupiedTerritory = getRandomOccupiedTerritoryByPlayer(riskGameModel.curPlayer);
 			if (occupiedTerritory != -1) {
@@ -52,23 +52,23 @@ public class Cheater implements StrategyInterface {
 				riskGameModel.nextPlayer();
 		} else
 			riskGameModel.nextPlayer();
-		return "";
+		//return;
 	}
 
 	@Override
-	public String startTurn(boolean isTest, RiskGameModel riskGameModel) {
+	public void startTurn(boolean isTest, RiskGameModel riskGameModel) {
 		/* Place all the armies randomly, and place the turn bonus too randomly */
 		Utility.writeLog(
 				"START TURN - Some Cheater called - " + riskGameModel.curPlayer.getName() + " has started his turn.");
 		if (riskGameModel.curPlayer.getCard().size() > (new java.util.Random().nextInt(5) + 1)) { // 1,2,3,4,5
-			return tradeCards(riskGameModel);
+			tradeCards(riskGameModel);
 		} else {
-			return reinforce(false, riskGameModel);
+			 reinforce(false, riskGameModel);
 		}
 
 	}
 
-	private String tradeCards(RiskGameModel riskGameModel) {
+	private void tradeCards(RiskGameModel riskGameModel) {
 		int count = 0;
 		riskGameModel.setState(RiskGameModel.REINFORCE);
 		ArrayList<RiskCardModel> cardsRemoved = new ArrayList<RiskCardModel>();
@@ -83,11 +83,11 @@ public class Cheater implements StrategyInterface {
 		riskGameModel.curPlayer.setArmiesRecivedByTradingCards(count);
 		riskGameModel.curPlayer.addArmies(count);
 		riskGameModel.notifyPhaseViewChange();
-		return reinforce(false, riskGameModel);
+		 reinforce(false, riskGameModel);
 	}
 
 	@Override
-	public String reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public void reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
 		 * Randomly reinforce any random countries; assuming this time this player has
 		 * armies to place recieved from start turn
@@ -118,11 +118,11 @@ public class Cheater implements StrategyInterface {
 		Utility.writeLog("REINFORCE - Some Cheater called - " + riskGameModel.curPlayer.getName()
 				+ " is done with reinforcement and his army count is " + riskGameModel.curPlayer.getNumberOfArmies());
 		riskGameModel.notifyPhaseViewChange();
-		return attack(false, riskGameModel);
+		 attack(false, riskGameModel);
 	}
 
 	@Override
-	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public void attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
 		 * He will keep on attacking untill he has teeritories which armies > 1 and of
 		 * which have others territories adjacent to him
@@ -143,10 +143,10 @@ public class Cheater implements StrategyInterface {
 			Utility.writeLog("ATTACK - Some Cheater dude called - " + riskGameModel.curPlayer.getName()
 					+ " is done with attack.");
 			riskGameModel.notifyPhaseViewChange();
-			return fortify(false, currentRiskModel);
+			 fortify(false, currentRiskModel);
 		} else {
 			endGame(riskGameModel);
-			return "";
+			return;
 		}
 	}
 
@@ -196,7 +196,7 @@ public class Cheater implements StrategyInterface {
 	}
 
 	@Override
-	public String fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public void fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		Utility.writeLog("FORTIFY - Some Cheater dude called - " + riskGameModel.curPlayer.getName()
 				+ " has an option to Fortify any of his armies.");
 
@@ -211,7 +211,7 @@ public class Cheater implements StrategyInterface {
 		riskGameModel.setState(RiskGameModel.START_TURN);
 		riskGameModel.nextPlayer();
 		riskGameModel.notifyPhaseViewChange();
-		return "";
+		//return "";
 	}
 
 	private ArrayList<RiskTerritoryModel> getFortifiableTerritories(RiskGameModel riskGameModel) {
