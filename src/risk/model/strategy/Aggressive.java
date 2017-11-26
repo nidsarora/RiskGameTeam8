@@ -24,10 +24,7 @@ public class Aggressive implements StrategyInterface {
 
 	RiskTerritoryModel currentStrongestTerritory;
 
-	/* (non-Javadoc)
-	 * @see risk.model.interfaces.StrategyInterface#takeTurn(boolean, risk.model.RiskGameModel)
-	 */
-	@Override
+		@Override
 	public void takeTurn(boolean isTest, RiskGameModel riskGameModel) {
 		Utility.writeGameStats(riskGameModel);
 		Utility.writeLog("***********" + riskGameModel.curPlayer.getName() + " turn *************");
@@ -44,10 +41,7 @@ public class Aggressive implements StrategyInterface {
 		// return "";
 	}
 
-	/* (non-Javadoc)
-	 * @see risk.model.interfaces.StrategyInterface#initialReinforce(boolean, risk.model.RiskGameModel, int[])
-	 */
-	@Override
+		@Override
 	public void initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (riskGameModel.curPlayer.getNumberOfArmies() > 0) {
 
@@ -76,10 +70,7 @@ public class Aggressive implements StrategyInterface {
 		// return "";
 	}
 
-	/* (non-Javadoc)
-	 * @see risk.model.interfaces.StrategyInterface#startTurn(boolean, risk.model.RiskGameModel)
-	 */
-	@Override
+		@Override
 	public void startTurn(boolean isTest, RiskGameModel riskGameModel) {
 		riskGameModel = riskGameModel;
 		/* Place all the armies randomly, and place the turn bonus too randomly */
@@ -129,10 +120,7 @@ public class Aggressive implements StrategyInterface {
 		// return null;
 	}
 
-	/* (non-Javadoc)
-	 * @see risk.model.interfaces.StrategyInterface#reinforce(boolean, risk.model.RiskGameModel, int[])
-	 */
-	@Override
+		@Override
 	public void reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
 		 * Randomly reinforce any random countries; assuming this time this player has
@@ -169,10 +157,7 @@ public class Aggressive implements StrategyInterface {
 		attack(false, riskGameModel);
 	}
 
-	/* (non-Javadoc)
-	 * @see risk.model.interfaces.StrategyInterface#attack(boolean, risk.model.RiskGameModel, int[])
-	 */
-	@Override
+		@Override
 	public void attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
 		 * He will keep on attacking untill he has teeritories which armies > 1 and of
