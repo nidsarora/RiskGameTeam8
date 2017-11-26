@@ -13,14 +13,13 @@ import risk.model.interfaces.StrategyInterface;
 
 public class Aggressive implements StrategyInterface {
 
-
 	RiskTerritoryModel currentStrongestTerritory;
 
 	@Override
 	public void takeTurn(boolean isTest, RiskGameModel riskGameModel) {
 		Utility.writeGameStats(riskGameModel);
 		Utility.writeLog("***********" + riskGameModel.curPlayer.getName() + " turn *************");
-		//riskGameModel = riskGameModel;
+		// riskGameModel = riskGameModel;
 		if (riskGameModel.getState() == RiskGameModel.INITIAL_REINFORCE)
 			initialReinforce(false, riskGameModel);
 		if (riskGameModel.getState() == RiskGameModel.START_TURN
@@ -30,7 +29,7 @@ public class Aggressive implements StrategyInterface {
 		riskGameModel.mainPanel.repaint();
 		riskGameModel.subPanel.repaint();
 		Utility.writeGameStats(riskGameModel);
-		//return "";
+		// return "";
 	}
 
 	@Override
@@ -59,7 +58,7 @@ public class Aggressive implements StrategyInterface {
 			Utility.writeLog("armies less than 0");
 			riskGameModel.nextPlayer();
 		}
-		//return "";
+		// return "";
 	}
 
 	@Override
@@ -69,9 +68,9 @@ public class Aggressive implements StrategyInterface {
 		Utility.writeLog("START TURN - Some Random dude called - " + riskGameModel.curPlayer.getName()
 				+ " has started his turn.");
 		if (riskGameModel.curPlayer.getCard().size() >= 5) {
-			 tradeCards(riskGameModel);
+			tradeCards(riskGameModel);
 		} else {
-			 reinforce(false, riskGameModel);
+			reinforce(false, riskGameModel);
 		}
 	}
 
@@ -103,7 +102,7 @@ public class Aggressive implements StrategyInterface {
 		cardsRemoved.addAll(riskGameModel.lstTradedCards);
 		riskGameModel.looseCard(cardsRemoved);
 		riskGameModel.notifyPhaseViewChange();
-		//return null;
+		// return null;
 	}
 
 	@Override
@@ -121,7 +120,8 @@ public class Aggressive implements StrategyInterface {
 				+ " decided to Reinforce his armies.");
 		while (riskGameModel.curPlayer.getNumberOfArmies() > 0) {
 
-			if (currentStrongestTerritory == null) {
+			if (currentStrongestTerritory == null || (currentStrongestTerritory != null
+					&& !currentStrongestTerritory.getPlayer().equals(riskGameModel.curPlayer))) {
 				currentStrongestTerritory = makeStrongestOccupiedTerritory(riskGameModel.curPlayer, riskGameModel);
 				if (currentStrongestTerritory == null) {
 					endGame(riskGameModel);
@@ -139,7 +139,7 @@ public class Aggressive implements StrategyInterface {
 		Utility.writeLog("REINFORCE - Some Aggressive dude called - " + riskGameModel.curPlayer.getName()
 				+ " is done with reinforcement and his army count is " + riskGameModel.curPlayer.getNumberOfArmies());
 		riskGameModel.notifyPhaseViewChange();
-		 attack(false, riskGameModel);
+		attack(false, riskGameModel);
 	}
 
 	@Override
@@ -159,44 +159,48 @@ public class Aggressive implements StrategyInterface {
 			if ((fighterTerritories = getValidAttackDefendTerritory(riskGameModel)) != null
 					&& fighterTerritories.length > 0) {
 
-				int attackArmies = (riskGameModel.aTerritory = fighterTerritories[0]).getArmies();
-				int defenseArmies = (riskGameModel.defenseTerritory = fighterTerritories[1]).getArmies();
+				do {
+					int attackArmies = (riskGameModel.aTerritory = fighterTerritories[0]).getArmies();
+					int defenseArmies = (riskGameModel.defenseTerritory = fighterTerritories[1]).getArmies();
 
-				Utility.writeLog("ATTACK - Some Aggressive dude called - " + riskGameModel.curPlayer.getName()
-						+ " has warred against " + riskGameModel.defenseTerritory.getName() + " using his territory - "
-						+ riskGameModel.aTerritory.getName());
+					Utility.writeLog("ATTACK - Some Aggressive dude called - " + riskGameModel.curPlayer.getName()
+							+ " has warred against " + riskGameModel.defenseTerritory.getName()
+							+ " using his territory - " + riskGameModel.aTerritory.getName());
 
-				// Set the attack number of die
-				if (riskGameModel.aTerritory.getArmies() > 3)
-					riskGameModel.setAttack(new java.util.Random().nextInt(3) + 1);
-				if (riskGameModel.aTerritory.getArmies() == 3)
-					riskGameModel.setAttack(new java.util.Random().nextInt(2) + 1);
-				if (riskGameModel.aTerritory.getArmies() == 2)
-					riskGameModel.setAttack(1);
+					// Set the attack number of die
+					if (riskGameModel.aTerritory.getArmies() > 3)
+						riskGameModel.setAttack(new java.util.Random().nextInt(3) + 1);
+					if (riskGameModel.aTerritory.getArmies() == 3)
+						riskGameModel.setAttack(new java.util.Random().nextInt(2) + 1);
+					if (riskGameModel.aTerritory.getArmies() == 2)
+						riskGameModel.setAttack(1);
 
-				// Set the defence number of die
-				if (riskGameModel.defenseTerritory.getArmies() > 1 && riskGameModel.attackNum > 1)
-					riskGameModel.setDefend(new java.util.Random().nextInt(2) + 1);
-				else
-					riskGameModel.setDefend(1);
+					// Set the defence number of die
+					if (riskGameModel.defenseTerritory.getArmies() > 1 && riskGameModel.attackNum > 1)
+						riskGameModel.setDefend(new java.util.Random().nextInt(2) + 1);
+					else
+						riskGameModel.setDefend(1);
 
-				Utility.writeLog("ATTACK - Some Aggressive dude " + riskGameModel.curPlayer.getName()
-						+ " attack results as follows!!");
-				Utility.writeLog("ATTACK is with " + riskGameModel.attackNum + " defence is with "
-						+ riskGameModel.defenseNum + "dies.");
+					Utility.writeLog("ATTACK - Some Aggressive dude " + riskGameModel.curPlayer.getName()
+							+ " attack results as follows!!");
+					Utility.writeLog("ATTACK is with " + riskGameModel.attackNum + " defence is with "
+							+ riskGameModel.defenseNum + "dies.");
 
-				riskGameModel.engageBattle();
+					riskGameModel.setState(RiskGameModel.ATTACK_PHASE);
+					riskGameModel.engageBattle();
 
-				if (defenseArmies - riskGameModel.defenseTerritory.getArmies() == 1) {
-					Utility.writeLog(riskGameModel.curPlayer.getName() + " has destroyed an army");
-				} else if (defenseArmies - riskGameModel.defenseTerritory.getArmies() == 2) {
-					Utility.writeLog(riskGameModel.curPlayer.getName() + " has destroyed two armies");
-				} else if (attackArmies - riskGameModel.aTerritory.getArmies() == 1) {
-					;
-					Utility.writeLog(riskGameModel.curPlayer.getName() + " has lost an army");
-				} else if (attackArmies - riskGameModel.aTerritory.getArmies() == 2) {
-					Utility.writeLog(riskGameModel.curPlayer.getName() + " has lost two armies");
-				}
+					if (defenseArmies - riskGameModel.defenseTerritory.getArmies() == 1) {
+						Utility.writeLog(riskGameModel.curPlayer.getName() + " has destroyed an army");
+					} else if (defenseArmies - riskGameModel.defenseTerritory.getArmies() == 2) {
+						Utility.writeLog(riskGameModel.curPlayer.getName() + " has destroyed two armies");
+					} else if (attackArmies - riskGameModel.aTerritory.getArmies() == 1) {
+						;
+						Utility.writeLog(riskGameModel.curPlayer.getName() + " has lost an army");
+					} else if (attackArmies - riskGameModel.aTerritory.getArmies() == 2) {
+						Utility.writeLog(riskGameModel.curPlayer.getName() + " has lost two armies");
+					}
+				} while (!(riskGameModel.getState() == RiskGameModel.DEFEATED
+						|| riskGameModel.getState() == RiskGameModel.CAPTURE));
 
 				if (riskGameModel.aTerritory.getArmies() == 1) {
 					riskGameModel.setState(RiskGameModel.ACTIVE_TURN);
@@ -205,7 +209,7 @@ public class Aggressive implements StrategyInterface {
 					riskGameModel.attackNum = 0;
 					riskGameModel.defenseTerritory = null;
 					riskGameModel.aTerritory = null;
-					
+
 				}
 
 				if (riskGameModel.getState() == RiskGameModel.CAPTURE)
@@ -220,7 +224,7 @@ public class Aggressive implements StrategyInterface {
 		Utility.writeLog("ATTACK - Some Aggressive dude called - " + riskGameModel.curPlayer.getName()
 				+ " could not attack/is done with attack/decided not to attack.");
 		riskGameModel.notifyPhaseViewChange();
-		 fortify(false, riskGameModel);
+		fortify(false, riskGameModel);
 	}
 
 	public void endGame(RiskGameModel riskGameModel) {
@@ -258,7 +262,8 @@ public class Aggressive implements StrategyInterface {
 
 	private boolean shouldFireInTheHole(RiskGameModel riskGameModel) {
 		/* Aggressively decide to proceed with another attack or not */
-		if (currentStrongestTerritory != null && currentStrongestTerritory.getArmies() > 1) {
+		if (currentStrongestTerritory != null && currentStrongestTerritory.getArmies() > 1
+				&& currentStrongestTerritory.getPlayer().equals(riskGameModel.curPlayer)) {
 			for (int adjacents : currentStrongestTerritory.getAdjacents()) {
 				if (!riskGameModel.getTerritoryAt(adjacents).getPlayer().equals(riskGameModel.curPlayer)) {
 					return true;
@@ -269,21 +274,8 @@ public class Aggressive implements StrategyInterface {
 		return false;
 	}
 
-	private RiskTerritoryModel makeStrongestOccupiedTerritory(RiskPlayerModel riskPlayer,RiskGameModel riskGameModel) {
+	private RiskTerritoryModel makeStrongestOccupiedTerritory(RiskPlayerModel riskPlayer, RiskGameModel riskGameModel) {
 		for (RiskTerritoryModel viableAggressiveTerritory : riskPlayer.getOccupiedTerritories()) {
-			for (int adjacents : viableAggressiveTerritory.getAdjacents()) {
-				if (!riskGameModel.getTerritoryAt(adjacents).getPlayer().equals(riskGameModel.curPlayer)) {
-					currentStrongestTerritory = riskGameModel.getTerritoryAt(adjacents);
-					break;
-				}
-			}
-		}
-		return currentStrongestTerritory;
-	}
-
-	private RiskTerritoryModel getStrongestOccupiedTerritoryWithEnimies(RiskPlayerModel riskPlayer,RiskGameModel riskGameModel) {
-		for (RiskTerritoryModel viableAggressiveTerritory : riskPlayer.getOccupiedTerritories()) {
-			if(viableAggressiveTerritory.getArmies() > 1)
 			for (int adjacents : viableAggressiveTerritory.getAdjacents()) {
 				if (!riskGameModel.getTerritoryAt(adjacents).getPlayer().equals(riskGameModel.curPlayer)) {
 					currentStrongestTerritory = viableAggressiveTerritory;
@@ -294,11 +286,26 @@ public class Aggressive implements StrategyInterface {
 		return currentStrongestTerritory;
 	}
 
+	private RiskTerritoryModel getStrongestOccupiedTerritoryWithEnimies(RiskPlayerModel riskPlayer,
+			RiskGameModel riskGameModel) {
+		for (RiskTerritoryModel viableAggressiveTerritory : riskPlayer.getOccupiedTerritories()) {
+			if (viableAggressiveTerritory.getArmies() > 1)
+				for (int adjacents : viableAggressiveTerritory.getAdjacents()) {
+					if (!riskGameModel.getTerritoryAt(adjacents).getPlayer().equals(riskGameModel.curPlayer)) {
+						currentStrongestTerritory = viableAggressiveTerritory;
+						break;
+					}
+				}
+		}
+		return currentStrongestTerritory;
+	}
+
 	private RiskTerritoryModel[] getValidAttackDefendTerritory(RiskGameModel riskGameModel) {
 		// Check strongest country is still good to attack
 		RiskTerritoryModel validDefenderTerritory = null;
 		if (currentStrongestTerritory.getArmies() <= 1) {
-			currentStrongestTerritory = getStrongestOccupiedTerritoryWithEnimies(riskGameModel.getCurPlayer(),riskGameModel);
+			currentStrongestTerritory = getStrongestOccupiedTerritoryWithEnimies(riskGameModel.getCurPlayer(),
+					riskGameModel);
 		}
 
 		for (int defender : currentStrongestTerritory.getAdjacents()) {
@@ -321,8 +328,9 @@ public class Aggressive implements StrategyInterface {
 		riskGameModel.setState(RiskGameModel.FORTIFY_PHASE);
 		riskGameModel.notifyPhaseViewChange();
 
-		if (currentStrongestTerritory == null) {
-			currentStrongestTerritory = makeStrongestOccupiedTerritory(riskGameModel.curPlayer,riskGameModel);
+		if (currentStrongestTerritory == null || (currentStrongestTerritory != null
+				&& !currentStrongestTerritory.getPlayer().equals(riskGameModel.curPlayer))) {
+			currentStrongestTerritory = makeStrongestOccupiedTerritory(riskGameModel.curPlayer, riskGameModel);
 			if (currentStrongestTerritory == null) {
 				endGame(riskGameModel);
 				return;
@@ -348,6 +356,6 @@ public class Aggressive implements StrategyInterface {
 		riskGameModel.setState(RiskGameModel.START_TURN);
 		riskGameModel.nextPlayer();
 		riskGameModel.notifyPhaseViewChange();
-		//return "";
+		// return "";
 	}
 }

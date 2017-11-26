@@ -124,8 +124,7 @@ public class RiskPlayerModel extends Observable {
 	 *
 	 */
 	public void looseTerritory(RiskTerritoryModel riskterritorymodel) {
-		if(!occupiedTerritories.remove(riskterritorymodel))
-				System.exit(0);
+		occupiedTerritories.remove(riskterritorymodel);
 		occupiedTerritories.trimToSize();
 		isChanged();
 	}

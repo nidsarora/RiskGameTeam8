@@ -146,9 +146,9 @@ public final class Utility {
 		} catch (IOException exception) {
 			exception.printStackTrace();
 		}
-		
+
 	}
-	
+
 	/**
 	 * Write log.
 	 *
@@ -167,9 +167,9 @@ public final class Utility {
 		} catch (IOException exception) {
 			exception.printStackTrace();
 		}
-		
+
 	}
-	
+
 	/**
 	 * Write log.
 	 *
@@ -188,9 +188,9 @@ public final class Utility {
 		} catch (IOException exception) {
 			exception.printStackTrace();
 		}
-		
+
 	}
-	
+
 	/**
 	 * Write log.
 	 *
@@ -209,27 +209,31 @@ public final class Utility {
 		} catch (IOException exception) {
 			exception.printStackTrace();
 		}
-		
+
 	}
 
 	public static void writeGameStats(RiskGameModel riskGameModel) {
-		try (FileWriter fw = new FileWriter("log\\GameStats.txt",true); // Overwrite
+		try (FileWriter fw = new FileWriter("log\\GameStats.txt", true); // Overwrite
 				BufferedWriter bw = new BufferedWriter(fw);
 				PrintWriter out = new PrintWriter(bw)) {
 			out.println("***Game Stats***\n\n");
-			out.println(riskGameModel.curPlayer.getName() + " T Count " + riskGameModel.curPlayer.getOccupiedTerritories().size()
-					+ " Army Count " + riskGameModel.curPlayer.getNumberOfArmies() + "\n\n");
-			for(RiskTerritoryModel terr : riskGameModel.curPlayer.getOccupiedTerritories()) {
-				out.println(terr.getName() + " " + terr.getArmies());
+
+			for (RiskPlayerModel player : RiskGameModel.players) {
+				out.println(player.getName() + " T Count "
+						+ player.getOccupiedTerritories().size() + " Army Count "
+						+ riskGameModel.curPlayer.getNumberOfArmies() + "\n\n");
+				for (RiskTerritoryModel terr : player.getOccupiedTerritories()) {
+					out.println(terr.getName() + " " + terr.getArmies());
+				}
+				out.println("\n\n\n");
 			}
-			out.println("\n\n\n");
 			out.close();
 			bw.close();
 			fw.close();
 		} catch (IOException exception) {
 			exception.printStackTrace();
 		}
-		
+
 	}
-	
+
 }

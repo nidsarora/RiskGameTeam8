@@ -1,0 +1,839 @@
+**************The Risk Begin************
+
+*********************** Start Up Phase *************************
+This is the Start up phase. Start the game by choosing the map,number of players and distribution of armies depending upon the number of players accordingly..
+Statistics:
+
+Number of players:3
+Number of armies per player:15
+
+
+*********************** Start Up Phase *************************
+This is the Start up phase. Start the game by choosing the map,number of players and distribution of armies depending upon the number of players accordingly..
+Statistics:
+
+Number of players:3
+Number of armies per player:15
+
+
+*********************** Start Up Phase *************************
+This is the Start up phase. Start the game by choosing the map,number of players and distribution of armies depending upon the number of players accordingly..
+Statistics:
+
+Number of players:3
+Number of armies per player:15
+
+
+*********************** Start Up Phase *************************
+This is the Start up phase. Start the game by choosing the map,number of players and distribution of armies depending upon the number of players accordingly..
+Statistics:
+
+Number of players:3
+Number of armies per player:15
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_3
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_3 recieved 0 armies as bonus from Continentsand Territories.
+Player Player_3 recieved 0 armies from tading cards.
+Player army count:0
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_3
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_3 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_3 recieved 0 armies from tading cards.
+Player army count:0
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+
+*********************** Fortify Phase *************************
+null
+Statistics:
+
+
+
+
+*********************** Fortify Phase *************************
+null
+Statistics:
+
+
+
+
+*********************** Fortify Phase *************************
+null
+Statistics:
+
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:0
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 3 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:0
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Alberta with 5 armies  attacks Northwest_Territory with 0 armies 
+
+The war has began!
+Attacking with 1 dices.
+ Defending with 1 dices
+
+1. It was 5 vs 1.Attacker Won this round! Count -5
+Results are out!
+
+Attack successfully prevailed.
+Alberta defeated Northwest_Territory.Attack count - 5 defence count - 0
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Alberta with 5 armies  attacks Northwest_Territory with 0 armies 
+
+
+
+1 armies moved from Alberta to Northwest_Territory
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Alberta with 2 armies  attacks Ontario with 1 armies 
+
+The war has began!
+Attacking with 1 dices.
+ Defending with 1 dices
+
+1. It was 4 vs 1.Attacker Won this round! Count -2
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Alberta with 1 armies  attacks Ontario with 1 armies 
+
+The war has began!
+Attacking with 1 dices.
+ Defending with 1 dices
+
+1. It was 3 vs 3.Defender Won this round! Count -1
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Alberta with 1 armies  attacks Ontario with 1 armies 
+
+
+
+Ontario won!! They defended themseleves successfully from Alberta
+
+
+
+*********************** Fortify Phase *************************
+null
+Statistics:
+
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_3
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_3 recieved 3 armies as bonus from Continentsand Territories.
+Player Player_3 recieved 5 armies from tading cards.
+Player army count:5
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_3
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_3 recieved 3 armies as bonus from Continentsand Territories.
+Player Player_3 recieved 5 armies from tading cards.
+Player army count:5
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_3
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_3 recieved 32 armies as bonus from Continentsand Territories.
+Player Player_3 recieved 5 armies from tading cards.
+Player army count:0
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+

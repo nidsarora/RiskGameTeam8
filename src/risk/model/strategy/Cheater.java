@@ -159,6 +159,7 @@ public class Cheater implements StrategyInterface {
 				currentRiskModel.active = currentRiskModel.curPlayer;
 				currentRiskModel.defender.looseTerritory(dTerritory);
 				currentRiskModel.active.occupyTerritory(dTerritory);
+				dTerritory.setPlayer(currentRiskModel.active);
 
 				Utility.writeLog("ATTACK - Some Cheater dude called - " + currentRiskModel.curPlayer.getName()
 						+ " captured " + dTerritory.getName() + " through " + cheaterTerritory.getName());
@@ -186,6 +187,9 @@ public class Cheater implements StrategyInterface {
 				riskGameModel.getCurrentPlayer().getName() + " has won the game with his "
 						+ riskGameModel.curPlayer.getStrategy().getClass().getName() + " strategy!",
 				"Alert", JOptionPane.INFORMATION_MESSAGE);
+
+		riskGameModel.mainPanel.repaint();
+		riskGameModel.subPanel.repaint();
 	}
 
 	private int getRandomOccupiedTerritoryByPlayer(RiskPlayerModel riskPlayer) {

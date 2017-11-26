@@ -1422,8 +1422,6 @@ public class RiskGameModel {
 		RiskTerritoryModel a = aTerritory;
 		defender.looseTerritory(d);
 		curPlayer.occupyTerritory(d);
-//		if(defender == active)
-//			System.exit(0);
 		d.setPlayer(curPlayer);
 		boolean flag = false;
 		
