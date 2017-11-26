@@ -5,7 +5,6 @@ import risk.model.RiskGameModel;
 import risk.model.RiskTerritoryModel;
 import risk.model.interfaces.StrategyInterface;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class Human.
  */
@@ -43,9 +42,6 @@ public class Human implements StrategyInterface {
 		}
 	}
 
-	/* (non-Javadoc)
-	 * @see risk.model.interfaces.StrategyInterface#attack(boolean, risk.model.RiskGameModel, int[])
-	 */
 	@Override
 	public void attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (riskGameModel.getState() == RiskGameModel.ATTACKING)
@@ -60,9 +56,6 @@ public class Human implements StrategyInterface {
 		return;
 	}
 
-	/* (non-Javadoc)
-	 * @see risk.model.interfaces.StrategyInterface#reinforce(boolean, risk.model.RiskGameModel, int[])
-	 */
 	@Override
 	public void reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (territory[0] != -1) // if not a country
@@ -77,9 +70,6 @@ public class Human implements StrategyInterface {
 		return;
 	}
 
-	/* (non-Javadoc)
-	 * @see risk.model.interfaces.StrategyInterface#fortify(boolean, risk.model.RiskGameModel, int[])
-	 */
 	@Override
 	public void fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (riskGameModel.getState() == RiskGameModel.FORTIFYING)
@@ -445,9 +435,6 @@ public class Human implements StrategyInterface {
 		return statusLabelText;
 	}
 
-	/* (non-Javadoc)
-	 * @see risk.model.interfaces.StrategyInterface#initialReinforce(boolean, risk.model.RiskGameModel, int[])
-	 */
 	@Override
 	public void initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		// TODO Auto-generated method stub
