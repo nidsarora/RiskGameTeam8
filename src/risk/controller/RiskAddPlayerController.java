@@ -303,31 +303,43 @@ public class RiskAddPlayerController extends java.awt.Frame {
 				
 				behaviourPlayer1.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent event) {
+						if(behaviourPlayers.size()>=1)
+						  behaviourPlayers.remove(0);
 						behaviourPlayers.add(0,(String)behaviourPlayer1.getSelectedItem());
 					}
 			});
 				behaviourPlayer2.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent event) {
+						if(behaviourPlayers.size()>=2)
+						behaviourPlayers.remove(1);
 						behaviourPlayers.add(1,(String)behaviourPlayer2.getSelectedItem());
 					}
 			});
 				behaviourPlayer3.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent event) {
+						if(behaviourPlayers.size()>=3)
+						behaviourPlayers.remove(2);
 						behaviourPlayers.add(2,(String)behaviourPlayer3.getSelectedItem());
 					}
 			});
 				behaviourPlayer4.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent event) {
+						if(behaviourPlayers.size()>=4)
+						behaviourPlayers.remove(3);
 						behaviourPlayers.add(3,(String)behaviourPlayer4.getSelectedItem());
 					}
 			});
 				behaviourPlayer5.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent event) {
+						if(behaviourPlayers.size()>=5)
+						behaviourPlayers.remove(4);
 						behaviourPlayers.add(4,(String)behaviourPlayer5.getSelectedItem());
 					}
 			});
 				behaviourPlayer6.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent event) {
+						if(behaviourPlayers.size()>=6)
+						behaviourPlayers.remove(5);
 						behaviourPlayers.add(5,(String)behaviourPlayer6.getSelectedItem());
 					}
 			});
