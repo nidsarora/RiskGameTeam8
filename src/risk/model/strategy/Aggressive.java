@@ -11,10 +11,22 @@ import risk.model.RiskPlayerModel;
 import risk.model.RiskTerritoryModel;
 import risk.model.interfaces.StrategyInterface;
 
+/**
+ * The Class Aggressive.
+ */
 public class Aggressive implements StrategyInterface {
+
+
+	/** The current risk model. */
+	RiskGameModel currentRiskModel;
+	
+	/** The current strongest territory. */
 
 	RiskTerritoryModel currentStrongestTerritory;
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#takeTurn(boolean, risk.model.RiskGameModel)
+	 */
 	@Override
 	public void takeTurn(boolean isTest, RiskGameModel riskGameModel) {
 		Utility.writeGameStats(riskGameModel);
@@ -32,6 +44,9 @@ public class Aggressive implements StrategyInterface {
 		// return "";
 	}
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#initialReinforce(boolean, risk.model.RiskGameModel, int[])
+	 */
 	@Override
 	public void initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (riskGameModel.curPlayer.getNumberOfArmies() > 0) {
@@ -61,6 +76,9 @@ public class Aggressive implements StrategyInterface {
 		// return "";
 	}
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#startTurn(boolean, risk.model.RiskGameModel)
+	 */
 	@Override
 	public void startTurn(boolean isTest, RiskGameModel riskGameModel) {
 		riskGameModel = riskGameModel;
@@ -74,6 +92,12 @@ public class Aggressive implements StrategyInterface {
 		}
 	}
 
+	/**
+	 * Trade cards.
+	 *
+	 * @param riskGameModel the risk game model
+	 * @return the string
+	 */
 	private void tradeCards(RiskGameModel riskGameModel) {
 		int count = 0, cardCount = 0;
 		riskGameModel.lstTradedCards = new ArrayList<RiskCardModel>();
@@ -105,6 +129,9 @@ public class Aggressive implements StrategyInterface {
 		// return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#reinforce(boolean, risk.model.RiskGameModel, int[])
+	 */
 	@Override
 	public void reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
@@ -142,6 +169,9 @@ public class Aggressive implements StrategyInterface {
 		attack(false, riskGameModel);
 	}
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#attack(boolean, risk.model.RiskGameModel, int[])
+	 */
 	@Override
 	public void attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
@@ -227,6 +257,11 @@ public class Aggressive implements StrategyInterface {
 		fortify(false, riskGameModel);
 	}
 
+	/**
+	 * End game.
+	 *
+	 * @param riskGameModel the risk game model
+	 */
 	public void endGame(RiskGameModel riskGameModel) {
 		Utility.writeLog("Thats all ya, " + riskGameModel.curPlayer.getName() + " won the game!!!");
 		JOptionPane.showMessageDialog(null,
@@ -235,6 +270,13 @@ public class Aggressive implements StrategyInterface {
 				"Alert", JOptionPane.INFORMATION_MESSAGE);
 	}
 
+	/**
+	 * Capture.
+	 *
+	 * @param isTest the is test
+	 * @param riskGameModel the risk game model
+	 * @return the boolean
+	 */
 	public Boolean capture(boolean isTest, RiskGameModel riskGameModel) {
 		/*
 		 * Write Logic for moving random armies after capture and then capture base code
@@ -260,6 +302,12 @@ public class Aggressive implements StrategyInterface {
 		return isEndOfGame;
 	}
 
+
+	/**
+	 * Should fire in the hole.
+	 *
+	 * @return true, if successful
+	 */
 	private boolean shouldFireInTheHole(RiskGameModel riskGameModel) {
 		/* Aggressively decide to proceed with another attack or not */
 		if (currentStrongestTerritory != null && currentStrongestTerritory.getArmies() > 1
@@ -274,7 +322,14 @@ public class Aggressive implements StrategyInterface {
 		return false;
 	}
 
-	private RiskTerritoryModel makeStrongestOccupiedTerritory(RiskPlayerModel riskPlayer, RiskGameModel riskGameModel) {
+
+	/**
+	 * Gets the strongest occupied territory with enimies.
+	 *
+	 * @param riskPlayer the risk player
+	 * @return the strongest occupied territory with enimies
+	 */
+private RiskTerritoryModel makeStrongestOccupiedTerritory(RiskPlayerModel riskPlayer, RiskGameModel riskGameModel) {
 		for (RiskTerritoryModel viableAggressiveTerritory : riskPlayer.getOccupiedTerritories()) {
 			for (int adjacents : viableAggressiveTerritory.getAdjacents()) {
 				if (!riskGameModel.getTerritoryAt(adjacents).getPlayer().equals(riskGameModel.curPlayer)) {
@@ -285,6 +340,7 @@ public class Aggressive implements StrategyInterface {
 		}
 		return currentStrongestTerritory;
 	}
+
 
 	private RiskTerritoryModel getStrongestOccupiedTerritoryWithEnimies(RiskPlayerModel riskPlayer,
 			RiskGameModel riskGameModel) {
@@ -299,6 +355,14 @@ public class Aggressive implements StrategyInterface {
 		}
 		return currentStrongestTerritory;
 	}
+
+
+	/**
+	 * Gets the valid attack defend territory.
+	 *
+	 * @param riskGameModel the risk game model
+	 * @return the valid attack defend territory
+	 */
 
 	private RiskTerritoryModel[] getValidAttackDefendTerritory(RiskGameModel riskGameModel) {
 		// Check strongest country is still good to attack
@@ -319,6 +383,7 @@ public class Aggressive implements StrategyInterface {
 
 		return (new RiskTerritoryModel[] { currentStrongestTerritory, validDefenderTerritory });
 	}
+
 
 	@Override
 	public void fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {

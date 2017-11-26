@@ -5,8 +5,15 @@ import risk.model.RiskGameModel;
 import risk.model.RiskTerritoryModel;
 import risk.model.interfaces.StrategyInterface;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Human.
+ */
 public class Human implements StrategyInterface {
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#takeTurn(boolean, risk.model.RiskGameModel)
+	 */
 	@Override
 	public void takeTurn(boolean isTest, RiskGameModel riskGameModel) {
 		// TODO Auto-generated method stub
@@ -16,6 +23,8 @@ public class Human implements StrategyInterface {
 	/**
 	 * this function is for Risk start turn.
 	 *
+	 * @param isTest the is test
+	 * @param riskGameModel the risk game model
 	 * @return the string
 	 */
 	@Override
@@ -34,6 +43,9 @@ public class Human implements StrategyInterface {
 		}
 	}
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#attack(boolean, risk.model.RiskGameModel, int[])
+	 */
 	@Override
 	public void attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (riskGameModel.getState() == RiskGameModel.ATTACKING)
@@ -48,6 +60,9 @@ public class Human implements StrategyInterface {
 		return;
 	}
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#reinforce(boolean, risk.model.RiskGameModel, int[])
+	 */
 	@Override
 	public void reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (territory[0] != -1) // if not a country
@@ -62,6 +77,9 @@ public class Human implements StrategyInterface {
 		return;
 	}
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#fortify(boolean, risk.model.RiskGameModel, int[])
+	 */
 	@Override
 	public void fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (riskGameModel.getState() == RiskGameModel.FORTIFYING)
@@ -76,8 +94,8 @@ public class Human implements StrategyInterface {
 	/**
 	 * this function is for Risk attacking.
 	 *
-	 * @param country
-	 *            the country
+	 * @param country            the country
+	 * @param riskGameModel the risk game model
 	 * @return the string
 	 */
 	public String RiskAttacking(int country, RiskGameModel riskGameModel) {
@@ -109,6 +127,15 @@ public class Human implements StrategyInterface {
 
 	}
 
+	/**
+	 * Risk attack phase.
+	 *
+	 * @param territory the territory
+	 * @param xCoordinate the x coordinate
+	 * @param yCoordinate the y coordinate
+	 * @param risk the risk
+	 * @return the string
+	 */
 	public String RiskAttackPhase(int territory, int xCoordinate, int yCoordinate, RiskGameModel risk) {
 		int attackArmies = risk.aTerritory.getArmies();
 		int defenseArmies = risk.defenseTerritory.getArmies();
@@ -204,8 +231,8 @@ public class Human implements StrategyInterface {
 	/**
 	 * This function is about Risk attack.
 	 *
-	 * @param country
-	 *            the country
+	 * @param country            the country
+	 * @param riskGameModel the risk game model
 	 * @return the string
 	 */
 	public String Riskattack(int country, RiskGameModel riskGameModel) {
@@ -226,8 +253,8 @@ public class Human implements StrategyInterface {
 	/**
 	 * this function is for Risk trade cards.
 	 *
-	 * @param country
-	 *            the country
+	 * @param country            the country
+	 * @param riskGameModel the risk game model
 	 * @return the string
 	 */
 	// public String RiskTradeCards(int country, RiskGameModel riskGameModel) {
@@ -265,6 +292,13 @@ public class Human implements StrategyInterface {
 		return "false";
 	}
 
+	/**
+	 * Risk fortifying.
+	 *
+	 * @param country the country
+	 * @param riskGameModel the risk game model
+	 * @return the string
+	 */
 	public String RiskFortifying(int country, RiskGameModel riskGameModel) {
 		if (country != -1) {// not a country
 			riskGameModel.defenseTerritory = RiskGameModel.territories.elementAt(country); // move to
@@ -284,6 +318,13 @@ public class Human implements StrategyInterface {
 		return "";
 	}
 
+	/**
+	 * Risk fortify phase.
+	 *
+	 * @param territory the territory
+	 * @param riskGameModel the risk game model
+	 * @return the string
+	 */
 	public String RiskFortifyPhase(int territory, RiskGameModel riskGameModel) {
 		String statusLabelText = "";
 		int from = riskGameModel.aTerritory.getArmies();
@@ -334,6 +375,14 @@ public class Human implements StrategyInterface {
 		return statusLabelText;
 	}
 
+	/**
+	 * Capture.
+	 *
+	 * @param isTest the is test
+	 * @param territory the territory
+	 * @param riskGameModel the risk game model
+	 * @return the string
+	 */
 	public String capture(boolean isTest, int territory, RiskGameModel riskGameModel) {
 		// statusLabel.setText("Select number of armies to move to " +
 		// risk.defenseTerritory.getName());
@@ -396,6 +445,9 @@ public class Human implements StrategyInterface {
 		return statusLabelText;
 	}
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#initialReinforce(boolean, risk.model.RiskGameModel, int[])
+	 */
 	@Override
 	public void initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		// TODO Auto-generated method stub

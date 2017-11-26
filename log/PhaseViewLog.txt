@@ -305,10 +305,10 @@ Statistics:
 Territory Alberta with 5 armies  attacks Northwest_Territory with 0 armies 
 
 The war has began!
-Attacking with 1 dices.
+Attacking with 3 dices.
  Defending with 1 dices
 
-1. It was 5 vs 1.Attacker Won this round! Count -5
+1. It was 5 vs 3.Attacker Won this round! Count -5
 Results are out!
 
 Attack successfully prevailed.
@@ -333,13 +333,13 @@ An attack is actually one or more battles which are fought with dice. The object
 Player: Player_1
 Statistics:
 
-Territory Alberta with 2 armies  attacks Ontario with 1 armies 
+Territory Alberta with 2 armies  attacks Ontario with 2 armies 
 
 The war has began!
 Attacking with 1 dices.
  Defending with 1 dices
 
-1. It was 4 vs 1.Attacker Won this round! Count -2
+1. It was 1 vs 5.Defender Won this round! Count -2
 
 
 
@@ -349,13 +349,13 @@ An attack is actually one or more battles which are fought with dice. The object
 Player: Player_1
 Statistics:
 
-Territory Alberta with 1 armies  attacks Ontario with 1 armies 
+Territory Alberta with 1 armies  attacks Ontario with 2 armies 
 
 The war has began!
 Attacking with 1 dices.
  Defending with 1 dices
 
-1. It was 3 vs 3.Defender Won this round! Count -1
+1. It was 4 vs 6.Defender Won this round! Count -2
 
 
 
@@ -365,7 +365,7 @@ An attack is actually one or more battles which are fought with dice. The object
 Player: Player_1
 Statistics:
 
-Territory Alberta with 1 armies  attacks Ontario with 1 armies 
+Territory Alberta with 1 armies  attacks Ontario with 2 armies 
 
 
 

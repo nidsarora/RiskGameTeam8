@@ -1,14 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * RiskAddPlayerUI.java
- *
- * Created on Nov 15, 2010, 12:39:35 PM
- */
-
 package risk.controller;
 
 import risk.controller.RiskStartGameController;
@@ -39,14 +28,21 @@ import javax.swing.JButton;
  */
 public class RiskGameModeController extends java.awt.Frame {
 
+	/** The no of players. */
 	static int noOfPlayers = 3;
+    
+    /** The behaviour players. */
     static ArrayList<String> behaviourPlayers=new ArrayList<String>(7);
-	/** Creates new form RiskAddPlayerUI */
+	
+	/**
+	 *  Creates new form RiskAddPlayerUI.
+	 */
 	public RiskGameModeController() {
 		initComponents();
 		setLocationRelativeTo(null);
 	}
 
+	/** The added. */
 	boolean added;
 
 	/**
@@ -122,9 +118,24 @@ public class RiskGameModeController extends java.awt.Frame {
 	}
 
 
-	/** Exit the Application */
+	/**
+	 *  Exit the Application.
+	 *
+	 * @param evt the evt
+	 */
 	private void exitForm(java.awt.event.WindowEvent evt) {
 		setVisible(false);
 	}
+	
+	/** The mode panel. */
 	private javax.swing.JPanel modePanel;
+	
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
+	public static void main(String[] args) {
+	
+	}
 }

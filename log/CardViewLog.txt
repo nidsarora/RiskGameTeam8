@@ -514,7 +514,7 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 1 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
+The card type is ARTILLERY and number is + 11.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -534,7 +534,7 @@ Player_3 has 0 armies and 1 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 1 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
+The card type is ARTILLERY and number is + 11.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -544,8 +544,8 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 2 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -565,8 +565,8 @@ Player_3 has 0 armies and 2 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 2 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -576,9 +576,9 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 3 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -598,9 +598,9 @@ Player_3 has 0 armies and 3 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 3 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -610,10 +610,10 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 4 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -633,10 +633,10 @@ Player_3 has 0 armies and 4 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 4 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -646,11 +646,11 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 5 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -670,11 +670,11 @@ Player_3 has 0 armies and 5 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 5 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -684,12 +684,12 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 6 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -709,12 +709,12 @@ Player_3 has 0 armies and 6 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 6 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -724,13 +724,13 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 7 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -750,13 +750,13 @@ Player_3 has 0 armies and 7 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 7 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -766,14 +766,14 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 8 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
 The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -793,14 +793,14 @@ Player_3 has 0 armies and 8 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 8 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
 The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -810,15 +810,15 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 9 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
 The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is INFANTRY and number is + 12.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -838,15 +838,15 @@ Player_3 has 0 armies and 9 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 9 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
 The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is INFANTRY and number is + 12.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -856,16 +856,16 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 10 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -885,16 +885,16 @@ Player_3 has 0 armies and 10 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 10 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -904,17 +904,17 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 11 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -934,17 +934,17 @@ Player_3 has 0 armies and 11 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 11 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -954,18 +954,18 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 12 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -985,18 +985,18 @@ Player_3 has 0 armies and 12 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 12 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1006,18 +1006,18 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 13 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
 The card type is INFANTRY and number is + 21.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
@@ -1038,18 +1038,18 @@ Player_3 has 0 armies and 13 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 13 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
 The card type is INFANTRY and number is + 21.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
@@ -1060,20 +1060,20 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 14 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
 The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1093,20 +1093,20 @@ Player_3 has 0 armies and 14 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 14 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
 The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1116,21 +1116,21 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 15 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
 The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1150,21 +1150,21 @@ Player_3 has 0 armies and 15 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 15 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
 The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1174,22 +1174,22 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 16 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
 The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1209,22 +1209,22 @@ Player_3 has 0 armies and 16 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 16 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
 The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1234,23 +1234,23 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 17 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
 The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1270,23 +1270,23 @@ Player_3 has 0 armies and 17 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 17 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
 The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1296,24 +1296,24 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 18 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
 The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
-The card type is ARTILLERY and number is + 23.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1333,24 +1333,24 @@ Player_3 has 0 armies and 18 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 18 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
 The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
-The card type is ARTILLERY and number is + 23.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1360,25 +1360,25 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 19 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
 The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
-The card type is ARTILLERY and number is + 23.
-The card type is WILD and number is + 26.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1398,25 +1398,25 @@ Player_3 has 0 armies and 19 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 19 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
 The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
-The card type is ARTILLERY and number is + 23.
-The card type is WILD and number is + 26.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1426,26 +1426,26 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 20 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
 The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
-The card type is ARTILLERY and number is + 23.
-The card type is WILD and number is + 26.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
 The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1465,26 +1465,26 @@ Player_3 has 0 armies and 20 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 20 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
+The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
 The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
 The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
-The card type is ARTILLERY and number is + 23.
-The card type is WILD and number is + 26.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
 The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1494,27 +1494,27 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 21 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
-The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
-The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
-The card type is ARTILLERY and number is + 23.
-The card type is WILD and number is + 26.
-The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1534,27 +1534,27 @@ Player_3 has 0 armies and 21 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 21 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
-The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
-The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
-The card type is ARTILLERY and number is + 23.
-The card type is WILD and number is + 26.
-The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 11.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1564,28 +1564,28 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 22 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
-The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
-The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
-The card type is ARTILLERY and number is + 23.
-The card type is WILD and number is + 26.
-The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 11.
-The card type is INFANTRY and number is + 27.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1605,28 +1605,28 @@ Player_3 has 0 armies and 22 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 22 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
-The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
-The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
-The card type is ARTILLERY and number is + 23.
-The card type is WILD and number is + 26.
-The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 11.
-The card type is INFANTRY and number is + 27.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1636,29 +1636,29 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 23 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
-The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
-The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
-The card type is ARTILLERY and number is + 23.
-The card type is WILD and number is + 26.
-The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 11.
-The card type is INFANTRY and number is + 27.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1678,29 +1678,29 @@ Player_3 has 0 armies and 23 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 23 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
-The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
-The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
-The card type is ARTILLERY and number is + 23.
-The card type is WILD and number is + 26.
-The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 11.
-The card type is INFANTRY and number is + 27.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1710,29 +1710,29 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 24 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
-The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
-The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
-The card type is ARTILLERY and number is + 23.
-The card type is WILD and number is + 26.
-The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 11.
-The card type is INFANTRY and number is + 27.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
 The card type is INFANTRY and number is + 3.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
@@ -1753,29 +1753,29 @@ Player_3 has 0 armies and 24 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 24 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
-The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
-The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
-The card type is ARTILLERY and number is + 23.
-The card type is WILD and number is + 26.
-The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 11.
-The card type is INFANTRY and number is + 27.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
 The card type is INFANTRY and number is + 3.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
@@ -1786,31 +1786,31 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 25 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
-The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
-The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
-The card type is ARTILLERY and number is + 23.
-The card type is WILD and number is + 26.
-The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 11.
-The card type is INFANTRY and number is + 27.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
 The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
+The card type is WILD and number is + 29.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1830,31 +1830,31 @@ Player_3 has 0 armies and 25 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 25 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
-The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
-The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
-The card type is ARTILLERY and number is + 23.
-The card type is WILD and number is + 26.
-The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 11.
-The card type is INFANTRY and number is + 27.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
 The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
+The card type is WILD and number is + 29.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 Player_2 has 0 armies and 0 number of cards.
@@ -1864,32 +1864,32 @@ Player_2 has 0 armies and 0 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 26 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
-The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
-The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
-The card type is ARTILLERY and number is + 23.
-The card type is WILD and number is + 26.
-The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 11.
-The card type is INFANTRY and number is + 27.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
 The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 
@@ -1925,32 +1925,32 @@ Player_3 has 0 armies and 26 number of cards.
 Current Player Statistics- 
 Player_3 has 0 armies and 26 cards.
 The following below are the card details - 
-The card type is INFANTRY and number is + 12.
-The card type is CAVALRY and number is + 7.
-The card type is CAVALRY and number is + 16.
-The card type is CAVALRY and number is + 34.
-The card type is CAVALRY and number is + 1.
-The card type is ARTILLERY and number is + 38.
-The card type is CAVALRY and number is + 4.
-The card type is CAVALRY and number is + 37.
-The card type is ARTILLERY and number is + 35.
-The card type is INFANTRY and number is + 24.
-The card type is INFANTRY and number is + 9.
-The card type is INFANTRY and number is + 36.
-The card type is INFANTRY and number is + 21.
-The card type is CAVALRY and number is + 13.
-The card type is ARTILLERY and number is + 17.
-The card type is CAVALRY and number is + 28.
-The card type is INFANTRY and number is + 0.
-The card type is ARTILLERY and number is + 23.
-The card type is WILD and number is + 26.
-The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 11.
-The card type is INFANTRY and number is + 27.
+The card type is ARTILLERY and number is + 29.
+The card type is INFANTRY and number is + 24.
+The card type is ARTILLERY and number is + 26.
+The card type is ARTILLERY and number is + 14.
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
 The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
 Global Statictics- 
 Player_1 has 0 armies and 0 number of cards.
 
@@ -1968,521 +1968,1080 @@ Player_3 has 0 armies and 26 number of cards.
 Current Player Statistics- 
 Player_1 has 0 armies and 1 cards.
 The following below are the card details - 
-The card type is ARTILLERY and number is + 26.
+The card type is INFANTRY and number is + 33.
 Global Statictics- 
 Player_3 has 0 armies and 26 number of cards.
 
 
 *************The Card Exchange View************
 Current Player Statistics- 
-Player_3 has 36 armies and 4 cards.
+Player_3 has 36 armies and 21 cards.
 The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 35 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 34 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 33 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 32 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 31 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 30 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 29 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 28 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 27 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 26 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 25 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 24 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 23 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 22 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 21 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 20 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 19 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 18 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 17 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 16 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 15 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 14 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 13 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 12 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 11 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 10 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 9 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 8 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 7 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 6 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 5 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 4 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 3 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 2 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 1 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 0 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_1 has 0 armies and 1 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 26.
-Global Statictics- 
-Player_3 has 0 armies and 4 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 0 armies and 4 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 0 armies and 5 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-The card type is CAVALRY and number is + 1.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_1 has 0 armies and 1 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 26.
-Global Statictics- 
-Player_3 has 0 armies and 5 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 0 armies and 5 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-The card type is CAVALRY and number is + 1.
-Global Statictics- 
-Player_1 has 0 armies and 1 number of cards.
-
-
-*************The Card Exchange View************
-Current Player Statistics- 
-Player_3 has 0 armies and 6 cards.
-The following below are the card details - 
-The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-The card type is CAVALRY and number is + 1.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
 The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 35 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 34 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 33 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 32 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 31 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 30 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 29 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 28 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 27 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 26 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 25 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 24 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 23 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 22 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 21 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 20 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 19 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 18 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 17 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 16 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 15 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 14 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 13 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 12 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 11 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 10 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 9 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 8 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 7 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 6 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 5 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 4 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 3 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 2 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 1 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 0 armies and 21 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
 Global Statictics- 
 Player_1 has 0 armies and 1 number of cards.
 
@@ -2491,21 +3050,176 @@ Player_1 has 0 armies and 1 number of cards.
 Current Player Statistics- 
 Player_1 has 0 armies and 1 cards.
 The following below are the card details - 
-The card type is ARTILLERY and number is + 26.
+The card type is INFANTRY and number is + 33.
 Global Statictics- 
-Player_3 has 0 armies and 6 number of cards.
+Player_3 has 0 armies and 21 number of cards.
 
 
 *************The Card Exchange View************
 Current Player Statistics- 
-Player_3 has 0 armies and 6 cards.
+Player_3 has 0 armies and 21 cards.
 The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
 The card type is ARTILLERY and number is + 5.
-The card type is INFANTRY and number is + 3.
-The card type is INFANTRY and number is + 6.
-The card type is INFANTRY and number is + 33.
-The card type is CAVALRY and number is + 1.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
 The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 0 armies and 22 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+The card type is ARTILLERY and number is + 41.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 0 armies and 1 cards.
+The following below are the card details - 
+The card type is INFANTRY and number is + 33.
+Global Statictics- 
+Player_3 has 0 armies and 22 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 0 armies and 22 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+The card type is ARTILLERY and number is + 41.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 0 armies and 23 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+The card type is ARTILLERY and number is + 41.
+The card type is ARTILLERY and number is + 11.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 0 armies and 1 cards.
+The following below are the card details - 
+The card type is INFANTRY and number is + 33.
+Global Statictics- 
+Player_3 has 0 armies and 23 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 0 armies and 23 cards.
+The following below are the card details - 
+The card type is WILD and number is + 4.
+The card type is CAVALRY and number is + 22.
+The card type is ARTILLERY and number is + 38.
+The card type is INFANTRY and number is + 12.
+The card type is CAVALRY and number is + 40.
+The card type is CAVALRY and number is + 13.
+The card type is ARTILLERY and number is + 20.
+The card type is INFANTRY and number is + 21.
+The card type is CAVALRY and number is + 19.
+The card type is CAVALRY and number is + 16.
+The card type is CAVALRY and number is + 10.
+The card type is CAVALRY and number is + 31.
+The card type is ARTILLERY and number is + 5.
+The card type is ARTILLERY and number is + 32.
+The card type is INFANTRY and number is + 39.
+The card type is CAVALRY and number is + 34.
+The card type is ARTILLERY and number is + 8.
+The card type is INFANTRY and number is + 27.
+The card type is INFANTRY and number is + 3.
+The card type is WILD and number is + 29.
+The card type is INFANTRY and number is + 36.
+The card type is ARTILLERY and number is + 41.
+The card type is ARTILLERY and number is + 11.
 Global Statictics- 
 Player_1 has 0 armies and 1 number of cards.
 

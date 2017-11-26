@@ -14,10 +14,17 @@ import risk.model.RiskPlayerModel;
 import risk.model.RiskTerritoryModel;
 import risk.model.interfaces.StrategyInterface;
 
+/**
+ * The Class Cheater.
+ */
 public class Cheater implements StrategyInterface {
 
+	/** The current risk model. */
 	RiskGameModel currentRiskModel;
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#takeTurn(boolean, risk.model.RiskGameModel)
+	 */
 	@Override
 	public void takeTurn(boolean isTest, RiskGameModel riskGameModel) {
 		Utility.writeLog("***********" + riskGameModel.curPlayer.getName() + " turn *************");
@@ -34,6 +41,9 @@ public class Cheater implements StrategyInterface {
 		return;
 	}
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#initialReinforce(boolean, risk.model.RiskGameModel, int[])
+	 */
 	@Override
 	public void initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (riskGameModel.curPlayer.getNumberOfArmies() > 0) {
@@ -55,6 +65,9 @@ public class Cheater implements StrategyInterface {
 		//return;
 	}
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#startTurn(boolean, risk.model.RiskGameModel)
+	 */
 	@Override
 	public void startTurn(boolean isTest, RiskGameModel riskGameModel) {
 		/* Place all the armies randomly, and place the turn bonus too randomly */
@@ -68,6 +81,13 @@ public class Cheater implements StrategyInterface {
 
 	}
 
+
+	/**
+	 * Trade cards.
+	 *
+	 * @param riskGameModel the risk game model
+	 * @return the string
+	 */
 	private void tradeCards(RiskGameModel riskGameModel) {
 		int count = 0;
 		riskGameModel.setState(RiskGameModel.REINFORCE);
@@ -86,6 +106,9 @@ public class Cheater implements StrategyInterface {
 		 reinforce(false, riskGameModel);
 	}
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#reinforce(boolean, risk.model.RiskGameModel, int[])
+	 */
 	@Override
 	public void reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
@@ -121,6 +144,9 @@ public class Cheater implements StrategyInterface {
 		 attack(false, riskGameModel);
 	}
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#attack(boolean, risk.model.RiskGameModel, int[])
+	 */
 	@Override
 	public void attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
@@ -150,6 +176,12 @@ public class Cheater implements StrategyInterface {
 		}
 	}
 
+	/**
+	 * Cheater capture adjacent.
+	 *
+	 * @param cheaterTerritory the cheater territory
+	 * @return the boolean
+	 */
 	private Boolean cheaterCaptureAdjacent(RiskTerritoryModel cheaterTerritory) {
 
 		for (int adjacentTerritoryId : cheaterTerritory.getAdjacents()) {
@@ -180,6 +212,11 @@ public class Cheater implements StrategyInterface {
 		return false;
 	}
 
+	/**
+	 * End game.
+	 *
+	 * @param riskGameModel the risk game model
+	 */
 	public void endGame(RiskGameModel riskGameModel) {
 		Utility.writeLog("Thats all ya, " + riskGameModel.curPlayer.getName() + " won the game with his "
 				+ riskGameModel.curPlayer.getStrategy().getClass().getName() + " strategy!!!!");
@@ -192,6 +229,12 @@ public class Cheater implements StrategyInterface {
 		riskGameModel.subPanel.repaint();
 	}
 
+	/**
+	 * Gets the random occupied territory by player.
+	 *
+	 * @param riskPlayer the risk player
+	 * @return the random occupied territory by player
+	 */
 	private int getRandomOccupiedTerritoryByPlayer(RiskPlayerModel riskPlayer) {
 		if (riskPlayer.getOccupiedTerritories().size() > 0)
 			return riskPlayer.getOccupiedTerritories()
@@ -199,6 +242,9 @@ public class Cheater implements StrategyInterface {
 		return -1;
 	}
 
+	/* (non-Javadoc)
+	 * @see risk.model.interfaces.StrategyInterface#fortify(boolean, risk.model.RiskGameModel, int[])
+	 */
 	@Override
 	public void fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		Utility.writeLog("FORTIFY - Some Cheater dude called - " + riskGameModel.curPlayer.getName()
@@ -218,6 +264,12 @@ public class Cheater implements StrategyInterface {
 		//return "";
 	}
 
+	/**
+	 * Gets the fortifiable territories.
+	 *
+	 * @param riskGameModel the risk game model
+	 * @return the fortifiable territories
+	 */
 	private ArrayList<RiskTerritoryModel> getFortifiableTerritories(RiskGameModel riskGameModel) {
 		ArrayList<RiskTerritoryModel> fortifiableTerritories = new ArrayList<RiskTerritoryModel>();
 		for (RiskTerritoryModel riskTerritory : riskGameModel.curPlayer.getOccupiedTerritories()) {

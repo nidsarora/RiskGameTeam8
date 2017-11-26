@@ -32,6 +32,7 @@ import java.util.Random;
 import java.awt.event.ActionEvent;
 import javax.swing.JButton;
 
+// TODO: Auto-generated Javadoc
 /**
  * This class is used to add RiskPlayers to the game.
  * 
@@ -39,15 +40,24 @@ import javax.swing.JButton;
  */
 public class RiskTournamentModeController extends java.awt.Frame {
 
+	/** The no of players. */
 	static int noOfPlayers = 3;
+    
+    /** The behaviour players. */
     static ArrayList<String> behaviourPlayers=new ArrayList<String>(7);
+    
+    /** The max turns. */
     int mapNum, playerNum, gameNum, maxTurns;
-	/** Creates new form RiskAddPlayerUI */
+	
+	/**
+	 *  Creates new form RiskAddPlayerUI.
+	 */
 	public RiskTournamentModeController() {
 		initComponents();
 		setLocationRelativeTo(null);
 	}
 
+	/** The added. */
 	boolean added;
 
 	/**
@@ -186,5 +196,6 @@ public class RiskTournamentModeController extends java.awt.Frame {
 	}
 
 
+	/** The mode panel. */
 	private javax.swing.JPanel modePanel;
 }

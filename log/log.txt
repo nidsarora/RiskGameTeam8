@@ -1,6 +1,6 @@
 **************The Risk Begin************
 
-Sun Nov 26 09:30:19 EST 2017
+Sun Nov 26 09:38:22 EST 2017
 
 All players Added
 
@@ -18,7 +18,7 @@ INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on
 
 ***********Player_3 turn *************
 
-INITIAL REINFORCE - The cheater called - Player_3 placed 'one' of his army on Ural
+INITIAL REINFORCE - The cheater called - Player_3 placed 'one' of his army on Scandinavia
 
 START TURN - Some Cheater called - Player_3 has started his turn.
 
@@ -28,11 +28,11 @@ REINFORCE - Some Cheater called - Player_3 decided to Reinforce his armies.
 
 REINFORCE - Some Cheater called - Player_3 reinforced North_Africa army count is 3
 
-REINFORCE - Some Cheater called - Player_3 reinforced North_Africa army count is 2
+REINFORCE - Some Cheater called - Player_3 reinforced Eastern_Australia army count is 2
 
-REINFORCE - Some Cheater called - Player_3 reinforced Ural army count is 1
+REINFORCE - Some Cheater called - Player_3 reinforced Eastern_Canada army count is 1
 
-REINFORCE - Some Cheater called - Player_3 reinforced Central_America army count is 0
+REINFORCE - Some Cheater called - Player_3 reinforced Irkutsk army count is 0
 
 REINFORCE - Some Cheater called - Player_3 is done with reinforcement and his army count is 0
 
@@ -122,9 +122,9 @@ ATTACK - Some Aggressive dude called - Player_1 has warred against Northwest_Ter
 
 ATTACK - Some Aggressive dude Player_1 attack results as follows!!
 
-ATTACK is with 1 defence is with 1dies.
+ATTACK is with 3 defence is with 1dies.
 
-Round 1 - Attacker - 5 Vs Defender 1
+Round 1 - Attacker - 5 Vs Defender 3
 
 Defender lost round and one army. Current army count + 0
 
@@ -132,7 +132,7 @@ Defender Lost!!
 
 Player_1 has destroyed an army
 
-CAPTURE - Some Aggressive dude called - Player_1 moved 3 armies from Alberta to Northwest_Territory
+CAPTURE - Some Aggressive dude called - Player_1 moved 2 armies from Alberta to Northwest_Territory
 
 ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
 
@@ -142,11 +142,11 @@ ATTACK - Some Aggressive dude Player_1 attack results as follows!!
 
 ATTACK is with 1 defence is with 1dies.
 
-Round 1 - Attacker - 4 Vs Defender 1
+Round 1 - Attacker - 1 Vs Defender 5
 
-Defender lost round and one army. Current army count + 1
+Attacker lost round and one army. Current army count + 2
 
-Player_1 has destroyed an army
+Player_1 has lost an army
 
 ATTACK - Some Aggressive dude called - Player_1 has warred against Ontario using his territory - Alberta
 
@@ -154,7 +154,7 @@ ATTACK - Some Aggressive dude Player_1 attack results as follows!!
 
 ATTACK is with 1 defence is with 1dies.
 
-Round 1 - Attacker - 3 Vs Defender 3
+Round 1 - Attacker - 4 Vs Defender 6
 
 Attacker lost round and one army. Current army count + 1
 
@@ -168,9 +168,9 @@ ATTACK - Some Aggressive dude called - Player_1 could not attack/is done with at
 
 FORTIFY - Some Aggressive dude called - Player_1 has an option to Fortify any of his armies.
 
-FORTIFY - Some Aggressive dude called - Player_1 fortified Northwest_Territory through Alaska by 1 armie(s). And Strongest Teeritory Army count is now -4
+FORTIFY - Some Aggressive dude called - Player_1 fortified Northwest_Territory through Alaska by 1 armie(s). And Strongest Teeritory Army count is now -3
 
-FORTIFY - Some Aggressive dude called - Player_1 fortified Northwest_Territory through Alberta by 0 armie(s). And Strongest Teeritory Army count is now -4
+FORTIFY - Some Aggressive dude called - Player_1 fortified Northwest_Territory through Alberta by 0 armie(s). And Strongest Teeritory Army count is now -3
 
 FORTIFY - Some Aggressive dude called - Player_1 is done fortifying/cannot fortify any more/ choose not to and end his turn
 
@@ -184,79 +184,79 @@ REINFORCE - Some Cheater called - Player_3 recieved 32 armies as turn bonus.
 
 REINFORCE - Some Cheater called - Player_3 decided to Reinforce his armies.
 
-REINFORCE - Some Cheater called - Player_3 reinforced Venezuela army count is 36
+REINFORCE - Some Cheater called - Player_3 reinforced Madagascar army count is 36
 
-REINFORCE - Some Cheater called - Player_3 reinforced Indonesia army count is 35
+REINFORCE - Some Cheater called - Player_3 reinforced Ontario army count is 35
 
-REINFORCE - Some Cheater called - Player_3 reinforced Iceland army count is 34
+REINFORCE - Some Cheater called - Player_3 reinforced Egypt army count is 34
 
-REINFORCE - Some Cheater called - Player_3 reinforced North_Africa army count is 33
+REINFORCE - Some Cheater called - Player_3 reinforced Southeast_Asia army count is 33
 
-REINFORCE - Some Cheater called - Player_3 reinforced Scandinavia army count is 32
+REINFORCE - Some Cheater called - Player_3 reinforced Madagascar army count is 32
 
-REINFORCE - Some Cheater called - Player_3 reinforced Mongolia army count is 31
+REINFORCE - Some Cheater called - Player_3 reinforced Ontario army count is 31
 
-REINFORCE - Some Cheater called - Player_3 reinforced Indonesia army count is 30
+REINFORCE - Some Cheater called - Player_3 reinforced Southeast_Asia army count is 30
 
-REINFORCE - Some Cheater called - Player_3 reinforced Yakutsk army count is 29
+REINFORCE - Some Cheater called - Player_3 reinforced Mongolia army count is 29
 
-REINFORCE - Some Cheater called - Player_3 reinforced Madagascar army count is 28
+REINFORCE - Some Cheater called - Player_3 reinforced Central_Africa army count is 28
 
-REINFORCE - Some Cheater called - Player_3 reinforced Yakutsk army count is 27
+REINFORCE - Some Cheater called - Player_3 reinforced India army count is 27
 
-REINFORCE - Some Cheater called - Player_3 reinforced Egypt army count is 26
+REINFORCE - Some Cheater called - Player_3 reinforced Central_Africa army count is 26
 
-REINFORCE - Some Cheater called - Player_3 reinforced Ontario army count is 25
+REINFORCE - Some Cheater called - Player_3 reinforced Brazil army count is 25
 
-REINFORCE - Some Cheater called - Player_3 reinforced Yakutsk army count is 24
+REINFORCE - Some Cheater called - Player_3 reinforced New_Guinea army count is 24
 
-REINFORCE - Some Cheater called - Player_3 reinforced Central_America army count is 23
+REINFORCE - Some Cheater called - Player_3 reinforced Japan army count is 23
 
-REINFORCE - Some Cheater called - Player_3 reinforced Southeast_Asia army count is 22
+REINFORCE - Some Cheater called - Player_3 reinforced Middle_East army count is 22
 
-REINFORCE - Some Cheater called - Player_3 reinforced Southeast_Asia army count is 21
+REINFORCE - Some Cheater called - Player_3 reinforced Japan army count is 21
 
-REINFORCE - Some Cheater called - Player_3 reinforced Ural army count is 20
+REINFORCE - Some Cheater called - Player_3 reinforced India army count is 20
 
-REINFORCE - Some Cheater called - Player_3 reinforced North_Africa army count is 19
+REINFORCE - Some Cheater called - Player_3 reinforced Western_Australia army count is 19
 
-REINFORCE - Some Cheater called - Player_3 reinforced Egypt army count is 18
+REINFORCE - Some Cheater called - Player_3 reinforced Southeast_Asia army count is 18
 
-REINFORCE - Some Cheater called - Player_3 reinforced Central_Africa army count is 17
+REINFORCE - Some Cheater called - Player_3 reinforced Scandinavia army count is 17
 
-REINFORCE - Some Cheater called - Player_3 reinforced Scandinavia army count is 16
+REINFORCE - Some Cheater called - Player_3 reinforced North_Africa army count is 16
 
-REINFORCE - Some Cheater called - Player_3 reinforced Iceland army count is 15
+REINFORCE - Some Cheater called - Player_3 reinforced Eastern_United_States army count is 15
 
-REINFORCE - Some Cheater called - Player_3 reinforced Eastern_Australia army count is 14
+REINFORCE - Some Cheater called - Player_3 reinforced Egypt army count is 14
 
-REINFORCE - Some Cheater called - Player_3 reinforced Western_United_States army count is 13
+REINFORCE - Some Cheater called - Player_3 reinforced Eastern_United_States army count is 13
 
-REINFORCE - Some Cheater called - Player_3 reinforced China army count is 12
+REINFORCE - Some Cheater called - Player_3 reinforced New_Guinea army count is 12
 
-REINFORCE - Some Cheater called - Player_3 reinforced South_Africa army count is 11
+REINFORCE - Some Cheater called - Player_3 reinforced Indonesia army count is 11
 
 REINFORCE - Some Cheater called - Player_3 reinforced Northern_Europe army count is 10
 
-REINFORCE - Some Cheater called - Player_3 reinforced Indonesia army count is 9
+REINFORCE - Some Cheater called - Player_3 reinforced Southeast_Asia army count is 9
 
-REINFORCE - Some Cheater called - Player_3 reinforced Southern_Europe army count is 8
+REINFORCE - Some Cheater called - Player_3 reinforced Western_Australia army count is 8
 
-REINFORCE - Some Cheater called - Player_3 reinforced Iceland army count is 7
+REINFORCE - Some Cheater called - Player_3 reinforced Brazil army count is 7
 
-REINFORCE - Some Cheater called - Player_3 reinforced China army count is 6
+REINFORCE - Some Cheater called - Player_3 reinforced Ural army count is 6
 
-REINFORCE - Some Cheater called - Player_3 reinforced Scandinavia army count is 5
+REINFORCE - Some Cheater called - Player_3 reinforced Afghanistan army count is 5
 
-REINFORCE - Some Cheater called - Player_3 reinforced Middle_East army count is 4
+REINFORCE - Some Cheater called - Player_3 reinforced Yakutsk army count is 4
 
-REINFORCE - Some Cheater called - Player_3 reinforced New_Guinea army count is 3
+REINFORCE - Some Cheater called - Player_3 reinforced Southeast_Asia army count is 3
 
-REINFORCE - Some Cheater called - Player_3 reinforced North_Africa army count is 2
+REINFORCE - Some Cheater called - Player_3 reinforced Yakutsk army count is 2
 
-REINFORCE - Some Cheater called - Player_3 reinforced Eastern_United_States army count is 1
+REINFORCE - Some Cheater called - Player_3 reinforced Ontario army count is 1
 
-REINFORCE - Some Cheater called - Player_3 reinforced Russia army count is 0
+REINFORCE - Some Cheater called - Player_3 reinforced Central_Africa army count is 0
 
 REINFORCE - Some Cheater called - Player_3 is done with reinforcement and his army count is 0
 
