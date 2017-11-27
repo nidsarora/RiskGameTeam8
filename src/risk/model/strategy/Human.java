@@ -10,13 +10,9 @@ import risk.model.interfaces.StrategyInterface;
  */
 public class Human implements StrategyInterface {
 
-	/* (non-Javadoc)
-	 * @see risk.model.interfaces.StrategyInterface#takeTurn(boolean, risk.model.RiskGameModel)
-	 */
-	@Override
+		@Override
 	public void takeTurn(boolean isTest, RiskGameModel riskGameModel) {
-		// TODO Auto-generated method stub
-		return;
+			return;
 	}
 
 	/**
