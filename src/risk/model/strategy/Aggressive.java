@@ -12,7 +12,7 @@ import risk.model.RiskTerritoryModel;
 import risk.model.interfaces.StrategyInterface;
 
 /**
- * The Class Aggressive.
+ * This Class contains logic for Aggressive player strategy.
  */
 public class Aggressive implements StrategyInterface {
 

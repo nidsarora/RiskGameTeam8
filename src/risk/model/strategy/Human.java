@@ -6,7 +6,7 @@ import risk.model.RiskTerritoryModel;
 import risk.model.interfaces.StrategyInterface;
 
 /**
- * The Class Human.
+ * This Class contains logic for Human player strategy.
  */
 public class Human implements StrategyInterface {
 
