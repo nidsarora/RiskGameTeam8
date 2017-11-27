@@ -12,7 +12,7 @@ import risk.model.RiskTerritoryModel;
 import risk.model.interfaces.StrategyInterface;
 
 /**
- * The Class Random.
+ * This class contains logic for Random player.
  */
 public class Random implements StrategyInterface {
 
