@@ -15,7 +15,7 @@ import risk.model.RiskTerritoryModel;
 import risk.model.interfaces.StrategyInterface;
 
 /**
- * The Class Cheater.
+ * This Class contains logic for Cheater player.
  */
 public class Cheater implements StrategyInterface {
 

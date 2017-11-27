@@ -4,7 +4,7 @@ import risk.model.RiskGameModel;
 import risk.model.interfaces.StrategyInterface;
 
 /**
- * The Class Benevolent.
+ * This Class contains logic for Benevolent player.
  */
 public class Benevolent implements StrategyInterface {
 	
