@@ -487,5 +487,23 @@ public class TestRiskGameModel {
 	    riskGameModel.setdTerritory(dTerritory);
 	    assertEquals(1,riskGameModel.isCaptured());//players.size=1, so he won the game
 	}
-
+	/**
+	 * Testdoes card match current player territory.
+	 */
+        @Test
+	public void testdoesCardMatchCurrentPlayerTerritory() 
+	{
+		Benevolent benevolent=new Benevolent();
+		RiskPlayerModel rpm5=new RiskPlayerModel("player5",1,benevolent);
+		RiskTerritoryModel rtm=new RiskTerritoryModel(2,"Northwest_Territory",1,155,70);
+		RiskTerritoryModel rtm1=new RiskTerritoryModel(1,"Alaska",1,47,76);
+		Vector<RiskTerritoryModel> occupiedTerritories=new Vector<RiskTerritoryModel>();
+		occupiedTerritories.add(rtm);
+		occupiedTerritories.add(rtm1);
+		rpm5.setOccupiedTerritories(occupiedTerritories);
+		RiskCardModel rcm = new RiskCardModel(1,1);
+			riskGameModel.setRiskCurPlayer(rpm5);
+			int tc=riskGameModel.doesCardMatchCurrentPlayerTerritory();
+			assertEquals(2,tc);
+		}
 }
