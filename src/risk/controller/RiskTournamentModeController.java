@@ -75,7 +75,7 @@ public class RiskTournamentModeController extends java.awt.Frame {
 		{  
 			turnNumCombobox.addItem(new Integer(i));
 		}
-		String[] behaviours= {"Human","Aggressive","Benevolent","Random","Cheater"};
+		String[] behaviours= {"Aggressive","Benevolent","Random","Cheater"};
 		JComboBox mapNumCombobox = new JComboBox(maps);
 		JComboBox playerNumCombobox = new JComboBox(playerStrategies);
 		JComboBox gameNumCombobox = new JComboBox(games);

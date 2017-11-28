@@ -113,7 +113,6 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		risk.curPlayer.takeTurn(risk);
 	}
 
-	
 	private RiskGameModel loadSavedRiskGameModel() {
 		this.risk = null;
 		RiskGameModelSerializable riskStaticComponents;
@@ -121,7 +120,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			FileInputStream fileIn = new FileInputStream("SavedRisk\\RiskNonStaticModel.ser");
 			ObjectInputStream in = new ObjectInputStream(fileIn);
 			this.risk = (RiskGameModel) in.readObject();
-			riskStaticComponents = (RiskGameModelSerializable)new ObjectInputStream(new FileInputStream("SavedRisk\\RiskStaticModel.ser")).readObject();
+			riskStaticComponents = (RiskGameModelSerializable) new ObjectInputStream(
+					new FileInputStream("SavedRisk\\RiskStaticModel.ser")).readObject();
 			this.risk.mapRiskGameSerizableToRiskGameModel(riskStaticComponents);
 			in.close();
 			fileIn.close();
@@ -135,7 +135,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			return null;
 		}
 	}
-	
+
 	/**
 	 * Initialize phase view.
 	 *
@@ -499,33 +499,33 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			int defenseArmies = risk.defenseTerritory.getArmies();
 			int attackArmies = risk.aTerritory.getArmies();
 
-			if (Integer.valueOf(risk.gamePhaseActive(x_coordinate, y_coordinate)) > 0) {
-				if (defenseArmies - risk.defenseTerritory.getArmies() == 1) {
-					statusLabel.setText(risk.curPlayer.getName() + " has destroyed an army");
-					// Utility.writeLog(risk.curPlayer.getName() + " has destroyed an army");
-				} else if (defenseArmies - risk.defenseTerritory.getArmies() == 2) {
-					statusLabel.setText(risk.curPlayer.getName() + " has destroyed two armies");
-					// Utility.writeLog(risk.curPlayer.getName() + " has destroyed two armies");
-				} else if (attackArmies - risk.aTerritory.getArmies() == 1) {
-					statusLabel.setText(risk.curPlayer.getName() + " has lost an army");
-					// Utility.writeLog(risk.curPlayer.getName() + " has lost an army");
-				} else if (attackArmies - risk.aTerritory.getArmies() == 2) {
-					statusLabel.setText(risk.curPlayer.getName() + " has lost two armies");
-					// Utility.writeLog(risk.curPlayer.getName() + " has lost two armies");
-				}
-
-				if (risk.aTerritory.getArmies() == 1) {
-					risk.setState(RiskGameModel.ACTIVE_TURN);
-					statusLabel.setText(risk.curPlayer.getName() + " has lost the battle");
-					AttackButton.setText("Attack");
-					FortifyButton.setVisible(true);
-					EndButton.setVisible(true);
-					risk.defenseNum = 0;
-					risk.attackNum = 0;
-					risk.defenseTerritory = null;
-					risk.aTerritory = null;
-				}
+			// if (Integer.valueOf(risk.gamePhaseActive(x_coordinate, y_coordinate)) > 0) {
+			// if (defenseArmies - risk.defenseTerritory.getArmies() == 1) {
+			// statusLabel.setText(risk.curPlayer.getName() + " has destroyed an army");
+			// // Utility.writeLog(risk.curPlayer.getName() + " has destroyed an army");
+			// } else if (defenseArmies - risk.defenseTerritory.getArmies() == 2) {
+			// statusLabel.setText(risk.curPlayer.getName() + " has destroyed two armies");
+			// // Utility.writeLog(risk.curPlayer.getName() + " has destroyed two armies");
+			// } else if (attackArmies - risk.aTerritory.getArmies() == 1) {
+			// statusLabel.setText(risk.curPlayer.getName() + " has lost an army");
+			// // Utility.writeLog(risk.curPlayer.getName() + " has lost an army");
+			// } else if (attackArmies - risk.aTerritory.getArmies() == 2) {
+			// statusLabel.setText(risk.curPlayer.getName() + " has lost two armies");
+			// // Utility.writeLog(risk.curPlayer.getName() + " has lost two armies");
+			// }
+			risk.gamePhaseActive(x_coordinate, y_coordinate);
+			if (risk.aTerritory.getArmies() == 1) {
+				risk.setState(RiskGameModel.ACTIVE_TURN);
+				statusLabel.setText(risk.curPlayer.getName() + " has lost the battle");
+				AttackButton.setText("Attack");
+				FortifyButton.setVisible(true);
+				EndButton.setVisible(true);
+				risk.defenseNum = 0;
+				risk.attackNum = 0;
+				risk.defenseTerritory = null;
+				risk.aTerritory = null;
 			}
+			// }
 		} // End attackPhase
 
 		if (risk.getState() == RiskGameModel.DEFEATED) {
