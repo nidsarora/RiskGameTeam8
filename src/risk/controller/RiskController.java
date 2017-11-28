@@ -202,7 +202,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 		statusLabel.setFont(resourceMap.getFont("statusLabel.font")); // NOI18N
 		statusLabel.setForeground(resourceMap.getColor("statusLabel.foreground")); // NOI18N
-		statusLabel.setText("New Game"); // NOI18N
+		statusLabel.setText("Reinforce"); // NOI18N
 		statusLabel.setName("statusLabel"); // NOI18N
 		jPanel3.add(statusLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 63, 427, -1));
 
