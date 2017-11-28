@@ -1,13 +1,15 @@
 
 package risk.model;
 
+import java.io.Serializable;
+
 /**
  * This class represents the model of Card used in Risk Game.
  * 
  * @author Team8
  */
 
-public class RiskCardModel {
+public class RiskCardModel implements Serializable{
 
 	public String card_type;
 	public int territory;

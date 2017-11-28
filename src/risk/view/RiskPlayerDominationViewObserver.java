@@ -2,6 +2,7 @@ package risk.view;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.io.Serializable;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -14,7 +15,7 @@ import javax.swing.ScrollPaneConstants;
 import risk.helpers.Utility;
 import risk.model.RiskPlayerModel;
 
-public class RiskPlayerDominationViewObserver implements Observer {
+public class RiskPlayerDominationViewObserver implements Observer,Serializable {
 	
 	JPanel playerDominationViewPanel;
 	JTextArea playerDominationViewTextArea;

@@ -20,6 +20,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.WindowEvent;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -93,7 +96,11 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	 * Instantiates a new risk controller.
 	 */
 	public RiskController() {
-		risk = new RiskGameModel();
+		if (RiskController.isSavedGameLoaded)
+			risk = loadSavedRiskGameModel();
+		else
+			risk = new RiskGameModel();
+
 		initComponents();
 		initializePhaseView(risk);
 		risk.mainPanel = jPanel1;
@@ -106,6 +113,29 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		risk.curPlayer.takeTurn(risk);
 	}
 
+	
+	private RiskGameModel loadSavedRiskGameModel() {
+		this.risk = null;
+		RiskGameModelSerializable riskStaticComponents;
+		try {
+			FileInputStream fileIn = new FileInputStream("SavedRisk\\RiskNonStaticModel.ser");
+			ObjectInputStream in = new ObjectInputStream(fileIn);
+			this.risk = (RiskGameModel) in.readObject();
+			riskStaticComponents = (RiskGameModelSerializable)new ObjectInputStream(new FileInputStream("SavedRisk\\RiskStaticModel.ser")).readObject();
+			this.risk.mapRiskGameSerizableToRiskGameModel(riskStaticComponents);
+			in.close();
+			fileIn.close();
+			return this.risk;
+		} catch (IOException i) {
+			i.printStackTrace();
+			return null;
+		} catch (ClassNotFoundException c) {
+			System.out.println("Employee class not found");
+			c.printStackTrace();
+			return null;
+		}
+	}
+	
 	/**
 	 * Initialize phase view.
 	 *
@@ -248,7 +278,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 	protected void SaveGameButtonMouseClicked(MouseEvent evt) {
 		// TODO Auto-generated method stub
-		RiskStartGameController.btnLoadSavedGame.setEnabled(true);
+		this.risk.saveGame(risk);
 	}
 
 	/**
@@ -368,7 +398,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 	/** The Save Game button. */
 	private javax.swing.JButton SaveButton;
-	
+
 	/** The Fortify button. */
 	private javax.swing.JButton FortifyButton;
 	/*
@@ -652,10 +682,10 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 				}
 				risk.curPlayer.setArmiesRecivedByTradingCards(count);
 				risk.curPlayer.addArmies(count);
-				
+
 				cardsRemoved.addAll(risk.lstTradedCards);
 				risk.looseCard(cardsRemoved);
-				
+
 				cardStatusLabel.setText("Success");
 				risk.setState(RiskGameModel.REINFORCE); // allowing the player
 				risk.notifyPhaseViewChange(); // to
@@ -912,6 +942,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	// private List<RiskCardModel> lstTradedCards = new ArrayList<RiskCardModel>();
 	// moved to RiskGameModel
 	public static Boolean isBaseMapEdited = false;
+	public static Boolean isSavedGameLoaded = false;
 	private JFrame cardsFrame;
 	private JPanel cardbuttonsPanel;
 }

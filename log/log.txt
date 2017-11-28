@@ -1,24 +1,6 @@
 **************The Risk Begin************
 
-Sun Nov 26 12:39:21 EST 2017
-
-15 armies added to each player
+Tue Nov 28 09:15:28 EST 2017
 
 Build the Game Panel
-
-***********Player_3 turn *************
-
-INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
-
-initial reinforcement stage
-
-***********Player_2 turn *************
-
-INITIAL REINFORCE - Some Random dude called - Player_2 placed one of his army on bb
-
-***********Player_3 turn *************
-
-INITIAL REINFORCE - Some Random dude called - Player_3 placed one of his army on cc
-
-initial reinforcement stage
 

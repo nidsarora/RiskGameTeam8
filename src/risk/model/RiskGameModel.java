@@ -2,9 +2,12 @@
 package risk.model;
 
 import java.io.BufferedReader;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.io.InputStream;
 import java.io.ObjectInputStream.GetField;
 import java.util.ArrayList;
@@ -46,23 +49,23 @@ import risk.view.RiskPlayerDominationViewObserver;
  * 
  * @author Team8
  */
-public class RiskGameModel {
+public class RiskGameModel implements Serializable {
 
 	/** The Constant NEW_GAME. */
 	// Game States
-	public static final int NEW_GAME = 0;
+	public static int NEW_GAME = 0;
 
 	/** The Constant INITIAL_REINFORCE. */
-	public static final int INITIAL_REINFORCE = 1;
+	public static int INITIAL_REINFORCE = 1;
 
 	/** The Constant ACTIVE_TURN. */
-	public static final int ACTIVE_TURN = 2;
+	public static int ACTIVE_TURN = 2;
 
 	/** The Constant TURN_BONUS. */
-	public static final int TURN_BONUS = 3;
+	public static int TURN_BONUS = 3;
 
 	/** The Constant REINFORCE. */
-	public static final int REINFORCE = 4;
+	public static int REINFORCE = 4;
 
 	/** The Constant REINFORCE. */
 	private Boolean isGameMapValid = false;
@@ -73,49 +76,49 @@ public class RiskGameModel {
 	public StringBuilder sbCurrentMapString;
 
 	/** The Constant TRADE_CARDS. */
-	public static final int TRADE_CARDS = 5;
+	public static int TRADE_CARDS = 5;
 
 	/** The Constant START_TURN. */
-	public static final int START_TURN = 6;
+	public static int START_TURN = 6;
 
 	/** The Constant ATTACK. */
-	public static final int ATTACK = 7;
+	public static int ATTACK = 7;
 
 	/** The Constant ATTACKING. */
-	public static final int ATTACKING = 8;
+	public static int ATTACKING = 8;
 
 	/** The Constant ATTACK_PHASE. */
-	public static final int ATTACK_PHASE = 9;
+	public static int ATTACK_PHASE = 9;
 
 	/** The Constant BATTLING. */
-	public static final int BATTLING = 10;
+	public static int BATTLING = 10;
 
 	/** The Constant CAPTURE. */
-	public static final int CAPTURE = 11;
+	public static int CAPTURE = 11;
 
 	/** The Constant FORTIFY. */
-	public static final int FORTIFY = 12;
+	public static int FORTIFY = 12;
 
 	/** The Constant FORTIFYING. */
-	public static final int FORTIFYING = 13;
+	public static int FORTIFYING = 13;
 
 	/** The Constant FORTIFY_PHASE. */
-	public static final int FORTIFY_PHASE = 14;
+	public static int FORTIFY_PHASE = 14;
 
 	/** The Constant DEFEATED. */
-	public static final int DEFEATED = 15;
+	public static int DEFEATED = 15;
 
 	/** The game trade card phase count. */
 	public static int GAME_TRADE_CARD_PHASE_COUNT = 0;
 
 	/** The Constant END_GAME. */
-	public static final int END_GAME = 100;
+	public static int END_GAME = 100;
 
 	/** The armies. */
 	int armies;
 
 	/** The Constant GAME_OVER. */
-	public static final int GAME_OVER = 99;
+	public static int GAME_OVER = 99;
 
 	/** The territories. */
 	static public Vector<RiskTerritoryModel> territories = new Vector<RiskTerritoryModel>();
@@ -135,9 +138,9 @@ public class RiskGameModel {
 	/** The defender. */
 	public RiskPlayerModel defender;
 
-	public JPanel mainPanel;
-
-	public JPanel subPanel;
+	public transient  JPanel mainPanel;
+ 
+	public transient  JPanel subPanel;
 
 	/** The active. */
 	public RiskPlayerModel active;
@@ -196,7 +199,7 @@ public class RiskGameModel {
 	private Boolean isBaseMapEdited;
 
 	/** The risk phase view observer. */
-	private RiskPhaseViewObserver riskPhaseViewObserver;
+	private  RiskPhaseViewObserver riskPhaseViewObserver;
 
 	/** The attack dice. */
 	public Integer[] attackdice;
@@ -240,6 +243,7 @@ public class RiskGameModel {
 		}
 		return false;
 	}
+
 	/**
 	 * Sets the risk current player.
 	 *
@@ -248,7 +252,7 @@ public class RiskGameModel {
 	 */
 	public void setRiskCurPlayer(RiskPlayerModel riskplayermodel) {
 
-	    this.curPlayer = riskplayermodel;
+		this.curPlayer = riskplayermodel;
 		this.curPlayer.setCard(new RiskCardModel(1, 39));
 		this.curPlayer.setCard(new RiskCardModel(1, 39));
 		this.curPlayer.setCard(new RiskCardModel(3, 11));
@@ -1121,8 +1125,8 @@ public class RiskGameModel {
 		// } // end forty
 
 		if (getState() == FORTIFY || getState() == FORTIFYING || getState() == FORTIFY_PHASE) {
-			 this.curPlayer.fortify(country, this);
-			 return "";
+			this.curPlayer.fortify(country, this);
+			return "";
 		}
 
 		// if (getState() == ATTACK_PHASE) {
@@ -1138,8 +1142,8 @@ public class RiskGameModel {
 		// } // end attack with
 
 		if (getState() == ATTACKING || getState() == ATTACK || getState() == ATTACK_PHASE || getState() == CAPTURE) {
-			 this.curPlayer.attack(country, this);
-			 return "";
+			this.curPlayer.attack(country, this);
+			return "";
 		}
 
 		// if (getState() == TRADE_CARDS) {
@@ -1155,8 +1159,8 @@ public class RiskGameModel {
 		// }
 
 		if (getState() == REINFORCE) {
-			 this.curPlayer.reinforce(country, this);
-			 return "";
+			this.curPlayer.reinforce(country, this);
+			return "";
 		}
 
 		// if (getState() == START_TURN) {
@@ -1164,8 +1168,8 @@ public class RiskGameModel {
 		// }
 
 		if (getState() == START_TURN) {
-			 this.curPlayer.startTurn(this);
-			 return "";
+			this.curPlayer.startTurn(this);
+			return "";
 		}
 
 		return "";
@@ -1438,7 +1442,6 @@ public class RiskGameModel {
 		curPlayer.occupyTerritory(d);
 		d.setPlayer(curPlayer);
 		boolean flag = false;
-		
 
 		if (defender.getOccupiedTerritories().size() == 0) {
 			Utility.writeLog(defender.getName() + " lost the game.");
@@ -1924,6 +1927,73 @@ public class RiskGameModel {
 	 */
 	public void setIsGameMapValid(Boolean isGameMapValid) {
 		this.isGameMapValid = isGameMapValid;
+	}
+
+	public void saveGame(RiskGameModel risk) {
+		try {
+			FileOutputStream fileOut = new FileOutputStream("SavedRisk\\RiskNonStaticModel.ser");
+			ObjectOutputStream out = new ObjectOutputStream(fileOut);
+			out.writeObject(risk);
+			out = new ObjectOutputStream(new FileOutputStream("SavedRisk\\RiskStaticModel.ser"));
+			out.writeObject(risk.mapRiskGameModelToRiskGameSerizable());
+			out.close();
+			fileOut.close();
+			System.out.printf("Serialized data is saved in /tmp/employee.ser");
+		} catch (IOException i) {
+			i.printStackTrace();
+		}
+	}
+
+	public RiskGameModelSerializable mapRiskGameModelToRiskGameSerizable() {
+		RiskGameModelSerializable riskGameModelSerializable = new RiskGameModelSerializable();
+		riskGameModelSerializable.NEW_GAME = 0;
+		riskGameModelSerializable.INITIAL_REINFORCE = 1;
+		riskGameModelSerializable.ACTIVE_TURN = 2;
+		riskGameModelSerializable.TURN_BONUS = 3;
+		riskGameModelSerializable.REINFORCE = 4;
+		riskGameModelSerializable.TRADE_CARDS = 5;
+		riskGameModelSerializable.START_TURN = 6;
+		riskGameModelSerializable.ATTACK = 7;
+		riskGameModelSerializable.ATTACKING = 8;
+		riskGameModelSerializable.ATTACK_PHASE = 9;
+		riskGameModelSerializable.BATTLING = 10;
+		riskGameModelSerializable.CAPTURE = 11;
+		riskGameModelSerializable.FORTIFY = 12;
+		riskGameModelSerializable.FORTIFYING = 13;
+		riskGameModelSerializable.FORTIFY_PHASE = 14;
+		riskGameModelSerializable.DEFEATED = 15;
+		riskGameModelSerializable.GAME_TRADE_CARD_PHASE_COUNT = 0;
+		riskGameModelSerializable.END_GAME = 100;
+		riskGameModelSerializable.GAME_OVER = 99;
+		riskGameModelSerializable.territories = RiskGameModel.territories;
+		riskGameModelSerializable.players = RiskGameModel.players;
+		riskGameModelSerializable.gameState = RiskGameModel.gameState;
+		return riskGameModelSerializable;
+	}
+
+	public void mapRiskGameSerizableToRiskGameModel(RiskGameModelSerializable riskGameModelSerializable) {
+		RiskGameModel.NEW_GAME = riskGameModelSerializable.NEW_GAME;
+		RiskGameModel.INITIAL_REINFORCE = riskGameModelSerializable.INITIAL_REINFORCE;
+		RiskGameModel.ACTIVE_TURN = riskGameModelSerializable.ACTIVE_TURN;
+		RiskGameModel.TURN_BONUS = riskGameModelSerializable.TURN_BONUS;
+		RiskGameModel.REINFORCE = riskGameModelSerializable.REINFORCE;
+		RiskGameModel.TRADE_CARDS = riskGameModelSerializable.TRADE_CARDS;
+		RiskGameModel.START_TURN = riskGameModelSerializable.START_TURN;
+		RiskGameModel.ATTACK = riskGameModelSerializable.ATTACK;
+		RiskGameModel.ATTACKING = riskGameModelSerializable.ATTACKING;
+		RiskGameModel.ATTACK_PHASE = riskGameModelSerializable.ATTACK_PHASE;
+		RiskGameModel.BATTLING = riskGameModelSerializable.BATTLING;
+		RiskGameModel.CAPTURE = riskGameModelSerializable.CAPTURE;
+		RiskGameModel.FORTIFY = riskGameModelSerializable.FORTIFY;
+		RiskGameModel.FORTIFYING = riskGameModelSerializable.FORTIFYING;
+		RiskGameModel.FORTIFY_PHASE = riskGameModelSerializable.FORTIFY_PHASE;
+		RiskGameModel.DEFEATED = riskGameModelSerializable.DEFEATED;
+		RiskGameModel.GAME_TRADE_CARD_PHASE_COUNT = riskGameModelSerializable.GAME_TRADE_CARD_PHASE_COUNT;
+		RiskGameModel.END_GAME = riskGameModelSerializable.END_GAME;
+		RiskGameModel.GAME_OVER = riskGameModelSerializable.GAME_OVER;
+		RiskGameModel.territories = riskGameModelSerializable.territories;
+		RiskGameModel.players = riskGameModelSerializable.players;
+		RiskGameModel.gameState = riskGameModelSerializable.gameState;
 	}
 
 }

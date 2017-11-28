@@ -1,5 +1,6 @@
 package risk.model.strategy;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Vector;
@@ -17,7 +18,7 @@ import risk.model.interfaces.StrategyInterface;
 /**
  * This Class contains logic for Cheater player.
  */
-public class Cheater implements StrategyInterface {
+public class Cheater implements StrategyInterface,Serializable {
 
 	/** The current risk model. */
 	RiskGameModel currentRiskModel;

@@ -76171,3 +76171,1538 @@ ff 0
 
 
 
+***Game Stats***
+
+
+Player_1 T Count 14 Army Count 1
+
+
+Alaska 1
+Alberta 1
+Western_United_States 1
+Venezuela 1
+Argentina 1
+Russia 1
+Western_Europe 1
+Egypt 1
+South_Africa 1
+Siberia 1
+Mongolia 1
+Afghanistan 1
+India 1
+New_Guinea 1
+
+
+
+
+Player_2 T Count 14 Army Count 1
+
+
+Northwest_Territory 1
+Ontario 1
+Eastern_United_States 1
+Peru 1
+Iceland 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+China 1
+Southeast_Asia 1
+Western_Australia 1
+
+
+
+
+Player_3 T Count 14 Army Count 1
+
+
+Greenland 1
+Eastern_Canada 1
+Central_America 1
+Brazil 1
+Scandinavia 1
+Northern_Europe 1
+North_Africa 1
+East_Africa 1
+Ural 1
+Irkutsk 1
+Japan 1
+Middle_East 1
+Indonesia 1
+Eastern_Australia 1
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 14 Army Count 0
+
+
+Alaska 1
+Alberta 1
+Western_United_States 1
+Venezuela 1
+Argentina 1
+Russia 1
+Western_Europe 1
+Egypt 1
+South_Africa 1
+Siberia 1
+Mongolia 1
+Afghanistan 1
+India 1
+New_Guinea 2
+
+
+
+
+Player_2 T Count 14 Army Count 0
+
+
+Northwest_Territory 1
+Ontario 1
+Eastern_United_States 1
+Peru 1
+Iceland 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+China 2
+Southeast_Asia 1
+Western_Australia 1
+
+
+
+
+Player_3 T Count 14 Army Count 0
+
+
+Greenland 2
+Eastern_Canada 1
+Central_America 1
+Brazil 1
+Scandinavia 1
+Northern_Europe 1
+North_Africa 1
+East_Africa 1
+Ural 2
+Irkutsk 1
+Japan 1
+Middle_East 2
+Indonesia 2
+Eastern_Australia 2
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 1 Army Count 0
+
+
+Egypt 2
+
+
+
+
+Player_2 T Count 41 Army Count 0
+
+
+Northwest_Territory 2
+Ontario 2
+Eastern_United_States 2
+Peru 2
+Iceland 3
+Great_Britain 3
+Southern_Europe 2
+Central_Africa 2
+Madagascar 2
+Yakutsk 2
+Kamchatka 2
+China 4
+Southeast_Asia 3
+Western_Australia 3
+Alaska 1
+Greenland 2
+Alberta 1
+Eastern_Canada 1
+Western_United_States 1
+Central_America 1
+Venezuela 1
+Brazil 1
+Argentina 1
+Scandinavia 1
+Northern_Europe 1
+Western_Europe 1
+Russia 1
+Middle_East 2
+North_Africa 1
+East_Africa 1
+South_Africa 1
+Siberia 1
+Irkutsk 1
+Japan 1
+Mongolia 1
+Ural 2
+Afghanistan 1
+India 1
+Indonesia 1
+New_Guinea 1
+Eastern_Australia 2
+
+
+
+
+***Game Stats***
+
+
+Player_2 T Count 42 Army Count 0
+
+
+Northwest_Territory 5
+Ontario 5
+Eastern_United_States 4
+Peru 6
+Iceland 7
+Great_Britain 7
+Central_Africa 4
+Madagascar 4
+Yakutsk 4
+Kamchatka 5
+China 8
+Southeast_Asia 6
+Western_Australia 6
+Alaska 3
+Greenland 4
+Alberta 3
+Eastern_Canada 3
+Western_United_States 3
+Central_America 3
+Venezuela 3
+Brazil 5
+Argentina 3
+Scandinavia 3
+Northern_Europe 3
+Western_Europe 3
+Russia 2
+Middle_East 6
+North_Africa 2
+East_Africa 2
+South_Africa 4
+Siberia 2
+Irkutsk 2
+Japan 4
+Mongolia 2
+Ural 4
+Afghanistan 3
+India 3
+Indonesia 6
+New_Guinea 2
+Eastern_Australia 6
+Southern_Europe 2
+Egypt 1
+
+
+
+
+***Game Stats***
+
+
+Player_2 T Count 42 Army Count 0
+
+
+Northwest_Territory 5
+Ontario 5
+Eastern_United_States 4
+Peru 6
+Iceland 7
+Great_Britain 7
+Central_Africa 4
+Madagascar 4
+Yakutsk 4
+Kamchatka 5
+China 8
+Southeast_Asia 6
+Western_Australia 6
+Alaska 3
+Greenland 4
+Alberta 3
+Eastern_Canada 3
+Western_United_States 3
+Central_America 3
+Venezuela 3
+Brazil 5
+Argentina 3
+Scandinavia 3
+Northern_Europe 3
+Western_Europe 3
+Russia 2
+Middle_East 6
+North_Africa 2
+East_Africa 2
+South_Africa 4
+Siberia 2
+Irkutsk 2
+Japan 4
+Mongolia 2
+Ural 4
+Afghanistan 3
+India 3
+Indonesia 6
+New_Guinea 2
+Eastern_Australia 6
+Southern_Europe 2
+Egypt 1
+
+
+
+
+***Game Stats***
+
+
+Player_2 T Count 42 Army Count 0
+
+
+Northwest_Territory 5
+Ontario 5
+Eastern_United_States 4
+Peru 6
+Iceland 7
+Great_Britain 7
+Central_Africa 4
+Madagascar 4
+Yakutsk 4
+Kamchatka 5
+China 8
+Southeast_Asia 6
+Western_Australia 6
+Alaska 3
+Greenland 4
+Alberta 3
+Eastern_Canada 3
+Western_United_States 3
+Central_America 3
+Venezuela 3
+Brazil 5
+Argentina 3
+Scandinavia 3
+Northern_Europe 3
+Western_Europe 3
+Russia 2
+Middle_East 6
+North_Africa 2
+East_Africa 2
+South_Africa 4
+Siberia 2
+Irkutsk 2
+Japan 4
+Mongolia 2
+Ural 4
+Afghanistan 3
+India 3
+Indonesia 6
+New_Guinea 2
+Eastern_Australia 6
+Southern_Europe 2
+Egypt 1
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 14 Army Count 1
+
+
+Alaska 1
+Alberta 1
+Western_United_States 1
+Venezuela 1
+Argentina 2
+Russia 1
+Western_Europe 1
+Egypt 1
+South_Africa 1
+Siberia 1
+Mongolia 1
+Afghanistan 1
+India 1
+New_Guinea 1
+
+
+
+
+Player_2 T Count 14 Army Count 1
+
+
+Northwest_Territory 1
+Ontario 1
+Eastern_United_States 1
+Peru 1
+Iceland 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+China 1
+Southeast_Asia 1
+Western_Australia 1
+
+
+
+
+Player_3 T Count 14 Army Count 1
+
+
+Greenland 1
+Eastern_Canada 1
+Central_America 1
+Brazil 1
+Scandinavia 1
+Northern_Europe 1
+North_Africa 1
+East_Africa 1
+Ural 1
+Irkutsk 1
+Japan 1
+Middle_East 1
+Indonesia 1
+Eastern_Australia 1
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 14 Army Count 0
+
+
+Alaska 1
+Alberta 1
+Western_United_States 2
+Venezuela 1
+Argentina 2
+Russia 1
+Western_Europe 1
+Egypt 1
+South_Africa 1
+Siberia 1
+Mongolia 2
+Afghanistan 1
+India 2
+New_Guinea 2
+
+
+
+
+Player_2 T Count 14 Army Count 0
+
+
+Northwest_Territory 1
+Ontario 1
+Eastern_United_States 1
+Peru 1
+Iceland 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+China 1
+Southeast_Asia 1
+Western_Australia 2
+
+
+
+
+Player_3 T Count 14 Army Count 0
+
+
+Greenland 1
+Eastern_Canada 1
+Central_America 1
+Brazil 1
+Scandinavia 1
+Northern_Europe 1
+North_Africa 2
+East_Africa 1
+Ural 2
+Irkutsk 1
+Japan 2
+Middle_East 1
+Indonesia 3
+Eastern_Australia 1
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 11 Army Count 0
+
+
+Alaska 1
+Alberta 1
+Western_United_States 2
+Venezuela 1
+Argentina 2
+Egypt 1
+South_Africa 1
+Siberia 1
+Mongolia 2
+Afghanistan 1
+India 2
+
+
+
+
+Player_2 T Count 16 Army Count 0
+
+
+Northwest_Territory 1
+Ontario 1
+Eastern_United_States 1
+Peru 1
+Iceland 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+China 1
+Southeast_Asia 1
+Western_Australia 1
+Indonesia 1
+New_Guinea 3
+
+
+
+
+Player_3 T Count 15 Army Count 0
+
+
+Greenland 1
+Eastern_Canada 1
+Central_America 1
+Brazil 1
+Scandinavia 1
+Northern_Europe 1
+North_Africa 1
+East_Africa 1
+Ural 2
+Irkutsk 1
+Japan 3
+Middle_East 1
+Eastern_Australia 2
+Russia 1
+Western_Europe 1
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 12 Army Count 0
+
+
+Alaska 1
+Alberta 1
+Western_United_States 2
+Venezuela 1
+Argentina 2
+Egypt 1
+South_Africa 1
+Siberia 1
+Mongolia 1
+Afghanistan 1
+India 1
+China 5
+
+
+
+
+Player_2 T Count 15 Army Count 0
+
+
+Northwest_Territory 1
+Ontario 1
+Eastern_United_States 1
+Peru 1
+Iceland 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+Southeast_Asia 1
+Western_Australia 1
+Indonesia 1
+New_Guinea 3
+
+
+
+
+Player_3 T Count 15 Army Count 0
+
+
+Greenland 1
+Eastern_Canada 1
+Central_America 1
+Brazil 1
+Scandinavia 1
+Northern_Europe 1
+North_Africa 1
+East_Africa 1
+Ural 2
+Irkutsk 1
+Japan 3
+Middle_East 1
+Eastern_Australia 2
+Russia 1
+Western_Europe 1
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 12 Army Count 0
+
+
+Alaska 1
+Alberta 1
+Western_United_States 1
+Venezuela 1
+Argentina 2
+Egypt 1
+South_Africa 1
+Siberia 1
+Mongolia 1
+Afghanistan 1
+India 1
+China 5
+
+
+
+
+Player_2 T Count 16 Army Count 0
+
+
+Northwest_Territory 1
+Ontario 1
+Eastern_United_States 1
+Peru 1
+Iceland 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+Southeast_Asia 1
+Western_Australia 1
+Indonesia 1
+New_Guinea 5
+Eastern_Australia 2
+
+
+
+
+Player_3 T Count 14 Army Count 0
+
+
+Greenland 1
+Eastern_Canada 1
+Central_America 1
+Brazil 1
+Scandinavia 1
+Northern_Europe 1
+North_Africa 2
+East_Africa 2
+Ural 2
+Irkutsk 2
+Japan 3
+Middle_East 1
+Russia 1
+Western_Europe 1
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 12 Army Count 0
+
+
+Alaska 1
+Alberta 1
+Western_United_States 1
+Venezuela 1
+Argentina 2
+Egypt 1
+South_Africa 1
+Siberia 1
+Mongolia 1
+Afghanistan 1
+India 1
+China 5
+
+
+
+
+Player_2 T Count 16 Army Count 0
+
+
+Northwest_Territory 1
+Ontario 1
+Eastern_United_States 1
+Peru 1
+Iceland 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+Southeast_Asia 1
+Western_Australia 1
+Indonesia 1
+New_Guinea 5
+Eastern_Australia 2
+
+
+
+
+Player_3 T Count 14 Army Count 0
+
+
+Greenland 1
+Eastern_Canada 1
+Central_America 1
+Brazil 1
+Scandinavia 1
+Northern_Europe 1
+North_Africa 2
+East_Africa 2
+Ural 2
+Irkutsk 2
+Japan 3
+Middle_East 1
+Russia 1
+Western_Europe 1
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 14 Army Count 1
+
+
+Alaska 1
+Alberta 1
+Western_United_States 1
+Venezuela 1
+Argentina 2
+Russia 1
+Western_Europe 1
+Egypt 1
+South_Africa 1
+Siberia 1
+Mongolia 1
+Afghanistan 1
+India 1
+New_Guinea 1
+
+
+
+
+Player_2 T Count 14 Army Count 1
+
+
+Northwest_Territory 1
+Ontario 1
+Eastern_United_States 1
+Peru 1
+Iceland 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+China 1
+Southeast_Asia 1
+Western_Australia 1
+
+
+
+
+Player_3 T Count 14 Army Count 1
+
+
+Greenland 1
+Eastern_Canada 1
+Central_America 1
+Brazil 1
+Scandinavia 1
+Northern_Europe 1
+North_Africa 1
+East_Africa 1
+Ural 1
+Irkutsk 1
+Japan 1
+Middle_East 1
+Indonesia 1
+Eastern_Australia 1
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 15 Army Count 0
+
+
+Alaska 1
+Alberta 1
+Western_United_States 1
+Venezuela 1
+Argentina 1
+Russia 1
+Western_Europe 1
+Egypt 1
+South_Africa 1
+Siberia 1
+Mongolia 1
+Afghanistan 1
+India 1
+New_Guinea 1
+Peru 1
+
+
+
+
+Player_2 T Count 12 Army Count 0
+
+
+Ontario 1
+Eastern_United_States 1
+Iceland 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+China 1
+Southeast_Asia 1
+Western_Australia 2
+
+
+
+
+Player_3 T Count 15 Army Count 0
+
+
+Greenland 2
+Eastern_Canada 1
+Central_America 1
+Brazil 1
+Scandinavia 1
+Northern_Europe 1
+North_Africa 1
+East_Africa 1
+Ural 1
+Irkutsk 1
+Japan 1
+Middle_East 1
+Indonesia 3
+Eastern_Australia 2
+Northwest_Territory 1
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 14 Army Count 0
+
+
+Alaska 1
+Alberta 1
+Western_United_States 1
+Venezuela 1
+Argentina 1
+Russia 1
+Western_Europe 1
+Egypt 1
+South_Africa 1
+Siberia 1
+Mongolia 1
+Afghanistan 1
+India 1
+Peru 1
+
+
+
+
+Player_2 T Count 14 Army Count 0
+
+
+Ontario 1
+Eastern_United_States 1
+Iceland 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+China 1
+Southeast_Asia 1
+Western_Australia 1
+Indonesia 1
+New_Guinea 3
+
+
+
+
+Player_3 T Count 14 Army Count 0
+
+
+Greenland 3
+Eastern_Canada 1
+Central_America 1
+Brazil 1
+Scandinavia 2
+Northern_Europe 1
+North_Africa 1
+East_Africa 1
+Ural 1
+Irkutsk 1
+Japan 1
+Middle_East 1
+Eastern_Australia 3
+Northwest_Territory 2
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 15 Army Count 0
+
+
+Alaska 1
+Alberta 1
+Western_United_States 1
+Venezuela 1
+Argentina 1
+Russia 1
+Western_Europe 1
+Egypt 1
+South_Africa 1
+Siberia 1
+Mongolia 1
+Afghanistan 1
+India 1
+Peru 1
+Brazil 4
+
+
+
+
+Player_2 T Count 14 Army Count 0
+
+
+Ontario 1
+Eastern_United_States 1
+Iceland 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+China 1
+Southeast_Asia 1
+Western_Australia 1
+Indonesia 1
+New_Guinea 3
+
+
+
+
+Player_3 T Count 13 Army Count 0
+
+
+Greenland 3
+Eastern_Canada 1
+Central_America 1
+Scandinavia 2
+Northern_Europe 1
+North_Africa 1
+East_Africa 1
+Ural 1
+Irkutsk 1
+Japan 1
+Middle_East 1
+Eastern_Australia 3
+Northwest_Territory 2
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 14 Army Count 0
+
+
+Alaska 1
+Alberta 1
+Western_United_States 1
+Venezuela 1
+Argentina 1
+Russia 1
+Western_Europe 1
+Egypt 1
+South_Africa 1
+Siberia 1
+Afghanistan 1
+India 1
+Peru 1
+Brazil 4
+
+
+
+
+Player_2 T Count 14 Army Count 0
+
+
+Ontario 1
+Eastern_United_States 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+China 1
+Southeast_Asia 1
+Western_Australia 1
+Indonesia 1
+New_Guinea 4
+Eastern_Australia 3
+
+
+
+
+Player_3 T Count 14 Army Count 0
+
+
+Greenland 2
+Eastern_Canada 1
+Central_America 1
+Scandinavia 1
+Northern_Europe 1
+North_Africa 1
+East_Africa 1
+Ural 1
+Irkutsk 1
+Japan 1
+Middle_East 1
+Northwest_Territory 1
+Iceland 1
+Mongolia 1
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 14 Army Count 0
+
+
+Alaska 1
+Alberta 1
+Western_United_States 1
+Venezuela 1
+Argentina 1
+Russia 1
+Western_Europe 1
+Egypt 1
+South_Africa 1
+Siberia 1
+Afghanistan 1
+India 1
+Peru 1
+Brazil 4
+
+
+
+
+Player_2 T Count 14 Army Count 0
+
+
+Ontario 1
+Eastern_United_States 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+China 1
+Southeast_Asia 1
+Western_Australia 1
+Indonesia 1
+New_Guinea 4
+Eastern_Australia 3
+
+
+
+
+Player_3 T Count 14 Army Count 0
+
+
+Greenland 2
+Eastern_Canada 1
+Central_America 1
+Scandinavia 1
+Northern_Europe 1
+North_Africa 1
+East_Africa 1
+Ural 1
+Irkutsk 1
+Japan 1
+Middle_East 1
+Northwest_Territory 1
+Iceland 1
+Mongolia 1
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 14 Army Count 1
+
+
+Alaska 1
+Alberta 1
+Western_United_States 1
+Venezuela 1
+Argentina 2
+Russia 1
+Western_Europe 1
+Egypt 1
+South_Africa 1
+Siberia 1
+Mongolia 1
+Afghanistan 1
+India 1
+New_Guinea 1
+
+
+
+
+Player_2 T Count 14 Army Count 1
+
+
+Northwest_Territory 1
+Ontario 1
+Eastern_United_States 1
+Peru 1
+Iceland 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+China 1
+Southeast_Asia 1
+Western_Australia 1
+
+
+
+
+Player_3 T Count 14 Army Count 1
+
+
+Greenland 1
+Eastern_Canada 1
+Central_America 1
+Brazil 1
+Scandinavia 1
+Northern_Europe 1
+North_Africa 1
+East_Africa 1
+Ural 1
+Irkutsk 1
+Japan 1
+Middle_East 1
+Indonesia 1
+Eastern_Australia 1
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 14 Army Count 0
+
+
+Alaska 1
+Alberta 1
+Venezuela 1
+Argentina 1
+Russia 2
+Western_Europe 1
+Egypt 2
+South_Africa 1
+Siberia 2
+Mongolia 2
+Afghanistan 1
+India 1
+New_Guinea 1
+Peru 1
+
+
+
+
+Player_2 T Count 12 Army Count 0
+
+
+Ontario 1
+Eastern_United_States 1
+Iceland 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+China 1
+Southeast_Asia 1
+Western_Australia 2
+
+
+
+
+Player_3 T Count 16 Army Count 0
+
+
+Greenland 1
+Eastern_Canada 1
+Central_America 1
+Brazil 1
+Scandinavia 1
+Northern_Europe 1
+North_Africa 1
+East_Africa 2
+Ural 1
+Irkutsk 1
+Japan 2
+Middle_East 1
+Indonesia 1
+Eastern_Australia 1
+Northwest_Territory 1
+Western_United_States 2
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 13 Army Count 0
+
+
+Alaska 1
+Alberta 1
+Venezuela 1
+Argentina 1
+Russia 2
+Western_Europe 1
+Egypt 2
+South_Africa 1
+Siberia 2
+Mongolia 2
+Afghanistan 1
+India 1
+Peru 1
+
+
+
+
+Player_2 T Count 15 Army Count 0
+
+
+Ontario 1
+Eastern_United_States 1
+Iceland 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+China 1
+Southeast_Asia 1
+Western_Australia 2
+Indonesia 1
+New_Guinea 0
+Eastern_Australia 2
+
+
+
+
+Player_3 T Count 14 Army Count 0
+
+
+Greenland 2
+Eastern_Canada 1
+Central_America 2
+Brazil 2
+Scandinavia 1
+Northern_Europe 1
+North_Africa 2
+East_Africa 2
+Ural 1
+Irkutsk 1
+Japan 2
+Middle_East 1
+Northwest_Territory 1
+Western_United_States 2
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 14 Army Count 0
+
+
+Alaska 1
+Alberta 1
+Venezuela 1
+Argentina 1
+Russia 2
+Western_Europe 1
+Egypt 2
+South_Africa 1
+Siberia 2
+Mongolia 2
+Afghanistan 1
+India 1
+Peru 1
+Brazil 3
+
+
+
+
+Player_2 T Count 15 Army Count 0
+
+
+Ontario 1
+Eastern_United_States 1
+Iceland 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+China 1
+Southeast_Asia 1
+Western_Australia 2
+Indonesia 1
+New_Guinea 0
+Eastern_Australia 2
+
+
+
+
+Player_3 T Count 13 Army Count 0
+
+
+Greenland 2
+Eastern_Canada 1
+Central_America 2
+Scandinavia 1
+Northern_Europe 1
+North_Africa 2
+East_Africa 2
+Ural 1
+Irkutsk 1
+Japan 2
+Middle_East 1
+Northwest_Territory 1
+Western_United_States 2
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 13 Army Count 0
+
+
+Alaska 1
+Alberta 1
+Venezuela 1
+Argentina 1
+Russia 2
+Western_Europe 1
+Egypt 2
+South_Africa 1
+Siberia 2
+Mongolia 2
+Afghanistan 1
+Peru 1
+Brazil 3
+
+
+
+
+Player_2 T Count 14 Army Count 0
+
+
+Eastern_United_States 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+China 1
+Southeast_Asia 1
+Western_Australia 2
+Indonesia 1
+New_Guinea 0
+Eastern_Australia 2
+India 7
+
+
+
+
+Player_3 T Count 15 Army Count 0
+
+
+Greenland 2
+Eastern_Canada 1
+Central_America 1
+Scandinavia 1
+Northern_Europe 1
+North_Africa 2
+East_Africa 3
+Ural 1
+Irkutsk 2
+Japan 2
+Middle_East 2
+Northwest_Territory 1
+Western_United_States 2
+Ontario 0
+Iceland 1
+
+
+
+
+***Game Stats***
+
+
+Player_1 T Count 13 Army Count 0
+
+
+Alaska 1
+Alberta 1
+Venezuela 1
+Argentina 1
+Russia 2
+Western_Europe 1
+Egypt 2
+South_Africa 1
+Siberia 2
+Mongolia 2
+Afghanistan 1
+Peru 1
+Brazil 3
+
+
+
+
+Player_2 T Count 14 Army Count 0
+
+
+Eastern_United_States 1
+Great_Britain 1
+Southern_Europe 1
+Central_Africa 1
+Madagascar 1
+Yakutsk 1
+Kamchatka 1
+China 1
+Southeast_Asia 1
+Western_Australia 2
+Indonesia 1
+New_Guinea 0
+Eastern_Australia 2
+India 7
+
+
+
+
+Player_3 T Count 15 Army Count 0
+
+
+Greenland 2
+Eastern_Canada 1
+Central_America 1
+Scandinavia 1
+Northern_Europe 1
+North_Africa 2
+East_Africa 3
+Ural 1
+Irkutsk 2
+Japan 2
+Middle_East 2
+Northwest_Territory 1
+Western_United_States 2
+Ontario 0
+Iceland 1
+
+
+
+

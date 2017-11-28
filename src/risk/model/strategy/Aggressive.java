@@ -1,5 +1,6 @@
 package risk.model.strategy;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
@@ -14,7 +15,7 @@ import risk.model.interfaces.StrategyInterface;
 /**
  * This Class contains logic for Aggressive player strategy.
  */
-public class Aggressive implements StrategyInterface {
+public class Aggressive implements StrategyInterface ,Serializable{
 
 
 	/** The current risk model. */

@@ -1,5 +1,6 @@
 package risk.model.Observable;
 
+import java.io.Serializable;
 import java.util.Observable;
 
 import risk.helpers.Utility;
@@ -9,7 +10,7 @@ import risk.model.interfaces.PhaseViewInterface;
 /**
  * The Class Risk Reinforcement Phase Model.
  */
-public class RiskReinforcementPhaseModel extends Observable implements PhaseViewInterface {
+public class RiskReinforcementPhaseModel extends Observable implements PhaseViewInterface,Serializable {
 
 	/** The current player. */
 	private int currentPlayer;

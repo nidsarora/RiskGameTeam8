@@ -2,6 +2,7 @@ package risk.view;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.io.Serializable;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -18,7 +19,7 @@ import risk.model.RiskPlayerModel;
  * An asynchronous update interface for receiving notifications
  * about RiskCardExchangeView information as the Risk Card Exchange View is constructed.
  */
-public class RiskCardExchangeViewObserver implements Observer {
+public class RiskCardExchangeViewObserver implements Observer ,Serializable{
 	
 	/** The card exchange view panel. */
 	JPanel cardExchangeViewPanel;

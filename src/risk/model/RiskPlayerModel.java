@@ -1,5 +1,6 @@
 package risk.model;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Observable;
 import java.util.Vector;
@@ -11,7 +12,7 @@ import risk.model.interfaces.StrategyInterface;
  * 
  * @author Team8
  */
-public class RiskPlayerModel extends Observable {
+public class RiskPlayerModel extends Observable implements Serializable {
 
 	private String name;
 	private int index;

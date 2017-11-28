@@ -1,5 +1,6 @@
 package risk.model.strategy;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
@@ -14,7 +15,7 @@ import risk.model.interfaces.StrategyInterface;
 /**
  * This class contains logic for Random player.
  */
-public class Random implements StrategyInterface {
+public class Random implements StrategyInterface, Serializable {
 
 	/** The current risk model. */
 	RiskGameModel currentRiskModel;
@@ -73,11 +74,11 @@ public class Random implements StrategyInterface {
 
 	}
 
-
 	/**
 	 * Trade cards.
 	 *
-	 * @param riskGameModel the risk game model
+	 * @param riskGameModel
+	 *            the risk game model
 	 * @return the string
 	 */
 	private void tradeCards(RiskGameModel riskGameModel) {
@@ -226,7 +227,8 @@ public class Random implements StrategyInterface {
 	/**
 	 * End game.
 	 *
-	 * @param riskGameModel the risk game model
+	 * @param riskGameModel
+	 *            the risk game model
 	 */
 	public void endGame(RiskGameModel riskGameModel) {
 		Utility.writeLog("Thats all ya, " + riskGameModel.curPlayer.getName() + " won the game!!!");
@@ -236,8 +238,10 @@ public class Random implements StrategyInterface {
 	/**
 	 * Capture.
 	 *
-	 * @param isTest the is test
-	 * @param riskGameModel the risk game model
+	 * @param isTest
+	 *            the is test
+	 * @param riskGameModel
+	 *            the risk game model
 	 * @return the boolean
 	 */
 	public Boolean capture(boolean isTest, RiskGameModel riskGameModel) {
@@ -283,7 +287,8 @@ public class Random implements StrategyInterface {
 	/**
 	 * Gets the random occupied territory by player.
 	 *
-	 * @param riskPlayer the risk player
+	 * @param riskPlayer
+	 *            the risk player
 	 * @return the random occupied territory by player
 	 */
 	private int getRandomOccupiedTerritoryByPlayer(RiskPlayerModel riskPlayer) {
@@ -296,7 +301,8 @@ public class Random implements StrategyInterface {
 	/**
 	 * Gets the valid random attack defend territory.
 	 *
-	 * @param riskGameModel the risk game model
+	 * @param riskGameModel
+	 *            the risk game model
 	 * @return the valid random attack defend territory
 	 */
 	private RiskTerritoryModel[] getValidRandomAttackDefendTerritory(RiskGameModel riskGameModel) {
@@ -316,8 +322,10 @@ public class Random implements StrategyInterface {
 	/**
 	 * Gets the valid random defender.
 	 *
-	 * @param validAttackerTerritory the valid attacker territory
-	 * @param riskGameModel the risk game model
+	 * @param validAttackerTerritory
+	 *            the valid attacker territory
+	 * @param riskGameModel
+	 *            the risk game model
 	 * @return the valid random defender
 	 */
 	private RiskTerritoryModel getValidRandomDefender(RiskTerritoryModel validAttackerTerritory,
@@ -376,7 +384,8 @@ public class Random implements StrategyInterface {
 	/**
 	 * Gets the fortified territory.
 	 *
-	 * @param fortifierTerritory the fortifier territory
+	 * @param fortifierTerritory
+	 *            the fortifier territory
 	 * @return the fortified territory
 	 */
 	private RiskTerritoryModel getFortifiedTerritory(RiskTerritoryModel fortifierTerritory) {
@@ -391,7 +400,8 @@ public class Random implements StrategyInterface {
 	/**
 	 * Checks for self occupied ajacents.
 	 *
-	 * @param viableTerritory the viable territory
+	 * @param viableTerritory
+	 *            the viable territory
 	 * @return true, if successful
 	 */
 	private boolean hasSelfOccupiedAjacents(RiskTerritoryModel viableTerritory) {

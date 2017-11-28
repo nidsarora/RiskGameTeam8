@@ -1,5 +1,6 @@
 package risk.model;
 
+import java.io.Serializable;
 import java.util.Vector;
 import risk.model.strategy.*;
 
@@ -8,7 +9,7 @@ import risk.model.strategy.*;
  *
  *@author Team8
  */
-public class RiskTerritoryModel {
+public class RiskTerritoryModel implements Serializable {
 	
 	/** The id. */
 	protected int id;

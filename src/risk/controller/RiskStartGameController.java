@@ -108,7 +108,7 @@ public class RiskStartGameController extends java.awt.Frame {
 			// TODO Auto-generated catch block
 			exception.printStackTrace();
 		}
-		btnStartGame.setEnabled(false);
+		btnStartGame.setEnabled(true);
 		setLocationRelativeTo(null);
 
 		try {
@@ -227,12 +227,15 @@ public class RiskStartGameController extends java.awt.Frame {
 		btnLoadSavedGame = new JButton();
 		btnLoadSavedGame.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				
+				RiskController.isSavedGameLoaded = true;
+				JOptionPane.showMessageDialog(null,
+						"The last saved game will load!! Click Start Game directly!",
+						"Alert", JOptionPane.INFORMATION_MESSAGE);
 			}
 		});
 		btnLoadSavedGame.setText("Load Saved Game");
 		btnLoadSavedGame.setName("jButton1");
-		btnLoadSavedGame.setEnabled(false);
+		btnLoadSavedGame.setEnabled(true);
 
 		javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
 		jPanel1Layout.setHorizontalGroup(

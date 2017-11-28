@@ -1,5 +1,7 @@
 package risk.model.strategy;
 
+import java.io.Serializable;
+
 import risk.helpers.Utility;
 import risk.model.RiskGameModel;
 import risk.model.RiskTerritoryModel;
@@ -8,7 +10,7 @@ import risk.model.interfaces.StrategyInterface;
 /**
  * This Class contains logic for Human player strategy.
  */
-public class Human implements StrategyInterface {
+public class Human implements StrategyInterface ,Serializable{
 
 		@Override
 	public void takeTurn(boolean isTest, RiskGameModel riskGameModel) {
