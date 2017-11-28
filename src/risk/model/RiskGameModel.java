@@ -240,6 +240,20 @@ public class RiskGameModel {
 		}
 		return false;
 	}
+	/**
+	 * Sets the risk current player.
+	 *
+	 * @param riskplayermodel,
+	 *            new risk current player
+	 */
+	public void setRiskCurPlayer(RiskPlayerModel riskplayermodel) {
+
+	    this.curPlayer = riskplayermodel;
+		this.curPlayer.setCard(new RiskCardModel(1, 39));
+		this.curPlayer.setCard(new RiskCardModel(1, 39));
+		this.curPlayer.setCard(new RiskCardModel(3, 11));
+
+	}
 
 	/**
 	 * This method checks if the TradeCardSet is valid or not i.e. if the number of
