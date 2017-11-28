@@ -1,6 +1,5 @@
 package risk.model.strategy;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 
 import risk.helpers.Utility;
@@ -10,7 +9,7 @@ import risk.model.RiskPlayerModel;
 import risk.model.RiskTerritoryModel;
 import risk.model.interfaces.StrategyInterface;
 
-public class Benevolent implements StrategyInterface ,Serializable{
+public class Benevolent implements StrategyInterface {
 
 	RiskGameModel currentRiskModel;
 
@@ -25,10 +24,6 @@ public class Benevolent implements StrategyInterface ,Serializable{
 		} else {
 			reinforce(false, riskGameModel);
 		}
-		riskGameModel.mainPanel.repaint();
-		riskGameModel.subPanel.repaint();
-
-		return;
 	}
 
 	private void tradeCards(RiskGameModel riskGameModel) {
@@ -72,30 +67,35 @@ public class Benevolent implements StrategyInterface ,Serializable{
 		Utility.writeLog("REINFORCE - Benevolent BOT called - " + riskGameModel.curPlayer.getName()
 				+ " decided to Reinforce his armies.");
 
-		if (riskGameModel.curPlayer.getNumberOfArmies() > 0) {
-			int occupiedTerritory = getWeakTerritoryOccupiedByPlayer(riskGameModel.curPlayer);
-			if (occupiedTerritory != -1) {
-				riskGameModel.occupyTerritoryByPlayer(occupiedTerritory, riskGameModel.curPlayer);
-				Utility.writeLog("REINFORCE - called - " + riskGameModel.curPlayer.getName()
-						+ " placed one of his army on " + riskGameModel.getTerritoryAt(occupiedTerritory).getName());
+		while (riskGameModel.curPlayer.getNumberOfArmies() > 0) {
+			if (riskGameModel.curPlayer.getNumberOfArmies() > 0) {
+				int occupiedTerritory = getWeakTerritoryOccupiedByPlayer(riskGameModel.curPlayer);
+				if (occupiedTerritory != -1) {
+					riskGameModel.occupyTerritoryByPlayer(occupiedTerritory, riskGameModel.curPlayer);
+					Utility.writeLog(
+							"REINFORCE - called - " + riskGameModel.curPlayer.getName() + " placed one of his army on "
+									+ riskGameModel.getTerritoryAt(occupiedTerritory).getName());
+				}
+				// riskGameModel.notifyPhaseViewChange();
 			}
-			// riskGameModel.notifyPhaseViewChange();
 		}
 		Utility.writeLog("REINFORCE - benevolent BOT called - " + riskGameModel.curPlayer.getName()
 				+ " is done with reinforcement and his army count is " + riskGameModel.curPlayer.getNumberOfArmies());
 		riskGameModel.notifyPhaseViewChange();
+
+		fortify(isTest, riskGameModel);
 	}
 
 	@Override
-	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public void attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		// TODO Auto-generated method stub
 		// the benevolent player not suppose to attack
-		reinforce(isTest, riskGameModel, territory);
-		return "";
+		// reinforce(isTest, riskGameModel, territory);
+		Utility.writeLog("ATTACK - benevolent BOT will not attack.");
 	}
 
 	@Override
-	public String fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public void fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		// TODO Auto-generated method stub
 		Utility.writeLog("FORTIFY - Some Random dude called - " + riskGameModel.curPlayer.getName()
 				+ " has an option to Fortify any of his armies.");
@@ -105,16 +105,15 @@ public class Benevolent implements StrategyInterface ,Serializable{
 		ArrayList<RiskTerritoryModel> fortifiableTerritories = new ArrayList<RiskTerritoryModel>();
 		RiskTerritoryModel fortifierTerritory, fortifiedTerritory;
 		int fortifiedArmyCount;
-		
-		Utility.writeLog("FORTIFY - Benevolent BOT called - " + riskGameModel.curPlayer.getName()
-				+ " has decided to Fortify.");
+
+		Utility.writeLog(
+				"FORTIFY - Benevolent BOT called - " + riskGameModel.curPlayer.getName() + " has decided to Fortify.");
 		for (RiskTerritoryModel viableTerritory : riskGameModel.curPlayer.getOccupiedTerritories()) {
 			if (viableTerritory.getArmies() > 1 && hasSelfOccupiedAjacents(viableTerritory)) {
 				fortifiableTerritories.add(viableTerritory);
 			}
 		}
 
-		
 		if (fortifiableTerritories.size() > 0) {
 			fortifierTerritory = fortifiableTerritories
 					.get(new java.util.Random().nextInt(fortifiableTerritories.size()));
@@ -137,10 +136,8 @@ public class Benevolent implements StrategyInterface ,Serializable{
 		riskGameModel.setState(RiskGameModel.START_TURN);
 		riskGameModel.nextPlayer();
 		riskGameModel.notifyPhaseViewChange();
-		return "";
 	}
 
-	
 	private RiskTerritoryModel getFortifiedTerritory(RiskTerritoryModel fortifierTerritory) {
 		for (int territory : fortifierTerritory.getAdjacents()) {
 			if (currentRiskModel.curPlayer.getOccupiedTerritories()
@@ -150,7 +147,6 @@ public class Benevolent implements StrategyInterface ,Serializable{
 		return null;
 	}
 
-	
 	private boolean hasSelfOccupiedAjacents(RiskTerritoryModel viableTerritory) {
 		for (int territory : viableTerritory.getAdjacents()) {
 			if (currentRiskModel.curPlayer.getOccupiedTerritories()
@@ -160,7 +156,7 @@ public class Benevolent implements StrategyInterface ,Serializable{
 		}
 		return false;
 	}
-	
+
 	@Override
 	public void initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (riskGameModel.curPlayer.getNumberOfArmies() > 0) {
