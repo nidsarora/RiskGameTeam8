@@ -134,7 +134,7 @@ public class Cheater implements StrategyInterface,Serializable {
 	}
 
 	@Override
-	public void attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
 		 * He will keep on attacking untill he has teeritories which armies > 1 and of
 		 * which have others territories adjacent to him
@@ -158,8 +158,9 @@ public class Cheater implements StrategyInterface,Serializable {
 			 fortify(false, currentRiskModel);
 		} else {
 			endGame(riskGameModel);
-			return;
+			return "";
 		}
+		return "";
 	}
 
 	/**
@@ -229,7 +230,7 @@ public class Cheater implements StrategyInterface,Serializable {
 	}
 
 	@Override
-	public void fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public String fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		Utility.writeLog("FORTIFY - Some Cheater dude called - " + riskGameModel.curPlayer.getName()
 				+ " has an option to Fortify any of his armies.");
 
@@ -244,7 +245,8 @@ public class Cheater implements StrategyInterface,Serializable {
 		riskGameModel.setState(RiskGameModel.START_TURN);
 		riskGameModel.nextPlayer();
 		riskGameModel.notifyPhaseViewChange();
-		//return "";
+		return "";
+		
 	}
 
 	/**

@@ -142,7 +142,7 @@ public class Random implements StrategyInterface, Serializable {
 	}
 
 	@Override
-	public void attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
 		 * He will keep on attacking untill he has teeritories which armies > 1 and of
 		 * which have others territories adjacent to him
@@ -213,7 +213,7 @@ public class Random implements StrategyInterface, Serializable {
 				if (riskGameModel.getState() == RiskGameModel.CAPTURE)
 					if (capture(false, riskGameModel)) {
 						endGame(riskGameModel);
-						return;
+						return "";
 					}
 			}
 
@@ -222,6 +222,7 @@ public class Random implements StrategyInterface, Serializable {
 				+ " could not attack/is done with attack/decided not to attack.");
 		riskGameModel.notifyPhaseViewChange();
 		fortify(false, currentRiskModel);
+		return "";
 	}
 
 	/**
@@ -339,7 +340,7 @@ public class Random implements StrategyInterface, Serializable {
 	}
 
 	@Override
-	public void fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public String fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		Utility.writeLog("FORTIFY - Some Random dude called - " + riskGameModel.curPlayer.getName()
 				+ " has an option to Fortify any of his armies.");
 
@@ -378,7 +379,7 @@ public class Random implements StrategyInterface, Serializable {
 		riskGameModel.setState(RiskGameModel.START_TURN);
 		riskGameModel.nextPlayer();
 		riskGameModel.notifyPhaseViewChange();
-		// return "";
+		 return "";
 	}
 
 	/**

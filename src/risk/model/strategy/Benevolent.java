@@ -25,6 +25,10 @@ public class Benevolent implements StrategyInterface ,Serializable{
 		} else {
 			reinforce(false, riskGameModel);
 		}
+		riskGameModel.mainPanel.repaint();
+		riskGameModel.subPanel.repaint();
+
+		return;
 	}
 
 	private void tradeCards(RiskGameModel riskGameModel) {
@@ -83,14 +87,15 @@ public class Benevolent implements StrategyInterface ,Serializable{
 	}
 
 	@Override
-	public void attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		// TODO Auto-generated method stub
 		// the benevolent player not suppose to attack
 		reinforce(isTest, riskGameModel, territory);
+		return "";
 	}
 
 	@Override
-	public void fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public String fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		// TODO Auto-generated method stub
 		Utility.writeLog("FORTIFY - Some Random dude called - " + riskGameModel.curPlayer.getName()
 				+ " has an option to Fortify any of his armies.");
@@ -132,6 +137,7 @@ public class Benevolent implements StrategyInterface ,Serializable{
 		riskGameModel.setState(RiskGameModel.START_TURN);
 		riskGameModel.nextPlayer();
 		riskGameModel.notifyPhaseViewChange();
+		return "";
 	}
 
 	

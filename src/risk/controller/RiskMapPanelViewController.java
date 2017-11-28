@@ -2,6 +2,7 @@ package risk.controller;
 
 import risk.helpers.Utility;
 import risk.model.*;
+import risk.model.strategy.Human;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -379,7 +380,7 @@ public class RiskMapPanelViewController extends JPanel {
 			 *
 			 */
 
-			if (risk.active == risk.defender) {
+			if ((risk.active == risk.defender) && (risk.defender.getStrategy().getClass() != Human.class)) {
 				graphics.drawString("How many armies to defend with?", 390, 180);
 				graphics.drawImage(shield, 630, 280, this);
 				graphics.setColor(Color.white);
