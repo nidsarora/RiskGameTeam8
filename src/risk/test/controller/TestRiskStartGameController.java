@@ -41,10 +41,14 @@ public class TestRiskStartGameController {
 	 */
 	@Test
 	public void testValidateMapLineInputText() throws ParserConfigurationException, SAXException, IOException {
-		boolean q = riskstartgamecontroller.validateMapLineInputText("India,Asia,China,Japan");
 		riskstartgamecontroller.generateChooseMapPanel();
-		boolean q1= riskstartgamecontroller.validateMapLineInputText("Indie,Asiw,China,Japan");
+		boolean q = riskstartgamecontroller.validateMapLineInputText("India,Asia,China,Japan");		
 		assertEquals(true,q);
+	}
+	@Test
+	public void testInvalidMapLineInputText() throws ParserConfigurationException, SAXException, IOException {
+		riskstartgamecontroller.generateChooseMapPanel();		
+		boolean q1= riskstartgamecontroller.validateMapLineInputText("China,Japan");
 		assertEquals(false,q1);
 	}
 
@@ -55,9 +59,11 @@ public class TestRiskStartGameController {
      * @throws SAXException the SAX exception
      * @throws IOException Signals that an I/O exception has occurred.
      */
+	@Test
     public void testgetAdjacentCountryInfo() throws ParserConfigurationException, SAXException, IOException
     {
     	riskstartgamecontroller.populatePredefinedTerritoryCoordinatesList();
+    	//riskstartgamecontroller.getFromPredefinedTerritoryCoordinatesList();
     	String h=riskstartgamecontroller.getAdjacentCountryInfo("India","Japan","Asia");
     	assertEquals("India,47,76,Asia,Japan",h);
     	
@@ -76,5 +82,6 @@ public class TestRiskStartGameController {
 		riskstartgamecontroller.copyhmCountryDetails = (HashMap<String, String>) countries.clone();
 		assertEquals(true, riskstartgamecontroller.CheckCountriesConnected(countries));
 	}
+	
 
 }
