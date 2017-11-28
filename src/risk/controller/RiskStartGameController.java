@@ -747,9 +747,9 @@ public class RiskStartGameController extends java.awt.Frame {
 		}
 
 		if (copyhmCountryDetails.isEmpty())
-			return true;
+			return false;
 
-		return false;
+		return true;
 	}
 
 	private void CheckAndAddLinkedCountry(String countryDetail) {
@@ -1078,7 +1078,7 @@ public class RiskStartGameController extends java.awt.Frame {
 					if (!isCountryValid) {
 						noteLabel.setText(
 								"The Country " + mapInputLineText.split(",")[location] + " mentioned is not correct");
-						isValid = false;
+						isValid = true;
 						break;
 					}
 
