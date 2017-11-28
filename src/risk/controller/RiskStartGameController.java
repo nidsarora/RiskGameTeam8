@@ -984,7 +984,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	 *            the index
 	 * @return begin index, for the upcoming recursive search.
 	 */
-	private int updateIndexToNextTerritory(String baseMapString, String territory, int index) {
+	public int updateIndexToNextTerritory(String baseMapString, String territory, int index) {
 		if (baseMapString.charAt(index + territory.length()) == ','
 				|| String.valueOf(baseMapString.charAt(index + territory.length())) == "")
 			return index + territory.length() + 1;
@@ -1033,7 +1033,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	 * @return Boolean, true if this is the instance of territory with
 	 *         coordinates next to it else False.
 	 */
-	private boolean isCoordinatesNextToIt(String baseMapString, int index, String territory) {
+	public boolean isCoordinatesNextToIt(String baseMapString, int index, String territory) {
 		String subbaseMapString = baseMapString.substring(index);
 		if (Character.isDigit(subbaseMapString.charAt(territory.length() + 1))) // Brazil,10,10,
 			return true;
