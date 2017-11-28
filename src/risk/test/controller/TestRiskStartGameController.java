@@ -83,5 +83,15 @@ public class TestRiskStartGameController {
 		assertEquals(true, riskstartgamecontroller.CheckCountriesConnected(countries));
 	}
 	
-
+ @Test
+   public void testIsCoordinatesNextToIt() {
+	  boolean result= riskstartgamecontroller.isCoordinatesNextToIt("aa,india,bb,cc", 1, "aa");
+	  assertEquals(false,result);
+   }
+   @Test
+   public void testupdateIndexToNextTerritory() {
+	   int index=riskstartgamecontroller.updateIndexToNextTerritory("aa,india,bb,cc","aa",1);
+	   assertEquals(3,index);//This method sends the begin index for the new cut-shorted string for the next recursive search.
+	   
+   }
 }
