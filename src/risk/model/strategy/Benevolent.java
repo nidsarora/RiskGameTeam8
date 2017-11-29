@@ -17,7 +17,6 @@ public class Benevolent implements StrategyInterface ,Serializable{
 	@Override
 	public void startTurn(boolean isTest, RiskGameModel riskGameModel) {
 		currentRiskModel = riskGameModel;
-
 		Utility.writeLog(
 				"START TURN - benevolent BOT called - " + riskGameModel.curPlayer.getName() + " has started his turn.");
 		if (riskGameModel.curPlayer.getCard().size() > 5) {

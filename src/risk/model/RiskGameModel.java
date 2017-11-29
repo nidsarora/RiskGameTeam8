@@ -702,7 +702,7 @@ public class RiskGameModel implements Serializable {
 	public void distubuteArmies() {
 		int numOfPlayers = players.size();
 		if (numOfPlayers == 3)
-			armies = 15;
+			armies = 45;
 		else if (numOfPlayers == 4)
 			armies = 30;
 		else if (numOfPlayers == 5)

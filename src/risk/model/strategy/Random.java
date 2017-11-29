@@ -38,24 +38,25 @@ public class Random implements StrategyInterface, Serializable {
 
 	@Override
 	public void initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
-		if (riskGameModel.curPlayer.getNumberOfArmies() > 0) {
-			int occupiedTerritory = getRandomOccupiedTerritoryByPlayer(riskGameModel.curPlayer);
-			if (occupiedTerritory != -1) {
-				riskGameModel.occupyTerritoryByPlayer(occupiedTerritory, riskGameModel.curPlayer);
-				Utility.writeLog("INITIAL REINFORCE - Some Random dude called - " + riskGameModel.curPlayer.getName()
-						+ " placed one of his army on " + riskGameModel.getTerritoryAt(occupiedTerritory).getName());
-			}
-			riskGameModel.notifyPhaseViewChange();
-
-			if (!riskGameModel.anyPlayerHasArmies()) {
-				riskGameModel.setState(RiskGameModel.START_TURN);
-				startTurn(false, riskGameModel);
-			} else
-				riskGameModel.nextPlayer();
+		if (!riskGameModel.anyPlayerHasArmies()) {
+			riskGameModel.setState(RiskGameModel.START_TURN);
+			startTurn(false, riskGameModel);
 		} else {
-			Utility.writeLog("armies less than 0");
-			riskGameModel.nextPlayer();
+			if (riskGameModel.curPlayer.getNumberOfArmies() > 0) {
+				int occupiedTerritory = getRandomOccupiedTerritoryByPlayer(riskGameModel.curPlayer);
+				if (occupiedTerritory != -1) {
+					riskGameModel.occupyTerritoryByPlayer(occupiedTerritory, riskGameModel.curPlayer);
+					Utility.writeLog("INITIAL REINFORCE - Some Random dude called - "
+							+ riskGameModel.curPlayer.getName() + " placed one of his army on "
+							+ riskGameModel.getTerritoryAt(occupiedTerritory).getName());
+				}
+				riskGameModel.notifyPhaseViewChange();
+				riskGameModel.nextPlayer();
 
+			} else {
+				Utility.writeLog("armies less than 0");
+				riskGameModel.nextPlayer();
+			}
 		}
 		// return "";
 	}

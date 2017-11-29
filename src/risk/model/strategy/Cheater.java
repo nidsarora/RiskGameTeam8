@@ -18,7 +18,7 @@ import risk.model.interfaces.StrategyInterface;
 /**
  * This Class contains logic for Cheater player.
  */
-public class Cheater implements StrategyInterface,Serializable {
+public class Cheater implements StrategyInterface, Serializable {
 
 	/** The current risk model. */
 	RiskGameModel currentRiskModel;
@@ -41,23 +41,27 @@ public class Cheater implements StrategyInterface,Serializable {
 
 	@Override
 	public void initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
-		if (riskGameModel.curPlayer.getNumberOfArmies() > 0) {
-			int occupiedTerritory = getRandomOccupiedTerritoryByPlayer(riskGameModel.curPlayer);
-			if (occupiedTerritory != -1) {
-				riskGameModel.occupyTerritoryByPlayer(occupiedTerritory, riskGameModel.curPlayer);
-				Utility.writeLog("INITIAL REINFORCE - The cheater called - " + riskGameModel.curPlayer.getName()
-						+ " placed 'one' of his army on " + riskGameModel.getTerritoryAt(occupiedTerritory).getName());
-			}
-			riskGameModel.notifyPhaseViewChange();
 
-			if (!riskGameModel.anyPlayerHasArmies()) {
-				riskGameModel.setState(RiskGameModel.START_TURN);
-				startTurn(false, riskGameModel);
-			} else
+		if (!riskGameModel.anyPlayerHasArmies()) {
+			riskGameModel.setState(RiskGameModel.START_TURN);
+			startTurn(false, riskGameModel);
+		} else {
+			if (riskGameModel.curPlayer.getNumberOfArmies() > 0) {
+				int occupiedTerritory = getRandomOccupiedTerritoryByPlayer(riskGameModel.curPlayer);
+				if (occupiedTerritory != -1) {
+					riskGameModel.occupyTerritoryByPlayer(occupiedTerritory, riskGameModel.curPlayer);
+					Utility.writeLog("INITIAL REINFORCE - The cheater called - " + riskGameModel.curPlayer.getName()
+							+ " placed 'one' of his army on "
+							+ riskGameModel.getTerritoryAt(occupiedTerritory).getName());
+				}
+				riskGameModel.notifyPhaseViewChange();
 				riskGameModel.nextPlayer();
-		} else
-			riskGameModel.nextPlayer();
-		//return;
+			}else {
+				Utility.writeLog("armies less than 0");
+				riskGameModel.nextPlayer();
+			}
+		}
+
 	}
 
 	@Override
@@ -68,16 +72,16 @@ public class Cheater implements StrategyInterface,Serializable {
 		if (riskGameModel.curPlayer.getCard().size() > (new java.util.Random().nextInt(5) + 1)) { // 1,2,3,4,5
 			tradeCards(riskGameModel);
 		} else {
-			 reinforce(false, riskGameModel);
+			reinforce(false, riskGameModel);
 		}
 
 	}
 
-
 	/**
 	 * Trade cards.
 	 *
-	 * @param riskGameModel the risk game model
+	 * @param riskGameModel
+	 *            the risk game model
 	 * @return the string
 	 */
 	private void tradeCards(RiskGameModel riskGameModel) {
@@ -91,11 +95,11 @@ public class Cheater implements StrategyInterface,Serializable {
 				new Random().nextInt(riskGameModel.curPlayer.getCard().size()));
 		cardsRemoved.addAll(riskGameModel.lstTradedCards);
 		riskGameModel.looseCard(cardsRemoved);
-		//riskGameModel.curPlayer.removeCard(riskGameModel.lstTradedCards);
+		// riskGameModel.curPlayer.removeCard(riskGameModel.lstTradedCards);
 		riskGameModel.curPlayer.setArmiesRecivedByTradingCards(count);
 		riskGameModel.curPlayer.addArmies(count);
 		riskGameModel.notifyPhaseViewChange();
-		 reinforce(false, riskGameModel);
+		reinforce(false, riskGameModel);
 	}
 
 	@Override
@@ -130,7 +134,7 @@ public class Cheater implements StrategyInterface,Serializable {
 		Utility.writeLog("REINFORCE - Some Cheater called - " + riskGameModel.curPlayer.getName()
 				+ " is done with reinforcement and his army count is " + riskGameModel.curPlayer.getNumberOfArmies());
 		riskGameModel.notifyPhaseViewChange();
-		 attack(false, riskGameModel);
+		attack(false, riskGameModel);
 	}
 
 	@Override
@@ -155,7 +159,7 @@ public class Cheater implements StrategyInterface,Serializable {
 			Utility.writeLog("ATTACK - Some Cheater dude called - " + riskGameModel.curPlayer.getName()
 					+ " is done with attack.");
 			riskGameModel.notifyPhaseViewChange();
-			 fortify(false, currentRiskModel);
+			fortify(false, currentRiskModel);
 		} else {
 			endGame(riskGameModel);
 			return;
@@ -165,7 +169,8 @@ public class Cheater implements StrategyInterface,Serializable {
 	/**
 	 * Cheater capture adjacent.
 	 *
-	 * @param cheaterTerritory the cheater territory
+	 * @param cheaterTerritory
+	 *            the cheater territory
 	 * @return the boolean
 	 */
 	private Boolean cheaterCaptureAdjacent(RiskTerritoryModel cheaterTerritory) {
@@ -201,7 +206,8 @@ public class Cheater implements StrategyInterface,Serializable {
 	/**
 	 * End game.
 	 *
-	 * @param riskGameModel the risk game model
+	 * @param riskGameModel
+	 *            the risk game model
 	 */
 	public void endGame(RiskGameModel riskGameModel) {
 		Utility.writeLog("Thats all ya, " + riskGameModel.curPlayer.getName() + " won the game with his "
@@ -218,7 +224,8 @@ public class Cheater implements StrategyInterface,Serializable {
 	/**
 	 * Gets the random occupied territory by player.
 	 *
-	 * @param riskPlayer the risk player
+	 * @param riskPlayer
+	 *            the risk player
 	 * @return the random occupied territory by player
 	 */
 	private int getRandomOccupiedTerritoryByPlayer(RiskPlayerModel riskPlayer) {
@@ -244,13 +251,14 @@ public class Cheater implements StrategyInterface,Serializable {
 		riskGameModel.setState(RiskGameModel.START_TURN);
 		riskGameModel.nextPlayer();
 		riskGameModel.notifyPhaseViewChange();
-		//return "";
+		// return "";
 	}
 
 	/**
 	 * Gets the fortifiable territories.
 	 *
-	 * @param riskGameModel the risk game model
+	 * @param riskGameModel
+	 *            the risk game model
 	 * @return the fortifiable territories
 	 */
 	private ArrayList<RiskTerritoryModel> getFortifiableTerritories(RiskGameModel riskGameModel) {

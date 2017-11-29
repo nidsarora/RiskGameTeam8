@@ -100,7 +100,6 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			risk = loadSavedRiskGameModel();
 		else
 			risk = new RiskGameModel();
-
 		initComponents();
 		initializePhaseView(risk);
 		risk.mainPanel = jPanel1;

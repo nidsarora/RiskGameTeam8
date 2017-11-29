@@ -14,6 +14,7 @@ public class Human implements StrategyInterface ,Serializable{
 
 		@Override
 	public void takeTurn(boolean isTest, RiskGameModel riskGameModel) {
+			Utility.writeLog("***********" + riskGameModel.curPlayer.getName() + " turn *************");
 			return;
 	}
 

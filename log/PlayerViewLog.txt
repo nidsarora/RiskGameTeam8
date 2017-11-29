@@ -8,7 +8,7 @@ Statistics
 Current Player: Player_1:1 territories: *
 
 Player: Player_2:0 territories: 
-Player: Player_3:0 territories: Army count 15
+Player: Player_3:0 territories: Army count 45
 Territories Occupied by me
 Alaska
 
@@ -21,7 +21,7 @@ Statistics
 Current Player: Player_2:1 territories: *
 
 Player: Player_1:1 territories: *
-Player: Player_3:0 territories: Army count 15
+Player: Player_3:0 territories: Army count 45
 Territories Occupied by me
 Northwest_Territory
 
@@ -34,7 +34,7 @@ Statistics
 Current Player: Player_3:1 territories: *
 
 Player: Player_1:1 territories: *
-Player: Player_2:1 territories: *Army count 15
+Player: Player_2:1 territories: *Army count 45
 Territories Occupied by me
 Greenland
 
@@ -47,7 +47,7 @@ Statistics
 Current Player: Player_1:2 territories: *
 
 Player: Player_2:1 territories: *
-Player: Player_3:1 territories: *Army count 14
+Player: Player_3:1 territories: *Army count 44
 Territories Occupied by me
 Alaska
 Alberta
@@ -61,7 +61,7 @@ Statistics
 Current Player: Player_2:2 territories: *
 
 Player: Player_1:2 territories: *
-Player: Player_3:1 territories: *Army count 14
+Player: Player_3:1 territories: *Army count 44
 Territories Occupied by me
 Northwest_Territory
 Ontario
@@ -75,7 +75,7 @@ Statistics
 Current Player: Player_3:2 territories: *
 
 Player: Player_1:2 territories: *
-Player: Player_2:2 territories: *Army count 14
+Player: Player_2:2 territories: *Army count 44
 Territories Occupied by me
 Greenland
 Eastern_Canada
@@ -89,7 +89,7 @@ Statistics
 Current Player: Player_1:3 territories: *
 
 Player: Player_2:2 territories: *
-Player: Player_3:2 territories: *Army count 13
+Player: Player_3:2 territories: *Army count 43
 Territories Occupied by me
 Alaska
 Alberta
@@ -104,7 +104,7 @@ Statistics
 Current Player: Player_2:3 territories: *
 
 Player: Player_1:3 territories: *
-Player: Player_3:2 territories: *Army count 13
+Player: Player_3:2 territories: *Army count 43
 Territories Occupied by me
 Northwest_Territory
 Ontario
@@ -119,7 +119,7 @@ Statistics
 Current Player: Player_3:3 territories: *
 
 Player: Player_1:3 territories: *
-Player: Player_2:3 territories: *Army count 13
+Player: Player_2:3 territories: *Army count 43
 Territories Occupied by me
 Greenland
 Eastern_Canada
@@ -134,7 +134,7 @@ Statistics
 Current Player: Player_1:4 territories: *
 
 Player: Player_2:3 territories: *
-Player: Player_3:3 territories: *Army count 12
+Player: Player_3:3 territories: *Army count 42
 Territories Occupied by me
 Alaska
 Alberta
@@ -150,7 +150,7 @@ Statistics
 Current Player: Player_2:4 territories: *
 
 Player: Player_1:4 territories: *
-Player: Player_3:3 territories: *Army count 12
+Player: Player_3:3 territories: *Army count 42
 Territories Occupied by me
 Northwest_Territory
 Ontario
@@ -166,7 +166,7 @@ Statistics
 Current Player: Player_3:4 territories: *
 
 Player: Player_1:4 territories: *
-Player: Player_2:4 territories: *Army count 12
+Player: Player_2:4 territories: *Army count 42
 Territories Occupied by me
 Greenland
 Eastern_Canada
@@ -182,7 +182,7 @@ Statistics
 Current Player: Player_1:5 territories: **
 
 Player: Player_2:4 territories: *
-Player: Player_3:4 territories: *Army count 11
+Player: Player_3:4 territories: *Army count 41
 Territories Occupied by me
 Alaska
 Alberta
@@ -199,7 +199,7 @@ Statistics
 Current Player: Player_2:5 territories: **
 
 Player: Player_1:5 territories: **
-Player: Player_3:4 territories: *Army count 11
+Player: Player_3:4 territories: *Army count 41
 Territories Occupied by me
 Northwest_Territory
 Ontario
@@ -216,7 +216,7 @@ Statistics
 Current Player: Player_3:5 territories: **
 
 Player: Player_1:5 territories: **
-Player: Player_2:5 territories: **Army count 11
+Player: Player_2:5 territories: **Army count 41
 Territories Occupied by me
 Greenland
 Eastern_Canada
@@ -233,7 +233,7 @@ Statistics
 Current Player: Player_1:6 territories: **
 
 Player: Player_2:5 territories: **
-Player: Player_3:5 territories: **Army count 10
+Player: Player_3:5 territories: **Army count 40
 Territories Occupied by me
 Alaska
 Alberta
@@ -251,7 +251,7 @@ Statistics
 Current Player: Player_2:6 territories: **
 
 Player: Player_1:6 territories: **
-Player: Player_3:5 territories: **Army count 10
+Player: Player_3:5 territories: **Army count 40
 Territories Occupied by me
 Northwest_Territory
 Ontario
@@ -269,7 +269,7 @@ Statistics
 Current Player: Player_3:6 territories: **
 
 Player: Player_1:6 territories: **
-Player: Player_2:6 territories: **Army count 10
+Player: Player_2:6 territories: **Army count 40
 Territories Occupied by me
 Greenland
 Eastern_Canada
@@ -287,7 +287,7 @@ Statistics
 Current Player: Player_1:7 territories: **
 
 Player: Player_2:6 territories: **
-Player: Player_3:6 territories: **Army count 9
+Player: Player_3:6 territories: **Army count 39
 Territories Occupied by me
 Alaska
 Alberta
@@ -306,7 +306,7 @@ Statistics
 Current Player: Player_2:7 territories: **
 
 Player: Player_1:7 territories: **
-Player: Player_3:6 territories: **Army count 9
+Player: Player_3:6 territories: **Army count 39
 Territories Occupied by me
 Northwest_Territory
 Ontario
@@ -325,7 +325,7 @@ Statistics
 Current Player: Player_3:7 territories: **
 
 Player: Player_1:7 territories: **
-Player: Player_2:7 territories: **Army count 9
+Player: Player_2:7 territories: **Army count 39
 Territories Occupied by me
 Greenland
 Eastern_Canada
@@ -344,7 +344,7 @@ Statistics
 Current Player: Player_1:8 territories: **
 
 Player: Player_2:7 territories: **
-Player: Player_3:7 territories: **Army count 8
+Player: Player_3:7 territories: **Army count 38
 Territories Occupied by me
 Alaska
 Alberta
@@ -364,7 +364,7 @@ Statistics
 Current Player: Player_2:8 territories: **
 
 Player: Player_1:8 territories: **
-Player: Player_3:7 territories: **Army count 8
+Player: Player_3:7 territories: **Army count 38
 Territories Occupied by me
 Northwest_Territory
 Ontario
@@ -384,7 +384,7 @@ Statistics
 Current Player: Player_3:8 territories: **
 
 Player: Player_1:8 territories: **
-Player: Player_2:8 territories: **Army count 8
+Player: Player_2:8 territories: **Army count 38
 Territories Occupied by me
 Greenland
 Eastern_Canada
@@ -404,7 +404,7 @@ Statistics
 Current Player: Player_1:9 territories: **
 
 Player: Player_2:8 territories: **
-Player: Player_3:8 territories: **Army count 7
+Player: Player_3:8 territories: **Army count 37
 Territories Occupied by me
 Alaska
 Alberta
@@ -425,7 +425,7 @@ Statistics
 Current Player: Player_2:9 territories: **
 
 Player: Player_1:9 territories: **
-Player: Player_3:8 territories: **Army count 7
+Player: Player_3:8 territories: **Army count 37
 Territories Occupied by me
 Northwest_Territory
 Ontario
@@ -446,7 +446,7 @@ Statistics
 Current Player: Player_3:9 territories: **
 
 Player: Player_1:9 territories: **
-Player: Player_2:9 territories: **Army count 7
+Player: Player_2:9 territories: **Army count 37
 Territories Occupied by me
 Greenland
 Eastern_Canada
@@ -467,7 +467,7 @@ Statistics
 Current Player: Player_1:10 territories: ***
 
 Player: Player_2:9 territories: **
-Player: Player_3:9 territories: **Army count 6
+Player: Player_3:9 territories: **Army count 36
 Territories Occupied by me
 Alaska
 Alberta
@@ -489,7 +489,7 @@ Statistics
 Current Player: Player_2:10 territories: ***
 
 Player: Player_1:10 territories: ***
-Player: Player_3:9 territories: **Army count 6
+Player: Player_3:9 territories: **Army count 36
 Territories Occupied by me
 Northwest_Territory
 Ontario
@@ -511,7 +511,7 @@ Statistics
 Current Player: Player_3:10 territories: ***
 
 Player: Player_1:10 territories: ***
-Player: Player_2:10 territories: ***Army count 6
+Player: Player_2:10 territories: ***Army count 36
 Territories Occupied by me
 Greenland
 Eastern_Canada
@@ -533,7 +533,7 @@ Statistics
 Current Player: Player_1:11 territories: ***
 
 Player: Player_2:10 territories: ***
-Player: Player_3:10 territories: ***Army count 5
+Player: Player_3:10 territories: ***Army count 35
 Territories Occupied by me
 Alaska
 Alberta
@@ -556,7 +556,7 @@ Statistics
 Current Player: Player_2:11 territories: ***
 
 Player: Player_1:11 territories: ***
-Player: Player_3:10 territories: ***Army count 5
+Player: Player_3:10 territories: ***Army count 35
 Territories Occupied by me
 Northwest_Territory
 Ontario
@@ -579,7 +579,7 @@ Statistics
 Current Player: Player_3:11 territories: ***
 
 Player: Player_1:11 territories: ***
-Player: Player_2:11 territories: ***Army count 5
+Player: Player_2:11 territories: ***Army count 35
 Territories Occupied by me
 Greenland
 Eastern_Canada
@@ -602,7 +602,7 @@ Statistics
 Current Player: Player_1:12 territories: ***
 
 Player: Player_2:11 territories: ***
-Player: Player_3:11 territories: ***Army count 4
+Player: Player_3:11 territories: ***Army count 34
 Territories Occupied by me
 Alaska
 Alberta
@@ -626,7 +626,7 @@ Statistics
 Current Player: Player_2:12 territories: ***
 
 Player: Player_1:12 territories: ***
-Player: Player_3:11 territories: ***Army count 4
+Player: Player_3:11 territories: ***Army count 34
 Territories Occupied by me
 Northwest_Territory
 Ontario
@@ -650,7 +650,7 @@ Statistics
 Current Player: Player_3:12 territories: ***
 
 Player: Player_1:12 territories: ***
-Player: Player_2:12 territories: ***Army count 4
+Player: Player_2:12 territories: ***Army count 34
 Territories Occupied by me
 Greenland
 Eastern_Canada
@@ -674,7 +674,7 @@ Statistics
 Current Player: Player_1:13 territories: ***
 
 Player: Player_2:12 territories: ***
-Player: Player_3:12 territories: ***Army count 3
+Player: Player_3:12 territories: ***Army count 33
 Territories Occupied by me
 Alaska
 Alberta
@@ -699,7 +699,7 @@ Statistics
 Current Player: Player_2:13 territories: ***
 
 Player: Player_1:13 territories: ***
-Player: Player_3:12 territories: ***Army count 3
+Player: Player_3:12 territories: ***Army count 33
 Territories Occupied by me
 Northwest_Territory
 Ontario
@@ -724,7 +724,7 @@ Statistics
 Current Player: Player_3:13 territories: ***
 
 Player: Player_1:13 territories: ***
-Player: Player_2:13 territories: ***Army count 3
+Player: Player_2:13 territories: ***Army count 33
 Territories Occupied by me
 Greenland
 Eastern_Canada
@@ -749,7 +749,7 @@ Statistics
 Current Player: Player_1:14 territories: ***
 
 Player: Player_2:13 territories: ***
-Player: Player_3:13 territories: ***Army count 2
+Player: Player_3:13 territories: ***Army count 32
 Territories Occupied by me
 Alaska
 Alberta
@@ -775,7 +775,7 @@ Statistics
 Current Player: Player_2:14 territories: ***
 
 Player: Player_1:14 territories: ***
-Player: Player_3:13 territories: ***Army count 2
+Player: Player_3:13 territories: ***Army count 32
 Territories Occupied by me
 Northwest_Territory
 Ontario
@@ -801,7 +801,7 @@ Statistics
 Current Player: Player_3:14 territories: ***
 
 Player: Player_1:14 territories: ***
-Player: Player_2:14 territories: ***Army count 2
+Player: Player_2:14 territories: ***Army count 32
 Territories Occupied by me
 Greenland
 Eastern_Canada
@@ -827,7 +827,7 @@ Statistics
 Current Player: Player_1:14 territories: ***
 
 Player: Player_2:14 territories: ***
-Player: Player_3:14 territories: ***Army count 1
+Player: Player_3:14 territories: ***Army count 30
 Territories Occupied by me
 Alaska
 Alberta
@@ -853,7 +853,7 @@ Statistics
 Current Player: Player_2:14 territories: ***
 
 Player: Player_1:14 territories: ***
-Player: Player_3:14 territories: ***Army count 0
+Player: Player_3:14 territories: ***Army count 31
 Territories Occupied by me
 Northwest_Territory
 Ontario
@@ -879,7 +879,7 @@ Statistics
 Current Player: Player_3:14 territories: ***
 
 Player: Player_1:14 territories: ***
-Player: Player_2:14 territories: ***Army count 1
+Player: Player_2:14 territories: ***Army count 31
 Territories Occupied by me
 Greenland
 Eastern_Canada
@@ -895,414 +895,6 @@ Japan
 Middle_East
 Indonesia
 Eastern_Australia
-
-
-
-
-**********Player: Player_3 Domination View**********
-Statistics
-
-Current Player: Player_3:14 territories: ***
-
-Player: Player_1:14 territories: ***
-Player: Player_2:14 territories: ***Army count 3
-Territories Occupied by me
-Greenland
-Eastern_Canada
-Central_America
-Brazil
-Scandinavia
-Northern_Europe
-North_Africa
-East_Africa
-Ural
-Irkutsk
-Japan
-Middle_East
-Indonesia
-Eastern_Australia
-
-
-
-
-**********Player: Player_3 Domination View**********
-Statistics
-
-Current Player: Player_3:14 territories: ***
-
-Player: Player_1:14 territories: ***
-Player: Player_2:14 territories: ***Army count 2
-Territories Occupied by me
-Greenland
-Eastern_Canada
-Central_America
-Brazil
-Scandinavia
-Northern_Europe
-North_Africa
-East_Africa
-Ural
-Irkutsk
-Japan
-Middle_East
-Indonesia
-Eastern_Australia
-
-
-
-
-**********Player: Player_3 Domination View**********
-Statistics
-
-Current Player: Player_3:14 territories: ***
-
-Player: Player_1:14 territories: ***
-Player: Player_2:14 territories: ***Army count 1
-Territories Occupied by me
-Greenland
-Eastern_Canada
-Central_America
-Brazil
-Scandinavia
-Northern_Europe
-North_Africa
-East_Africa
-Ural
-Irkutsk
-Japan
-Middle_East
-Indonesia
-Eastern_Australia
-
-
-
-
-**********Player: Player_3 Domination View**********
-Statistics
-
-Current Player: Player_3:14 territories: ***
-
-Player: Player_1:14 territories: ***
-Player: Player_2:14 territories: ***Army count 0
-Territories Occupied by me
-Greenland
-Eastern_Canada
-Central_America
-Brazil
-Scandinavia
-Northern_Europe
-North_Africa
-East_Africa
-Ural
-Irkutsk
-Japan
-Middle_East
-Indonesia
-Eastern_Australia
-
-
-
-
-**********Player: Player_1 Domination View**********
-Statistics
-
-Current Player: Player_1:13 territories: ***
-
-Player: Player_2:14 territories: ***
-Player: Player_3:14 territories: ***Army count 0
-Territories Occupied by me
-Alaska
-Alberta
-Venezuela
-Argentina
-Russia
-Western_Europe
-Egypt
-South_Africa
-Siberia
-Mongolia
-Afghanistan
-India
-New_Guinea
-
-
-
-
-**********Player: Player_3 Domination View**********
-Statistics
-
-Current Player: Player_3:15 territories: ****
-
-Player: Player_1:13 territories: ***
-Player: Player_2:14 territories: ***Army count 0
-Territories Occupied by me
-Greenland
-Eastern_Canada
-Central_America
-Brazil
-Scandinavia
-Northern_Europe
-North_Africa
-East_Africa
-Ural
-Irkutsk
-Japan
-Middle_East
-Indonesia
-Eastern_Australia
-Western_United_States
-
-
-
-
-**********Player: Player_3 Domination View**********
-Statistics
-
-Current Player: Player_3:15 territories: ****
-
-Player: Player_1:13 territories: ***
-Player: Player_2:14 territories: ***Army count 0
-Territories Occupied by me
-Greenland
-Eastern_Canada
-Central_America
-Brazil
-Scandinavia
-Northern_Europe
-North_Africa
-East_Africa
-Ural
-Irkutsk
-Japan
-Middle_East
-Indonesia
-Eastern_Australia
-Western_United_States
-
-
-
-
-**********Player: Player_1 Domination View**********
-Statistics
-
-Current Player: Player_1:12 territories: ***
-
-Player: Player_2:14 territories: ***
-Player: Player_3:15 territories: ****Army count 0
-Territories Occupied by me
-Alaska
-Alberta
-Venezuela
-Argentina
-Western_Europe
-Egypt
-South_Africa
-Siberia
-Mongolia
-Afghanistan
-India
-New_Guinea
-
-
-
-
-**********Player: Player_3 Domination View**********
-Statistics
-
-Current Player: Player_3:16 territories: ****
-
-Player: Player_1:12 territories: ***
-Player: Player_2:14 territories: ***Army count 0
-Territories Occupied by me
-Greenland
-Eastern_Canada
-Central_America
-Brazil
-Scandinavia
-Northern_Europe
-North_Africa
-East_Africa
-Ural
-Irkutsk
-Japan
-Middle_East
-Indonesia
-Eastern_Australia
-Western_United_States
-Russia
-
-
-
-
-**********Player: Player_1 Domination View**********
-Statistics
-
-Current Player: Player_1:12 territories: ***
-
-Player: Player_2:14 territories: ***
-Player: Player_3:16 territories: ****Army count 4
-Territories Occupied by me
-Alaska
-Alberta
-Venezuela
-Argentina
-Western_Europe
-Egypt
-South_Africa
-Siberia
-Mongolia
-Afghanistan
-India
-New_Guinea
-
-
-
-
-**********Player: Player_1 Domination View**********
-Statistics
-
-Current Player: Player_1:12 territories: ***
-
-Player: Player_2:14 territories: ***
-Player: Player_3:16 territories: ****Army count 3
-Territories Occupied by me
-Alaska
-Alberta
-Venezuela
-Argentina
-Western_Europe
-Egypt
-South_Africa
-Siberia
-Mongolia
-Afghanistan
-India
-New_Guinea
-
-
-
-
-**********Player: Player_1 Domination View**********
-Statistics
-
-Current Player: Player_1:12 territories: ***
-
-Player: Player_2:14 territories: ***
-Player: Player_3:16 territories: ****Army count 2
-Territories Occupied by me
-Alaska
-Alberta
-Venezuela
-Argentina
-Western_Europe
-Egypt
-South_Africa
-Siberia
-Mongolia
-Afghanistan
-India
-New_Guinea
-
-
-
-
-**********Player: Player_1 Domination View**********
-Statistics
-
-Current Player: Player_1:12 territories: ***
-
-Player: Player_2:14 territories: ***
-Player: Player_3:16 territories: ****Army count 1
-Territories Occupied by me
-Alaska
-Alberta
-Venezuela
-Argentina
-Western_Europe
-Egypt
-South_Africa
-Siberia
-Mongolia
-Afghanistan
-India
-New_Guinea
-
-
-
-
-**********Player: Player_3 Domination View**********
-Statistics
-
-Current Player: Player_3:15 territories: ****
-
-Player: Player_1:12 territories: ***
-Player: Player_2:14 territories: ***Army count 0
-Territories Occupied by me
-Greenland
-Eastern_Canada
-Central_America
-Brazil
-Scandinavia
-Northern_Europe
-North_Africa
-East_Africa
-Ural
-Irkutsk
-Japan
-Middle_East
-Eastern_Australia
-Western_United_States
-Russia
-
-
-
-
-**********Player: Player_1 Domination View**********
-Statistics
-
-Current Player: Player_1:13 territories: ***
-
-Player: Player_2:14 territories: ***
-Player: Player_3:15 territories: ****Army count 0
-Territories Occupied by me
-Alaska
-Alberta
-Venezuela
-Argentina
-Western_Europe
-Egypt
-South_Africa
-Siberia
-Mongolia
-Afghanistan
-India
-New_Guinea
-Indonesia
-
-
-
-
-**********Player: Player_2 Domination View**********
-Statistics
-
-Current Player: Player_2:13 territories: ***
-
-Player: Player_1:13 territories: ***
-Player: Player_3:15 territories: ****Army count 0
-Territories Occupied by me
-Northwest_Territory
-Ontario
-Eastern_United_States
-Peru
-Iceland
-Great_Britain
-Southern_Europe
-Central_Africa
-Madagascar
-Yakutsk
-Kamchatka
-China
-Southeast_Asia
 
 
 
@@ -1312,13 +904,15 @@ Statistics
 
 Current Player: Player_1:14 territories: ***
 
-Player: Player_2:13 territories: ***
-Player: Player_3:15 territories: ****Army count 0
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 29
 Territories Occupied by me
 Alaska
 Alberta
+Western_United_States
 Venezuela
 Argentina
+Russia
 Western_Europe
 Egypt
 South_Africa
@@ -1327,7 +921,31 @@ Mongolia
 Afghanistan
 India
 New_Guinea
-Indonesia
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 30
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
 Western_Australia
 
 
@@ -1339,7 +957,7 @@ Statistics
 Current Player: Player_3:14 territories: ***
 
 Player: Player_1:14 territories: ***
-Player: Player_2:13 territories: ***Army count 0
+Player: Player_2:14 territories: ***Army count 30
 Territories Occupied by me
 Greenland
 Eastern_Canada
@@ -1353,8 +971,8 @@ Ural
 Irkutsk
 Japan
 Middle_East
-Western_United_States
-Russia
+Indonesia
+Eastern_Australia
 
 
 
@@ -1362,15 +980,17 @@ Russia
 **********Player: Player_1 Domination View**********
 Statistics
 
-Current Player: Player_1:15 territories: ****
+Current Player: Player_1:14 territories: ***
 
-Player: Player_2:13 territories: ***
-Player: Player_3:14 territories: ***Army count 0
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 28
 Territories Occupied by me
 Alaska
 Alberta
+Western_United_States
 Venezuela
 Argentina
+Russia
 Western_Europe
 Egypt
 South_Africa
@@ -1379,9 +999,6 @@ Mongolia
 Afghanistan
 India
 New_Guinea
-Indonesia
-Western_Australia
-Eastern_Australia
 
 
 
@@ -1389,9 +1006,2037 @@ Eastern_Australia
 **********Player: Player_2 Domination View**********
 Statistics
 
-Current Player: Player_2:13 territories: ***
+Current Player: Player_2:14 territories: ***
 
-Player: Player_1:15 territories: ****
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 29
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 29
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 27
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 28
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 28
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 26
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 27
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 27
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 25
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 26
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 26
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 24
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 25
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 25
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 23
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 24
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 24
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 22
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 23
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 23
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 21
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 22
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 22
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 20
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 21
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 21
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 19
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 20
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 20
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 18
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 19
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 19
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 17
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 18
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 18
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 16
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 17
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 17
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 15
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 16
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 16
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 14
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 15
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 15
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 13
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 14
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 14
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 12
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 13
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 13
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 11
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 12
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 12
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 10
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 11
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 11
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 9
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 10
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 10
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 8
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 9
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 9
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 7
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 8
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 8
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 6
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 7
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 7
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 5
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 6
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 6
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 4
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 5
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 5
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 3
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 4
+Territories Occupied by me
+Northwest_Territory
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 4
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 2
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:14 territories: ***
+
+Player: Player_1:14 territories: ***
 Player: Player_3:14 territories: ***Army count 3
 Territories Occupied by me
 Northwest_Territory
@@ -1407,6 +3052,59 @@ Yakutsk
 Kamchatka
 China
 Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 3
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 1
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
 
 
 
@@ -1414,9 +3112,9 @@ Southeast_Asia
 **********Player: Player_2 Domination View**********
 Statistics
 
-Current Player: Player_2:13 territories: ***
+Current Player: Player_2:14 territories: ***
 
-Player: Player_1:15 territories: ****
+Player: Player_1:14 territories: ***
 Player: Player_3:14 territories: ***Army count 2
 Territories Occupied by me
 Northwest_Territory
@@ -1432,6 +3130,59 @@ Yakutsk
 Kamchatka
 China
 Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 2
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:14 territories: ***
+
+Player: Player_2:14 territories: ***
+Player: Player_3:14 territories: ***Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
 
 
 
@@ -1439,9 +3190,9 @@ Southeast_Asia
 **********Player: Player_2 Domination View**********
 Statistics
 
-Current Player: Player_2:13 territories: ***
+Current Player: Player_2:14 territories: ***
 
-Player: Player_1:15 territories: ****
+Player: Player_1:14 territories: ***
 Player: Player_3:14 territories: ***Army count 1
 Territories Occupied by me
 Northwest_Territory
@@ -1457,31 +3208,7 @@ Yakutsk
 Kamchatka
 China
 Southeast_Asia
-
-
-
-
-**********Player: Player_2 Domination View**********
-Statistics
-
-Current Player: Player_2:13 territories: ***
-
-Player: Player_1:15 territories: ****
-Player: Player_3:14 territories: ***Army count 0
-Territories Occupied by me
-Northwest_Territory
-Ontario
-Eastern_United_States
-Peru
-Iceland
-Great_Britain
-Southern_Europe
-Central_Africa
-Madagascar
-Yakutsk
-Kamchatka
-China
-Southeast_Asia
+Western_Australia
 
 
 
@@ -1489,112 +3216,12 @@ Southeast_Asia
 **********Player: Player_3 Domination View**********
 Statistics
 
-Current Player: Player_3:13 territories: ***
+Current Player: Player_3:14 territories: ***
 
-Player: Player_1:15 territories: ****
-Player: Player_2:13 territories: ***Army count 0
-Territories Occupied by me
-Eastern_Canada
-Central_America
-Brazil
-Scandinavia
-Northern_Europe
-North_Africa
-East_Africa
-Ural
-Irkutsk
-Japan
-Middle_East
-Western_United_States
-Russia
-
-
-
-
-**********Player: Player_2 Domination View**********
-Statistics
-
-Current Player: Player_2:14 territories: ***
-
-Player: Player_1:15 territories: ****
-Player: Player_3:13 territories: ***Army count 0
-Territories Occupied by me
-Northwest_Territory
-Ontario
-Eastern_United_States
-Peru
-Iceland
-Great_Britain
-Southern_Europe
-Central_Africa
-Madagascar
-Yakutsk
-Kamchatka
-China
-Southeast_Asia
-Greenland
-
-
-
-
-**********Player: Player_3 Domination View**********
-Statistics
-
-Current Player: Player_3:13 territories: ***
-
-Player: Player_1:15 territories: ****
-Player: Player_2:14 territories: ***Army count 3
-Territories Occupied by me
-Eastern_Canada
-Central_America
-Brazil
-Scandinavia
-Northern_Europe
-North_Africa
-East_Africa
-Ural
-Irkutsk
-Japan
-Middle_East
-Western_United_States
-Russia
-
-
-
-
-**********Player: Player_3 Domination View**********
-Statistics
-
-Current Player: Player_3:13 territories: ***
-
-Player: Player_1:15 territories: ****
-Player: Player_2:14 territories: ***Army count 2
-Territories Occupied by me
-Eastern_Canada
-Central_America
-Brazil
-Scandinavia
-Northern_Europe
-North_Africa
-East_Africa
-Ural
-Irkutsk
-Japan
-Middle_East
-Western_United_States
-Russia
-
-
-
-
-**********Player: Player_3 Domination View**********
-Statistics
-
-Current Player: Player_3:13 territories: ***
-
-Player: Player_1:15 territories: ****
+Player: Player_1:14 territories: ***
 Player: Player_2:14 territories: ***Army count 1
 Territories Occupied by me
+Greenland
 Eastern_Canada
 Central_America
 Brazil
@@ -1606,7 +3233,843 @@ Ural
 Irkutsk
 Japan
 Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 3
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 2
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 1
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:14 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_2:14 territories: ***Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:13 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:14 territories: ***Army count 0
+Territories Occupied by me
+Ontario
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:15 territories: ****
+
+Player: Player_1:14 territories: ***
+Player: Player_2:13 territories: ***Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:15 territories: ****
+
+Player: Player_1:14 territories: ***
+Player: Player_2:13 territories: ***Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:12 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:15 territories: ****Army count 0
+Territories Occupied by me
+Eastern_United_States
+Peru
+Iceland
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:16 territories: ****
+
+Player: Player_1:14 territories: ***
+Player: Player_2:12 territories: ***Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:16 territories: ****
+
+Player: Player_1:14 territories: ***
+Player: Player_2:12 territories: ***Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:11 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:16 territories: ****Army count 0
+Territories Occupied by me
+Eastern_United_States
+Peru
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:17 territories: ****
+
+Player: Player_1:14 territories: ***
+Player: Player_2:11 territories: ***Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:17 territories: ****
+
+Player: Player_1:14 territories: ***
+Player: Player_2:11 territories: ***Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:10 territories: ***
+
+Player: Player_1:14 territories: ***
+Player: Player_3:17 territories: ****Army count 0
+Territories Occupied by me
+Peru
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:18 territories: ****
+
+Player: Player_1:14 territories: ***
+Player: Player_2:10 territories: ***Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:18 territories: ****
+
+Player: Player_1:14 territories: ***
+Player: Player_2:10 territories: ***Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:13 territories: ***
+
+Player: Player_2:10 territories: ***
+Player: Player_3:18 territories: ****Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Venezuela
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:19 territories: ****
+
+Player: Player_1:13 territories: ***
+Player: Player_2:10 territories: ***Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
 Western_United_States
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:19 territories: ****
+
+Player: Player_1:13 territories: ***
+Player: Player_2:10 territories: ***Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:12 territories: ***
+
+Player: Player_2:10 territories: ***
+Player: Player_3:19 territories: ****Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Argentina
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:20 territories: *****
+
+Player: Player_1:12 territories: ***
+Player: Player_2:10 territories: ***Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:20 territories: *****
+
+Player: Player_1:12 territories: ***
+Player: Player_2:10 territories: ***Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:9 territories: **
+
+Player: Player_1:12 territories: ***
+Player: Player_3:20 territories: *****Army count 0
+Territories Occupied by me
+Great_Britain
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:21 territories: *****
+
+Player: Player_1:12 territories: ***
+Player: Player_2:9 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:21 territories: *****
+
+Player: Player_1:12 territories: ***
+Player: Player_2:9 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:11 territories: ***
+
+Player: Player_2:9 territories: **
+Player: Player_3:21 territories: *****Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Russia
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:22 territories: *****
+
+Player: Player_1:11 territories: ***
+Player: Player_2:9 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:22 territories: *****
+
+Player: Player_1:11 territories: ***
+Player: Player_2:9 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:10 territories: ***
+
+Player: Player_2:9 territories: **
+Player: Player_3:22 territories: *****Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Western_Europe
+Egypt
+South_Africa
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:23 territories: *****
+
+Player: Player_1:10 territories: ***
+Player: Player_2:9 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
 Russia
 
 
@@ -1615,11 +4078,12 @@ Russia
 **********Player: Player_3 Domination View**********
 Statistics
 
-Current Player: Player_3:13 territories: ***
+Current Player: Player_3:23 territories: *****
 
-Player: Player_1:15 territories: ****
-Player: Player_2:14 territories: ***Army count 0
+Player: Player_1:10 territories: ***
+Player: Player_2:9 territories: **Army count 0
 Territories Occupied by me
+Greenland
 Eastern_Canada
 Central_America
 Brazil
@@ -1631,116 +4095,109 @@ Ural
 Irkutsk
 Japan
 Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
 Western_United_States
+Venezuela
+Peru
+Argentina
 Russia
 
 
 
 
-**********Player: Player_1 Domination View**********
+**********Player: Player_2 Domination View**********
 Statistics
 
-Current Player: Player_1:15 territories: ****
+Current Player: Player_2:8 territories: **
 
-Player: Player_2:14 territories: ***
-Player: Player_3:13 territories: ***Army count 7
+Player: Player_1:10 territories: ***
+Player: Player_3:23 territories: *****Army count 0
 Territories Occupied by me
-Alaska
-Alberta
-Venezuela
-Argentina
-Western_Europe
-Egypt
-South_Africa
-Siberia
-Mongolia
-Afghanistan
-India
-New_Guinea
-Indonesia
+Southern_Europe
+Central_Africa
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
 Western_Australia
-Eastern_Australia
 
 
 
 
-**********Player: Player_1 Domination View**********
+**********Player: Player_3 Domination View**********
 Statistics
 
-Current Player: Player_1:15 territories: ****
+Current Player: Player_3:24 territories: *****
 
-Player: Player_2:14 territories: ***
-Player: Player_3:13 territories: ***Army count 6
+Player: Player_1:10 territories: ***
+Player: Player_2:8 territories: **Army count 0
 Territories Occupied by me
-Alaska
-Alberta
-Venezuela
-Argentina
-Western_Europe
-Egypt
-South_Africa
-Siberia
-Mongolia
-Afghanistan
-India
-New_Guinea
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
 Indonesia
-Western_Australia
 Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
 
 
 
 
-**********Player: Player_1 Domination View**********
+**********Player: Player_3 Domination View**********
 Statistics
 
-Current Player: Player_1:15 territories: ****
+Current Player: Player_3:24 territories: *****
 
-Player: Player_2:14 territories: ***
-Player: Player_3:13 territories: ***Army count 5
+Player: Player_1:10 territories: ***
+Player: Player_2:8 territories: **Army count 0
 Territories Occupied by me
-Alaska
-Alberta
-Venezuela
-Argentina
-Western_Europe
-Egypt
-South_Africa
-Siberia
-Mongolia
-Afghanistan
-India
-New_Guinea
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
 Indonesia
-Western_Australia
 Eastern_Australia
-
-
-
-
-**********Player: Player_1 Domination View**********
-Statistics
-
-Current Player: Player_1:15 territories: ****
-
-Player: Player_2:14 territories: ***
-Player: Player_3:13 territories: ***Army count 4
-Territories Occupied by me
-Alaska
-Alberta
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
 Venezuela
+Peru
 Argentina
-Western_Europe
-Egypt
-South_Africa
-Siberia
-Mongolia
-Afghanistan
-India
-New_Guinea
-Indonesia
-Western_Australia
-Eastern_Australia
+Russia
+Great_Britain
 
 
 
@@ -1748,16 +4205,13 @@ Eastern_Australia
 **********Player: Player_1 Domination View**********
 Statistics
 
-Current Player: Player_1:15 territories: ****
+Current Player: Player_1:9 territories: **
 
-Player: Player_2:14 territories: ***
-Player: Player_3:13 territories: ***Army count 3
+Player: Player_2:8 territories: **
+Player: Player_3:24 territories: *****Army count 0
 Territories Occupied by me
 Alaska
 Alberta
-Venezuela
-Argentina
-Western_Europe
 Egypt
 South_Africa
 Siberia
@@ -1765,63 +4219,80 @@ Mongolia
 Afghanistan
 India
 New_Guinea
-Indonesia
-Western_Australia
-Eastern_Australia
 
 
 
 
-**********Player: Player_1 Domination View**********
+**********Player: Player_3 Domination View**********
 Statistics
 
-Current Player: Player_1:15 territories: ****
+Current Player: Player_3:25 territories: ******
 
-Player: Player_2:14 territories: ***
-Player: Player_3:13 territories: ***Army count 2
+Player: Player_1:9 territories: **
+Player: Player_2:8 territories: **Army count 0
 Territories Occupied by me
-Alaska
-Alberta
-Venezuela
-Argentina
-Western_Europe
-Egypt
-South_Africa
-Siberia
-Mongolia
-Afghanistan
-India
-New_Guinea
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
 Indonesia
-Western_Australia
 Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
 
 
 
 
-**********Player: Player_1 Domination View**********
+**********Player: Player_3 Domination View**********
 Statistics
 
-Current Player: Player_1:15 territories: ****
+Current Player: Player_3:25 territories: ******
 
-Player: Player_2:14 territories: ***
-Player: Player_3:13 territories: ***Army count 1
+Player: Player_1:9 territories: **
+Player: Player_2:8 territories: **Army count 0
 Territories Occupied by me
-Alaska
-Alberta
-Venezuela
-Argentina
-Western_Europe
-Egypt
-South_Africa
-Siberia
-Mongolia
-Afghanistan
-India
-New_Guinea
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
 Indonesia
-Western_Australia
 Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
 
 
 
@@ -1829,24 +4300,94 @@ Eastern_Australia
 **********Player: Player_2 Domination View**********
 Statistics
 
-Current Player: Player_2:13 territories: ***
+Current Player: Player_2:7 territories: **
 
-Player: Player_1:15 territories: ****
-Player: Player_3:13 territories: ***Army count 0
+Player: Player_1:9 territories: **
+Player: Player_3:25 territories: ******Army count 0
 Territories Occupied by me
-Northwest_Territory
-Ontario
-Eastern_United_States
-Peru
-Iceland
-Great_Britain
-Southern_Europe
 Central_Africa
 Madagascar
 Yakutsk
 Kamchatka
 China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:26 territories: ******
+
+Player: Player_1:9 territories: **
+Player: Player_2:7 territories: **Army count 0
+Territories Occupied by me
 Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:26 territories: ******
+
+Player: Player_1:9 territories: **
+Player: Player_2:7 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
 
 
 
@@ -1854,51 +4395,6340 @@ Greenland
 **********Player: Player_1 Domination View**********
 Statistics
 
-Current Player: Player_1:16 territories: ****
+Current Player: Player_1:8 territories: **
 
-Player: Player_2:13 territories: ***
-Player: Player_3:13 territories: ***Army count 0
+Player: Player_2:7 territories: **
+Player: Player_3:26 territories: ******Army count 0
 Territories Occupied by me
 Alaska
 Alberta
-Venezuela
-Argentina
-Western_Europe
-Egypt
 South_Africa
 Siberia
 Mongolia
 Afghanistan
 India
 New_Guinea
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:27 territories: ******
+
+Player: Player_1:8 territories: **
+Player: Player_2:7 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
 Indonesia
-Western_Australia
 Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:27 territories: ******
+
+Player: Player_1:8 territories: **
+Player: Player_2:7 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:6 territories: **
+
+Player: Player_1:8 territories: **
+Player: Player_3:27 territories: ******Army count 0
+Territories Occupied by me
+Madagascar
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:28 territories: ******
+
+Player: Player_1:8 territories: **
+Player: Player_2:6 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:28 territories: ******
+
+Player: Player_1:8 territories: **
+Player: Player_2:6 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:7 territories: **
+
+Player: Player_2:6 territories: **
+Player: Player_3:28 territories: ******Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Siberia
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:29 territories: ******
+
+Player: Player_1:7 territories: **
+Player: Player_2:6 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:29 territories: ******
+
+Player: Player_1:7 territories: **
+Player: Player_2:6 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:5 territories: **
+
+Player: Player_1:7 territories: **
+Player: Player_3:29 territories: ******Army count 0
+Territories Occupied by me
+Yakutsk
+Kamchatka
+China
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:30 territories: *******
+
+Player: Player_1:7 territories: **
+Player: Player_2:5 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:30 territories: *******
+
+Player: Player_1:7 territories: **
+Player: Player_2:5 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:6 territories: **
+
+Player: Player_2:5 territories: **
+Player: Player_3:30 territories: *******Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Mongolia
+Afghanistan
+India
+New_Guinea
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:31 territories: *******
+
+Player: Player_1:6 territories: **
+Player: Player_2:5 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:31 territories: *******
+
+Player: Player_1:6 territories: **
+Player: Player_2:5 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:5 territories: **
+
+Player: Player_2:5 territories: **
+Player: Player_3:31 territories: *******Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Mongolia
+India
+New_Guinea
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:32 territories: *******
+
+Player: Player_1:5 territories: **
+Player: Player_2:5 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:32 territories: *******
+
+Player: Player_1:5 territories: **
+Player: Player_2:5 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:4 territories: *
+
+Player: Player_1:5 territories: **
+Player: Player_3:32 territories: *******Army count 0
+Territories Occupied by me
+Yakutsk
+Kamchatka
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:33 territories: *******
+
+Player: Player_1:5 territories: **
+Player: Player_2:4 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:33 territories: *******
+
+Player: Player_1:5 territories: **
+Player: Player_2:4 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:3 territories: *
+
+Player: Player_1:5 territories: **
+Player: Player_3:33 territories: *******Army count 0
+Territories Occupied by me
+Kamchatka
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:34 territories: *******
+
+Player: Player_1:5 territories: **
+Player: Player_2:3 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:34 territories: *******
+
+Player: Player_1:5 territories: **
+Player: Player_2:3 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:4 territories: *
+
+Player: Player_2:3 territories: *
+Player: Player_3:34 territories: *******Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+India
+New_Guinea
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:35 territories: ********
+
+Player: Player_1:4 territories: *
+Player: Player_2:3 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:35 territories: ********
+
+Player: Player_1:4 territories: *
+Player: Player_2:3 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:2 territories: *
+
+Player: Player_1:4 territories: *
+Player: Player_3:35 territories: ********Army count 0
+Territories Occupied by me
+Southeast_Asia
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:4 territories: *
+Player: Player_2:2 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:4 territories: *
+Player: Player_2:2 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+Kamchatka
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:3 territories: *
+
+Player: Player_2:2 territories: *
+Player: Player_3:36 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+New_Guinea
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:3 territories: *
+Player: Player_2:2 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+Kamchatka
+India
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:3 territories: *
+Player: Player_2:2 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+Kamchatka
+India
+
+
+
+
+**********Player: Player_2 Domination View**********
+Statistics
+
+Current Player: Player_2:1 territories: *
+
+Player: Player_1:3 territories: *
+Player: Player_3:37 territories: ********Army count 0
+Territories Occupied by me
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:38 territories: ********
+
+Player: Player_1:3 territories: *
+Player: Player_2:1 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+Kamchatka
+India
 Southeast_Asia
 
 
 
 
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:38 territories: ********
+
+Player: Player_1:3 territories: *
+Player: Player_2:1 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+Kamchatka
+India
+Southeast_Asia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:2 territories: *
+
+Player: Player_2:1 territories: *
+Player: Player_3:38 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:39 territories: ********
+
+Player: Player_1:2 territories: *
+Player: Player_2:1 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+Kamchatka
+India
+Southeast_Asia
+New_Guinea
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:39 territories: ********
+
+Player: Player_1:2 territories: *
+Player: Player_2:1 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+Kamchatka
+India
+Southeast_Asia
+New_Guinea
+
+
+
+
 **********Player: Player_2 Domination View**********
 Statistics
 
-Current Player: Player_2:13 territories: ***
+Current Player: Player_2:0 territories: *
 
-Player: Player_1:16 territories: ****
-Player: Player_3:13 territories: ***Army count 3
+Player: Player_1:2 territories: *
+Player: Player_3:39 territories: ********Army count 0
 Territories Occupied by me
+I own nothing!
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:40 territories: *********
+
+Player: Player_1:2 territories: *
+Player: Player_2:0 territories: Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
 Northwest_Territory
 Ontario
-Eastern_United_States
-Peru
 Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
 Great_Britain
+Western_Europe
 Southern_Europe
+Egypt
 Central_Africa
+South_Africa
 Madagascar
-Yakutsk
-Kamchatka
+Siberia
+Afghanistan
 China
+Yakutsk
+Mongolia
+Kamchatka
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:40 territories: *********
+
+Player: Player_1:2 territories: *Army count 0
+Territories Occupied by me
 Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Northwest_Territory
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+Kamchatka
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:2 territories: *
+
+Player: Player_3:40 territories: *********Army count 2
+Territories Occupied by me
+Alaska
+Alberta
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:2 territories: *
+
+Player: Player_3:40 territories: *********Army count 1
+Territories Occupied by me
+Alaska
+Alberta
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:2 territories: *
+
+Player: Player_3:40 territories: *********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:39 territories: ********
+
+Player: Player_1:2 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+Kamchatka
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:3 territories: *
+
+Player: Player_3:39 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Northwest_Territory
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:3 territories: *
+
+Player: Player_3:39 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Northwest_Territory
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:38 territories: ********
+
+Player: Player_1:3 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Ontario
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:4 territories: *
+
+Player: Player_3:38 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Northwest_Territory
+Kamchatka
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:4 territories: *
+
+Player: Player_3:38 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Northwest_Territory
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:4 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Western_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:5 territories: **
+
+Player: Player_3:37 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Northwest_Territory
+Kamchatka
+Ontario
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:5 territories: **
+
+Player: Player_3:37 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Northwest_Territory
+Kamchatka
+Ontario
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:5 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:6 territories: **
+
+Player: Player_3:36 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Northwest_Territory
+Kamchatka
+Ontario
+Western_United_States
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:6 territories: **
+
+Player: Player_3:36 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Northwest_Territory
+Kamchatka
+Ontario
+Western_United_States
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 28
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 27
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 26
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 25
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 24
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 23
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 22
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 21
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 20
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 19
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 18
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 17
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 16
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 15
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 14
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 13
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 12
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 11
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 10
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 9
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 8
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 7
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 6
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 5
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 4
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 3
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 2
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 1
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:36 territories: ********
+
+Player: Player_1:6 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:5 territories: **
+
+Player: Player_3:36 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Kamchatka
+Ontario
+Western_United_States
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Northwest_Territory
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Northwest_Territory
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:4 territories: *
+
+Player: Player_3:37 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Kamchatka
+Western_United_States
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:38 territories: ********
+
+Player: Player_1:4 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Northwest_Territory
+Ontario
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:38 territories: ********
+
+Player: Player_1:4 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Northwest_Territory
+Ontario
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:3 territories: *
+
+Player: Player_3:38 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:39 territories: ********
+
+Player: Player_1:3 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Northwest_Territory
+Ontario
+Western_United_States
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:39 territories: ********
+
+Player: Player_1:3 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Northwest_Territory
+Ontario
+Western_United_States
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:2 territories: *
+
+Player: Player_3:39 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:40 territories: *********
+
+Player: Player_1:2 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Northwest_Territory
+Ontario
+Western_United_States
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:40 territories: *********
+
+Player: Player_1:2 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Northwest_Territory
+Ontario
+Western_United_States
+Kamchatka
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:2 territories: *
+
+Player: Player_3:40 territories: *********Army count 3
+Territories Occupied by me
+Alaska
+Alberta
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:2 territories: *
+
+Player: Player_3:40 territories: *********Army count 2
+Territories Occupied by me
+Alaska
+Alberta
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:2 territories: *
+
+Player: Player_3:40 territories: *********Army count 1
+Territories Occupied by me
+Alaska
+Alberta
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:39 territories: ********
+
+Player: Player_1:2 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Ontario
+Western_United_States
+Kamchatka
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:3 territories: *
+
+Player: Player_3:39 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Northwest_Territory
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:3 territories: *
+
+Player: Player_3:39 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Northwest_Territory
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:38 territories: ********
+
+Player: Player_1:3 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Western_United_States
+Kamchatka
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:4 territories: *
+
+Player: Player_3:38 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Northwest_Territory
+Ontario
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:4 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:5 territories: **
+
+Player: Player_3:37 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Northwest_Territory
+Ontario
+Western_United_States
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 40
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 39
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 38
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 37
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 36
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 35
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 34
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 33
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 32
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 31
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 30
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 29
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 28
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 27
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 26
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 25
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 24
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 23
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 22
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 21
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 20
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 19
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 18
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 17
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 16
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 15
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 14
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 13
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 12
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 11
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 10
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 9
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 8
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 7
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 6
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 5
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 4
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 3
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 2
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 1
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:37 territories: ********
+
+Player: Player_1:5 territories: **Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:4 territories: *
+
+Player: Player_3:37 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Ontario
+Western_United_States
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:38 territories: ********
+
+Player: Player_1:4 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+Northwest_Territory
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:38 territories: ********
+
+Player: Player_1:4 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+Northwest_Territory
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:3 territories: *
+
+Player: Player_3:38 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+Western_United_States
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:39 territories: ********
+
+Player: Player_1:3 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+Northwest_Territory
+Ontario
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:39 territories: ********
+
+Player: Player_1:3 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+Northwest_Territory
+Ontario
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:2 territories: *
+
+Player: Player_3:39 territories: ********Army count 0
+Territories Occupied by me
+Alaska
+Alberta
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:40 territories: *********
+
+Player: Player_1:2 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+Northwest_Territory
+Ontario
+Western_United_States
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:40 territories: *********
+
+Player: Player_1:2 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+Northwest_Territory
+Ontario
+Western_United_States
+
+
+
+
+**********Player: Player_1 Domination View**********
+Statistics
+
+Current Player: Player_1:1 territories: *
+
+Player: Player_3:40 territories: *********Army count 0
+Territories Occupied by me
+Alberta
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:41 territories: *********
+
+Player: Player_1:1 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+Northwest_Territory
+Ontario
+Western_United_States
+Alaska
+
+
+
+
+**********Player: Player_3 Domination View**********
+Statistics
+
+Current Player: Player_3:41 territories: *********
+
+Player: Player_1:1 territories: *Army count 0
+Territories Occupied by me
+Greenland
+Eastern_Canada
+Central_America
+Brazil
+Scandinavia
+Northern_Europe
+North_Africa
+East_Africa
+Ural
+Irkutsk
+Japan
+Middle_East
+Indonesia
+Eastern_Australia
+Iceland
+Eastern_United_States
+Venezuela
+Peru
+Argentina
+Russia
+Great_Britain
+Western_Europe
+Southern_Europe
+Egypt
+Central_Africa
+South_Africa
+Madagascar
+Siberia
+Afghanistan
+China
+Yakutsk
+Mongolia
+India
+Southeast_Asia
+New_Guinea
+Western_Australia
+Kamchatka
+Northwest_Territory
+Ontario
+Western_United_States
+Alaska
 
 
