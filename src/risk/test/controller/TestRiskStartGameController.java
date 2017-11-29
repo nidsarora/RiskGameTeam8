@@ -104,4 +104,10 @@ public class TestRiskStartGameController {
 		HashMap<String,String> copylist = (HashMap<String, String>) countries.clone();
 		assertEquals(false, riskstartgamecontroller.CheckCountriesConnected(true,countries,copylist));
 	}
+	@Test
+	public void testfetchCoordinates() throws ParserConfigurationException, SAXException, IOException {
+		riskstartgamecontroller.populatePredefinedTerritoryCoordinatesList();
+		String s=riskstartgamecontroller.fetchCoordinates("India");
+		assertEquals("47,76",s);
+	}
 }
