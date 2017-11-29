@@ -79,8 +79,8 @@ public class TestRiskStartGameController {
 		countries.put("bb", "bb,100,100,india,aa");
 		countries.put("cc", "aa,100,100,india,aa");
 
-		riskstartgamecontroller.copyhmCountryDetails = (HashMap<String, String>) countries.clone();
-		assertEquals(true, riskstartgamecontroller.CheckCountriesConnected(countries));
+		HashMap<String,String> copylist = (HashMap<String, String>) countries.clone();
+		assertEquals(true, riskstartgamecontroller.CheckCountriesConnected(true,countries,copylist));
 	}
 	
  @Test
