@@ -224,7 +224,7 @@ public class RiskAddPlayerController extends java.awt.Frame {
 		add(jPanel1, java.awt.BorderLayout.CENTER);
 
 		pack();
-
+		Utility.writeLog("***********Single Mode begins  *************");
 		// JComboBox comboBox = new JComboBox();
 		numPlayers.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
@@ -340,7 +340,8 @@ public class RiskAddPlayerController extends java.awt.Frame {
 
 					public void actionPerformed(ActionEvent event) {
 						map = (String) chooseMap.getSelectedItem();
-						if (map.equalsIgnoreCase("3dcliff"))
+						Utility.writeLog("Map selected by user ::" +map );
+						if (map.equalsIgnoreCase("3dcliff")) 
 							RiskMapPanelViewController.CustomImage = "3D Cliff.bmp";
 						else if (map.equalsIgnoreCase("world"))
 							RiskMapPanelViewController.CustomImage = "World.bmp";
@@ -373,7 +374,7 @@ public class RiskAddPlayerController extends java.awt.Frame {
 		// added = true;
 		// }
 		System.out.println("size of list" + noOfPlayers);
-
+		Utility.writeLog("Number of players in Single Game Mode " +noOfPlayers );
 		for (int i = 0; i < noOfPlayers; i++) {
 			System.out.println("player" + (i + 1) + " " + behaviourPlayers.get(i));
 			switch (behaviourPlayers.get(i)) {
@@ -381,26 +382,30 @@ public class RiskAddPlayerController extends java.awt.Frame {
 			case "Human": {
 				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Human());
 				System.out.println((i + 1) + "new risk.model.strategy.Human");
-				break;
+				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as" +"Human player");
 			}
 
 			case "Aggressive": {
 				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Aggressive());
 				System.out.println((i + 1) + "new risk.model.strategy.Aggressive");
+				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as" +"Aggressive player");
 				break;
 			}
 			case "Benevolent": {
 				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Benevolent());
+				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as" +"Benevolent player");
 				System.out.println((i + 1) + "new risk.model.strategy.Benevolent");
 				break;
 			}
 			case "Random": {
 				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Random());
+				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as" +"Random player");
 				System.out.println((i + 1) + "new risk.model.strategy.Random");
 				break;
 			}
 			case "Cheater": {
 				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Cheater());
+				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as" +"Cheater player");
 				System.out.println((i + 1) + "new risk.model.strategy.Cheater");
 				break;
 			}

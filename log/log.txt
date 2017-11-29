@@ -1,8 +1,4 @@
 **************The Risk Begin************
 
-Wed Nov 29 17:44:22 EST 2017
-
-Build the Game Panel
-
-***********Player_1 turn *************
+Wed Nov 29 18:52:28 EST 2017
 
