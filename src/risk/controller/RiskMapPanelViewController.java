@@ -2,7 +2,6 @@ package risk.controller;
 
 import risk.helpers.Utility;
 import risk.model.*;
-import risk.model.strategy.Human;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -31,14 +30,15 @@ public class RiskMapPanelViewController extends JPanel {
 	private Image army;
 	private Image shield;
 	public int armies;
-
+	static String CustomImage = "map.jpg";
+	
 	/**
 	 * Instantiates a new risk map panel view controller.
 	 */
 	public RiskMapPanelViewController() {
-
+		
 		try {
-			this.map = ImageIO.read(getClass().getResourceAsStream(Utility.getImagePath("map.jpg")));
+			this.map = ImageIO.read(getClass().getResourceAsStream(Utility.getImagePath(CustomImage)));
 			this.army = ImageIO.read(getClass().getResourceAsStream(Utility.getImagePath("army.gif")));
 			this.shield = ImageIO.read(getClass().getResourceAsStream(Utility.getImagePath("shield.gif")));
 			map = map.getScaledInstance(1000, 550, Image.SCALE_SMOOTH);
@@ -380,7 +380,7 @@ public class RiskMapPanelViewController extends JPanel {
 			 *
 			 */
 
-			if ((risk.active == risk.defender) && (risk.defender.getStrategy().getClass() != Human.class)) {
+			if (risk.active == risk.defender) {
 				graphics.drawString("How many armies to defend with?", 390, 180);
 				graphics.drawImage(shield, 630, 280, this);
 				graphics.setColor(Color.white);

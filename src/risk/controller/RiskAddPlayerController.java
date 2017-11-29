@@ -42,7 +42,8 @@ public class RiskAddPlayerController extends java.awt.Frame {
 
 	static int noOfPlayers = 3;
 	String map;
-    static ArrayList<String> behaviourPlayers=new ArrayList<String>(7);
+	static ArrayList<String> behaviourPlayers = new ArrayList<String>(7);
+
 	/** Creates new form RiskAddPlayerUI */
 	public RiskAddPlayerController() {
 		initComponents();
@@ -59,14 +60,14 @@ public class RiskAddPlayerController extends java.awt.Frame {
 		jPanel1 = new javax.swing.JPanel();
 		doneSelectingPlayers = new javax.swing.JButton();
 		Integer[] numbers = { 3, 4, 5, 6 };
-		String[] behaviours= {"Human","Aggressive","Benevolent","Random","Cheater"};
-		String[] maps= {"World","3dCliff","UserDefined"};
+		String[] behaviours = { "Human", "Aggressive", "Benevolent", "Random", "Cheater" };
+		String[] maps = { "World", "3dCliff", "UserDefined","India","british columbia","Europe" };
 		JComboBox numPlayers = new JComboBox(numbers);
 		JComboBox behaviourPlayer1 = new JComboBox(behaviours);
 		JComboBox behaviourPlayer2 = new JComboBox(behaviours);
 		JComboBox behaviourPlayer3 = new JComboBox(behaviours);
 		JComboBox behaviourPlayer4 = new JComboBox(behaviours);
-	    JComboBox behaviourPlayer5 = new JComboBox(behaviours);
+		JComboBox behaviourPlayer5 = new JComboBox(behaviours);
 		JComboBox behaviourPlayer6 = new JComboBox(behaviours);
 		JComboBox chooseMap = new JComboBox(maps);
 		addWindowListener(new java.awt.event.WindowAdapter() {
@@ -91,30 +92,26 @@ public class RiskAddPlayerController extends java.awt.Frame {
 		lblEnterTheNumber.setName("jLabel1");
 		lblEnterTheNumber.setForeground(new Color(254, 254, 254));
 
-
-		
 		JLabel lblText = new JLabel("Choose  behaviour of al players");
 		lblText.setForeground(Color.WHITE);
-		
+
 		JLabel lblPlayer1 = new JLabel("Player 1");
 		lblPlayer1.setForeground(Color.WHITE);
-		
+
 		JLabel lblPlayer2 = new JLabel("Player 2");
 		lblPlayer2.setForeground(Color.WHITE);
-		
+
 		JLabel lblPlayer3 = new JLabel("Player 3");
 		lblPlayer3.setForeground(Color.WHITE);
-		
+
 		JLabel lblPlayer4 = new JLabel("Player 4");
 		lblPlayer4.setForeground(Color.WHITE);
-		
+
 		JLabel lblPlayer5 = new JLabel("Player 5");
 		lblPlayer5.setForeground(Color.WHITE);
-		
+
 		JLabel lblPlayer6 = new JLabel("Player 6");
 		lblPlayer6.setForeground(Color.WHITE);
-		
-
 
 		lblText.setVisible(false);
 		behaviourPlayer1.setVisible(false);
@@ -129,117 +126,113 @@ public class RiskAddPlayerController extends java.awt.Frame {
 		lblPlayer5.setVisible(false);
 		behaviourPlayer6.setVisible(false);
 		lblPlayer6.setVisible(false);
-		
+
 		JLabel lblChooseMap = new JLabel("Choose Map");
 		lblChooseMap.setForeground(Color.WHITE);
-		
-		
-		
+
 		javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
 
-		jPanel1Layout.setHorizontalGroup(
-			jPanel1Layout.createParallelGroup(Alignment.LEADING)
-				.addGroup(jPanel1Layout.createSequentialGroup()
-					.addContainerGap(202, Short.MAX_VALUE)
-					.addComponent(lblEnterTheNumber, GroupLayout.PREFERRED_SIZE, 197, GroupLayout.PREFERRED_SIZE)
-					.addGap(114))
-				.addGroup(jPanel1Layout.createSequentialGroup()
-					.addGap(239)
-					.addComponent(numPlayers, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-					.addContainerGap(243, Short.MAX_VALUE))
-				.addGroup(jPanel1Layout.createSequentialGroup()
-					.addGap(162)
-					.addComponent(lblText)
-					.addContainerGap(199, Short.MAX_VALUE))
-				.addGroup(jPanel1Layout.createSequentialGroup()
-					.addGap(69)
-					.addGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING, false)
-						.addComponent(lblPlayer1, GroupLayout.DEFAULT_SIZE, 72, Short.MAX_VALUE)
-						.addComponent(lblPlayer2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(lblPlayer3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(lblPlayer4, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(lblPlayer5, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(lblPlayer6, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-					.addGap(41)
-					.addGroup(jPanel1Layout.createParallelGroup(Alignment.TRAILING)
-						.addComponent(behaviourPlayer6, Alignment.LEADING, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addGroup(jPanel1Layout.createSequentialGroup()
-							.addGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
-								.addComponent(behaviourPlayer5, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-								.addComponent(behaviourPlayer4, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-								.addComponent(behaviourPlayer3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-								.addComponent(behaviourPlayer2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-								.addComponent(behaviourPlayer1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-							.addContainerGap(252, Short.MAX_VALUE))))
-				.addGroup(Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-					.addContainerGap(443, Short.MAX_VALUE)
-					.addComponent(doneSelectingPlayers, GroupLayout.PREFERRED_SIZE, 124, GroupLayout.PREFERRED_SIZE)
-					.addGap(26))
-				.addGroup(jPanel1Layout.createSequentialGroup()
-					.addGap(61)
-					.addComponent(lblChooseMap)
-					.addGap(72)
-					.addComponent(chooseMap, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-					.addContainerGap(386, Short.MAX_VALUE))
-		);
-		jPanel1Layout.setVerticalGroup(
-			jPanel1Layout.createParallelGroup(Alignment.TRAILING)
-				.addGroup(jPanel1Layout.createSequentialGroup()
-					.addContainerGap()
-					.addComponent(lblEnterTheNumber)
-					.addPreferredGap(ComponentPlacement.RELATED)
-					.addComponent(numPlayers, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-					.addGap(18)
-					.addComponent(lblText)
-					.addGap(19)
-					.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE)
-						.addComponent(lblPlayer1)
-						.addComponent(behaviourPlayer1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addPreferredGap(ComponentPlacement.UNRELATED)
-					.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE)
-						.addComponent(lblPlayer2)
-						.addComponent(behaviourPlayer2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addPreferredGap(ComponentPlacement.UNRELATED)
-					.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE)
-						.addComponent(lblPlayer3)
-						.addComponent(behaviourPlayer3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addPreferredGap(ComponentPlacement.UNRELATED)
-					.addGroup(jPanel1Layout.createParallelGroup(Alignment.TRAILING)
-						.addComponent(behaviourPlayer4, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+		jPanel1Layout
+				.setHorizontalGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
+						.addGroup(jPanel1Layout.createSequentialGroup().addContainerGap(202, Short.MAX_VALUE)
+								.addComponent(lblEnterTheNumber, GroupLayout.PREFERRED_SIZE, 197,
+										GroupLayout.PREFERRED_SIZE)
+								.addGap(114))
+						.addGroup(jPanel1Layout.createSequentialGroup().addGap(239)
+								.addComponent(numPlayers, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
+										GroupLayout.PREFERRED_SIZE)
+								.addContainerGap(243, Short.MAX_VALUE))
+						.addGroup(jPanel1Layout.createSequentialGroup().addGap(162).addComponent(lblText)
+								.addContainerGap(199, Short.MAX_VALUE))
+						.addGroup(jPanel1Layout.createSequentialGroup().addGap(69)
+								.addGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING, false)
+										.addComponent(lblPlayer1, GroupLayout.DEFAULT_SIZE, 72, Short.MAX_VALUE)
+										.addComponent(lblPlayer2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
+												Short.MAX_VALUE)
+										.addComponent(lblPlayer3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
+												Short.MAX_VALUE)
+										.addComponent(lblPlayer4, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
+												Short.MAX_VALUE)
+										.addComponent(lblPlayer5, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
+												Short.MAX_VALUE)
+										.addComponent(lblPlayer6, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
+												Short.MAX_VALUE))
+								.addGap(41)
+								.addGroup(jPanel1Layout.createParallelGroup(Alignment.TRAILING)
+										.addComponent(behaviourPlayer6, Alignment.LEADING, GroupLayout.PREFERRED_SIZE,
+												GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+										.addGroup(jPanel1Layout.createSequentialGroup()
+												.addGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
+														.addComponent(behaviourPlayer5, GroupLayout.PREFERRED_SIZE,
+																GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+														.addComponent(behaviourPlayer4, GroupLayout.PREFERRED_SIZE,
+																GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+														.addComponent(behaviourPlayer3, GroupLayout.PREFERRED_SIZE,
+																GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+														.addComponent(behaviourPlayer2, GroupLayout.PREFERRED_SIZE,
+																GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+														.addComponent(behaviourPlayer1, GroupLayout.PREFERRED_SIZE,
+																GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+												.addContainerGap(252, Short.MAX_VALUE))))
+						.addGroup(Alignment.TRAILING,
+								jPanel1Layout.createSequentialGroup().addContainerGap(443, Short.MAX_VALUE)
+										.addComponent(doneSelectingPlayers, GroupLayout.PREFERRED_SIZE, 124,
+												GroupLayout.PREFERRED_SIZE)
+										.addGap(26))
+						.addGroup(jPanel1Layout.createSequentialGroup().addGap(61).addComponent(lblChooseMap)
+								.addGap(72).addComponent(chooseMap, GroupLayout.PREFERRED_SIZE,
+										GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+								.addContainerGap(386, Short.MAX_VALUE)));
+		jPanel1Layout.setVerticalGroup(jPanel1Layout.createParallelGroup(Alignment.TRAILING).addGroup(jPanel1Layout
+				.createSequentialGroup().addContainerGap().addComponent(lblEnterTheNumber)
+				.addPreferredGap(ComponentPlacement.RELATED)
+				.addComponent(numPlayers, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
+						GroupLayout.PREFERRED_SIZE)
+				.addGap(18).addComponent(lblText).addGap(19)
+				.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE).addComponent(lblPlayer1).addComponent(
+						behaviourPlayer1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
+						GroupLayout.PREFERRED_SIZE))
+				.addPreferredGap(ComponentPlacement.UNRELATED)
+				.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE).addComponent(lblPlayer2).addComponent(
+						behaviourPlayer2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
+						GroupLayout.PREFERRED_SIZE))
+				.addPreferredGap(ComponentPlacement.UNRELATED)
+				.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE).addComponent(lblPlayer3).addComponent(
+						behaviourPlayer3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
+						GroupLayout.PREFERRED_SIZE))
+				.addPreferredGap(ComponentPlacement.UNRELATED)
+				.addGroup(jPanel1Layout.createParallelGroup(Alignment.TRAILING)
+						.addComponent(behaviourPlayer4, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
+								GroupLayout.PREFERRED_SIZE)
 						.addComponent(lblPlayer4))
-					.addPreferredGap(ComponentPlacement.RELATED)
-					.addGroup(jPanel1Layout.createParallelGroup(Alignment.TRAILING)
-						.addComponent(lblPlayer5)
-						.addComponent(behaviourPlayer5, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addPreferredGap(ComponentPlacement.UNRELATED)
-					.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE)
-						.addComponent(behaviourPlayer6, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+				.addPreferredGap(ComponentPlacement.RELATED)
+				.addGroup(jPanel1Layout.createParallelGroup(Alignment.TRAILING).addComponent(lblPlayer5).addComponent(
+						behaviourPlayer5, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
+						GroupLayout.PREFERRED_SIZE))
+				.addPreferredGap(ComponentPlacement.UNRELATED)
+				.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE)
+						.addComponent(behaviourPlayer6, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
+								GroupLayout.PREFERRED_SIZE)
 						.addComponent(lblPlayer6))
-					.addGap(65)
-					.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE)
-						.addComponent(lblChooseMap)
-						.addComponent(chooseMap, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addGap(37)
-					.addComponent(doneSelectingPlayers)
-					.addGap(29))
-		);
+				.addGap(65)
+				.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE).addComponent(lblChooseMap).addComponent(
+						chooseMap, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+				.addGap(37).addComponent(doneSelectingPlayers).addGap(29)));
 
 		jPanel1.setLayout(jPanel1Layout);
 
 		add(jPanel1, java.awt.BorderLayout.CENTER);
 
 		pack();
-		
-		
+
 		// JComboBox comboBox = new JComboBox();
 		numPlayers.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
-				
-			
+
 				JComboBox cb1 = (JComboBox) event.getSource();
 				noOfPlayers = (Integer) cb1.getSelectedItem();
 
-				if(noOfPlayers==3) {
+				if (noOfPlayers == 3) {
 					lblText.setVisible(true);
 					behaviourPlayer1.setVisible(true);
 					lblPlayer1.setVisible(true);
@@ -254,7 +247,7 @@ public class RiskAddPlayerController extends java.awt.Frame {
 					lblPlayer6.setVisible(false);
 					behaviourPlayer6.setVisible(false);
 				}
-				if(noOfPlayers==4) {
+				if (noOfPlayers == 4) {
 					lblText.setVisible(true);
 					behaviourPlayer1.setVisible(true);
 					lblPlayer1.setVisible(true);
@@ -269,7 +262,7 @@ public class RiskAddPlayerController extends java.awt.Frame {
 					lblPlayer6.setVisible(false);
 					behaviourPlayer6.setVisible(false);
 				}
-				if(noOfPlayers==5) {
+				if (noOfPlayers == 5) {
 					lblText.setVisible(true);
 					behaviourPlayer1.setVisible(true);
 					lblPlayer1.setVisible(true);
@@ -285,7 +278,7 @@ public class RiskAddPlayerController extends java.awt.Frame {
 					lblPlayer6.setVisible(false);
 					behaviourPlayer6.setVisible(false);
 				}
-				if(noOfPlayers==6) {
+				if (noOfPlayers == 6) {
 					lblText.setVisible(true);
 					behaviourPlayer1.setVisible(true);
 					lblPlayer1.setVisible(true);
@@ -300,61 +293,70 @@ public class RiskAddPlayerController extends java.awt.Frame {
 					lblPlayer6.setVisible(true);
 					behaviourPlayer6.setVisible(true);
 				}
-				
+
 				behaviourPlayer1.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent event) {
-						if(behaviourPlayers.size()>=1)
-						  behaviourPlayers.remove(0);
-						behaviourPlayers.add(0,(String)behaviourPlayer1.getSelectedItem());
+						if (behaviourPlayers.size() >= 1)
+							behaviourPlayers.remove(0);
+						behaviourPlayers.add(0, (String) behaviourPlayer1.getSelectedItem());
 					}
-			});
+				});
 				behaviourPlayer2.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent event) {
-						if(behaviourPlayers.size()>=2)
-						behaviourPlayers.remove(1);
-						behaviourPlayers.add(1,(String)behaviourPlayer2.getSelectedItem());
+						if (behaviourPlayers.size() >= 2)
+							behaviourPlayers.remove(1);
+						behaviourPlayers.add(1, (String) behaviourPlayer2.getSelectedItem());
 					}
-			});
+				});
 				behaviourPlayer3.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent event) {
-						if(behaviourPlayers.size()>=3)
-						behaviourPlayers.remove(2);
-						behaviourPlayers.add(2,(String)behaviourPlayer3.getSelectedItem());
+						if (behaviourPlayers.size() >= 3)
+							behaviourPlayers.remove(2);
+						behaviourPlayers.add(2, (String) behaviourPlayer3.getSelectedItem());
 					}
-			});
+				});
 				behaviourPlayer4.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent event) {
-						if(behaviourPlayers.size()>=4)
-						behaviourPlayers.remove(3);
-						behaviourPlayers.add(3,(String)behaviourPlayer4.getSelectedItem());
+						if (behaviourPlayers.size() >= 4)
+							behaviourPlayers.remove(3);
+						behaviourPlayers.add(3, (String) behaviourPlayer4.getSelectedItem());
 					}
-			});
+				});
 				behaviourPlayer5.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent event) {
-						if(behaviourPlayers.size()>=5)
-						behaviourPlayers.remove(4);
-						behaviourPlayers.add(4,(String)behaviourPlayer5.getSelectedItem());
+						if (behaviourPlayers.size() >= 5)
+							behaviourPlayers.remove(4);
+						behaviourPlayers.add(4, (String) behaviourPlayer5.getSelectedItem());
 					}
-			});
+				});
 				behaviourPlayer6.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent event) {
-						if(behaviourPlayers.size()>=6)
-						behaviourPlayers.remove(5);
-						behaviourPlayers.add(5,(String)behaviourPlayer6.getSelectedItem());
+						if (behaviourPlayers.size() >= 6)
+							behaviourPlayers.remove(5);
+						behaviourPlayers.add(5, (String) behaviourPlayer6.getSelectedItem());
 					}
-			});
+				});
 				chooseMap.addActionListener(new ActionListener() {
-					
+
 					public void actionPerformed(ActionEvent event) {
-						map=(String) chooseMap.getSelectedItem();
+						map = (String) chooseMap.getSelectedItem();
+						if (map.equalsIgnoreCase("3dcliff"))
+							RiskMapPanelViewController.CustomImage = "3D Cliff.bmp";
+						else if (map.equalsIgnoreCase("world"))
+							RiskMapPanelViewController.CustomImage = "World.bmp";
+						else if (map.equalsIgnoreCase("India"))
+							RiskMapPanelViewController.CustomImage = "India.bmp";
+						else if (map.equalsIgnoreCase("british columbia"))
+							RiskMapPanelViewController.CustomImage = "British Columbia.bmp";
+						else if (map.equalsIgnoreCase("europe"))
+							RiskMapPanelViewController.CustomImage = "Europe.bmp";
 					}
-			});
-				
+				});
+
 			}
-			
+
 		});
 	}
-
 
 	/** Exit the Application */
 	private void exitForm(java.awt.event.WindowEvent evt) {
@@ -366,40 +368,44 @@ public class RiskAddPlayerController extends java.awt.Frame {
 		if (RiskGameModel.removeAllPlayer())
 			System.out.println("all players removed");
 
-
 		// for (int i = 1; i <= noOfPlayers; i++) {
 		// RiskGameModel.addPlayer("Player_" + i);
 		// added = true;
 		// }
-		System.out.println("size of list"+noOfPlayers);
-		
-		for(int i=0;i<noOfPlayers;i++) {
-			System.out.println("player"+(i+1)+" "+behaviourPlayers.get(i));
-			switch(behaviourPlayers.get(i)) {
-			
-			case "Human":
-				{RiskGameModel.addPlayer("Player_" + (i+1), new risk.model.strategy.Human());
-				System.out.println((i+1)+"new risk.model.strategy.Human");
-				break;}
-				
-			case "Aggressive":
-				{RiskGameModel.addPlayer("Player_" + (i+1), new risk.model.strategy.Aggressive());
-				System.out.println((i+1)+"new risk.model.strategy.Aggressive");
-				break;}
-			case "Benevolent":
-				{RiskGameModel.addPlayer("Player_" + (i+1), new risk.model.strategy.Benevolent());	
-				System.out.println((i+1)+"new risk.model.strategy.Benevolent");
-				break;}
-			case "Random":
-				{RiskGameModel.addPlayer("Player_" + (i+1), new risk.model.strategy.Random());	
-				System.out.println((i+1)+"new risk.model.strategy.Random");
-				break;}
-			case "Cheater":
-				{RiskGameModel.addPlayer("Player_" + (i+1), new risk.model.strategy.Cheater());	
-				System.out.println((i+1)+"new risk.model.strategy.Cheater");
-				break;}
+		System.out.println("size of list" + noOfPlayers);
+
+		for (int i = 0; i < noOfPlayers; i++) {
+			System.out.println("player" + (i + 1) + " " + behaviourPlayers.get(i));
+			switch (behaviourPlayers.get(i)) {
+
+			case "Human": {
+				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Human());
+				System.out.println((i + 1) + "new risk.model.strategy.Human");
+				break;
 			}
-				
+
+			case "Aggressive": {
+				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Aggressive());
+				System.out.println((i + 1) + "new risk.model.strategy.Aggressive");
+				break;
+			}
+			case "Benevolent": {
+				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Benevolent());
+				System.out.println((i + 1) + "new risk.model.strategy.Benevolent");
+				break;
+			}
+			case "Random": {
+				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Random());
+				System.out.println((i + 1) + "new risk.model.strategy.Random");
+				break;
+			}
+			case "Cheater": {
+				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Cheater());
+				System.out.println((i + 1) + "new risk.model.strategy.Cheater");
+				break;
+			}
+			}
+
 		}
 		added = true;
 		if (added == true) {
@@ -408,13 +414,12 @@ public class RiskAddPlayerController extends java.awt.Frame {
 			RiskStartGameController.btnStartGame.setEnabled(true);
 			Utility.writeLog("All players Added");
 		}
-		for(int i = 0; i < behaviourPlayers.size(); i++) {   
-		    System.out.println(behaviourPlayers.get(i));
-		}  	
-		System.out.println("map"+ map);
-		if(map=="UserDefined")
-		{
-			RiskStartGameController riskGameController=new RiskStartGameController();
+		for (int i = 0; i < behaviourPlayers.size(); i++) {
+			System.out.println(behaviourPlayers.get(i));
+		}
+		System.out.println("map" + map);
+		if (map == "UserDefined") {
+			RiskStartGameController riskGameController = new RiskStartGameController();
 			riskGameController.onChooseMap();
 		}
 	}
