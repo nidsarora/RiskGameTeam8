@@ -1,20 +1,110 @@
 **************The Risk Begin************
 
-Wed Nov 29 14:29:28 EST 2017
+Wed Nov 29 14:53:46 EST 2017
 
-***********Tournament Mode begins  *************
+All players Added
 
-User seleccted 2 maps
+15 armies added to each player
 
-User seleccted 3 number of palyer strategies
+Build the Game Panel
 
-User seleccted 3 number of games
+***********Player_1 turn *************
 
-User seleccted 11 number of maximm turns
+***********Player_2 turn *************
 
-Maps are selected randomly 
+INITIAL REINFORCE - called - Player_2 placed one of his army on Northwest_Territory
 
-Map 1 World.map
+***********Player_3 turn *************
 
-Map 2 3D Cliff.map
+INITIAL REINFORCE - Some Aggressive dude called - Player_3 placed one of his army on Eastern_Australia
+
+***********Player_1 turn *************
+
+initial reinforcement stage
+
+Player_1 got bonus armies
+
+INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on Venezuela
+
+Player_1 got3 left to place
+
+INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on Venezuela
+
+Player_1 got2 left to place
+
+INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on Venezuela
+
+Player_1 got1 left to place
+
+INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on Venezuela
+
+Player_1 got0 left to place
+
+Player_1 entered active turn
+
+Attack Phase entered
+
+Player_1 entered attacking phase.
+
+Player_1 entered attacking phase.
+
+Player_3 has 0 armies
+
+Player_3 attacking with 1 armies
+
+Player_1 has 6 armies
+
+Player_1 attacking with 3 armies
+
+Player_3 has 0 armies
+
+Player_3 attacking with 1 armies
+
+Round 1 - Attacker - 4 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 5
+
+Player_1 has lost an army
+
+Player_3 has 0 armies
+
+Player_3 attacking with 1 armies
+
+Round 1 - Attacker - 3 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 4
+
+Player_1 has lost an army
+
+Player_1 has 4 armies
+
+Player_1 attacking with 2 armies
+
+Player_3 has 0 armies
+
+Player_3 attacking with 1 armies
+
+Round 1 - Attacker - 2 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 3
+
+Player_1 has lost an army
+
+Player_1 has 3 armies
+
+Player_1 attacking with 2 armies
+
+Player_3 has 0 armies
+
+Player_3 attacking with 1 armies
+
+Round 1 - Attacker - 5 Vs Defender 2
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+Player_1 has 2 armies moved to Central_America
 
