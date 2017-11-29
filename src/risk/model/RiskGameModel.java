@@ -357,6 +357,21 @@ public class RiskGameModel implements Serializable {
 
 		return countMatchingCards;
 	}
+	public boolean doesCardMatchCurrentPlayerTerritory(int countMatchingCards) {
+
+		for (RiskCardModel card : this.curPlayer.getCard()) {
+			for (RiskTerritoryModel territory : this.curPlayer.getOccupiedTerritories()) {
+				if (territory.getId() == card.territory) {
+					countMatchingCards++;
+				}
+				else {
+					return false;
+				}
+			}
+		}
+
+		return true;
+	}
 
 	/**
 	 * Checks if is valid count wild card.
