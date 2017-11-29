@@ -35,15 +35,29 @@ public class TestRiskGameModel {
 	 * Test occupy territory.
 	 */
 	@Test
-	public void testOccupyTerritory() {
-        Aggressive aggressive=new Aggressive();
+	public void testNotOccupyTerritory() {
+                Aggressive aggressive=new Aggressive();
 		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1, aggressive);
-		riskplayermodel.setCard(new RiskCardModel(1, 39));
+		RiskPlayerModel riskplayermodel1=new RiskPlayerModel("player1",1,aggressive);
+		riskplayermodel.addArmies(5);
 		riskGameModel.setCurPlayer(riskplayermodel);
-		RiskTerritoryModel rtm = new RiskTerritoryModel(1, "Northwest_Territory", 2, 155, 70);
+		RiskTerritoryModel rtm = new RiskTerritoryModel(2, "Northwest_Territory", 2, 155, 70);
+		rtm.setPlayer(riskplayermodel1);
 		boolean result = riskGameModel.occupyTerritory(rtm);
 		assertEquals(false, result);
 	}
+	@Test
+	public void testOccupyTerritory() {
+		Aggressive aggressive=new Aggressive();
+		RiskPlayerModel rpm=new RiskPlayerModel("player1",1,aggressive);
+		rpm.addArmies(5);
+		riskGameModel.setCurPlayer(rpm);
+		RiskTerritoryModel rtm=new RiskTerritoryModel(1,"Northwest_Territory",2,155,70);
+		rtm.setPlayer(rpm);
+		boolean result=riskGameModel.occupyTerritory(rtm);
+		assertEquals(true,result);
+	}
+
 
 	/**
 	 * Test distribute.
@@ -228,11 +242,36 @@ public class TestRiskGameModel {
 		players.add(riskplayermodel2);
 		players.add(riskplayermodel3);
 		players.add(riskplayermodel4);
+		riskGameModel.setPlayer(players);
 		boolean result=riskGameModel.addPlayer("player5",aggressive);
 		assertEquals(true,result);
 	
 	}
-
+	@Test
+	public void testAddplayerFailure() {
+		Aggressive aggressive=new Aggressive();
+		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1,aggressive);
+		RiskPlayerModel riskplayermodel1 = new RiskPlayerModel("player2", 2,aggressive);
+		RiskPlayerModel riskplayermodel2 = new RiskPlayerModel("player3", 3,aggressive);
+		RiskPlayerModel riskplayermodel3 = new RiskPlayerModel("player4", 4,aggressive);
+		RiskPlayerModel riskplayermodel4 = new RiskPlayerModel("player5", 5,aggressive);
+		RiskPlayerModel riskplayermodel5 = new RiskPlayerModel("player5", 5,aggressive);
+		RiskPlayerModel riskplayermodel6 = new RiskPlayerModel("player5", 5,aggressive);
+		RiskPlayerModel riskplayermodel7 = new RiskPlayerModel("player5", 5,aggressive);
+		Vector<RiskPlayerModel> players = new Vector<RiskPlayerModel>();
+		players.add(riskplayermodel);
+		players.add(riskplayermodel1);
+		players.add(riskplayermodel2);
+		players.add(riskplayermodel3);
+		players.add(riskplayermodel4);
+		players.add(riskplayermodel5);
+		players.add(riskplayermodel6);
+		players.add(riskplayermodel7);
+		riskGameModel.setPlayer(players);
+		boolean result=riskGameModel.addPlayer("player8",aggressive);
+		assertEquals(false,result);
+	
+	}
 
     
     /**
