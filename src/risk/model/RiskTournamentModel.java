@@ -3,6 +3,7 @@ package risk.model;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
@@ -12,7 +13,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class RiskTournamentModel {
+public class RiskTournamentModel implements Serializable{
 	public List<RiskGameModel> tournamentGameList;
 	public static int tournamentGameMaxTurnCount;
 	public List<String> tournamentGameMapNameList;

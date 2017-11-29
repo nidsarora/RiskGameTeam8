@@ -198,7 +198,7 @@ public class RiskGameModel implements Serializable {
 	private RiskStartupEndPhaseModel riskStartupEndPhaseModelObservable;
 
 	/** The risk player domination view observer. */
-	private RiskPlayerDominationViewObserver riskPlayerDominationViewObserver;
+	private transient RiskPlayerDominationViewObserver riskPlayerDominationViewObserver;
 
 	/** The current player bonus armies received. */
 	public int currentPlayerBonusArmiesRecieved;
@@ -207,7 +207,7 @@ public class RiskGameModel implements Serializable {
 	private Boolean isBaseMapEdited;
 
 	/** The risk phase view observer. */
-	private RiskPhaseViewObserver riskPhaseViewObserver;
+	private transient RiskPhaseViewObserver riskPhaseViewObserver;
 
 	/** The attack dice. */
 	public Integer[] attackdice;
@@ -218,8 +218,8 @@ public class RiskGameModel implements Serializable {
 	public RiskPlayerModel winner;
 	public int turn = 1;
 
-	public InputStream gameMapAdjacentTerritoryStream;
-	public InputStream gameMapContinentStream;
+	public transient InputStream gameMapAdjacentTerritoryStream;
+	public transient InputStream gameMapContinentStream;
 
 	public String currentTournamentGameMapName;
 
