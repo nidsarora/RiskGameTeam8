@@ -409,7 +409,7 @@ public class RiskTournamentModeController extends java.awt.Frame {
             System.out.println("Map "+(mapIndex+1)+  " "+mapNameList.get(mapIndex));
         }
 
-		riskTournamentModel = new RiskTournamentModel(mapNum =1, gameNum = 2, gameplayers, maxTurns = 50, mapNameList);
+		riskTournamentModel = new RiskTournamentModel(1, 2, gameplayers, maxTurns = 50, mapNameList);
 
 		riskTournamentModel.initializeTournament();
 		riskTournamentModel.startTournament();
