@@ -298,6 +298,10 @@ public class Aggressive implements StrategyInterface, Serializable {
 							+ riskGameModel.curPlayer.getStrategy().getClass().getName() + " strategy!",
 					"Alert", JOptionPane.INFORMATION_MESSAGE);
 		}
+		if (!RiskGameModel.isTournamentMode) {
+			riskGameModel.mainPanel.repaint();
+			riskGameModel.subPanel.repaint();
+		}
 		return isEndOfGame;
 	}
 

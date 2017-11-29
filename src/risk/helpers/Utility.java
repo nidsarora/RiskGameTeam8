@@ -213,7 +213,7 @@ public final class Utility {
 	}
 
 	public static void writeGameStats(RiskGameModel riskGameModel, Boolean... isApplicationStart) {
-		try (FileWriter fw = new FileWriter("log\\GameStatsNew.txt", (isApplicationStart.length == 0)); // Overwrite
+		try (FileWriter fw = new FileWriter("log\\GameStats.txt", (isApplicationStart.length == 0)); // Overwrite
 				BufferedWriter bw = new BufferedWriter(fw);
 				PrintWriter out = new PrintWriter(bw)) {
 			if (riskGameModel == null)

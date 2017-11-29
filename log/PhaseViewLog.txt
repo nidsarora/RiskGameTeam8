@@ -1,2 +1,960 @@
 **************The Risk Begin************
 
+*********************** Start Up Phase *************************
+This is the Start up phase. Start the game by choosing the map,number of players and distribution of armies depending upon the number of players accordingly..
+Statistics:
+
+Number of players:3
+Number of armies per player:15
+
+
+*********************** Start Up Phase *************************
+This is the Start up phase. Start the game by choosing the map,number of players and distribution of armies depending upon the number of players accordingly..
+Statistics:
+
+Number of players:3
+Number of armies per player:15
+
+
+*********************** Start Up Phase *************************
+This is the Start up phase. Start the game by choosing the map,number of players and distribution of armies depending upon the number of players accordingly..
+Statistics:
+
+Number of players:3
+Number of armies per player:15
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:4
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:3
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:3
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:2
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:2
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:1
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:1
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:0
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:0
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Argentina with 6 armies  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Argentina with 6 armies  attacks 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Argentina with 6 armies  attacks Peru with 1 armies 
+
+The war has began!
+Attacking with 0 dices.
+ Defending with 0 dices
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Argentina with 6 armies  attacks Peru with 1 armies 
+
+The war has began!
+Attacking with 0 dices.
+ Defending with 0 dices
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Argentina with 6 armies  attacks Peru with 1 armies 
+
+The war has began!
+Attacking with 0 dices.
+ Defending with 1 dices
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Argentina with 6 armies  attacks Peru with 1 armies 
+
+The war has began!
+Attacking with 3 dices.
+ Defending with 1 dices
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Argentina with 5 armies  attacks Peru with 1 armies 
+
+The war has began!
+Attacking with 3 dices.
+ Defending with 1 dices
+
+1. It was 4 vs 5.Defender Won this round! Count -1
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Argentina with 5 armies  attacks Peru with 1 armies 
+
+The war has began!
+Attacking with 3 dices.
+ Defending with 1 dices
+
+1. It was 4 vs 5.Defender Won this round! Count -1
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Argentina with 5 armies  attacks Peru with 0 armies 
+
+The war has began!
+Attacking with 3 dices.
+ Defending with 1 dices
+
+1. It was 6 vs 1.Attacker Won this round! Count -5
+Results are out!
+
+Attack successfully prevailed.
+Argentina defeated Peru.Attack count - 5 defence count - 0
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Argentina with 5 armies  attacks Peru with 0 armies 
+
+
+
+1 armies moved from Argentina to Peru
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Argentina with 5 armies  attacks Peru with 0 armies 
+
+
+
+3 armies moved from Argentina to Peru
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_2
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_2 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_2 recieved 0 armies from tading cards.
+Player army count:0
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_2
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_2 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_2 recieved 0 armies from tading cards.
+Player army count:0
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_2
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+
+*********************** Fortify Phase *************************
+null
+Statistics:
+
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_3
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_3 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_3 recieved 0 armies from tading cards.
+Player army count:0
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_3
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_3 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_3 recieved 0 armies from tading cards.
+Player army count:0
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory  attacks 
+
+
+
+
+
+
+*********************** Fortify Phase *************************
+null
+Statistics:
+
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:0
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:0
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 5 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:5
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 5 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:4
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 5 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:4
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 5 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:3
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 5 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:3
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 5 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:2
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 5 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:2
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 5 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:1
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 5 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:1
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 5 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:0
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 5 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:0
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_2
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_2 recieved 5 armies as bonus from Continentsand Territories.
+Player Player_2 recieved 0 armies from tading cards.
+Player army count:0
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_2
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_2 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_2 recieved 0 armies from tading cards.
+Player army count:0
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_2
+Statistics:
+
+Territory Northwest_Territory with 2 armies  attacks Alaska with 1 armies 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_2
+Statistics:
+
+Territory Northwest_Territory with 2 armies  attacks Alaska with 0 armies 
+
+The war has began!
+Attacking with 1 dices.
+ Defending with 1 dices
+
+1. It was 6 vs 3.Attacker Won this round! Count -2
+Results are out!
+
+Attack successfully prevailed.
+Northwest_Territory defeated Alaska.Attack count - 2 defence count - 0
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_2
+Statistics:
+
+Territory Northwest_Territory with 2 armies  attacks Alaska with 0 armies 
+
+
+
+1 armies moved from Northwest_Territory to Alaska
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_2
+Statistics:
+
+Territory Ontario with 2 armies  attacks Greenland with 1 armies 
+
+The war has began!
+Attacking with 2 dices.
+ Defending with 1 dices
+
+1. It was 3 vs 3.Defender Won this round! Count -1
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_2
+Statistics:
+
+Territory Ontario with 2 armies  attacks Greenland with 1 armies 
+
+The war has began!
+Attacking with 2 dices.
+ Defending with 1 dices
+
+1. It was 3 vs 3.Defender Won this round! Count -1
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_2
+Statistics:
+
+Territory Ontario with 1 armies  attacks Greenland with 1 armies 
+
+The war has began!
+Attacking with 1 dices.
+ Defending with 1 dices
+
+1. It was 1 vs 6.Defender Won this round! Count -1
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_2
+Statistics:
+
+Territory Ontario with 1 armies  attacks Greenland with 1 armies 
+
+
+
+Greenland won!! They defended themseleves successfully from Ontario
+
+
+
+*********************** Fortify Phase *************************
+null
+Statistics:
+
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_3
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_3 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_3 recieved 0 armies from tading cards.
+Player army count:0
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_3
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_3 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_3 recieved 0 armies from tading cards.
+Player army count:0
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory Central_America with 2 armies  attacks Western_United_States with 1 armies 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory Central_America with 2 armies  attacks Western_United_States with 0 armies 
+
+The war has began!
+Attacking with 1 dices.
+ Defending with 1 dices
+
+1. It was 6 vs 1.Attacker Won this round! Count -2
+Results are out!
+
+Attack successfully prevailed.
+Central_America defeated Western_United_States.Attack count - 2 defence count - 0
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_3
+Statistics:
+
+Territory Central_America with 2 armies  attacks Western_United_States with 0 armies 
+
+
+
+1 armies moved from Central_America to Western_United_States
+
+
+
+*********************** Fortify Phase *************************
+null
+Statistics:
+
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:0
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:0
+
+
+
+*********************** Reinforcement Phase *************************
+Player: Player_1
+Getting additional armies, that you may allocate among your territories.
+No. of armies you get :
+       -1 army per 3 territories, rounded down, minimum of 3.
+       -For complete continent
+       -set of Risk Cards cashed in.
+Statistics:
+
+The startup phase ends.
+15 armies have been placed.
+Player: Player_1 recieved 4 armies as bonus from Continentsand Territories.
+Player Player_1 recieved 0 armies from tading cards.
+Player army count:4
+
+

@@ -1,2 +1,782 @@
 **************The Risk Begin************
 
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 15 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 15 armies and 0 number of cards.
+Player_3 has 15 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 15 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 14 armies and 0 number of cards.
+Player_3 has 15 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 15 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 14 armies and 0 number of cards.
+Player_2 has 14 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 14 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 14 armies and 0 number of cards.
+Player_3 has 14 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 14 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 13 armies and 0 number of cards.
+Player_3 has 14 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 14 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 13 armies and 0 number of cards.
+Player_2 has 13 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 13 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 13 armies and 0 number of cards.
+Player_3 has 13 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 13 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 12 armies and 0 number of cards.
+Player_3 has 13 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 13 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 12 armies and 0 number of cards.
+Player_2 has 12 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 12 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 12 armies and 0 number of cards.
+Player_3 has 12 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 12 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 11 armies and 0 number of cards.
+Player_3 has 12 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 12 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 11 armies and 0 number of cards.
+Player_2 has 11 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 11 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 11 armies and 0 number of cards.
+Player_3 has 11 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 11 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 10 armies and 0 number of cards.
+Player_3 has 11 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 11 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 10 armies and 0 number of cards.
+Player_2 has 10 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 10 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 10 armies and 0 number of cards.
+Player_3 has 10 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 10 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 9 armies and 0 number of cards.
+Player_3 has 10 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 10 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 9 armies and 0 number of cards.
+Player_2 has 9 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 9 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 9 armies and 0 number of cards.
+Player_3 has 9 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 9 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 8 armies and 0 number of cards.
+Player_3 has 9 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 9 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 8 armies and 0 number of cards.
+Player_2 has 8 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 8 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 8 armies and 0 number of cards.
+Player_3 has 8 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 8 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 7 armies and 0 number of cards.
+Player_3 has 8 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 8 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 7 armies and 0 number of cards.
+Player_2 has 7 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 7 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 7 armies and 0 number of cards.
+Player_3 has 7 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 7 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 6 armies and 0 number of cards.
+Player_3 has 7 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 7 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 6 armies and 0 number of cards.
+Player_2 has 6 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 6 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 6 armies and 0 number of cards.
+Player_3 has 6 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 6 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 5 armies and 0 number of cards.
+Player_3 has 6 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 6 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 5 armies and 0 number of cards.
+Player_2 has 5 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 5 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 5 armies and 0 number of cards.
+Player_3 has 5 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 5 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 4 armies and 0 number of cards.
+Player_3 has 5 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 5 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 4 armies and 0 number of cards.
+Player_2 has 4 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 4 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 4 armies and 0 number of cards.
+Player_3 has 4 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 4 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 3 armies and 0 number of cards.
+Player_3 has 4 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 4 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 3 armies and 0 number of cards.
+Player_2 has 3 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 3 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 3 armies and 0 number of cards.
+Player_3 has 3 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 3 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 2 armies and 0 number of cards.
+Player_3 has 3 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 3 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 2 armies and 0 number of cards.
+Player_2 has 2 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 2 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 2 armies and 0 number of cards.
+Player_3 has 2 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 2 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 1 armies and 0 number of cards.
+Player_3 has 2 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 2 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 1 armies and 0 number of cards.
+Player_2 has 1 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 0 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 1 armies and 0 number of cards.
+Player_3 has 1 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 1 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 0 number of cards.
+Player_3 has 1 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 1 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 0 number of cards.
+Player_2 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 3 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 0 armies and 0 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 2 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 0 armies and 0 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 1 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 0 armies and 0 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 0 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 0 armies and 0 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 0 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 0 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 0 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_2 has 0 armies and 0 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 0 armies and 1 cards.
+The following below are the card details - 
+The card type is ARTILLERY and number is + 8.
+Global Statictics- 
+Player_2 has 0 armies and 0 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 3 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 2 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 1 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 0 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 3 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_2 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 2 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_2 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 1 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_2 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 0 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_2 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 4 armies and 1 cards.
+The following below are the card details - 
+The card type is ARTILLERY and number is + 8.
+Global Statictics- 
+Player_2 has 0 armies and 0 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 3 armies and 1 cards.
+The following below are the card details - 
+The card type is ARTILLERY and number is + 8.
+Global Statictics- 
+Player_2 has 0 armies and 0 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 2 armies and 1 cards.
+The following below are the card details - 
+The card type is ARTILLERY and number is + 8.
+Global Statictics- 
+Player_2 has 0 armies and 0 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 1 armies and 1 cards.
+The following below are the card details - 
+The card type is ARTILLERY and number is + 8.
+Global Statictics- 
+Player_2 has 0 armies and 0 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 0 armies and 1 cards.
+The following below are the card details - 
+The card type is ARTILLERY and number is + 8.
+Global Statictics- 
+Player_2 has 0 armies and 0 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 3 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 2 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 1 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 0 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 0 armies and 1 cards.
+The following below are the card details - 
+The card type is ARTILLERY and number is + 8.
+Global Statictics- 
+Player_2 has 0 armies and 0 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 0 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_2 has 0 armies and 1 cards.
+The following below are the card details - 
+The card type is INFANTRY and number is + 0.
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 3 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_2 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 2 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_2 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 1 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_2 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 0 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_2 has 0 armies and 1 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_1 has 0 armies and 1 cards.
+The following below are the card details - 
+The card type is ARTILLERY and number is + 8.
+Global Statictics- 
+Player_2 has 0 armies and 1 number of cards.
+Player_3 has 0 armies and 0 number of cards.
+
+
+*************The Card Exchange View************
+Current Player Statistics- 
+Player_3 has 0 armies and 0 cards.
+The following below are the card details - 
+Current player has no cards yet!
+Global Statictics- 
+Player_1 has 0 armies and 1 number of cards.
+Player_2 has 0 armies and 1 number of cards.
+
+
