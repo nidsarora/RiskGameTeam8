@@ -545,4 +545,21 @@ public class TestRiskGameModel {
 			int tc=riskGameModel.doesCardMatchCurrentPlayerTerritory();
 			assertEquals(2,tc);
 		}
+	 @Test
+    	public void testCardNotMatchingCurrentPlayerTerritory() 
+    	{
+    		Benevolent benevolent=new Benevolent();
+    		RiskPlayerModel rpm5=new RiskPlayerModel("player5",1,benevolent);
+    		RiskTerritoryModel rtm=new RiskTerritoryModel(3,"Northwest_Territory",1,155,70);
+    		RiskTerritoryModel rtm1=new RiskTerritoryModel(4,"Alaska",1,47,76);
+    		Vector<RiskTerritoryModel> occupiedTerritories=new Vector<RiskTerritoryModel>();
+    		occupiedTerritories.add(rtm);
+    		occupiedTerritories.add(rtm1);
+    		rpm5.setOccupiedTerritories(occupiedTerritories);
+    		RiskCardModel rcm = new RiskCardModel(1,5);
+    			riskGameModel.setRiskCurPlayer(rpm5);
+    			int tc=riskGameModel.doesCardMatchCurrentPlayerTerritory();
+    			boolean result=riskGameModel.doesCardMatchCurrentPlayerTerritory(tc);
+    			assertEquals(false,result);
+    		}
 }
