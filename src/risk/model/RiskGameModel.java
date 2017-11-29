@@ -117,6 +117,7 @@ public class RiskGameModel implements Serializable {
 	/** The armies. */
 	int armies;
 
+	public static Boolean isTournamentMode = false;
 	/** The Constant GAME_OVER. */
 	public static int GAME_OVER = 99;
 
@@ -138,9 +139,9 @@ public class RiskGameModel implements Serializable {
 	/** The defender. */
 	public RiskPlayerModel defender;
 
-	public transient  JPanel mainPanel;
- 
-	public transient  JPanel subPanel;
+	public transient JPanel mainPanel;
+
+	public transient JPanel subPanel;
 
 	/** The active. */
 	public RiskPlayerModel active;
@@ -199,7 +200,7 @@ public class RiskGameModel implements Serializable {
 	private Boolean isBaseMapEdited;
 
 	/** The risk phase view observer. */
-	private  RiskPhaseViewObserver riskPhaseViewObserver;
+	private RiskPhaseViewObserver riskPhaseViewObserver;
 
 	/** The attack dice. */
 	public Integer[] attackdice;
@@ -207,32 +208,43 @@ public class RiskGameModel implements Serializable {
 	public int xCoordinate;
 
 	public int yCoordinate;
+	public RiskPlayerModel winner;
+	public int turn = 1;
+
+	public InputStream gameMapAdjacentTerritoryStream;
+	public InputStream gameMapContinentStream;
+
+	public String currentTournamentGameMapName;
 
 	public List<RiskCardModel> lstTradedCards = new ArrayList<RiskCardModel>();
 
-	/**
-	 * Instantiates a new risk game model.
-	 *
-	 * @param test
-	 *            the test
-	 */
-	public RiskGameModel(String test) {
-	}
+//	/**
+//	 * Instantiates a new risk game model.
+//	 *
+//	 * @param test
+//	 *            the test
+//	 */
+//	public RiskGameModel(String test) {
+//	}
 
 	/**
 	 * Instantiates a new risk game model.
 	 */
-	public RiskGameModel() {
-		setIsBaseMapEdited(RiskController.isBaseMapEdited);
+	public RiskGameModel(String...mapName) {
+		if (!RiskGameModel.isTournamentMode) {
+			setIsBaseMapEdited(RiskController.isBaseMapEdited);
+			initializePlayerDominationView();
+			initializeCardExchangeView();
+		}
+		if(mapName.length > 0)
+			currentTournamentGameMapName = mapName[0];
 		gameState = INITIAL_REINFORCE;
 		initalPlayer();
-		initializePlayerDominationView();
-		initializeCardExchangeView();
 		initializeMapVariables();
 		ValidateLoadMap();
 		initializeDeck();
 		distubuteArmies();
-		assignTerritories();// TODO - Auto distribution of armies - set the current player phase to
+		assignTerritories();// TODO - Auto distribution of armies - set the current player phase to // //
 							// reinforcement
 	}
 
@@ -389,11 +401,16 @@ public class RiskGameModel implements Serializable {
 	 * Validate load map.
 	 */
 	private void ValidateLoadMap() {
-		if (isGameMapValid()) {
+		if (!RiskGameModel.isTournamentMode)
+			if (isGameMapValid()) {
+				loadGameMap();
+				this.setIsGameMapValid(true);
+			} else {
+				this.setIsGameMapValid(false);
+			}
+		else {
 			loadGameMap();
 			this.setIsGameMapValid(true);
-		} else {
-			this.setIsGameMapValid(false);
 		}
 	}
 
@@ -672,6 +689,16 @@ public class RiskGameModel implements Serializable {
 	 * This method finds the next player in the loop.
 	 */
 	public void nextPlayer(Boolean... isInitialization) {
+
+		if (RiskGameModel.isTournamentMode)
+			if (this.turn >= RiskTournamentModel.tournamentGameMaxTurnCount)
+				return;
+			else
+				this.turn++;
+
+		if (this.getState() == RiskGameModel.END_GAME)
+			return;
+
 		if (curPlayer == players.lastElement()) {
 			curPlayer = players.elementAt(0);
 			iter = 0;
@@ -925,16 +952,21 @@ public class RiskGameModel implements Serializable {
 		Vector<Integer> adjacents;
 		Vector<Integer> contains;
 		this.isBaseMapEdited = RiskController.isBaseMapEdited;
+		gameMapAdjacentTerritoryStream = null;
+		gameMapContinentStream = null;
 		try {
-			InputStream fileLoadContinentTerritory;
-			if (this.isBaseMapEdited)
-				fileLoadContinentTerritory = RiskGameModel.class
+
+			if (RiskGameModel.isTournamentMode)
+				gameMapContinentStream = RiskGameModel.class
+						.getResourceAsStream(Utility.getMapPath(this.currentTournamentGameMapName));
+			else if (this.isBaseMapEdited)
+				gameMapContinentStream = RiskGameModel.class
 						.getResourceAsStream(Utility.getMapPath("CurrentGameMap.map"));
 			else
-				fileLoadContinentTerritory = RiskGameModel.class
+				gameMapContinentStream = RiskGameModel.class
 						.getResourceAsStream(Utility.getMapPath("BaseEarthMap.map"));
 
-			Scanner fileLoadContinentTerritoryScanner = new Scanner(fileLoadContinentTerritory);
+			Scanner fileLoadContinentTerritoryScanner = new Scanner(gameMapContinentStream);
 
 			while (fileLoadContinentTerritoryScanner.hasNextLine()) {
 				done = false;
@@ -993,13 +1025,17 @@ public class RiskGameModel implements Serializable {
 
 			} // end while
 
-			InputStream fileLoadAdjacents;
-			if (this.isBaseMapEdited)
-				fileLoadAdjacents = RiskGameModel.class.getResourceAsStream(Utility.getMapPath("CurrentGameMap.map"));
+			if (RiskGameModel.isTournamentMode)
+				gameMapAdjacentTerritoryStream = RiskGameModel.class
+						.getResourceAsStream(Utility.getMapPath(this.currentTournamentGameMapName));
+			else if (this.isBaseMapEdited)
+				gameMapAdjacentTerritoryStream = RiskGameModel.class
+						.getResourceAsStream(Utility.getMapPath("CurrentGameMap.map"));
 			else
-				fileLoadAdjacents = RiskGameModel.class.getResourceAsStream(Utility.getMapPath("BaseEarthMap.map"));
+				gameMapAdjacentTerritoryStream = RiskGameModel.class
+						.getResourceAsStream(Utility.getMapPath("BaseEarthMap.map"));
 
-			Scanner fileLoadAdjacentsScanner = new Scanner(fileLoadAdjacents);
+			Scanner fileLoadAdjacentsScanner = new Scanner(gameMapAdjacentTerritoryStream);
 			while (fileLoadAdjacentsScanner.hasNextLine()) {
 
 				nextLine = fileLoadAdjacentsScanner.nextLine();
@@ -1034,8 +1070,8 @@ public class RiskGameModel implements Serializable {
 
 				} // end if adjacents
 			}
-			fileLoadContinentTerritory.close();
-			fileLoadAdjacents.close();
+			gameMapAdjacentTerritoryStream.close();
+			gameMapContinentStream.close();
 			fileLoadContinentTerritoryScanner.close();
 			fileLoadAdjacentsScanner.close();
 		} catch (Exception e) {
@@ -1141,7 +1177,7 @@ public class RiskGameModel implements Serializable {
 
 		if (getState() == ATTACKING || getState() == ATTACK || getState() == ATTACK_PHASE || getState() == CAPTURE) {
 			return this.curPlayer.attack(country, this);
-			
+
 		}
 
 		// if (getState() == TRADE_CARDS) {
@@ -1393,13 +1429,13 @@ public class RiskGameModel implements Serializable {
 			} // if defending with two
 		}
 		notifyPhaseViewChange();
-		if (defenseTerritory.getArmies() == 0) {
+		if (defenseTerritory.getArmies() <= 0) {
 			Utility.writeLog("Defender Lost!!");
 			setState(CAPTURE);
 			notifyPhaseViewChange();
 			defenseTerritory.setPlayer(curPlayer);
 		}
-		if (aTerritory.getArmies() == 1) {
+		if (aTerritory.getArmies() <= 1) {
 			Utility.writeLog("Attacker Lost!!");
 			setState(DEFEATED);
 			this.notifyPhaseViewChange(); // show defeat in phase view
@@ -1447,11 +1483,12 @@ public class RiskGameModel implements Serializable {
 			if (players.size() == 1) {
 				Utility.writeLog(active.getName() + " has won the game");
 				flag = true;
+				this.setState(RiskGameModel.END_GAME);
 			}
 		}
 
-		a.looseArmies(armies);
-		d.addArmies(armies);
+		// a.looseArmies(armies);
+		// d.addArmies(armies);
 
 		// Draw a card
 		if (drawn == false) {
@@ -1966,6 +2003,7 @@ public class RiskGameModel implements Serializable {
 		riskGameModelSerializable.territories = RiskGameModel.territories;
 		riskGameModelSerializable.players = RiskGameModel.players;
 		riskGameModelSerializable.gameState = RiskGameModel.gameState;
+		riskGameModelSerializable.isTournamentMode = RiskGameModel.isTournamentMode;
 		return riskGameModelSerializable;
 	}
 
@@ -1992,6 +2030,7 @@ public class RiskGameModel implements Serializable {
 		RiskGameModel.territories = riskGameModelSerializable.territories;
 		RiskGameModel.players = riskGameModelSerializable.players;
 		RiskGameModel.gameState = riskGameModelSerializable.gameState;
+		RiskGameModel.isTournamentMode = riskGameModelSerializable.isTournamentMode;
 	}
 
 }

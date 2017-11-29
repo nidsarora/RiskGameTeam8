@@ -234,7 +234,8 @@ public class Random implements StrategyInterface, Serializable {
 	 */
 	public void endGame(RiskGameModel riskGameModel) {
 		Utility.writeLog("Thats all ya, " + riskGameModel.curPlayer.getName() + " won the game!!!");
-		// System.exit(0);
+		riskGameModel.setState(RiskGameModel.END_GAME);
+		riskGameModel.winner = riskGameModel.curPlayer;
 	}
 
 	/**

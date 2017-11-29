@@ -188,6 +188,8 @@ public class RiskGameModelSerializable implements Serializable {
 //	public RiskGameModel(String test) {
 //	}
 
+	public Boolean isTournamentMode;
+
 	/**
 	 * Instantiates a new risk game model.
 	 */

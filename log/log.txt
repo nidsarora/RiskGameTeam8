@@ -1,6 +1,6 @@
 **************The Risk Begin************
 
-Tue Nov 28 19:41:31 EST 2017
+Wed Nov 29 01:10:42 EST 2017
 
 All players Added
 
@@ -9,6 +9,8 @@ All players Added
 Build the Game Panel
 
 ***********Player_1 turn *************
+
+INITIAL REINFORCE - Some Aggressive dude called - Player_1 placed one of his army on New_Guinea
 
 ***********Player_2 turn *************
 
@@ -20,37 +22,371 @@ INITIAL REINFORCE - Some Aggressive dude called - Player_3 placed one of his arm
 
 ***********Player_1 turn *************
 
-initial reinforcement stage
+START TURN - Some Random dude called - Player_1 has started his turn.
 
-Player_1 got bonus armies
+REINFORCE - Some Aggressive dude called - Player_1 recieved 4 armies as turn bonus.
 
-INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on Argentina
+REINFORCE - Some Aggressive dude called - Player_1 decided to Reinforce his armies.
 
-Player_1 got3 left to place
+REINFORCE - Some Aggressive dude called - Player_1 reinforced New_Guinea army count is 3 and territory army count is 3
 
-INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on Argentina
+REINFORCE - Some Aggressive dude called - Player_1 reinforced New_Guinea army count is 2 and territory army count is 4
 
-Player_1 got2 left to place
+REINFORCE - Some Aggressive dude called - Player_1 reinforced New_Guinea army count is 1 and territory army count is 5
 
-INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on Argentina
+REINFORCE - Some Aggressive dude called - Player_1 reinforced New_Guinea army count is 0 and territory army count is 6
 
-Player_1 got1 left to place
+REINFORCE - Some Aggressive dude called - Player_1 is done with reinforcement and his army count is 0
 
-INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on Argentina
+ATTACK - Some Aggressive dude called - Player_1 has option to attack.
 
-Player_1 got0 left to place
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
 
-Player_1 entered active turn
+ATTACK - Some Aggressive dude called - Player_1 has warred against Indonesia using his territory - New_Guinea
 
-Attack Phase entered
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
 
-Player_1 entered attacking phase.
+ATTACK is with 3 defence is with 1dies.
 
-Player_1 entered attacking phase.
+Round 1 - Attacker - 6 Vs Defender 2
 
-Player_1 has 6 armies
+Defender lost round and one army. Current army count + 0
 
-Player_1 attacking with 3 armies
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 1 armies from New_Guinea to Indonesia
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 5
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 2dies.
+
+Round 1 - Attacker - 6 Vs Defender 5
+
+Defender lost round and one army. Current army count + 1
+
+Round 2 - Attacker - 4 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 5
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 3
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 2
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_1 has lost an army
+
+Player_1 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Indonesia through New_Guinea by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_2 turn *************
+
+START TURN - Some Random dude called - Player_2 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_2 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_2 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Western_Australia army count is 3 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Western_Australia army count is 2 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Western_Australia army count is 1 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Western_Australia army count is 0 and territory army count is 5
+
+REINFORCE - Some Aggressive dude called - Player_2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_2 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Indonesia using his territory - Western_Australia
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 2
+
+Defender lost round and one army. Current army count + -1
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 0 armies from Western_Australia to Indonesia
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against New_Guinea using his territory - Western_Australia
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 2
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 4 armies from Western_Australia to New_Guinea
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Eastern_Australia using his territory - Western_Australia
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 2dies.
+
+Round 1 - Attacker - 4 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 4
+
+Round 2 - Attacker - 3 Vs Defender 2
+
+Defender lost round and one army. Current army count + 2
+
+Player_2 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Eastern_Australia using his territory - Western_Australia
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 5
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 0 armies from Western_Australia to Eastern_Australia
+
+ATTACK - Some Aggressive dude called - Player_2 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Southeast_Asia through China by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Southeast_Asia through Indonesia by -2 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_3 turn *************
+
+START TURN - Some Random dude called - Player_3 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_3 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_3 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Middle_East army count is 3 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Middle_East army count is 2 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Middle_East army count is 1 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Middle_East army count is 0 and territory army count is 5
+
+REINFORCE - Some Aggressive dude called - Player_3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_3 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Russia using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 4
+
+Player_3 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Russia using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 0 armies from Middle_East to Russia
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Southern_Europe using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 1 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 3
+
+Player_3 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Southern_Europe using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 2
+
+Player_3 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Southern_Europe using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_3 has lost an army
+
+Player_3 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Russia through Scandinavia by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Russia through Northern_Europe by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Russia through Ural by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Russia through Middle_East by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_1 turn *************
+
+START TURN - Some Random dude called - Player_1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_1 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced India army count is 3 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced India army count is 2 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced India army count is 1 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced India army count is 0 and territory army count is 5
+
+REINFORCE - Some Aggressive dude called - Player_1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_1 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against China using his territory - India
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 2
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 0 armies from India to China
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Middle_East using his territory - India
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
 
 Round 1 - Attacker - 4 Vs Defender 2
 
@@ -60,5 +396,4755 @@ Defender Lost!!
 
 Player_1 has destroyed an army
 
-Player_1 has 3 armies moved to Peru
+CAPTURE - Some Aggressive dude called - Player_1 moved 3 armies from India to Middle_East
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Southeast_Asia using his territory - India
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 5
+
+Defender lost round and one army. Current army count + -2
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 4 armies from India to Southeast_Asia
+
+ATTACK - Some Aggressive dude called - Player_1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Southeast_Asia through China by -1 armie(s). And Strongest Teeritory Army count is now --3
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Southeast_Asia through India by 4 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_2 turn *************
+
+START TURN - Some Random dude called - Player_2 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_2 recieved 7 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_2 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Indonesia army count is 6 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Indonesia army count is 5 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Indonesia army count is 4 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Indonesia army count is 3 and territory army count is 5
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Indonesia army count is 2 and territory army count is 6
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Indonesia army count is 1 and territory army count is 7
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Indonesia army count is 0 and territory army count is 8
+
+REINFORCE - Some Aggressive dude called - Player_2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_2 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Southeast_Asia using his territory - Indonesia
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 4
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 2 armies from Indonesia to Southeast_Asia
+
+ATTACK - Some Aggressive dude called - Player_2 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Southeast_Asia through Indonesia by 7 armie(s). And Strongest Teeritory Army count is now -7
+
+FORTIFY - Some Aggressive dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_3 turn *************
+
+START TURN - Some Random dude called - Player_3 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_3 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_3 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Russia army count is 3 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Russia army count is 2 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Russia army count is 1 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Russia army count is 0 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_3 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Southern_Europe using his territory - Russia
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 0 armies from Russia to Southern_Europe
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Afghanistan using his territory - Russia
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 3
+
+Attacker lost round and one army. Current army count + 3
+
+Player_3 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Afghanistan using his territory - Russia
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 1 armies from Russia to Afghanistan
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Middle_East using his territory - Russia
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 3
+
+Defender lost round and one army. Current army count + -1
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 2 armies from Russia to Middle_East
+
+ATTACK - Some Aggressive dude called - Player_3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Middle_East through Russia by 2 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Middle_East through Southern_Europe by -1 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Middle_East through East_Africa by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Middle_East through Afghanistan by -1 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_1 turn *************
+
+START TURN - Some Random dude called - Player_1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_1 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced China army count is 3 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced China army count is 2 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced China army count is 1 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced China army count is 0 and territory army count is 5
+
+REINFORCE - Some Aggressive dude called - Player_1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_1 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Ural using his territory - China
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 4
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Ural using his territory - China
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 3
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Ural using his territory - China
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 0 armies from China to Ural
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Afghanistan using his territory - China
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 3
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 0 armies from China to Afghanistan
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Southeast_Asia using his territory - China
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 2dies.
+
+Round 1 - Attacker - 4 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 2
+
+Round 2 - Attacker - 2 Vs Defender 1
+
+Defender lost round and one army. Current army count + 7
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Southeast_Asia using his territory - China
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_1 has lost an army
+
+Player_1 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Afghanistan through Ural by -1 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Afghanistan through China by 0 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Afghanistan through India by 0 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_2 turn *************
+
+START TURN - Some Random dude called - Player_2 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_2 recieved 7 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_2 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southeast_Asia army count is 6 and territory army count is 7
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southeast_Asia army count is 5 and territory army count is 8
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southeast_Asia army count is 4 and territory army count is 9
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southeast_Asia army count is 3 and territory army count is 10
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southeast_Asia army count is 2 and territory army count is 11
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southeast_Asia army count is 1 and territory army count is 12
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southeast_Asia army count is 0 and territory army count is 13
+
+REINFORCE - Some Aggressive dude called - Player_2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_2 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against China using his territory - Southeast_Asia
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 12
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against China using his territory - Southeast_Asia
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 11
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against China using his territory - Southeast_Asia
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 10
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against China using his territory - Southeast_Asia
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 2
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 0 armies from Southeast_Asia to China
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against India using his territory - Southeast_Asia
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 2
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 9 armies from Southeast_Asia to India
+
+ATTACK - Some Aggressive dude called - Player_2 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified India through China by -1 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified India through Southeast_Asia by 9 armie(s). And Strongest Teeritory Army count is now -8
+
+FORTIFY - Some Aggressive dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_3 turn *************
+
+START TURN - Some Random dude called - Player_3 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_3 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_3 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Middle_East army count is 3 and territory army count is 0
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Middle_East army count is 2 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Middle_East army count is 1 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Middle_East army count is 0 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_3 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Egypt using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 2
+
+Player_3 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Egypt using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 3
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_3 has lost an army
+
+Player_3 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Middle_East through Russia by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Middle_East through Southern_Europe by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Middle_East through East_Africa by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_1 turn *************
+
+START TURN - Some Random dude called - Player_1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_1 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Afghanistan army count is 3 and territory army count is 0
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Afghanistan army count is 2 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Afghanistan army count is 1 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Afghanistan army count is 0 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_1 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Russia using his territory - Afghanistan
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 2
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 1 armies from Afghanistan to Russia
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against China using his territory - Afghanistan
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 2
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against China using his territory - Afghanistan
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_1 has lost an army
+
+Player_1 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Russia through Ural by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Russia through Afghanistan by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_2 turn *************
+
+START TURN - Some Random dude called - Player_2 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_2 recieved 7 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_2 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced India army count is 6 and territory army count is 9
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced India army count is 5 and territory army count is 10
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced India army count is 4 and territory army count is 11
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced India army count is 3 and territory army count is 12
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced India army count is 2 and territory army count is 13
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced India army count is 1 and territory army count is 14
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced India army count is 0 and territory army count is 15
+
+REINFORCE - Some Aggressive dude called - Player_2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_2 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Afghanistan using his territory - India
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 8 armies from India to Afghanistan
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Middle_East using his territory - India
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 4
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 10 armies from India to Middle_East
+
+ATTACK - Some Aggressive dude called - Player_2 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Middle_East through Afghanistan by -1 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Middle_East through India by 14 armie(s). And Strongest Teeritory Army count is now -13
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Middle_East through Southeast_Asia by 0 armie(s). And Strongest Teeritory Army count is now -13
+
+FORTIFY - Some Aggressive dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_3 turn *************
+
+START TURN - Some Random dude called - Player_3 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_3 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_3 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Southern_Europe army count is 2 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Southern_Europe army count is 1 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Southern_Europe army count is 0 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_3 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Russia using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 3
+
+Defender lost round and one army. Current army count + -1
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 2 armies from Southern_Europe to Russia
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Western_Europe using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 4
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 0 armies from Southern_Europe to Western_Europe
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Middle_East using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 2
+
+Defender lost round and one army. Current army count + 12
+
+Player_3 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Middle_East using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 1
+
+Defender lost round and one army. Current army count + 11
+
+Player_3 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Middle_East using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 3 defence is with 2dies.
+
+Round 1 - Attacker - 5 Vs Defender 4
+
+Defender lost round and one army. Current army count + 10
+
+Round 2 - Attacker - 3 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 4
+
+Player_3 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Middle_East using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 2
+
+Defender lost round and one army. Current army count + 9
+
+Player_3 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Middle_East using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 5
+
+Defender lost round and one army. Current army count + 8
+
+Player_3 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Middle_East using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 2
+
+Player_3 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Middle_East using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 1 Vs Defender 3
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_3 has lost an army
+
+Player_3 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Western_Europe through Northern_Europe by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Western_Europe through Southern_Europe by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Western_Europe through North_Africa by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_1 turn *************
+
+START TURN - Some Random dude called - Player_1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_1 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Ural army count is 2 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Ural army count is 1 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Ural army count is 0 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_1 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Russia using his territory - Ural
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 1
+
+Defender lost round and one army. Current army count + -2
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 0 armies from Ural to Russia
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Afghanistan using his territory - Ural
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 4
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 0 armies from Ural to Afghanistan
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against China using his territory - Ural
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 3
+
+Attacker lost round and one army. Current army count + 3
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against China using his territory - Ural
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 2
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against China using his territory - Ural
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 2
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 1 armies from Ural to China
+
+ATTACK - Some Aggressive dude called - Player_1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified China through Ural by 1 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified China through Siberia by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified China through Mongolia by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified China through Afghanistan by -1 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_2 turn *************
+
+START TURN - Some Random dude called - Player_2 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_2 recieved 7 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_2 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 6 and territory army count is 9
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 5 and territory army count is 10
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 4 and territory army count is 11
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 3 and territory army count is 12
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 2 and territory army count is 13
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 1 and territory army count is 14
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 0 and territory army count is 15
+
+REINFORCE - Some Aggressive dude called - Player_2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_2 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Russia using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 4
+
+Defender lost round and one army. Current army count + -3
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 0 armies from Middle_East to Russia
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Southern_Europe using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 3
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 13 armies from Middle_East to Southern_Europe
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Egypt using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 14
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Egypt using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 2
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 1 armies from Middle_East to Egypt
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against East_Africa using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 7 armies from Middle_East to East_Africa
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Afghanistan using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 2
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 11 armies from Middle_East to Afghanistan
+
+ATTACK - Some Aggressive dude called - Player_2 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Afghanistan through Russia by -4 armie(s). And Strongest Teeritory Army count is now --4
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Afghanistan through Middle_East by 13 armie(s). And Strongest Teeritory Army count is now -9
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Afghanistan through India by 0 armie(s). And Strongest Teeritory Army count is now -9
+
+FORTIFY - Some Aggressive dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_3 turn *************
+
+START TURN - Some Random dude called - Player_3 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_3 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_3 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Western_Europe army count is 2 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Western_Europe army count is 1 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Western_Europe army count is 0 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_3 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Great_Britain using his territory - Western_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 2
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 2 armies from Western_Europe to Great_Britain
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Southern_Europe using his territory - Western_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 1
+
+Defender lost round and one army. Current army count + -1
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 1 armies from Western_Europe to Southern_Europe
+
+ATTACK - Some Aggressive dude called - Player_3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Southern_Europe through Northern_Europe by 0 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Southern_Europe through Western_Europe by 2 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_1 turn *************
+
+START TURN - Some Random dude called - Player_1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_1 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced China army count is 2 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced China army count is 1 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced China army count is 0 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_1 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Afghanistan using his territory - China
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 2dies.
+
+Round 1 - Attacker - 2 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 2
+
+Round 2 - Attacker - 2 Vs Defender 2
+
+Attacker lost round and one army. Current army count + 2
+
+Attacker Lost!!
+
+Player_1 has lost two armies
+
+Player_1 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified China through Ural by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified China through Siberia by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified China through Mongolia by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_2 turn *************
+
+START TURN - Some Random dude called - Player_2 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_2 recieved 8 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_2 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Afghanistan army count is 7 and territory army count is 10
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Afghanistan army count is 6 and territory army count is 11
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Afghanistan army count is 5 and territory army count is 12
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Afghanistan army count is 4 and territory army count is 13
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Afghanistan army count is 3 and territory army count is 14
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Afghanistan army count is 2 and territory army count is 15
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Afghanistan army count is 1 and territory army count is 16
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Afghanistan army count is 0 and territory army count is 17
+
+REINFORCE - Some Aggressive dude called - Player_2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_2 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Ural using his territory - Afghanistan
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 3
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 10 armies from Afghanistan to Ural
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against China using his territory - Afghanistan
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 5
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 2 armies from Afghanistan to China
+
+ATTACK - Some Aggressive dude called - Player_2 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified China through Ural by -1 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified China through Afghanistan by 16 armie(s). And Strongest Teeritory Army count is now -15
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified China through India by 0 armie(s). And Strongest Teeritory Army count is now -15
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified China through Southeast_Asia by 0 armie(s). And Strongest Teeritory Army count is now -15
+
+FORTIFY - Some Aggressive dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_3 turn *************
+
+START TURN - Some Random dude called - Player_3 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_3 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_3 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Southern_Europe army count is 3 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Southern_Europe army count is 2 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Southern_Europe army count is 1 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Southern_Europe army count is 0 and territory army count is 5
+
+REINFORCE - Some Aggressive dude called - Player_3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_3 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Russia using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 4 armies from Southern_Europe to Russia
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Middle_East using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 2
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 4 armies from Southern_Europe to Middle_East
+
+ATTACK - Some Aggressive dude called - Player_3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Middle_East through Russia by -1 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Middle_East through Southern_Europe by 4 armie(s). And Strongest Teeritory Army count is now -3
+
+FORTIFY - Some Aggressive dude called - Player_3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_1 turn *************
+
+START TURN - Some Random dude called - Player_1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_1 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Mongolia army count is 2 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Mongolia army count is 1 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Mongolia army count is 0 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_1 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Irkutsk using his territory - Mongolia
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 3
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Irkutsk using his territory - Mongolia
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 2
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Irkutsk using his territory - Mongolia
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 3
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_1 has lost an army
+
+Player_1 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Mongolia through Siberia by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_2 turn *************
+
+START TURN - Some Random dude called - Player_2 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_2 recieved 8 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_2 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced China army count is 7 and territory army count is 16
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced China army count is 6 and territory army count is 17
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced China army count is 5 and territory army count is 18
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced China army count is 4 and territory army count is 19
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced China army count is 3 and territory army count is 20
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced China army count is 2 and territory army count is 21
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced China army count is 1 and territory army count is 22
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced China army count is 0 and territory army count is 23
+
+REINFORCE - Some Aggressive dude called - Player_2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_2 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Siberia using his territory - China
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 22
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Siberia using his territory - China
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 21
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Siberia using his territory - China
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 6 armies from China to Siberia
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Mongolia using his territory - China
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 17 armies from China to Mongolia
+
+ATTACK - Some Aggressive dude called - Player_2 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Mongolia through Siberia by -1 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Mongolia through Kamchatka by 0 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Mongolia through China by 20 armie(s). And Strongest Teeritory Army count is now -19
+
+FORTIFY - Some Aggressive dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_3 turn *************
+
+START TURN - Some Random dude called - Player_3 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_3 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_3 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Middle_East army count is 3 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Middle_East army count is 2 and territory army count is 5
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Middle_East army count is 1 and territory army count is 6
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Middle_East army count is 0 and territory army count is 7
+
+REINFORCE - Some Aggressive dude called - Player_3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_3 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Egypt using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 1 Vs Defender 1
+
+Attacker lost round and one army. Current army count + 6
+
+Defender Lost!!
+
+Player_3 has lost an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 5 armies from Middle_East to Egypt
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against East_Africa using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 5
+
+Defender Lost!!
+
+Player_3 has lost an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 0 armies from Middle_East to East_Africa
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Afghanistan using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 4
+
+Player_3 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Afghanistan using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 0 armies from Middle_East to Afghanistan
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against India using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 3
+
+Player_3 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against India using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 2
+
+Player_3 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against India using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_3 has lost an army
+
+Player_3 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Afghanistan through Russia by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Afghanistan through Middle_East by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_1 turn *************
+
+START TURN - Some Random dude called - Player_1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_1 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced South_Africa army count is 2 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced South_Africa army count is 1 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced South_Africa army count is 0 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_1 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Central_Africa using his territory - South_Africa
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 4
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 1 armies from South_Africa to Central_Africa
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against East_Africa using his territory - South_Africa
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 1
+
+Defender lost round and one army. Current army count + -1
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 3 armies from South_Africa to East_Africa
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Madagascar using his territory - South_Africa
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 5
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 2 armies from South_Africa to Madagascar
+
+ATTACK - Some Aggressive dude called - Player_1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified East_Africa through Central_Africa by -1 armie(s). And Strongest Teeritory Army count is now --2
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified East_Africa through South_Africa by 3 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified East_Africa through Madagascar by -1 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_2 turn *************
+
+START TURN - Some Random dude called - Player_2 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_2 recieved 7 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_2 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Mongolia army count is 6 and territory army count is 20
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Mongolia army count is 5 and territory army count is 21
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Mongolia army count is 4 and territory army count is 22
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Mongolia army count is 3 and territory army count is 23
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Mongolia army count is 2 and territory army count is 24
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Mongolia army count is 1 and territory army count is 25
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Mongolia army count is 0 and territory army count is 26
+
+REINFORCE - Some Aggressive dude called - Player_2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_2 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Irkutsk using his territory - Mongolia
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 2
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 17 armies from Mongolia to Irkutsk
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Japan using his territory - Mongolia
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 2 armies from Mongolia to Japan
+
+ATTACK - Some Aggressive dude called - Player_2 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified China through Ural by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified China through Siberia by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified China through Mongolia by 25 armie(s). And Strongest Teeritory Army count is now -26
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified China through India by 0 armie(s). And Strongest Teeritory Army count is now -26
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified China through Southeast_Asia by 0 armie(s). And Strongest Teeritory Army count is now -26
+
+FORTIFY - Some Aggressive dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_3 turn *************
+
+START TURN - Some Random dude called - Player_3 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_3 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_3 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Afghanistan army count is 3 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Afghanistan army count is 2 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Afghanistan army count is 1 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Afghanistan army count is 0 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_3 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Ural using his territory - Afghanistan
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 4
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 0 armies from Afghanistan to Ural
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against China using his territory - Afghanistan
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 3 defence is with 2dies.
+
+Round 1 - Attacker - 5 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 3
+
+Round 2 - Attacker - 1 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 3
+
+Player_3 has lost two armies
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against China using his territory - Afghanistan
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 5
+
+Defender lost round and one army. Current army count + 25
+
+Player_3 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against China using his territory - Afghanistan
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 1
+
+Defender lost round and one army. Current army count + 24
+
+Player_3 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against China using his territory - Afghanistan
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_3 has lost an army
+
+Player_3 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Ural through Russia by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Ural through Afghanistan by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_1 turn *************
+
+START TURN - Some Random dude called - Player_1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_1 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced East_Africa army count is 2 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced East_Africa army count is 1 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced East_Africa army count is 0 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_1 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - East_Africa
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 2
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 2 armies from East_Africa to North_Africa
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Egypt using his territory - East_Africa
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 2
+
+Defender lost round and one army. Current army count + -1
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 0 armies from East_Africa to Egypt
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Middle_East using his territory - East_Africa
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 4
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 2 armies from East_Africa to Middle_East
+
+ATTACK - Some Aggressive dude called - Player_1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Middle_East through Egypt by -2 armie(s). And Strongest Teeritory Army count is now --2
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Middle_East through East_Africa by 2 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_2 turn *************
+
+START TURN - Some Random dude called - Player_2 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_2 recieved 8 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_2 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced China army count is 7 and territory army count is 25
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced China army count is 6 and territory army count is 26
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced China army count is 5 and territory army count is 27
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced China army count is 4 and territory army count is 28
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced China army count is 3 and territory army count is 29
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced China army count is 2 and territory army count is 30
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced China army count is 1 and territory army count is 31
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced China army count is 0 and territory army count is 32
+
+REINFORCE - Some Aggressive dude called - Player_2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_2 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Ural using his territory - China
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 4
+
+Defender lost round and one army. Current army count + -1
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 24 armies from China to Ural
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Afghanistan using his territory - China
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 3
+
+Attacker lost round and one army. Current army count + 31
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Afghanistan using his territory - China
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 1 Vs Defender 2
+
+Attacker lost round and one army. Current army count + 30
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Afghanistan using his territory - China
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 29
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Afghanistan using his territory - China
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 28
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Afghanistan using his territory - China
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 2
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 17 armies from China to Afghanistan
+
+ATTACK - Some Aggressive dude called - Player_2 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Afghanistan through Ural by -2 armie(s). And Strongest Teeritory Army count is now --2
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Afghanistan through China by 27 armie(s). And Strongest Teeritory Army count is now -25
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Afghanistan through India by 0 armie(s). And Strongest Teeritory Army count is now -25
+
+FORTIFY - Some Aggressive dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_3 turn *************
+
+START TURN - Some Random dude called - Player_3 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_3 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_3 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Russia army count is 2 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Russia army count is 1 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Russia army count is 0 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_3 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Ural using his territory - Russia
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 3
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 1 armies from Russia to Ural
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Afghanistan using his territory - Russia
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 2
+
+Defender lost round and one army. Current army count + 24
+
+Player_3 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Afghanistan using his territory - Russia
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 2dies.
+
+Round 1 - Attacker - 6 Vs Defender 4
+
+Defender lost round and one army. Current army count + 23
+
+Round 2 - Attacker - 5 Vs Defender 2
+
+Defender lost round and one army. Current army count + 23
+
+Player_3 has destroyed two armies
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Afghanistan using his territory - Russia
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 1 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 3
+
+Player_3 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Afghanistan using his territory - Russia
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 1
+
+Defender lost round and one army. Current army count + 21
+
+Player_3 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Afghanistan using his territory - Russia
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 1
+
+Defender lost round and one army. Current army count + 20
+
+Player_3 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Afghanistan using his territory - Russia
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 1 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 2
+
+Player_3 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Afghanistan using his territory - Russia
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 1
+
+Defender lost round and one army. Current army count + 19
+
+Player_3 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Afghanistan using his territory - Russia
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 3
+
+Defender lost round and one army. Current army count + 18
+
+Player_3 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Afghanistan using his territory - Russia
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 2
+
+Defender lost round and one army. Current army count + 17
+
+Player_3 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Afghanistan using his territory - Russia
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 3
+
+Defender lost round and one army. Current army count + 16
+
+Player_3 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Afghanistan using his territory - Russia
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_3 has lost an army
+
+Player_3 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Ural through Russia by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_1 turn *************
+
+START TURN - Some Random dude called - Player_1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_1 recieved 7 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Middle_East army count is 6 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Middle_East army count is 5 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Middle_East army count is 4 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Middle_East army count is 3 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Middle_East army count is 2 and territory army count is 5
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Middle_East army count is 1 and territory army count is 6
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Middle_East army count is 0 and territory army count is 7
+
+REINFORCE - Some Aggressive dude called - Player_1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_1 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Russia using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 4
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 0 armies from Middle_East to Russia
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Southern_Europe using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 6
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Southern_Europe using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 2
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 3 armies from Middle_East to Southern_Europe
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Afghanistan using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 3 defence is with 2dies.
+
+Round 1 - Attacker - 5 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 5
+
+Round 2 - Attacker - 4 Vs Defender 3
+
+Defender lost round and one army. Current army count + 16
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Afghanistan using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 2dies.
+
+Round 1 - Attacker - 6 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 4
+
+Round 2 - Attacker - 2 Vs Defender 1
+
+Defender lost round and one army. Current army count + 15
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Afghanistan using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 3
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Afghanistan using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 2
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Afghanistan using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 1 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_1 has lost an army
+
+Player_1 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Southern_Europe through Russia by -1 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Southern_Europe through Middle_East by 0 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_2 turn *************
+
+START TURN - Some Random dude called - Player_2 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_2 recieved 8 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_2 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Afghanistan army count is 7 and territory army count is 15
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Afghanistan army count is 6 and territory army count is 16
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Afghanistan army count is 5 and territory army count is 17
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Afghanistan army count is 4 and territory army count is 18
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Afghanistan army count is 3 and territory army count is 19
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Afghanistan army count is 2 and territory army count is 20
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Afghanistan army count is 1 and territory army count is 21
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Afghanistan army count is 0 and territory army count is 22
+
+REINFORCE - Some Aggressive dude called - Player_2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_2 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Russia using his territory - Afghanistan
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 4
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 14 armies from Afghanistan to Russia
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Ural using his territory - Afghanistan
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 2
+
+Defender lost round and one army. Current army count + -1
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 17 armies from Afghanistan to Ural
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Middle_East using his territory - Afghanistan
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 21
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Middle_East using his territory - Afghanistan
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 14 armies from Afghanistan to Middle_East
+
+ATTACK - Some Aggressive dude called - Player_2 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Middle_East through Russia by -1 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Middle_East through Afghanistan by 20 armie(s). And Strongest Teeritory Army count is now -19
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Middle_East through India by 0 armie(s). And Strongest Teeritory Army count is now -19
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Middle_East through Southeast_Asia by 0 armie(s). And Strongest Teeritory Army count is now -19
+
+FORTIFY - Some Aggressive dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_3 turn *************
+
+START TURN - Some Random dude called - Player_3 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_3 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_3 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Great_Britain army count is 2 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Great_Britain army count is 1 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Great_Britain army count is 0 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_3 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Iceland using his territory - Great_Britain
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 0 armies from Great_Britain to Iceland
+
+ATTACK - Some Aggressive dude called - Player_3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Western_Europe through Great_Britain by 2 armie(s). And Strongest Teeritory Army count is now -3
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Western_Europe through Northern_Europe by 0 armie(s). And Strongest Teeritory Army count is now -3
+
+FORTIFY - Some Aggressive dude called - Player_3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_1 turn *************
+
+START TURN - Some Random dude called - Player_1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_1 recieved 7 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Southern_Europe army count is 6 and territory army count is 0
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Southern_Europe army count is 5 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Southern_Europe army count is 4 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Southern_Europe army count is 3 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Southern_Europe army count is 2 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Southern_Europe army count is 1 and territory army count is 5
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Southern_Europe army count is 0 and territory army count is 6
+
+REINFORCE - Some Aggressive dude called - Player_1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_1 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Russia using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 3
+
+Attacker lost round and one army. Current army count + 5
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Russia using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 4
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Russia using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 3 armies from Southern_Europe to Russia
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Northern_Europe using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 0 armies from Southern_Europe to Northern_Europe
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Western_Europe using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 3 defence is with 2dies.
+
+Round 1 - Attacker - 5 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 3
+
+Round 2 - Attacker - 3 Vs Defender 2
+
+Defender lost round and one army. Current army count + 3
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Western_Europe using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 2dies.
+
+Round 1 - Attacker - 5 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 2
+
+Round 2 - Attacker - 5 Vs Defender 1
+
+Defender lost round and one army. Current army count + 2
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Western_Europe using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 3
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_1 has lost an army
+
+Player_1 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Northern_Europe through Russia by -1 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Northern_Europe through Southern_Europe by 0 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_2 turn *************
+
+START TURN - Some Random dude called - Player_2 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_2 recieved 15 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_2 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 14 and territory army count is 20
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 13 and territory army count is 21
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 12 and territory army count is 22
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 11 and territory army count is 23
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 10 and territory army count is 24
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 9 and territory army count is 25
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 8 and territory army count is 26
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 7 and territory army count is 27
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 6 and territory army count is 28
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 5 and territory army count is 29
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 4 and territory army count is 30
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 3 and territory army count is 31
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 2 and territory army count is 32
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 1 and territory army count is 33
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Middle_East army count is 0 and territory army count is 34
+
+REINFORCE - Some Aggressive dude called - Player_2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_2 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Russia using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 33
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Russia using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 32
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Russia using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 5
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 10 armies from Middle_East to Russia
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Southern_Europe using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 5
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 9 armies from Middle_East to Southern_Europe
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Egypt using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 26 armies from Middle_East to Egypt
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against East_Africa using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 31
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against East_Africa using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 30
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against East_Africa using his territory - Middle_East
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 2
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 4 armies from Middle_East to East_Africa
+
+ATTACK - Some Aggressive dude called - Player_2 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified East_Africa through Egypt by -1 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified East_Africa through Middle_East by 29 armie(s). And Strongest Teeritory Army count is now -28
+
+FORTIFY - Some Aggressive dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_3 turn *************
+
+START TURN - Some Random dude called - Player_3 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_3 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_3 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Western_Europe army count is 2 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Western_Europe army count is 1 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Western_Europe army count is 0 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_3 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Northern_Europe using his territory - Western_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 3
+
+Defender lost round and one army. Current army count + -2
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 3 armies from Western_Europe to Northern_Europe
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Southern_Europe using his territory - Western_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 1
+
+Defender lost round and one army. Current army count + -1
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 2 armies from Western_Europe to Southern_Europe
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against North_Africa using his territory - Western_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 4
+
+Defender lost round and one army. Current army count + -1
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 1 armies from Western_Europe to North_Africa
+
+ATTACK - Some Aggressive dude called - Player_3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified North_Africa through Brazil by 0 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified North_Africa through Western_Europe by 3 armie(s). And Strongest Teeritory Army count is now -2
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified North_Africa through Southern_Europe by -2 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_1 turn *************
+
+START TURN - Some Random dude called - Player_1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_1 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Madagascar army count is 2 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Madagascar army count is 1 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Madagascar army count is 0 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_1 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against East_Africa using his territory - Madagascar
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 1
+
+Defender lost round and one army. Current army count + 27
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against East_Africa using his territory - Madagascar
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 3
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against East_Africa using his territory - Madagascar
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 2
+
+Defender lost round and one army. Current army count + 26
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against East_Africa using his territory - Madagascar
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 4
+
+Defender lost round and one army. Current army count + 25
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against East_Africa using his territory - Madagascar
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 3
+
+Defender lost round and one army. Current army count + 24
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against East_Africa using his territory - Madagascar
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 2dies.
+
+Round 1 - Attacker - 4 Vs Defender 3
+
+Defender lost round and one army. Current army count + 23
+
+Round 2 - Attacker - 1 Vs Defender 2
+
+Attacker lost round and one army. Current army count + 3
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against East_Africa using his territory - Madagascar
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_1 has lost an army
+
+Player_1 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Madagascar through South_Africa by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_2 turn *************
+
+START TURN - Some Random dude called - Player_2 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_2 recieved 16 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_2 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced East_Africa army count is 15 and territory army count is 24
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced East_Africa army count is 14 and territory army count is 25
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced East_Africa army count is 13 and territory army count is 26
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced East_Africa army count is 12 and territory army count is 27
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced East_Africa army count is 11 and territory army count is 28
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced East_Africa army count is 10 and territory army count is 29
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced East_Africa army count is 9 and territory army count is 30
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced East_Africa army count is 8 and territory army count is 31
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced East_Africa army count is 7 and territory army count is 32
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced East_Africa army count is 6 and territory army count is 33
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced East_Africa army count is 5 and territory army count is 34
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced East_Africa army count is 4 and territory army count is 35
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced East_Africa army count is 3 and territory army count is 36
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced East_Africa army count is 2 and territory army count is 37
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced East_Africa army count is 1 and territory army count is 38
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced East_Africa army count is 0 and territory army count is 39
+
+REINFORCE - Some Aggressive dude called - Player_2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_2 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against North_Africa using his territory - East_Africa
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 2
+
+Defender lost round and one army. Current army count + -1
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 7 armies from East_Africa to North_Africa
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Central_Africa using his territory - East_Africa
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 38
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Central_Africa using his territory - East_Africa
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 2
+
+Attacker lost round and one army. Current army count + 37
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Central_Africa using his territory - East_Africa
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 4
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 6 armies from East_Africa to Central_Africa
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against South_Africa using his territory - East_Africa
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 36
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against South_Africa using his territory - East_Africa
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 2
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 25 armies from East_Africa to South_Africa
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Madagascar using his territory - East_Africa
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 5
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 21 armies from East_Africa to Madagascar
+
+ATTACK - Some Aggressive dude called - Player_2 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified North_Africa through Egypt by 0 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified North_Africa through Central_Africa by -1 armie(s). And Strongest Teeritory Army count is now --2
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified North_Africa through East_Africa by 35 armie(s). And Strongest Teeritory Army count is now -33
+
+FORTIFY - Some Aggressive dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_3 turn *************
+
+START TURN - Some Random dude called - Player_3 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_3 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_3 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Southern_Europe army count is 2 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Southern_Europe army count is 1 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Southern_Europe army count is 0 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_3 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Russia using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 3
+
+Defender lost round and one army. Current army count + -1
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 2 armies from Southern_Europe to Russia
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Middle_East using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 3
+
+Player_3 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Middle_East using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 1 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 2
+
+Player_3 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Middle_East using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_3 has lost an army
+
+Player_3 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Russia through Scandinavia by 0 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Russia through Northern_Europe by -3 armie(s). And Strongest Teeritory Army count is now --4
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Russia through Southern_Europe by 0 armie(s). And Strongest Teeritory Army count is now --4
+
+FORTIFY - Some Aggressive dude called - Player_3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_1 turn *************
+
+START TURN - Some Random dude called - Player_1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_1 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Argentina army count is 2 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Argentina army count is 1 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Argentina army count is 0 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_1 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Peru using his territory - Argentina
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 3
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Peru using his territory - Argentina
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 2
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Peru using his territory - Argentina
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_1 has lost an army
+
+Player_1 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_2 turn *************
+
+START TURN - Some Random dude called - Player_2 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_2 recieved 20 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_2 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 19 and territory army count is 34
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 18 and territory army count is 35
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 17 and territory army count is 36
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 16 and territory army count is 37
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 15 and territory army count is 38
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 14 and territory army count is 39
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 13 and territory army count is 40
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 12 and territory army count is 41
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 11 and territory army count is 42
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 10 and territory army count is 43
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 9 and territory army count is 44
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 8 and territory army count is 45
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 7 and territory army count is 46
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 6 and territory army count is 47
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 5 and territory army count is 48
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 4 and territory army count is 49
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 3 and territory army count is 50
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 2 and territory army count is 51
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 1 and territory army count is 52
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced North_Africa army count is 0 and territory army count is 53
+
+REINFORCE - Some Aggressive dude called - Player_2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_2 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Brazil using his territory - North_Africa
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 52
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Brazil using his territory - North_Africa
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 5
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 10 armies from North_Africa to Brazil
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Western_Europe using his territory - North_Africa
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 4
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 16 armies from North_Africa to Western_Europe
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Southern_Europe using his territory - North_Africa
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 48 armies from North_Africa to Southern_Europe
+
+ATTACK - Some Aggressive dude called - Player_2 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Southern_Europe through Western_Europe by -1 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Southern_Europe through Middle_East by 0 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_3 turn *************
+
+START TURN - Some Random dude called - Player_3 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_3 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_3 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Russia army count is 2 and territory army count is -3
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Russia army count is 1 and territory army count is -2
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Russia army count is 0 and territory army count is -1
+
+REINFORCE - Some Aggressive dude called - Player_3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_3 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Russia through Scandinavia by 0 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Russia through Northern_Europe by 0 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_1 turn *************
+
+START TURN - Some Random dude called - Player_1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_1 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Argentina army count is 2 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Argentina army count is 1 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Argentina army count is 0 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_1 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Peru using his territory - Argentina
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 3
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Peru using his territory - Argentina
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 1 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 2
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Peru using his territory - Argentina
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_1 has lost an army
+
+Player_1 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_2 turn *************
+
+START TURN - Some Random dude called - Player_2 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_2 recieved 21 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_2 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 20 and territory army count is 0
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 19 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 18 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 17 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 16 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 15 and territory army count is 5
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 14 and territory army count is 6
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 13 and territory army count is 7
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 12 and territory army count is 8
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 11 and territory army count is 9
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 10 and territory army count is 10
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 9 and territory army count is 11
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 8 and territory army count is 12
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 7 and territory army count is 13
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 6 and territory army count is 14
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 5 and territory army count is 15
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 4 and territory army count is 16
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 3 and territory army count is 17
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 2 and territory army count is 18
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 1 and territory army count is 19
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Southern_Europe army count is 0 and territory army count is 20
+
+REINFORCE - Some Aggressive dude called - Player_2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_2 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Russia using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 19
+
+Defender Lost!!
+
+Player_2 has lost an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 17 armies from Southern_Europe to Russia
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Northern_Europe using his territory - Southern_Europe
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 4
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 17 armies from Southern_Europe to Northern_Europe
+
+ATTACK - Some Aggressive dude called - Player_2 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Northern_Europe through Russia by -2 armie(s). And Strongest Teeritory Army count is now --2
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Northern_Europe through Western_Europe by 0 armie(s). And Strongest Teeritory Army count is now --2
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Northern_Europe through Southern_Europe by 18 armie(s). And Strongest Teeritory Army count is now -16
+
+FORTIFY - Some Aggressive dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_3 turn *************
+
+START TURN - Some Random dude called - Player_3 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_3 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_3 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Great_Britain army count is 2 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Great_Britain army count is 1 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Great_Britain army count is 0 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_3 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Northern_Europe using his territory - Great_Britain
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 2dies.
+
+Round 1 - Attacker - 6 Vs Defender 5
+
+Defender lost round and one army. Current army count + 15
+
+Round 2 - Attacker - 1 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 4
+
+Player_3 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Northern_Europe using his territory - Great_Britain
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 2dies.
+
+Round 1 - Attacker - 4 Vs Defender 3
+
+Defender lost round and one army. Current army count + 14
+
+Round 2 - Attacker - 3 Vs Defender 1
+
+Defender lost round and one army. Current army count + 14
+
+Player_3 has destroyed two armies
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Northern_Europe using his territory - Great_Britain
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 2dies.
+
+Round 1 - Attacker - 3 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 2
+
+Round 2 - Attacker - 3 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 2
+
+Attacker Lost!!
+
+Player_3 has lost two armies
+
+Player_3 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Great_Britain through Iceland by -1 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Great_Britain through Scandinavia by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_1 turn *************
+
+START TURN - Some Random dude called - Player_1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_1 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Argentina army count is 2 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Argentina army count is 1 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Argentina army count is 0 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_1 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Peru using his territory - Argentina
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 3 armies from Argentina to Peru
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against Brazil using his territory - Argentina
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 3
+
+Defender Lost!!
+
+Player_1 has lost an army
+
+CAPTURE - Some Aggressive dude called - Player_1 moved 2 armies from Argentina to Brazil
+
+ATTACK - Some Aggressive dude called - Player_1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Brazil through Venezuela by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Brazil through Peru by -1 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Brazil through Argentina by 2 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_2 turn *************
+
+START TURN - Some Random dude called - Player_2 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_2 recieved 21 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_2 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 20 and territory army count is 14
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 19 and territory army count is 15
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 18 and territory army count is 16
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 17 and territory army count is 17
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 16 and territory army count is 18
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 15 and territory army count is 19
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 14 and territory army count is 20
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 13 and territory army count is 21
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 12 and territory army count is 22
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 11 and territory army count is 23
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 10 and territory army count is 24
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 9 and territory army count is 25
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 8 and territory army count is 26
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 7 and territory army count is 27
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 6 and territory army count is 28
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 5 and territory army count is 29
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 4 and territory army count is 30
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 3 and territory army count is 31
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 2 and territory army count is 32
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 1 and territory army count is 33
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Northern_Europe army count is 0 and territory army count is 34
+
+REINFORCE - Some Aggressive dude called - Player_2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_2 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Scandinavia using his territory - Northern_Europe
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 4
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 21 armies from Northern_Europe to Scandinavia
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Great_Britain using his territory - Northern_Europe
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 33
+
+Defender Lost!!
+
+Player_2 has lost an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 6 armies from Northern_Europe to Great_Britain
+
+ATTACK - Some Aggressive dude called - Player_2 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Great_Britain through Scandinavia by -1 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Great_Britain through Northern_Europe by 32 armie(s). And Strongest Teeritory Army count is now -31
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Great_Britain through Western_Europe by 0 armie(s). And Strongest Teeritory Army count is now -31
+
+FORTIFY - Some Aggressive dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_3 turn *************
+
+START TURN - Some Random dude called - Player_3 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_3 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_3 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Iceland army count is 2 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Iceland army count is 1 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Iceland army count is 0 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_3 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Scandinavia using his territory - Iceland
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 5
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 2 armies from Iceland to Scandinavia
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Great_Britain using his territory - Iceland
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 3
+
+Player_3 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Great_Britain using his territory - Iceland
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 1 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 2
+
+Player_3 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Great_Britain using his territory - Iceland
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_3 has lost an army
+
+Player_3 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Scandinavia through Iceland by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_1 turn *************
+
+START TURN - Some Random dude called - Player_1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_1 recieved 5 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Brazil army count is 4 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Brazil army count is 3 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Brazil army count is 2 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Brazil army count is 1 and territory army count is 5
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Brazil army count is 0 and territory army count is 6
+
+REINFORCE - Some Aggressive dude called - Player_1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_1 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 1
+
+Defender lost round and one army. Current army count + 51
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 2
+
+Defender lost round and one army. Current army count + 50
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 4
+
+Defender lost round and one army. Current army count + 49
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 1 Vs Defender 3
+
+Attacker lost round and one army. Current army count + 5
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 4
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 1
+
+Defender lost round and one army. Current army count + 48
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 4
+
+Defender lost round and one army. Current army count + 47
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 2dies.
+
+Round 1 - Attacker - 4 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 3
+
+Round 2 - Attacker - 2 Vs Defender 1
+
+Defender lost round and one army. Current army count + 47
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 2
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 2
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_1 has lost an army
+
+Player_1 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Brazil through Venezuela by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Brazil through Peru by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Brazil through Argentina by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_2 turn *************
+
+START TURN - Some Random dude called - Player_2 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_2 recieved 22 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_2 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 21 and territory army count is 32
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 20 and territory army count is 33
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 19 and territory army count is 34
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 18 and territory army count is 35
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 17 and territory army count is 36
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 16 and territory army count is 37
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 15 and territory army count is 38
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 14 and territory army count is 39
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 13 and territory army count is 40
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 12 and territory army count is 41
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 11 and territory army count is 42
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 10 and territory army count is 43
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 9 and territory army count is 44
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 8 and territory army count is 45
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 7 and territory army count is 46
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 6 and territory army count is 47
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 5 and territory army count is 48
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 4 and territory army count is 49
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 3 and territory army count is 50
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 2 and territory army count is 51
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 1 and territory army count is 52
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Great_Britain army count is 0 and territory army count is 53
+
+REINFORCE - Some Aggressive dude called - Player_2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_2 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Iceland using his territory - Great_Britain
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 4
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 28 armies from Great_Britain to Iceland
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Scandinavia using his territory - Great_Britain
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 52
+
+Defender Lost!!
+
+Player_2 has lost an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 18 armies from Great_Britain to Scandinavia
+
+ATTACK - Some Aggressive dude called - Player_2 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Iceland through Scandinavia by -1 armie(s). And Strongest Teeritory Army count is now --1
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Iceland through Great_Britain by 51 armie(s). And Strongest Teeritory Army count is now -50
+
+FORTIFY - Some Aggressive dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_3 turn *************
+
+START TURN - Some Random dude called - Player_3 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_3 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_3 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Central_America army count is 2 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Central_America army count is 1 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Central_America army count is 0 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_3 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Western_United_States using his territory - Central_America
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 3
+
+Player_3 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Western_United_States using his territory - Central_America
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 1 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 2
+
+Player_3 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Western_United_States using his territory - Central_America
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 1
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_3 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_3 moved 0 armies from Central_America to Western_United_States
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Eastern_United_States using his territory - Central_America
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_3 has lost an army
+
+Player_3 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_3 fortified Western_United_States through Central_America by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_1 turn *************
+
+START TURN - Some Random dude called - Player_1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_1 recieved 5 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Brazil army count is 4 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Brazil army count is 3 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Brazil army count is 2 and territory army count is 4
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Brazil army count is 1 and territory army count is 5
+
+REINFORCE - Some Aggressive dude called - Player_1 reinforced Brazil army count is 0 and territory army count is 6
+
+REINFORCE - Some Aggressive dude called - Player_1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_1 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 2
+
+Defender lost round and one army. Current army count + 45
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 2dies.
+
+Round 1 - Attacker - 5 Vs Defender 2
+
+Defender lost round and one army. Current army count + 44
+
+Round 2 - Attacker - 1 Vs Defender 1
+
+Attacker lost round and one army. Current army count + 6
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 3
+
+Defender lost round and one army. Current army count + 43
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 3
+
+Attacker lost round and one army. Current army count + 4
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 1
+
+Defender lost round and one army. Current army count + 42
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 5
+
+Defender lost round and one army. Current army count + 41
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 3
+
+Defender lost round and one army. Current army count + 40
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 3
+
+Defender lost round and one army. Current army count + 39
+
+Player_1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 3
+
+Attacker lost round and one army. Current army count + 3
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 2
+
+Player_1 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_1 has warred against North_Africa using his territory - Brazil
+
+ATTACK - Some Aggressive dude Player_1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+Player_1 has lost an army
+
+Player_1 has lost the battle
+
+ATTACK - Some Aggressive dude called - Player_1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Brazil through Venezuela by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Brazil through Peru by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_1 fortified Brazil through Argentina by 0 armie(s). And Strongest Teeritory Army count is now -1
+
+FORTIFY - Some Aggressive dude called - Player_1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_2 turn *************
+
+START TURN - Some Random dude called - Player_2 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_2 recieved 27 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_2 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 26 and territory army count is 51
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 25 and territory army count is 52
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 24 and territory army count is 53
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 23 and territory army count is 54
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 22 and territory army count is 55
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 21 and territory army count is 56
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 20 and territory army count is 57
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 19 and territory army count is 58
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 18 and territory army count is 59
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 17 and territory army count is 60
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 16 and territory army count is 61
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 15 and territory army count is 62
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 14 and territory army count is 63
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 13 and territory army count is 64
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 12 and territory army count is 65
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 11 and territory army count is 66
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 10 and territory army count is 67
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 9 and territory army count is 68
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 8 and territory army count is 69
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 7 and territory army count is 70
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 6 and territory army count is 71
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 5 and territory army count is 72
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 4 and territory army count is 73
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 3 and territory army count is 74
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 2 and territory army count is 75
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 1 and territory army count is 76
+
+REINFORCE - Some Aggressive dude called - Player_2 reinforced Iceland army count is 0 and territory army count is 77
+
+REINFORCE - Some Aggressive dude called - Player_2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_2 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Greenland using his territory - Iceland
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 1 Vs Defender 3
+
+Attacker lost round and one army. Current army count + 76
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Greenland using his territory - Iceland
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 75
+
+Player_2 has lost an army
+
+ATTACK - Some Aggressive dude called - Player_2 has warred against Greenland using his territory - Iceland
+
+ATTACK - Some Aggressive dude Player_2 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 3
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+Player_2 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - Player_2 moved 40 armies from Iceland to Greenland
+
+ATTACK - Some Aggressive dude called - Player_2 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - Player_2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Greenland through Northwest_Territory by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Greenland through Ontario by 0 armie(s). And Strongest Teeritory Army count is now -0
+
+FORTIFY - Some Aggressive dude called - Player_2 fortified Greenland through Iceland by 74 armie(s). And Strongest Teeritory Army count is now -74
+
+FORTIFY - Some Aggressive dude called - Player_2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********Player_3 turn *************
+
+START TURN - Some Random dude called - Player_3 has started his turn.
+
+REINFORCE - Some Aggressive dude called - Player_3 recieved 3 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - Player_3 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Western_United_States army count is 2 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Western_United_States army count is 1 and territory army count is 2
+
+REINFORCE - Some Aggressive dude called - Player_3 reinforced Western_United_States army count is 0 and territory army count is 3
+
+REINFORCE - Some Aggressive dude called - Player_3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - Player_3 has option to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has decided to attack.
+
+ATTACK - Some Aggressive dude called - Player_3 has warred against Alberta using his territory - Western_United_States
+
+ATTACK - Some Aggressive dude Player_3 attack results as follows!!
 

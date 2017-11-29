@@ -220,6 +220,8 @@ public class Cheater implements StrategyInterface, Serializable {
 
 		riskGameModel.mainPanel.repaint();
 		riskGameModel.subPanel.repaint();
+		riskGameModel.setState(RiskGameModel.END_GAME);
+		riskGameModel.winner = riskGameModel.curPlayer;
 	}
 
 	/**
