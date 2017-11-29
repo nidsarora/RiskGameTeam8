@@ -199,13 +199,11 @@ public class RiskTournamentModeController extends java.awt.Frame {
 		// mapNameList count = mapNum * gameNum // 2 maps 2 game total 4.
 		mapNameList.add("BaseEarthMap.map");
 		mapNameList.add("BaseEarthMap.map");
-		mapNameList.add("World.map");
-		mapNameList.add("World.map");
 
-		riskTournamentModel = new RiskTournamentModel(gameNum = 2, gameplayers, maxTurns = 30, mapNameList);
+		riskTournamentModel = new RiskTournamentModel(gameNum = 2, gameplayers, maxTurns = 50, mapNameList);
 		riskTournamentModel.initializeTournament();
 		riskTournamentModel.startTournament();
-		//riskTournamentModel.printResults();
+		riskTournamentModel.printTournamentResult();
 	}
 
 	/** The mode panel. */

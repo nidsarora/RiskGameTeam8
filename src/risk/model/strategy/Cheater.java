@@ -33,8 +33,10 @@ public class Cheater implements StrategyInterface, Serializable {
 				|| riskGameModel.getState() == RiskGameModel.ACTIVE_TURN)
 			startTurn(false, riskGameModel);
 
-		riskGameModel.mainPanel.repaint();
-		riskGameModel.subPanel.repaint();
+		if (!RiskGameModel.isTournamentMode) {
+			riskGameModel.mainPanel.repaint();
+			riskGameModel.subPanel.repaint();
+		}
 
 		return;
 	}
@@ -56,7 +58,7 @@ public class Cheater implements StrategyInterface, Serializable {
 				}
 				riskGameModel.notifyPhaseViewChange();
 				riskGameModel.nextPlayer();
-			}else {
+			} else {
 				Utility.writeLog("armies less than 0");
 				riskGameModel.nextPlayer();
 			}
@@ -66,7 +68,9 @@ public class Cheater implements StrategyInterface, Serializable {
 
 	@Override
 	public void startTurn(boolean isTest, RiskGameModel riskGameModel) {
-		/* Place all the armies randomly, and place the turn bonus too randomly */
+		/*
+		 * Place all the armies randomly, and place the turn bonus too randomly
+		 */
 		Utility.writeLog(
 				"START TURN - Some Cheater called - " + riskGameModel.curPlayer.getName() + " has started his turn.");
 		if (riskGameModel.curPlayer.getCard().size() > (new java.util.Random().nextInt(5) + 1)) { // 1,2,3,4,5
@@ -105,8 +109,8 @@ public class Cheater implements StrategyInterface, Serializable {
 	@Override
 	public void reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
-		 * Randomly reinforce any random countries; assuming this time this player has
-		 * armies to place recieved from start turn
+		 * Randomly reinforce any random countries; assuming this time this
+		 * player has armies to place recieved from start turn
 		 */
 		riskGameModel.setState(RiskGameModel.REINFORCE);
 		riskGameModel.notifyPhaseViewChange();
@@ -140,8 +144,8 @@ public class Cheater implements StrategyInterface, Serializable {
 	@Override
 	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
-		 * He will keep on attacking untill he has teeritories which armies > 1 and of
-		 * which have others territories adjacent to him
+		 * He will keep on attacking untill he has teeritories which armies > 1
+		 * and of which have others territories adjacent to him
 		 */
 		Boolean endGame = false;
 		Vector<RiskTerritoryModel> cheaterOccupiedTerritories = new Vector<RiskTerritoryModel>();
@@ -218,8 +222,10 @@ public class Cheater implements StrategyInterface, Serializable {
 						+ riskGameModel.curPlayer.getStrategy().getClass().getName() + " strategy!",
 				"Alert", JOptionPane.INFORMATION_MESSAGE);
 
-		riskGameModel.mainPanel.repaint();
-		riskGameModel.subPanel.repaint();
+		if (!RiskGameModel.isTournamentMode) {
+			riskGameModel.mainPanel.repaint();
+			riskGameModel.subPanel.repaint();
+		}
 		riskGameModel.setState(RiskGameModel.END_GAME);
 		riskGameModel.winner = riskGameModel.curPlayer;
 	}
@@ -255,7 +261,7 @@ public class Cheater implements StrategyInterface, Serializable {
 		riskGameModel.nextPlayer();
 		riskGameModel.notifyPhaseViewChange();
 
-		return "";		
+		return "";
 	}
 
 	/**

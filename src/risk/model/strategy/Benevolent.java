@@ -189,8 +189,10 @@ public class Benevolent implements StrategyInterface {
 				|| riskGameModel.getState() == RiskGameModel.ACTIVE_TURN)
 			startTurn(false, riskGameModel);
 
-		riskGameModel.mainPanel.repaint();
-		riskGameModel.subPanel.repaint();
+		if (!RiskGameModel.isTournamentMode) {
+			riskGameModel.mainPanel.repaint();
+			riskGameModel.subPanel.repaint();
+		}
 
 		// return "";
 	}

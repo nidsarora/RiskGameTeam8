@@ -30,8 +30,10 @@ public class Random implements StrategyInterface, Serializable {
 				|| riskGameModel.getState() == RiskGameModel.ACTIVE_TURN)
 			startTurn(false, riskGameModel);
 
-		riskGameModel.mainPanel.repaint();
-		riskGameModel.subPanel.repaint();
+		if (!RiskGameModel.isTournamentMode) {
+			riskGameModel.mainPanel.repaint();
+			riskGameModel.subPanel.repaint();
+		}
 
 		// return "";
 	}
@@ -236,6 +238,10 @@ public class Random implements StrategyInterface, Serializable {
 		Utility.writeLog("Thats all ya, " + riskGameModel.curPlayer.getName() + " won the game!!!");
 		riskGameModel.setState(RiskGameModel.END_GAME);
 		riskGameModel.winner = riskGameModel.curPlayer;
+		if (!RiskGameModel.isTournamentMode) {
+			riskGameModel.mainPanel.repaint();
+			riskGameModel.subPanel.repaint();
+		}
 	}
 
 	/**

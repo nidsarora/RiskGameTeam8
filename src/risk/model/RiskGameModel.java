@@ -124,11 +124,17 @@ public class RiskGameModel implements Serializable {
 	/** The territories. */
 	static public Vector<RiskTerritoryModel> territories = new Vector<RiskTerritoryModel>();
 
+	/** The territories. */
+	public Vector<RiskTerritoryModel> territoriesInstantiable = new Vector<RiskTerritoryModel>();
+
 	/** The continents. */
 	public Vector<RiskContinentModel> continents = new Vector<RiskContinentModel>();
 
 	/** The players. */
 	static public Vector<RiskPlayerModel> players = new Vector<RiskPlayerModel>();
+
+	/** The players. */
+	public Vector<RiskPlayerModel> playersInstantiable = new Vector<RiskPlayerModel>();
 
 	/** The deck. */
 	public Vector<RiskCardModel> deck = new Vector<RiskCardModel>();
@@ -147,7 +153,7 @@ public class RiskGameModel implements Serializable {
 	public RiskPlayerModel active;
 
 	/** The game state. */
-	static private int gameState;
+	private static int gameState;
 
 	/** The a territory. */
 	public RiskTerritoryModel aTerritory;
@@ -218,34 +224,49 @@ public class RiskGameModel implements Serializable {
 
 	public List<RiskCardModel> lstTradedCards = new ArrayList<RiskCardModel>();
 
-//	/**
-//	 * Instantiates a new risk game model.
-//	 *
-//	 * @param test
-//	 *            the test
-//	 */
-//	public RiskGameModel(String test) {
-//	}
+	// /**
+	// * Instantiates a new risk game model.
+	// *
+	// * @param test
+	// * the test
+	// */
+	// public RiskGameModel(String test) {
+	// }
 
 	/**
 	 * Instantiates a new risk game model.
 	 */
-	public RiskGameModel(String...mapName) {
+	public RiskGameModel(String... mapName) {
 		if (!RiskGameModel.isTournamentMode) {
 			setIsBaseMapEdited(RiskController.isBaseMapEdited);
 			initializePlayerDominationView();
 			initializeCardExchangeView();
 		}
-		if(mapName.length > 0)
+		if (mapName.length > 0)
 			currentTournamentGameMapName = mapName[0];
 		gameState = INITIAL_REINFORCE;
 		initalPlayer();
 		initializeMapVariables();
 		ValidateLoadMap();
+		if (RiskGameModel.isTournamentMode)
+			instantiateStaticContent();
 		initializeDeck();
 		distubuteArmies();
-		assignTerritories();// TODO - Auto distribution of armies - set the current player phase to // //
-							// reinforcement
+		assignTerritories();// TODO - Auto distribution of armies - set the //
+							// current player phase to // // // reinforcement
+	}
+
+	public void instantiateStaticContent() {
+		this.territoriesInstantiable = territories;
+		this.playersInstantiable = players;
+	}
+
+	public Vector<RiskTerritoryModel> getTerritoriesInstantiable() {
+		return this.territoriesInstantiable;
+	}
+
+	public Vector<RiskPlayerModel> getplayersInstantiable() {
+		return this.playersInstantiable;
 	}
 
 	public Boolean anyPlayerHasArmies() {
@@ -272,9 +293,9 @@ public class RiskGameModel implements Serializable {
 	}
 
 	/**
-	 * This method checks if the TradeCardSet is valid or not i.e. if the number of
-	 * cards is 3, and then checks if all 3 are either the same or all three are of
-	 * different types or one of the three is a wild card
+	 * This method checks if the TradeCardSet is valid or not i.e. if the number
+	 * of cards is 3, and then checks if all 3 are either the same or all three
+	 * are of different types or one of the three is a wild card
 	 *
 	 * @return the boolean
 	 */
@@ -545,48 +566,49 @@ public class RiskGameModel implements Serializable {
 	 */
 	public void notifyPhaseViewChange() {
 		// System.out.println(this.getState());
+		if (!RiskGameModel.isTournamentMode) {
+			if ((this.getState() == NEW_GAME) || (this.getState() == INITIAL_REINFORCE)) // 0|1
+			{
+				RiskStartupPhaseModel objRiskStartupPhaseModel = this.getRiskStartupPhaseModelObservable();
+				objRiskStartupPhaseModel.setCurrentRiskGameObject(this);
+				this.setRiskStartupPhaseModelObservable(objRiskStartupPhaseModel);
+				this.getRiskStartupPhaseModelObservable().isChanged();
+			}
 
-		if ((this.getState() == NEW_GAME) || (this.getState() == INITIAL_REINFORCE)) // 0|1
-		{
-			RiskStartupPhaseModel objRiskStartupPhaseModel = this.getRiskStartupPhaseModelObservable();
-			objRiskStartupPhaseModel.setCurrentRiskGameObject(this);
-			this.setRiskStartupPhaseModelObservable(objRiskStartupPhaseModel);
-			this.getRiskStartupPhaseModelObservable().isChanged();
-		}
+			if (this.getState() == REINFORCE || this.getState() == START_TURN) {
+				RiskReinforcementPhaseModel objRiskReinforcementPhaseModel = this
+						.getRiskRiskReinforcementPhaseModelObservable();
+				objRiskReinforcementPhaseModel.setCurrentRiskGameObject(this);
+				this.setRiskRiskReinforcementPhaseModelObservable(objRiskReinforcementPhaseModel);
+				this.getRiskRiskReinforcementPhaseModelObservable().isChanged();
+			}
 
-		if (this.getState() == REINFORCE || this.getState() == START_TURN) {
-			RiskReinforcementPhaseModel objRiskReinforcementPhaseModel = this
-					.getRiskRiskReinforcementPhaseModelObservable();
-			objRiskReinforcementPhaseModel.setCurrentRiskGameObject(this);
-			this.setRiskRiskReinforcementPhaseModelObservable(objRiskReinforcementPhaseModel);
-			this.getRiskRiskReinforcementPhaseModelObservable().isChanged();
+			if (this.getState() == ATTACK || this.getState() == ATTACKING || this.getState() == ATTACK_PHASE
+					|| this.getState() == CAPTURE || this.getState() == DEFEATED) // 8|9|11
+			{
+				RiskAttackPhaseModel objRiskAttackPhaseModel = this.getRiskAttackPhaseModelObservable();
+				objRiskAttackPhaseModel.setCurrentRiskGameObject(this);
+				this.setRiskAttackPhaseModelObservable(objRiskAttackPhaseModel);
+				this.getRiskAttackPhaseModelObservable().isChanged();
+			}
+			if (this.getState() == FORTIFY || this.getState() == FORTIFYING || this.getState() == FORTIFY_PHASE) {
+				RiskFortifyPhaseModel objRiskFortifyPhaseModel = this.getRiskFortifyPhaseModelObservable();
+				objRiskFortifyPhaseModel.setCurrentRiskGameObject(this);
+				this.setRiskFortifyPhaseModelObservable(objRiskFortifyPhaseModel);
+				this.getRiskFortifyPhaseModelObservable().isChanged();
+				System.out.println("FORTIFY_PHASE");
+			}
+			// try {
+			if (this.mainPanel != null && this.subPanel != null) {
+				this.mainPanel.repaint();
+				this.subPanel.repaint();
+			}
+			// Thread.sleep(0);
+			// } catch (InterruptedException e) {
+			// // TODO Auto-generated catch block
+			// e.printStackTrace();
+			// }
 		}
-
-		if (this.getState() == ATTACK || this.getState() == ATTACKING || this.getState() == ATTACK_PHASE
-				|| this.getState() == CAPTURE || this.getState() == DEFEATED) // 8|9|11
-		{
-			RiskAttackPhaseModel objRiskAttackPhaseModel = this.getRiskAttackPhaseModelObservable();
-			objRiskAttackPhaseModel.setCurrentRiskGameObject(this);
-			this.setRiskAttackPhaseModelObservable(objRiskAttackPhaseModel);
-			this.getRiskAttackPhaseModelObservable().isChanged();
-		}
-		if (this.getState() == FORTIFY || this.getState() == FORTIFYING || this.getState() == FORTIFY_PHASE) {
-			RiskFortifyPhaseModel objRiskFortifyPhaseModel = this.getRiskFortifyPhaseModelObservable();
-			objRiskFortifyPhaseModel.setCurrentRiskGameObject(this);
-			this.setRiskFortifyPhaseModelObservable(objRiskFortifyPhaseModel);
-			this.getRiskFortifyPhaseModelObservable().isChanged();
-			System.out.println("FORTIFY_PHASE");
-		}
-		// try {
-		if (this.mainPanel != null && this.subPanel != null) {
-			this.mainPanel.repaint();
-			this.subPanel.repaint();
-		}
-		// Thread.sleep(0);
-		// } catch (InterruptedException e) {
-		// // TODO Auto-generated catch block
-		// e.printStackTrace();
-		// }
 	}
 
 	/**
@@ -694,7 +716,7 @@ public class RiskGameModel implements Serializable {
 			if (this.turn >= RiskTournamentModel.tournamentGameMaxTurnCount)
 				return;
 			else
-				this.turn++;
+				this.turn = RiskGameModel.gameState == RiskGameModel.INITIAL_REINFORCE ?  this.turn : this.turn + 1;
 
 		if (this.getState() == RiskGameModel.END_GAME)
 			return;
@@ -724,7 +746,8 @@ public class RiskGameModel implements Serializable {
 	}
 
 	/**
-	 * This method initializes the number of armies as per the number of players.
+	 * This method initializes the number of armies as per the number of
+	 * players.
 	 */
 	public void distubuteArmies() {
 		int numOfPlayers = players.size();
@@ -810,8 +833,8 @@ public class RiskGameModel implements Serializable {
 	}
 
 	/**
-	 * This method calculates the reinforcement from Continent as every continent
-	 * has a different control value.
+	 * This method calculates the reinforcement from Continent as every
+	 * continent has a different control value.
 	 *
 	 * @return the int
 	 */
@@ -854,7 +877,10 @@ public class RiskGameModel implements Serializable {
 	 */
 	public Boolean checkTagsPresent(String mapText) {
 		Boolean flag = ((mapText.indexOf("[Map]") != -1) && (mapText.indexOf("[Territories]") != -1)
-				&& (mapText.indexOf("[Continents]") != -1) && (mapText.indexOf(";;") != -1)); // != -1 && );
+				&& (mapText.indexOf("[Continents]") != -1) && (mapText.indexOf(";;") != -1)); // !=
+																								// -1
+																								// &&
+																								// );
 		return flag;
 	}
 
@@ -1592,7 +1618,8 @@ public class RiskGameModel implements Serializable {
 	}
 
 	/**
-	 * This method checks if the territory is occupied by the current player or not.
+	 * This method checks if the territory is occupied by the current player or
+	 * not.
 	 *
 	 * @param riskterritorymodel
 	 *            the risk territory model
