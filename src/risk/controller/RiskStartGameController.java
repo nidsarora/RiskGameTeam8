@@ -571,7 +571,7 @@ public class RiskStartGameController extends java.awt.Frame {
 			copyhmCountryDetails = (HashMap<String, String>) entry.getValue().clone();
 			LinkedCountries.clear();
 			hmCurrentCountry = entry.getValue();
-			if (CheckCountriesConnected(hmCurrentCountry)) {
+			if (CheckCountriesConnected(false, hmCurrentCountry, null)) {
 				System.out.println("all countries connected");
 				flag = true;
 			} else {
@@ -727,9 +727,13 @@ public class RiskStartGameController extends java.awt.Frame {
 		scrollTextAreaPanel.repaint();
 	}
 
-	public boolean CheckCountriesConnected(HashMap<String, String> countrylistdetials) {
+	public boolean CheckCountriesConnected(boolean isTest, HashMap<String, String> countrylistdetials,
+			HashMap<String, String> copylist) {
 
 		int i = 0;
+
+		if (isTest)
+			copyhmCountryDetails = copylist;
 
 		java.util.Iterator<Entry<String, String>> entries = countrylistdetials.entrySet().iterator();
 		while (entries.hasNext()) {
@@ -737,11 +741,11 @@ public class RiskStartGameController extends java.awt.Frame {
 
 			if (i == 0) {
 				LinkedCountries.addElement(entry.getValue().toString().split(",")[0]);
-				AddCountriesToLinkedNodeList(entry.getValue().toString());
+				AddCountriesToLinkedNodeList(isTest,entry.getValue().toString(),countrylistdetials);
 				copyhmCountryDetails.remove(entry.getKey());
 			} else {
 				if (LinkedCountries.contains(entry.getValue().toString().split(",")[0])) {
-					AddCountriesToLinkedNodeList(entry.getValue().toString());
+					AddCountriesToLinkedNodeList(isTest,entry.getValue().toString(),countrylistdetials);
 					copyhmCountryDetails.remove(entry.getKey());
 				} else
 					CheckAndAddLinkedCountry(entry.getValue().toString());
@@ -765,7 +769,11 @@ public class RiskStartGameController extends java.awt.Frame {
 		}
 	}
 
-	private void AddCountriesToLinkedNodeList(String countries) {
+	private void AddCountriesToLinkedNodeList(boolean isTest, String countries,
+			HashMap<String, String> countrydetails) {
+		if (isTest)
+			hmCurrentCountry = countrydetails;
+
 		for (int i = 4; i < countries.split(",").length; i++) {
 			if (hmCurrentCountry.containsKey(countries.split(",")[i]))
 				LinkedCountries.addElement(countries.split(",")[i]);
