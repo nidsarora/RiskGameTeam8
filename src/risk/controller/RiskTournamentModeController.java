@@ -97,11 +97,11 @@ public class RiskTournamentModeController extends java.awt.Frame {
 		JButton tournamentModeDone = new JButton("Ok");
 		tournamentModeDone.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Utility.writeLog("***********Tournament Mode begins  *************");
 				Utility.writeLog("User seleccted " + mapNum + " maps");
 				Utility.writeLog("User seleccted " + playerNum + " number of palyer strategies");
 				Utility.writeLog("User seleccted " + gameNum + " number of games");
 				Utility.writeLog("User seleccted " + maxTurns + " number of maximm turns");
+				Utility.writeLog("***********Tournament Mode begins  *************",true);
 				setVisible(false);
 				startGame();
 			}
@@ -409,7 +409,7 @@ public class RiskTournamentModeController extends java.awt.Frame {
             System.out.println("Map "+(mapIndex+1)+  " "+mapNameList.get(mapIndex));
         }
 
-		riskTournamentModel = new RiskTournamentModel(1, 2, gameplayers, maxTurns = 50, mapNameList);
+		riskTournamentModel = new RiskTournamentModel(1, 2, gameplayers, 10, mapNameList);
 
 		riskTournamentModel.initializeTournament();
 		riskTournamentModel.startTournament();

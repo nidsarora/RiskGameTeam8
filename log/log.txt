@@ -1,8 +1,1868 @@
-**************The Risk Begin************
+***********Tournament Mode begins  *************
 
-Wed Nov 29 17:44:22 EST 2017
+Maps are selected randomly 
 
-Build the Game Panel
+Map 1 BaseEarthMap.map
 
-***********Player_1 turn *************
+15 armies added to each player
+
+15 armies added to each player
+
+Game1 played on BaseEarthMap.map
+
+***********PLayer1 turn *************
+
+INITIAL REINFORCE - Some Aggressive dude called - PLayer1 placed one of his army on New_Guinea
+
+***********PLayer2 turn *************
+
+INITIAL REINFORCE - The cheater called - PLayer2 placed 'one' of his army on Madagascar
+
+***********PLayer3 turn *************
+
+INITIAL REINFORCE - Some Random dude called - PLayer3 placed one of his army on Ural
+
+***********PLayer1 turn *************
+
+INITIAL REINFORCE - Some Aggressive dude called - PLayer1 placed one of his army on New_Guinea
+
+***********PLayer2 turn *************
+
+INITIAL REINFORCE - The cheater called - PLayer2 placed 'one' of his army on Madagascar
+
+***********PLayer3 turn *************
+
+INITIAL REINFORCE - Some Random dude called - PLayer3 placed one of his army on Ural
+
+***********PLayer1 turn *************
+
+START TURN - Some Random dude called - PLayer1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 8 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 7 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 6 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 5 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 4 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 3 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 2 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 1 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 0 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - PLayer1 has option to attack.
+
+ATTACK - Some Aggressive dude called - PLayer1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - Some Cheater called - PLayer2 has started his turn.
+
+REINFORCE - Some Cheater called - PLayer2 recieved 9 armies as turn bonus.
+
+REINFORCE - Some Cheater called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_United_States army count is 8
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Kamchatka army count is 7
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Central_Africa army count is 6
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Great_Britain army count is 5
+
+REINFORCE - Some Cheater called - PLayer2 reinforced China army count is 4
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Peru army count is 3
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Peru army count is 2
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Iceland army count is 1
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Southern_Europe army count is 0
+
+REINFORCE - Some Cheater called - PLayer2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Cheater called - PLayer2 has option to attack.
+
+ATTACK - Some Cheater dude called - PLayer2 captured Alaska through Northwest_Territory
+
+ATTACK - Some Cheater dude called - PLayer2 captured Greenland through Northwest_Territory
+
+ATTACK - Some Cheater dude called - PLayer2 captured Alberta through Northwest_Territory
+
+ATTACK - Some Cheater dude called - PLayer2 captured Eastern_Canada through Ontario
+
+ATTACK - Some Cheater dude called - PLayer2 captured Western_United_States through Ontario
+
+ATTACK - Some Cheater dude called - PLayer2 captured Central_America through Eastern_United_States
+
+ATTACK - Some Cheater dude called - PLayer2 captured Venezuela through Peru
+
+ATTACK - Some Cheater dude called - PLayer2 captured Brazil through Peru
+
+ATTACK - Some Cheater dude called - PLayer2 captured Argentina through Peru
+
+ATTACK - Some Cheater dude called - PLayer2 captured Scandinavia through Iceland
+
+ATTACK - Some Cheater dude called - PLayer2 captured Northern_Europe through Great_Britain
+
+ATTACK - Some Cheater dude called - PLayer2 captured Western_Europe through Great_Britain
+
+ATTACK - Some Cheater dude called - PLayer2 captured Russia through Southern_Europe
+
+ATTACK - Some Cheater dude called - PLayer2 captured Middle_East through Southern_Europe
+
+ATTACK - Some Cheater dude called - PLayer2 captured North_Africa through Central_Africa
+
+ATTACK - Some Cheater dude called - PLayer2 captured East_Africa through Central_Africa
+
+ATTACK - Some Cheater dude called - PLayer2 captured South_Africa through Central_Africa
+
+ATTACK - Some Cheater dude called - PLayer2 captured Siberia through Yakutsk
+
+ATTACK - Some Cheater dude called - PLayer2 captured Irkutsk through Yakutsk
+
+ATTACK - Some Cheater dude called - PLayer2 captured Japan through Yakutsk
+
+ATTACK - Some Cheater dude called - PLayer2 captured Mongolia through Kamchatka
+
+ATTACK - Some Cheater dude called - PLayer2 captured Ural through China
+
+ATTACK - Some Cheater dude called - PLayer2 captured Afghanistan through China
+
+ATTACK - Some Cheater dude called - PLayer2 captured India through China
+
+ATTACK - Some Cheater dude called - PLayer2 captured Indonesia through Southeast_Asia
+
+ATTACK - Some Cheater dude called - PLayer2 captured New_Guinea through Western_Australia
+
+ATTACK - Some Cheater dude called - PLayer2 captured Eastern_Australia through Western_Australia
+
+ATTACK - Some Cheater dude called - PLayer2 is done with attack.
+
+FORTIFY - Some Cheater dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Cheater dude called - PLayer2 is done fortifying
+
+***********PLayer3 turn *************
+
+START TURN - Some Random dude called - PLayer3 has started his turn.
+
+REINFORCE - Some Random dude called - PLayer3 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Random dude called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Scandinavia army count is 3
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Irkutsk army count is 2
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Middle_East army count is 1
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Central_America army count is 0
+
+REINFORCE - Some Random dude called - PLayer3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Random dude called - PLayer3 has option to attack.
+
+ATTACK - Some Random dude called - PLayer3 has decided to attack.
+
+ATTACK - Some Random dude called - PLayer3 has warred against Western_United_States using his territory - Central_America
+
+ATTACK - Some Random dude PLayer3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+PLayer3 has lost an army
+
+PLayer3 has lost the battle
+
+ATTACK - Some Random dude called - PLayer3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Random dude called - PLayer3 has decided to Fortify.
+
+FORTIFY - Some Random dude called - PLayer3 has decided to Fortify.
+
+FORTIFY - Some Random dude called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - Some Random dude called - PLayer1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - PLayer1 recieved 5 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 4 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 3 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 2 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 1 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 0 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - PLayer1 has option to attack.
+
+ATTACK - Some Aggressive dude called - PLayer1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - Some Cheater called - PLayer2 has started his turn.
+
+TRADE CARD - Some Cheater called - PLayer2 decided to trade cards as he has 27 cards!
+
+REINFORCE - Some Cheater called - PLayer2 recieved 39 armies as turn bonus.
+
+REINFORCE - Some Cheater called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Indonesia army count is 43
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Indonesia army count is 42
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Peru army count is 41
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_Australia army count is 40
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Alberta army count is 39
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northwest_Territory army count is 38
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ontario army count is 37
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Middle_East army count is 36
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Iceland army count is 35
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Russia army count is 34
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ontario army count is 33
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_Canada army count is 32
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Peru army count is 31
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Central_Africa army count is 30
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Venezuela army count is 29
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Mongolia army count is 28
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Southeast_Asia army count is 27
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_Australia army count is 26
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Afghanistan army count is 25
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_Australia army count is 24
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Central_Africa army count is 23
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_United_States army count is 22
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Alaska army count is 21
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ural army count is 20
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Greenland army count is 19
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Alberta army count is 18
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Japan army count is 17
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Brazil army count is 16
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ural army count is 15
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Central_Africa army count is 14
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Central_Africa army count is 13
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Indonesia army count is 12
+
+REINFORCE - Some Cheater called - PLayer2 reinforced North_Africa army count is 11
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Yakutsk army count is 10
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Venezuela army count is 9
+
+REINFORCE - Some Cheater called - PLayer2 reinforced North_Africa army count is 8
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northwest_Territory army count is 7
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Argentina army count is 6
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Kamchatka army count is 5
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_Australia army count is 4
+
+REINFORCE - Some Cheater called - PLayer2 reinforced South_Africa army count is 3
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_United_States army count is 2
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_United_States army count is 1
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northwest_Territory army count is 0
+
+REINFORCE - Some Cheater called - PLayer2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Cheater called - PLayer2 has option to attack.
+
+ATTACK - Some Cheater dude called - PLayer2 captured New_Guinea through Western_Australia
+
+ATTACK - Some Cheater dude called - PLayer2 captured Egypt through Middle_East
+
+ATTACK - Some Cheater dude called - PLayer2 is done with attack.
+
+FORTIFY - Some Cheater dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Cheater dude called - PLayer2 is done fortifying
+
+***********PLayer3 turn *************
+
+START TURN - Some Random dude called - PLayer3 has started his turn.
+
+REINFORCE - Some Random dude called - PLayer3 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Random dude called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Ural army count is 3
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Ural army count is 2
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Japan army count is 1
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Japan army count is 0
+
+REINFORCE - Some Random dude called - PLayer3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Random dude called - PLayer3 has option to attack.
+
+ATTACK - Some Random dude called - PLayer3 has decided to attack.
+
+ATTACK - Some Random dude called - PLayer3 has warred against Iceland using his territory - Scandinavia
+
+ATTACK - Some Random dude PLayer3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 1
+
+Defender lost round and one army. Current army count + 3
+
+PLayer3 has destroyed an army
+
+ATTACK - Some Random dude called - PLayer3 has warred against Iceland using his territory - Scandinavia
+
+ATTACK - Some Random dude PLayer3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 1 Vs Defender 2
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+PLayer3 has lost an army
+
+PLayer3 has lost the battle
+
+ATTACK - Some Random dude called - PLayer3 has decided to attack.
+
+ATTACK - Some Random dude called - PLayer3 has warred against Russia using his territory - Ural
+
+ATTACK - Some Random dude PLayer3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 3
+
+Defender lost round and one army. Current army count + 2
+
+PLayer3 has destroyed an army
+
+ATTACK - Some Random dude called - PLayer3 has warred against Russia using his territory - Ural
+
+ATTACK - Some Random dude PLayer3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 1
+
+Defender lost round and one army. Current army count + 1
+
+PLayer3 has destroyed an army
+
+ATTACK - Some Random dude called - PLayer3 has warred against Russia using his territory - Ural
+
+ATTACK - Some Random dude PLayer3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 2
+
+PLayer3 has lost an army
+
+ATTACK - Some Random dude called - PLayer3 has warred against Russia using his territory - Ural
+
+ATTACK - Some Random dude PLayer3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+PLayer3 has lost an army
+
+PLayer3 has lost the battle
+
+ATTACK - Some Random dude called - PLayer3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Random dude called - PLayer3 has decided to Fortify.
+
+FORTIFY - Some Random dude called - PLayer3 has decided to Fortify.
+
+FORTIFY - Some Random dude called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - Some Random dude called - PLayer1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - PLayer1 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 3 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 2 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 1 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 0 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - PLayer1 has option to attack.
+
+ATTACK - Some Aggressive dude called - PLayer1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - Some Cheater called - PLayer2 has started his turn.
+
+TRADE CARD - Some Cheater called - PLayer2 decided to trade cards as he has 28 cards!
+
+REINFORCE - Some Cheater called - PLayer2 recieved 42 armies as turn bonus.
+
+REINFORCE - Some Cheater called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northwest_Territory army count is 51
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_Europe army count is 50
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northwest_Territory army count is 49
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Egypt army count is 48
+
+REINFORCE - Some Cheater called - PLayer2 reinforced China army count is 47
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_Australia army count is 46
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Peru army count is 45
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Alberta army count is 44
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_Australia army count is 43
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Great_Britain army count is 42
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Afghanistan army count is 41
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Central_Africa army count is 40
+
+REINFORCE - Some Cheater called - PLayer2 reinforced China army count is 39
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Peru army count is 38
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ontario army count is 37
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Alberta army count is 36
+
+REINFORCE - Some Cheater called - PLayer2 reinforced China army count is 35
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Kamchatka army count is 34
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northwest_Territory army count is 33
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Iceland army count is 32
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Central_America army count is 31
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Irkutsk army count is 30
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Central_Africa army count is 29
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Argentina army count is 28
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Southern_Europe army count is 27
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Alaska army count is 26
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Madagascar army count is 25
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Argentina army count is 24
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ontario army count is 23
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_United_States army count is 22
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Southeast_Asia army count is 21
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Argentina army count is 20
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Peru army count is 19
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Yakutsk army count is 18
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Central_Africa army count is 17
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northern_Europe army count is 16
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northwest_Territory army count is 15
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Irkutsk army count is 14
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Venezuela army count is 13
+
+REINFORCE - Some Cheater called - PLayer2 reinforced China army count is 12
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ontario army count is 11
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Egypt army count is 10
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ural army count is 9
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Kamchatka army count is 8
+
+REINFORCE - Some Cheater called - PLayer2 reinforced North_Africa army count is 7
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ural army count is 6
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Greenland army count is 5
+
+REINFORCE - Some Cheater called - PLayer2 reinforced China army count is 4
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_Europe army count is 3
+
+REINFORCE - Some Cheater called - PLayer2 reinforced New_Guinea army count is 3
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Kamchatka army count is 2
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_Australia army count is 1
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_Australia army count is 0
+
+REINFORCE - Some Cheater called - PLayer2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Cheater called - PLayer2 has option to attack.
+
+ATTACK - Some Cheater dude called - PLayer2 captured New_Guinea through Western_Australia
+
+ATTACK - Some Cheater dude called - PLayer2 is done with attack.
+
+FORTIFY - Some Cheater dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Cheater dude called - PLayer2 is done fortifying
+
+***********PLayer3 turn *************
+
+START TURN - Some Random dude called - PLayer3 has started his turn.
+
+REINFORCE - Some Random dude called - PLayer3 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Random dude called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Middle_East army count is 3
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Eastern_Canada army count is 2
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Eastern_Canada army count is 1
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Middle_East army count is 0
+
+REINFORCE - Some Random dude called - PLayer3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Random dude called - PLayer3 has option to attack.
+
+ATTACK - Some Random dude called - PLayer3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Random dude called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - Some Random dude called - PLayer1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - PLayer1 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 3 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 2 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 1 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 0 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - PLayer1 has option to attack.
+
+ATTACK - Some Aggressive dude called - PLayer1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+Game2 played on BaseEarthMap.map
+
+***********PLayer1 turn *************
+
+START TURN - Some Random dude called - PLayer1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - PLayer1 recieved 5 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 4 and territory army count is 81
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 3 and territory army count is 82
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 2 and territory army count is 83
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 1 and territory army count is 84
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 0 and territory army count is 85
+
+REINFORCE - Some Aggressive dude called - PLayer1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - PLayer1 has option to attack.
+
+ATTACK - Some Aggressive dude called - PLayer1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Indonesia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 3 defence is with 2dies.
+
+Round 1 - Attacker - 5 Vs Defender 4
+
+Defender lost round and one army. Current army count + 9
+
+Round 2 - Attacker - 4 Vs Defender 1
+
+Defender lost round and one army. Current army count + 9
+
+PLayer1 has destroyed two armies
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Indonesia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 3
+
+Defender lost round and one army. Current army count + 7
+
+PLayer1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Indonesia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 3
+
+Attacker lost round and one army. Current army count + 84
+
+PLayer1 has lost an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Indonesia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 2 defence is with 2dies.
+
+Round 1 - Attacker - 3 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 83
+
+Round 2 - Attacker - 1 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 83
+
+PLayer1 has lost two armies
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Indonesia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 81
+
+PLayer1 has lost an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Indonesia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 80
+
+PLayer1 has lost an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Indonesia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 3 defence is with 2dies.
+
+Round 1 - Attacker - 6 Vs Defender 5
+
+Defender lost round and one army. Current army count + 6
+
+Round 2 - Attacker - 3 Vs Defender 1
+
+Defender lost round and one army. Current army count + 6
+
+PLayer1 has destroyed two armies
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Indonesia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 2
+
+Defender lost round and one army. Current army count + 4
+
+PLayer1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Indonesia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 2 defence is with 2dies.
+
+Round 1 - Attacker - 5 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 79
+
+Round 2 - Attacker - 4 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 79
+
+PLayer1 has lost two armies
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Indonesia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 77
+
+PLayer1 has lost an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Indonesia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 2 defence is with 2dies.
+
+Round 1 - Attacker - 6 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 76
+
+Round 2 - Attacker - 1 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 76
+
+PLayer1 has lost two armies
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Indonesia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 5
+
+Defender lost round and one army. Current army count + 3
+
+PLayer1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Indonesia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 3 defence is with 2dies.
+
+Round 1 - Attacker - 6 Vs Defender 4
+
+Defender lost round and one army. Current army count + 2
+
+Round 2 - Attacker - 4 Vs Defender 2
+
+Defender lost round and one army. Current army count + 2
+
+PLayer1 has destroyed two armies
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Indonesia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 3
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+PLayer1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - PLayer1 moved 7 armies from New_Guinea to Indonesia
+
+ATTACK - Some Aggressive dude called - PLayer1 has decided to attack.
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 67
+
+PLayer1 has lost an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 66
+
+PLayer1 has lost an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 2
+
+Defender lost round and one army. Current army count + 8
+
+PLayer1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 4
+
+Defender lost round and one army. Current army count + 7
+
+PLayer1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 2
+
+Defender lost round and one army. Current army count + 6
+
+PLayer1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 3
+
+Defender lost round and one army. Current army count + 5
+
+PLayer1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 3 defence is with 2dies.
+
+Round 1 - Attacker - 5 Vs Defender 2
+
+Defender lost round and one army. Current army count + 4
+
+Round 2 - Attacker - 4 Vs Defender 1
+
+Defender lost round and one army. Current army count + 4
+
+PLayer1 has destroyed two armies
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 65
+
+PLayer1 has lost an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 2 defence is with 2dies.
+
+Round 1 - Attacker - 6 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 64
+
+Round 2 - Attacker - 1 Vs Defender 2
+
+Attacker lost round and one army. Current army count + 64
+
+PLayer1 has lost two armies
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 62
+
+PLayer1 has lost an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 61
+
+PLayer1 has lost an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 3 defence is with 2dies.
+
+Round 1 - Attacker - 4 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 60
+
+Round 2 - Attacker - 3 Vs Defender 5
+
+Attacker lost round and one army. Current army count + 60
+
+PLayer1 has lost two armies
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 58
+
+PLayer1 has lost an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 3 Vs Defender 1
+
+Defender lost round and one army. Current army count + 2
+
+PLayer1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 3 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 4
+
+Defender lost round and one army. Current army count + 1
+
+PLayer1 has destroyed an army
+
+ATTACK - Some Aggressive dude called - PLayer1 has warred against Western_Australia using his territory - New_Guinea
+
+ATTACK - Some Aggressive dude PLayer1 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 3
+
+Defender lost round and one army. Current army count + 0
+
+Defender Lost!!
+
+PLayer1 has destroyed an army
+
+CAPTURE - Some Aggressive dude called - PLayer1 moved 57 armies from New_Guinea to Western_Australia
+
+ATTACK - Some Aggressive dude called - PLayer1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - PLayer1 fortified Western_Australia through Indonesia by 6 armie(s). And Strongest Teeritory Army count is now -63
+
+FORTIFY - Some Aggressive dude called - PLayer1 fortified Western_Australia through Indonesia by 0 armie(s). And Strongest Teeritory Army count is now -63
+
+FORTIFY - Some Aggressive dude called - PLayer1 fortified Western_Australia through New_Guinea by 0 armie(s). And Strongest Teeritory Army count is now -63
+
+FORTIFY - Some Aggressive dude called - PLayer1 fortified Western_Australia through New_Guinea by 0 armie(s). And Strongest Teeritory Army count is now -63
+
+FORTIFY - Some Aggressive dude called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - Some Cheater called - PLayer2 has started his turn.
+
+TRADE CARD - Some Cheater called - PLayer2 decided to trade cards as he has 11 cards!
+
+REINFORCE - Some Cheater called - PLayer2 recieved 40 armies as turn bonus.
+
+REINFORCE - Some Cheater called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Southeast_Asia army count is 54
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Scandinavia army count is 53
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Madagascar army count is 52
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_Canada army count is 51
+
+REINFORCE - Some Cheater called - PLayer2 reinforced East_Africa army count is 50
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Central_Africa army count is 49
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northwest_Territory army count is 48
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Argentina army count is 47
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Kamchatka army count is 46
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Russia army count is 45
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Iceland army count is 44
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_Australia army count is 43
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Madagascar army count is 42
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_Australia army count is 41
+
+REINFORCE - Some Cheater called - PLayer2 reinforced North_Africa army count is 40
+
+REINFORCE - Some Cheater called - PLayer2 reinforced China army count is 39
+
+REINFORCE - Some Cheater called - PLayer2 reinforced New_Guinea army count is 39
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northwest_Territory army count is 38
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Venezuela army count is 37
+
+REINFORCE - Some Cheater called - PLayer2 reinforced North_Africa army count is 36
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northern_Europe army count is 35
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_United_States army count is 34
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northern_Europe army count is 33
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Peru army count is 32
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Southeast_Asia army count is 31
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Russia army count is 30
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_Canada army count is 29
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northwest_Territory army count is 28
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_United_States army count is 27
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Irkutsk army count is 26
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northern_Europe army count is 25
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ural army count is 24
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Brazil army count is 23
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Scandinavia army count is 22
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Southern_Europe army count is 21
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ontario army count is 20
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Kamchatka army count is 19
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northwest_Territory army count is 18
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Kamchatka army count is 17
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Great_Britain army count is 16
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Southeast_Asia army count is 15
+
+REINFORCE - Some Cheater called - PLayer2 reinforced India army count is 14
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Egypt army count is 13
+
+REINFORCE - Some Cheater called - PLayer2 reinforced South_Africa army count is 12
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Central_Africa army count is 11
+
+REINFORCE - Some Cheater called - PLayer2 reinforced New_Guinea army count is 11
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Japan army count is 10
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Kamchatka army count is 9
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_United_States army count is 8
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Venezuela army count is 7
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_United_States army count is 6
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Mongolia army count is 5
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Argentina army count is 4
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Egypt army count is 3
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Egypt army count is 2
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Yakutsk army count is 1
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Alaska army count is 0
+
+REINFORCE - Some Cheater called - PLayer2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Cheater called - PLayer2 has option to attack.
+
+ATTACK - Some Cheater dude called - PLayer2 captured Indonesia through Southeast_Asia
+
+ATTACK - Some Cheater dude called - PLayer2 captured New_Guinea through Western_Australia
+
+ATTACK - Some Cheater dude called - PLayer2 captured Western_Australia through New_Guinea
+
+ATTACK - Some Cheater dude called - PLayer2 is done with attack.
+
+FORTIFY - Some Cheater dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Cheater dude called - PLayer2 is done fortifying
+
+***********PLayer3 turn *************
+
+START TURN - Some Random dude called - PLayer3 has started his turn.
+
+REINFORCE - Some Random dude called - PLayer3 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Random dude called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Eastern_Canada army count is 3
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Irkutsk army count is 2
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Brazil army count is 1
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Northern_Europe army count is 0
+
+REINFORCE - Some Random dude called - PLayer3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Random dude called - PLayer3 has option to attack.
+
+ATTACK - Some Random dude called - PLayer3 has decided to attack.
+
+ATTACK - Some Random dude called - PLayer3 has warred against Greenland using his territory - Eastern_Canada
+
+ATTACK - Some Random dude PLayer3 attack results as follows!!
+
+ATTACK is with 3 defence is with 2dies.
+
+Round 1 - Attacker - 6 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 3
+
+Round 2 - Attacker - 5 Vs Defender 3
+
+Defender lost round and one army. Current army count + 14
+
+PLayer3 has destroyed an army
+
+ATTACK - Some Random dude called - PLayer3 has warred against Greenland using his territory - Eastern_Canada
+
+ATTACK - Some Random dude PLayer3 attack results as follows!!
+
+ATTACK is with 2 defence is with 1dies.
+
+Round 1 - Attacker - 6 Vs Defender 1
+
+Defender lost round and one army. Current army count + 12
+
+PLayer3 has destroyed an army
+
+ATTACK - Some Random dude called - PLayer3 has warred against Greenland using his territory - Eastern_Canada
+
+ATTACK - Some Random dude PLayer3 attack results as follows!!
+
+ATTACK is with 2 defence is with 2dies.
+
+Round 1 - Attacker - 6 Vs Defender 4
+
+Defender lost round and one army. Current army count + 11
+
+Round 2 - Attacker - 5 Vs Defender 1
+
+Defender lost round and one army. Current army count + 11
+
+PLayer3 has destroyed two armies
+
+ATTACK - Some Random dude called - PLayer3 has warred against Greenland using his territory - Eastern_Canada
+
+ATTACK - Some Random dude PLayer3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 2
+
+PLayer3 has lost an army
+
+ATTACK - Some Random dude called - PLayer3 has warred against Greenland using his territory - Eastern_Canada
+
+ATTACK - Some Random dude PLayer3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 2 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+PLayer3 has lost an army
+
+PLayer3 has lost the battle
+
+ATTACK - Some Random dude called - PLayer3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Random dude called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - Some Random dude called - PLayer1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - PLayer1 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 3 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 2 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 1 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 0 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - PLayer1 has option to attack.
+
+ATTACK - Some Aggressive dude called - PLayer1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - Some Cheater called - PLayer2 has started his turn.
+
+TRADE CARD - Some Cheater called - PLayer2 decided to trade cards as he has 12 cards!
+
+REINFORCE - Some Cheater called - PLayer2 recieved 42 armies as turn bonus.
+
+REINFORCE - Some Cheater called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northwest_Territory army count is 61
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Southeast_Asia army count is 60
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Argentina army count is 59
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Central_Africa army count is 58
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Yakutsk army count is 57
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Siberia army count is 56
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_Australia army count is 55
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_Europe army count is 54
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Iceland army count is 53
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Southern_Europe army count is 52
+
+REINFORCE - Some Cheater called - PLayer2 reinforced East_Africa army count is 51
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Southern_Europe army count is 50
+
+REINFORCE - Some Cheater called - PLayer2 reinforced China army count is 49
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Greenland army count is 48
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Middle_East army count is 47
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Kamchatka army count is 46
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Central_Africa army count is 45
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Yakutsk army count is 44
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ontario army count is 43
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Southeast_Asia army count is 42
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Alaska army count is 41
+
+REINFORCE - Some Cheater called - PLayer2 reinforced China army count is 40
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northwest_Territory army count is 39
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Mongolia army count is 38
+
+REINFORCE - Some Cheater called - PLayer2 reinforced South_Africa army count is 37
+
+REINFORCE - Some Cheater called - PLayer2 reinforced East_Africa army count is 36
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Siberia army count is 35
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Southeast_Asia army count is 34
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Peru army count is 33
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_Australia army count is 32
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ural army count is 31
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Kamchatka army count is 30
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Madagascar army count is 29
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Japan army count is 28
+
+REINFORCE - Some Cheater called - PLayer2 reinforced New_Guinea army count is 28
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Central_Africa army count is 27
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Yakutsk army count is 26
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Mongolia army count is 25
+
+REINFORCE - Some Cheater called - PLayer2 reinforced India army count is 24
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Afghanistan army count is 23
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Yakutsk army count is 22
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_Canada army count is 21
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Southeast_Asia army count is 20
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northern_Europe army count is 19
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_Australia army count is 18
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ural army count is 17
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Iceland army count is 16
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ontario army count is 15
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_United_States army count is 14
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ontario army count is 13
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Argentina army count is 12
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Russia army count is 11
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Argentina army count is 10
+
+REINFORCE - Some Cheater called - PLayer2 reinforced New_Guinea army count is 10
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_Europe army count is 9
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Yakutsk army count is 8
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Kamchatka army count is 7
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_Australia army count is 6
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Alberta army count is 5
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Kamchatka army count is 4
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ontario army count is 3
+
+REINFORCE - Some Cheater called - PLayer2 reinforced India army count is 2
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northern_Europe army count is 1
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Middle_East army count is 0
+
+REINFORCE - Some Cheater called - PLayer2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Cheater called - PLayer2 has option to attack.
+
+ATTACK - Some Cheater dude called - PLayer2 captured New_Guinea through Western_Australia
+
+ATTACK - Some Cheater dude called - PLayer2 is done with attack.
+
+FORTIFY - Some Cheater dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Cheater dude called - PLayer2 is done fortifying
+
+***********PLayer3 turn *************
+
+START TURN - Some Random dude called - PLayer3 has started his turn.
+
+REINFORCE - Some Random dude called - PLayer3 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Random dude called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Greenland army count is 3
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Indonesia army count is 2
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Eastern_Australia army count is 1
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Central_America army count is 0
+
+REINFORCE - Some Random dude called - PLayer3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Random dude called - PLayer3 has option to attack.
+
+ATTACK - Some Random dude called - PLayer3 has decided to attack.
+
+ATTACK - Some Random dude called - PLayer3 has warred against Northwest_Territory using his territory - Greenland
+
+ATTACK - Some Random dude PLayer3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 1 Vs Defender 3
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+PLayer3 has lost an army
+
+PLayer3 has lost the battle
+
+ATTACK - Some Random dude called - PLayer3 has decided to attack.
+
+ATTACK - Some Random dude called - PLayer3 has warred against Western_United_States using his territory - Central_America
+
+ATTACK - Some Random dude PLayer3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 4 Vs Defender 4
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+PLayer3 has lost an army
+
+PLayer3 has lost the battle
+
+ATTACK - Some Random dude called - PLayer3 has decided to attack.
+
+ATTACK - Some Random dude called - PLayer3 has warred against Venezuela using his territory - Brazil
+
+ATTACK - Some Random dude PLayer3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 5 Vs Defender 1
+
+Defender lost round and one army. Current army count + 39
+
+PLayer3 has destroyed an army
+
+ATTACK - Some Random dude called - PLayer3 has warred against Venezuela using his territory - Brazil
+
+ATTACK - Some Random dude PLayer3 attack results as follows!!
+
+ATTACK is with 1 defence is with 1dies.
+
+Round 1 - Attacker - 1 Vs Defender 6
+
+Attacker lost round and one army. Current army count + 1
+
+Attacker Lost!!
+
+PLayer3 has lost an army
+
+PLayer3 has lost the battle
+
+ATTACK - Some Random dude called - PLayer3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Random dude called - PLayer3 has decided to Fortify.
+
+FORTIFY - Some Random dude called - PLayer3 has decided to Fortify.
+
+FORTIFY - Some Random dude called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - Some Random dude called - PLayer1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - PLayer1 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 3 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 2 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 1 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 0 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - PLayer1 has option to attack.
+
+ATTACK - Some Aggressive dude called - PLayer1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - Some Cheater called - PLayer2 has started his turn.
+
+TRADE CARD - Some Cheater called - PLayer2 decided to trade cards as he has 2 cards!
+
+REINFORCE - Some Cheater called - PLayer2 recieved 42 armies as turn bonus.
+
+REINFORCE - Some Cheater called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Irkutsk army count is 66
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northern_Europe army count is 65
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_United_States army count is 64
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Madagascar army count is 63
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Japan army count is 62
+
+REINFORCE - Some Cheater called - PLayer2 reinforced India army count is 61
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Indonesia army count is 60
+
+REINFORCE - Some Cheater called - PLayer2 reinforced China army count is 59
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Southern_Europe army count is 58
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northern_Europe army count is 57
+
+REINFORCE - Some Cheater called - PLayer2 reinforced South_Africa army count is 56
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Brazil army count is 55
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Afghanistan army count is 54
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northern_Europe army count is 53
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Alaska army count is 52
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Alaska army count is 51
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_United_States army count is 50
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Great_Britain army count is 49
+
+REINFORCE - Some Cheater called - PLayer2 reinforced North_Africa army count is 48
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Peru army count is 47
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ural army count is 46
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Central_Africa army count is 45
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Middle_East army count is 44
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Alaska army count is 43
+
+REINFORCE - Some Cheater called - PLayer2 reinforced China army count is 42
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Alberta army count is 41
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Siberia army count is 40
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Yakutsk army count is 39
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Afghanistan army count is 38
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_Europe army count is 37
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Greenland army count is 36
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Greenland army count is 35
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Peru army count is 34
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Brazil army count is 33
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Egypt army count is 32
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_Europe army count is 31
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ural army count is 30
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Brazil army count is 29
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Iceland army count is 28
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Middle_East army count is 27
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_United_States army count is 26
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Argentina army count is 25
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Alaska army count is 24
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Southeast_Asia army count is 23
+
+REINFORCE - Some Cheater called - PLayer2 reinforced North_Africa army count is 22
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Siberia army count is 21
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Alaska army count is 20
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_United_States army count is 19
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Mongolia army count is 18
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Middle_East army count is 17
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Scandinavia army count is 16
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Argentina army count is 15
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Ontario army count is 14
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Greenland army count is 13
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Alberta army count is 12
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Peru army count is 11
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Western_United_States army count is 10
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Brazil army count is 9
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Northwest_Territory army count is 8
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Alberta army count is 7
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Eastern_United_States army count is 6
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Central_America army count is 5
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Greenland army count is 4
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Southern_Europe army count is 3
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Madagascar army count is 2
+
+REINFORCE - Some Cheater called - PLayer2 reinforced India army count is 1
+
+REINFORCE - Some Cheater called - PLayer2 reinforced Madagascar army count is 0
+
+REINFORCE - Some Cheater called - PLayer2 is done with reinforcement and his army count is 0
+
+ATTACK - Some Cheater called - PLayer2 has option to attack.
+
+ATTACK - Some Cheater dude called - PLayer2 captured New_Guinea through Western_Australia
+
+ATTACK - Some Cheater dude called - PLayer2 is done with attack.
+
+FORTIFY - Some Cheater dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Some Cheater dude called - PLayer2 is done fortifying
+
+***********PLayer3 turn *************
+
+START TURN - Some Random dude called - PLayer3 has started his turn.
+
+REINFORCE - Some Random dude called - PLayer3 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Random dude called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Indonesia army count is 3
+
+REINFORCE - Some Random dude called - PLayer3 reinforced East_Africa army count is 2
+
+REINFORCE - Some Random dude called - PLayer3 reinforced Greenland army count is 1
+
+REINFORCE - Some Random dude called - PLayer3 reinforced North_Africa army count is 0
+
+REINFORCE - Some Random dude called - PLayer3 is done with reinforcement and his army count is 0
+
+ATTACK - Some Random dude called - PLayer3 has option to attack.
+
+ATTACK - Some Random dude called - PLayer3 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Some Random dude called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - Some Random dude called - PLayer1 has started his turn.
+
+REINFORCE - Some Aggressive dude called - PLayer1 recieved 4 armies as turn bonus.
+
+REINFORCE - Some Aggressive dude called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 3 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 2 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 1 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 reinforced New_Guinea army count is 0 and territory army count is 1
+
+REINFORCE - Some Aggressive dude called - PLayer1 is done with reinforcement and his army count is 0
+
+ATTACK - Some Aggressive dude called - PLayer1 has option to attack.
+
+ATTACK - Some Aggressive dude called - PLayer1 could not attack/is done with attack/decided not to attack.
+
+FORTIFY - Some Aggressive dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Some Aggressive dude called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+********Tournament Results*******
+
+  Game 1 Game 2 
+BaseEarthMap.map Draw Draw 
+
 

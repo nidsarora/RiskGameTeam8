@@ -7,9 +7,9 @@
 	<classpathentry kind="lib" path="lib/swing-worker-1.1.jar"/>
 	<classpathentry kind="lib" path="lib/javax.xml.parsers-1_1.jar"/>
 	<classpathentry kind="lib" path="lib/w3c-dom.jar"/>
-	<classpathentry kind="lib" path="lib/poi-3.5-FINAL-sources.jar"/>
 	<classpathentry kind="lib" path="lib/poi-3.9.jar"/>
 	<classpathentry kind="lib" path="lib/poi-ooxml-3.5-beta5.jar"/>
+	<classpathentry kind="lib" path="lib/xmlbeans.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

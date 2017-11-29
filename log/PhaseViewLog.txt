@@ -1,19 +1,2 @@
 **************The Risk Begin************
 
-
-*********************** Reinforcement Phase *************************
-Player: Player_1
-Getting additional armies, that you may allocate among your territories.
-No. of armies you get :
-       -1 army per 3 territories, rounded down, minimum of 3.
-       -For complete continent
-       -set of Risk Cards cashed in.
-Statistics:
-
-The startup phase ends.
-15 armies have been placed.
-Player: Player_1 recieved 4 armies as bonus from Continentsand Territories.
-Player Player_1 recieved 0 armies from tading cards.
-Player army count:3
-
-
