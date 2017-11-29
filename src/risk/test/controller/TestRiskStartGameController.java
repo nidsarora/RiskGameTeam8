@@ -94,4 +94,14 @@ public class TestRiskStartGameController {
 	   assertEquals(3,index);//This method sends the begin index for the new cut-shorted string for the next recursive search.
 	   
    }
+	@Test
+	public void testCheckCountriesNotConnected() {
+		HashMap<String, String> countries = new HashMap<String, String>();
+		countries.put("aa", "aa,100,100,india,cc");
+		countries.put("bb", "bb,100,100,india,ff");
+		countries.put("cc", "cc,100,100,india,aa");
+
+		HashMap<String,String> copylist = (HashMap<String, String>) countries.clone();
+		assertEquals(false, riskstartgamecontroller.CheckCountriesConnected(true,countries,copylist));
+	}
 }
