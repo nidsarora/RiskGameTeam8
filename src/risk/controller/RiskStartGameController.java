@@ -750,9 +750,9 @@ public class RiskStartGameController extends java.awt.Frame {
 		}
 
 		if (copyhmCountryDetails.isEmpty())
-			return false;
+			return true;
 
-		return true;
+		return false;
 	}
 
 	private void CheckAndAddLinkedCountry(String countryDetail) {
