@@ -201,7 +201,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 		statusLabel.setFont(resourceMap.getFont("statusLabel.font")); // NOI18N
 		statusLabel.setForeground(resourceMap.getColor("statusLabel.foreground")); // NOI18N
-		statusLabel.setText("New Game"); // NOI18N
+		statusLabel.setText("Reinforce"); // NOI18N
 		statusLabel.setName("statusLabel"); // NOI18N
 		jPanel3.add(statusLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 63, 427, -1));
 
@@ -498,95 +498,101 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			int defenseArmies = risk.defenseTerritory.getArmies();
 			int attackArmies = risk.aTerritory.getArmies();
 
-			// if (Integer.valueOf(risk.gamePhaseActive(x_coordinate, y_coordinate)) > 0) {
-			// if (defenseArmies - risk.defenseTerritory.getArmies() == 1) {
-			// statusLabel.setText(risk.curPlayer.getName() + " has destroyed an army");
-			// // Utility.writeLog(risk.curPlayer.getName() + " has destroyed an army");
-			// } else if (defenseArmies - risk.defenseTerritory.getArmies() == 2) {
-			// statusLabel.setText(risk.curPlayer.getName() + " has destroyed two armies");
-			// // Utility.writeLog(risk.curPlayer.getName() + " has destroyed two armies");
-			// } else if (attackArmies - risk.aTerritory.getArmies() == 1) {
-			// statusLabel.setText(risk.curPlayer.getName() + " has lost an army");
-			// // Utility.writeLog(risk.curPlayer.getName() + " has lost an army");
-			// } else if (attackArmies - risk.aTerritory.getArmies() == 2) {
-			// statusLabel.setText(risk.curPlayer.getName() + " has lost two armies");
-			// // Utility.writeLog(risk.curPlayer.getName() + " has lost two armies");
-			// }
-			risk.gamePhaseActive(x_coordinate, y_coordinate);
-			if (risk.aTerritory.getArmies() == 1) {
-				risk.setState(RiskGameModel.ACTIVE_TURN);
-				statusLabel.setText(risk.curPlayer.getName() + " has lost the battle");
-				AttackButton.setText("Attack");
-				FortifyButton.setVisible(true);
-				EndButton.setVisible(true);
-				risk.defenseNum = 0;
-				risk.attackNum = 0;
-				risk.defenseTerritory = null;
-				risk.aTerritory = null;
-			}
-			// }
-		} // End attackPhase
-
-		if (risk.getState() == RiskGameModel.DEFEATED) {
-			setState(RiskGameModel.ACTIVE_TURN);
-		}
-
-		if (risk.getState() == RiskGameModel.CAPTURE) {
-
-			statusLabel.setText("Select number of armies to move to " + risk.defenseTerritory.getName());
-			AttackButton.setVisible(false);
-			AttackButton.setText("Attack");
-
-			statusLabel.setText(risk.gamePhaseActive(x_coordinate, y_coordinate));
-			if (risk.xCoordinate > 460 && risk.xCoordinate < 545) {// move has ben
-				// clicked
-				if (risk.yCoordinate > 325 && risk.yCoordinate < 355) {// then occupy
-					EndButton.setVisible(true);
+			if (Integer.valueOf(risk.gamePhaseActive(x_coordinate, y_coordinate)) > 0) {
+				if (defenseArmies - risk.defenseTerritory.getArmies() == 1) {
+					statusLabel.setText(risk.curPlayer.getName() + " has destroyed an army");
+					// Utility.writeLog(risk.curPlayer.getName() + " has
+					// destroyed an army");
+				} else if (defenseArmies - risk.defenseTerritory.getArmies() == 2) {
+					statusLabel.setText(risk.curPlayer.getName() + " has destroyed two armies");
+					// Utility.writeLog(risk.curPlayer.getName() + " has
+					// destroyed two armies");
+				} else if (attackArmies - risk.aTerritory.getArmies() == 1) {
+					statusLabel.setText(risk.curPlayer.getName() + " has lost an army");
+					// Utility.writeLog(risk.curPlayer.getName() + " has lost an
+					// army");
+				} else if (attackArmies - risk.aTerritory.getArmies() == 2) {
+					statusLabel.setText(risk.curPlayer.getName() + " has lost two armies");
+					// Utility.writeLog(risk.curPlayer.getName() + " has lost
+					// two armies");
+				}
+				if (risk.aTerritory.getArmies() == 1) {
+					risk.setState(RiskGameModel.ACTIVE_TURN);
+					statusLabel.setText(risk.curPlayer.getName() + " has lost the battle");
+					AttackButton.setText("Attack");
 					FortifyButton.setVisible(true);
-					if (risk.capture()) {
-						AttackButton.setVisible(false);
-						FortifyButton.setVisible(false);
-						statusLabel.setText(risk.getCurrentPlayer().getName() + " has won the game");
-						CardButton.setVisible(false);
-						EndButton.setVisible(false);
-						JOptionPane.showMessageDialog(null, risk.getCurrentPlayer().getName() + " has won the game",
-								"Alert", JOptionPane.INFORMATION_MESSAGE);
+					EndButton.setVisible(true);
+					risk.defenseNum = 0;
+					risk.attackNum = 0;
+					risk.defenseTerritory = null;
+					risk.aTerritory = null;
+				}
+				// }
+			} // End attackPhase
+		}
+			if (risk.getState() == RiskGameModel.DEFEATED) {
+				setState(RiskGameModel.ACTIVE_TURN);
+			}
+
+			if (risk.getState() == RiskGameModel.CAPTURE) {
+
+				statusLabel.setText("Select number of armies to move to " + risk.defenseTerritory.getName());
+				AttackButton.setVisible(false);
+				AttackButton.setText("Attack");
+
+				statusLabel.setText(risk.gamePhaseActive(x_coordinate, y_coordinate));
+				if (risk.xCoordinate > 460 && risk.xCoordinate < 545) {// move
+																		// has
+																		// ben
+					// clicked
+					if (risk.yCoordinate > 325 && risk.yCoordinate < 355) {// then
+																			// occupy
+						EndButton.setVisible(true);
+						FortifyButton.setVisible(true);
+						if (risk.capture()) {
+							AttackButton.setVisible(false);
+							FortifyButton.setVisible(false);
+							statusLabel.setText(risk.getCurrentPlayer().getName() + " has won the game");
+							CardButton.setVisible(false);
+							EndButton.setVisible(false);
+							JOptionPane.showMessageDialog(null, risk.getCurrentPlayer().getName() + " has won the game",
+									"Alert", JOptionPane.INFORMATION_MESSAGE);
+						}
 					}
 				}
 			}
-		}
 
-		if (risk.getState() == RiskGameModel.FORTIFY) {
-			risk.gamePhaseActive(x_coordinate, y_coordinate);
-			statusLabel.setText("Select a country to move armies too");
+			if (risk.getState() == RiskGameModel.FORTIFY) {
+				risk.gamePhaseActive(x_coordinate, y_coordinate);
+				statusLabel.setText("Select a country to move armies too");
 
-		}
+			}
 
-		if (risk.getState() == RiskGameModel.FORTIFYING) {
-			risk.gamePhaseActive(x_coordinate, y_coordinate);
-		}
+			if (risk.getState() == RiskGameModel.FORTIFYING) {
+				risk.gamePhaseActive(x_coordinate, y_coordinate);
+			}
 
-		if (risk.getState() == RiskGameModel.FORTIFY_PHASE) {
-			statusLabel.setText(risk.gamePhaseActive(x_coordinate, y_coordinate));
-			if (risk.xCoordinate > 460 && risk.xCoordinate < 545) {
-				if (risk.yCoordinate > 325 && risk.yCoordinate < 355) {
-					AttackButton.setVisible(false);
-					EndButton.setVisible(true);
-					FortifyButton.setVisible(false);
+			if (risk.getState() == RiskGameModel.FORTIFY_PHASE) {
+				statusLabel.setText(risk.gamePhaseActive(x_coordinate, y_coordinate));
+				if (risk.xCoordinate > 460 && risk.xCoordinate < 545) {
+					if (risk.yCoordinate > 325 && risk.yCoordinate < 355) {
+						AttackButton.setVisible(false);
+						EndButton.setVisible(true);
+						FortifyButton.setVisible(false);
+					}
 				}
 			}
+
+			if (risk.getState() == RiskGameModel.TRADE_CARDS) {
+				statusLabel.setText("You have to trade your cards to proceed!!!");
+			} // end trade cards
+
+			System.out.println("(" + x_coordinate + ", " + y_coordinate + ")");
+
+			jPanel1.repaint();
+			jPanel3.repaint();
 		}
-
-		if (risk.getState() == RiskGameModel.TRADE_CARDS) {
-			statusLabel.setText("You have to trade your cards to proceed!!!");
-		} // end trade cards
-
-		System.out.println("(" + x_coordinate + ", " + y_coordinate + ")");
-
-		jPanel1.repaint();
-		jPanel3.repaint();
-
-	}
+	
 
 	/**
 	 * Generate card panel.
@@ -662,6 +668,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			public void actionPerformed(ActionEvent e) {
 				cardsOKButtonPressed();
 			}
+
 		});
 	}
 
@@ -915,7 +922,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					if (risk.defenseNum == 1)
 						statusLabel.setText("1 army moved to " + risk.defenseTerritory.getName());
 					else
-						// statusLabel.setText(risk.defenseNum + " armies moved to " +
+						// statusLabel.setText(risk.defenseNum + " armies moved
+						// to " +
 						// risk.dTerritory.getName());
 
 						risk.notifyPhaseViewChange();
@@ -938,7 +946,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	private JFrame jfmCard;
 	private JPanel jp, statusPanel;
 	private int countTradeCards = 0;
-	// private List<RiskCardModel> lstTradedCards = new ArrayList<RiskCardModel>();
+	// private List<RiskCardModel> lstTradedCards = new
+	// ArrayList<RiskCardModel>();
 	// moved to RiskGameModel
 	public static Boolean isBaseMapEdited = false;
 	public static Boolean isSavedGameLoaded = false;

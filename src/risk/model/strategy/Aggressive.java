@@ -159,8 +159,7 @@ public class Aggressive implements StrategyInterface, Serializable {
 		attack(false, riskGameModel);
 	}
 
-	@Override
-	public void attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
 		 * He will keep on attacking untill he has teeritories which armies > 1 and of
 		 * which have others territories adjacent to him
@@ -232,7 +231,7 @@ public class Aggressive implements StrategyInterface, Serializable {
 				if (riskGameModel.getState() == RiskGameModel.CAPTURE)
 					if (capture(false, riskGameModel)) {
 						endGame(riskGameModel);
-						return;
+						return "";
 					}
 				riskGameModel.defender = null;
 			}
@@ -242,6 +241,7 @@ public class Aggressive implements StrategyInterface, Serializable {
 				+ " could not attack/is done with attack/decided not to attack.");
 		riskGameModel.notifyPhaseViewChange();
 		fortify(false, riskGameModel);
+		return "";
 	}
 
 	/**
@@ -373,7 +373,7 @@ public class Aggressive implements StrategyInterface, Serializable {
 	}
 
 	@Override
-	public void fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
+	public String fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		Utility.writeLog("FORTIFY - Some Aggressive dude called - " + riskGameModel.curPlayer.getName()
 				+ " has an option to Fortify any of his armies.");
 
@@ -385,7 +385,7 @@ public class Aggressive implements StrategyInterface, Serializable {
 			currentStrongestTerritory = makeStrongestOccupiedTerritory(riskGameModel.curPlayer, riskGameModel);
 			if (currentStrongestTerritory == null) {
 				endGame(riskGameModel);
-				return;
+				return "";
 			}
 		}
 
@@ -408,6 +408,6 @@ public class Aggressive implements StrategyInterface, Serializable {
 		riskGameModel.setState(RiskGameModel.START_TURN);
 		riskGameModel.nextPlayer();
 		riskGameModel.notifyPhaseViewChange();
-		// return "";
+		 return "";
 	}
 }

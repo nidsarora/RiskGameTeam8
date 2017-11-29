@@ -265,8 +265,8 @@ public class RiskPlayerModel extends Observable implements Serializable {
 		return sbPlayerDominationViewContent.toString();
 	}
 
-	public void fortify(int territory, RiskGameModel riskModel) {
-		 this.strategy.fortify(false, riskModel, territory);
+	public String fortify(int territory, RiskGameModel riskModel) {
+		return this.strategy.fortify(false, riskModel, territory);
 	}
 
 	/**
@@ -309,8 +309,8 @@ public class RiskPlayerModel extends Observable implements Serializable {
 		 this.strategy.initialReinforce(false, riskModel, territory);
 	}
 
-	public void attack(int territory, RiskGameModel riskModel) {
-		this.strategy.attack(false, riskModel, territory);
+	public String attack(int territory, RiskGameModel riskModel) {
+		return this.strategy.attack(false, riskModel, territory);
 	}
 
 	public void startTurn(RiskGameModel riskGameModel) {

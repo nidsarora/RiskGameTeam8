@@ -702,7 +702,7 @@ public class RiskGameModel implements Serializable {
 	public void distubuteArmies() {
 		int numOfPlayers = players.size();
 		if (numOfPlayers == 3)
-			armies = 45;
+			armies = 15;
 		else if (numOfPlayers == 4)
 			armies = 30;
 		else if (numOfPlayers == 5)
@@ -713,7 +713,6 @@ public class RiskGameModel implements Serializable {
 		for (int index = 0; index < numOfPlayers; index++)
 			players.elementAt(index).addArmies(armies);
 		Utility.writeLog(armies + " armies added to each player");
-
 	}
 
 	/**
@@ -1125,8 +1124,7 @@ public class RiskGameModel implements Serializable {
 		// } // end forty
 
 		if (getState() == FORTIFY || getState() == FORTIFYING || getState() == FORTIFY_PHASE) {
-			this.curPlayer.fortify(country, this);
-			return "";
+			return this.curPlayer.fortify(country, this);
 		}
 
 		// if (getState() == ATTACK_PHASE) {
@@ -1142,8 +1140,8 @@ public class RiskGameModel implements Serializable {
 		// } // end attack with
 
 		if (getState() == ATTACKING || getState() == ATTACK || getState() == ATTACK_PHASE || getState() == CAPTURE) {
-			this.curPlayer.attack(country, this);
-			return "";
+			return this.curPlayer.attack(country, this);
+			
 		}
 
 		// if (getState() == TRADE_CARDS) {
