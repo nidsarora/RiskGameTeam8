@@ -204,6 +204,10 @@ public class Cheater implements StrategyInterface, Serializable {
 				currentRiskModel.drawCard(currentRiskModel.curPlayer);
 			}
 		}
+		if (!RiskGameModel.isTournamentMode) {
+			currentRiskModel.mainPanel.repaint();
+			currentRiskModel.subPanel.repaint();
+		}
 		currentRiskModel.notifyPhaseViewChange();
 		return false;
 	}
