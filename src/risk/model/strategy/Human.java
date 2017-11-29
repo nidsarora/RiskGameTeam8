@@ -15,6 +15,7 @@ public class Human implements StrategyInterface, Serializable {
 	@Override
 	public void takeTurn(boolean isTest, RiskGameModel riskGameModel) {
 			Utility.writeLog("***********" + riskGameModel.curPlayer.getName() + " turn *************");
+			Utility.writeGameStats(riskGameModel);
 			return;
 	}
 
@@ -43,6 +44,7 @@ public class Human implements StrategyInterface, Serializable {
 		}
 		riskGameModel.mainPanel.repaint();
 		riskGameModel.subPanel.repaint();
+		Utility.writeGameStats(riskGameModel);
 
 		return;
 	}
@@ -57,6 +59,7 @@ public class Human implements StrategyInterface, Serializable {
 			return RiskAttackPhase(territory[0], riskGameModel.xCoordinate, riskGameModel.yCoordinate, riskGameModel);
 		if (riskGameModel.getState() == RiskGameModel.CAPTURE)
 			return capture(false, territory[0], riskGameModel);
+		Utility.writeGameStats(riskGameModel);
 
 		return "";
 	}
@@ -73,6 +76,7 @@ public class Human implements StrategyInterface, Serializable {
 				riskGameModel.notifyPhaseViewChange();
 				// return "true";
 			}
+		Utility.writeGameStats(riskGameModel);
 		return;
 	}
 
@@ -84,6 +88,7 @@ public class Human implements StrategyInterface, Serializable {
 			return RiskFortify(territory[0], riskGameModel);
 		if (riskGameModel.getState() == RiskGameModel.FORTIFY_PHASE)
 			return RiskFortifyPhase(territory[0], riskGameModel);
+		Utility.writeGameStats(riskGameModel);
 		return "";
 	}
 

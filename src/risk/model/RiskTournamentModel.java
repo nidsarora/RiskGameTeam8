@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 public class RiskTournamentModel {
 	public List<RiskGameModel> tournamentGameList;
 	public static int tournamentGameMaxTurnCount;
@@ -11,9 +16,11 @@ public class RiskTournamentModel {
 	public int tournamentGameCount;
 	public int gamePerMapCount;
 	public Vector<RiskPlayerModel> tournamentPlayers;
+	public int mapCount;
 
-	public RiskTournamentModel(int GamePerMapCount, Vector<RiskPlayerModel> players, int GameTurnCount,
+	public RiskTournamentModel(int tournamentMapCount, int GamePerMapCount, Vector<RiskPlayerModel> players, int GameTurnCount,
 			ArrayList<String> mapNameList) {
+		this.mapCount = tournamentMapCount;
 		this.gamePerMapCount = GamePerMapCount;
 		this.tournamentPlayers = players;
 		tournamentGameMaxTurnCount = GameTurnCount;
@@ -24,7 +31,7 @@ public class RiskTournamentModel {
 		RiskGameModel.isTournamentMode = true;
 		setTournamentGameCount();
 		getTournamentGameList();
-		// setTournamentGamesMapName();
+		 setTournamentGamesMapName();
 	}
 
 	public List<RiskGameModel> setTournamentGamesMapName() {
@@ -59,12 +66,13 @@ public class RiskTournamentModel {
 	}
 	
 	
-
 	public void printTournamentResult() {
-		Object[][] resultArray = new Object[tournamentGameMapNameList.size() / gamePerMapCount + 1][gamePerMapCount
-				+ 1];
+		XSSFWorkbook workbook = new XSSFWorkbook();
+       XSSFSheet sheet = workbook.createSheet("\\Java Books");
+	Object[][] resultArray = new Object[tournamentGameMapNameList.size() / gamePerMapCount + 1][gamePerMapCount
+			+ 1];
 		for (int rowIndex = 1; rowIndex < resultArray.length; rowIndex++) {
-			resultArray[rowIndex][0] = tournamentGameMapNameList.get(rowIndex * 4);
+			resultArray[rowIndex][0] = tournamentGameMapNameList.get((rowIndex -1)* tournamentGameMapNameList.size()/this.mapCount);
 		}
 
 		for (int colIndex = 1; colIndex < resultArray[0].length; colIndex++) {
@@ -83,6 +91,25 @@ public class RiskTournamentModel {
 						}						
 			}
 		}
+		
+		
+		int rowCount = 0;
+        
+        for (Object[] aBook : resultArray) {
+            Row row = sheet.createRow(++rowCount);
+             
+            int columnCount = 0;
+             
+            for (Object field : aBook) {
+                Cell cell = row.createCell(++columnCount);
+                if (field instanceof String) {
+                    cell.setCellValue((String) field);
+                } else if (field instanceof Integer) {
+                    cell.setCellValue((Integer) field);
+                }
+            }
+             
+        }
 	}
 
 }

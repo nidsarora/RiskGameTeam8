@@ -203,7 +203,8 @@ public class RiskTerritoryModel implements Serializable {
 	 * Loose army.
 	 */
 	public void looseArmy() {
-		armies--;
+		if (armies != 0)
+			armies--;
 	}
 
 	/**
@@ -212,7 +213,8 @@ public class RiskTerritoryModel implements Serializable {
 	 * @param army the army
 	 */
 	public void looseArmies(int army) {
-		armies -= army;
+		if (armies - army >= 0)
+			armies -= army;
 	}
 
 	/**

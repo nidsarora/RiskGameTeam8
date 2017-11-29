@@ -37,7 +37,7 @@ public class Cheater implements StrategyInterface, Serializable {
 			riskGameModel.mainPanel.repaint();
 			riskGameModel.subPanel.repaint();
 		}
-
+		Utility.writeGameStats(riskGameModel);
 		return;
 	}
 
@@ -63,7 +63,7 @@ public class Cheater implements StrategyInterface, Serializable {
 				riskGameModel.nextPlayer();
 			}
 		}
-
+		Utility.writeGameStats(riskGameModel);
 	}
 
 	@Override
@@ -78,7 +78,7 @@ public class Cheater implements StrategyInterface, Serializable {
 		} else {
 			reinforce(false, riskGameModel);
 		}
-
+		Utility.writeGameStats(riskGameModel);
 	}
 
 	/**
@@ -158,7 +158,7 @@ public class Cheater implements StrategyInterface, Serializable {
 			if (endGame = cheaterCaptureAdjacent(cheaterTerritory))
 				break;
 		}
-
+		Utility.writeGameStats(riskGameModel);
 		if (!endGame) {
 			Utility.writeLog("ATTACK - Some Cheater dude called - " + riskGameModel.curPlayer.getName()
 					+ " is done with attack.");
@@ -228,6 +228,7 @@ public class Cheater implements StrategyInterface, Serializable {
 		}
 		riskGameModel.setState(RiskGameModel.END_GAME);
 		riskGameModel.winner = riskGameModel.curPlayer;
+		Utility.writeGameStats(riskGameModel);
 	}
 
 	/**
@@ -260,7 +261,7 @@ public class Cheater implements StrategyInterface, Serializable {
 		riskGameModel.setState(RiskGameModel.START_TURN);
 		riskGameModel.nextPlayer();
 		riskGameModel.notifyPhaseViewChange();
-
+		Utility.writeGameStats(riskGameModel);
 		return "";
 	}
 

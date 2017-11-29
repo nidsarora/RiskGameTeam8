@@ -1,110 +1,5238 @@
 **************The Risk Begin************
 
-Wed Nov 29 14:53:46 EST 2017
+Wed Nov 29 15:37:58 EST 2017
 
-All players Added
+***********Tournament Mode begins  *************
+
+User seleccted 1 maps
+
+User seleccted 3 number of palyer strategies
+
+User seleccted 3 number of games
+
+User seleccted 12 number of maximm turns
+
+Maps are selected randomly 
+
+Map 1 BaseEarthMap.map
 
 15 armies added to each player
 
-Build the Game Panel
+15 armies added to each player
 
-***********Player_1 turn *************
+***********PLayer1 turn *************
 
-***********Player_2 turn *************
+INITIAL REINFORCE - called - PLayer1 placed one of his army on Alaska
 
-INITIAL REINFORCE - called - Player_2 placed one of his army on Northwest_Territory
+***********PLayer2 turn *************
 
-***********Player_3 turn *************
+INITIAL REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
 
-INITIAL REINFORCE - Some Aggressive dude called - Player_3 placed one of his army on Eastern_Australia
+***********PLayer3 turn *************
 
-***********Player_1 turn *************
+INITIAL REINFORCE - called - PLayer3 placed one of his army on Greenland
 
-initial reinforcement stage
+***********PLayer1 turn *************
 
-Player_1 got bonus armies
+INITIAL REINFORCE - called - PLayer1 placed one of his army on Alberta
 
-INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on Venezuela
+***********PLayer2 turn *************
 
-Player_1 got3 left to place
+INITIAL REINFORCE - called - PLayer2 placed one of his army on Ontario
 
-INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on Venezuela
+***********PLayer3 turn *************
 
-Player_1 got2 left to place
+INITIAL REINFORCE - called - PLayer3 placed one of his army on Eastern_Canada
 
-INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on Venezuela
+START TURN - benevolent BOT called - PLayer3 has started his turn.
 
-Player_1 got1 left to place
+REINFORCE - Benevolent BOT called - PLayer3 recieved 9 armies as turn bonus.
 
-INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on Venezuela
+REINFORCE - Benevolent BOT called - PLayer3 decided to Reinforce his armies.
 
-Player_1 got0 left to place
+REINFORCE - called - PLayer3 placed one of his army on Central_America
 
-Player_1 entered active turn
+REINFORCE - called - PLayer3 placed one of his army on Brazil
 
-Attack Phase entered
+REINFORCE - called - PLayer3 placed one of his army on Scandinavia
 
-Player_1 entered attacking phase.
+REINFORCE - called - PLayer3 placed one of his army on Northern_Europe
 
-Player_1 entered attacking phase.
+REINFORCE - called - PLayer3 placed one of his army on North_Africa
 
-Player_3 has 0 armies
+REINFORCE - called - PLayer3 placed one of his army on East_Africa
 
-Player_3 attacking with 1 armies
+REINFORCE - called - PLayer3 placed one of his army on Ural
 
-Player_1 has 6 armies
+REINFORCE - called - PLayer3 placed one of his army on Irkutsk
 
-Player_1 attacking with 3 armies
+REINFORCE - called - PLayer3 placed one of his army on Japan
 
-Player_3 has 0 armies
+REINFORCE - benevolent BOT called - PLayer3 is done with reinforcement and his army count is 0
 
-Player_3 attacking with 1 armies
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
 
-Round 1 - Attacker - 4 Vs Defender 4
+FORTIFY - Benevolent BOT called - PLayer3 has decided to Fortify.
 
-Attacker lost round and one army. Current army count + 5
+FORTIFY - Benevolent BOT called - PLayer3 fortified North_Africa through Brazil by 1 armie(s).
 
-Player_1 has lost an army
+FORTIFY - Benevolent BOT called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
 
-Player_3 has 0 armies
+***********PLayer1 turn *************
 
-Player_3 attacking with 1 armies
+START TURN - benevolent BOT called - PLayer1 has started his turn.
 
-Round 1 - Attacker - 3 Vs Defender 6
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
 
-Attacker lost round and one army. Current army count + 4
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
 
-Player_1 has lost an army
+REINFORCE - called - PLayer1 placed one of his army on Western_United_States
 
-Player_1 has 4 armies
+REINFORCE - called - PLayer1 placed one of his army on Venezuela
 
-Player_1 attacking with 2 armies
+REINFORCE - called - PLayer1 placed one of his army on Argentina
 
-Player_3 has 0 armies
+REINFORCE - called - PLayer1 placed one of his army on Russia
 
-Player_3 attacking with 1 armies
+REINFORCE - called - PLayer1 placed one of his army on Western_Europe
 
-Round 1 - Attacker - 2 Vs Defender 5
+REINFORCE - called - PLayer1 placed one of his army on Egypt
 
-Attacker lost round and one army. Current army count + 3
+REINFORCE - called - PLayer1 placed one of his army on South_Africa
 
-Player_1 has lost an army
+REINFORCE - called - PLayer1 placed one of his army on Siberia
 
-Player_1 has 3 armies
+REINFORCE - called - PLayer1 placed one of his army on Mongolia
 
-Player_1 attacking with 2 armies
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
 
-Player_3 has 0 armies
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
 
-Player_3 attacking with 1 armies
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
 
-Round 1 - Attacker - 5 Vs Defender 2
+FORTIFY - Benevolent BOT called - PLayer1 fortified Afghanistan through Russia by 1 armie(s).
 
-Defender lost round and one army. Current army count + 0
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
 
-Defender Lost!!
+***********PLayer2 turn *************
 
-Player_1 has destroyed an army
+START TURN - benevolent BOT called - PLayer2 has started his turn.
 
-Player_1 has 2 armies moved to Central_America
+REINFORCE - Benevolent BOT called - PLayer2 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer2 placed one of his army on Eastern_United_States
+
+REINFORCE - called - PLayer2 placed one of his army on Peru
+
+REINFORCE - called - PLayer2 placed one of his army on Iceland
+
+REINFORCE - called - PLayer2 placed one of his army on Great_Britain
+
+REINFORCE - called - PLayer2 placed one of his army on Southern_Europe
+
+REINFORCE - called - PLayer2 placed one of his army on Central_Africa
+
+REINFORCE - called - PLayer2 placed one of his army on Madagascar
+
+REINFORCE - called - PLayer2 placed one of his army on Yakutsk
+
+REINFORCE - called - PLayer2 placed one of his army on Kamchatka
+
+REINFORCE - benevolent BOT called - PLayer2 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer2 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer2 fortified Yakutsk through Kamchatka by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer3 turn *************
+
+START TURN - benevolent BOT called - PLayer3 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer3 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer3 placed one of his army on Brazil
+
+REINFORCE - called - PLayer3 placed one of his army on Middle_East
+
+REINFORCE - called - PLayer3 placed one of his army on Indonesia
+
+REINFORCE - called - PLayer3 placed one of his army on Eastern_Australia
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - benevolent BOT called - PLayer3 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer3 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer3 fortified Brazil through North_Africa by 2 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Russia
+
+REINFORCE - called - PLayer1 placed one of his army on India
+
+REINFORCE - called - PLayer1 placed one of his army on New_Guinea
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Alberta through Western_United_States by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - benevolent BOT called - PLayer2 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer2 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer2 placed one of his army on Kamchatka
+
+REINFORCE - called - PLayer2 placed one of his army on China
+
+REINFORCE - called - PLayer2 placed one of his army on Southeast_Asia
+
+REINFORCE - called - PLayer2 placed one of his army on Western_Australia
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - benevolent BOT called - PLayer2 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer2 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer2 fortified Ontario through Eastern_United_States by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer3 turn *************
+
+START TURN - benevolent BOT called - PLayer3 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer3 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer3 placed one of his army on North_Africa
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - benevolent BOT called - PLayer3 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer3 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer3 fortified Northern_Europe through Scandinavia by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Western_United_States
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Russia through Afghanistan by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - benevolent BOT called - PLayer2 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer2 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer2 placed one of his army on Eastern_United_States
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - benevolent BOT called - PLayer2 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer2 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer2 fortified Ontario through Northwest_Territory by 11 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer3 turn *************
+
+START TURN - benevolent BOT called - PLayer3 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer3 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer3 placed one of his army on Scandinavia
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - benevolent BOT called - PLayer3 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer3 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer3 fortified North_Africa through Brazil by 3 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Afghanistan
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Alberta through Alaska by 12 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - benevolent BOT called - PLayer2 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer2 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - benevolent BOT called - PLayer2 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer2 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer2 fortified Southeast_Asia through China by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer3 turn *************
+
+START TURN - benevolent BOT called - PLayer3 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer3 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer3 placed one of his army on Brazil
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - benevolent BOT called - PLayer3 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer3 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer3 fortified East_Africa through Middle_East by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Afghanistan through India by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - benevolent BOT called - PLayer2 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer2 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer2 placed one of his army on China
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - benevolent BOT called - PLayer2 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer2 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer2 fortified Northwest_Territory through Ontario by 8 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer3 turn *************
+
+START TURN - benevolent BOT called - PLayer3 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer3 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer3 placed one of his army on Middle_East
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - benevolent BOT called - PLayer3 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer3 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer3 fortified East_Africa through Middle_East by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on India
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Alberta through Alaska by 2 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - benevolent BOT called - PLayer2 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer2 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - benevolent BOT called - PLayer2 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer2 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer2 fortified China through Southeast_Asia by 2 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer3 turn *************
+
+START TURN - benevolent BOT called - PLayer3 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer3 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer3 placed one of his army on Middle_East
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - benevolent BOT called - PLayer3 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer3 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer3 fortified Brazil through North_Africa by 3 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Siberia through Mongolia by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - benevolent BOT called - PLayer2 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer2 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer2 placed one of his army on Southeast_Asia
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - benevolent BOT called - PLayer2 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer2 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer2 fortified Yakutsk through Kamchatka by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer3 turn *************
+
+START TURN - benevolent BOT called - PLayer3 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer3 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - benevolent BOT called - PLayer3 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer3 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer3 fortified Japan through Irkutsk by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Mongolia
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Alberta through Alaska by 24 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - benevolent BOT called - PLayer2 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer2 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer2 placed one of his army on Kamchatka
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - benevolent BOT called - PLayer2 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer2 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer2 fortified Northwest_Territory through Ontario by 5 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer3 turn *************
+
+START TURN - benevolent BOT called - PLayer3 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer3 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer3 placed one of his army on Irkutsk
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - benevolent BOT called - PLayer3 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer3 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer3 fortified Scandinavia through Northern_Europe by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Mongolia through Siberia by 2 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - benevolent BOT called - PLayer2 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer2 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer2 placed one of his army on Ontario
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - benevolent BOT called - PLayer2 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer2 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer2 fortified Northwest_Territory through Ontario by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer3 turn *************
+
+START TURN - benevolent BOT called - PLayer3 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer3 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - benevolent BOT called - PLayer3 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer3 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer3 fortified North_Africa through East_Africa by 2 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Siberia
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Afghanistan through Russia by 2 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - benevolent BOT called - PLayer2 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer2 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer2 placed one of his army on Ontario
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - benevolent BOT called - PLayer2 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer2 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer2 fortified Great_Britain through Iceland by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer3 turn *************
+
+START TURN - benevolent BOT called - PLayer3 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer3 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - benevolent BOT called - PLayer3 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer3 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer3 fortified Northern_Europe through Scandinavia by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Russia
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Siberia through Mongolia by 2 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - benevolent BOT called - PLayer2 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer2 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer2 placed one of his army on Iceland
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - benevolent BOT called - PLayer2 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer2 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer2 fortified Northwest_Territory through Ontario by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer3 turn *************
+
+START TURN - benevolent BOT called - PLayer3 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer3 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - benevolent BOT called - PLayer3 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer3 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer3 fortified Eastern_Canada through Greenland by 13 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Siberia through Mongolia by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - benevolent BOT called - PLayer2 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer2 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer2 placed one of his army on Ontario
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - benevolent BOT called - PLayer2 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer2 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer2 fortified Ontario through Eastern_United_States by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer3 turn *************
+
+START TURN - benevolent BOT called - PLayer3 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer3 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - benevolent BOT called - PLayer3 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer3 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer3 fortified Scandinavia through Northern_Europe by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Mongolia
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Afghanistan through Russia by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - benevolent BOT called - PLayer2 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer2 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer2 placed one of his army on Eastern_United_States
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - benevolent BOT called - PLayer2 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer2 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer2 fortified Northwest_Territory through Ontario by 2 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer3 turn *************
+
+START TURN - benevolent BOT called - PLayer3 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer3 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - benevolent BOT called - PLayer3 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer3 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer3 fortified Eastern_Canada through Greenland by 24 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Russia
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Russia through Afghanistan by 4 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - benevolent BOT called - PLayer2 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer2 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer2 placed one of his army on Ontario
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - benevolent BOT called - PLayer2 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer2 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer2 fortified Great_Britain through Iceland by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer3 turn *************
+
+START TURN - benevolent BOT called - PLayer3 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer3 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - benevolent BOT called - PLayer3 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer3 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer3 fortified North_Africa through East_Africa by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Afghanistan through India by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - benevolent BOT called - PLayer2 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer2 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer2 placed one of his army on Iceland
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - benevolent BOT called - PLayer2 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer2 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer2 fortified Great_Britain through Iceland by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer3 turn *************
+
+START TURN - benevolent BOT called - PLayer3 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer3 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer3 placed one of his army on East_Africa
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - benevolent BOT called - PLayer3 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer3 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer3 fortified Greenland through Eastern_Canada by 18 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on India
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Alberta through Western_United_States by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer2 turn *************
+
+START TURN - benevolent BOT called - PLayer2 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer2 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer2 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer2 placed one of his army on Iceland
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - called - PLayer2 placed one of his army on Northwest_Territory
+
+REINFORCE - benevolent BOT called - PLayer2 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer2 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer2 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer2 fortified Northwest_Territory through Ontario by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer2 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer3 turn *************
+
+START TURN - benevolent BOT called - PLayer3 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer3 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer3 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - called - PLayer3 placed one of his army on Greenland
+
+REINFORCE - benevolent BOT called - PLayer3 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer3 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer3 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer3 fortified Scandinavia through Northern_Europe by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer3 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Western_United_States
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Alberta through Western_United_States by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Western_United_States
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Siberia through Mongolia by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Mongolia
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Alberta through Alaska by 3 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Alberta through Western_United_States by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Western_United_States
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Afghanistan through India by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on India
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Siberia through Mongolia by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+START TURN - benevolent BOT called - PLayer1 has started his turn.
+
+REINFORCE - Benevolent BOT called - PLayer1 recieved 9 armies as turn bonus.
+
+REINFORCE - Benevolent BOT called - PLayer1 decided to Reinforce his armies.
+
+REINFORCE - called - PLayer1 placed one of his army on Mongolia
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - called - PLayer1 placed one of his army on Alaska
+
+REINFORCE - benevolent BOT called - PLayer1 is done with reinforcement and his army count is 0
+
+FORTIFY - Some Random dude called - PLayer1 has an option to Fortify any of his armies.
+
+FORTIFY - Benevolent BOT called - PLayer1 has decided to Fortify.
+
+FORTIFY - Benevolent BOT called - PLayer1 fortified Mongolia through Siberia by 1 armie(s).
+
+FORTIFY - Benevolent BOT called - PLayer1 is done fortifying/cannot fortify any more/ choose not to and end his turn
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
+
+***********PLayer3 turn *************
+
+***********PLayer1 turn *************
+
+***********PLayer2 turn *************
 

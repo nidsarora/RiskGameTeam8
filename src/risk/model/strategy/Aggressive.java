@@ -264,6 +264,7 @@ public class Aggressive implements StrategyInterface, Serializable {
 		}
 		riskGameModel.setState(RiskGameModel.END_GAME);
 		riskGameModel.winner = riskGameModel.curPlayer;
+		Utility.writeGameStats(riskGameModel);
 	}
 
 	/**

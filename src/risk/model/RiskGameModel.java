@@ -1528,8 +1528,8 @@ public class RiskGameModel implements Serializable {
 			}
 		}
 
-		// a.looseArmies(armies);
-		// d.addArmies(armies);
+		 a.looseArmies(armies);
+		 d.addArmies(armies);
 
 		// Draw a card
 		if (drawn == false) {

@@ -34,6 +34,7 @@ public class Random implements StrategyInterface, Serializable {
 			riskGameModel.mainPanel.repaint();
 			riskGameModel.subPanel.repaint();
 		}
+		Utility.writeGameStats(riskGameModel);
 
 		// return "";
 	}
@@ -74,6 +75,7 @@ public class Random implements StrategyInterface, Serializable {
 		} else {
 			reinforce(false, riskGameModel);
 		}
+		Utility.writeGameStats(riskGameModel);
 
 	}
 
@@ -112,6 +114,7 @@ public class Random implements StrategyInterface, Serializable {
 		cardsRemoved.addAll(riskGameModel.lstTradedCards);
 		riskGameModel.looseCard(cardsRemoved);
 		riskGameModel.notifyPhaseViewChange();
+		Utility.writeGameStats(riskGameModel);
 		// return null;
 	}
 
@@ -141,6 +144,7 @@ public class Random implements StrategyInterface, Serializable {
 		Utility.writeLog("REINFORCE - Some Random dude called - " + riskGameModel.curPlayer.getName()
 				+ " is done with reinforcement and his army count is " + riskGameModel.curPlayer.getNumberOfArmies());
 		riskGameModel.notifyPhaseViewChange();
+		Utility.writeGameStats(riskGameModel);
 		attack(false, riskGameModel);
 	}
 
@@ -218,6 +222,8 @@ public class Random implements StrategyInterface, Serializable {
 						endGame(riskGameModel);
 						return "";
 					}
+				
+				Utility.writeGameStats(riskGameModel);
 			}
 
 		}
@@ -242,6 +248,7 @@ public class Random implements StrategyInterface, Serializable {
 			riskGameModel.mainPanel.repaint();
 			riskGameModel.subPanel.repaint();
 		}
+		Utility.writeGameStats(riskGameModel);
 	}
 
 	/**
@@ -387,6 +394,7 @@ public class Random implements StrategyInterface, Serializable {
 		riskGameModel.setState(RiskGameModel.START_TURN);
 		riskGameModel.nextPlayer();
 		riskGameModel.notifyPhaseViewChange();
+		Utility.writeGameStats(riskGameModel);
 		 return "";
 	}
 

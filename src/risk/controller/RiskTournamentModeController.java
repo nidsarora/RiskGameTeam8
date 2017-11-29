@@ -395,12 +395,13 @@ public class RiskTournamentModeController extends java.awt.Frame {
 		}
 
 		ArrayList<String> mapNameList = new ArrayList<String>();
-
-		mapNameList.add("World.map");
-		mapNameList.add("3D Cliff.map");
-		mapNameList.add("India.map");
-		mapNameList.add("Europe.map");
-		mapNameList.add("BritishColumbia.map");
+		mapNameList.add("BaseEarthMap.map");
+		mapNameList.add("BaseEarthMap.map");
+//		mapNameList.add("World.map");
+//		mapNameList.add("3D Cliff.map");
+//		mapNameList.add("India.map");
+//		mapNameList.add("Europe.map");
+//		mapNameList.add("BritishColumbia.map");
         Collections.shuffle(mapNameList);
         Utility.writeLog("Maps are selected randomly " );
         for (int mapIndex=0; mapIndex<mapNum; mapIndex++) {
@@ -408,7 +409,7 @@ public class RiskTournamentModeController extends java.awt.Frame {
             System.out.println("Map "+(mapIndex+1)+  " "+mapNameList.get(mapIndex));
         }
 
-		riskTournamentModel = new RiskTournamentModel(gameNum = 2, gameplayers, maxTurns = 50, mapNameList);
+		riskTournamentModel = new RiskTournamentModel(mapNum =1, gameNum = 2, gameplayers, maxTurns = 50, mapNameList);
 
 		riskTournamentModel.initializeTournament();
 		riskTournamentModel.startTournament();

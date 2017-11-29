@@ -212,21 +212,26 @@ public final class Utility {
 
 	}
 
-	public static void writeGameStats(RiskGameModel riskGameModel) {
-		try (FileWriter fw = new FileWriter("log\\GameStats.txt", true); // Overwrite
+	public static void writeGameStats(RiskGameModel riskGameModel, Boolean... isApplicationStart) {
+		try (FileWriter fw = new FileWriter("log\\GameStats.txt", (isApplicationStart.length == 0)); // Overwrite
 				BufferedWriter bw = new BufferedWriter(fw);
 				PrintWriter out = new PrintWriter(bw)) {
+			if (riskGameModel == null)
+				{
+				out.println("***Game Begins***\n\n");
+				}
+
 			out.println("***Game Stats***\n\n");
 
-			for (RiskPlayerModel player : RiskGameModel.players) {
-				out.println(player.getName() + " T Count "
-						+ player.getOccupiedTerritories().size() + " Army Count "
-						+ riskGameModel.curPlayer.getNumberOfArmies() + "\n\n");
-				for (RiskTerritoryModel terr : player.getOccupiedTerritories()) {
-					out.println(terr.getName() + " " + terr.getArmies());
+			if (riskGameModel != null)
+				for (RiskPlayerModel player : RiskGameModel.players) {
+					out.println(player.getName() + " T Count " + player.getOccupiedTerritories().size() + " Army Count "
+							+ riskGameModel.curPlayer.getNumberOfArmies() + "\n\n");
+					for (RiskTerritoryModel terr : player.getOccupiedTerritories()) {
+						out.println(terr.getName() + " " + terr.getArmies());
+					}
+					out.println("\n\n\n");
 				}
-				out.println("\n\n\n");
-			}
 			out.close();
 			bw.close();
 			fw.close();

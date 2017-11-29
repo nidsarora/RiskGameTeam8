@@ -23,6 +23,7 @@ public class Benevolent implements StrategyInterface {
 		} else {
 			reinforce(false, riskGameModel);
 		}
+		Utility.writeGameStats(riskGameModel);
 	}
 
 	private void tradeCards(RiskGameModel riskGameModel) {
