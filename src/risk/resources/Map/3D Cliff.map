@@ -38,3 +38,4 @@ secondright,714,358,rightstair,firstright,thirdright,ledgeright
 thirdright,721,271,rightstair,secondright,fourthright,ledgeright,thirdleft
 fourthright,825,220,rightstair,thirdright,fifthright
 fifthright,740,160,rightstair,thirdright,fourthright,topright
+;;

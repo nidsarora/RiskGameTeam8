@@ -23,6 +23,7 @@ import risk.model.strategy.Human;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.GroupLayout;
 import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.text.Utilities;
 import javax.swing.JLabel;
 
 import java.awt.Color;
@@ -102,6 +103,7 @@ public class RiskTournamentModeController extends java.awt.Frame {
 				Utility.writeLog("User seleccted " + gameNum + " number of games");
 				Utility.writeLog("User seleccted " + maxTurns + " number of maximm turns");
 				Utility.writeLog("***********Tournament Mode begins  *************",true);
+				Utility.writeGameStats(null, true);
 				setVisible(false);
 				startGame();
 			}
@@ -414,7 +416,7 @@ public class RiskTournamentModeController extends java.awt.Frame {
             System.out.println("Map "+(mapIndex+1)+  " "+randomMapNameList.get(mapIndex));
         }
         for(int j=0;j<tempmapNameList.size();j++) {
-        for(int i=0;i<=gameNum;i++) {
+        for(int i=0;i<gameNum;i++) {
         	
         	mapNameList.add(tempmapNameList.get(j));
         	//System.out.println("index"+i+mapNameList.get(j));
