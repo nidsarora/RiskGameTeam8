@@ -81,7 +81,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	 * @param test the test
 	 */
 	public RiskController(String test) {
-		risk = new RiskGameModel(test,result);
+		risk = new RiskGameModel(test,true);
 	}
 
 	/**
