@@ -345,6 +345,19 @@ public class TestRiskGameModel {
 		assertEquals("false", nfortify);
 
 	}
+	@Test
+	public void testGetOwnershipFails() 
+	{
+    	Benevolent benevolent=new Benevolent();
+		RiskPlayerModel rpm=new RiskPlayerModel("player1",0,benevolent);
+		riskGameModel.setCurPlayer(rpm);
+		RiskTerritoryModel rttm= new RiskTerritoryModel(9,"Alaska",1,47,76);
+		rttm.setPlayer(rpm);
+		riskGameModel.territories= new Vector<RiskTerritoryModel>();
+	    riskGameModel.territories.addElement(rttm);
+		int c=riskGameModel.getOwnership(0);
+		assertEquals(0,c);
+	}
 
 	
 	/**
