@@ -24,12 +24,26 @@ import javax.swing.JPanel;
  * @author Team8
  */
 public class RiskMapPanelViewController extends JPanel {
+	
+	/** The map. */
 	private Image map;
+	
+	/** The pg. */
 	PixelGrabber pg;
+	
+	/** The risk. */
 	RiskGameModel risk;
+	
+	/** The army. */
 	private Image army;
+	
+	/** The shield. */
 	private Image shield;
+	
+	/** The armies. */
 	public int armies;
+	
+	/** The Custom image. */
 	static String CustomImage = "map.jpg";
 	
 	/**
@@ -49,6 +63,8 @@ public class RiskMapPanelViewController extends JPanel {
 
 	/**
 	 * Instantiates a new risk map panel view controller.
+	 *
+	 * @param riskgamemodel the riskgamemodel
 	 */
 	public RiskMapPanelViewController(RiskGameModel riskgamemodel) {
 		this();
@@ -65,10 +81,8 @@ public class RiskMapPanelViewController extends JPanel {
 	/**
 	 * Select country by color.
 	 *
-	 * @param x,
-	 *            x-coordinate
-	 * @param y,
-	 *            y-coordinate
+	 * @param x the x coordinate
+	 * @param y the y coordinate
 	 */
 	public void selectCountrybyColor(int x, int y) {
 
@@ -126,7 +140,7 @@ public class RiskMapPanelViewController extends JPanel {
 			graphics.setColor(Color.white);
 			graphics.drawString(armies, loc[0] + 10 + align, loc[1] + 20);
 
-		} // end draw cilcles and armies
+		} 
 		/**
 		 * 
 		 * Attack Window is here
@@ -406,6 +420,7 @@ public class RiskMapPanelViewController extends JPanel {
 	/**
 	 * Draw connect adjacent countries.
 	 *
+	 * @param graphics the graphics
 	 */
 	private void drawConnectAdjacentCountries(Graphics graphics) {
 		// TODO Auto-generated method stub

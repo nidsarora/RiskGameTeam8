@@ -1,13 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/*
- * RiskAddPlayerUI.java
- *
- * Created on Nov 15, 2010, 12:39:35 PM
- */
 
 package risk.controller;
 
@@ -33,6 +24,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.awt.event.ActionEvent;
 
+
 /**
  * This class is used to add RiskPlayers to the game.
  * 
@@ -40,16 +32,24 @@ import java.awt.event.ActionEvent;
  */
 public class RiskAddPlayerController extends java.awt.Frame {
 
+	/** The no of players. */
 	static int noOfPlayers = 3;
+	
+	/** The map. */
 	String map;
+	
+	/** The behaviour players. */
 	static ArrayList<String> behaviourPlayers = new ArrayList<String>(7);
 
-	/** Creates new form RiskAddPlayerUI */
+	/**
+	 *  Creates new form RiskAddPlayerUI.
+	 */
 	public RiskAddPlayerController() {
 		initComponents();
 		setLocationRelativeTo(null);
 	}
 
+	/** boolean for players added. */
 	boolean added;
 
 	/**
@@ -359,11 +359,20 @@ public class RiskAddPlayerController extends java.awt.Frame {
 		});
 	}
 
-	/** Exit the Application */
+	/**
+	 *  Exit the Application.
+	 *
+	 * @param evt the evt
+	 */
 	private void exitForm(java.awt.event.WindowEvent evt) {
 		setVisible(false);
 	}
 
+	/**
+	 * J button 1 action performed.
+	 *
+	 * @param evt the evt
+	 */
 	private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
 
 		if (RiskGameModel.removeAllPlayer())
@@ -430,6 +439,9 @@ public class RiskAddPlayerController extends java.awt.Frame {
 		}
 	}
 
+	/** The done selecting players. */
 	private javax.swing.JButton doneSelectingPlayers;
+	
+	/** The jpanel 1. */
 	private javax.swing.JPanel jPanel1;
 }
