@@ -353,6 +353,46 @@ public class TestRiskGameModel {
 		assertEquals("false", nfortify);
 
 	}
+	 @Test
+        public void testSaveGame() {
+
+	riskGameModel.iter = 1;
+	riskGameModel.attackNum = 2;
+	riskGameModel.defenseNum = 3;
+	riskGameModel.saveGame(riskGameModel);
+	RiskGameModel riskmo = null;
+	try {
+	    FileInputStream fileIn = new FileInputStream("SavedRisk\\RiskNonStaticModel.ser");
+	    ObjectInputStream in = new ObjectInputStream(fileIn);
+	    riskmo = (RiskGameModel) in.readObject();
+	    RiskGameModelSerializable riskStaticComponents = (RiskGameModelSerializable) new ObjectInputStream(
+		    new FileInputStream("SavedRisk\\RiskStaticModel.ser")).readObject();
+	} catch (Exception e) {
+	    e.printStackTrace();
+	}
+
+	assertEquals(riskGameModel.attackNum, riskmo.attackNum);
+	assertEquals(riskGameModel.defenseNum, riskmo.defenseNum);
+    }
+    @Test
+    public void testload(){
+	RiskGameModel riskmo = null;
+	try {
+	    FileInputStream fileIn = new FileInputStream("SavedRisk\\RiskNonStaticModel.ser");
+	    ObjectInputStream in = new ObjectInputStream(fileIn);
+	    riskmo = (RiskGameModel) in.readObject();
+	    RiskGameModelSerializable riskStaticComponents = (RiskGameModelSerializable) new ObjectInputStream(
+		    new FileInputStream("SavedRisk\\RiskStaticModel.ser")).readObject();
+	} catch (Exception e) {
+	    e.printStackTrace();
+	}
+	riskGameModel.iter = 1;
+	riskGameModel.attackNum = 2;
+	riskGameModel.defenseNum = 3;
+	assertEquals(riskGameModel.attackNum, riskmo.attackNum);
+	assertEquals(riskGameModel.defenseNum, riskmo.defenseNum);
+	
+    }
 	
 	/**
 	 * Test get ownership fails.
