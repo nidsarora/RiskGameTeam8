@@ -89,6 +89,20 @@ public class RiskTournamentModel implements Serializable {
 	 *
 	 * @return the tournament game list
 	 */
+	public List<RiskGameModel> setTestTournamentGameCount(int count){
+	    int gameCount = 1;
+		if (tournamentGameList == null)
+			tournamentGameList = new ArrayList<RiskGameModel>();
+		while (gameCount <= tournamentGameCount) {
+			RiskGameModel.players = new Vector<RiskPlayerModel>();
+			Vector<RiskPlayerModel> tclone = (Vector<RiskPlayerModel>) tournamentPlayers.clone();
+			RiskGameModel.players =  tclone;
+			RiskGameModel.territories = new Vector<RiskTerritoryModel>();
+			tournamentGameList.add(new RiskGameModel());
+			gameCount++;
+		}
+		return tournamentGameList;
+	}
 	public List<RiskGameModel> getTournamentGameList() {
 		int gameCount = 1;
 		if (tournamentGameList == null)
