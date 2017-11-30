@@ -17,6 +17,8 @@ import risk.model.interfaces.StrategyInterface;
 
 /**
  * This Class contains logic for Cheater player.
+ * 
+ * @author Team8
  */
 public class Cheater implements StrategyInterface, Serializable {
 
