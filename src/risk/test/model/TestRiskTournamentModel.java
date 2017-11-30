@@ -37,7 +37,9 @@ public class TestRiskTournamentModel {
 		ArrayList<String> mapname=new ArrayList<>();
 		mapname.add("3DCliff");
 		RiskTournamentModel rtmm= new RiskTournamentModel(2, 2,players,3,mapname);
-		rtmm.setTestTournamentGameCount(3);
+		boolean result=rtmm.setTestTournamentGameCount(3);
+		assertEquals(true,result);
+		
 	}
 
 }
