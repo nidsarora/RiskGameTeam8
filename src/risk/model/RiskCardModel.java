@@ -25,8 +25,14 @@ public class RiskCardModel implements Serializable{
 		this.card_type = r_card_type;		
 	}
 
+
 	/**
 	 * Instantiates a new risk card model.
+	 *
+	 * @param r_territory_number
+	 *            the r territory number
+	 * @param r_int_card_type
+	 *            the r int card type
 	 */
 	public RiskCardModel(int r_territory_number, int r_int_card_type) {
 		this.territory = r_territory_number;
@@ -46,7 +52,9 @@ public class RiskCardModel implements Serializable{
 		}
 
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public String toString() {
 		return "Territory \n" + String.valueOf(territory) + "\n\n Value \n" + String.valueOf(card_type) + "-"

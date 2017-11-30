@@ -21,7 +21,9 @@ public class Random implements StrategyInterface, Serializable {
 
 	/** The current risk model. */
 	RiskGameModel currentRiskModel;
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public void takeTurn(boolean isTest, RiskGameModel riskGameModel) {
 		Utility.writeLog("***********" + riskGameModel.curPlayer.getName() + " turn *************");
@@ -40,7 +42,9 @@ public class Random implements StrategyInterface, Serializable {
 
 		// return "";
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public void initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (!riskGameModel.anyPlayerHasArmies()) {
@@ -65,7 +69,9 @@ public class Random implements StrategyInterface, Serializable {
 		}
 		// return "";
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public void startTurn(boolean isTest, RiskGameModel riskGameModel) {
 		currentRiskModel = riskGameModel;
@@ -81,12 +87,12 @@ public class Random implements StrategyInterface, Serializable {
 
 	}
 
+
 	/**
 	 * Trade cards.
 	 *
 	 * @param riskGameModel
 	 *            the risk game model
-	 * @return the string
 	 */
 	private void tradeCards(RiskGameModel riskGameModel) {
 		int count = 0, cardCount = 0;
@@ -119,7 +125,9 @@ public class Random implements StrategyInterface, Serializable {
 		Utility.writeGameStats(riskGameModel);
 		// return null;
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public void reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
@@ -149,7 +157,9 @@ public class Random implements StrategyInterface, Serializable {
 		Utility.writeGameStats(riskGameModel);
 		attack(false, riskGameModel);
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
@@ -359,7 +369,9 @@ public class Random implements StrategyInterface, Serializable {
 		}
 		return null;
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public String fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		Utility.writeLog("FORTIFY - Some Random dude called - " + riskGameModel.curPlayer.getName()

@@ -28,7 +28,6 @@ public class Human implements StrategyInterface, Serializable {
 	 *            the is test
 	 * @param riskGameModel
 	 *            the risk game model
-	 * @return the string
 	 */
 	@Override
 	public void startTurn(boolean isTest, RiskGameModel riskGameModel) {
@@ -50,7 +49,9 @@ public class Human implements StrategyInterface, Serializable {
 
 		return;
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (riskGameModel.getState() == RiskGameModel.ATTACKING)
@@ -65,7 +66,9 @@ public class Human implements StrategyInterface, Serializable {
 
 		return "";
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public void reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (territory[0] != -1) // if not a country
@@ -81,7 +84,9 @@ public class Human implements StrategyInterface, Serializable {
 		Utility.writeGameStats(riskGameModel);
 		return;
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public String fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		if (riskGameModel.getState() == RiskGameModel.FORTIFYING)
@@ -257,13 +262,6 @@ public class Human implements StrategyInterface, Serializable {
 
 			if (risk.aTerritory.getArmies() == 1) {
 				risk.setState(RiskGameModel.ACTIVE_TURN);
-				// AttackButton.setText("Attack");
-				// FortifyButton.setVisible(true);
-				// EndButton.setVisible(true);
-				// risk.defenseNum = 0;
-				// risk.attackNum = 0;
-				// risk.defenseTerritory = null;
-				// risk.aTerritory = null;
 			}
 		}
 
@@ -295,35 +293,14 @@ public class Human implements StrategyInterface, Serializable {
 		return "";
 	}
 
-	/**
-	 * this function is for Risk trade cards.
-	 *
-	 * @param country
-	 *            the country
-	 * @param riskGameModel
-	 *            the risk game model
-	 * @return the string
-	 */
-	// public String RiskTradeCards(int country, RiskGameModel riskGameModel) {
-	//// if (country != -1) // if not a country
-	//// if (riskGameModel.getOwnership(country) ==
-	// riskGameModel.curPlayer.getPlayerIndex()) // if
-	//// // owned
-	//// {
-	//// riskGameModel.occupyTerritory(riskGameModel.territories.elementAt(country));
-	// // occupy
-	//// riskGameModel.notifyPhaseViewChange();
-	//// riskGameModel.setState(riskGameModel.REINFORCE);
-	//// return "true";
-	//// }
-	//// return "";
-	// }
 
 	/**
 	 * this function is for Risk fortify.
 	 *
 	 * @param country
 	 *            the country
+	 * @param riskGameModel
+	 *           model of riskGame
 	 * @return the string
 	 */
 	public String RiskFortify(int country, RiskGameModel riskGameModel) {
@@ -355,13 +332,7 @@ public class Human implements StrategyInterface, Serializable {
 																							// to
 			// territory
 			if (riskGameModel.getOwnership(country) == riskGameModel.curPlayer.getPlayerIndex())
-				if (riskGameModel.aTerritory.isAdjacent(riskGameModel.defenseTerritory)) {// if
-																							// its
-					// adjacent...
-
-					// if (flag) //Commented 21 Nov - Does not seem to be
-					// neccessary - paul
-					// return "true";
+				if (riskGameModel.aTerritory.isAdjacent(riskGameModel.defenseTerritory)) {
 					riskGameModel.notifyPhaseViewChange();
 					riskGameModel.setState(RiskGameModel.FORTIFY_PHASE);
 					return "true";
@@ -415,10 +386,7 @@ public class Human implements StrategyInterface, Serializable {
 					riskGameModel.defenseNum = 0;
 		} // end if yCoordinate coord
 
-		if (riskGameModel.xCoordinate > 460 && riskGameModel.xCoordinate < 545) {// move
-																					// has
-																					// ben
-			// clicked
+		if (riskGameModel.xCoordinate > 460 && riskGameModel.xCoordinate < 545) {
 			if (riskGameModel.yCoordinate > 325 && riskGameModel.yCoordinate < 355) {// then
 																						// occupy
 				// the territory
@@ -450,10 +418,6 @@ public class Human implements StrategyInterface, Serializable {
 	 * @return the string
 	 */
 	public String capture(boolean isTest, int territory, RiskGameModel riskGameModel) {
-		// statusLabel.setText("Select number of armies to move to " +
-		// risk.defenseTerritory.getName());
-		// AttackButton.setVisible(false);
-		// AttackButton.setText("Attack");
 		String statusLabelText = "";
 		int max = riskGameModel.aTerritory.getArmies() - 1;
 		int min = riskGameModel.attackNum;
@@ -501,29 +465,15 @@ public class Human implements StrategyInterface, Serializable {
 				riskGameModel.setDefenceDieArray(new Integer[] { 0, 0, 0 });
 				Utility.writeLog(riskGameModel.getCurrentPlayer().getName() + " has " + riskGameModel.defenseNum
 						+ " armies moved to " + riskGameModel.defenseTerritory.getName());
-				// EndButton.setVisible(true);
-				// FortifyButton.setVisible(true);
-				// if (riskGameModel.capture()) {
-				// AttackButton.setVisible(false);
-				// FortifyButton.setVisible(false);
-				// CardButton.setVisible(false);
-				// EndButton.setVisible(false);
-				// statusLabelText = riskGameModel.getCurrentPlayer().getName()
-				// + " has won the game";
-				// JOptionPane.showMessageDialog(null,
-				// riskGameModel.getCurrentPlayer().getName() + " has won the
-				// game",
-				// "Alert", JOptionPane.INFORMATION_MESSAGE);
-				// }
 			}
 		}
-		// risk.notifyPhaseViewChange();
 		return statusLabelText;
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public void initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
-		// TODO Auto-generated method stub
 		return;
 	}
 

@@ -23,7 +23,9 @@ public class Aggressive implements StrategyInterface, Serializable {
 	/** The current strongest territory. */
 
 	RiskTerritoryModel currentStrongestTerritory;
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public void takeTurn(boolean isTest, RiskGameModel riskGameModel) {
 		Utility.writeGameStats(riskGameModel);
@@ -42,7 +44,9 @@ public class Aggressive implements StrategyInterface, Serializable {
 		Utility.writeGameStats(riskGameModel);
 		// return "";
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public void initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 
@@ -72,7 +76,9 @@ public class Aggressive implements StrategyInterface, Serializable {
 		}
 		// return "";
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public void startTurn(boolean isTest, RiskGameModel riskGameModel) {
 		riskGameModel = riskGameModel;
@@ -91,7 +97,6 @@ public class Aggressive implements StrategyInterface, Serializable {
 	 *
 	 * @param riskGameModel
 	 *            the risk game model
-	 * @return the string
 	 */
 	private void tradeCards(RiskGameModel riskGameModel) {
 		int count = 0, cardCount = 0;
@@ -123,7 +128,9 @@ public class Aggressive implements StrategyInterface, Serializable {
 		riskGameModel.notifyPhaseViewChange();
 		// return null;
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public void reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
@@ -160,7 +167,10 @@ public class Aggressive implements StrategyInterface, Serializable {
 		riskGameModel.notifyPhaseViewChange();
 		attack(false, riskGameModel);
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
+	@Override
 	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
 		 * He will keep on attacking until he has territories which armies > 1 and of
@@ -305,9 +315,12 @@ public class Aggressive implements StrategyInterface, Serializable {
 		return isEndOfGame;
 	}
 
+
 	/**
 	 * Should fire in the hole.
 	 *
+	 * @param riskGameModel
+	 *            the risk game model
 	 * @return true, if successful
 	 */
 	private boolean shouldFireInTheHole(RiskGameModel riskGameModel) {
@@ -329,7 +342,9 @@ public class Aggressive implements StrategyInterface, Serializable {
 	 *
 	 * @param riskPlayer
 	 *            the risk player
-	 * @return the strongest occupied territory with enimies
+	 * @param riskGameModel
+	 *            the game model
+	 * @return the strongest occupied territory with enemies
 	 */
 	private RiskTerritoryModel makeStrongestOccupiedTerritory(RiskPlayerModel riskPlayer, RiskGameModel riskGameModel) {
 		for (RiskTerritoryModel viableAggressiveTerritory : riskPlayer.getOccupiedTerritories()) {
@@ -343,6 +358,15 @@ public class Aggressive implements StrategyInterface, Serializable {
 		return currentStrongestTerritory;
 	}
 
+	/**
+	 * Gets the strongest occupied territory with enimies.
+	 *
+	 * @param riskPlayer
+	 *            the risk player
+	 * @param riskGameModel
+	 *            the risk game model
+	 * @return the strongest occupied territory with enimies
+	 */
 	private RiskTerritoryModel getStrongestOccupiedTerritoryWithEnimies(RiskPlayerModel riskPlayer,
 			RiskGameModel riskGameModel) {
 		for (RiskTerritoryModel viableAggressiveTerritory : riskPlayer.getOccupiedTerritories()) {
@@ -384,7 +408,9 @@ public class Aggressive implements StrategyInterface, Serializable {
 
 		return (new RiskTerritoryModel[] { currentStrongestTerritory, validDefenderTerritory });
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public String fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		Utility.writeLog("FORTIFY - Some Aggressive dude called - " + riskGameModel.curPlayer.getName()

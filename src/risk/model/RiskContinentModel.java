@@ -65,8 +65,12 @@ public class RiskContinentModel implements Serializable{
 		return (territories.contains(territorymodel.getId()));
 	}
 
+
 	/**
 	 * Adds the territories.
+	 *
+	 * @param intvalue
+	 *            the intvalue
 	 */
 	public void AddTerritories(Integer intvalue)
 	{

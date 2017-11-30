@@ -46,6 +46,10 @@ public class TestRiskGameModel {
 		boolean result = riskGameModel.occupyTerritory(rtm);
 		assertEquals(false, result);
 	}
+	
+	/**
+	 * Test occupy territory.
+	 */
 	@Test
 	public void testOccupyTerritory() {
 		Aggressive aggressive=new Aggressive();
@@ -247,6 +251,10 @@ public class TestRiskGameModel {
 		assertEquals(true,result);
 	
 	}
+	
+	/**
+	 * Test addplayer failure.
+	 */
 	@Test
 	public void testAddplayerFailure() {
 		Aggressive aggressive=new Aggressive();
@@ -345,6 +353,10 @@ public class TestRiskGameModel {
 		assertEquals("false", nfortify);
 
 	}
+	
+	/**
+	 * Test get ownership fails.
+	 */
 	@Test
 	public void testGetOwnershipFails() 
 	{
@@ -558,7 +570,11 @@ public class TestRiskGameModel {
 			int tc=riskGameModel.doesCardMatchCurrentPlayerTerritory();
 			assertEquals(2,tc);
 		}
-	 @Test
+	 
+ 	/**
+	 * Test card not matching current player territory.
+	 */
+ 	@Test
     	public void testCardNotMatchingCurrentPlayerTerritory() 
     	{
     		Benevolent benevolent=new Benevolent();

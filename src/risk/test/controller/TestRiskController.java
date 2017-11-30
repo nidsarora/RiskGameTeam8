@@ -15,13 +15,12 @@ import risk.model.RiskTerritoryModel;
 import risk.model.strategy.Aggressive;
 import risk.model.strategy.Benevolent;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class TestRiskController.
  */
 public class TestRiskController {
 	
-	/** The rc. */
+	/** The riskcontroller. */
 	RiskController rc;
 	
 	/**
@@ -84,7 +83,6 @@ public class TestRiskController {
 		riskGameModel.setCurPlayer(rpm);
 		riskGameModel.active=rpm;
 		riskGameModel.defender=rpm1;
-		//riskGameModel.setCurPlayer(rpm1);
 		RiskTerritoryModel aTerritory= new RiskTerritoryModel(1,"India",1,47,76);
 		aTerritory.addArmies(5);
 		Vector<Integer> val=new Vector<Integer>();
@@ -116,10 +114,8 @@ public class TestRiskController {
 		RiskPlayerModel rpm=new RiskPlayerModel("player1",1,aggressive);
 		RiskPlayerModel rpm1=new RiskPlayerModel("player1",1,aggressive);
 		RiskGameModel  riskGameModel=new RiskGameModel("test",true);
-		//riskGameModel.setCurPlayer(rpm1);
 		riskGameModel.active=rpm1;
 		riskGameModel.defender=rpm1;
-		//riskGameModel.setCurPlayer(rpm1);
 		RiskTerritoryModel aTerritory= new RiskTerritoryModel(1,"India",1,47,76);
 		aTerritory.addArmies(5);
 		Vector<Integer> val=new Vector<Integer>();
@@ -132,7 +128,6 @@ public class TestRiskController {
 	    dTerritory.setPlayer(rpm1);
 	    riskGameModel.setaTerritory(aTerritory);
 	    riskGameModel.setdTerritory(dTerritory);
-	    //riskGameModel.defenseNum=3;
 	    riskGameModel.setState(9);
 	    riskGameModel.attackNum=2;
 	    rc.setRisk(riskGameModel);

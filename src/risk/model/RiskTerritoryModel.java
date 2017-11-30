@@ -147,7 +147,7 @@ public class RiskTerritoryModel implements Serializable {
 	/**
 	 * Sets the continent.
 	 *
-	 * @param continent the new continent
+	 * @param continentname the new continent
 	 */
 	public void setContinent(int continentname) {
 		continent = continentname;
@@ -183,9 +183,12 @@ public class RiskTerritoryModel implements Serializable {
 		return true;
 	}
 
+
 	/**
 	 * Adds the armies.
 	 *
+	 * @param army
+	 *            the army
 	 */
 	public void addArmies(int army) {
 		armies += army;

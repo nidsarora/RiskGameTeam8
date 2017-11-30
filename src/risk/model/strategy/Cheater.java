@@ -25,7 +25,9 @@ public class Cheater implements StrategyInterface, Serializable {
 	/** The current risk model. */
 	RiskGameModel currentRiskModel;
 
-	
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public void takeTurn(boolean isTest, RiskGameModel riskGameModel) {
 		Utility.writeLog("***********" + riskGameModel.curPlayer.getName() + " turn *************");
@@ -44,7 +46,9 @@ public class Cheater implements StrategyInterface, Serializable {
 		return;
 	}
 
-	
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public void initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 
@@ -69,7 +73,9 @@ public class Cheater implements StrategyInterface, Serializable {
 		}
 		Utility.writeGameStats(riskGameModel);
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public void startTurn(boolean isTest, RiskGameModel riskGameModel) {
 		/*
@@ -109,7 +115,9 @@ public class Cheater implements StrategyInterface, Serializable {
 		riskGameModel.notifyPhaseViewChange();
 		reinforce(false, riskGameModel);
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public void reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
@@ -145,7 +153,9 @@ public class Cheater implements StrategyInterface, Serializable {
 		attack(false, riskGameModel);
 	}
 
-	
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*

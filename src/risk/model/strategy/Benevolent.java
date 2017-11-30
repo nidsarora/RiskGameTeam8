@@ -65,7 +65,9 @@ public class Benevolent implements StrategyInterface, Serializable {
 		riskGameModel.looseCard(cardsRemoved);
 		riskGameModel.notifyPhaseViewChange();
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public void reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		riskGameModel.setState(RiskGameModel.REINFORCE);
@@ -95,7 +97,9 @@ public class Benevolent implements StrategyInterface, Serializable {
 		fortify(isTest, riskGameModel);
 	}
 
-	
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 	
@@ -105,7 +109,9 @@ public class Benevolent implements StrategyInterface, Serializable {
 		return "";
 	}
 
-	
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public String fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		// TODO Auto-generated method stub
@@ -181,7 +187,9 @@ public class Benevolent implements StrategyInterface, Serializable {
 		}
 		return false;
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public void initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 
@@ -204,7 +212,9 @@ public class Benevolent implements StrategyInterface, Serializable {
 		}
 		// return "";
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public void takeTurn(boolean isTest, RiskGameModel riskGameModel) {
 		Utility.writeLog("***********" + riskGameModel.curPlayer.getName() + " turn *************");

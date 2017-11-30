@@ -10,22 +10,43 @@ import java.util.Vector;
 
 import javax.rmi.CORBA.Util;
 
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import risk.helpers.Utility;
-
+/**
+ * The Class RiskTournamentModel.
+ */
 public class RiskTournamentModel implements Serializable {
+	
+	/** The tournament game list. */
 	public List<RiskGameModel> tournamentGameList;
+	
+	/** The tournament game max turn count. */
 	public static int tournamentGameMaxTurnCount;
+	
+	/** The tournament game map name list. */
 	public List<String> tournamentGameMapNameList;
+	
+	/** The tournament game count. */
 	public int tournamentGameCount;
+	
+	/** The game per map count. */
 	public int gamePerMapCount;
+	
+	/** The tournament players. */
 	public Vector<RiskPlayerModel> tournamentPlayers = new Vector<RiskPlayerModel>(); 
+	
+	/** The map count. */
 	public int mapCount;
 
+	/**
+	 * Instantiates a new risk tournament model.
+	 *
+	 * @param tournamentMapCount the tournament map count
+	 * @param GamePerMapCount the game per map count
+	 * @param players the players
+	 * @param GameTurnCount the game turn count
+	 * @param mapNameList the map name list
+	 */
 	public RiskTournamentModel(int tournamentMapCount, int GamePerMapCount, Vector<RiskPlayerModel> players,
 			int GameTurnCount, ArrayList<String> mapNameList) {
 		this.mapCount = tournamentMapCount;
@@ -35,6 +56,9 @@ public class RiskTournamentModel implements Serializable {
 		this.tournamentGameMapNameList = mapNameList;
 	}
 
+	/**
+	 * Initialize tournament.
+	 */
 	public void initializeTournament() {
 		RiskGameModel.isTournamentMode = true;
 		setTournamentGameCount();
@@ -42,16 +66,29 @@ public class RiskTournamentModel implements Serializable {
 		setTournamentGamesMapName();
 	}
 
+	/**
+	 * Sets the tournament games map name.
+	 *
+	 * @return the list
+	 */
 	public List<RiskGameModel> setTournamentGamesMapName() {
 		for (int gameIndex = 0; gameIndex < this.tournamentGameMapNameList.size(); gameIndex++)
 			tournamentGameList.get(gameIndex).currentTournamentGameMapName = tournamentGameMapNameList.get(gameIndex);
 		return this.tournamentGameList;
 	}
 
+	/**
+	 * Sets the tournament game count.
+	 */
 	public void setTournamentGameCount() {
 		this.tournamentGameCount = tournamentGameMapNameList.size();
 	}
 
+	/**
+	 * Gets the tournament game list.
+	 *
+	 * @return the tournament game list
+	 */
 	public List<RiskGameModel> getTournamentGameList() {
 		int gameCount = 1;
 		if (tournamentGameList == null)
@@ -67,6 +104,9 @@ public class RiskTournamentModel implements Serializable {
 		return tournamentGameList;
 	}
 
+	/**
+	 * Start tournament.
+	 */
 	public void startTournament() {
 		int gameIndex = 1;
 		for (RiskGameModel game : this.tournamentGameList) {			
@@ -78,12 +118,10 @@ public class RiskTournamentModel implements Serializable {
 		}
 	}
 
-	public void printTournamentResult() {
-//		 final String FILE_NAME = "/tmp/MyFirstExcel.xlsx";
-//		
-//		 XSSFWorkbook workbook = new XSSFWorkbook();
-//		 XSSFSheet sheet = workbook.createSheet("Java Books");
-//		
+	/**
+	 * Prints the tournament result.
+	 */
+	public void printTournamentResult() {		
 		Utility.writeLog("********Tournament Results*******");
 		Object[][] resultArray = new Object[tournamentGameMapNameList.size() / gamePerMapCount + 1][gamePerMapCount
 				+ 1];
@@ -119,33 +157,6 @@ public class RiskTournamentModel implements Serializable {
 			sbTournamentResults.append("\n");
 		}
 		Utility.writeLog(sbTournamentResults.toString());
-//		 int rowCount = 0;
-//		
-//		 for (Object[] aBook : resultArray) {
-//		 Row row = sheet.createRow(++rowCount);
-//		
-//		 int columnCount = 0;
-//		
-//		 for (Object field : aBook) {
-//		 Cell cell = row.createCell(++columnCount);
-//		 if (field instanceof String) {
-//		 cell.setCellValue((String) field);
-//		 } else if (field instanceof Integer) {
-//		 cell.setCellValue((Integer) field);
-//		 }
-//		 }
-//		
-//		 }
-//		
-//		 try {
-//		 FileOutputStream outputStream = new FileOutputStream(FILE_NAME);
-//		 workbook.write(outputStream);
-//		 outputStream.close();
-//		 } catch (FileNotFoundException e) {
-//		 e.printStackTrace();
-//		 } catch (IOException e) {
-//		 e.printStackTrace();
-//		 }
 
 		System.out.println("Done");
 	}

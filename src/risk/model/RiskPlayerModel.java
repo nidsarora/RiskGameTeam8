@@ -24,13 +24,16 @@ public class RiskPlayerModel extends Observable implements Serializable {
 	/** The armies received by trading cards. */
 	private int armiesRecivedByTradingCards;
 
+
 	/**
 	 * Instantiates a new risk player model.
 	 *
-	 * @param playername,
-	 *            player name
-	 * @param playerindex,
-	 *            player index
+	 * @param playername
+	 *            the playername
+	 * @param playerindex
+	 *            the playerindex
+	 * @param IStrategy
+	 *            the i strategy
 	 */
 	public RiskPlayerModel(String playername, int playerindex, StrategyInterface IStrategy) {
 		name = playername;
@@ -101,9 +104,11 @@ public class RiskPlayerModel extends Observable implements Serializable {
 		isChanged();
 	}
 
+
 	/**
-	 * Number of territories.
+	 * Num of territories.
 	 *
+	 * @return the number of territories
 	 */
 	public int numOfTerritories() {
 		if (occupiedTerritories == null)
@@ -111,8 +116,12 @@ public class RiskPlayerModel extends Observable implements Serializable {
 		return occupiedTerritories.size();
 	}
 
+
 	/**
 	 * Occupy territory.
+	 *
+	 * @param riskterritorymodel
+	 *            the riskterritorymodel
 	 */
 	public void occupyTerritory(RiskTerritoryModel riskterritorymodel) {
 		if (!occupiedTerritories.contains(riskterritorymodel))
@@ -120,9 +129,12 @@ public class RiskPlayerModel extends Observable implements Serializable {
 		isChanged();
 	}
 
+
 	/**
 	 * Loose territory.
 	 *
+	 * @param riskterritorymodel
+	 *            the riskterritorymodel
 	 */
 	public void looseTerritory(RiskTerritoryModel riskterritorymodel) {
 		occupiedTerritories.remove(riskterritorymodel);
@@ -130,19 +142,34 @@ public class RiskPlayerModel extends Observable implements Serializable {
 		isChanged();
 	}
 
+
 	/**
 	 * Sets the card.
 	 *
+	 * @param riskcardmodel
+	 *            the new card
 	 */
 	public void setCard(RiskCardModel riskcardmodel) {
 		cards.add(riskcardmodel);
 		isChanged();
 	}
 
+	/**
+	 * Sets the cards.
+	 *
+	 * @param riskcardmodel
+	 *            the new cards
+	 */
 	public void setCards(List<RiskCardModel> riskcardmodel) {
 		cards.addAll(riskcardmodel);
 	}
 
+	/**
+	 * Removes the card.
+	 *
+	 * @param riskcardmodel
+	 *            the riskcardmodel
+	 */
 	public void removeCard(List<RiskCardModel> riskcardmodel) {
 		cards.removeAll(riskcardmodel);
 	}

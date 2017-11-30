@@ -235,8 +235,12 @@ public class RiskGameModel implements Serializable {
 	 public RiskGameModel(String test,boolean result) {
 	 }
 
+
 	/**
 	 * Instantiates a new risk game model.
+	 *
+	 * @param mapName
+	 *            the map name
 	 */
 	public RiskGameModel(String... mapName) {
 		if (!RiskGameModel.isTournamentMode) {
@@ -344,8 +348,11 @@ public class RiskGameModel implements Serializable {
 		return false;
 	}
 
+
 	/**
 	 * Does card match current player territory.
+	 *
+	 * @return the int that cards match currentPlayer territories
 	 */
 	public int doesCardMatchCurrentPlayerTerritory() {
 		int countMatchingCards = 0;
@@ -578,11 +585,8 @@ public class RiskGameModel implements Serializable {
 
 	/**
 	 * Notify phase view change.
-	 * 
-	 * @throws InterruptedException
 	 */
 	public void notifyPhaseViewChange() {
-		// System.out.println(this.getState());
 		if (!RiskGameModel.isTournamentMode) {
 			if ((this.getState() == NEW_GAME) || (this.getState() == INITIAL_REINFORCE)) // 0|1
 			{
@@ -615,16 +619,11 @@ public class RiskGameModel implements Serializable {
 				this.getRiskFortifyPhaseModelObservable().isChanged();
 				System.out.println("FORTIFY_PHASE");
 			}
-			// try {
 			if (this.mainPanel != null && this.subPanel != null) {
 				this.mainPanel.repaint();
 				this.subPanel.repaint();
 			}
-			// Thread.sleep(0);
-			// } catch (InterruptedException e) {
-			// // TODO Auto-generated catch block
-			// e.printStackTrace();
-			// }
+
 		}
 	}
 
@@ -681,19 +680,22 @@ public class RiskGameModel implements Serializable {
 		riskPlayerDominationViewObserver.generatePhaseView();
 	}
 
+
+
 	/**
-	 * This method initializes adds the players.
+	 * Adds the player.
 	 *
-	 * @param nm
-	 *            the player name
-	 * 
+	 * @param name
+	 *            the name
+	 * @param IStrategy
+	 *            the i strategy
 	 * @return true, if successful
 	 */
-	static public boolean addPlayer(String nm, StrategyInterface IStrategy) {
+	static public boolean addPlayer(String name, StrategyInterface IStrategy) {
 		int size = players.size();
 		if (size > 6)
 			return false;
-		RiskPlayerModel p = new RiskPlayerModel(nm, size, IStrategy);
+		RiskPlayerModel p = new RiskPlayerModel(name, size, IStrategy);
 		players.add(p);
 		return true;
 	}
@@ -708,9 +710,11 @@ public class RiskGameModel implements Serializable {
 		return true;
 	}
 
+
 	/**
 	 * Fetch traded armies count.
 	 *
+	 * @return the int
 	 */
 	public static int fetchTradedArmiesCount() {
 		GAME_TRADE_CARD_PHASE_COUNT++;
@@ -724,8 +728,12 @@ public class RiskGameModel implements Serializable {
 		curPlayer = players.elementAt(0);
 	}
 
+
 	/**
-	 * This method finds the next player in the loop.
+	 * Next player.
+	 *
+	 * @param isInitialization
+	 *            the is initialization
 	 */
 	public void nextPlayer(Boolean... isInitialization) {
 
@@ -1060,15 +1068,14 @@ public class RiskGameModel implements Serializable {
 							}
 
 						}
-						// System.out.println(index);
 						nextLine = fileLoadContinentTerritoryScanner.nextLine();
 						if (nextLine.equals(";;"))
 							done = true;
 					} while (done == false);
 
-				} // end if countries
+				} 
 
-			} // end while
+			} 
 
 			if (RiskGameModel.isTournamentMode)
 				gameMapAdjacentTerritoryStream = RiskGameModel.class
@@ -1113,7 +1120,7 @@ public class RiskGameModel implements Serializable {
 						}
 					} while (Notendfile);
 
-				} // end if adjacents
+				} 
 			}
 			gameMapAdjacentTerritoryStream.close();
 			gameMapContinentStream.close();
@@ -1165,8 +1172,6 @@ public class RiskGameModel implements Serializable {
 			if (country != -1) { // if a country was clicked on
 				if (getOwnership(country) == -1) // if country not owned
 					initialOccupyTerritories(country); // current player now
-				// owns
-				// How many countries are already owned?
 				for (int riskcardmodel = 0; riskcardmodel < num; riskcardmodel++) {
 					if (getOwnership(riskcardmodel) != -1) // if country owned
 						index++; // count number of owned countries
@@ -1195,56 +1200,25 @@ public class RiskGameModel implements Serializable {
 	public String gamePhaseActive(int x, int y) {
 
 		int country = getMapLocation(x, y);
-
-		// if (getState() == FORTIFYING) {
-		// RiskFortifying(country, false);
-		// } // end fortifying
-		//
-		// if (getState() == FORTIFY) {
-		// RiskFortify(country);
-		// } // end forty
-
 		if (getState() == FORTIFY || getState() == FORTIFYING || getState() == FORTIFY_PHASE) {
 			return this.curPlayer.fortify(country, this);
 		}
-
-		// if (getState() == ATTACK_PHASE) {
-		// // engageBattle(); // always commented
-		// }
-
-		// if (getState() == ATTACKING) {
-		// RiskAttacking(country);
-		// }
-		//
-		// if (getState() == ATTACK) {
-		// Riskattack(country);
-		// } // end attack with
 
 		if (getState() == ATTACKING || getState() == ATTACK || getState() == ATTACK_PHASE || getState() == CAPTURE) {
 			return this.curPlayer.attack(country, this);
 
 		}
 
-		// if (getState() == TRADE_CARDS) {
-		// RiskTradeCards(country);
-		// }
-
 		if (getState() == TRADE_CARDS) {
 			this.curPlayer.tradeCard(this);
 		}
 
-		// if (getState() == REINFORCE) {
-		// RiskReinforce(country);
-		// }
 
 		if (getState() == REINFORCE) {
 			this.curPlayer.reinforce(country, this);
 			return "";
 		}
 
-		// if (getState() == START_TURN) {
-		// RiskStartTurn(false);
-		// }
 
 		if (getState() == START_TURN) {
 			this.curPlayer.startTurn(this);
@@ -1254,11 +1228,14 @@ public class RiskGameModel implements Serializable {
 		return "";
 	}
 
+
 	/**
-	 * this function is for Risk fortifying.
+	 * Risk fortifying.
 	 *
 	 * @param country
 	 *            the country
+	 * @param flag
+	 *            the flag
 	 * @return the string
 	 */
 	public String RiskFortifying(int country, boolean flag) {
@@ -1300,9 +1277,12 @@ public class RiskGameModel implements Serializable {
 		return "";
 	}
 
+
 	/**
-	 * this function is for Risk start turn.
+	 * This function has functionality of Risk start turn.
 	 *
+	 * @param isTest
+	 *            if it is a test
 	 * @return the string
 	 */
 	public String RiskStartTurn(boolean isTest) {
@@ -1350,8 +1330,7 @@ public class RiskGameModel implements Serializable {
 			if (getOwnership(country) == curPlayer.getPlayerIndex()) {
 				setState(FORTIFYING);
 				aTerritory = territories.elementAt(country);
-				this.notifyPhaseViewChange(); // get the first country to
-				// fotify
+				this.notifyPhaseViewChange(); // get the first country to fortify
 				return "true";
 			}
 		}
@@ -1367,8 +1346,7 @@ public class RiskGameModel implements Serializable {
 	 */
 	public String RiskAttacking(int country) {
 		if (country != -1) {// not a country
-			RiskTerritoryModel d = territories.elementAt(country); // defending
-			// territory
+			RiskTerritoryModel d = territories.elementAt(country); // defending territory
 
 			System.out.println(aTerritory.getAdjacents().size());
 
@@ -1484,16 +1462,17 @@ public class RiskGameModel implements Serializable {
 			Utility.writeLog("Attacker Lost!!");
 			setState(DEFEATED);
 			this.notifyPhaseViewChange(); // show defeat in phase view
-			// setState(ACTIVE_TURN);
 		}
 
 		active = curPlayer;
 
 	}
 
+
 	/**
 	 * Checks if is captured.
 	 *
+	 * @return the size of players
 	 */
 	public int isCaptured() {
 
@@ -1534,12 +1513,9 @@ public class RiskGameModel implements Serializable {
 
 		a.looseArmies(armies);
 		d.addArmies(armies);
-
-		// Draw a card
 		if (drawn == false) {
 			drawCard(curPlayer);
-			// Utility.writeLog("RiskCardModel " +
-			// getCountryName(curPlayer.getCard().firstElement().territory));
+
 			drawn = true;
 		}
 
@@ -1559,7 +1535,7 @@ public class RiskGameModel implements Serializable {
 	 * @param index
 	 *            the country index
 	 * 
-	 * @return the int[]
+	 * @return int[] map coordinates
 	 */
 	public int[] drawMap(int index) {
 		int out[] = new int[2];
@@ -1587,7 +1563,7 @@ public class RiskGameModel implements Serializable {
 	}
 
 	/**
-	 * Gets the ownership.
+	 * Gets the ownership of territories.
 	 *
 	 * @param index
 	 *            the country index

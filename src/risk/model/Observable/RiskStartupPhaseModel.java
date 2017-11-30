@@ -1,3 +1,4 @@
+
 package risk.model.Observable;
 
 import java.io.Serializable;

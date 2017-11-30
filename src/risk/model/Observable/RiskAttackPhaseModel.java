@@ -12,10 +12,10 @@ import risk.model.interfaces.PhaseViewInterface;
  */
 public class RiskAttackPhaseModel extends Observable implements PhaseViewInterface,Serializable {
 
-	/** The object type. */
+	/** RiskAttackPhaseModel object. */
 	private String objectType = "RiskAttackPhaseModel";
 
-	/** The obj current risk game object. */
+	/** The object of current risk game. */
 	private RiskGameModel objCurrentRiskGameObject;
 
 	/** The instance. */
@@ -38,10 +38,19 @@ public class RiskAttackPhaseModel extends Observable implements PhaseViewInterfa
 		return instance;
 	}
 
+	/**
+	 * Gets the phase information
+	 *
+	 * @return String Phase Information
+	 */
 	public String getPhaseInformation() {
 		return Utility.getPhaseInformtion(this);
 	}
-
+	/**
+	 * Gets the phase information
+	 *
+	 * @return String get object type
+	 */
 	@Override
 	public String getObjectType() {
 		return objectType;
@@ -54,9 +63,7 @@ public class RiskAttackPhaseModel extends Observable implements PhaseViewInterfa
 
 	@Override
 	public void isChanged() {
-		// specify that my state was changed
 		setChanged();
-		// notify all attached Observers of a change
 		notifyObservers(this);
 	}
 
