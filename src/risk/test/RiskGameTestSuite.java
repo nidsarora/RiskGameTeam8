@@ -12,7 +12,7 @@ import risk.test.model.TestRiskGameModel;
  * The Class RiskGameTestSuite having all the classes tested.
  */
 @RunWith(Suite.class)
-@SuiteClasses({TestRiskController.class,TestRiskStartGameController.class, TestRiskGameModel.class})
+@SuiteClasses({TestRiskController.class,TestRiskStartGameController.class, TestRiskGameModel.class, TestRiskTournamentModel.class})
 
 public class RiskGameTestSuite {
 
