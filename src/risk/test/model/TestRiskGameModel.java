@@ -356,8 +356,8 @@ public class TestRiskGameModel {
 	 @Test
         public void testSaveGame() {
 
-	riskGameModel.iter = 0;
-	riskGameModel.attackNum = 5;
+	riskGameModel.iter = 1;
+	riskGameModel.attackNum = 2;
 	riskGameModel.defenseNum = 3;
 	riskGameModel.saveGame(riskGameModel);
 	RiskGameModel riskmo = null;
@@ -387,7 +387,7 @@ public class TestRiskGameModel {
 	    e.printStackTrace();
 	}
 	riskGameModel.iter = 1;
-	riskGameModel.attackNum = 5;
+	riskGameModel.attackNum = 2;
 	riskGameModel.defenseNum = 3;
 	assertEquals(riskGameModel.attackNum, riskmo.attackNum);
 	assertEquals(riskGameModel.defenseNum, riskmo.defenseNum);
