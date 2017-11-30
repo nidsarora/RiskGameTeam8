@@ -8,12 +8,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
+import javax.rmi.CORBA.Util;
+
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class RiskTournamentModel implements Serializable{
+import risk.helpers.Utility;
+
+public class RiskTournamentModel implements Serializable {
 	public List<RiskGameModel> tournamentGameList;
 	public static int tournamentGameMaxTurnCount;
 	public List<String> tournamentGameMapNameList;
@@ -61,19 +65,23 @@ public class RiskTournamentModel implements Serializable{
 	}
 
 	public void startTournament() {
-		for (RiskGameModel game : this.tournamentGameList) {
+		int gameIndex = 1;
+		for (RiskGameModel game : this.tournamentGameList) {			
 			RiskGameModel.players = game.getplayersInstantiable();
 			RiskGameModel.territories = game.getTerritoriesInstantiable();
 			game.setState(RiskGameModel.INITIAL_REINFORCE);
+			Utility.writeLog("Game" + (gameIndex++) + " played on " + game.currentTournamentGameMapName);
 			game.curPlayer.takeTurn(game);
 		}
 	}
 
 	public void printTournamentResult() {
-		final String FILE_NAME = "/tmp/MyFirstExcel.xlsx";
-
-		XSSFWorkbook workbook = new XSSFWorkbook();
-		XSSFSheet sheet = workbook.createSheet("Java Books");
+//		 final String FILE_NAME = "/tmp/MyFirstExcel.xlsx";
+//		
+//		 XSSFWorkbook workbook = new XSSFWorkbook();
+//		 XSSFSheet sheet = workbook.createSheet("Java Books");
+//		
+		Utility.writeLog("********Tournament Results*******");
 		Object[][] resultArray = new Object[tournamentGameMapNameList.size() / gamePerMapCount + 1][gamePerMapCount
 				+ 1];
 		for (int rowIndex = 1; rowIndex < resultArray.length; rowIndex++) {
@@ -98,34 +106,43 @@ public class RiskTournamentModel implements Serializable{
 				}
 			}
 		}
-
-		int rowCount = 0;
-
-		for (Object[] aBook : resultArray) {
-			Row row = sheet.createRow(++rowCount);
-
-			int columnCount = 0;
-
-			for (Object field : aBook) {
-				Cell cell = row.createCell(++columnCount);
-				if (field instanceof String) {
-					cell.setCellValue((String) field);
-				} else if (field instanceof Integer) {
-					cell.setCellValue((Integer) field);
-				}
+		StringBuilder sbTournamentResults = new StringBuilder();
+		for (int outerIndex = 0; outerIndex < resultArray.length; outerIndex++) {
+			for (int innerIndex = 0; innerIndex < resultArray[outerIndex].length; innerIndex++) {
+				sbTournamentResults.append(
+						(resultArray[outerIndex][innerIndex] == null ? " " : resultArray[outerIndex][innerIndex])
+								+ " ");
 			}
-
+			sbTournamentResults.append("\n");
 		}
-
-		try {
-			FileOutputStream outputStream = new FileOutputStream(FILE_NAME);
-			workbook.write(outputStream);
-			outputStream.close();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		Utility.writeLog(sbTournamentResults.toString());
+//		 int rowCount = 0;
+//		
+//		 for (Object[] aBook : resultArray) {
+//		 Row row = sheet.createRow(++rowCount);
+//		
+//		 int columnCount = 0;
+//		
+//		 for (Object field : aBook) {
+//		 Cell cell = row.createCell(++columnCount);
+//		 if (field instanceof String) {
+//		 cell.setCellValue((String) field);
+//		 } else if (field instanceof Integer) {
+//		 cell.setCellValue((Integer) field);
+//		 }
+//		 }
+//		
+//		 }
+//		
+//		 try {
+//		 FileOutputStream outputStream = new FileOutputStream(FILE_NAME);
+//		 workbook.write(outputStream);
+//		 outputStream.close();
+//		 } catch (FileNotFoundException e) {
+//		 e.printStackTrace();
+//		 } catch (IOException e) {
+//		 e.printStackTrace();
+//		 }
 
 		System.out.println("Done");
 	}
