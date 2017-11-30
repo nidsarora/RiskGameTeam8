@@ -129,7 +129,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			i.printStackTrace();
 			return null;
 		} catch (ClassNotFoundException c) {
-			System.out.println("Employee class not found");
+			System.out.println("RiskGame class not found");
 			c.printStackTrace();
 			return null;
 		}
