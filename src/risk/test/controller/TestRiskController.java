@@ -30,7 +30,7 @@ public class TestRiskController {
 	@Before
 	public void before()
 	{
-	    rc= new RiskController("test",true);
+	    rc= new RiskController("test");
 	}
 
 	/**
