@@ -89,7 +89,7 @@ public class RiskTournamentModel implements Serializable {
 	 *
 	 * @return the tournament game list
 	 */
-	public List<RiskGameModel> setTestTournamentGameCount(int count){
+	public boolean setTestTournamentGameCount(int count){
 	    int gameCount = 1;
 		if (tournamentGameList == null)
 			tournamentGameList = new ArrayList<RiskGameModel>();
@@ -101,7 +101,7 @@ public class RiskTournamentModel implements Serializable {
 			tournamentGameList.add(new RiskGameModel());
 			gameCount++;
 		}
-		return tournamentGameList;
+		return true;
 	}
 	public List<RiskGameModel> getTournamentGameList() {
 		int gameCount = 1;
