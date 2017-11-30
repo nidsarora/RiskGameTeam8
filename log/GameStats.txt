@@ -4,3 +4,77 @@
 ***Game Stats***
 
 
+***Game Stats***
+
+
+Map is null
+Player_1 T Count 12 Army Count 0
+
+
+Alaska 1
+Ontario 1
+Central_America 1
+Argentina 18
+Great_Britain 1
+North_Africa 1
+South_Africa 1
+Yakutsk 1
+Japan 1
+India 1
+Western_Australia 1
+Brazil 1
+
+
+
+
+Player_2 T Count 11 Army Count 0
+
+
+Northwest_Territory 3
+Eastern_Canada 3
+Venezuela 3
+Iceland 3
+Northern_Europe 3
+Egypt 3
+Madagascar 3
+Irkutsk 3
+Afghanistan 2
+Southeast_Asia 2
+Eastern_Australia 2
+
+
+
+
+Player_3 T Count 10 Army Count 0
+
+
+Greenland 1
+Western_United_States 1
+Peru 1
+Scandinavia 1
+Western_Europe 1
+Central_Africa 1
+Ural 1
+Mongolia 1
+China 1
+Indonesia 21
+
+
+
+
+Player_4 T Count 9 Army Count 0
+
+
+Alberta 4
+Eastern_United_States 3
+Russia 1
+Southern_Europe 3
+East_Africa 1
+Siberia 3
+Kamchatka 2
+Middle_East 3
+New_Guinea 5
+
+
+
+

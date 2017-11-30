@@ -36,7 +36,7 @@ public class RiskMapPanelViewController extends JPanel {
 	 * Instantiates a new risk map panel view controller.
 	 */
 	public RiskMapPanelViewController() {
-		RiskGameModel.ImageUsed = CustomImage;
+		 CustomImage=RiskGameModel.ImageUsed;
 		try {
 			this.map = ImageIO.read(getClass().getResourceAsStream(Utility.getImagePath(CustomImage)));
 			this.army = ImageIO.read(getClass().getResourceAsStream(Utility.getImagePath("army.gif")));

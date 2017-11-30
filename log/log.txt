@@ -1,4 +1,18 @@
 **************The Risk Begin************
 
-Thu Nov 30 01:00:16 EST 2017
+Thu Nov 30 03:48:34 EST 2017
+
+Build the Game Panel
+
+***********Player_1 turn *************
+
+Attack Phase entered
+
+Player_1 entered attacking phase.
+
+Player_1 entered attacking phase.
+
+Attack Phase entered
+
+Attack operation cancelled
 

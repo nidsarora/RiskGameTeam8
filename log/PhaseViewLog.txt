@@ -1,2 +1,185 @@
 **************The Risk Begin************
 
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Brazil with 1 armies  attacks Argentina with 18 armies 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Brazil with 1 armies  attacks Argentina with 18 armies 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Brazil with 1 armies  attacks Argentina with 18 armies 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Brazil with 1 armies  attacks Argentina with 18 armies 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Brazil with 1 armies  attacks Argentina with 18 armies 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Brazil with 1 armies  attacks Argentina with 18 armies 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Brazil with 1 armies  attacks Argentina with 18 armies 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Brazil with 1 armies  attacks Argentina with 18 armies 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Brazil with 1 armies  attacks Argentina with 18 armies 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Brazil with 1 armies  attacks Argentina with 18 armies 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Brazil with 1 armies  attacks Argentina with 18 armies 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Brazil with 1 armies  attacks Argentina with 18 armies 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Brazil with 1 armies  attacks Argentina with 18 armies 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Argentina with 18 armies  attacks Argentina with 18 armies 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Argentina with 18 armies  attacks Argentina with 18 armies 
+
+
+
+
+
+*********************** Atack Phase *************************
+An attack is actually one or more battles which are fought with dice. The object of an attack is to capture a territory.
+Player: Player_1
+Statistics:
+
+Territory Argentina with 18 armies  attacks Peru with 1 armies 
+
+The war has began!
+Attacking with 0 dices.
+ Defending with 3 dices
+
+1. It was 0 vs 0.Defender Won this round! Count -1
+2. It was 0 vs 0.Defender Won this round! Count -1
+3. It was 0 vs 0.Defender Won this round! Count -1
+
+
+
+

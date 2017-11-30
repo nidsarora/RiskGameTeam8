@@ -84,7 +84,10 @@ public class RiskGameModelSerializable implements Serializable {
 
 	/** The players. */
 	public Vector<RiskPlayerModel> players = new Vector<RiskPlayerModel>();
-
+	
+	/** The image used. */
+	public String ImageUsed;
+	
 	/** The game state. */
 	public int gameState;
 	public Boolean isTournamentMode;

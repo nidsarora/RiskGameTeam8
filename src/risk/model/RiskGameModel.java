@@ -2028,6 +2028,7 @@ public class RiskGameModel implements Serializable {
 		riskGameModelSerializable.players = RiskGameModel.players;
 		riskGameModelSerializable.gameState = RiskGameModel.gameState;
 		riskGameModelSerializable.isTournamentMode = RiskGameModel.isTournamentMode;
+		riskGameModelSerializable.ImageUsed=RiskGameModel.ImageUsed;
 		return riskGameModelSerializable;
 	}
 
@@ -2055,6 +2056,7 @@ public class RiskGameModel implements Serializable {
 		RiskGameModel.players = riskGameModelSerializable.players;
 		RiskGameModel.gameState = riskGameModelSerializable.gameState;
 		RiskGameModel.isTournamentMode = riskGameModelSerializable.isTournamentMode;
+		RiskGameModel.ImageUsed=riskGameModelSerializable.ImageUsed;
 	}
 
 }
