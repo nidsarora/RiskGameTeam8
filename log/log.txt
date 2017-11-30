@@ -1,5 +1,6 @@
 ***********Tournament Mode begins  *************
 
+<<<<<<< HEAD
 Maps are selected randomly 
 
 Map 1 BaseEarthMap.map
@@ -1865,4 +1866,7 @@ FORTIFY - Some Aggressive dude called - PLayer1 is done fortifying/cannot fortif
   Game 1 Game 2 
 BaseEarthMap.map Draw Draw 
 
+=======
+Wed Nov 29 18:56:00 EST 2017
+>>>>>>> 35698b78d087f48dde6e58cca2cdf2a35a8bcfc1
 

@@ -144,7 +144,7 @@ public class RiskTournamentModeController extends java.awt.Frame {
 			public void actionPerformed(ActionEvent event) {
 				playerNum = (int) playerNumCombobox.getSelectedItem();
 				
-				if (noOfPlayers == 2) {
+				if (playerNum == 2) {
 					
 					behaviourPlayer1.setVisible(true);
 					lblPlayer_1.setVisible(true);
@@ -156,7 +156,7 @@ public class RiskTournamentModeController extends java.awt.Frame {
 					behaviourPlayer4.setVisible(false);
 					
 				}
-				if (noOfPlayers == 3) {
+				if (playerNum == 3) {
 					
 					behaviourPlayer1.setVisible(true);
 					lblPlayer_1.setVisible(true);
@@ -167,7 +167,7 @@ public class RiskTournamentModeController extends java.awt.Frame {
 					lblPlayer_4.setVisible(false);
 					behaviourPlayer4.setVisible(false);
 				}
-				if (noOfPlayers == 4) {
+				if (playerNum == 4) {
 					behaviourPlayer1.setVisible(true);
 					lblPlayer_1.setVisible(true);
 					behaviourPlayer2.setVisible(true);
@@ -374,44 +374,60 @@ public class RiskTournamentModeController extends java.awt.Frame {
 			case "Aggressive": {
 				gameplayers.add(new RiskPlayerModel("PLayer" + (i+1), (i+1), new Aggressive()));
 				System.out.println((i + 1) + "new risk.model.strategy.Aggressive");
+				Utility.writeLog("Player " +(i + 1)+" :: Aggressive");
 				break;
 			}
 			case "Benevolent": {
 				gameplayers.add(new RiskPlayerModel("PLayer" + (i+1), (i+1), new Benevolent()));
 				System.out.println((i + 1) + "new risk.model.strategy.Benevolent");
+				Utility.writeLog("Player " +(i + 1)+" :: Benevolent");
 				break;
 			}
 			case "Random": {
 				gameplayers.add(new RiskPlayerModel("PLayer" + (i+1), (i+1), new risk.model.strategy.Random()));
 				System.out.println((i + 1) + "new risk.model.strategy.Random");
+				Utility.writeLog("Player " +(i + 1)+" :: Random");
 				break;
 			}
 			case "Cheater": {
 				gameplayers.add(new RiskPlayerModel("PLayer" + (i+1), (i+1), new Cheater()));
 				System.out.println((i + 1) + "new risk.model.strategy.Cheater");
+				Utility.writeLog("Player " +(i + 1)+" :: Cheater");
 				break;
 			}
 			}
 		}
-
+		ArrayList<String> randomMapNameList = new ArrayList<String>();
+		ArrayList<String> tempmapNameList = new ArrayList<String>();
 		ArrayList<String> mapNameList = new ArrayList<String>();
-		mapNameList.add("BaseEarthMap.map");
-		mapNameList.add("BaseEarthMap.map");
-//		mapNameList.add("World.map");
-//		mapNameList.add("3D Cliff.map");
-//		mapNameList.add("India.map");
-//		mapNameList.add("Europe.map");
-//		mapNameList.add("BritishColumbia.map");
-        Collections.shuffle(mapNameList);
+		randomMapNameList.add("BaseEarthMap.map");
+		randomMapNameList.add("World.map");
+		randomMapNameList.add("3D Cliff.map");
+		randomMapNameList.add("India.map");
+		randomMapNameList.add("Europe.map");
+		randomMapNameList.add("BritishColumbia.map");
+        Collections.shuffle(randomMapNameList);
         Utility.writeLog("Maps are selected randomly " );
         for (int mapIndex=0; mapIndex<mapNum; mapIndex++) {
-        	Utility.writeLog("Map "+(mapIndex+1)+ " "+mapNameList.get(mapIndex));
-            System.out.println("Map "+(mapIndex+1)+  " "+mapNameList.get(mapIndex));
+        	tempmapNameList.add(randomMapNameList.get(mapIndex));
+        	Utility.writeLog("Map "+(mapIndex+1)+ " "+randomMapNameList.get(mapIndex));
+            System.out.println("Map "+(mapIndex+1)+  " "+randomMapNameList.get(mapIndex));
         }
+        for(int j=0;j<tempmapNameList.size();j++) {
+        for(int i=0;i<=gameNum;i++) {
+        	
+        	mapNameList.add(tempmapNameList.get(j));
+        	//System.out.println("index"+i+mapNameList.get(j));
+        	}
+        }
+        for(int i=0;i<mapNameList.size();i++)
+{
+	System.out.println("index" + i+ mapNameList.get(i));
+}
 
-		riskTournamentModel = new RiskTournamentModel(1, 2, gameplayers, 10, mapNameList);
 
-		riskTournamentModel.initializeTournament();
+		riskTournamentModel = new RiskTournamentModel(mapNum, gameNum, gameplayers, maxTurns, mapNameList);
+        riskTournamentModel.initializeTournament();
 		riskTournamentModel.startTournament();
 		riskTournamentModel.printTournamentResult();
 	}
