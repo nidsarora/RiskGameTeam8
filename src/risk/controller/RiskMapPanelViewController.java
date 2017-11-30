@@ -47,8 +47,12 @@ public class RiskMapPanelViewController extends JPanel {
 		}
 	}
 
+
 	/**
 	 * Instantiates a new risk map panel view controller.
+	 *
+	 * @param riskgamemodel
+	 *            the riskgamemodel
 	 */
 	public RiskMapPanelViewController(RiskGameModel riskgamemodel) {
 		this();
@@ -403,9 +407,12 @@ public class RiskMapPanelViewController extends JPanel {
 
 	}
 
+
 	/**
-	 * Draw connect adjacent countries.
+	 * Draw connect adjacent countries
 	 *
+	 * @param graphics
+	 *            the graphics to draw adjacent countries
 	 */
 	private void drawConnectAdjacentCountries(Graphics graphics) {
 		// TODO Auto-generated method stub

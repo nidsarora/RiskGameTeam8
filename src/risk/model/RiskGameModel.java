@@ -1575,9 +1575,11 @@ public class RiskGameModel implements Serializable {
 
 	}
 
+
 	/**
-	 * Number of territories.
+	 * Num of terroitories.
 	 *
+	 * @return the int
 	 */
 	public int numOfTerroitories() {
 		int num = territories.size();

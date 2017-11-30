@@ -130,11 +130,14 @@ public final class Utility {
 		return phaseTitle;
 	}
 
+
 	/**
 	 * Write log.
 	 *
 	 * @param text
 	 *            the text
+	 * @param isApplicationStart
+	 *            the is application start
 	 */
 	public static void writeLog(String text, Boolean... isApplicationStart) {
 		try (FileWriter fw = new FileWriter("log\\log.txt", isApplicationStart.length == 0); // Overwrite
@@ -151,11 +154,14 @@ public final class Utility {
 
 	}
 
+
 	/**
-	 * Write log.
+	 * Write player view log.
 	 *
 	 * @param text
 	 *            the text
+	 * @param isApplicationStart
+	 *            the is application start
 	 */
 	public static void writePlayerViewLog(String text, Boolean... isApplicationStart) {
 		try (FileWriter fw = new FileWriter("log\\PlayerViewLog.txt", isApplicationStart.length == 0); // Overwrite
@@ -172,11 +178,14 @@ public final class Utility {
 
 	}
 
+
 	/**
-	 * Write log.
+	 * Write phase view log.
 	 *
 	 * @param text
 	 *            the text
+	 * @param isApplicationStart
+	 *            the is application start
 	 */
 	public static void writePhaseViewLog(String text, Boolean... isApplicationStart) {
 		try (FileWriter fw = new FileWriter("log\\PhaseViewLog.txt", isApplicationStart.length == 0); // Overwrite
@@ -193,11 +202,14 @@ public final class Utility {
 
 	}
 
+
 	/**
-	 * Write log.
+	 * Write card view log.
 	 *
 	 * @param text
 	 *            the text
+	 * @param isApplicationStart
+	 *            the is application start
 	 */
 	public static void writeCardViewLog(String text, Boolean... isApplicationStart) {
 		try (FileWriter fw = new FileWriter("log\\CardViewLog.txt", isApplicationStart.length == 0); // Overwrite

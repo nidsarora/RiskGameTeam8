@@ -64,9 +64,12 @@ public class RiskTerritoryModel implements Serializable {
 		player = playermodel;
 	}
 
+
 	/**
 	 * Sets the adjacent.
 	 *
+	 * @param adjacent
+	 *            the new adjacent
 	 */
 	public void setAdjacent(Vector<Integer> adjacent) {
 		adjacents = adjacent;

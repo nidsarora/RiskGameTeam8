@@ -58,9 +58,12 @@ public class RiskStartupEndPhaseModel extends Observable implements PhaseViewInt
 		return Utility.getPhaseTitle(this);
 	}
 
+
 	/**
 	 * Sets the title.
 	 *
+	 * @param title
+	 *            sets new title
 	 */
 	public void setTitle(String title) {
 		this.title = title;

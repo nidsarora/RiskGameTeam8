@@ -96,7 +96,6 @@ public class Cheater implements StrategyInterface, Serializable {
 	 *
 	 * @param riskGameModel
 	 *            the risk game model
-	 * @return the string
 	 */
 	private void tradeCards(RiskGameModel riskGameModel) {
 		int count = 0;
