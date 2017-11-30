@@ -352,20 +352,14 @@ public class RiskAddPlayerController extends java.awt.Frame {
 						map = (String) chooseMap.getSelectedItem();
 						Utility.writeLog("Map selected by user ::" + map);
 						if (map.equalsIgnoreCase("3dcliff")) {
-							RiskGameModel.ImageUsed="3D Cliff.bmp";
-							//RiskMapPanelViewController.CustomImage = "3D Cliff.bmp";
-							}
+							RiskGameModel.ImageUsed="3D Cliff.bmp";}
 						else if (map.equalsIgnoreCase("world")) {
-							//RiskMapPanelViewController.CustomImage = "World.bmp";
 							RiskGameModel.ImageUsed="World.bmp";}
 						else if (map.equalsIgnoreCase("India")) {
-							//RiskMapPanelViewController.CustomImage = "India.bmp";
 							RiskGameModel.ImageUsed="India.bmp";}
 						else if (map.equalsIgnoreCase("british columbia")) {
-							//RiskMapPanelViewController.CustomImage = "British Columbia.bmp";
 							RiskGameModel.ImageUsed="British Columbia.bmp";}
 						else if (map.equalsIgnoreCase("europe")) {
-							//RiskMapPanelViewController.CustomImage = "Europe.bmp";
 						RiskGameModel.ImageUsed="Europe.bmp";}
 					}
 				});
