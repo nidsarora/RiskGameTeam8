@@ -9,8 +9,12 @@ import risk.model.RiskPlayerModel;
 import risk.model.RiskTerritoryModel;
 import risk.model.interfaces.StrategyInterface;
 
+/**
+ * The Class Benevolent.
+ */
 public class Benevolent implements StrategyInterface {
 
+	/** The current risk model. */
 	RiskGameModel currentRiskModel;
 
 	@Override
@@ -26,6 +30,11 @@ public class Benevolent implements StrategyInterface {
 		Utility.writeGameStats(riskGameModel);
 	}
 
+	/**
+	 * Trade cards.
+	 *
+	 * @param riskGameModel the risk game model
+	 */
 	private void tradeCards(RiskGameModel riskGameModel) {
 		int count = 0, cardCount = 0;
 		riskGameModel.lstTradedCards = new ArrayList<RiskCardModel>();
@@ -58,7 +67,6 @@ public class Benevolent implements StrategyInterface {
 
 	@Override
 	public void reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
-		// TODO Auto-generated method stub
 		riskGameModel.setState(RiskGameModel.REINFORCE);
 		riskGameModel.notifyPhaseViewChange();
 		riskGameModel.curPlayer.addArmies(riskGameModel.currentPlayerBonusArmiesRecieved = riskGameModel.turnBonus());
@@ -86,15 +94,17 @@ public class Benevolent implements StrategyInterface {
 		fortify(isTest, riskGameModel);
 	}
 
+	
 	@Override
 	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
-		// TODO Auto-generated method stub
+	
 		// the benevolent player not suppose to attack
 		// reinforce(isTest, riskGameModel, territory);
 		Utility.writeLog("ATTACK - benevolent BOT will not attack.");
 		return "";
 	}
 
+	
 	@Override
 	public String fortify(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		// TODO Auto-generated method stub
@@ -140,6 +150,12 @@ public class Benevolent implements StrategyInterface {
 		return "";
 	}
 
+	/**
+	 * Gets the fortified territory.
+	 *
+	 * @param fortifierTerritory the fortifier territory
+	 * @return the fortified territory
+	 */
 	private RiskTerritoryModel getFortifiedTerritory(RiskTerritoryModel fortifierTerritory) {
 		for (int territory : fortifierTerritory.getAdjacents()) {
 			if (currentRiskModel.curPlayer.getOccupiedTerritories()
@@ -149,6 +165,12 @@ public class Benevolent implements StrategyInterface {
 		return null;
 	}
 
+	/**
+	 * Checks for self occupied ajacents.
+	 *
+	 * @param viableTerritory the viable territory
+	 * @return true, if successful
+	 */
 	private boolean hasSelfOccupiedAjacents(RiskTerritoryModel viableTerritory) {
 		for (int territory : viableTerritory.getAdjacents()) {
 			if (currentRiskModel.curPlayer.getOccupiedTerritories()
@@ -161,22 +183,24 @@ public class Benevolent implements StrategyInterface {
 
 	@Override
 	public void initialReinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
-		if (riskGameModel.curPlayer.getNumberOfArmies() > 0) {
-			int occupiedTerritory = getWeakTerritoryOccupiedByPlayer(riskGameModel.curPlayer);
-			if (occupiedTerritory != -1) {
-				riskGameModel.occupyTerritoryByPlayer(occupiedTerritory, riskGameModel.curPlayer);
-				Utility.writeLog("INITIAL REINFORCE - called - " + riskGameModel.curPlayer.getName()
-						+ " placed one of his army on " + riskGameModel.getTerritoryAt(occupiedTerritory).getName());
+
+		if (!riskGameModel.anyPlayerHasArmies()) {
+			riskGameModel.setState(RiskGameModel.START_TURN);
+			startTurn(false, riskGameModel);
+		} else {
+
+			if (riskGameModel.curPlayer.getNumberOfArmies() > 0) {
+				int occupiedTerritory = getWeakTerritoryOccupiedByPlayer(riskGameModel.curPlayer);
+				if (occupiedTerritory != -1) {
+					riskGameModel.occupyTerritoryByPlayer(occupiedTerritory, riskGameModel.curPlayer);
+					Utility.writeLog("INITIAL REINFORCE - called - " + riskGameModel.curPlayer.getName()
+							+ " placed one of his army on "
+							+ riskGameModel.getTerritoryAt(occupiedTerritory).getName());
+				}
 			}
 			riskGameModel.notifyPhaseViewChange();
-
-			if (!riskGameModel.anyPlayerHasArmies()) {
-				riskGameModel.setState(RiskGameModel.START_TURN);
-				startTurn(false, riskGameModel);
-			} else
-				riskGameModel.nextPlayer();
-		} else
 			riskGameModel.nextPlayer();
+		}
 		// return "";
 	}
 
@@ -198,6 +222,12 @@ public class Benevolent implements StrategyInterface {
 		// return "";
 	}
 
+	/**
+	 * Gets the weak territory occupied by player.
+	 *
+	 * @param player the player
+	 * @return the weak territory occupied by player
+	 */
 	int getWeakTerritoryOccupiedByPlayer(RiskPlayerModel player) {
 		RiskTerritoryModel territory, temp;
 

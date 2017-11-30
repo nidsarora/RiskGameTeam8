@@ -1203,7 +1203,7 @@ public class RiskGameModelSerializable implements Serializable {
 //			out.writeObject(risk);
 //			out.close();
 //			fileOut.close();
-//			System.out.printf("Serialized data is saved in /tmp/employee.ser");
+//			System.out.printf("Serialized data is saved in /tmp/riskGameSavedState.ser");
 //		} catch (IOException i) {
 //			i.printStackTrace();
 //		}

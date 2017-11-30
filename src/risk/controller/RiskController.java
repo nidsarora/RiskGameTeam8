@@ -38,6 +38,7 @@ import risk.model.*;
 import risk.controller.RiskPlayerPanelViewController;
 import risk.helpers.Utility;
 
+
 /**
  * This class contains the card logic as well as it tales the phase from the
  * RiskGameModel and displays when a player should put armies on unoccupied
@@ -56,14 +57,29 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		return countTradeCards;
 	}
 
+	/**
+	 * Gets the risk.
+	 *
+	 * @return the risk
+	 */
 	public RiskGameModel getRisk() {
 		return risk;
 	}
 
+	/**
+	 * Sets the risk.
+	 *
+	 * @param test the new risk
+	 */
 	public void setRisk(RiskGameModel test) {
 		risk = test;
 	}
 
+	/**
+	 * Instantiates a new risk controller.
+	 *
+	 * @param test the test
+	 */
 	public RiskController(String test) {
 		risk = new RiskGameModel(test);
 	}
@@ -80,8 +96,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	/**
 	 * Sets the risk current player.
 	 *
-	 * @param riskplayermodel,
-	 *            new risk current player
+	 * @param riskplayermodel the new risk cur player
 	 */
 	public void setRiskCurPlayer(RiskPlayerModel riskplayermodel) {
 
@@ -112,6 +127,11 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		risk.curPlayer.takeTurn(risk);
 	}
 
+	/**
+	 * Load saved risk game model.
+	 *
+	 * @return the risk game model
+	 */
 	private RiskGameModel loadSavedRiskGameModel() {
 		this.risk = null;
 		RiskGameModelSerializable riskStaticComponents;
@@ -129,7 +149,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 			i.printStackTrace();
 			return null;
 		} catch (ClassNotFoundException c) {
-			System.out.println("Employee class not found");
+			System.out.println("RiskGame class not found");
 			c.printStackTrace();
 			return null;
 		}
@@ -138,6 +158,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	/**
 	 * Initialize phase view.
 	 *
+	 * @param risk the risk
 	 */
 	private void initializePhaseView(RiskGameModel risk) {
 
@@ -224,7 +245,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 				EndButtonMouseClicked(evt);
 			}
 		});
-		SaveButton.setVisible(true);
+		SaveButton.setVisible(false);
 		SaveButton.setFont(resourceMap.getFont("SaveButton.font")); // NOI18N
 		SaveButton.setText("Save Game"); // NOI18N
 		SaveButton.setName("SaveButton"); // NOI18N
@@ -275,6 +296,11 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		pack();
 	}
 
+	/**
+	 * Save game button mouse clicked.
+	 *
+	 * @param evt the evt
+	 */
 	protected void SaveGameButtonMouseClicked(MouseEvent evt) {
 		// TODO Auto-generated method stub
 		this.risk.saveGame(risk);
@@ -283,12 +309,13 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	/**
 	 * Attack button mouse clicked.
 	 *
+	 * @param evt the evt
 	 */
 	private void AttackButtonMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_AttackButtonMouseClicked
 		Utility.writeLog("Attack Phase entered");
 		risk.setState(RiskGameModel.ATTACK);
 		FortifyButton.setVisible(false);
-		EndButton.setVisible(true);
+		EndButton.setVisible(false);
 		statusLabel.setText("Select a territory to attack with");
 		if (AttackButton.getText().equals("Retreat")) {
 			risk.setState(RiskGameModel.ACTIVE_TURN);
@@ -311,6 +338,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 	/**
 	 * End button mouse clicked.
+	 *
+	 * @param evt the evt
 	 */
 	private void EndButtonMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_EndButtonMouseClicked
 		risk.nextPlayer();
@@ -334,6 +363,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 	/**
 	 * Fortify button mouse clicked.
+	 *
+	 * @param evt the evt
 	 */
 	private void FortifyButtonMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_FortifyButtonMouseClicked
 		risk.setState(RiskGameModel.FORTIFY);
@@ -344,6 +375,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 	/**
 	 * Card button mouse clicked.
+	 *
+	 * @param evt the evt
 	 */
 	private void CardButtonMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_CardButtonMouseClicked
 		// risk.setState(RiskGameModel.TRADE_CARDS);
@@ -382,7 +415,10 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		});
 	}
 
+	/** The i. */
 	private int i;
+	
+	/** The control panel 1. */
 	private JPanel controlPanel1;
 
 	/** The Attack button. */
@@ -400,15 +436,24 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 	/** The Fortify button. */
 	private javax.swing.JButton FortifyButton;
+	
+	/** The j panel 1. */
 	/*
 	 * private javax.swing.JPanel jPanel1;
 	 */private RiskMapPanelViewController jPanel1;
+	
+	/** The j panel 3. */
 	/*
 	 * private javax.swing.JPanel jPanel3;
 	 */ private RiskPlayerPanelViewController jPanel3;
+	
+	/** The status label. */
 	private javax.swing.JLabel statusLabel;
 	// End of variables declaration//GEN-END:variables
 
+	/* (non-Javadoc)
+	 * @see java.awt.event.MouseListener#mouseClicked(java.awt.event.MouseEvent)
+	 */
 	public void mouseClicked(MouseEvent me) {
 		int x_coordinate = me.getX();
 		int y_coordinate = me.getY();
@@ -522,6 +567,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					AttackButton.setText("Attack");
 					FortifyButton.setVisible(true);
 					EndButton.setVisible(true);
+					AttackButton.setVisible(true);
 					risk.defenseNum = 0;
 					risk.attackNum = 0;
 					risk.defenseTerritory = null;
@@ -546,9 +592,10 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 																		// ben
 					// clicked
 					if (risk.yCoordinate > 325 && risk.yCoordinate < 355) {// then
-																			// occupy
+						AttackButton.setVisible(true);											// occupy
 						EndButton.setVisible(true);
 						FortifyButton.setVisible(true);
+						SaveButton.setVisible(false);
 						if (risk.capture()) {
 							AttackButton.setVisible(false);
 							FortifyButton.setVisible(false);
@@ -578,6 +625,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					if (risk.yCoordinate > 325 && risk.yCoordinate < 355) {
 						AttackButton.setVisible(false);
 						EndButton.setVisible(true);
+						SaveButton.setVisible(true);
 						FortifyButton.setVisible(false);
 					}
 				}
@@ -706,6 +754,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 	/**
 	 * Checks if is already added.
 	 *
+	 * @param jbn the jbn
 	 * @return true, if is already added
 	 */
 	private boolean isAlreadyAdded(JButton jbn) {
@@ -720,6 +769,8 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 	/**
 	 * Creates the layout.
+	 *
+	 * @param arg the arg
 	 */
 	private void createLayout(JComponent... arg) {
 
@@ -738,22 +789,46 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		pack();
 	}
 
+	/**
+	 * Say something.
+	 *
+	 * @param desc the desc
+	 * @param e the e
+	 */
 	void saySomething(String desc, MouseEvent e) {
 		// jTextArea1.append(desc + " (" + e.getX() + "," + e.getY() + ")\n");
 	}
 
+	/* (non-Javadoc)
+	 * @see java.awt.event.MouseListener#mousePressed(java.awt.event.MouseEvent)
+	 */
 	public void mousePressed(MouseEvent me) {
 	}
 
+	/* (non-Javadoc)
+	 * @see java.awt.event.MouseListener#mouseReleased(java.awt.event.MouseEvent)
+	 */
 	public void mouseReleased(MouseEvent me) {
 	}
 
+	/* (non-Javadoc)
+	 * @see java.awt.event.MouseListener#mouseEntered(java.awt.event.MouseEvent)
+	 */
 	public void mouseEntered(MouseEvent me) {
 	}
 
+	/* (non-Javadoc)
+	 * @see java.awt.event.MouseListener#mouseExited(java.awt.event.MouseEvent)
+	 */
 	public void mouseExited(MouseEvent me) {
 	}
 
+	/**
+	 * Fortify phase.
+	 *
+	 * @param x the x
+	 * @param y the y
+	 */
 	public void fortifyPhase(int x, int y) {
 		if (risk.getState() == RiskGameModel.FORTIFY_PHASE) {
 			int from = risk.aTerritory.getArmies();
@@ -793,6 +868,12 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		} // ..fortify phase
 	}
 
+	/**
+	 * Attack phase.
+	 *
+	 * @param x the x
+	 * @param y the y
+	 */
 	public void attackPhase(int x, int y) {
 		if (risk.getState() == RiskGameModel.ATTACK_PHASE) {
 			// jInternalFrame1.setVisible(true);
@@ -873,6 +954,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					if (risk.aTerritory.getArmies() == 1) {
 						risk.setState(RiskGameModel.ACTIVE_TURN);
 						statusLabel.setText(risk.curPlayer.getName() + " has lost the battle");
+						AttackButton.setVisible(true);
 						AttackButton.setText("Attack");
 						FortifyButton.setVisible(true);
 						EndButton.setVisible(true);
@@ -934,6 +1016,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					// EndButton.setVisible(true);
 					// FortifyButton.setVisible(true);
 					risk.capture();
+					AttackButton.setVisible(true);
 				}
 			}
 			// risk.notifyPhaseViewChange();
@@ -941,16 +1024,32 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 
 	}
 
+	/** The card status label. */
 	private JLabel cardStatusLabel;
+	
+	/** The risk. */
 	private RiskGameModel risk;
+	
+	/** The jfm card. */
 	private JFrame jfmCard;
+	
+	/** The status panel. */
 	private JPanel jp, statusPanel;
+	
+	/** The count trade cards. */
 	private int countTradeCards = 0;
 	// private List<RiskCardModel> lstTradedCards = new
 	// ArrayList<RiskCardModel>();
+	/** The is base map edited. */
 	// moved to RiskGameModel
 	public static Boolean isBaseMapEdited = false;
+	
+	/** The is saved game loaded. */
 	public static Boolean isSavedGameLoaded = false;
+	
+	/** The cards frame. */
 	private JFrame cardsFrame;
+	
+	/** The cardbuttons panel. */
 	private JPanel cardbuttonsPanel;
 }
