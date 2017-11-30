@@ -49,13 +49,12 @@ public class RiskReinforcementPhaseModel extends Observable implements PhaseView
 
 	@Override
 	public String getContent() {
-		// TODO Auto-generated method stub
 		return this.toString();
 	}
 
 	@Override
 	public void isChanged() {
-		// TODO Auto-generated method stub
+		
 		// specify that my state was changed
 		setChanged();
 		// notify all attached Observers of a change
