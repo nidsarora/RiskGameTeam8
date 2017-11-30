@@ -23,14 +23,14 @@ public class RiskTournamentModel implements Serializable {
 	public List<String> tournamentGameMapNameList;
 	public int tournamentGameCount;
 	public int gamePerMapCount;
-	public Vector<RiskPlayerModel> tournamentPlayers;
+	public Vector<RiskPlayerModel> tournamentPlayers = new Vector<RiskPlayerModel>(); 
 	public int mapCount;
 
 	public RiskTournamentModel(int tournamentMapCount, int GamePerMapCount, Vector<RiskPlayerModel> players,
 			int GameTurnCount, ArrayList<String> mapNameList) {
 		this.mapCount = tournamentMapCount;
 		this.gamePerMapCount = GamePerMapCount;
-		this.tournamentPlayers = players;
+		tournamentPlayers = players;
 		tournamentGameMaxTurnCount = GameTurnCount;
 		this.tournamentGameMapNameList = mapNameList;
 	}
@@ -57,7 +57,10 @@ public class RiskTournamentModel implements Serializable {
 		if (tournamentGameList == null)
 			tournamentGameList = new ArrayList<RiskGameModel>();
 		while (gameCount <= tournamentGameCount) {
-			RiskGameModel.players = this.tournamentPlayers;
+			RiskGameModel.players = new Vector<RiskPlayerModel>();
+			Vector<RiskPlayerModel> tclone = (Vector<RiskPlayerModel>) tournamentPlayers.clone();
+			RiskGameModel.players =  tclone;
+			RiskGameModel.territories = new Vector<RiskTerritoryModel>();
 			tournamentGameList.add(new RiskGameModel(tournamentGameMapNameList.get(gameCount - 1)));
 			gameCount++;
 		}

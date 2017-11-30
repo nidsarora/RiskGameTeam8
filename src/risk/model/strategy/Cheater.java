@@ -195,7 +195,7 @@ public class Cheater implements StrategyInterface, Serializable {
 				if (currentRiskModel.defender.getOccupiedTerritories().size() == 0) {
 					Utility.writeLog(currentRiskModel.defender.getName() + " lost the game.");
 					currentRiskModel.removePlayer(currentRiskModel.defender);
-					if (RiskGameModel.players.size() == 1) {
+					if (currentRiskModel.players.size() == 1) {
 						Utility.writeLog(currentRiskModel.active.getName() + " has won the game");
 						currentRiskModel.notifyPhaseViewChange();
 						return true;

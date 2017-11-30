@@ -249,17 +249,16 @@ public class RiskGameModel implements Serializable {
 		initalPlayer();
 		initializeMapVariables();
 		ValidateLoadMap();
-		if (RiskGameModel.isTournamentMode)
-			instantiateStaticContent();
 		initializeDeck();
 		distubuteArmies();
 		assignTerritories();// TODO - Auto distribution of armies - set the //
-							// current player phase to // // // reinforcement
+		if (RiskGameModel.isTournamentMode)
+			instantiateStaticContent();					// current player phase to // // // reinforcement
 	}
 
 	public void instantiateStaticContent() {
-		this.territoriesInstantiable = territories;
-		this.playersInstantiable = players;
+		this.territoriesInstantiable =  (Vector<RiskTerritoryModel>) territories.clone();
+		this.playersInstantiable = (Vector<RiskPlayerModel>) players.clone();
 	}
 
 	public Vector<RiskTerritoryModel> getTerritoriesInstantiable() {
@@ -771,7 +770,7 @@ public class RiskGameModel implements Serializable {
 	public void distubuteArmies() {
 		int numOfPlayers = players.size();
 		if (numOfPlayers == 3)
-			armies = 15;
+			armies = 45;
 		else if (numOfPlayers == 4)
 			armies = 30;
 		else if (numOfPlayers == 5)
