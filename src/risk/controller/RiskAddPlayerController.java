@@ -34,7 +34,7 @@ public class RiskAddPlayerController extends java.awt.Frame {
 	static int noOfPlayers = 3;
 
 	/** The map. */
-	String map;
+	static String map;
 
 	/** The behaviour players. */
 	static ArrayList<String> behaviourPlayers = new ArrayList<String>(7);
@@ -350,6 +350,7 @@ public class RiskAddPlayerController extends java.awt.Frame {
 
 					public void actionPerformed(ActionEvent event) {
 						map = (String) chooseMap.getSelectedItem();
+						RiskController.isBaseMapEdited = true;
 						Utility.writeLog("Map selected by user ::" + map);
 						if (map.equalsIgnoreCase("3dcliff")) {
 							RiskGameModel.ImageUsed="3D Cliff.bmp";}
@@ -440,9 +441,16 @@ public class RiskAddPlayerController extends java.awt.Frame {
 			System.out.println(behaviourPlayers.get(i));
 		}
 		System.out.println("map" + map);
+		RiskStartGameController riskGameController = new RiskStartGameController();
 		if (map == "UserDefined") {
-			RiskStartGameController riskGameController = new RiskStartGameController();
-			riskGameController.onChooseMap();
+			riskGameController.onChooseMap();		
+		}
+		
+		riskGameController.LoadCustomMap();
+		// riskGameController.BuildContriesBasedOnContinent();
+		if (riskGameController.CheckMapIsConnected()) {
+			riskGameController.initializeMapVariables();
+			riskGameController.CurrentGameMapEditor(riskGameController.TextForContinentAndCountries());
 		}
 	}
 

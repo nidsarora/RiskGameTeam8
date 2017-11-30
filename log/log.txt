@@ -1,18 +1,12 @@
 **************The Risk Begin************
 
-Thu Nov 30 03:48:34 EST 2017
+Thu Nov 30 04:36:28 EST 2017
+
+15 armies added to each player
 
 Build the Game Panel
 
 ***********Player_1 turn *************
 
-Attack Phase entered
-
-Player_1 entered attacking phase.
-
-Player_1 entered attacking phase.
-
-Attack Phase entered
-
-Attack operation cancelled
+initial reinforcement stage
 

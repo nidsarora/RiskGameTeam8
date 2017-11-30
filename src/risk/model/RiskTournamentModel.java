@@ -51,7 +51,7 @@ public class RiskTournamentModel implements Serializable {
 			int GameTurnCount, ArrayList<String> mapNameList) {
 		this.mapCount = tournamentMapCount;
 		this.gamePerMapCount = GamePerMapCount;
-		tournamentPlayers = players;
+		this.tournamentPlayers = players;
 		tournamentGameMaxTurnCount = GameTurnCount;
 		this.tournamentGameMapNameList = mapNameList;
 	}

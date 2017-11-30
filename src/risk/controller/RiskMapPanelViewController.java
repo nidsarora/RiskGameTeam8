@@ -11,6 +11,7 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.geom.Line2D;
 import java.awt.image.PixelGrabber;
+import java.io.IOException;
 import java.util.Vector;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;

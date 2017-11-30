@@ -71,13 +71,12 @@ public class RiskStartGameController extends java.awt.Frame {
 
 	/** The current country. */
 	HashMap<String, String> hmCurrentCountry = new HashMap<String, String>();
-
-	/** The copy country details. */
-	public HashMap<String, String> copyhmCountryDetails = new HashMap<String, String>();
-
 	/** The copy cotinent details. */
 	public HashMap<String, HashMap<String, String>> hmCotinentDetails = new HashMap<String, HashMap<String, String>>();
+	public HashMap<String, String> copyhmCountryDetails = new HashMap<String, String>();
 
+	
+		
 	/** The Linked countries. */
 	Vector<String> LinkedCountries = new Vector<String>();
 
@@ -520,7 +519,10 @@ public class RiskStartGameController extends java.awt.Frame {
 		addContinent.setVisible(false);
 		addButton.setVisible(true);
 
-		String Filename = jTecxtCustomMap.getText() + ".map";
+	}
+
+	public void LoadCustomMap() {
+		String Filename = RiskAddPlayerController.map + ".map";
 		String nextLine = "";
 		hmCountryDetails.clear();
 		userDefinedContinentList.clear();
@@ -558,7 +560,7 @@ public class RiskStartGameController extends java.awt.Frame {
 				} while (done == false);
 			}
 		}
-		updateMapEditTextArea();
+	
 	}
 
 	/**
@@ -599,6 +601,14 @@ public class RiskStartGameController extends java.awt.Frame {
 		// copyhmCountryDetails = (HashMap<String, String>)
 		// hmCountryDetails.clone();
 
+		if (CheckMapIsConnected()) {
+			CurrentGameMapEditor(mapEditTextArea.getText());
+			mainwindow.dispose();
+		}
+
+	}
+
+	public boolean CheckMapIsConnected() {
 		String NotLinkedCountries = "";
 		BuildContriesBasedOnContinent();
 		boolean flag = false;
@@ -623,17 +633,13 @@ public class RiskStartGameController extends java.awt.Frame {
 
 		}
 
-		if (flag) {
-			CurrentGameMapEditor(mapEditTextArea.getText());
-			mainwindow.dispose();
-		}
-
+		return flag;
 	}
 
 	/**
 	 * Builds the contries based on continent.
 	 */
-	private void BuildContriesBasedOnContinent() {
+	public void BuildContriesBasedOnContinent() {
 		for (Entry<String, String> entry : hmCountryDetails.entrySet()) {
 			if (hmCotinentDetails.containsKey(entry.getValue().split(",")[3])) {
 				HashMap<String, String> CountryDetails = hmCotinentDetails.get(entry.getValue().split(",")[3]);
@@ -671,7 +677,7 @@ public class RiskStartGameController extends java.awt.Frame {
 	 *            the edit text area
 	 * 
 	 */
-	private void CurrentGameMapEditor(String editTextArea) {
+	public void CurrentGameMapEditor(String editTextArea) {
 		String EarthMapStaticContent;
 		File currentGameMap;
 
@@ -765,14 +771,28 @@ public class RiskStartGameController extends java.awt.Frame {
 		scrollTextAreaPanel.repaint();
 	}
 
-	/**
-	 * Check countries connected.
-	 *
-	 * @param isTest the is test
-	 * @param countrylistdetials the countrylistdetials
-	 * @param copylist the copylist
-	 * @return true, if successful
-	 */
+	public String TextForContinentAndCountries() {
+		sbMapContinentContents = new StringBuilder();
+		sbMapContinentContents.append("[Continents]\n");
+		for (String userDefinedContinentKey : this.userDefinedContinentList.keySet())
+			sbMapContinentContents.append(
+					userDefinedContinentKey + "=" + this.userDefinedContinentList.get(userDefinedContinentKey) + "\n");
+		sbMapContinentContents.append("\n\n[Territories]\n\n");
+		// sbMapContinentContents.append(sbMapTerritoryContents.toString());
+
+		for (Object value : hmCountryDetails.values()) {
+			sbMapContinentContents.append(value.toString() + "\n"); // changed
+																	// the
+																	// logic for
+																	// writting
+																	// the
+																	// current
+																	// map -
+																	// goutham
+		}
+		return sbMapContinentContents.toString();
+	}
+
 	public boolean CheckCountriesConnected(boolean isTest, HashMap<String, String> countrylistdetials,
 			HashMap<String, String> copylist) {
 
