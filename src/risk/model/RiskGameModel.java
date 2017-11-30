@@ -224,6 +224,7 @@ public class RiskGameModel implements Serializable {
 	public String currentTournamentGameMapName;
 
 	public List<RiskCardModel> lstTradedCards = new ArrayList<RiskCardModel>();
+	static public String ImageUsed = "";
 
 	// /**
 	// * Instantiates a new risk game model.
@@ -249,16 +250,17 @@ public class RiskGameModel implements Serializable {
 		initalPlayer();
 		initializeMapVariables();
 		ValidateLoadMap();
+		if (RiskGameModel.isTournamentMode)
+			instantiateStaticContent();
 		initializeDeck();
 		distubuteArmies();
 		assignTerritories();// TODO - Auto distribution of armies - set the //
-		if (RiskGameModel.isTournamentMode)
-			instantiateStaticContent();					// current player phase to // // // reinforcement
+							// current player phase to // // // reinforcement
 	}
 
 	public void instantiateStaticContent() {
-		this.territoriesInstantiable =  (Vector<RiskTerritoryModel>) territories.clone();
-		this.playersInstantiable = (Vector<RiskPlayerModel>) players.clone();
+		this.territoriesInstantiable = territories;
+		this.playersInstantiable = players;
 	}
 
 	public Vector<RiskTerritoryModel> getTerritoriesInstantiable() {
@@ -293,9 +295,9 @@ public class RiskGameModel implements Serializable {
 	}
 
 	/**
-	 * This method checks if the TradeCardSet is valid or not i.e. if the number of
-	 * cards is 3, and then checks if all 3 are either the same or all three are of
-	 * different types or one of the three is a wild card
+	 * This method checks if the TradeCardSet is valid or not i.e. if the number
+	 * of cards is 3, and then checks if all 3 are either the same or all three
+	 * are of different types or one of the three is a wild card
 	 *
 	 * @return the boolean
 	 */
@@ -730,9 +732,7 @@ public class RiskGameModel implements Serializable {
 		if (RiskGameModel.isTournamentMode)
 			if (this.turn >= RiskTournamentModel.tournamentGameMaxTurnCount) {
 				this.setState(RiskGameModel.END_GAME);
-				JOptionPane.showMessageDialog(null,
-						"Game drawn!!",
-						"Alert", JOptionPane.INFORMATION_MESSAGE);
+				JOptionPane.showMessageDialog(null, "Game drawn!!", "Alert", JOptionPane.INFORMATION_MESSAGE);
 				return;
 			} else
 				this.turn = RiskGameModel.gameState == RiskGameModel.INITIAL_REINFORCE ? this.turn : this.turn + 1;
@@ -765,12 +765,13 @@ public class RiskGameModel implements Serializable {
 	}
 
 	/**
-	 * This method initializes the number of armies as per the number of players.
+	 * This method initializes the number of armies as per the number of
+	 * players.
 	 */
 	public void distubuteArmies() {
 		int numOfPlayers = players.size();
 		if (numOfPlayers == 3)
-			armies = 45;
+			armies = 15;
 		else if (numOfPlayers == 4)
 			armies = 30;
 		else if (numOfPlayers == 5)
@@ -851,8 +852,8 @@ public class RiskGameModel implements Serializable {
 	}
 
 	/**
-	 * This method calculates the reinforcement from Continent as every continent
-	 * has a different control value.
+	 * This method calculates the reinforcement from Continent as every
+	 * continent has a different control value.
 	 *
 	 * @return the int
 	 */
@@ -1636,7 +1637,8 @@ public class RiskGameModel implements Serializable {
 	}
 
 	/**
-	 * This method checks if the territory is occupied by the current player or not.
+	 * This method checks if the territory is occupied by the current player or
+	 * not.
 	 *
 	 * @param riskterritorymodel
 	 *            the risk territory model
@@ -2017,7 +2019,7 @@ public class RiskGameModel implements Serializable {
 			out.writeObject(risk.mapRiskGameModelToRiskGameSerizable());
 			out.close();
 			fileOut.close();
-			System.out.printf("Serialized data is saved in /tmp/riskGameSavedState.ser");
+			System.out.printf("Serialized data is saved in /tmp/employee.ser");
 		} catch (IOException i) {
 			i.printStackTrace();
 		}
