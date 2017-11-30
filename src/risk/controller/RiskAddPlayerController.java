@@ -382,31 +382,31 @@ public class RiskAddPlayerController extends java.awt.Frame {
 			case "Human": {
 				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Human());
 				System.out.println((i + 1) + "new risk.model.strategy.Human");
-				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as" +"Human player");
+				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as " +"Human player");
 				break;
 			}
 
 			case "Aggressive": {
 				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Aggressive());
 				System.out.println((i + 1) + "new risk.model.strategy.Aggressive");
-				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as" +"Aggressive player");
+				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as " +"Aggressive player");
 				break;
 			}
 			case "Benevolent": {
 				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Benevolent());
-				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as" +"Benevolent player");
+				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as " +"Benevolent player");
 				System.out.println((i + 1) + "new risk.model.strategy.Benevolent");
 				break;
 			}
 			case "Random": {
 				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Random());
-				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as" +"Random player");
+				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as " +"Random player");
 				System.out.println((i + 1) + "new risk.model.strategy.Random");
 				break;
 			}
 			case "Cheater": {
 				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Cheater());
-				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as" +"Cheater player");
+				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as " +"Cheater player");
 				System.out.println((i + 1) + "new risk.model.strategy.Cheater");
 				break;
 			}
