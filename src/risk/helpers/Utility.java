@@ -226,6 +226,7 @@ public final class Utility {
 			out.println("***Game Stats***\n\n");
 
 			if (riskGameModel != null)
+			{
 				out.println("Map is " + riskGameModel.currentTournamentGameMapName);
 				for (RiskPlayerModel player : RiskGameModel.players) {
 					out.println(player.getName() + " T Count " + player.getOccupiedTerritories().size() + " Army Count "
@@ -235,6 +236,7 @@ public final class Utility {
 					}
 					out.println("\n\n\n");
 				}
+			}
 			out.close();
 			bw.close();
 			fw.close();
