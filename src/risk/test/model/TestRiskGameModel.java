@@ -510,7 +510,13 @@ public class TestRiskGameModel {
 	 * Test check tags present.
 	 */
 	@Test
-	public void testcheckTagsPresent() {
+	public void testCheckTagsPresent() {
+		riskGameModel.initializeMapVariables();
+		assertEquals(true, riskGameModel.checkTagsPresent(riskGameModel.sbBaseMapString.toString()));
+	}
+	
+	@Test
+	public void testTagsNotPresent() {
 		riskGameModel.initializeMapVariables();
 		// test the baseMap - > go to map and remove some tags [Maps]/[Continents] etc
 		assertEquals(true, riskGameModel.checkTagsPresent(riskGameModel.sbBaseMapString.toString()));
@@ -518,7 +524,7 @@ public class TestRiskGameModel {
 		// etc
 		assertEquals(false, riskGameModel.checkTagsPresent(riskGameModel.sbCurrentMapString.toString()));
 	}
-
+	
 	/**
 	 * Test check adjacent present all territories.
 	 */
