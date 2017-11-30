@@ -30,7 +30,7 @@ public class TestRiskController {
 	@Before
 	public void before()
 	{
-	    rc= new RiskController("test");
+	    rc= new RiskController("test",true);
 	}
 
 	/**
@@ -59,7 +59,7 @@ public class TestRiskController {
 		aTerritory.addArmies(5);
 		RiskTerritoryModel dTerritory= new RiskTerritoryModel(2,"Northwest_Territory",1,155,70);
 		dTerritory.addArmies(10);
-		RiskGameModel  riskGameModel=new RiskGameModel("test");
+		RiskGameModel  riskGameModel=new RiskGameModel("test",true);
 	    riskGameModel.setaTerritory(aTerritory);
 	    riskGameModel.setdTerritory(dTerritory);
 	    riskGameModel.setState(14);
@@ -80,7 +80,7 @@ public class TestRiskController {
 		Aggressive aggressive=new Aggressive();
 		RiskPlayerModel rpm=new RiskPlayerModel("player1",1,aggressive);
 		RiskPlayerModel rpm1=new RiskPlayerModel("player1",1,aggressive);
-		RiskGameModel  riskGameModel=new RiskGameModel("test");
+		RiskGameModel  riskGameModel=new RiskGameModel("test",true);
 		riskGameModel.setCurPlayer(rpm);
 		riskGameModel.active=rpm;
 		riskGameModel.defender=rpm1;
@@ -115,7 +115,7 @@ public class TestRiskController {
 		Aggressive aggressive=new Aggressive();
 		RiskPlayerModel rpm=new RiskPlayerModel("player1",1,aggressive);
 		RiskPlayerModel rpm1=new RiskPlayerModel("player1",1,aggressive);
-		RiskGameModel  riskGameModel=new RiskGameModel("test");
+		RiskGameModel  riskGameModel=new RiskGameModel("test",true);
 		//riskGameModel.setCurPlayer(rpm1);
 		riskGameModel.active=rpm1;
 		riskGameModel.defender=rpm1;
