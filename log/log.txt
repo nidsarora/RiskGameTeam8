@@ -1,0 +1,14 @@
+***********Tournament Mode begins  *************
+
+Player 1 :: Aggressive
+
+Player 2 :: Random
+
+Player 3 :: Cheater
+
+Maps are selected randomly 
+
+Map 1 Europe.map
+
+45 armies added to each player
+

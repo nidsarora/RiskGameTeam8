@@ -28,7 +28,7 @@ public class TestRiskGameModel {
 	 */
 	@Before
 	public void before() {
-		riskGameModel = new RiskGameModel("test");
+		riskGameModel = new RiskGameModel("test",true);
 	}
 
 	/**
@@ -345,6 +345,19 @@ public class TestRiskGameModel {
 		assertEquals("false", nfortify);
 
 	}
+	@Test
+	public void testGetOwnershipFails() 
+	{
+    	Benevolent benevolent=new Benevolent();
+		RiskPlayerModel rpm=new RiskPlayerModel("player1",0,benevolent);
+		riskGameModel.setCurPlayer(rpm);
+		RiskTerritoryModel rttm= new RiskTerritoryModel(9,"Alaska",1,47,76);
+		rttm.setPlayer(rpm);
+		riskGameModel.territories= new Vector<RiskTerritoryModel>();
+	    riskGameModel.territories.addElement(rttm);
+		int c=riskGameModel.getOwnership(0);
+		assertEquals(0,c);
+	}
 
 	
 	/**
@@ -512,7 +525,7 @@ public class TestRiskGameModel {
 		Benevolent benevolent=new Benevolent();
 		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1,benevolent);
 		RiskPlayerModel riskplayermodel1 = new RiskPlayerModel("player2", 1,benevolent);
-		RiskGameModel riskGameModel = new RiskGameModel("test");
+		RiskGameModel riskGameModel = new RiskGameModel("test",true);
 		riskGameModel.players.add(riskplayermodel);
 		riskGameModel.players.add(riskplayermodel1);
 		riskGameModel.active = riskplayermodel;
@@ -524,7 +537,7 @@ public class TestRiskGameModel {
 		riskGameModel.defenseNum=2;
 	    riskGameModel.setaTerritory(aTerritory);
 	    riskGameModel.setdTerritory(dTerritory);
-	    assertEquals(1,riskGameModel.isCaptured());//players.size=1, so he won the game
+	    assertEquals(9,riskGameModel.isCaptured());//players.size=1, so he won the game
 	}
 	/**
 	 * Testdoes card match current player territory.

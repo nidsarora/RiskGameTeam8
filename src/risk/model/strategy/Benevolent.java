@@ -1,5 +1,6 @@
 package risk.model.strategy;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import risk.helpers.Utility;
@@ -12,7 +13,7 @@ import risk.model.interfaces.StrategyInterface;
 /**
  * The Class Benevolent.
  */
-public class Benevolent implements StrategyInterface {
+public class Benevolent implements StrategyInterface, Serializable {
 
 	/** The current risk model. */
 	RiskGameModel currentRiskModel;

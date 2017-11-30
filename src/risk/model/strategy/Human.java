@@ -9,6 +9,8 @@ import risk.model.interfaces.StrategyInterface;
 
 /**
  * This Class contains logic for Human player strategy.
+ * 
+ * @author Team8
  */
 public class Human implements StrategyInterface, Serializable {
 

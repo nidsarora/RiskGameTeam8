@@ -402,12 +402,16 @@ public class RiskTournamentModeController extends java.awt.Frame {
 		ArrayList<String> randomMapNameList = new ArrayList<String>();
 		ArrayList<String> tempmapNameList = new ArrayList<String>();
 		ArrayList<String> mapNameList = new ArrayList<String>();
-		randomMapNameList.add("BaseEarthMap.map");
-		randomMapNameList.add("World.map");
-		randomMapNameList.add("3D Cliff.map");
-		randomMapNameList.add("India.map");
+//		randomMapNameList.add("BaseEarthMap.map");
+//		randomMapNameList.add("World.map");
+//		randomMapNameList.add("3D Cliff.map");
+//		randomMapNameList.add("India.map");
 		randomMapNameList.add("Europe.map");
+<<<<<<< HEAD
+//		randomMapNameList.add("BritishColumbia.map");
+=======
 		randomMapNameList.add("British Columbia.map");
+>>>>>>> cf8b95a2cabe3dc740d2e53e2eed3fdd148118ed
         Collections.shuffle(randomMapNameList);
         Utility.writeLog("Maps are selected randomly " );
         for (int mapIndex=0; mapIndex<mapNum; mapIndex++) {

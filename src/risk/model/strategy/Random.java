@@ -14,6 +14,8 @@ import risk.model.interfaces.StrategyInterface;
 
 /**
  * This class contains logic for Random player.
+ * 
+ * @author Team8
  */
 public class Random implements StrategyInterface, Serializable {
 
