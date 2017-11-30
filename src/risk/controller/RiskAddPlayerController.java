@@ -1,5 +1,4 @@
 
-
 package risk.controller;
 
 import risk.controller.RiskStartGameController;
@@ -24,7 +23,6 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.awt.event.ActionEvent;
 
-
 /**
  * This class is used to add RiskPlayers to the game.
  * 
@@ -42,7 +40,7 @@ public class RiskAddPlayerController extends java.awt.Frame {
 	static ArrayList<String> behaviourPlayers = new ArrayList<String>(7);
 
 	/**
-	 *  Creates new form RiskAddPlayerUI.
+	 * Creates new form RiskAddPlayerUI.
 	 */
 	public RiskAddPlayerController() {
 		initComponents();
@@ -61,7 +59,7 @@ public class RiskAddPlayerController extends java.awt.Frame {
 		doneSelectingPlayers = new javax.swing.JButton();
 		Integer[] numbers = { 3, 4, 5, 6 };
 		String[] behaviours = { "Human", "Aggressive", "Benevolent", "Random", "Cheater" };
-		String[] maps = { "World", "3dCliff", "UserDefined","India","british columbia","Europe" };
+		String[] maps = { "World", "3dCliff", "UserDefined", "India", "british columbia", "Europe" };
 		JComboBox numPlayers = new JComboBox(numbers);
 		JComboBox behaviourPlayer1 = new JComboBox(behaviours);
 		JComboBox behaviourPlayer2 = new JComboBox(behaviours);
@@ -133,91 +131,103 @@ public class RiskAddPlayerController extends java.awt.Frame {
 		javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
 
 		jPanel1Layout
-		.setHorizontalGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
-				.addGroup(jPanel1Layout.createSequentialGroup().addContainerGap(202, Short.MAX_VALUE)
-						.addComponent(lblEnterTheNumber, GroupLayout.PREFERRED_SIZE, 197,
-								GroupLayout.PREFERRED_SIZE)
-						.addGap(114))
-				.addGroup(jPanel1Layout.createSequentialGroup().addGap(239)
-						.addComponent(numPlayers, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
-								GroupLayout.PREFERRED_SIZE)
-						.addContainerGap(243, Short.MAX_VALUE))
-				.addGroup(jPanel1Layout.createSequentialGroup().addGap(162).addComponent(lblText)
-						.addContainerGap(199, Short.MAX_VALUE))
-				.addGroup(jPanel1Layout.createSequentialGroup().addGap(69)
-						.addGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING, false)
-								.addComponent(lblPlayer1, GroupLayout.DEFAULT_SIZE, 72, Short.MAX_VALUE)
-								.addComponent(lblPlayer2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
-										Short.MAX_VALUE)
-								.addComponent(lblPlayer3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
-										Short.MAX_VALUE)
-								.addComponent(lblPlayer4, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
-										Short.MAX_VALUE)
-								.addComponent(lblPlayer5, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
-										Short.MAX_VALUE)
-								.addComponent(lblPlayer6, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
-										Short.MAX_VALUE))
-						.addGap(41)
-						.addGroup(jPanel1Layout.createParallelGroup(Alignment.TRAILING)
-								.addComponent(behaviourPlayer6, Alignment.LEADING, GroupLayout.PREFERRED_SIZE,
-										GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-								.addGroup(jPanel1Layout.createSequentialGroup()
-										.addGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
-												.addComponent(behaviourPlayer5, GroupLayout.PREFERRED_SIZE,
+				.setHorizontalGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
+						.addGroup(jPanel1Layout.createSequentialGroup().addContainerGap(202, Short.MAX_VALUE)
+								.addComponent(lblEnterTheNumber, GroupLayout.PREFERRED_SIZE, 197,
+										GroupLayout.PREFERRED_SIZE)
+								.addGap(114))
+						.addGroup(jPanel1Layout.createSequentialGroup().addGap(239)
+								.addComponent(numPlayers, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
+										GroupLayout.PREFERRED_SIZE)
+								.addContainerGap(243, Short.MAX_VALUE))
+						.addGroup(jPanel1Layout
+								.createSequentialGroup().addGap(162).addComponent(lblText)
+								.addContainerGap(199, Short.MAX_VALUE))
+						.addGroup(jPanel1Layout.createSequentialGroup().addGap(69)
+								.addGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING, false)
+										.addComponent(lblPlayer1, GroupLayout.DEFAULT_SIZE, 72, Short.MAX_VALUE)
+										.addComponent(lblPlayer2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
+												Short.MAX_VALUE)
+										.addComponent(lblPlayer3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
+												Short.MAX_VALUE)
+										.addComponent(lblPlayer4, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
+												Short.MAX_VALUE)
+										.addComponent(lblPlayer5, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
+												Short.MAX_VALUE)
+										.addComponent(
+												lblPlayer6, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE,
+												Short.MAX_VALUE))
+								.addGap(41)
+								.addGroup(jPanel1Layout.createParallelGroup(Alignment.TRAILING)
+										.addComponent(behaviourPlayer6, Alignment.LEADING, GroupLayout.PREFERRED_SIZE,
+												GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+										.addGroup(jPanel1Layout.createSequentialGroup()
+												.addGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
+														.addComponent(behaviourPlayer5, GroupLayout.PREFERRED_SIZE,
+																GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+														.addComponent(behaviourPlayer4, GroupLayout.PREFERRED_SIZE,
+																GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+														.addComponent(behaviourPlayer3, GroupLayout.PREFERRED_SIZE,
+																GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+														.addComponent(behaviourPlayer2, GroupLayout.PREFERRED_SIZE,
+																GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+														.addComponent(behaviourPlayer1, GroupLayout.PREFERRED_SIZE,
+																GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+												.addContainerGap(252, Short.MAX_VALUE))))
+						.addGroup(Alignment.TRAILING,
+								jPanel1Layout.createSequentialGroup().addContainerGap(443, Short.MAX_VALUE)
+										.addComponent(doneSelectingPlayers, GroupLayout.PREFERRED_SIZE, 124,
+												GroupLayout.PREFERRED_SIZE)
+										.addGap(26))
+						.addGroup(jPanel1Layout.createSequentialGroup().addGap(61).addComponent(lblChooseMap).addGap(72)
+								.addComponent(chooseMap, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
+										GroupLayout.PREFERRED_SIZE)
+								.addContainerGap(386, Short.MAX_VALUE)));
+		jPanel1Layout
+				.setVerticalGroup(
+						jPanel1Layout.createParallelGroup(Alignment.TRAILING)
+								.addGroup(
+										jPanel1Layout.createSequentialGroup().addContainerGap()
+												.addComponent(lblEnterTheNumber)
+												.addPreferredGap(ComponentPlacement.RELATED)
+												.addComponent(numPlayers, GroupLayout.PREFERRED_SIZE,
 														GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-												.addComponent(behaviourPlayer4, GroupLayout.PREFERRED_SIZE,
-														GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-												.addComponent(behaviourPlayer3, GroupLayout.PREFERRED_SIZE,
-														GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-												.addComponent(behaviourPlayer2, GroupLayout.PREFERRED_SIZE,
-														GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-												.addComponent(behaviourPlayer1, GroupLayout.PREFERRED_SIZE,
-														GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-										.addContainerGap(252, Short.MAX_VALUE))))
-				.addGroup(Alignment.TRAILING,
-						jPanel1Layout.createSequentialGroup().addContainerGap(443, Short.MAX_VALUE)
-						.addComponent(doneSelectingPlayers, GroupLayout.PREFERRED_SIZE, 124,
-								GroupLayout.PREFERRED_SIZE)
-						.addGap(26))
-				.addGroup(jPanel1Layout.createSequentialGroup().addGap(61).addComponent(lblChooseMap)
-						.addGap(72).addComponent(chooseMap, GroupLayout.PREFERRED_SIZE,
-								GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addContainerGap(386, Short.MAX_VALUE)));
-		jPanel1Layout.setVerticalGroup(jPanel1Layout.createParallelGroup(Alignment.TRAILING).addGroup(jPanel1Layout
-				.createSequentialGroup().addContainerGap().addComponent(lblEnterTheNumber)
-				.addPreferredGap(ComponentPlacement.RELATED)
-				.addComponent(numPlayers, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
-						GroupLayout.PREFERRED_SIZE)
-				.addGap(18).addComponent(lblText).addGap(19)
-				.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE).addComponent(lblPlayer1).addComponent(
-						behaviourPlayer1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
-						GroupLayout.PREFERRED_SIZE))
-				.addPreferredGap(ComponentPlacement.UNRELATED)
-				.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE).addComponent(lblPlayer2).addComponent(
-						behaviourPlayer2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
-						GroupLayout.PREFERRED_SIZE))
-				.addPreferredGap(ComponentPlacement.UNRELATED)
-				.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE).addComponent(lblPlayer3).addComponent(
-						behaviourPlayer3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
-						GroupLayout.PREFERRED_SIZE))
-				.addPreferredGap(ComponentPlacement.UNRELATED)
-				.addGroup(jPanel1Layout.createParallelGroup(Alignment.TRAILING)
-						.addComponent(behaviourPlayer4, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
-								GroupLayout.PREFERRED_SIZE)
-						.addComponent(lblPlayer4))
-				.addPreferredGap(ComponentPlacement.RELATED)
-				.addGroup(jPanel1Layout.createParallelGroup(Alignment.TRAILING).addComponent(lblPlayer5).addComponent(
-						behaviourPlayer5, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
-						GroupLayout.PREFERRED_SIZE))
-				.addPreferredGap(ComponentPlacement.UNRELATED)
-				.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE)
-						.addComponent(behaviourPlayer6, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
-								GroupLayout.PREFERRED_SIZE)
-						.addComponent(lblPlayer6))
-				.addGap(65)
-				.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE).addComponent(lblChooseMap).addComponent(
-						chooseMap, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-				.addGap(37).addComponent(doneSelectingPlayers).addGap(29)));
+												.addGap(18).addComponent(lblText).addGap(19)
+												.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE)
+														.addComponent(lblPlayer1)
+														.addComponent(behaviourPlayer1, GroupLayout.PREFERRED_SIZE,
+																GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+												.addPreferredGap(ComponentPlacement.UNRELATED)
+												.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE)
+														.addComponent(lblPlayer2).addComponent(behaviourPlayer2,
+																GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
+																GroupLayout.PREFERRED_SIZE))
+												.addPreferredGap(ComponentPlacement.UNRELATED)
+												.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE)
+														.addComponent(lblPlayer3)
+														.addComponent(behaviourPlayer3, GroupLayout.PREFERRED_SIZE,
+																GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+												.addPreferredGap(ComponentPlacement.UNRELATED)
+												.addGroup(jPanel1Layout.createParallelGroup(Alignment.TRAILING)
+														.addComponent(behaviourPlayer4, GroupLayout.PREFERRED_SIZE,
+																GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+														.addComponent(lblPlayer4))
+												.addPreferredGap(ComponentPlacement.RELATED)
+												.addGroup(jPanel1Layout.createParallelGroup(Alignment.TRAILING)
+														.addComponent(lblPlayer5)
+														.addComponent(behaviourPlayer5, GroupLayout.PREFERRED_SIZE,
+																GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+												.addPreferredGap(ComponentPlacement.UNRELATED)
+												.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE)
+														.addComponent(behaviourPlayer6, GroupLayout.PREFERRED_SIZE,
+																GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+														.addComponent(lblPlayer6))
+												.addGap(65)
+												.addGroup(jPanel1Layout.createParallelGroup(Alignment.BASELINE)
+														.addComponent(lblChooseMap).addComponent(chooseMap,
+																GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
+																GroupLayout.PREFERRED_SIZE))
+												.addGap(37).addComponent(doneSelectingPlayers).addGap(29)));
 
 		jPanel1.setLayout(jPanel1Layout);
 
@@ -340,8 +350,8 @@ public class RiskAddPlayerController extends java.awt.Frame {
 
 					public void actionPerformed(ActionEvent event) {
 						map = (String) chooseMap.getSelectedItem();
-						Utility.writeLog("Map selected by user ::" +map );
-						if (map.equalsIgnoreCase("3dcliff")) 
+						Utility.writeLog("Map selected by user ::" + map);
+						if (map.equalsIgnoreCase("3dcliff"))
 							RiskMapPanelViewController.CustomImage = "3D Cliff.bmp";
 						else if (map.equalsIgnoreCase("world"))
 							RiskMapPanelViewController.CustomImage = "World.bmp";
@@ -360,9 +370,10 @@ public class RiskAddPlayerController extends java.awt.Frame {
 	}
 
 	/**
-	 *  Exit the Application.
+	 * Exit the Application.
 	 *
-	 * @param evt the evt
+	 * @param evt
+	 *            the evt
 	 */
 	private void exitForm(java.awt.event.WindowEvent evt) {
 		setVisible(false);
@@ -371,14 +382,15 @@ public class RiskAddPlayerController extends java.awt.Frame {
 	/**
 	 * J button 1 action performed.
 	 *
-	 * @param evt the evt
+	 * @param evt
+	 *            the evt
 	 */
 	private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
 
 		if (RiskGameModel.removeAllPlayer())
 			System.out.println("all players removed");
 		System.out.println("size of list" + noOfPlayers);
-		Utility.writeLog("Number of players in Single Game Mode " +noOfPlayers );
+		Utility.writeLog("Number of players in Single Game Mode " + noOfPlayers);
 		for (int i = 0; i < noOfPlayers; i++) {
 			System.out.println("player" + (i + 1) + " " + behaviourPlayers.get(i));
 			switch (behaviourPlayers.get(i)) {
@@ -386,31 +398,31 @@ public class RiskAddPlayerController extends java.awt.Frame {
 			case "Human": {
 				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Human());
 				System.out.println((i + 1) + "new risk.model.strategy.Human");
-				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as " +"Human player");
+				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as " + "Human player");
 				break;
 			}
 
 			case "Aggressive": {
 				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Aggressive());
 				System.out.println((i + 1) + "new risk.model.strategy.Aggressive");
-				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as " +"Aggressive player");
+				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as " + "Aggressive player");
 				break;
 			}
 			case "Benevolent": {
 				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Benevolent());
-				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as " +"Benevolent player");
+				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as " + "Benevolent player");
 				System.out.println((i + 1) + "new risk.model.strategy.Benevolent");
 				break;
 			}
 			case "Random": {
 				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Random());
-				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as " +"Random player");
+				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as " + "Random player");
 				System.out.println((i + 1) + "new risk.model.strategy.Random");
 				break;
 			}
 			case "Cheater": {
 				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Cheater());
-				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as " +"Cheater player");
+				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as " + "Cheater player");
 				System.out.println((i + 1) + "new risk.model.strategy.Cheater");
 				break;
 			}
@@ -434,10 +446,9 @@ public class RiskAddPlayerController extends java.awt.Frame {
 		}
 	}
 
-	/** The done selecting players. */
+	/** Button The done selecting players. */
 	private javax.swing.JButton doneSelectingPlayers;
 
-
-	/** The jpanel 1. */
+	/** The jpanel 1 for UI */
 	private javax.swing.JPanel jPanel1;
 }

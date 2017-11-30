@@ -1,14 +1,4 @@
-***********Tournament Mode begins  *************
+**************The Risk Begin************
 
-Player 1 :: Aggressive
-
-Player 2 :: Random
-
-Player 3 :: Cheater
-
-Maps are selected randomly 
-
-Map 1 Europe.map
-
-45 armies added to each player
+Thu Nov 30 01:00:16 EST 2017
 

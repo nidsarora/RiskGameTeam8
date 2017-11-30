@@ -254,7 +254,7 @@ public class RiskPlayerModel extends Observable implements Serializable {
 
 		sbPlayerDominationViewContent.append("Army count " + this.getNumberOfArmies() + "\n");
 
-		sbPlayerDominationViewContent.append("Territories Occupied by me\n");
+		sbPlayerDominationViewContent.append("Territories Occupied by mouseEvent\n");
 		if (this.getOccupiedTerritories().size() > 0)
 			for (RiskTerritoryModel occupiedTerritory : this.getOccupiedTerritories()) {
 				sbPlayerDominationViewContent.append(occupiedTerritory.getName() + "\n");
