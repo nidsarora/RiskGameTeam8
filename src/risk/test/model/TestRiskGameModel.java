@@ -524,7 +524,7 @@ public class TestRiskGameModel {
 		riskGameModel.defenseNum=2;
 	    riskGameModel.setaTerritory(aTerritory);
 	    riskGameModel.setdTerritory(dTerritory);
-	    assertEquals(1,riskGameModel.isCaptured());//players.size=1, so he won the game
+	    assertEquals(9,riskGameModel.isCaptured());//players.size=1, so he won the game
 	}
 	/**
 	 * Testdoes card match current player territory.
