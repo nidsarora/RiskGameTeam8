@@ -232,8 +232,8 @@ public class RiskGameModel implements Serializable {
 	// * @param test
 	// * the test
 	// */
-	// public RiskGameModel(String test) {
-	// }
+	 public RiskGameModel(String test,boolean result) {
+	 }
 
 	/**
 	 * Instantiates a new risk game model.
