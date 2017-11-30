@@ -28,7 +28,7 @@ public class TestRiskGameModel {
 	 */
 	@Before
 	public void before() {
-		riskGameModel = new RiskGameModel("test");
+		riskGameModel = new RiskGameModel("test",true);
 	}
 
 	/**
@@ -512,7 +512,7 @@ public class TestRiskGameModel {
 		Benevolent benevolent=new Benevolent();
 		RiskPlayerModel riskplayermodel = new RiskPlayerModel("player1", 1,benevolent);
 		RiskPlayerModel riskplayermodel1 = new RiskPlayerModel("player2", 1,benevolent);
-		RiskGameModel riskGameModel = new RiskGameModel("test");
+		RiskGameModel riskGameModel = new RiskGameModel("test",true);
 		riskGameModel.players.add(riskplayermodel);
 		riskGameModel.players.add(riskplayermodel1);
 		riskGameModel.active = riskplayermodel;
