@@ -128,7 +128,7 @@ public class Aggressive implements StrategyInterface, Serializable {
 	public void reinforce(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
 		 * Randomly reinforce any random countries; assuming this time this player has
-		 * armies to place recieved from start turn
+		 * armies to place received from start turn
 		 */
 		riskGameModel.setState(RiskGameModel.REINFORCE);
 		riskGameModel.notifyPhaseViewChange();
@@ -163,7 +163,7 @@ public class Aggressive implements StrategyInterface, Serializable {
 
 	public String attack(boolean isTest, RiskGameModel riskGameModel, int... territory) {
 		/*
-		 * He will keep on attacking untill he has teeritories which armies > 1 and of
+		 * He will keep on attacking until he has territories which armies > 1 and of
 		 * which have others territories adjacent to him
 		 */
 		RiskTerritoryModel[] fighterTerritories;

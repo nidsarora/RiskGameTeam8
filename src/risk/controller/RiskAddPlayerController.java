@@ -442,6 +442,7 @@ public class RiskAddPlayerController extends java.awt.Frame {
 	/** The done selecting players. */
 	private javax.swing.JButton doneSelectingPlayers;
 	
+
 	/** The jpanel 1. */
 	private javax.swing.JPanel jPanel1;
 }
