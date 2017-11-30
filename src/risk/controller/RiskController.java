@@ -224,7 +224,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 				EndButtonMouseClicked(evt);
 			}
 		});
-		SaveButton.setVisible(true);
+		SaveButton.setVisible(false);
 		SaveButton.setFont(resourceMap.getFont("SaveButton.font")); // NOI18N
 		SaveButton.setText("Save Game"); // NOI18N
 		SaveButton.setName("SaveButton"); // NOI18N
@@ -288,7 +288,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 		Utility.writeLog("Attack Phase entered");
 		risk.setState(RiskGameModel.ATTACK);
 		FortifyButton.setVisible(false);
-		EndButton.setVisible(true);
+		EndButton.setVisible(false);
 		statusLabel.setText("Select a territory to attack with");
 		if (AttackButton.getText().equals("Retreat")) {
 			risk.setState(RiskGameModel.ACTIVE_TURN);
@@ -522,6 +522,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					AttackButton.setText("Attack");
 					FortifyButton.setVisible(true);
 					EndButton.setVisible(true);
+					AttackButton.setVisible(true);
 					risk.defenseNum = 0;
 					risk.attackNum = 0;
 					risk.defenseTerritory = null;
@@ -546,7 +547,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 																		// ben
 					// clicked
 					if (risk.yCoordinate > 325 && risk.yCoordinate < 355) {// then
-																			// occupy
+						AttackButton.setVisible(true);											// occupy
 						EndButton.setVisible(true);
 						FortifyButton.setVisible(true);
 						if (risk.capture()) {
@@ -578,6 +579,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					if (risk.yCoordinate > 325 && risk.yCoordinate < 355) {
 						AttackButton.setVisible(false);
 						EndButton.setVisible(true);
+						SaveButton.setVisible(true);
 						FortifyButton.setVisible(false);
 					}
 				}
@@ -873,6 +875,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					if (risk.aTerritory.getArmies() == 1) {
 						risk.setState(RiskGameModel.ACTIVE_TURN);
 						statusLabel.setText(risk.curPlayer.getName() + " has lost the battle");
+						AttackButton.setVisible(true);
 						AttackButton.setText("Attack");
 						FortifyButton.setVisible(true);
 						EndButton.setVisible(true);
@@ -934,6 +937,7 @@ public class RiskController extends javax.swing.JFrame implements MouseListener 
 					// EndButton.setVisible(true);
 					// FortifyButton.setVisible(true);
 					risk.capture();
+					AttackButton.setVisible(true);
 				}
 			}
 			// risk.notifyPhaseViewChange();
