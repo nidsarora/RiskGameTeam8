@@ -2,6 +2,8 @@ package risk.test.model;
 
 import static org.junit.Assert.assertEquals;
 
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
 import java.util.Vector;
 
 import org.junit.Before;
@@ -10,6 +12,7 @@ import org.junit.Test;
 import risk.model.RiskCardModel;
 import risk.model.RiskContinentModel;
 import risk.model.RiskGameModel;
+import risk.model.RiskGameModelSerializable;
 import risk.model.RiskPlayerModel;
 import risk.model.RiskTerritoryModel;
 import risk.model.strategy.Aggressive;
