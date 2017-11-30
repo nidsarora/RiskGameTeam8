@@ -1143,11 +1143,6 @@ public class RiskStartGameController extends java.awt.Frame {
 					isCountryValid = false;
 					for (int countryIndex = 0; countryIndex < countryList.getLength(); countryIndex++) {
 						Node countryNode = (Node) countryList.item(countryIndex);
-						/*
-						 * if (countryNode.getTextContent().toLowerCase()
-						 * .equals((mapInputLineText.split(",")[location]).
-						 * toLowerCase())) isCountryValid = true;
-						 */
 					}
 					if (!isCountryValid) {
 						noteLabel.setText(
