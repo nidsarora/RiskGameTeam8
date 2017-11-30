@@ -1,0 +1,42 @@
+**************The Risk Begin************
+
+Wed Nov 29 21:41:56 EST 2017
+
+***********Single Mode begins  *************
+
+Map selected by user ::World
+
+Number of players in Single Game Mode 3
+
+User seleccted Player_1as Human player
+
+User seleccted Player_2as Aggressive player
+
+User seleccted Player_3as Benevolent player
+
+All players Added
+
+15 armies added to each player
+
+Build the Game Panel
+
+***********Player_1 turn *************
+
+***********Player_2 turn *************
+
+INITIAL REINFORCE - Some Aggressive dude called - Player_2 placed one of his army on Western_Australia
+
+***********Player_3 turn *************
+
+INITIAL REINFORCE - called - Player_3 placed one of his army on Greenland
+
+***********Player_1 turn *************
+
+initial reinforcement stage
+
+Player_1 got bonus armies
+
+INITIAL REINFORCE - Some Human called - Player_1 placed one of his army on Egypt
+
+Player_1 got3 left to place
+
