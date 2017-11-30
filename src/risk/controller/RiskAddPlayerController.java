@@ -383,6 +383,7 @@ public class RiskAddPlayerController extends java.awt.Frame {
 				RiskGameModel.addPlayer("Player_" + (i + 1), new risk.model.strategy.Human());
 				System.out.println((i + 1) + "new risk.model.strategy.Human");
 				Utility.writeLog("User seleccted " + "Player_" + (i + 1) + "as" +"Human player");
+				break;
 			}
 
 			case "Aggressive": {

@@ -414,7 +414,7 @@ public class RiskTournamentModeController extends java.awt.Frame {
             System.out.println("Map "+(mapIndex+1)+  " "+randomMapNameList.get(mapIndex));
         }
         for(int j=0;j<tempmapNameList.size();j++) {
-        for(int i=0;i<=gameNum;i++) {
+        for(int i=0;i<gameNum;i++) {
         	
         	mapNameList.add(tempmapNameList.get(j));
         	//System.out.println("index"+i+mapNameList.get(j));

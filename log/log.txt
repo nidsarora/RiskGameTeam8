@@ -1,4 +1,14 @@
 **************The Risk Begin************
 
-Wed Nov 29 18:56:00 EST 2017
+Wed Nov 29 19:06:38 EST 2017
+
+***********Single Mode begins  *************
+
+Map selected by user ::british columbia
+
+Number of players in Single Game Mode 3
+
+User seleccted Player_1asAggressive player
+
+User seleccted Player_2asAggressive player
 
