@@ -1,5 +1,6 @@
 package risk.model;
 
+import java.io.Serializable;
 import java.util.Vector;
 
 /**
@@ -7,7 +8,7 @@ import java.util.Vector;
  * 
  * @author Team8
  */
-public class RiskContinentModel {
+public class RiskContinentModel implements Serializable{
 
 	private String name;
 	private Vector<Integer> territories;
@@ -64,8 +65,12 @@ public class RiskContinentModel {
 		return (territories.contains(territorymodel.getId()));
 	}
 
+
 	/**
 	 * Adds the territories.
+	 *
+	 * @param intvalue
+	 *            the intvalue
 	 */
 	public void AddTerritories(Integer intvalue)
 	{

@@ -11,14 +11,17 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.geom.Line2D;
 import java.awt.image.PixelGrabber;
+import java.io.IOException;
 import java.util.Vector;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 /**
- *This class is responsible for the MapPanelView.It is responsible for drawing lines connecting the 
- *nodes using the coordinate values from the mapfile.It also has the method for creating a fortify panel
- *where user can select how many number of armies to move from one territory to another.
+ * This class is responsible for the MapPanelView.It is responsible for drawing
+ * lines connecting the nodes using the coordinate values from the mapfile.It
+ * also has the method for creating a fortify panel where user can select how
+ * many number of armies to move from one territory to another.
+ * 
  * @author Team8
  */
 public class RiskMapPanelViewController extends JPanel {
@@ -28,14 +31,15 @@ public class RiskMapPanelViewController extends JPanel {
 	private Image army;
 	private Image shield;
 	public int armies;
-
+	static String CustomImage = "map.jpg";
+	
 	/**
 	 * Instantiates a new risk map panel view controller.
 	 */
 	public RiskMapPanelViewController() {
-
+		 CustomImage=RiskGameModel.ImageUsed;
 		try {
-			this.map = ImageIO.read(getClass().getResourceAsStream(Utility.getImagePath("map.jpg")));
+			this.map = ImageIO.read(getClass().getResourceAsStream(Utility.getImagePath(CustomImage)));
 			this.army = ImageIO.read(getClass().getResourceAsStream(Utility.getImagePath("army.gif")));
 			this.shield = ImageIO.read(getClass().getResourceAsStream(Utility.getImagePath("shield.gif")));
 			map = map.getScaledInstance(1000, 550, Image.SCALE_SMOOTH);
@@ -44,8 +48,12 @@ public class RiskMapPanelViewController extends JPanel {
 		}
 	}
 
+
 	/**
 	 * Instantiates a new risk map panel view controller.
+	 *
+	 * @param riskgamemodel
+	 *            the riskgamemodel
 	 */
 	public RiskMapPanelViewController(RiskGameModel riskgamemodel) {
 		this();
@@ -62,8 +70,10 @@ public class RiskMapPanelViewController extends JPanel {
 	/**
 	 * Select country by color.
 	 *
-	 * @param x, x-coordinate
-	 * @param y, y-coordinate
+	 * @param x,
+	 *            x-coordinate
+	 * @param y,
+	 *            y-coordinate
 	 */
 	public void selectCountrybyColor(int x, int y) {
 
@@ -86,8 +96,8 @@ public class RiskMapPanelViewController extends JPanel {
 			loc = risk.drawMap(cindex);
 			graphics.drawArc(loc[0], loc[1], 30, 30, 0, 360);
 		}
-		if(numTerritories > 0)
-		drawConnectAdjacentCountries(graphics);
+		if (numTerritories > 0)
+			drawConnectAdjacentCountries(graphics);
 
 		for (int cindex = 0; cindex < numTerritories; cindex++) {
 			playerIndex = risk.getOwnership(cindex);
@@ -127,7 +137,7 @@ public class RiskMapPanelViewController extends JPanel {
 		 * Attack Window is here
 		 * 
 		 */
-		 
+
 		String game_state = "";
 		if (state == 0)
 			game_state = "New Game";
@@ -210,7 +220,9 @@ public class RiskMapPanelViewController extends JPanel {
 		 */
 
 		if (state == RiskGameModel.FORTIFY_PHASE) {
-			int max = risk.aTerritory.getArmies();
+			int max = 0;
+			if (risk.aTerritory != null)
+				max = risk.aTerritory.getArmies();
 			int min = 0;
 
 			// risk.defenseNum Store the armies to move here in RiskUI
@@ -280,8 +292,10 @@ public class RiskMapPanelViewController extends JPanel {
 				int temp;
 
 				for (int c_index = 0; c_index < num; c_index++) {
-					graphics.drawString(risk.getCountryName(hand.elementAt(c_index).territory) + " value = "
-							+ risk.curPlayer.getCard().elementAt(c_index - 1).card_type, 350, 250 + (c_index * 30));
+					graphics.drawString(
+							risk.getCountryName(hand.elementAt(c_index).territory) + " value = "
+									+ risk.curPlayer.getCard().elementAt(c_index - 1).card_type,
+							350, 250 + (c_index * 30));
 
 					if (c_index < num - 1) {
 
@@ -394,44 +408,49 @@ public class RiskMapPanelViewController extends JPanel {
 
 	}
 
+
 	/**
-	 * Draw connect adjacent countries.
+	 * Draw connect adjacent countries
 	 *
+	 * @param graphics
+	 *            the graphics to draw adjacent countries
 	 */
 	private void drawConnectAdjacentCountries(Graphics graphics) {
-		// TODO Auto-generated method stub			
-	    for(RiskTerritoryModel territory: RiskGameModel.territories)
-	    {
-	    	if(territory.getAdjacents().size() > 0)
-	    	{
-		    	for(int adjacent: territory.getAdjacents())
-		    	{
-		    		try {
-		    		drawLineforCoordinates(territory.getX(),territory.getY(),risk.getTerritoryAt(adjacent).getX(),risk.getTerritoryAt(adjacent).getY(),graphics);
-		    		}
-		    		catch(Exception e)
-		    		{
-		    			System.out.println("x1 " + territory.getX() + "y1 " + territory.getY() + "x2 " + risk.getTerritoryAt(adjacent).getX() + "y2 " + risk.getTerritoryAt(adjacent).getY());
-		    		}
-		    	}
-	    	}
-	    }       
+		// TODO Auto-generated method stub
+		for (RiskTerritoryModel territory : RiskGameModel.territories) {
+			if (territory.getAdjacents().size() > 0) {
+				for (int adjacent : territory.getAdjacents()) {
+					try {
+						drawLineforCoordinates(territory.getX(), territory.getY(), risk.getTerritoryAt(adjacent).getX(),
+								risk.getTerritoryAt(adjacent).getY(), graphics);
+					} catch (Exception e) {
+						System.out.println("x1 " + territory.getX() + "y1 " + territory.getY() + "x2 "
+								+ risk.getTerritoryAt(adjacent).getX() + "y2 " + risk.getTerritoryAt(adjacent).getY());
+					}
+				}
+			}
+		}
 	}
 
 	/**
 	 * Draw line for coordinates.
 	 *
-	 * @param start_x the start x
-	 * @param start_y the start y
-	 * @param destination_x the destination x
-	 * @param destination_y the destination y
-	 * @param graphics the graphics
+	 * @param start_x
+	 *            the start x
+	 * @param start_y
+	 *            the start y
+	 * @param destination_x
+	 *            the destination x
+	 * @param destination_y
+	 *            the destination y
+	 * @param graphics
+	 *            the graphics
 	 */
-	private void drawLineforCoordinates(int start_x,int start_y, int destination_x, int destination_y, Graphics graphics)
-	{
-			Graphics2D graphics2 = (Graphics2D)graphics;
-			graphics2.setColor(Color.black);
-			graphics2.setStroke(new BasicStroke(2));
-			graphics2.draw(new Line2D.Float(start_x, start_y, destination_x, destination_y));
+	private void drawLineforCoordinates(int start_x, int start_y, int destination_x, int destination_y,
+			Graphics graphics) {
+		Graphics2D graphics2 = (Graphics2D) graphics;
+		graphics2.setColor(Color.black);
+		graphics2.setStroke(new BasicStroke(2));
+		graphics2.draw(new Line2D.Float(start_x, start_y, destination_x, destination_y));
 	}
 }

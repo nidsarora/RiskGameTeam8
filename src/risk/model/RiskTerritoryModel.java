@@ -1,13 +1,15 @@
 package risk.model;
 
+import java.io.Serializable;
 import java.util.Vector;
+import risk.model.strategy.*;
 
 /**
  *This method initializes the first player as the initial player.
  *
  *@author Team8
  */
-public class RiskTerritoryModel {
+public class RiskTerritoryModel implements Serializable {
 	
 	/** The id. */
 	protected int id;
@@ -50,7 +52,7 @@ public class RiskTerritoryModel {
 		adjacents = new Vector<Integer>();
 		x_coordinate = xlocation;
 		y_coordinate = ylocation;
-		player = new RiskPlayerModel(null, -1);
+		player = new RiskPlayerModel(null, -1,new Human());
 	}
 
 	/**
@@ -62,9 +64,12 @@ public class RiskTerritoryModel {
 		player = playermodel;
 	}
 
+
 	/**
 	 * Sets the adjacent.
 	 *
+	 * @param adjacent
+	 *            the new adjacent
 	 */
 	public void setAdjacent(Vector<Integer> adjacent) {
 		adjacents = adjacent;
@@ -145,7 +150,7 @@ public class RiskTerritoryModel {
 	/**
 	 * Sets the continent.
 	 *
-	 * @param continent the new continent
+	 * @param continentname the new continent
 	 */
 	public void setContinent(int continentname) {
 		continent = continentname;
@@ -181,9 +186,12 @@ public class RiskTerritoryModel {
 		return true;
 	}
 
+
 	/**
 	 * Adds the armies.
 	 *
+	 * @param army
+	 *            the army
 	 */
 	public void addArmies(int army) {
 		armies += army;
@@ -201,7 +209,8 @@ public class RiskTerritoryModel {
 	 * Loose army.
 	 */
 	public void looseArmy() {
-		armies--;
+		if (armies != 0)
+			armies--;
 	}
 
 	/**
@@ -210,7 +219,8 @@ public class RiskTerritoryModel {
 	 * @param army the army
 	 */
 	public void looseArmies(int army) {
-		armies -= army;
+		if (armies - army >= 0)
+			armies -= army;
 	}
 
 	/**

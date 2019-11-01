@@ -1,5 +1,7 @@
+
 package risk.model.Observable;
 
+import java.io.Serializable;
 import java.util.Observable;
 
 import risk.helpers.Utility;
@@ -9,7 +11,7 @@ import risk.model.interfaces.PhaseViewInterface;
 /**
  * The Class Risk Startup Phase Model.
  */
-public class RiskStartupPhaseModel extends Observable implements PhaseViewInterface {
+public class RiskStartupPhaseModel extends Observable implements PhaseViewInterface ,Serializable{
 
 	/** The title. */
 	private String title;

@@ -2,6 +2,7 @@ package risk.view;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.io.Serializable;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -10,9 +11,11 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.ScrollPaneConstants;
+
+import risk.helpers.Utility;
 import risk.model.RiskPlayerModel;
 
-public class RiskPlayerDominationViewObserver implements Observer {
+public class RiskPlayerDominationViewObserver implements Observer,Serializable {
 	
 	JPanel playerDominationViewPanel;
 	JTextArea playerDominationViewTextArea;
@@ -40,7 +43,7 @@ public class RiskPlayerDominationViewObserver implements Observer {
 		playerDominationViewFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		playerDominationViewFrame.setPreferredSize(new Dimension(width, height));
 		playerDominationViewPanel = new JPanel();
-		playerDominationViewTextArea = new JTextArea("", 25, 40);
+		playerDominationViewTextArea = new JTextArea("", 40, 60);
 		playerDominationViewTextArea.setEditable(false);
 
 		scrollPane = new JScrollPane(playerDominationViewTextArea);
@@ -55,7 +58,9 @@ public class RiskPlayerDominationViewObserver implements Observer {
 
 	@Override
 	public void update(Observable object, Object argument) {
+		playerDominationViewTextAreaString.append(((RiskPlayerModel)object).getPlayerDominationViewContent());
 		playerDominationViewTextArea.setText(((RiskPlayerModel)object).getPlayerDominationViewContent());
+		Utility.writePlayerViewLog(((RiskPlayerModel)object).getPlayerDominationViewContent());
 		playerDominationViewFrame.repaint();
 	}
 }

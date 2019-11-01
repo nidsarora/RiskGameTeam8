@@ -1,5 +1,6 @@
 package risk.model.Observable;
 
+import java.io.Serializable;
 import java.util.Observable;
 
 import risk.helpers.Utility;
@@ -9,7 +10,7 @@ import risk.model.interfaces.PhaseViewInterface;
 /**
  * The Class Risk Startup End Phase Model.
  */
-public class RiskStartupEndPhaseModel extends Observable implements PhaseViewInterface {
+public class RiskStartupEndPhaseModel extends Observable implements PhaseViewInterface,Serializable {
 	
 	/** The title. */
 	private String title;
@@ -57,9 +58,12 @@ public class RiskStartupEndPhaseModel extends Observable implements PhaseViewInt
 		return Utility.getPhaseTitle(this);
 	}
 
+
 	/**
 	 * Sets the title.
 	 *
+	 * @param title
+	 *            sets new title
 	 */
 	public void setTitle(String title) {
 		this.title = title;

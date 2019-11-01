@@ -1,13 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/*
- * RiskPlayerPanel.java
- *
- * Created on Nov 18, 2010, 4:43:14 PM
- */
 
 package risk.controller;
 
@@ -24,6 +15,7 @@ import java.awt.Graphics;
  */
 public class RiskPlayerPanelViewController extends javax.swing.JPanel {
 
+	/** The risk. */
 	RiskGameModel risk;
 
 	/**
@@ -37,6 +29,7 @@ public class RiskPlayerPanelViewController extends javax.swing.JPanel {
 	/**
 	 * Instantiates a new risk player panel view controller.
 	 *
+	 * @param riskgamemodel the riskgamemodel
 	 */
 	public RiskPlayerPanelViewController(RiskGameModel riskgamemodel) {
 		risk = riskgamemodel;
@@ -58,6 +51,7 @@ public class RiskPlayerPanelViewController extends javax.swing.JPanel {
 		layout.setVerticalGroup(
 				layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGap(0, 100, Short.MAX_VALUE));
 	}
+
 
 	@Override
 	public void paintComponent(Graphics graphics) {
@@ -118,7 +112,7 @@ public class RiskPlayerPanelViewController extends javax.swing.JPanel {
 
 			graphics.fillRect(position + (index * 75), 63, width, 20);
 			// Go to next player
-			risk.nextPlayer();
+			risk.nextPlayer(true);
 		}
 
 	}

@@ -1,9 +1,9 @@
 package risk.model;
 
-import java.io.StreamTokenizer;
+import java.io.Serializable;
+import java.util.List;
 import java.util.Observable;
 import java.util.Vector;
-
 import risk.model.interfaces.StrategyInterface;
 
 /**
@@ -12,7 +12,7 @@ import risk.model.interfaces.StrategyInterface;
  * 
  * @author Team8
  */
-public class RiskPlayerModel extends Observable {
+public class RiskPlayerModel extends Observable implements Serializable {
 
 	private String name;
 	private int index;
@@ -24,26 +24,29 @@ public class RiskPlayerModel extends Observable {
 	/** The armies received by trading cards. */
 	private int armiesRecivedByTradingCards;
 
+
 	/**
 	 * Instantiates a new risk player model.
 	 *
-	 * @param playername,
-	 *            player name
-	 * @param playerindex,
-	 *            player index
+	 * @param playername
+	 *            the playername
+	 * @param playerindex
+	 *            the playerindex
+	 * @param IStrategy
+	 *            the i strategy
 	 */
-	public RiskPlayerModel(String playername, int playerindex) {
+	public RiskPlayerModel(String playername, int playerindex, StrategyInterface IStrategy) {
 		name = playername;
 		index = playerindex;
 		occupiedTerritories = new Vector<RiskTerritoryModel>();
 		cards = new Vector<RiskCardModel>();
+		setStrategy(IStrategy);// Strategy
 	}
 
 	/**
 	 * Instantiates a new risk player model.
 	 */
 	public RiskPlayerModel() {
-		// TODO Auto-generated constructor stub
 	}
 
 	/**
@@ -101,9 +104,11 @@ public class RiskPlayerModel extends Observable {
 		isChanged();
 	}
 
+
 	/**
-	 * Number of territories.
+	 * Num of territories.
 	 *
+	 * @return the number of territories
 	 */
 	public int numOfTerritories() {
 		if (occupiedTerritories == null)
@@ -111,8 +116,12 @@ public class RiskPlayerModel extends Observable {
 		return occupiedTerritories.size();
 	}
 
+
 	/**
 	 * Occupy territory.
+	 *
+	 * @param riskterritorymodel
+	 *            the riskterritorymodel
 	 */
 	public void occupyTerritory(RiskTerritoryModel riskterritorymodel) {
 		if (!occupiedTerritories.contains(riskterritorymodel))
@@ -120,9 +129,12 @@ public class RiskPlayerModel extends Observable {
 		isChanged();
 	}
 
+
 	/**
 	 * Loose territory.
 	 *
+	 * @param riskterritorymodel
+	 *            the riskterritorymodel
 	 */
 	public void looseTerritory(RiskTerritoryModel riskterritorymodel) {
 		occupiedTerritories.remove(riskterritorymodel);
@@ -130,13 +142,36 @@ public class RiskPlayerModel extends Observable {
 		isChanged();
 	}
 
+
 	/**
 	 * Sets the card.
 	 *
+	 * @param riskcardmodel
+	 *            the new card
 	 */
 	public void setCard(RiskCardModel riskcardmodel) {
 		cards.add(riskcardmodel);
 		isChanged();
+	}
+
+	/**
+	 * Sets the cards.
+	 *
+	 * @param riskcardmodel
+	 *            the new cards
+	 */
+	public void setCards(List<RiskCardModel> riskcardmodel) {
+		cards.addAll(riskcardmodel);
+	}
+
+	/**
+	 * Removes the card.
+	 *
+	 * @param riskcardmodel
+	 *            the riskcardmodel
+	 */
+	public void removeCard(List<RiskCardModel> riskcardmodel) {
+		cards.removeAll(riskcardmodel);
 	}
 
 	/**
@@ -223,7 +258,8 @@ public class RiskPlayerModel extends Observable {
 	 */
 	public String getPlayerDominationViewContent() {
 		StringBuilder sbPlayerDominationViewContent = new StringBuilder();
-		sbPlayerDominationViewContent.append("**********Player Domination View**********\n");
+		sbPlayerDominationViewContent
+				.append("\n\n**********Player: " + this.getName() + " Domination View**********\n");
 		sbPlayerDominationViewContent.append("Statistics\n\n");
 		sbPlayerDominationViewContent
 				.append("Current Player: " + this.getName() + ":" + this.numOfTerritories() + " territories: ");
@@ -241,8 +277,23 @@ public class RiskPlayerModel extends Observable {
 
 			}
 		}
+		
+
+		sbPlayerDominationViewContent.append("Army count " + this.getNumberOfArmies() + "\n");
+
+		sbPlayerDominationViewContent.append("Territories Occupied by mouseEvent\n");
+		if (this.getOccupiedTerritories().size() > 0)
+			for (RiskTerritoryModel occupiedTerritory : this.getOccupiedTerritories()) {
+				sbPlayerDominationViewContent.append(occupiedTerritory.getName() + "\n");
+			}
+		else
+			sbPlayerDominationViewContent.append("I own nothing!");
 
 		return sbPlayerDominationViewContent.toString();
+	}
+
+	public String fortify(int territory, RiskGameModel riskModel) {
+		return this.strategy.fortify(false, riskModel, territory);
 	}
 
 	/**
@@ -268,16 +319,37 @@ public class RiskPlayerModel extends Observable {
 		return strategy;
 	}
 
-	public void setStrategy(StrategyInterface strategy) {
-		this.strategy = strategy;
+	public void setStrategy(StrategyInterface IStrategy) {
+		// Make this conditional eventually //Strategy
+		this.strategy = IStrategy;
 	}
 
 	public Boolean isValidAttack() {
 		return true;
 	}
 
-	public void attack() {
-		if (isValidAttack())
-			this.strategy.attack();
+	public void takeTurn(RiskGameModel riskGameModel) {
+		 this.strategy.takeTurn(false, riskGameModel);
 	}
+
+	public void initialReinforce(int territory, RiskGameModel riskModel) {
+		 this.strategy.initialReinforce(false, riskModel, territory);
+	}
+
+	public String attack(int territory, RiskGameModel riskModel) {
+		return this.strategy.attack(false, riskModel, territory);
+	}
+
+	public void startTurn(RiskGameModel riskGameModel) {
+		this.strategy.startTurn(false, riskGameModel);
+	}
+
+	public void reinforce(int territory, RiskGameModel riskGameModel) {
+		this.strategy.reinforce(false, riskGameModel, territory);
+	}
+
+	public void tradeCard(RiskGameModel riskModel) {
+
+	}
+
 }

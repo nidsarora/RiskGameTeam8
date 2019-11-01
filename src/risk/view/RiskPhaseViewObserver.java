@@ -9,6 +9,7 @@ import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Toolkit;
+import java.io.Serializable;
 import java.util.Observable;
 import java.util.Observer;
 import javax.swing.JFrame;
@@ -17,9 +18,10 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.ScrollPaneConstants;
 
+import risk.helpers.Utility;
 import risk.model.interfaces.PhaseViewInterface;
 
-public class RiskPhaseViewObserver implements Observer {
+public class RiskPhaseViewObserver implements Observer,Serializable {
 
 	JPanel phaseViewPanel;
 	JTextArea phaseViewTextArea;
@@ -62,7 +64,9 @@ public class RiskPhaseViewObserver implements Observer {
 
 	@Override
 	public void update(Observable object, Object argument) {
+		phaseViewTextAreaString.append(((PhaseViewInterface)object).getContent());
 		phaseViewTextArea.setText(((PhaseViewInterface)object).getContent());
+		Utility.writePhaseViewLog(((PhaseViewInterface)object).getContent());
 		phaseViewFrame.repaint();
 	}
 

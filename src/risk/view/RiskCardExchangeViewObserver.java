@@ -2,6 +2,7 @@ package risk.view;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.io.Serializable;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -11,13 +12,14 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.ScrollPaneConstants;
 
+import risk.helpers.Utility;
 import risk.model.RiskPlayerModel;
 
 /**
  * An asynchronous update interface for receiving notifications
  * about RiskCardExchangeView information as the Risk Card Exchange View is constructed.
  */
-public class RiskCardExchangeViewObserver implements Observer {
+public class RiskCardExchangeViewObserver implements Observer ,Serializable{
 	
 	/** The card exchange view panel. */
 	JPanel cardExchangeViewPanel;
@@ -73,7 +75,6 @@ public class RiskCardExchangeViewObserver implements Observer {
 		cardExchangeViewPanel = new JPanel();
 		cardExchangeViewTextArea = new JTextArea("", 40, 40);
 		cardExchangeViewTextArea.setEditable(false);
-
 		scrollPane = new JScrollPane(cardExchangeViewTextArea);
 		scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 		cardExchangeViewPanel.add(scrollPane);
@@ -86,7 +87,10 @@ public class RiskCardExchangeViewObserver implements Observer {
 
 	@Override
 	public void update(Observable object, Object argument) {
+		cardExchangeViewTextAreaString.append(((RiskPlayerModel)object).getCardExchangeViewContent());
+		cardExchangeViewTextAreaString.append("*************************************************************");
 		cardExchangeViewTextArea.setText(((RiskPlayerModel)object).getCardExchangeViewContent());
+		Utility.writeCardViewLog(((RiskPlayerModel)object).getCardExchangeViewContent());
 		cardExchangeViewFrame.repaint();
 	}
 }

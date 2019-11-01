@@ -1,5 +1,6 @@
 package risk.model.Observable;
 
+import java.io.Serializable;
 import java.util.Observable;
 
 import risk.helpers.Utility;
@@ -9,7 +10,7 @@ import risk.model.interfaces.PhaseViewInterface;
 /**
  * The Class Risk Reinforcement Phase Model.
  */
-public class RiskReinforcementPhaseModel extends Observable implements PhaseViewInterface {
+public class RiskReinforcementPhaseModel extends Observable implements PhaseViewInterface,Serializable {
 
 	/** The current player. */
 	private int currentPlayer;
@@ -48,13 +49,12 @@ public class RiskReinforcementPhaseModel extends Observable implements PhaseView
 
 	@Override
 	public String getContent() {
-		// TODO Auto-generated method stub
 		return this.toString();
 	}
 
 	@Override
 	public void isChanged() {
-		// TODO Auto-generated method stub
+		
 		// specify that my state was changed
 		setChanged();
 		// notify all attached Observers of a change

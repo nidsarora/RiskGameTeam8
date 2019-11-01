@@ -1,13 +1,15 @@
 
 package risk.model;
 
+import java.io.Serializable;
+
 /**
  * This class represents the model of Card used in Risk Game.
  * 
  * @author Team8
  */
 
-public class RiskCardModel {
+public class RiskCardModel implements Serializable{
 
 	public String card_type;
 	public int territory;
@@ -23,8 +25,14 @@ public class RiskCardModel {
 		this.card_type = r_card_type;		
 	}
 
+
 	/**
 	 * Instantiates a new risk card model.
+	 *
+	 * @param r_territory_number
+	 *            the r territory number
+	 * @param r_int_card_type
+	 *            the r int card type
 	 */
 	public RiskCardModel(int r_territory_number, int r_int_card_type) {
 		this.territory = r_territory_number;
@@ -44,7 +52,9 @@ public class RiskCardModel {
 		}
 
 	}
-
+	/**
+	  * {@inheritDoc}
+	  */
 	@Override
 	public String toString() {
 		return "Territory \n" + String.valueOf(territory) + "\n\n Value \n" + String.valueOf(card_type) + "-"
